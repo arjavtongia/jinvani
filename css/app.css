@@ -485,7 +485,7 @@ input:focus { border-color: var(--accent); }
 .dg-branch ul { list-style: none; margin: 0; padding: 0.3rem 0.7rem 0.5rem; }
 .dg-branch li { padding: 0.4rem 0; border-bottom: 1px dashed var(--border); }
 .dg-branch li:last-child { border-bottom: 0; }
-.dg-drawing svg { display: block; width: 100%; max-width: 22rem; height: auto; margin: 0 auto 0.9rem; }
+.dg-drawing svg { display: block; width: 100%; max-width: 26rem; height: auto; margin: 0 auto 0.9rem; }
 .chitra-note { margin: 0.6rem 0 0; font-size: 0.85rem; color: var(--muted); }
 .chitra-gist {
   margin: 0.8rem 0 0;

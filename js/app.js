@@ -340,7 +340,10 @@
           b.items.map(it => '<li>' + dgItem(it, 'dg-text') + '</li>').join('') + '</ul></div>').join('') +
         '</div></div>';
     } else if (c.type === 'drawing') {
-      body = '<div class="dg-drawing" role="img" aria-label="' + esc(L(c.title)) + '">' + (DRAWINGS[c.drawing] || '') + '</div>' +
+      /* Some drawings take the item names, so labels inside the picture follow the app language. */
+      const drawing = DRAWINGS[c.drawing];
+      const svgHtml = typeof drawing === 'function' ? drawing(items.map(it => L(it).split(' (')[0])) : (drawing || '');
+      body = '<div class="dg-drawing" role="img" aria-label="' + esc(L(c.title)) + '">' + svgHtml + '</div>' +
         '<ol class="dg-list dg-legend">' + items.map((it, i) =>
           '<li><span class="dg-badge">' + esc(it.tag || String(i + 1)) + '</span>' + dgItem(it, 'dg-text') + '</li>').join('') + '</ol>';
     }
