@@ -2,9 +2,11 @@
   {
     "id": "namokar",
     "file": "content/namokar.txt",
+    "category": "nitya",
     "title": { "hi": "णमोकार मंत्र एवं मंगल पाठ", "en": "Namokar Mantra and Mangal Path" },
     "author": { "hi": "अनादि मूल मंत्र", "en": "The eternal mantra" },
     "unit": { "hi": "पाठ", "en": "Part" },
+    "count": 4,
     "textLang": "pra",
     "numberMark": false,
     "aliases": ["namokar", "navkar", "namokar mantra", "navkar mantra", "namaskar mantra", "mangal path", "chattari mangalam", "णमोकार", "नमोकार", "नवकार", "मंगल पाठ", "चत्तारि मंगलं"],
@@ -14,11 +16,28 @@
     }
   },
   {
+    "id": "darshan-path",
+    "file": "content/darshan-path.txt",
+    "category": "nitya",
+    "title": { "hi": "दर्शन पाठ", "en": "Darshan Path" },
+    "author": { "hi": "मंदिर में दर्शन के समय का पाठ", "en": "Prayer recited at darshan in the temple" },
+    "unit": { "hi": "श्लोक", "en": "Verse" },
+    "count": 13,
+    "numberMark": true,
+    "aliases": ["darshan", "darshan path", "darshanam devdevasya", "दर्शनं देवदेवस्य"],
+    "source": {
+      "hi": "संस्कृत पाठ, जैसा परम्परा में पढ़ा जाता है।",
+      "en": "Sanskrit text as traditionally recited."
+    }
+  },
+  {
     "id": "bhaktamar",
     "file": "content/bhaktamar.txt",
+    "category": "nitya",
     "title": { "hi": "भक्तामर स्तोत्र", "en": "Bhaktamar Stotra" },
     "author": { "hi": "आचार्य मानतुंग", "en": "Acharya Mantunga" },
     "unit": { "hi": "श्लोक", "en": "Verse" },
+    "count": 48,
     "numberMark": true,
     "aliases": ["bhaktamar", "bhaktamara", "bhaktambar", "bhaktamar stotra", "bhaktamar stotram", "adinath stotra", "manatunga", "mantung", "भक्तामर", "भक्तांबर", "मानतुंग"],
     "source": {
@@ -27,17 +46,65 @@
     }
   },
   {
+    "id": "barah-bhavana",
+    "file": "content/barah-bhavana.txt",
+    "category": "nitya",
+    "title": { "hi": "बारह भावना", "en": "Barah Bhavana" },
+    "author": { "hi": "पंडित भूधरदास", "en": "Pandit Bhudhardas" },
+    "unit": { "hi": "दोहा", "en": "Verse" },
+    "count": 13,
+    "textLang": "hi",
+    "numberMark": true,
+    "aliases": ["barah bhavana", "baarah bhavna", "barah bhawna", "bhudhardas", "raja rana chhatrapati", "राजा राणा छत्रपति", "भूधरदास"],
+    "source": {
+      "hi": "पंडित भूधरदास (18वीं शताब्दी) की रचना, जैसी परम्परा में पढ़ी जाती है।",
+      "en": "By Pandit Bhudhardas (18th century), as traditionally recited."
+    }
+  },
+  {
     "id": "tattvarth-sutra",
     "file": "content/tattvarth-sutra.txt",
+    "category": "nitya",
     "title": { "hi": "तत्त्वार्थसूत्र", "en": "Tattvartha Sutra" },
     "author": { "hi": "आचार्य उमास्वामी", "en": "Acharya Umaswami" },
     "unit": { "hi": "सूत्र", "en": "Sutra" },
     "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
+    "count": 357,
     "numberMark": true,
     "aliases": ["tattvarth", "tattvartha", "tatvarth", "tatvartha", "tattvarth sutra", "tattvartha sutra", "tatvarth sutra", "moksha shastra", "mokshashastra", "umaswami", "umasvami", "तत्वार्थ", "तत्त्वार्थ", "तत्वार्थसूत्र", "मोक्षशास्त्र", "मोक्ष शास्त्र", "उमास्वामी"],
     "source": {
-      "hi": "संस्कृत मूल पाठ, सर्वार्थसिद्धि-सम्मत दिगम्बर पाठ (10 अध्याय, 357 सूत्र)। मिलान: संस्कृत विकिस्रोत (sa.wikisource.org), CC BY-SA 4.0।",
-      "en": "Original Sanskrit text, Digambar recension as in Sarvarthasiddhi (10 chapters, 357 sutras). Checked against Sanskrit Wikisource (sa.wikisource.org), CC BY-SA 4.0."
+      "hi": "संस्कृत मूल पाठ, सर्वार्थसिद्धि-सम्मत दिगम्बर पाठ (10 अध्याय, 357 सूत्र)। मिलान: संस्कृत विकिस्रोत (sa.wikisource.org), CC BY-SA 4.0। 'चित्र से समझें' इसी ऐप के लिए बनाए गए हैं।",
+      "en": "Original Sanskrit text, Digambar recension as in Sarvarthasiddhi (10 chapters, 357 sutras). Checked against Sanskrit Wikisource (sa.wikisource.org), CC BY-SA 4.0. The explanatory pictures were made for this app."
+    }
+  },
+  {
+    "id": "mandir-darshan",
+    "file": "content/mandir-darshan.txt",
+    "category": "vidhi",
+    "title": { "hi": "मंदिर दर्शन विधि", "en": "Temple visit guide" },
+    "author": { "hi": "मंदिर में क्या करें, क्या बोलें", "en": "What to do and say in the temple" },
+    "unit": { "hi": "चरण", "en": "Step" },
+    "count": 14,
+    "numberMark": false,
+    "aliases": ["mandir", "temple", "darshan vidhi", "mandir darshan", "nissahi", "gandhodak", "pradakshina", "निःसहि", "गन्धोदक", "प्रदक्षिणा", "मंदिर"],
+    "source": {
+      "hi": "यह मार्गदर्शन इसी ऐप के लिए दिगम्बर परम्परा के अनुसार लिखा गया है। मंदिरों की रीति में थोड़ा अंतर हो सकता है।",
+      "en": "This guide was written for this app following Digambar tradition. Temple customs may differ a little."
+    }
+  },
+  {
+    "id": "pooja-vidhi",
+    "file": "content/pooja-vidhi.txt",
+    "category": "vidhi",
+    "title": { "hi": "पूजा विधि", "en": "Pooja guide" },
+    "author": { "hi": "अष्ट द्रव्य पूजा, चरण-दर-चरण", "en": "Ashta dravya pooja, step by step" },
+    "unit": { "hi": "चरण", "en": "Step" },
+    "count": 15,
+    "numberMark": false,
+    "aliases": ["pooja", "puja", "pooja vidhi", "puja vidhi", "ashta dravya", "ashtadravya", "thali", "sthapana", "arghya", "पूजा", "अष्ट द्रव्य", "स्थापना", "अर्घ्य", "थाली"],
+    "source": {
+      "hi": "यह मार्गदर्शन इसी ऐप के लिए दिगम्बर परम्परा के अनुसार लिखा गया है। मंदिरों की रीति में थोड़ा अंतर हो सकता है।",
+      "en": "This guide was written for this app following Digambar tradition. Temple customs may differ a little."
     }
   }
 ]

@@ -7,7 +7,10 @@ Jain scriptures in large, easy-to-read text, made for elders.
 ## What it does
 
 - Choose Hindi or English on first launch, and switch any time from the home screen or Settings.
-- One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons. Swipes and arrow keys work too.
+- Today's date and Jain tithi on the home screen; tap it for the next 7 days, with अष्टमी, चतुर्दशी and festivals marked. Calculated on the phone (sunrise in Delhi, purnimanta months).
+- मंदिर दर्शन विधि and पूजा विधि: step-by-step temple and ashta-dravya pooja guides with every mantra and drawings (thali, ठौना with three cloves, swastik, pradakshina).
+- "चित्र से समझें": diagrams that explain the meaning of key sutras and verses.
+- One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons; short sutras are grouped five or six to a screen. Swipes and arrow keys work too.
 - Remembers where you stopped, and shows "पढ़ना जारी रखें" (Continue reading) on the home screen.
 - Large text by default, with a text size setting, plus day and night colours.
 - "सुनें" (Listen) reads each verse aloud in a Hindi voice and moves to the next one automatically.
@@ -20,16 +23,18 @@ Jain scriptures in large, easy-to-read text, made for elders.
 | Book | Text |
 | --- | --- |
 | णमोकार मंत्र एवं मंगल पाठ | Prakrit original, with Hindi and English meanings |
+| दर्शन पाठ | Sanskrit, 13 verses |
 | भक्तामर स्तोत्र | Sanskrit original, Digambar tradition, 48 verses |
-| तत्त्वार्थसूत्र | Sanskrit original, Digambar recension, 10 chapters, 357 sutras |
+| बारह भावना | Pt. Bhudhardas, 13 dohas |
+| तत्त्वार्थसूत्र | Sanskrit original, Digambar recension, 10 chapters, 357 sutras, with 20 explanatory diagrams |
+| मंदिर दर्शन विधि | Temple visit guide, 14 steps (Hindi and English) |
+| पूजा विधि | Ashta-dravya pooja guide, 15 steps (Hindi and English) |
 
 Sources are listed in the app under Settings → आभार (Credits).
 
 ## Fixing or adding text
 
 All texts are plain text files in [`content/`](content/). You can edit them directly on GitHub. See [`content/README.md`](content/README.md) for the format.
-
-To report a mistake without editing, tap "पाठ में गलती? बताएँ" (Mistake in the text? Report it) under any verse. This opens a GitHub issue with the verse already filled in.
 
 ## Running it on your computer
 
@@ -49,6 +54,8 @@ Then open http://localhost:8765.
 | `js/app.js` | Screens, reader, search, read-aloud, settings |
 | `js/strings.js` | Every word shown in the app, in Hindi and English |
 | `js/translit.js` | Devanagari to Roman letters |
+| `js/panchang.js` | Tithi calculation (sun and moon positions, sunrise) |
+| `js/drawings.js` | Drawings for the temple and pooja guides |
 | `js/icons.js` | Icons (Tabler Icons, MIT) |
 | `css/app.css` | Styles, including day and night colours |
 | `content/` | Book list (`books.json`) and the texts |

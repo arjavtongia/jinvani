@@ -10,22 +10,36 @@ Each book is a plain text file. Open the file on GitHub, tap the pencil icon, ma
 # इस तरह की पंक्ति टिप्पणी है, ऐप में नहीं दिखती।
 ## प्रथम अध्याय | Chapter 1          ← नया अध्याय (हिंदी नाम | English name)
 
+@ 19-20 | विषय | English topic       ← (चाहें तो) मूल गाथा-नंबर और विषय
 पहले श्लोक की पहली पंक्ति
 पहले श्लोक की दूसरी पंक्ति
-अर्थ: हिंदी अर्थ (चाहें तो)
-Meaning: English meaning (optional)
+पद्य: हिंदी पद्यानुवाद की एक पंक्ति
+अन्वयार्थ: शब्दार्थ, जिसमें [मूल शब्द] कोष्ठक में
+अर्थ: हिंदी अर्थ
+भावार्थ: सार
+Meaning: English meaning
+गद्य: हिंदी गद्य का एक अनुच्छेद
+Prose: English paragraph
 
 दूसरा श्लोक…
 ```
 
 - हर श्लोक या सूत्र के बीच **एक खाली पंक्ति** रखें। Leave **one blank line** between verses.
-- श्लोक का नंबर न लिखें। ऐप अपने आप ॥ १ ॥, ॥ २ ॥ लगाता है। Don't type verse numbers; the app adds them.
+- श्लोक का नंबर न लिखें। ऐप अपने आप ॥ 1 ॥, ॥ 2 ॥ लगाता है (अगर `numberMark` चालू है)। Don't type verse numbers; the app adds them.
+- अंक हमेशा अंग्रेज़ी में दिखते हैं (1, 2, 3)। Numbers are always shown in English digits.
 - `##` वाली पंक्तियाँ तभी लिखें जब ग्रंथ में अध्याय हों। Use `##` lines only for books with chapters.
+- छोटे, एक पंक्ति वाले सूत्र अपने आप एक पन्ने पर 5–6 एक साथ दिखते हैं। Short one-line sutras are grouped on one screen automatically.
+
+## चित्र · Pictures
+
+`chitra.json` में हर ग्रंथ के "चित्र से समझें" हैं। `"at"` में श्लोक/सूत्र का क्रमांक (पूरे ग्रंथ में) लिखें। प्रकार: `sum` (जोड़), `list` (सूची), `flow` (क्रम), `tree` (भेद), `stack` (परतें), `drawing` (`js/drawings.js` का चित्र)।
+
+`chitra.json` holds the explanatory pictures for each book. `"at"` is the verse position in the whole book. Types: `sum`, `list`, `flow`, `tree`, `stack`, and `drawing` (a drawing from `js/drawings.js`).
 
 ## नया ग्रंथ जोड़ना · Adding a new book
 
 1. Add a new `.txt` file here, in the format above.
-2. Add an entry to `books.json` with its `id`, `file`, `title`, `author`, `unit` and `source`. Copy an existing entry as a starting point. Add `sectionUnit` only if the book has chapters.
-3. Add the file name to the `FILES` list in `sw.js` and change `VERSION` there (for example `jinvani-v2`), so it also works offline.
+2. Add an entry to `books.json` with its `id`, `file`, `category`, `title`, `author`, `unit`, `count` and `source`. Copy an existing entry as a starting point. Add `sectionUnit` only if the book has chapters. Categories are listed in `categories.json`.
+3. Add the file name to the `FILES` list in `sw.js` and change `VERSION` there, so it also works offline.
 
-Only add texts that are free to share: old originals, or texts whose owner has given permission. Always fill in `source` so the book is credited on the Credits page.
+Only add texts that are free to share, or that you have permission to use.

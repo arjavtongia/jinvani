@@ -1,0 +1,592 @@
+{
+  "tattvarth-sutra": [
+    {
+      "at": [1],
+      "type": "sum",
+      "title": { "hi": "मोक्ष का मार्ग", "en": "The path to liberation" },
+      "items": [
+        { "hi": "सम्यग्दर्शन", "en": "Samyagdarshan", "sub": { "hi": "सच्चा श्रद्धान", "en": "right faith" } },
+        { "hi": "सम्यग्ज्ञान", "en": "Samyaggyan", "sub": { "hi": "सच्चा ज्ञान", "en": "right knowledge" } },
+        { "hi": "सम्यक्चारित्र", "en": "Samyakcharitra", "sub": { "hi": "सच्चा आचरण", "en": "right conduct" } }
+      ],
+      "result": { "hi": "मोक्षमार्ग", "en": "Mokshamarg", "sub": { "hi": "मोक्ष का मार्ग", "en": "path to liberation" } },
+      "gist": {
+        "hi": "तीनों एक साथ हों, तभी मोक्ष का मार्ग बनता है। इन तीनों को 'रत्नत्रय' कहते हैं।",
+        "en": "Only all three together make the path to liberation. Together they are called the Three Jewels (Ratnatraya)."
+      }
+    },
+    {
+      "at": [4],
+      "type": "list",
+      "title": { "hi": "सात तत्त्व", "en": "The seven tattvas (realities)" },
+      "items": [
+        { "hi": "जीव", "en": "Jiva", "sub": { "hi": "चेतन, जो जानता-देखता है", "en": "the living soul, which knows and sees" } },
+        { "hi": "अजीव", "en": "Ajiva", "sub": { "hi": "जड़, जिसमें चेतना नहीं", "en": "non-living, without consciousness" } },
+        { "hi": "आस्रव", "en": "Asrav", "sub": { "hi": "कर्मों का आत्मा की ओर आना", "en": "karma flowing towards the soul" } },
+        { "hi": "बन्ध", "en": "Bandh", "sub": { "hi": "कर्मों का आत्मा से बँध जाना", "en": "karma binding with the soul" } },
+        { "hi": "संवर", "en": "Samvar", "sub": { "hi": "नए कर्मों का आना रुकना", "en": "stopping new karma from coming" } },
+        { "hi": "निर्जरा", "en": "Nirjara", "sub": { "hi": "बँधे कर्मों का थोड़ा-थोड़ा झड़ना", "en": "bound karma falling away, little by little" } },
+        { "hi": "मोक्ष", "en": "Moksha", "sub": { "hi": "सब कर्मों से पूरी तरह छूट जाना", "en": "complete freedom from all karma" } }
+      ],
+      "gist": {
+        "hi": "आस्रव और बन्ध संसार के कारण हैं; संवर और निर्जरा मोक्ष के कारण हैं।",
+        "en": "Inflow and bondage keep the soul in the world; stopping and shedding karma lead to liberation."
+      }
+    },
+    {
+      "at": [5],
+      "type": "list",
+      "title": { "hi": "चार निक्षेप — किसी शब्द को समझने के चार तरीके", "en": "Four nikshepas — four senses in which a word is used" },
+      "items": [
+        { "hi": "नाम", "en": "Naam", "sub": { "hi": "केवल नाम से, जैसे किसी बालक का नाम 'राजा' रखना", "en": "by name only, like naming a child 'Raja'" } },
+        { "hi": "स्थापना", "en": "Sthapana", "sub": { "hi": "मूर्ति या चित्र में, जैसे प्रतिमा में भगवान की स्थापना", "en": "in an image, like the Lord installed in an idol" } },
+        { "hi": "द्रव्य", "en": "Dravya", "sub": { "hi": "आगे या पहले की अवस्था से, जैसे युवराज को 'राजा' कहना", "en": "by a past or future state, like calling the prince 'king'" } },
+        { "hi": "भाव", "en": "Bhaav", "sub": { "hi": "वर्तमान अवस्था से, जैसे राज करने वाले को 'राजा' कहना", "en": "by the present state, like calling the reigning ruler 'king'" } }
+      ],
+      "gist": {
+        "hi": "किसी बात का सही अर्थ समझने के लिए देखें कि वह किस अपेक्षा से कही गई है।",
+        "en": "To understand something correctly, see in which sense it is being said."
+      }
+    },
+    {
+      "at": [9],
+      "type": "tree",
+      "title": { "hi": "पाँच ज्ञान", "en": "The five kinds of knowledge" },
+      "root": { "hi": "ज्ञान", "en": "Gyan (knowledge)" },
+      "branches": [
+        {
+          "head": { "hi": "परोक्ष", "en": "Paroksha", "sub": { "hi": "इन्द्रिय और मन की सहायता से", "en": "indirect: through senses and mind" } },
+          "items": [
+            { "hi": "मति", "en": "Mati", "sub": { "hi": "इन्द्रियों से जानना", "en": "knowing through the senses" } },
+            { "hi": "श्रुत", "en": "Shrut", "sub": { "hi": "शास्त्र और शब्दों से जानना", "en": "knowing through words and scripture" } }
+          ]
+        },
+        {
+          "head": { "hi": "प्रत्यक्ष", "en": "Pratyaksha", "sub": { "hi": "सीधे आत्मा से", "en": "direct: by the soul itself" } },
+          "items": [
+            { "hi": "अवधि", "en": "Avadhi", "sub": { "hi": "दूर की रूपी वस्तुएँ जानना", "en": "knowing distant material things" } },
+            { "hi": "मनःपर्यय", "en": "Manahparyay", "sub": { "hi": "दूसरों के मन की बात जानना", "en": "knowing what is in others' minds" } },
+            { "hi": "केवल", "en": "Keval", "sub": { "hi": "सब कुछ एक साथ जानना", "en": "knowing everything at once" } }
+          ]
+        }
+      ],
+      "gist": {
+        "hi": "केवलज्ञान पूर्ण ज्ञान है — इसमें सब द्रव्य और उनकी सब अवस्थाएँ एक साथ जानी जाती हैं।",
+        "en": "Kevalgyan is perfect knowledge: all substances and all their states are known at once."
+      }
+    },
+    {
+      "at": [15],
+      "type": "flow",
+      "title": { "hi": "इन्द्रिय से ज्ञान कैसे होता है — चार चरण", "en": "How we know through the senses — four steps" },
+      "items": [
+        { "hi": "अवग्रह", "en": "Avagrah", "sub": { "hi": "पहली झलक — 'कुछ है'", "en": "first glimpse: 'something is there'" } },
+        { "hi": "ईहा", "en": "Iha", "sub": { "hi": "जानने की इच्छा — 'यह क्या हो सकता है?'", "en": "wondering: 'what could it be?'" } },
+        { "hi": "अवाय", "en": "Avaay", "sub": { "hi": "निर्णय — 'यह यही है'", "en": "deciding: 'it is this'" } },
+        { "hi": "धारणा", "en": "Dharana", "sub": { "hi": "याद रखना, बाद में भी न भूलना", "en": "remembering it later" } }
+      ],
+      "gist": {
+        "hi": "जैसे दूर कुछ सफ़ेद दिखा (अवग्रह); 'बगुला है या झंडा?' (ईहा); 'पंख हिल रहे हैं, बगुला है' (अवाय); और यह बात याद रही (धारणा)।",
+        "en": "Something white is seen far away (avagrah); 'a crane or a flag?' (iha); 'its wings move, it is a crane' (avaay); and it is remembered (dharana)."
+      }
+    },
+    {
+      "at": [34],
+      "type": "list",
+      "title": { "hi": "जीव के पाँच भाव", "en": "The five states (bhaav) of the soul" },
+      "items": [
+        { "hi": "औपशमिक", "en": "Aupashamik", "tag": "2", "sub": { "hi": "कर्म के दब जाने से", "en": "from karma being suppressed" } },
+        { "hi": "क्षायिक", "en": "Kshayik", "tag": "9", "sub": { "hi": "कर्म के नष्ट हो जाने से", "en": "from karma being destroyed" } },
+        { "hi": "मिश्र (क्षायोपशमिक)", "en": "Mishra (Kshayopashamik)", "tag": "18", "sub": { "hi": "कुछ नष्ट होने, कुछ दबने से", "en": "partly destroyed, partly suppressed" } },
+        { "hi": "औदयिक", "en": "Audayik", "tag": "21", "sub": { "hi": "कर्म के उदय से", "en": "from karma coming into effect" } },
+        { "hi": "पारिणामिक", "en": "Parinamik", "tag": "3", "sub": { "hi": "स्वभाव से, कर्म की अपेक्षा बिना", "en": "natural, not caused by karma" } }
+      ],
+      "tagNote": { "hi": "अंक = भेदों की संख्या", "en": "Number = how many kinds" },
+      "gist": {
+        "hi": "जैसे गँदले पानी में मिट्टी नीचे बैठ जाए तो पानी साफ़ दिखता है (औपशमिक), और मिट्टी पूरी निकल जाए तो सदा साफ़ रहता है (क्षायिक)।",
+        "en": "Like muddy water: when the mud settles, the water looks clear (aupashamik); when the mud is removed, it stays clear for ever (kshayik)."
+      }
+    },
+    {
+      "at": [45, 56],
+      "type": "tree",
+      "title": { "hi": "संसारी जीव — इन्द्रियों के अनुसार", "en": "Worldly beings — by their senses" },
+      "root": { "hi": "संसारी जीव", "en": "Worldly beings" },
+      "branches": [
+        {
+          "head": { "hi": "स्थावर", "en": "Sthavar", "sub": { "hi": "एक इन्द्रिय (स्पर्श)", "en": "one sense (touch)" } },
+          "items": [
+            { "hi": "पृथ्वी", "en": "Earth" },
+            { "hi": "जल", "en": "Water" },
+            { "hi": "अग्नि", "en": "Fire" },
+            { "hi": "वायु", "en": "Air" },
+            { "hi": "वनस्पति", "en": "Plants" }
+          ]
+        },
+        {
+          "head": { "hi": "त्रस", "en": "Tras", "sub": { "hi": "दो से पाँच इन्द्रिय", "en": "two to five senses" } },
+          "items": [
+            { "hi": "2 इन्द्रिय", "en": "2 senses", "sub": { "hi": "लट, केंचुआ", "en": "worms" } },
+            { "hi": "3 इन्द्रिय", "en": "3 senses", "sub": { "hi": "चींटी", "en": "ants" } },
+            { "hi": "4 इन्द्रिय", "en": "4 senses", "sub": { "hi": "भौंरा, मक्खी", "en": "bees, flies" } },
+            { "hi": "5 इन्द्रिय", "en": "5 senses", "sub": { "hi": "मनुष्य, पशु, देव, नारकी", "en": "humans, animals, gods, hell beings" } }
+          ]
+        }
+      ],
+      "gist": {
+        "hi": "मिट्टी, पानी, अग्नि, हवा और पेड़-पौधों में भी जीव हैं — इसलिए अहिंसा में इनका भी ध्यान रखा जाता है।",
+        "en": "Earth, water, fire, air and plants also hold life — so non-violence takes care of them too."
+      }
+    },
+    {
+      "at": [69],
+      "type": "list",
+      "title": { "hi": "पाँच शरीर", "en": "The five kinds of body" },
+      "items": [
+        { "hi": "औदारिक", "en": "Audarik", "sub": { "hi": "मनुष्य और तिर्यंचों का स्थूल शरीर", "en": "the gross body of humans and animals" } },
+        { "hi": "वैक्रियिक", "en": "Vaikriyik", "sub": { "hi": "देव और नारकियों का, जो रूप बदल सकता है", "en": "of gods and hell beings; it can change form" } },
+        { "hi": "आहारक", "en": "Aharak", "sub": { "hi": "विशेष मुनि का, शंका-समाधान के लिए बनता है", "en": "formed by certain munis to resolve a doubt" } },
+        { "hi": "तैजस", "en": "Taijas", "sub": { "hi": "शरीर को तेज (ऊर्जा) देने वाला", "en": "gives the body its energy and warmth" } },
+        { "hi": "कार्मण", "en": "Karman", "sub": { "hi": "कर्मों से बना सूक्ष्म शरीर", "en": "the subtle body made of karma" } }
+      ],
+      "gist": {
+        "hi": "आगे-आगे के शरीर अधिक सूक्ष्म हैं। तैजस और कार्मण शरीर हर संसारी जीव के साथ सदा रहते हैं।",
+        "en": "Each body in the list is subtler than the one before. Every worldly soul always has the taijas and karman bodies."
+      }
+    },
+    {
+      "at": [87],
+      "type": "stack",
+      "title": { "hi": "सात नरक भूमियाँ — एक के नीचे एक", "en": "The seven hell-lands, one below another" },
+      "items": [
+        { "hi": "रत्नप्रभा", "en": "Ratnaprabha", "sub": { "hi": "30 लाख बिल", "en": "3 million abodes" } },
+        { "hi": "शर्कराप्रभा", "en": "Sharkaraprabha", "sub": { "hi": "25 लाख बिल", "en": "2.5 million abodes" } },
+        { "hi": "बालुकाप्रभा", "en": "Valukaprabha", "sub": { "hi": "15 लाख बिल", "en": "1.5 million abodes" } },
+        { "hi": "पंकप्रभा", "en": "Pankaprabha", "sub": { "hi": "10 लाख बिल", "en": "1 million abodes" } },
+        { "hi": "धूमप्रभा", "en": "Dhumaprabha", "sub": { "hi": "3 लाख बिल", "en": "300,000 abodes" } },
+        { "hi": "तमःप्रभा", "en": "Tamahprabha", "sub": { "hi": "99,995 बिल", "en": "99,995 abodes" } },
+        { "hi": "महातमःप्रभा", "en": "Mahatamahprabha", "sub": { "hi": "5 बिल", "en": "5 abodes" } }
+      ],
+      "gist": {
+        "hi": "नीचे-नीचे की भूमियों में दुःख अधिक है। सब मिलाकर 84 लाख बिल हैं।",
+        "en": "The lower the land, the greater the suffering. Altogether there are 8.4 million abodes."
+      }
+    },
+    {
+      "at": [168, 184],
+      "type": "list",
+      "title": { "hi": "छह द्रव्य — जिनसे यह लोक बना है", "en": "The six substances that make up the universe" },
+      "items": [
+        { "hi": "जीव", "en": "Jiva", "sub": { "hi": "चेतन, जो जानता-देखता है", "en": "conscious; it knows and sees" } },
+        { "hi": "पुद्गल", "en": "Pudgal", "sub": { "hi": "जिसमें स्पर्श, रस, गन्ध, वर्ण हो — जैसे शरीर, वस्तुएँ", "en": "matter with touch, taste, smell and colour, like bodies and objects" } },
+        { "hi": "धर्म", "en": "Dharma", "sub": { "hi": "चलने में सहायक — जैसे मछली के लिए जल", "en": "helps motion, as water helps a fish swim" } },
+        { "hi": "अधर्म", "en": "Adharma", "sub": { "hi": "ठहरने में सहायक — जैसे पथिक के लिए छाया", "en": "helps rest, as shade helps a traveller stop" } },
+        { "hi": "आकाश", "en": "Akash", "sub": { "hi": "सबको स्थान देता है", "en": "gives space to everything" } },
+        { "hi": "काल", "en": "Kaal", "sub": { "hi": "परिवर्तन (वर्तना) में सहायक", "en": "helps change happen (time)" } }
+      ],
+      "gist": {
+        "hi": "यहाँ 'धर्म' और 'अधर्म' का अर्थ पुण्य-पाप नहीं, बल्कि गति और स्थिति में सहायक द्रव्य है।",
+        "en": "Here 'Dharma' and 'Adharma' do not mean merit and sin; they are substances that help motion and rest."
+      }
+    },
+    {
+      "at": [197],
+      "type": "sum",
+      "title": { "hi": "'सत्' (जो है) की पहचान", "en": "What it means to exist (sat)" },
+      "items": [
+        { "hi": "उत्पाद", "en": "Utpad", "sub": { "hi": "नई अवस्था बनना", "en": "a new form arises" } },
+        { "hi": "व्यय", "en": "Vyay", "sub": { "hi": "पुरानी अवस्था मिटना", "en": "the old form ends" } },
+        { "hi": "ध्रौव्य", "en": "Dhrauvya", "sub": { "hi": "मूल वस्तु बनी रहना", "en": "the substance remains" } }
+      ],
+      "result": { "hi": "सत्", "en": "Sat", "sub": { "hi": "जो है", "en": "what exists" } },
+      "gist": {
+        "hi": "जैसे सोने का कंगन तोड़कर हार बनाया — कंगन मिटा (व्यय), हार बना (उत्पाद), सोना वही रहा (ध्रौव्य)।",
+        "en": "A gold bracelet is melted into a necklace: the bracelet ends (vyay), the necklace arises (utpad), the gold remains (dhrauvya)."
+      }
+    },
+    {
+      "at": [210],
+      "type": "flow",
+      "title": { "hi": "कर्म कैसे आते हैं", "en": "How karma comes in" },
+      "items": [
+        { "hi": "योग", "en": "Yog", "sub": { "hi": "मन, वचन और काय (शरीर) की क्रिया", "en": "activity of mind, speech and body" } },
+        { "hi": "आस्रव", "en": "Asrav", "sub": { "hi": "इसी क्रिया से कर्म आते हैं", "en": "through this activity karma flows in" } },
+        { "hi": "शुभ से पुण्य, अशुभ से पाप", "en": "Good brings merit, bad brings sin", "sub": { "hi": "जैसी क्रिया, वैसा कर्म", "en": "as the activity, so the karma" } }
+      ],
+      "gist": {
+        "hi": "जैसे नाली से तालाब में पानी आता है, वैसे ही योग से आत्मा में कर्म आते हैं।",
+        "en": "As water flows into a pond through a channel, karma flows into the soul through activity (yog)."
+      }
+    },
+    {
+      "at": [237],
+      "type": "list",
+      "title": { "hi": "पाँच व्रत — पाँच पापों का त्याग", "en": "Five vows — giving up five sins" },
+      "items": [
+        { "hi": "हिंसा → अहिंसा", "en": "Violence → Ahimsa", "sub": { "hi": "किसी जीव को कष्ट न देना", "en": "not hurting any living being" } },
+        { "hi": "झूठ → सत्य", "en": "Lying → Satya", "sub": { "hi": "सच बोलना", "en": "speaking the truth" } },
+        { "hi": "चोरी → अचौर्य", "en": "Stealing → Achaurya", "sub": { "hi": "बिना दिया हुआ न लेना", "en": "not taking what is not given" } },
+        { "hi": "कुशील → ब्रह्मचर्य", "en": "Unchastity → Brahmacharya", "sub": { "hi": "शील का पालन", "en": "chastity" } },
+        { "hi": "परिग्रह → अपरिग्रह", "en": "Possessiveness → Aparigraha", "sub": { "hi": "ममत्व और संग्रह का त्याग", "en": "giving up attachment and hoarding" } }
+      ],
+      "gist": {
+        "hi": "थोड़ा त्याग (एकदेश) अणुव्रत है — गृहस्थ के लिए; पूरा त्याग (सर्वदेश) महाव्रत है — मुनि के लिए।",
+        "en": "Partial giving up is anuvrat, for householders; complete giving up is mahavrat, for munis."
+      }
+    },
+    {
+      "at": [276],
+      "type": "list",
+      "title": { "hi": "कर्म-बन्ध के पाँच कारण", "en": "Five causes of karmic bondage" },
+      "items": [
+        { "hi": "मिथ्यादर्शन", "en": "Mithyadarshan", "sub": { "hi": "गलत श्रद्धा", "en": "wrong belief" } },
+        { "hi": "अविरति", "en": "Avirati", "sub": { "hi": "पापों का त्याग न करना", "en": "not giving up sins" } },
+        { "hi": "प्रमाद", "en": "Pramad", "sub": { "hi": "धर्म में असावधानी", "en": "carelessness in dharma" } },
+        { "hi": "कषाय", "en": "Kashay", "sub": { "hi": "क्रोध, मान, माया, लोभ", "en": "anger, pride, deceit, greed" } },
+        { "hi": "योग", "en": "Yog", "sub": { "hi": "मन, वचन, काय की क्रिया", "en": "activity of mind, speech and body" } }
+      ],
+      "gist": {
+        "hi": "इन कारणों को जितना घटाएँ, उतना कम कर्म बँधता है।",
+        "en": "The more these causes are reduced, the less karma binds."
+      }
+    },
+    {
+      "at": [279],
+      "type": "list",
+      "title": { "hi": "आठ कर्म", "en": "The eight karmas" },
+      "items": [
+        { "hi": "ज्ञानावरण", "en": "Gyanavaran", "tag": "5", "sub": { "hi": "ज्ञान को ढकता है", "en": "veils knowledge" } },
+        { "hi": "दर्शनावरण", "en": "Darshanavaran", "tag": "9", "sub": { "hi": "दर्शन (देखने) को ढकता है", "en": "veils perception" } },
+        { "hi": "वेदनीय", "en": "Vedaniya", "tag": "2", "sub": { "hi": "सुख-दुःख का अनुभव कराता है", "en": "brings pleasure and pain" } },
+        { "hi": "मोहनीय", "en": "Mohaniya", "tag": "28", "sub": { "hi": "मोहित करता है — सबसे प्रबल", "en": "deludes the soul; the strongest" } },
+        { "hi": "आयु", "en": "Ayu", "tag": "4", "sub": { "hi": "किसी भव में कितना जीना, यह तय करता है", "en": "fixes the length of life in a birth" } },
+        { "hi": "नाम", "en": "Naam", "tag": "42", "sub": { "hi": "शरीर, रूप आदि की रचना करता है", "en": "shapes the body and its form" } },
+        { "hi": "गोत्र", "en": "Gotra", "tag": "2", "sub": { "hi": "उच्च या नीच कुल", "en": "high or low family status" } },
+        { "hi": "अन्तराय", "en": "Antaray", "tag": "5", "sub": { "hi": "दान, लाभ आदि में बाधा डालता है", "en": "obstructs giving, gain and more" } }
+      ],
+      "tagNote": { "hi": "अंक = भेदों की संख्या", "en": "Number = how many kinds" },
+      "gist": {
+        "hi": "ज्ञानावरण, दर्शनावरण, मोहनीय और अन्तराय — ये चार 'घातिया' कर्म आत्मा के गुणों का घात करते हैं; बाकी चार 'अघातिया' हैं।",
+        "en": "Gyanavaran, darshanavaran, mohaniya and antaray are the four 'ghatiya' karmas that obscure the soul's qualities; the other four are 'aghatiya'."
+      }
+    },
+    {
+      "at": [307],
+      "type": "list",
+      "title": { "hi": "दस धर्म (दशलक्षण)", "en": "The ten virtues (Dashlakshan)" },
+      "items": [
+        { "hi": "उत्तम क्षमा", "en": "Uttam Kshama", "sub": { "hi": "क्रोध न करना", "en": "forgiveness, free of anger" } },
+        { "hi": "उत्तम मार्दव", "en": "Uttam Mardav", "sub": { "hi": "अहंकार न करना", "en": "humility, free of pride" } },
+        { "hi": "उत्तम आर्जव", "en": "Uttam Arjav", "sub": { "hi": "सरलता, कपट न करना", "en": "straightforwardness, free of deceit" } },
+        { "hi": "उत्तम शौच", "en": "Uttam Shauch", "sub": { "hi": "लोभ छोड़ना, मन की पवित्रता", "en": "purity, free of greed" } },
+        { "hi": "उत्तम सत्य", "en": "Uttam Satya", "sub": { "hi": "सच और हितकारी बोलना", "en": "speaking truly and kindly" } },
+        { "hi": "उत्तम संयम", "en": "Uttam Sanyam", "sub": { "hi": "इन्द्रियों पर नियंत्रण, जीवों की रक्षा", "en": "self-control and protecting life" } },
+        { "hi": "उत्तम तप", "en": "Uttam Tap", "sub": { "hi": "इच्छाओं को रोकना", "en": "austerity, restraining desires" } },
+        { "hi": "उत्तम त्याग", "en": "Uttam Tyag", "sub": { "hi": "दान देना, छोड़ना", "en": "giving and letting go" } },
+        { "hi": "उत्तम आकिंचन्य", "en": "Uttam Akinchanya", "sub": { "hi": "'मेरा कुछ भी नहीं' यह भाव", "en": "the feeling 'nothing is mine'" } },
+        { "hi": "उत्तम ब्रह्मचर्य", "en": "Uttam Brahmacharya", "sub": { "hi": "आत्मा में लीन रहना", "en": "remaining absorbed in the self" } }
+      ],
+      "gist": {
+        "hi": "दशलक्षण पर्व के दस दिन इन्हीं दस धर्मों की आराधना के होते हैं।",
+        "en": "The ten days of the Dashlakshan festival are devoted to these ten virtues."
+      }
+    },
+    {
+      "at": [308],
+      "type": "list",
+      "title": { "hi": "बारह भावनाएँ (अनुप्रेक्षा)", "en": "The twelve reflections (anupreksha)" },
+      "items": [
+        { "hi": "अनित्य", "en": "Anitya", "sub": { "hi": "सब कुछ नश्वर है", "en": "everything passes away" } },
+        { "hi": "अशरण", "en": "Asharan", "sub": { "hi": "मृत्यु से कोई बचा नहीं सकता", "en": "no one can save us from death" } },
+        { "hi": "संसार", "en": "Sansar", "sub": { "hi": "जन्म-मरण का चक्र दुःखमय है", "en": "the cycle of birth and death is painful" } },
+        { "hi": "एकत्व", "en": "Ekatva", "sub": { "hi": "जीव अकेला आता है, अकेला जाता है", "en": "the soul comes and goes alone" } },
+        { "hi": "अन्यत्व", "en": "Anyatva", "sub": { "hi": "शरीर और आत्मा अलग हैं", "en": "body and soul are separate" } },
+        { "hi": "अशुचि", "en": "Ashuchi", "sub": { "hi": "शरीर अपवित्र है", "en": "the body is impure" } },
+        { "hi": "आस्रव", "en": "Asrav", "sub": { "hi": "कर्म कैसे आते हैं", "en": "how karma flows in" } },
+        { "hi": "संवर", "en": "Samvar", "sub": { "hi": "कर्म कैसे रुकें", "en": "how karma can be stopped" } },
+        { "hi": "निर्जरा", "en": "Nirjara", "sub": { "hi": "कर्म कैसे झड़ें", "en": "how karma falls away" } },
+        { "hi": "लोक", "en": "Lok", "sub": { "hi": "लोक का स्वरूप", "en": "the nature of the universe" } },
+        { "hi": "बोधिदुर्लभ", "en": "Bodhidurlabh", "sub": { "hi": "सच्चा ज्ञान मिलना कठिन है", "en": "true insight is rare" } },
+        { "hi": "धर्म", "en": "Dharma", "sub": { "hi": "धर्म ही सच्चा सहारा है", "en": "dharma is the true refuge" } }
+      ],
+      "gist": {
+        "hi": "इनका बार-बार चिन्तन करने से वैराग्य बढ़ता है।",
+        "en": "Reflecting on these again and again strengthens detachment."
+      }
+    },
+    {
+      "at": [320],
+      "type": "tree",
+      "title": { "hi": "बारह तप", "en": "The twelve austerities" },
+      "root": { "hi": "तप", "en": "Tap (austerity)" },
+      "branches": [
+        {
+          "head": { "hi": "बाह्य तप", "en": "External", "sub": { "hi": "शरीर से जुड़े", "en": "of the body" } },
+          "items": [
+            { "hi": "अनशन", "en": "Anashan", "sub": { "hi": "उपवास", "en": "fasting" } },
+            { "hi": "अवमौदर्य", "en": "Avamaudarya", "sub": { "hi": "भूख से कम खाना", "en": "eating less than one's hunger" } },
+            { "hi": "वृत्तिपरिसंख्यान", "en": "Vrittiparisankhyan", "sub": { "hi": "भोजन के लिए नियम लेना", "en": "taking vows about food" } },
+            { "hi": "रसपरित्याग", "en": "Rasparityag", "sub": { "hi": "घी, दूध आदि रसों का त्याग", "en": "giving up rich foods" } },
+            { "hi": "विविक्तशय्यासन", "en": "Viviktashayyasan", "sub": { "hi": "एकान्त में रहना", "en": "staying in solitude" } },
+            { "hi": "कायक्लेश", "en": "Kayaklesh", "sub": { "hi": "शरीर का कष्ट सहना", "en": "enduring bodily hardship" } }
+          ]
+        },
+        {
+          "head": { "hi": "आभ्यन्तर तप", "en": "Internal", "sub": { "hi": "मन से जुड़े", "en": "of the mind" } },
+          "items": [
+            { "hi": "प्रायश्चित्त", "en": "Prayashchitt", "sub": { "hi": "दोषों का शोधन", "en": "atoning for faults" } },
+            { "hi": "विनय", "en": "Vinay", "sub": { "hi": "आदर-भाव", "en": "reverence" } },
+            { "hi": "वैयावृत्त्य", "en": "Vaiyavritya", "sub": { "hi": "सेवा", "en": "service" } },
+            { "hi": "स्वाध्याय", "en": "Swadhyay", "sub": { "hi": "शास्त्र पढ़ना", "en": "studying scripture" } },
+            { "hi": "व्युत्सर्ग", "en": "Vyutsarg", "sub": { "hi": "ममत्व छोड़ना", "en": "giving up attachment" } },
+            { "hi": "ध्यान", "en": "Dhyan", "sub": { "hi": "एकाग्र चिन्तन", "en": "meditation" } }
+          ]
+        }
+      ],
+      "gist": {
+        "hi": "बाहरी तप भीतरी तप में सहायक है। शास्त्र पढ़ना (स्वाध्याय) भी एक तप है।",
+        "en": "External austerity supports internal austerity. Studying scripture (swadhyay) is itself an austerity."
+      }
+    },
+    {
+      "at": [329],
+      "type": "tree",
+      "title": { "hi": "चार ध्यान", "en": "The four kinds of meditation" },
+      "root": { "hi": "ध्यान", "en": "Dhyan" },
+      "branches": [
+        {
+          "head": { "hi": "संसार के कारण", "en": "Lead to bondage" },
+          "items": [
+            { "hi": "आर्त", "en": "Aart", "sub": { "hi": "दुःख और चिन्ता में डूबा मन", "en": "a mind sunk in sorrow and worry" } },
+            { "hi": "रौद्र", "en": "Raudra", "sub": { "hi": "क्रूर और हिंसक विचार", "en": "cruel, violent thoughts" } }
+          ]
+        },
+        {
+          "head": { "hi": "मोक्ष के कारण", "en": "Lead to liberation" },
+          "items": [
+            { "hi": "धर्म्य", "en": "Dharmya", "sub": { "hi": "धर्म का चिन्तन", "en": "contemplating dharma" } },
+            { "hi": "शुक्ल", "en": "Shukla", "sub": { "hi": "निर्मल, आत्मा में लीन ध्यान", "en": "pure meditation, absorbed in the self" } }
+          ]
+        }
+      ],
+      "gist": {
+        "hi": "चिन्ता करना भी एक ध्यान है — आर्तध्यान। इसे छोड़कर धर्मध्यान करें।",
+        "en": "Worrying is also a kind of meditation, aartdhyan. Leave it and practise dharmyadhyan."
+      }
+    },
+    {
+      "at": [349],
+      "type": "flow",
+      "title": { "hi": "केवलज्ञान से मोक्ष तक", "en": "From omniscience to liberation" },
+      "items": [
+        { "hi": "मोहनीय कर्म का नाश", "en": "Mohaniya karma destroyed" },
+        { "hi": "फिर ज्ञानावरण, दर्शनावरण और अन्तराय का नाश", "en": "then gyanavaran, darshanavaran and antaray destroyed" },
+        { "hi": "केवलज्ञान प्रकट होता है", "en": "Kevalgyan (omniscience) appears" },
+        { "hi": "शेष सब कर्मों का नाश — मोक्ष", "en": "all remaining karma destroyed: moksha" },
+        { "hi": "आत्मा ऊपर लोक के अन्त तक जाकर सिद्ध रूप में विराजती है", "en": "the soul rises to the top of the universe and abides there as a Siddha" }
+      ],
+      "gist": {
+        "hi": "जैसे मिट्टी का लेप हटते ही तूँबी पानी के ऊपर आ जाती है, वैसे ही कर्म हटते ही आत्मा ऊपर जाती है।",
+        "en": "As a gourd rises to the top of the water once its coat of mud is gone, the soul rises once its karma is gone."
+      }
+    }
+  ],
+  "mandir-darshan": [
+    {
+      "at": [1],
+      "type": "flow",
+      "title": { "hi": "मंदिर दर्शन का क्रम", "en": "The order of a temple visit" },
+      "items": [
+        { "hi": "'निःसहि' बोलकर प्रवेश", "en": "Enter saying 'Nihsahi'" },
+        { "hi": "'ॐ जय जय जय, नमोऽस्तु' और णमोकार मंत्र", "en": "'Om jay jay jay, namostu' and the Namokar Mantra" },
+        { "hi": "दर्शन पाठ", "en": "Darshan prayer" },
+        { "hi": "अक्षत से स्वस्तिक", "en": "Swastik in rice" },
+        { "hi": "तीन प्रदक्षिणा", "en": "Three rounds" },
+        { "hi": "पंचांग नमस्कार", "en": "Five-limbed bow" },
+        { "hi": "गन्धोदक", "en": "Gandhodak" },
+        { "hi": "जाप और स्वाध्याय", "en": "Jaap and study" },
+        { "hi": "'असहि' बोलकर विदा", "en": "Leave saying 'Asahi'" }
+      ],
+      "gist": {
+        "hi": "थोड़ा समय हो तो भी प्रवेश, दर्शन, नमस्कार और विदा — इतना अवश्य करें।",
+        "en": "Even when short of time, do at least this: enter, have darshan, bow, and take leave."
+      }
+    },
+    {
+      "at": [6],
+      "type": "drawing",
+      "drawing": "swastik",
+      "title": { "hi": "अक्षत से स्वस्तिक — इसका अर्थ", "en": "The swastik in rice — what it means" },
+      "items": [
+        { "hi": "अर्धचन्द्र पर बिंदु", "en": "Dot on the crescent", "sub": { "hi": "सिद्धशिला पर विराजमान सिद्ध भगवान — मोक्ष", "en": "the Siddha on the Siddhashila: liberation" } },
+        { "hi": "तीन बिंदु", "en": "Three dots", "sub": { "hi": "रत्नत्रय — सम्यग्दर्शन, सम्यग्ज्ञान, सम्यक्चारित्र", "en": "the Three Jewels: right faith, knowledge and conduct" } },
+        { "hi": "स्वस्तिक", "en": "Swastik", "sub": { "hi": "चार गतियाँ — देव, मनुष्य, तिर्यंच, नरक", "en": "the four states of life: gods, humans, animals and plants, hell beings" } }
+      ],
+      "gist": {
+        "hi": "रत्नत्रय के द्वारा चारों गतियों के भ्रमण से छूटकर सिद्धशिला पर पहुँचें — यही भावना है।",
+        "en": "Through the Three Jewels, may I leave the wandering in the four states and reach the Siddhashila. That is the wish."
+      }
+    },
+    {
+      "at": [7],
+      "type": "drawing",
+      "drawing": "pradakshina",
+      "title": { "hi": "तीन प्रदक्षिणा कैसे करें", "en": "How to make the three rounds" },
+      "items": [
+        { "hi": "वेदी", "en": "Altar", "sub": { "hi": "जहाँ भगवान विराजमान हैं", "en": "where the Lord is seated" } },
+        { "hi": "तीन परिक्रमा", "en": "Three rounds", "sub": { "hi": "घड़ी की सुई की दिशा में — भगवान सदा दाहिनी ओर", "en": "clockwise, with the Lord always on your right" } },
+        { "hi": "यहाँ से शुरू", "en": "Start here", "sub": { "hi": "भगवान के सामने से, और वहीं पर पूरी करें", "en": "in front of the Lord, and finish there" } }
+      ],
+      "gist": {
+        "hi": "जहाँ परिक्रमा का रास्ता न हो, वहाँ अपनी जगह पर हाथ जोड़कर भाव से वंदना करें।",
+        "en": "Where there is no path to walk around, bow with folded hands from where you stand."
+      }
+    },
+    {
+      "at": [11],
+      "type": "list",
+      "title": { "hi": "साधु-संतों को कैसे वंदना करें", "en": "How to greet the saints" },
+      "items": [
+        { "hi": "मुनि महाराज", "en": "Muni Maharaj", "sub": { "hi": "हाथ जोड़कर 'नमोऽस्तु'", "en": "with folded hands: 'Namostu'" } },
+        { "hi": "आर्यिका माताजी", "en": "Aryika Mataji", "sub": { "hi": "हाथ जोड़कर 'वंदामि'", "en": "with folded hands: 'Vandami'" } },
+        { "hi": "ऐलक, क्षुल्लक, क्षुल्लिका जी", "en": "Ailak, Kshullak, Kshullika ji", "sub": { "hi": "हाथ जोड़कर 'इच्छामि'", "en": "with folded hands: 'Ichchhami'" } }
+      ],
+      "gist": {
+        "hi": "साधुओं से बात करते समय विनय रखें, और उनके सामने ऊँचे आसन पर न बैठें।",
+        "en": "Speak to the saints with humility, and do not sit on a higher seat than them."
+      }
+    }
+  ],
+  "pooja-vidhi": [
+    {
+      "at": [3],
+      "type": "drawing",
+      "drawing": "swastik",
+      "title": { "hi": "अक्षत से स्वस्तिक — इसका अर्थ", "en": "The swastik in rice — what it means" },
+      "items": [
+        { "hi": "अर्धचन्द्र पर बिंदु", "en": "Dot on the crescent", "sub": { "hi": "सिद्धशिला पर विराजमान सिद्ध भगवान — मोक्ष", "en": "the Siddha on the Siddhashila: liberation" } },
+        { "hi": "तीन बिंदु", "en": "Three dots", "sub": { "hi": "रत्नत्रय — सम्यग्दर्शन, सम्यग्ज्ञान, सम्यक्चारित्र", "en": "the Three Jewels: right faith, knowledge and conduct" } },
+        { "hi": "स्वस्तिक", "en": "Swastik", "sub": { "hi": "चार गतियाँ — देव, मनुष्य, तिर्यंच, नरक", "en": "the four states of life: gods, humans, animals and plants, hell beings" } }
+      ],
+      "gist": {
+        "hi": "रत्नत्रय के द्वारा चारों गतियों के भ्रमण से छूटकर सिद्धशिला पर पहुँचें — यही भावना है।",
+        "en": "Through the Three Jewels, may I leave the wandering in the four states and reach the Siddhashila. That is the wish."
+      }
+    },
+    {
+      "at": [5],
+      "type": "drawing",
+      "drawing": "dravya",
+      "title": { "hi": "द्रव्य की थाली — चढ़ाने के क्रम में", "en": "The plate of offerings, in the order of offering" },
+      "items": [
+        { "hi": "जल", "en": "Jal (water)", "sub": { "hi": "छना हुआ शुद्ध जल", "en": "filtered, pure water" } },
+        { "hi": "चन्दन", "en": "Chandan", "sub": { "hi": "केसर-चन्दन घिसकर मिलाया हुआ जल", "en": "water with ground sandalwood and saffron" } },
+        { "hi": "अक्षत", "en": "Akshat", "sub": { "hi": "धुले हुए, साबुत सफ़ेद चावल", "en": "washed, unbroken white rice" } },
+        { "hi": "पुष्प", "en": "Pushp", "sub": { "hi": "केसर से पीले रंगे चावल (या फूल)", "en": "rice coloured yellow with saffron (or flowers)" } },
+        { "hi": "नैवेद्य", "en": "Naivedya", "sub": { "hi": "सूखे नारियल (गोले) के सफ़ेद टुकड़े", "en": "white pieces of dry coconut" } },
+        { "hi": "दीप", "en": "Deep", "sub": { "hi": "केसर से रंगे नारियल के टुकड़े (या दीपक)", "en": "saffron-coloured coconut pieces (or a lamp)" } },
+        { "hi": "धूप", "en": "Dhoop", "sub": { "hi": "धूप-चूर्ण, जो धूपायन में खेया जाता है", "en": "incense powder, placed in the incense burner" } },
+        { "hi": "फल", "en": "Phal", "sub": { "hi": "बादाम, लौंग, इलायची या सूखे फल", "en": "almonds, cloves, cardamom or dry fruit" } },
+        { "hi": "अर्घ्य (बीच में)", "en": "Arghya (centre)", "sub": { "hi": "आठों द्रव्य थोड़े-थोड़े मिलाकर", "en": "a little of all eight mixed together" } }
+      ],
+      "gist": {
+        "hi": "उतनी ही सामग्री लें जितनी चढ़ानी है। चढ़ाई हुई सामग्री वापस नहीं ली जाती।",
+        "en": "Take only as much as you will offer. What is offered is never taken back."
+      }
+    },
+    {
+      "at": [6],
+      "type": "drawing",
+      "drawing": "layout",
+      "title": { "hi": "चौकी पर पूजा की व्यवस्था (ऊपर से देखने पर)", "en": "The pooja place on the chowki, seen from above" },
+      "items": [
+        { "hi": "पूजा की पुस्तक", "en": "Pooja book", "sub": { "hi": "भगवान की ओर", "en": "towards the Lord" } },
+        { "hi": "ठौना", "en": "Thona", "sub": { "hi": "स्थापना की छोटी थाली, तीन लौंग के साथ", "en": "small plate for sthapana, with three cloves" } },
+        { "hi": "चढ़ाने का थाल", "en": "Offering plate", "sub": { "hi": "इसी में द्रव्य चढ़ाए जाते हैं", "en": "the offerings are placed in it" } },
+        { "hi": "द्रव्य की थाली", "en": "Plate of offerings", "sub": { "hi": "आठ कटोरियों में अष्ट द्रव्य", "en": "the eight dravya in eight bowls" } },
+        { "hi": "कलश या झारी", "en": "Kalash or jhari", "sub": { "hi": "जल का पात्र", "en": "water pot" } },
+        { "hi": "धूपायन", "en": "Incense burner", "sub": { "hi": "धूप खेने का पात्र", "en": "for offering dhoop" } }
+      ],
+      "gist": {
+        "hi": "यह एक सामान्य व्यवस्था है; अपने मंदिर की रीति के अनुसार इसे बदल सकते हैं।",
+        "en": "This is a common arrangement; adjust it to your temple's custom."
+      }
+    },
+    {
+      "at": [8],
+      "type": "drawing",
+      "drawing": "thona",
+      "title": { "hi": "ठौने में तीन लौंग — स्थापना के तीन चरण", "en": "Three cloves in the thona — the three steps of sthapana" },
+      "items": [
+        { "hi": "आह्वानन", "en": "Aahvanan", "sub": { "hi": "'अत्र अवतर अवतर संवौषट्' — पधारिए", "en": "'atra avatara avatara samvaushat': please come" } },
+        { "hi": "स्थापना", "en": "Sthapana", "sub": { "hi": "'अत्र तिष्ठ तिष्ठ ठः ठः' — विराजिए", "en": "'atra tishtha tishtha thah thah': please be seated" } },
+        { "hi": "सन्निधिकरण", "en": "Sannidhikaran", "sub": { "hi": "'अत्र मम सन्निहितो भव भव वषट्' — मेरे पास रहिए", "en": "'atra mama sannihito bhava bhava vashat': stay near me" } }
+      ],
+      "gist": {
+        "hi": "पूजा के अंत में विसर्जन पाठ के साथ स्थापना का विसर्जन किया जाता है।",
+        "en": "At the end of the pooja, the sthapana is concluded with the visarjan path."
+      }
+    },
+    {
+      "at": [9],
+      "type": "list",
+      "title": { "hi": "कौन-सा द्रव्य किस भावना से", "en": "What each offering stands for" },
+      "items": [
+        { "hi": "जल", "en": "Jal", "sub": { "hi": "जन्म, बुढ़ापा और मृत्यु के नाश के लिए — जन्मजरामृत्युविनाशनाय", "en": "to end birth, old age and death" } },
+        { "hi": "चन्दन", "en": "Chandan", "sub": { "hi": "संसार के ताप (दुःख) के नाश के लिए — संसारतापविनाशनाय", "en": "to end the burning suffering of worldly life" } },
+        { "hi": "अक्षत", "en": "Akshat", "sub": { "hi": "अक्षय पद (मोक्ष) पाने के लिए — अक्षयपदप्राप्तये", "en": "to attain the imperishable state" } },
+        { "hi": "पुष्प", "en": "Pushp", "sub": { "hi": "काम-वासना के नाश के लिए — कामबाणविध्वंसनाय", "en": "to destroy desire" } },
+        { "hi": "नैवेद्य", "en": "Naivedya", "sub": { "hi": "भूख रूपी रोग के नाश के लिए — क्षुधारोगविनाशनाय", "en": "to end the disease of hunger" } },
+        { "hi": "दीप", "en": "Deep", "sub": { "hi": "मोह रूपी अंधकार के नाश के लिए — मोहान्धकारविनाशनाय", "en": "to dispel the darkness of delusion" } },
+        { "hi": "धूप", "en": "Dhoop", "sub": { "hi": "आठ कर्मों को जलाने के लिए — अष्टकर्मदहनाय", "en": "to burn away the eight karmas" } },
+        { "hi": "फल", "en": "Phal", "sub": { "hi": "मोक्ष रूपी फल पाने के लिए — मोक्षफलप्राप्तये", "en": "to attain the fruit of liberation" } }
+      ],
+      "gist": {
+        "hi": "हम भगवान से कुछ माँगते नहीं — हर द्रव्य चढ़ाकर अपने ही दोष दूर करने की भावना करते हैं।",
+        "en": "We do not ask the Lord for anything; with each offering we resolve to remove our own faults."
+      }
+    }
+  ],
+  "bhaktamar": [
+    {
+      "at": [28],
+      "type": "list",
+      "title": { "hi": "आठ प्रातिहार्य (श्लोक 28–35)", "en": "The eight pratiharyas (verses 28–35)" },
+      "items": [
+        { "hi": "अशोक वृक्ष", "en": "Ashoka tree", "tag": "28" },
+        { "hi": "सिंहासन", "en": "Lion throne", "tag": "29" },
+        { "hi": "चँवर", "en": "Fly-whisks (chamar)", "tag": "30" },
+        { "hi": "तीन छत्र", "en": "Three umbrellas", "tag": "31" },
+        { "hi": "दुन्दुभि", "en": "Celestial drums", "tag": "32" },
+        { "hi": "पुष्पवृष्टि", "en": "Shower of flowers", "tag": "33" },
+        { "hi": "भामण्डल", "en": "Halo (bhamandal)", "tag": "34" },
+        { "hi": "दिव्यध्वनि", "en": "Divine sound (divyadhvani)", "tag": "35" }
+      ],
+      "tagNote": { "hi": "अंक = श्लोक", "en": "Number = verse" },
+      "gist": {
+        "hi": "तीर्थंकर भगवान के समवसरण में ये आठ शोभाएँ होती हैं; श्लोक 28 से 35 में इनका वर्णन है।",
+        "en": "These eight splendours surround the Tirthankar in the samavasaran; verses 28 to 35 describe them."
+      }
+    },
+    {
+      "at": [38],
+      "type": "list",
+      "title": { "hi": "आठ भय, जो भगवान के स्मरण से दूर होते हैं", "en": "Eight fears removed by remembering the Lord" },
+      "items": [
+        { "hi": "मतवाला हाथी", "en": "Wild elephant", "tag": "38" },
+        { "hi": "सिंह", "en": "Lion", "tag": "39" },
+        { "hi": "जंगल की आग", "en": "Forest fire", "tag": "40" },
+        { "hi": "सर्प", "en": "Snake", "tag": "41" },
+        { "hi": "युद्ध", "en": "War", "tag": "42–43" },
+        { "hi": "समुद्र का तूफ़ान", "en": "Storm at sea", "tag": "44" },
+        { "hi": "जलोदर रोग", "en": "Dropsy (disease)", "tag": "45" },
+        { "hi": "बन्धन, ज़ंजीरें", "en": "Chains and imprisonment", "tag": "46" }
+      ],
+      "tagNote": { "hi": "अंक = श्लोक", "en": "Number = verse" },
+      "gist": {
+        "hi": "श्लोक 47 में इन्हीं आठ भयों को फिर एक साथ गिनाया गया है।",
+        "en": "Verse 47 names these same eight fears together once more."
+      }
+    }
+  ]
+}

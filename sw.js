@@ -4,7 +4,7 @@
  * background whenever there is internet, so text corrections reach everyone.
  * Change VERSION when adding or removing files in the list below.
  */
-const VERSION = 'jinvani-v2';
+const VERSION = 'jinvani-v3';
 const FILES = [
   './',
   'index.html',
@@ -13,11 +13,19 @@ const FILES = [
   'js/strings.js',
   'js/icons.js',
   'js/translit.js',
+  'js/panchang.js',
+  'js/drawings.js',
   'js/app.js',
   'content/books.json',
+  'content/categories.json',
+  'content/chitra.json',
   'content/namokar.txt',
+  'content/darshan-path.txt',
   'content/bhaktamar.txt',
+  'content/barah-bhavana.txt',
   'content/tattvarth-sutra.txt',
+  'content/mandir-darshan.txt',
+  'content/pooja-vidhi.txt',
   'fonts/noto-serif-devanagari-devanagari-400-normal.woff2',
   'fonts/noto-serif-devanagari-devanagari-600-normal.woff2',
   'fonts/noto-serif-devanagari-latin-400-normal.woff2',

@@ -1,0 +1,10 @@
+[
+  { "id": "nitya", "title": { "hi": "नित्य पाठ", "en": "Daily prayers" } },
+  { "id": "vidhi", "title": { "hi": "मंदिर और पूजा विधि", "en": "Temple and pooja guides" } },
+  { "id": "dravyanuyog", "title": { "hi": "द्रव्यानुयोग", "en": "Dravyanuyog" } },
+  { "id": "charananuyog", "title": { "hi": "चरणानुयोग", "en": "Charananuyog" } },
+  { "id": "karananuyog", "title": { "hi": "करणानुयोग", "en": "Karananuyog" } },
+  { "id": "prathamanuyog", "title": { "hi": "प्रथमानुयोग", "en": "Prathamanuyog" } },
+  { "id": "nyay", "title": { "hi": "न्याय", "en": "Nyay (logic)" } },
+  { "id": "itihas", "title": { "hi": "इतिहास", "en": "Itihas (history)" } }
+]

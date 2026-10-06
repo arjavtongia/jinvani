@@ -1,0 +1,107 @@
+# पूजा विधि — दिगम्बर जैन पूजा का सरल मार्गदर्शन
+# हर चरण "@ नंबर | हिंदी शीर्षक | English title" से शुरू होता है।
+# बिना चिह्न वाली पंक्तियाँ मंत्र/पाठ हैं। "गद्य:" हिंदी विवरण है, "Prose:" अंग्रेज़ी।
+# चित्र content/chitra.json में "pooja-vidhi" के अंतर्गत हैं।
+
+@ 1 | पूजा से पहले की तैयारी | Before the pooja
+गद्य: पूजा सुबह, भोजन से पहले करना अच्छा माना जाता है। स्नान करके धुले हुए, साफ़ वस्त्र पहनें — पूजा के कपड़े अलग रखें। पुरुष प्रायः धोती-दुपट्टा पहनते हैं।
+गद्य: चमड़े की कोई वस्तु (बेल्ट, पर्स, घड़ी का पट्टा) साथ न रखें। मोबाइल बंद या मौन रखें।
+गद्य: हर मंदिर की परम्परा में थोड़ा अंतर हो सकता है। जहाँ आपके मंदिर की रीति इस मार्गदर्शन से अलग हो, वहाँ मंदिर के पंडित जी या बड़ों की बात मानें।
+Prose: It is good to do pooja in the morning, before eating. Bathe and wear clean, washed clothes, and keep separate clothes for pooja. Men usually wear a dhoti and dupatta.
+Prose: Do not carry anything made of leather (belt, wallet, watch strap). Switch off or silence your phone.
+Prose: Customs differ a little from temple to temple. Where your temple's way differs from this guide, follow your temple's pandit ji or elders.
+
+@ 2 | मंदिर में प्रवेश | Entering the temple
+निःसहि निःसहि निःसहि।
+ॐ जय जय जय। नमोऽस्तु नमोऽस्तु नमोऽस्तु।
+गद्य: जूते-चप्पल बाहर उतारें और पैर धोएँ। मंदिर में प्रवेश करते समय तीन बार 'निःसहि' बोलें। भगवान के दर्शन होते ही 'ॐ जय जय जय, नमोऽस्तु नमोऽस्तु नमोऽस्तु' बोलें।
+गद्य: मंदिर में धीरे और विनय से चलें, और ज़ोर से बात न करें।
+Prose: Leave your footwear outside and wash your feet. While entering the temple, say 'Nihsahi' three times. On seeing the Lord, say 'Om jay jay jay, namostu namostu namostu'.
+Prose: Walk slowly and humbly in the temple, and do not talk loudly.
+
+@ 3 | दर्शन और अक्षत से स्वस्तिक | Darshan, and the swastik in rice
+दर्शनं देवदेवस्य दर्शनं पापनाशनम्।
+दर्शनं स्वर्गसोपानं दर्शनं मोक्षसाधनम्॥
+गद्य: भगवान के सामने हाथ जोड़कर खड़े हों और णमोकार मंत्र तथा दर्शन पाठ पढ़ें। फिर भगवान को अपनी दाहिनी ओर रखते हुए तीन बार प्रदक्षिणा (परिक्रमा) करें।
+गद्य: धुले हुए अक्षत (चावल) से चौकी पर स्वस्तिक बनाएँ, उसके ऊपर तीन बिंदु, और सबसे ऊपर अर्धचन्द्र पर एक बिंदु। नीचे चित्र में इनका अर्थ देखें।
+Prose: Stand before the Lord with folded hands and recite the Namokar Mantra and the Darshan Path. Then walk around the altar three times (pradakshina), keeping the Lord on your right.
+Prose: With washed rice (akshat), make a swastik on the chowki, three dots above it, and at the very top a dot on a crescent. The picture below shows what they mean.
+
+@ 4 | अभिषेक (प्रक्षाल) | Abhishek (bathing the idol)
+गद्य: अभिषेक में शुद्ध, छने हुए जल से भगवान की प्रतिमा का प्रक्षाल किया जाता है, और फिर साफ़, सूखे वस्त्र से प्रतिमा को पोंछा जाता है।
+गद्य: अभिषेक प्रायः वही करते हैं जिन्होंने पूजा के वस्त्र पहने हों और जिन्हें इसकी विधि आती हो। पहली बार करने से पहले मंदिर के पंडित जी से सीख लें।
+गद्य: अभिषेक का जल 'गन्धोदक' कहलाता है। इसे आदर से मस्तक पर लगाया जाता है।
+Prose: In abhishek, the idol of the Lord is bathed with pure, filtered water and then wiped with a clean, dry cloth.
+Prose: Abhishek is usually done by those who are in pooja clothes and know the method. Learn it from your temple's pandit ji before doing it the first time.
+Prose: The water of the abhishek is called gandhodak. It is touched to the forehead with respect.
+
+@ 5 | अष्ट द्रव्य तैयार करना | Preparing the eight offerings
+गद्य: पूजा के आठ द्रव्य धोकर, साफ़ बर्तनों में तैयार करें। बहुत से मंदिरों में सूखी सामग्री से पूजा होती है, जैसा नीचे चित्र में बताया है; कुछ मंदिरों में ताज़े फूल, फल और घी का दीपक भी चढ़ाया जाता है।
+गद्य: थाली में द्रव्य उसी क्रम से रखें जिस क्रम से चढ़ाने हैं, ताकि पूजा के समय ढूँढना न पड़े।
+Prose: Wash the eight offerings (ashta dravya) and set them out in clean bowls. Many temples use dry offerings, as shown in the picture below; some also offer fresh flowers, fruit and a ghee lamp.
+Prose: Place the offerings on the plate in the order in which they are offered, so you don't have to search during the pooja.
+
+@ 6 | पूजा की जगह सजाना | Arranging the pooja place
+गद्य: चौकी पर भगवान की ओर पूजा की पुस्तक रखें। एक ओर ठौना (स्थापना की छोटी थाली), बीच में चढ़ाने का थाल, और दूसरी ओर द्रव्य की थाली रखें। जल का कलश या झारी और धूपायन पास में रखें।
+Prose: On the chowki, place the pooja book towards the Lord. Put the thona (small plate for sthapana) on one side, the offering plate in the middle, and the plate of offerings on the other side. Keep the water pot (kalash or jhari) and the incense burner close by.
+
+@ 7 | पूजा का प्रारम्भ | Beginning the pooja
+ॐ जय जय जय। नमोऽस्तु नमोऽस्तु नमोऽस्तु।
+णमो अरिहंताणं, णमो सिद्धाणं, णमो आइरियाणं।
+णमो उवज्झायाणं, णमो लोए सव्वसाहूणं॥
+अपवित्रः पवित्रो वा सुस्थितो दुःस्थितोऽपि वा।
+ध्यायेत्पञ्चनमस्कारं सर्वपापैः प्रमुच्यते॥
+गद्य: पूजा की पुस्तक से 'पूजा पीठिका' (मंगल पाठ) पढ़कर पूजा शुरू करें। ऊपर उसकी शुरू की पंक्तियाँ हैं।
+Prose: Begin by reading the 'pooja pithika' (opening prayers) from the pooja book. Its first lines are shown above.
+
+@ 8 | स्थापना — ठौने में तीन लौंग | Sthapana — three cloves in the thona
+ॐ ह्रीं श्री देवशास्त्रगुरुसमूह! अत्र अवतर अवतर संवौषट्।
+ॐ ह्रीं श्री देवशास्त्रगुरुसमूह! अत्र तिष्ठ तिष्ठ ठः ठः।
+ॐ ह्रीं श्री देवशास्त्रगुरुसमूह! अत्र मम सन्निहितो भव भव वषट्।
+गद्य: जिनकी पूजा कर रहे हैं, उन्हें मन में आमंत्रित करना 'स्थापना' है। ऊपर के तीनों मंत्र बोलते हुए हर बार एक-एक लौंग (या पीला पुष्प-चावल) ठौने में रखें।
+गद्य: पहला मंत्र आह्वानन (बुलाना), दूसरा स्थापना (विराजमान करना) और तीसरा सन्निधिकरण (अपने पास अनुभव करना) है। यहाँ देव-शास्त्र-गुरु पूजा का उदाहरण है; दूसरी पूजा में उन्हीं भगवान का नाम आता है जिनकी पूजा है।
+Prose: Inviting, in your mind, the one you are worshipping is called sthapana. Recite the three mantras above, and with each one place a clove (or yellow pushp-rice) in the thona.
+Prose: The first mantra is aahvanan (inviting), the second sthapana (seating), and the third sannidhikaran (feeling them near). The example is from the Dev-Shastra-Guru pooja; in another pooja, the name of the Lord being worshipped is used.
+
+@ 9 | अष्ट द्रव्य चढ़ाना | Offering the eight dravya
+ॐ ह्रीं श्री देवशास्त्रगुरुभ्यो जन्मजरामृत्युविनाशनाय जलं निर्वपामीति स्वाहा।
+गद्य: पूजा की पुस्तक में हर द्रव्य का एक छन्द है। छन्द पढ़ें, फिर अन्त का मंत्र बोलते हुए वह द्रव्य चढ़ाने के थाल में चढ़ाएँ — जैसे ऊपर जल का मंत्र है। दूसरे द्रव्यों में मंत्र का बीच और अन्त का शब्द बदलता है, जैसा नीचे चित्र में है।
+गद्य: जल और चन्दन प्रायः झारी या कटोरी से तीन धार में चढ़ाए जाते हैं। बाकी द्रव्य दोनों हाथों से विनयपूर्वक चढ़ाएँ।
+Prose: The pooja book has a verse for each offering. Read the verse, then say the closing mantra and place that offering in the offering plate, like the mantra for water shown above. For the other offerings, the middle and last words of the mantra change, as shown in the picture below.
+Prose: Water and chandan are usually poured from a jhari or bowl in three streams. Offer the rest with both hands, humbly.
+
+@ 10 | अर्घ्य | Arghya
+ॐ ह्रीं श्री देवशास्त्रगुरुभ्यो अनर्घ्यपदप्राप्तये अर्घ्यं निर्वपामीति स्वाहा।
+गद्य: आठों द्रव्य चढ़ाने के बाद, सबको थोड़ा-थोड़ा मिलाकर बनाया गया अर्घ्य चढ़ाएँ। 'अनर्घ्य पद' का अर्थ है वह पद जिसका मूल्य आँका ही न जा सके — अर्थात् मोक्ष।
+Prose: After the eight offerings, offer the arghya, a little of all eight mixed together. 'Anarghya pad' means the state whose worth cannot be measured, that is, liberation.
+
+@ 11 | जयमाला और पूर्णार्घ्य | Jaymala and the full arghya
+गद्य: अब पुस्तक से उस पूजा की जयमाला — भगवान के गुणों का गान — भाव से पढ़ें। जयमाला के बाद पूर्णार्घ्य चढ़ाएँ।
+गद्य: एक से अधिक पूजा करनी हो, तो हर पूजा के लिए स्थापना से जयमाला तक यही क्रम दोहराएँ।
+Prose: Now read the jaymala of that pooja from the book, the song of the Lord's qualities, with feeling. After the jaymala, offer the full arghya (purnarghya).
+Prose: If you are doing more than one pooja, repeat the same order, from sthapana to jaymala, for each pooja.
+
+@ 12 | शान्ति पाठ और विसर्जन | Shanti path and visarjan
+ज्ञानतोऽज्ञानतो वापि शास्त्रोक्तं न कृतं मया।
+तत्सर्वं पूर्णमेवास्तु त्वत्प्रसादाज्जिनेश्वर॥
+गद्य: अन्त में शान्ति पाठ और विसर्जन पाठ पढ़ें। विसर्जन पाठ में क्षमा माँगी जाती है कि जाने-अनजाने में शास्त्र के अनुसार जो न हो सका हो, वह पूर्ण माना जाए। ऊपर उसका एक श्लोक है।
+गद्य: इसके बाद नौ बार णमोकार मंत्र का जाप करें।
+Prose: At the end, read the shanti path and the visarjan path. The visarjan path asks forgiveness for whatever was not done as the scriptures say, knowingly or unknowingly. One of its verses is shown above.
+Prose: Then recite the Namokar Mantra nine times.
+
+@ 13 | आरती और मंदिर से विदा | Aarti and leaving the temple
+असहि असहि असहि।
+गद्य: चाहें तो आरती करें। मंदिर से निकलते समय भगवान की ओर पीठ न करें — कुछ कदम पीछे चलकर निकलें, और तीन बार 'असहि' बोलें।
+Prose: Do the aarti if you wish. When leaving, do not turn your back to the Lord: step back a few paces before turning, and say 'Asahi' three times.
+
+@ 14 | निर्माल्य — ध्यान रखने की बात | Nirmalya — something to remember
+गद्य: भगवान को चढ़ाई गई सामग्री 'निर्माल्य' कहलाती है। उसे वापस नहीं लिया जाता, न खाया जाता है, न बेचा जाता है। उसे मंदिर की व्यवस्था के अनुसार ही रखें।
+गद्य: पूजा में शुद्ध, छनी हुई और जीव-रहित सामग्री का ही प्रयोग करें। अक्षत और नारियल अच्छी तरह देख-शोधकर लें।
+Prose: What is offered to the Lord is called nirmalya. It is never taken back, eaten or sold. Leave it for the temple to handle in its usual way.
+Prose: Use only pure, filtered material with no living beings in it. Check the rice and coconut carefully before use.
+
+@ 15 | पूजा का सच्चा भाव | The true spirit of pooja
+गद्य: पूजा का सबसे महत्वपूर्ण अंग भाव है। जल्दबाज़ी न करें; शब्दों का अर्थ समझते हुए पढ़ें। जितनी पूजा भाव से कर सकें, उतनी ही करें।
+गद्य: वीतराग भगवान न प्रसन्न होते हैं, न नाराज़। पूजा उनके गुणों को याद करके स्वयं वैसा बनने की भावना है।
+Prose: The most important part of pooja is the feeling behind it. Don't hurry; read with understanding. Do only as much pooja as you can do with feeling.
+Prose: The Vitarag Lord is neither pleased nor displeased. Pooja means remembering His qualities and wishing to become like Him.
