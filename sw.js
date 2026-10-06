@@ -4,7 +4,7 @@
  * background whenever there is internet, so text corrections reach everyone.
  * Change VERSION when adding or removing files in the list below.
  */
-const VERSION = 'jinvani-v1';
+const VERSION = 'jinvani-v2';
 const FILES = [
   './',
   'index.html',
@@ -29,7 +29,9 @@ const FILES = [
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(VERSION).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting())
+    caches.open(VERSION)
+      .then(cache => cache.addAll(FILES.map(f => new Request(f, { cache: 'reload' }))))
+      .then(() => self.skipWaiting())
   );
 });
 
@@ -51,7 +53,7 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     caches.open(VERSION).then(cache =>
       cache.match(key, { ignoreSearch: true }).then(cached => {
-        const fresh = fetch(req.mode === 'navigate' ? './' : req)
+        const fresh = fetch(req.mode === 'navigate' ? './' : req, { cache: 'no-cache' })
           .then(res => {
             if (res && res.ok) cache.put(key, res.clone());
             return res;

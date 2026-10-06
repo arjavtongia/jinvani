@@ -184,7 +184,7 @@
 
   /* Book names always show in Devanagari; English mode adds the English name below. */
   function titleHtml(book, cls) {
-    let html = '<span class="' + (cls || 'title') + '" lang="hi">' + esc(book.title.hi) + '</span>';
+    let html = '<span class="' + (cls || 'title') + '" translate="no" lang="hi">' + esc(book.title.hi) + '</span>';
     if (state.lang === 'en') html += '<span class="title-en">' + esc(book.title.en) + '</span>';
     return html;
   }
@@ -327,10 +327,10 @@
   function viewWelcome() {
     document.title = 'जिनवाणी · Jinvani';
     return '<main class="welcome">' +
-      '<p class="welcome-greet" lang="hi">जय जिनेन्द्र</p>' +
-      '<h1 class="welcome-q"><span lang="hi">भाषा चुनें</span><span lang="en">Choose language</span></h1>' +
-      LANGS.map(l => '<button class="btn lang-btn" data-action="pick-lang" data-lang="' + l.code + '" lang="' + l.code + '">' + esc(l.name) + '</button>').join('') +
-      '<p class="welcome-note"><span lang="hi">बाद में सेटिंग में बदल सकते हैं</span><span lang="en">You can change this later in Settings</span></p>' +
+      '<p class="welcome-greet" translate="no" lang="hi">जय जिनेन्द्र</p>' +
+      '<h1 class="welcome-q"><span translate="no" lang="hi">भाषा चुनें</span><span translate="no" lang="en">Choose language</span></h1>' +
+      LANGS.map(l => '<button class="btn lang-btn" data-action="pick-lang" data-lang="' + l.code + '" translate="no" lang="' + l.code + '">' + esc(l.name) + '</button>').join('') +
+      '<p class="welcome-note"><span translate="no" lang="hi">बाद में सेटिंग में बदल सकते हैं</span><span translate="no" lang="en">You can change this later in Settings</span></p>' +
       '</main>';
   }
 
@@ -339,7 +339,7 @@
     const other = LANGS.find(l => l.code !== state.lang) || LANGS[0];
     let html = '<header class="home-head"><h1 class="greet">' + esc(t('greeting')) + '</h1>';
     if (!state.locked) {
-      html += '<button class="btn btn-small" data-action="switch-lang" data-lang="' + other.code + '" lang="' + other.code + '">' +
+      html += '<button class="btn btn-small" data-action="switch-lang" data-lang="' + other.code + '" translate="no" lang="' + other.code + '">' +
         icon('language') + '<span>' + esc(other.name) + '</span></button>';
     }
     html += '</header><main>';
@@ -375,7 +375,7 @@
       const v = ts.verses[day % ts.verses.length];
       html += '<a class="card" href="#/read/' + ts.id + '/' + v.pos + '">' +
         '<span class="card-label">' + esc(t('todaysSutra')) + '</span>' +
-        '<span class="card-verse" lang="sa">' + esc(v.lines.join(' ')) + '</span>' +
+        '<span class="card-verse" translate="no" lang="sa">' + esc(v.lines.join(' ')) + '</span>' +
         '<span class="card-meta">' + esc(ts.title.hi) + ' · ' + esc(posLabel(ts, v)) + '</span></a>';
     }
     return html + '</main>';
@@ -430,7 +430,7 @@
       html += '<h2>' + esc(t('contents')) + '</h2><ol class="rows verse-index">' +
         book.verses.map(v => '<li><a class="row" href="#/read/' + id + '/' + v.pos + '">' +
           '<span class="row-num">' + v.num + '</span>' +
-          '<span class="row-main"><span class="row-verse" lang="' + (book.textLang || 'sa') + '">' + esc(firstLine(v)) + '</span></span></a></li>').join('') +
+          '<span class="row-main"><span class="row-verse" translate="no" lang="' + (book.textLang || 'sa') + '">' + esc(firstLine(v)) + '</span></span></a></li>').join('') +
         '</ol>';
     }
     return html + '</main>';
@@ -472,11 +472,11 @@
       '</header>' +
       '<div class="progress progress-top" aria-hidden="true"><span style="width:' + Math.round(pos / n * 100) + '%"></span></div>' +
       '<main class="reader" id="verse-area">' +
-      '<p class="reader-where"><span lang="hi">' + esc(book.title.hi) + '</span><span class="where-pos">' + pos + ' / ' + n + '</span></p>' +
+      '<p class="reader-where"><span translate="no" lang="hi">' + esc(book.title.hi) + '</span><span class="where-pos">' + pos + ' / ' + n + '</span></p>' +
       '<h1 class="verse-label">' + esc(posLabel(book, v)) + '</h1>' +
-      '<p class="verse" lang="' + lang + '">' + lines + '</p>';
+      '<p class="verse" translate="no" lang="' + lang + '">' + lines + '</p>';
     if (state.roman) {
-      html += '<p class="roman" lang="' + lang + '-Latn">' + v.lines.map(l => '<span class="verse-line">' + esc(TRANSLIT.toRoman(l)) + '</span>').join('') + '</p>';
+      html += '<p class="roman" translate="no" lang="' + lang + '-Latn">' + v.lines.map(l => '<span class="verse-line">' + esc(TRANSLIT.toRoman(l)) + '</span>').join('') + '</p>';
     }
     if (meaning) {
       html += '<section class="meaning"><h2>' + esc(t('meaning')) + '</h2><p>' + esc(meaning) + '</p></section>';
@@ -486,8 +486,8 @@
       '<span>' + esc(isBookmarked ? t('savedDone') : t('save')) + '</span></button>' +
       (state.locked ? '' :
         '<span class="size-btns">' +
-        '<button class="btn" data-action="font-down" aria-label="' + esc(t('textSize') + ': ' + t('smaller')) + '"><span lang="hi">अ</span>−</button>' +
-        '<button class="btn" data-action="font-up" aria-label="' + esc(t('textSize') + ': ' + t('bigger')) + '"><span lang="hi">अ</span>+</button>' +
+        '<button class="btn" data-action="font-down" aria-label="' + esc(t('textSize') + ': ' + t('smaller')) + '"><span translate="no" lang="hi">अ</span>−</button>' +
+        '<button class="btn" data-action="font-up" aria-label="' + esc(t('textSize') + ': ' + t('bigger')) + '"><span translate="no" lang="hi">अ</span>+</button>' +
         '</span>') +
       '</div>' +
       '<a class="report-link" href="' + esc(mistake) + '" target="_blank" rel="noopener">' + icon('message-report') + '<span>' + esc(t('reportMistake')) + '</span></a>' +
@@ -537,8 +537,8 @@
     if (res.verses.length) {
       html += '<h2>' + esc(t('resultsText')) + '</h2><ul class="rows">' +
         res.verses.map(r => '<li><a class="row" href="#/read/' + r.book.id + '/' + r.v.pos + '"><span class="row-main">' +
-          '<span class="row-verse" lang="' + (r.book.textLang || 'sa') + '">' + esc(firstLine(r.v)) + '</span>' +
-          '<span class="row-sub"><span lang="hi">' + esc(r.book.title.hi) + '</span> · ' + esc(posLabel(r.book, r.v)) + '</span></span>' +
+          '<span class="row-verse" translate="no" lang="' + (r.book.textLang || 'sa') + '">' + esc(firstLine(r.v)) + '</span>' +
+          '<span class="row-sub"><span translate="no" lang="hi">' + esc(r.book.title.hi) + '</span> · ' + esc(posLabel(r.book, r.v)) + '</span></span>' +
           icon('chevron-right', 'row-chev') + '</a></li>').join('') + '</ul>';
     }
     box.innerHTML = html;
@@ -555,8 +555,8 @@
     html += '<ul class="rows">' + items.map(x => {
       const v = x.book.verses[x.b.pos - 1];
       return '<li class="row-with-action"><a class="row" href="#/read/' + x.book.id + '/' + v.pos + '"><span class="row-main">' +
-        '<span class="row-verse" lang="' + (x.book.textLang || 'sa') + '">' + esc(firstLine(v)) + '</span>' +
-        '<span class="row-sub"><span lang="hi">' + esc(x.book.title.hi) + '</span> · ' + esc(posLabel(x.book, v)) + '</span></span></a>' +
+        '<span class="row-verse" translate="no" lang="' + (x.book.textLang || 'sa') + '">' + esc(firstLine(v)) + '</span>' +
+        '<span class="row-sub"><span translate="no" lang="hi">' + esc(x.book.title.hi) + '</span> · ' + esc(posLabel(x.book, v)) + '</span></span></a>' +
         '<button class="btn btn-small" data-action="unsave" data-book="' + x.book.id + '" data-pos="' + v.pos + '">' + esc(t('remove')) + '</button></li>';
     }).join('') + '</ul>';
     return html + '</main>';
@@ -567,7 +567,7 @@
   function choice(action, current, options) {
     return '<div class="choice" role="group">' + options.map(o =>
       '<button class="btn" data-action="' + action + '" data-value="' + o.value + '" aria-pressed="' + (o.value === current) + '"' +
-      (o.lang ? ' lang="' + o.lang + '"' : '') + '>' + (o.value === current ? icon('check') : '') + '<span>' + esc(o.label) + '</span></button>'
+      (o.lang ? ' translate="no" lang="' + o.lang + '"' : '') + '>' + (o.value === current ? icon('check') : '') + '<span>' + esc(o.label) + '</span></button>'
     ).join('') + '</div>';
   }
 
@@ -583,9 +583,9 @@
     html += '<section class="panel"><h2>' + esc(t('language')) + '</h2>' +
       choice('set-lang', state.lang, LANGS.map(l => ({ value: l.code, label: l.name, lang: l.code }))) + '</section>';
     html += '<section class="panel"><h2>' + esc(t('textSize')) + '</h2>' +
-      '<p class="size-preview" lang="pra">' + esc(t('sizePreview')) + '</p>' +
-      '<div class="choice"><button class="btn" data-action="font-down"><span lang="hi">अ</span>− <span>' + esc(t('smaller')) + '</span></button>' +
-      '<button class="btn" data-action="font-up"><span lang="hi">अ</span>+ <span>' + esc(t('bigger')) + '</span></button></div></section>';
+      '<p class="size-preview" translate="no" lang="pra">' + esc(t('sizePreview')) + '</p>' +
+      '<div class="choice"><button class="btn" data-action="font-down"><span translate="no" lang="hi">अ</span>− <span>' + esc(t('smaller')) + '</span></button>' +
+      '<button class="btn" data-action="font-up"><span translate="no" lang="hi">अ</span>+ <span>' + esc(t('bigger')) + '</span></button></div></section>';
     html += '<section class="panel"><h2>' + esc(t('colours')) + '</h2>' +
       choice('set-theme', theme, [{ value: 'day', label: t('day') }, { value: 'night', label: t('night') }]) + '</section>';
     if (hasSpeech()) {
@@ -616,7 +616,7 @@
     return backBar('#/settings', t('settings')) +
       '<main><h1>' + esc(t('credits')) + '</h1><p>' + esc(t('creditsIntro')) + '</p>' +
       '<h2>' + esc(t('textsHeading')) + '</h2>' +
-      books.map(b => '<section class="panel"><h3 lang="hi">' + esc(b.title.hi) + '</h3><p class="muted">' + esc(L(b.author)) + '</p><p>' + esc(L(b.source)) + '</p></section>').join('') +
+      books.map(b => '<section class="panel"><h3 translate="no" lang="hi">' + esc(b.title.hi) + '</h3><p class="muted">' + esc(L(b.author)) + '</p><p>' + esc(L(b.source)) + '</p></section>').join('') +
       '<h2>' + esc(t('toolsHeading')) + '</h2><ul class="plain"><li>' + esc(t('fontCredit')) + '</li><li>' + esc(t('iconCredit')) + '</li></ul>' +
       '<p>' + esc(t('proofNote')) + '</p><p class="muted">' + esc(t('licenseNote')) + '</p>' +
       '<p><a href="' + REPO_URL + '" target="_blank" rel="noopener">' + REPO_URL.replace('https://', '') + '</a></p></main>';
