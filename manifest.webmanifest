@@ -1,0 +1,17 @@
+{
+  "name": "जिनवाणी · Jinvani",
+  "short_name": "जिनवाणी",
+  "description": "बुज़ुर्गों के लिए आसान जैन शास्त्र पाठ — Jain scriptures in large, easy-to-read text",
+  "lang": "hi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fbf6ec",
+  "theme_color": "#fbf6ec",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

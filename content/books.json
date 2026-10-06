@@ -1,0 +1,43 @@
+[
+  {
+    "id": "namokar",
+    "file": "content/namokar.txt",
+    "title": { "hi": "णमोकार मंत्र एवं मंगल पाठ", "en": "Namokar Mantra and Mangal Path" },
+    "author": { "hi": "अनादि मूल मंत्र", "en": "The eternal mantra" },
+    "unit": { "hi": "पाठ", "en": "Part" },
+    "textLang": "pra",
+    "numberMark": false,
+    "aliases": ["namokar", "navkar", "namokar mantra", "navkar mantra", "namaskar mantra", "mangal path", "chattari mangalam", "णमोकार", "नमोकार", "नवकार", "मंगल पाठ", "चत्तारि मंगलं"],
+    "source": {
+      "hi": "प्राकृत मूल पाठ, जैसा परम्परा में पढ़ा जाता है। हिंदी और अंग्रेज़ी अर्थ इसी ऐप के लिए लिखे गए हैं।",
+      "en": "Original Prakrit text as traditionally recited. Hindi and English meanings were written for this app."
+    }
+  },
+  {
+    "id": "bhaktamar",
+    "file": "content/bhaktamar.txt",
+    "title": { "hi": "भक्तामर स्तोत्र", "en": "Bhaktamar Stotra" },
+    "author": { "hi": "आचार्य मानतुंग", "en": "Acharya Mantunga" },
+    "unit": { "hi": "श्लोक", "en": "Verse" },
+    "numberMark": true,
+    "aliases": ["bhaktamar", "bhaktamara", "bhaktambar", "bhaktamar stotra", "bhaktamar stotram", "adinath stotra", "manatunga", "mantung", "भक्तामर", "भक्तांबर", "मानतुंग"],
+    "source": {
+      "hi": "संस्कृत मूल पाठ (दिगम्बर परम्परा, 48 श्लोक)। मिलान: काव्यमाला, सप्तम गुच्छक (निर्णयसागर प्रेस, 1926), संस्कृत विकिस्रोत (sa.wikisource.org) पर उपलब्ध, CC BY-SA 4.0।",
+      "en": "Original Sanskrit text (Digambar tradition, 48 verses). Checked against Kavyamala, part 7 (Nirnaya Sagar Press, 1926), available on Sanskrit Wikisource (sa.wikisource.org), CC BY-SA 4.0."
+    }
+  },
+  {
+    "id": "tattvarth-sutra",
+    "file": "content/tattvarth-sutra.txt",
+    "title": { "hi": "तत्त्वार्थसूत्र", "en": "Tattvartha Sutra" },
+    "author": { "hi": "आचार्य उमास्वामी", "en": "Acharya Umaswami" },
+    "unit": { "hi": "सूत्र", "en": "Sutra" },
+    "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
+    "numberMark": true,
+    "aliases": ["tattvarth", "tattvartha", "tatvarth", "tatvartha", "tattvarth sutra", "tattvartha sutra", "tatvarth sutra", "moksha shastra", "mokshashastra", "umaswami", "umasvami", "तत्वार्थ", "तत्त्वार्थ", "तत्वार्थसूत्र", "मोक्षशास्त्र", "मोक्ष शास्त्र", "उमास्वामी"],
+    "source": {
+      "hi": "संस्कृत मूल पाठ, सर्वार्थसिद्धि-सम्मत दिगम्बर पाठ (10 अध्याय, 357 सूत्र)। मिलान: संस्कृत विकिस्रोत (sa.wikisource.org), CC BY-SA 4.0।",
+      "en": "Original Sanskrit text, Digambar recension as in Sarvarthasiddhi (10 chapters, 357 sutras). Checked against Sanskrit Wikisource (sa.wikisource.org), CC BY-SA 4.0."
+    }
+  }
+]

@@ -1,0 +1,68 @@
+/*
+ * Offline support. Every file is saved on the phone the first time the app opens,
+ * so it keeps working without internet. Saved copies are refreshed in the
+ * background whenever there is internet, so text corrections reach everyone.
+ * Change VERSION when adding or removing files in the list below.
+ */
+const VERSION = 'jinvani-v1';
+const FILES = [
+  './',
+  'index.html',
+  'manifest.webmanifest',
+  'css/app.css',
+  'js/strings.js',
+  'js/icons.js',
+  'js/translit.js',
+  'js/app.js',
+  'content/books.json',
+  'content/namokar.txt',
+  'content/bhaktamar.txt',
+  'content/tattvarth-sutra.txt',
+  'fonts/noto-serif-devanagari-devanagari-400-normal.woff2',
+  'fonts/noto-serif-devanagari-devanagari-600-normal.woff2',
+  'fonts/noto-serif-devanagari-latin-400-normal.woff2',
+  'fonts/noto-serif-devanagari-latin-600-normal.woff2',
+  'icons/icon-192.png',
+  'icons/icon-512.png',
+  'icons/apple-touch-icon.png'
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(VERSION).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting())
+  );
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(k => k !== VERSION).map(k => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener('fetch', event => {
+  const req = event.request;
+  if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
+
+  /* Page loads always get the app shell, so deep links work offline too. */
+  const key = req.mode === 'navigate' ? './' : req;
+
+  event.respondWith(
+    caches.open(VERSION).then(cache =>
+      cache.match(key, { ignoreSearch: true }).then(cached => {
+        const fresh = fetch(req.mode === 'navigate' ? './' : req)
+          .then(res => {
+            if (res && res.ok) cache.put(key, res.clone());
+            return res;
+          })
+          .catch(() => cached);
+        if (cached) {
+          event.waitUntil(fresh.catch(() => {}));
+          return cached;
+        }
+        return fresh;
+      })
+    )
+  );
+});
