@@ -31,6 +31,22 @@
     }
   },
   {
+    "id": "darshan-stuti",
+    "file": "content/darshan-stuti.txt",
+    "category": "nitya",
+    "title": { "hi": "दर्शन स्तुति — प्रभु पतित पावन", "en": "Darshan Stuti — Prabhu Patit Pavan" },
+    "author": { "hi": "पंडित बुधजन", "en": "Pandit Budhjan" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": true,
+    "aliases": ["prabhu patit pavan", "patit pavan", "darshan stuti", "darshan path hindi", "budhjan", "प्रभु पतित पावन", "पतित पावन", "दर्शन स्तुति", "बुधजन"],
+    "source": {
+      "hi": "पंडित बुधजन (19वीं शताब्दी) की रचना, जैसी परम्परा में गाई जाती है।",
+      "en": "By Pandit Budhjan (19th century), as traditionally sung."
+    }
+  },
+  {
     "id": "bhaktamar",
     "file": "content/bhaktamar.txt",
     "category": "nitya",

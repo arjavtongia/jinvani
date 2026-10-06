@@ -24,6 +24,7 @@ Jain scriptures in large, easy-to-read text, made for elders.
 | --- | --- |
 | णमोकार मंत्र एवं मंगल पाठ | Prakrit original, with Hindi and English meanings |
 | दर्शन पाठ | Sanskrit, 13 verses |
+| दर्शन स्तुति — प्रभु पतित पावन | Pt. Budhjan, 8 stanzas (Hindi) |
 | भक्तामर स्तोत्र | Sanskrit original, Digambar tradition, 48 verses |
 | बारह भावना | Pt. Bhudhardas, 13 dohas |
 | तत्त्वार्थसूत्र | Sanskrit original, Digambar recension, 10 chapters, 357 sutras, with 20 explanatory diagrams |

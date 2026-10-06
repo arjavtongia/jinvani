@@ -29,10 +29,28 @@ Prose: While entering, say 'Nihsahi' three times. It means: I leave all the work
 Prose: Stand before the Lord with folded hands and head bowed. Say 'Om jay jay jay, namostu namostu namostu', then recite the Namokar Mantra.
 
 @ 5 | दर्शन पाठ | The darshan prayer
-दर्शनं देवदेवस्य दर्शनं पापनाशनम्।
-दर्शनं स्वर्गसोपानं दर्शनं मोक्षसाधनम्॥
-गद्य: भगवान की वीतराग छवि को देखते हुए दर्शन पाठ पढ़ें। ऊपर उसका पहला श्लोक है; पूरा पाठ 'ग्रंथ' में 'दर्शन पाठ' में है।
-Prose: Looking at the Lord's peaceful image, recite the darshan prayer. Its first verse is above; the full text is under 'Books', in 'Darshan Path'.
+प्रभु पतित पावन मैं अपावन, चरण आयो सरन जी।
+यों विरद आप निहार स्वामी, मेट जामन मरन जी॥
+तुम ना पिछान्यो आन मान्यो, देव विविध प्रकार जी।
+या बुद्धि सेती निज न जान्यो, भ्रम गिन्यो हितकार जी॥
+भव विकट वन में करम बैरी, ज्ञान धन मेरो हर्यो।
+तब इष्ट भूल्यो भ्रष्ट होय, अनिष्ट गति धरतो फिर्यो॥
+धन घड़ी यो धन दिवस यो ही, धन जनम मेरो भयो।
+अब भाग मेरो उदय आयो, दरश प्रभु को लख लयो॥
+छवि वीतरागी नगन मुद्रा, दृष्टि नासा पै धरैं।
+वसु प्रातिहार्य अनन्त गुण युत, कोटि रवि छवि को हरैं॥
+मिट गयो तिमिर मिथ्यात्व मेरो, उदय रवि आतम भयो।
+मो उर हरष ऐसो भयो, मनु रंक चिन्तामणि लयो॥
+मैं हाथ जोड़ नवाऊँ मस्तक, वीनऊँ तुव चरन जी।
+सर्वोत्कृष्ट त्रिलोकपति जिन, सुनहु तारन तरन जी॥
+जाचूँ नहीं सुरवास पुनि, नरराज परिजन साथ जी।
+'बुध' जाचहूँ तुव भक्ति भव भव, दीजिए शिवनाथ जी॥
+गद्य: भगवान की वीतराग छवि को देखते हुए दर्शन पाठ भाव से पढ़ें या गाएँ। ऊपर पंडित बुधजन की दर्शन स्तुति 'प्रभु पतित पावन' पूरी दी है।
+गद्य: संस्कृत का दर्शन पाठ 'दर्शनं देवदेवस्य' भी पढ़ा जाता है — उसे नीचे के बटन से खोलें।
+Prose: Looking at the Lord's peaceful image, read or sing the darshan prayer with devotion. Above is the complete darshan stuti 'Prabhu patit pavan' by Pandit Budhjan.
+Prose: The Sanskrit darshan path 'Darshanam devadevasya' is also recited; open it with the button below.
+लिंक: darshan-path | संस्कृत दर्शन पाठ (पूरा) पढ़ें | Read the Sanskrit Darshan Path
+लिंक: darshan-stuti | दर्शन स्तुति अलग से, बड़े अक्षरों में पढ़ें | Read the darshan stuti on its own, verse by verse
 
 @ 6 | अक्षत चढ़ाना | Offering akshat
 ॐ ह्रीं श्री देवशास्त्रगुरुभ्यो अक्षयपदप्राप्तये अक्षतं निर्वपामीति स्वाहा।

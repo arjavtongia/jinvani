@@ -20,6 +20,7 @@ Each book is a plain text file. Open the file on GitHub, tap the pencil icon, ma
 Meaning: English meaning
 गद्य: हिंदी गद्य का एक अनुच्छेद
 Prose: English paragraph
+लिंक: darshan-path | बटन का हिंदी नाम | Button label in English   ← दूसरा ग्रंथ खोलने का बटन
 
 दूसरा श्लोक…
 ```

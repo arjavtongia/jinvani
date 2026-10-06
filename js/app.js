@@ -153,6 +153,7 @@
    *   verse lines
    *   पद्य: ...                   (Hindi verse translation, one line each)
    *   गद्य: ... / Prose: ...      (prose paragraph, Hindi / English)
+   *   लिंक: book-id | हिंदी | English   (a button that opens another book)
    *   अन्वयार्थ: / अर्थ: / भावार्थ: / Meaning: ...
    *   a blank line ends a verse
    */
@@ -169,7 +170,7 @@
 
     function flush() {
       if (!block.length) return;
-      const v = { lines: [], padya: [], prose: [], proseEn: [], parts: [], label: '', topic: '', topicEn: '' };
+      const v = { lines: [], padya: [], prose: [], proseEn: [], parts: [], links: [], label: '', topic: '', topicEn: '' };
       block.forEach(line => {
         let m;
         if (line.startsWith('@')) {
@@ -183,6 +184,9 @@
           v.prose.push(m[1]);
         } else if ((m = line.match(/^prose\s*:\s*(.*)$/i))) {
           v.proseEn.push(m[1]);
+        } else if ((m = line.match(/^लिंक\s*:\s*(.*)$/))) {
+          const link = m[1].split('|').map(s => s.trim());
+          v.links.push({ book: link[0], hi: link[1] || link[0], en: link[2] || link[1] || link[0] });
         } else if ((m = line.match(LABEL_RE))) {
           v.parts.push({ label: m[1], lang: /^meaning$/i.test(m[1]) ? 'en' : 'hi', text: m[2] });
         } else {
@@ -838,6 +842,10 @@
     const prose = proseOf(v);
     if (prose.length) {
       html += '<div class="prose" translate="no">' + prose.map(p => '<p>' + esc(p) + '</p>').join('') + '</div>';
+    }
+    if (v.links.length) {
+      html += '<div class="stack guide-links">' + v.links.map(l =>
+        '<a class="btn btn-wide" href="#/read/' + encodeURIComponent(l.book) + '/1">' + icon('book') + '<span>' + esc(L(l)) + '</span></a>').join('') + '</div>';
     }
     (v.chitra || []).forEach(c => { html += chitraHtml(c); });
     if (v.padya.length) {
