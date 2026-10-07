@@ -979,7 +979,8 @@
     }
 
     let html = '<header class="topbar">' +
-      '<a class="btn btn-small" href="' + contentsHref + '">' + icon('list') + '<span>' + esc(t('contents')) + '</span></a>' +
+      /* A back button like every other screen: arrow plus the name of the list it returns to. */
+      '<a class="btn btn-small btn-back" href="' + contentsHref + '">' + icon('arrow-left') + '<span>' + esc(t('contents')) + '</span></a>' +
       '<a class="btn btn-small btn-ghost" href="#/">' + icon('home') + '<span>' + esc(t('home')) + '</span></a>' +
       '</header>' +
       '<div class="progress progress-top" aria-hidden="true"><span style="width:' + Math.round(page.to / n * 100) + '%"></span></div>' +
