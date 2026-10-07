@@ -21,6 +21,9 @@ Meaning: English meaning
 गद्य: हिंदी गद्य का एक अनुच्छेद
 Prose: English paragraph
 लिंक: darshan-path | बटन का हिंदी नाम | Button label in English   ← दूसरा ग्रंथ खोलने का बटन
+चित्र: img/katha/pawapuri.jpg | हिंदी कैप्शन | English caption | फ़ोटो का श्रेय   ← चित्र
+सीख: कथा की सीख             ← कथा की सीख, एक रंगीन डिब्बे में
+Moral: the lesson of the story, in English
 
 दूसरा श्लोक…
 ```
@@ -45,6 +48,10 @@ Prose: English paragraph
 3. Add the file name to the `FILES` list in `sw.js` and change `VERSION` there, so it also works offline.
 
 Only add texts that are free to share, or that you have permission to use.
+
+## कथाएँ · Stories (`katha/`)
+
+Stories are books in the `katha` category. Besides the usual fields, their entry in `books.json` can have `cover` (a photo shown on the story's card), `coverPos` (which part of the photo to show, for example `"center 10%"`), and `blurb` (one line about the story, in Hindi and English). A story without `cover` gets a coloured tile with the first letter of its name. Pictures go in `img/katha/`; use only photos that are free to share and write the photographer and license in the caption's last field.
 
 ## `pooja/` और `granth/` · Imported texts
 

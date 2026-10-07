@@ -146,6 +146,255 @@
     }
   },
   {
+    "id": "bahubali",
+    "file": "content/katha/bahubali.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "भरत और बाहुबली", "en": "Bharat and Bahubali" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 6,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/bahubali-face.jpg",
+    "coverPos": "center 8%",
+    "blurb": { "hi": "जीतकर भी सब छोड़ देने वाले भगवान बाहुबली की कथा", "en": "The story of Bhagwan Bahubali, who won and then gave everything up" },
+    "aliases": ["bahubali", "bharat", "bharat and bahubali", "bharat bahubali", "gommateshwar", "shravanabelagola", "गोमटेश्वर", "बाहुबली", "भरत"],
+    "source": {
+      "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "akshay-tritiya",
+    "file": "content/katha/akshay-tritiya.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "अक्षय तृतीया — भगवान ऋषभदेव का पहला आहार", "en": "Akshay Tritiya: Bhagwan Rishabhdev's first aahar" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/hastinapur.jpg",
+    "blurb": { "hi": "राजकुमार श्रेयांस ने गन्ने का रस देकर दान की परम्परा कैसे शुरू की", "en": "How Prince Shreyans began the tradition of giving, with a cup of sugarcane juice" },
+    "aliases": ["adinath", "akha teej", "akshay tritiya", "akshay tritiya: bhagwan rishabhdev's first aahar", "ikshu ras", "rishabhdev", "shreyans", "अक्षय तृतीया", "ऋषभदेव", "श्रेयांस"],
+    "source": {
+      "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "chandanbala",
+    "file": "content/katha/chandanbala.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "सती चन्दना (चन्दनबाला)", "en": "Sati Chandana (Chandanbala)" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/pawapuri.jpg",
+    "blurb": { "hi": "बेड़ियों में बँधी चन्दना ने भगवान महावीर को आहार दिया", "en": "Chandana, bound in chains, offers food to Bhagwan Mahavir" },
+    "aliases": ["chandan bala", "chandana", "chandanbala", "kaushambi", "sati chandana (chandanbala)", "चंदनबाला", "चन्दनबाला", "चन्दना"],
+    "source": {
+      "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "anjan-chor",
+    "file": "content/katha/anjan-chor.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "अञ्जन चोर", "en": "Anjan Chor" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/rajgir-vaibhar.jpg",
+    "blurb": { "hi": "निःशंकित अंग की कथा — जिनवचन में शंका न करना", "en": "A story of Nihshankit anga: no doubt about the Jina's teaching" },
+    "aliases": ["anjan chor", "nihshankit", "samyagdarshan", "samyaktva", "अञ्जन चोर", "निःशंकित", "सम्यक्त्व"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "anantmati",
+    "file": "content/katha/anantmati.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "अनन्तमती", "en": "Anantmati" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/champapur.jpg",
+    "blurb": { "hi": "निःकांक्षित अंग की कथा — धर्म के बदले सुख की चाह न रखना", "en": "A story of Nihkankshit anga: not wanting worldly pleasure in return for dharma" },
+    "aliases": ["anantmati", "nihkankshit", "samyagdarshan", "samyaktva", "अनन्तमती", "निःकांक्षित", "सम्यक्त्व"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "uddayan",
+    "file": "content/katha/uddayan.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "राजा उद्दायन", "en": "Raja Uddayan" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 3,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "निर्विचिकित्सा अंग की कथा — मुनि के मलिन शरीर से घृणा न करना", "en": "A story of Nirvichikitsa anga: no disgust at a muni's unwashed body" },
+    "aliases": ["nirvichikitsa", "raja uddayan", "samyagdarshan", "samyaktva", "निर्विचिकित्सा", "राजा उद्दायन", "सम्यक्त्व"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "revati",
+    "file": "content/katha/revati.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "रेवती रानी", "en": "Revati Rani" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "अमूढदृष्टि अंग की कथा — चमत्कार देखकर भी भ्रम में न पड़ना", "en": "A story of Amudhadrishti anga: not being fooled, even by miracles" },
+    "aliases": ["amudhadrishti", "revati rani", "samyagdarshan", "samyaktva", "अमूढदृष्टि", "रेवती रानी", "सम्यक्त्व"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "jinendrabhakt",
+    "file": "content/katha/jinendrabhakt.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "जिनेन्द्रभक्त सेठ", "en": "Jinendrabhakt Seth" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/parshvanath.jpg",
+    "coverPos": "center 62%",
+    "blurb": { "hi": "उपगूहन अंग की कथा — धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "A story of Upguhan anga: covering the faults of the faithful, so dharma is not blamed" },
+    "aliases": ["jinendrabhakt seth", "samyagdarshan", "samyaktva", "upguhan", "उपगूहन", "जिनेन्द्रभक्त सेठ", "सम्यक्त्व"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "varishen",
+    "file": "content/katha/varishen.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "वारिषेण मुनि", "en": "Varishen Muni" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/rajgir-vaibhar.jpg",
+    "blurb": { "hi": "स्थितिकरण अंग की कथा — डिगते हुए को धर्म में फिर स्थिर करना", "en": "A story of Sthitikaran anga: steadying someone who is slipping from dharma" },
+    "aliases": ["samyagdarshan", "samyaktva", "sthitikaran", "varishen muni", "वारिषेण मुनि", "सम्यक्त्व", "स्थितिकरण"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "vishnukumar",
+    "file": "content/katha/vishnukumar.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "विष्णुकुमार मुनि", "en": "Vishnukumar Muni" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 6,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/hastinapur-shantinath.jpg",
+    "coverPos": "center 30%",
+    "blurb": { "hi": "वात्सल्य अंग की कथा — साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "A story of Vatsalya anga: loving fellow followers as a cow loves her calf" },
+    "aliases": ["samyagdarshan", "samyaktva", "vatsalya", "vishnukumar muni", "वात्सल्य", "विष्णुकुमार मुनि", "सम्यक्त्व"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "vajrakumar",
+    "file": "content/katha/vajrakumar.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "वज्रकुमार मुनि", "en": "Vajrakumar Muni" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 6,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/mathura-ayagapata.jpg",
+    "blurb": { "hi": "प्रभावना अंग की कथा — धर्म की महिमा फैलाना", "en": "A story of Prabhavana anga: spreading the glory of dharma" },
+    "aliases": ["prabhavana", "samyagdarshan", "samyaktva", "vajrakumar muni", "प्रभावना", "वज्रकुमार मुनि", "सम्यक्त्व"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "sukumal",
+    "file": "content/katha/sukumal.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "महामुनि सुकुमाल", "en": "Mahamuni Sukumal" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/ujjain.jpg",
+    "coverPos": "center 70%",
+    "blurb": { "hi": "उज्जयिनी की कथा, 6 भागों में", "en": "A story from Ujjayini, in 6 parts" },
+    "aliases": ["mahamuni sukumal", "sukumal", "महामुनि सुकुमाल"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
+    "id": "sudarshan",
+    "file": "content/katha/sudarshan.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "सेठ सुदर्शन", "en": "Seth Sudarshan" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 39,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/champapur.jpg",
+    "blurb": { "hi": "चंपापुर की कथा, 7 भागों में", "en": "A story from Champapur, in 7 parts" },
+    "aliases": ["seth sudarshan", "sudarshan", "सेठ सुदर्शन"],
+    "source": {
+      "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    }
+  },
+  {
     "id": "mangalashtak",
     "file": "content/pooja/mangalashtak.txt",
     "scroll": true,

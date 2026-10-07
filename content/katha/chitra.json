@@ -1,0 +1,466 @@
+{
+  "anjan-chor": [
+    {
+      "at": [4],
+      "type": "list",
+      "title": { "hi": "सम्यग्दर्शन के आठ अंग और उनकी कथाएँ", "en": "The eight angas of right faith, and their stories" },
+      "items": [
+        {
+          "hi": "निःशंकित — अञ्जन चोर",
+          "en": "Nihshankit — Anjan Chor",
+          "tag": "★",
+          "sub": { "hi": "जिनवचन में शंका न करना", "en": "no doubt about the Jina's teaching" }
+        },
+        {
+          "hi": "निःकांक्षित — अनन्तमती",
+          "en": "Nihkankshit — Anantmati",
+          "tag": "2",
+          "sub": { "hi": "धर्म के बदले सुख की चाह न रखना", "en": "not wanting worldly pleasure in return for dharma" }
+        },
+        {
+          "hi": "निर्विचिकित्सा — राजा उद्दायन",
+          "en": "Nirvichikitsa — Raja Uddayan",
+          "tag": "3",
+          "sub": { "hi": "मुनि के मलिन शरीर से घृणा न करना", "en": "no disgust at a muni's unwashed body" }
+        },
+        {
+          "hi": "अमूढदृष्टि — रेवती रानी",
+          "en": "Amudhadrishti — Revati Rani",
+          "tag": "4",
+          "sub": { "hi": "चमत्कार देखकर भी भ्रम में न पड़ना", "en": "not being fooled, even by miracles" }
+        },
+        {
+          "hi": "उपगूहन — जिनेन्द्रभक्त सेठ",
+          "en": "Upguhan — Jinendrabhakt Seth",
+          "tag": "5",
+          "sub": { "hi": "धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "covering the faults of the faithful, so dharma is not blamed" }
+        },
+        {
+          "hi": "स्थितिकरण — वारिषेण मुनि",
+          "en": "Sthitikaran — Varishen Muni",
+          "tag": "6",
+          "sub": { "hi": "डिगते हुए को धर्म में फिर स्थिर करना", "en": "steadying someone who is slipping from dharma" }
+        },
+        {
+          "hi": "वात्सल्य — विष्णुकुमार मुनि",
+          "en": "Vatsalya — Vishnukumar Muni",
+          "tag": "7",
+          "sub": { "hi": "साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "loving fellow followers as a cow loves her calf" }
+        },
+        {
+          "hi": "प्रभावना — वज्रकुमार मुनि",
+          "en": "Prabhavana — Vajrakumar Muni",
+          "tag": "8",
+          "sub": { "hi": "धर्म की महिमा फैलाना", "en": "spreading the glory of dharma" }
+        }
+      ],
+      "gist": { "hi": "★ वाला अंग इस कथा का है।", "en": "The anga marked ★ is the one this story is about." }
+    }
+  ],
+  "anantmati": [
+    {
+      "at": [5],
+      "type": "list",
+      "title": { "hi": "सम्यग्दर्शन के आठ अंग और उनकी कथाएँ", "en": "The eight angas of right faith, and their stories" },
+      "items": [
+        {
+          "hi": "निःशंकित — अञ्जन चोर",
+          "en": "Nihshankit — Anjan Chor",
+          "tag": "1",
+          "sub": { "hi": "जिनवचन में शंका न करना", "en": "no doubt about the Jina's teaching" }
+        },
+        {
+          "hi": "निःकांक्षित — अनन्तमती",
+          "en": "Nihkankshit — Anantmati",
+          "tag": "★",
+          "sub": { "hi": "धर्म के बदले सुख की चाह न रखना", "en": "not wanting worldly pleasure in return for dharma" }
+        },
+        {
+          "hi": "निर्विचिकित्सा — राजा उद्दायन",
+          "en": "Nirvichikitsa — Raja Uddayan",
+          "tag": "3",
+          "sub": { "hi": "मुनि के मलिन शरीर से घृणा न करना", "en": "no disgust at a muni's unwashed body" }
+        },
+        {
+          "hi": "अमूढदृष्टि — रेवती रानी",
+          "en": "Amudhadrishti — Revati Rani",
+          "tag": "4",
+          "sub": { "hi": "चमत्कार देखकर भी भ्रम में न पड़ना", "en": "not being fooled, even by miracles" }
+        },
+        {
+          "hi": "उपगूहन — जिनेन्द्रभक्त सेठ",
+          "en": "Upguhan — Jinendrabhakt Seth",
+          "tag": "5",
+          "sub": { "hi": "धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "covering the faults of the faithful, so dharma is not blamed" }
+        },
+        {
+          "hi": "स्थितिकरण — वारिषेण मुनि",
+          "en": "Sthitikaran — Varishen Muni",
+          "tag": "6",
+          "sub": { "hi": "डिगते हुए को धर्म में फिर स्थिर करना", "en": "steadying someone who is slipping from dharma" }
+        },
+        {
+          "hi": "वात्सल्य — विष्णुकुमार मुनि",
+          "en": "Vatsalya — Vishnukumar Muni",
+          "tag": "7",
+          "sub": { "hi": "साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "loving fellow followers as a cow loves her calf" }
+        },
+        {
+          "hi": "प्रभावना — वज्रकुमार मुनि",
+          "en": "Prabhavana — Vajrakumar Muni",
+          "tag": "8",
+          "sub": { "hi": "धर्म की महिमा फैलाना", "en": "spreading the glory of dharma" }
+        }
+      ],
+      "gist": { "hi": "★ वाला अंग इस कथा का है।", "en": "The anga marked ★ is the one this story is about." }
+    }
+  ],
+  "uddayan": [
+    {
+      "at": [3],
+      "type": "list",
+      "title": { "hi": "सम्यग्दर्शन के आठ अंग और उनकी कथाएँ", "en": "The eight angas of right faith, and their stories" },
+      "items": [
+        {
+          "hi": "निःशंकित — अञ्जन चोर",
+          "en": "Nihshankit — Anjan Chor",
+          "tag": "1",
+          "sub": { "hi": "जिनवचन में शंका न करना", "en": "no doubt about the Jina's teaching" }
+        },
+        {
+          "hi": "निःकांक्षित — अनन्तमती",
+          "en": "Nihkankshit — Anantmati",
+          "tag": "2",
+          "sub": { "hi": "धर्म के बदले सुख की चाह न रखना", "en": "not wanting worldly pleasure in return for dharma" }
+        },
+        {
+          "hi": "निर्विचिकित्सा — राजा उद्दायन",
+          "en": "Nirvichikitsa — Raja Uddayan",
+          "tag": "★",
+          "sub": { "hi": "मुनि के मलिन शरीर से घृणा न करना", "en": "no disgust at a muni's unwashed body" }
+        },
+        {
+          "hi": "अमूढदृष्टि — रेवती रानी",
+          "en": "Amudhadrishti — Revati Rani",
+          "tag": "4",
+          "sub": { "hi": "चमत्कार देखकर भी भ्रम में न पड़ना", "en": "not being fooled, even by miracles" }
+        },
+        {
+          "hi": "उपगूहन — जिनेन्द्रभक्त सेठ",
+          "en": "Upguhan — Jinendrabhakt Seth",
+          "tag": "5",
+          "sub": { "hi": "धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "covering the faults of the faithful, so dharma is not blamed" }
+        },
+        {
+          "hi": "स्थितिकरण — वारिषेण मुनि",
+          "en": "Sthitikaran — Varishen Muni",
+          "tag": "6",
+          "sub": { "hi": "डिगते हुए को धर्म में फिर स्थिर करना", "en": "steadying someone who is slipping from dharma" }
+        },
+        {
+          "hi": "वात्सल्य — विष्णुकुमार मुनि",
+          "en": "Vatsalya — Vishnukumar Muni",
+          "tag": "7",
+          "sub": { "hi": "साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "loving fellow followers as a cow loves her calf" }
+        },
+        {
+          "hi": "प्रभावना — वज्रकुमार मुनि",
+          "en": "Prabhavana — Vajrakumar Muni",
+          "tag": "8",
+          "sub": { "hi": "धर्म की महिमा फैलाना", "en": "spreading the glory of dharma" }
+        }
+      ],
+      "gist": { "hi": "★ वाला अंग इस कथा का है।", "en": "The anga marked ★ is the one this story is about." }
+    }
+  ],
+  "revati": [
+    {
+      "at": [4],
+      "type": "list",
+      "title": { "hi": "सम्यग्दर्शन के आठ अंग और उनकी कथाएँ", "en": "The eight angas of right faith, and their stories" },
+      "items": [
+        {
+          "hi": "निःशंकित — अञ्जन चोर",
+          "en": "Nihshankit — Anjan Chor",
+          "tag": "1",
+          "sub": { "hi": "जिनवचन में शंका न करना", "en": "no doubt about the Jina's teaching" }
+        },
+        {
+          "hi": "निःकांक्षित — अनन्तमती",
+          "en": "Nihkankshit — Anantmati",
+          "tag": "2",
+          "sub": { "hi": "धर्म के बदले सुख की चाह न रखना", "en": "not wanting worldly pleasure in return for dharma" }
+        },
+        {
+          "hi": "निर्विचिकित्सा — राजा उद्दायन",
+          "en": "Nirvichikitsa — Raja Uddayan",
+          "tag": "3",
+          "sub": { "hi": "मुनि के मलिन शरीर से घृणा न करना", "en": "no disgust at a muni's unwashed body" }
+        },
+        {
+          "hi": "अमूढदृष्टि — रेवती रानी",
+          "en": "Amudhadrishti — Revati Rani",
+          "tag": "★",
+          "sub": { "hi": "चमत्कार देखकर भी भ्रम में न पड़ना", "en": "not being fooled, even by miracles" }
+        },
+        {
+          "hi": "उपगूहन — जिनेन्द्रभक्त सेठ",
+          "en": "Upguhan — Jinendrabhakt Seth",
+          "tag": "5",
+          "sub": { "hi": "धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "covering the faults of the faithful, so dharma is not blamed" }
+        },
+        {
+          "hi": "स्थितिकरण — वारिषेण मुनि",
+          "en": "Sthitikaran — Varishen Muni",
+          "tag": "6",
+          "sub": { "hi": "डिगते हुए को धर्म में फिर स्थिर करना", "en": "steadying someone who is slipping from dharma" }
+        },
+        {
+          "hi": "वात्सल्य — विष्णुकुमार मुनि",
+          "en": "Vatsalya — Vishnukumar Muni",
+          "tag": "7",
+          "sub": { "hi": "साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "loving fellow followers as a cow loves her calf" }
+        },
+        {
+          "hi": "प्रभावना — वज्रकुमार मुनि",
+          "en": "Prabhavana — Vajrakumar Muni",
+          "tag": "8",
+          "sub": { "hi": "धर्म की महिमा फैलाना", "en": "spreading the glory of dharma" }
+        }
+      ],
+      "gist": { "hi": "★ वाला अंग इस कथा का है।", "en": "The anga marked ★ is the one this story is about." }
+    }
+  ],
+  "jinendrabhakt": [
+    {
+      "at": [4],
+      "type": "list",
+      "title": { "hi": "सम्यग्दर्शन के आठ अंग और उनकी कथाएँ", "en": "The eight angas of right faith, and their stories" },
+      "items": [
+        {
+          "hi": "निःशंकित — अञ्जन चोर",
+          "en": "Nihshankit — Anjan Chor",
+          "tag": "1",
+          "sub": { "hi": "जिनवचन में शंका न करना", "en": "no doubt about the Jina's teaching" }
+        },
+        {
+          "hi": "निःकांक्षित — अनन्तमती",
+          "en": "Nihkankshit — Anantmati",
+          "tag": "2",
+          "sub": { "hi": "धर्म के बदले सुख की चाह न रखना", "en": "not wanting worldly pleasure in return for dharma" }
+        },
+        {
+          "hi": "निर्विचिकित्सा — राजा उद्दायन",
+          "en": "Nirvichikitsa — Raja Uddayan",
+          "tag": "3",
+          "sub": { "hi": "मुनि के मलिन शरीर से घृणा न करना", "en": "no disgust at a muni's unwashed body" }
+        },
+        {
+          "hi": "अमूढदृष्टि — रेवती रानी",
+          "en": "Amudhadrishti — Revati Rani",
+          "tag": "4",
+          "sub": { "hi": "चमत्कार देखकर भी भ्रम में न पड़ना", "en": "not being fooled, even by miracles" }
+        },
+        {
+          "hi": "उपगूहन — जिनेन्द्रभक्त सेठ",
+          "en": "Upguhan — Jinendrabhakt Seth",
+          "tag": "★",
+          "sub": { "hi": "धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "covering the faults of the faithful, so dharma is not blamed" }
+        },
+        {
+          "hi": "स्थितिकरण — वारिषेण मुनि",
+          "en": "Sthitikaran — Varishen Muni",
+          "tag": "6",
+          "sub": { "hi": "डिगते हुए को धर्म में फिर स्थिर करना", "en": "steadying someone who is slipping from dharma" }
+        },
+        {
+          "hi": "वात्सल्य — विष्णुकुमार मुनि",
+          "en": "Vatsalya — Vishnukumar Muni",
+          "tag": "7",
+          "sub": { "hi": "साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "loving fellow followers as a cow loves her calf" }
+        },
+        {
+          "hi": "प्रभावना — वज्रकुमार मुनि",
+          "en": "Prabhavana — Vajrakumar Muni",
+          "tag": "8",
+          "sub": { "hi": "धर्म की महिमा फैलाना", "en": "spreading the glory of dharma" }
+        }
+      ],
+      "gist": { "hi": "★ वाला अंग इस कथा का है।", "en": "The anga marked ★ is the one this story is about." }
+    }
+  ],
+  "varishen": [
+    {
+      "at": [5],
+      "type": "list",
+      "title": { "hi": "सम्यग्दर्शन के आठ अंग और उनकी कथाएँ", "en": "The eight angas of right faith, and their stories" },
+      "items": [
+        {
+          "hi": "निःशंकित — अञ्जन चोर",
+          "en": "Nihshankit — Anjan Chor",
+          "tag": "1",
+          "sub": { "hi": "जिनवचन में शंका न करना", "en": "no doubt about the Jina's teaching" }
+        },
+        {
+          "hi": "निःकांक्षित — अनन्तमती",
+          "en": "Nihkankshit — Anantmati",
+          "tag": "2",
+          "sub": { "hi": "धर्म के बदले सुख की चाह न रखना", "en": "not wanting worldly pleasure in return for dharma" }
+        },
+        {
+          "hi": "निर्विचिकित्सा — राजा उद्दायन",
+          "en": "Nirvichikitsa — Raja Uddayan",
+          "tag": "3",
+          "sub": { "hi": "मुनि के मलिन शरीर से घृणा न करना", "en": "no disgust at a muni's unwashed body" }
+        },
+        {
+          "hi": "अमूढदृष्टि — रेवती रानी",
+          "en": "Amudhadrishti — Revati Rani",
+          "tag": "4",
+          "sub": { "hi": "चमत्कार देखकर भी भ्रम में न पड़ना", "en": "not being fooled, even by miracles" }
+        },
+        {
+          "hi": "उपगूहन — जिनेन्द्रभक्त सेठ",
+          "en": "Upguhan — Jinendrabhakt Seth",
+          "tag": "5",
+          "sub": { "hi": "धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "covering the faults of the faithful, so dharma is not blamed" }
+        },
+        {
+          "hi": "स्थितिकरण — वारिषेण मुनि",
+          "en": "Sthitikaran — Varishen Muni",
+          "tag": "★",
+          "sub": { "hi": "डिगते हुए को धर्म में फिर स्थिर करना", "en": "steadying someone who is slipping from dharma" }
+        },
+        {
+          "hi": "वात्सल्य — विष्णुकुमार मुनि",
+          "en": "Vatsalya — Vishnukumar Muni",
+          "tag": "7",
+          "sub": { "hi": "साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "loving fellow followers as a cow loves her calf" }
+        },
+        {
+          "hi": "प्रभावना — वज्रकुमार मुनि",
+          "en": "Prabhavana — Vajrakumar Muni",
+          "tag": "8",
+          "sub": { "hi": "धर्म की महिमा फैलाना", "en": "spreading the glory of dharma" }
+        }
+      ],
+      "gist": { "hi": "★ वाला अंग इस कथा का है।", "en": "The anga marked ★ is the one this story is about." }
+    }
+  ],
+  "vishnukumar": [
+    {
+      "at": [6],
+      "type": "list",
+      "title": { "hi": "सम्यग्दर्शन के आठ अंग और उनकी कथाएँ", "en": "The eight angas of right faith, and their stories" },
+      "items": [
+        {
+          "hi": "निःशंकित — अञ्जन चोर",
+          "en": "Nihshankit — Anjan Chor",
+          "tag": "1",
+          "sub": { "hi": "जिनवचन में शंका न करना", "en": "no doubt about the Jina's teaching" }
+        },
+        {
+          "hi": "निःकांक्षित — अनन्तमती",
+          "en": "Nihkankshit — Anantmati",
+          "tag": "2",
+          "sub": { "hi": "धर्म के बदले सुख की चाह न रखना", "en": "not wanting worldly pleasure in return for dharma" }
+        },
+        {
+          "hi": "निर्विचिकित्सा — राजा उद्दायन",
+          "en": "Nirvichikitsa — Raja Uddayan",
+          "tag": "3",
+          "sub": { "hi": "मुनि के मलिन शरीर से घृणा न करना", "en": "no disgust at a muni's unwashed body" }
+        },
+        {
+          "hi": "अमूढदृष्टि — रेवती रानी",
+          "en": "Amudhadrishti — Revati Rani",
+          "tag": "4",
+          "sub": { "hi": "चमत्कार देखकर भी भ्रम में न पड़ना", "en": "not being fooled, even by miracles" }
+        },
+        {
+          "hi": "उपगूहन — जिनेन्द्रभक्त सेठ",
+          "en": "Upguhan — Jinendrabhakt Seth",
+          "tag": "5",
+          "sub": { "hi": "धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "covering the faults of the faithful, so dharma is not blamed" }
+        },
+        {
+          "hi": "स्थितिकरण — वारिषेण मुनि",
+          "en": "Sthitikaran — Varishen Muni",
+          "tag": "6",
+          "sub": { "hi": "डिगते हुए को धर्म में फिर स्थिर करना", "en": "steadying someone who is slipping from dharma" }
+        },
+        {
+          "hi": "वात्सल्य — विष्णुकुमार मुनि",
+          "en": "Vatsalya — Vishnukumar Muni",
+          "tag": "★",
+          "sub": { "hi": "साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "loving fellow followers as a cow loves her calf" }
+        },
+        {
+          "hi": "प्रभावना — वज्रकुमार मुनि",
+          "en": "Prabhavana — Vajrakumar Muni",
+          "tag": "8",
+          "sub": { "hi": "धर्म की महिमा फैलाना", "en": "spreading the glory of dharma" }
+        }
+      ],
+      "gist": { "hi": "★ वाला अंग इस कथा का है।", "en": "The anga marked ★ is the one this story is about." }
+    }
+  ],
+  "vajrakumar": [
+    {
+      "at": [6],
+      "type": "list",
+      "title": { "hi": "सम्यग्दर्शन के आठ अंग और उनकी कथाएँ", "en": "The eight angas of right faith, and their stories" },
+      "items": [
+        {
+          "hi": "निःशंकित — अञ्जन चोर",
+          "en": "Nihshankit — Anjan Chor",
+          "tag": "1",
+          "sub": { "hi": "जिनवचन में शंका न करना", "en": "no doubt about the Jina's teaching" }
+        },
+        {
+          "hi": "निःकांक्षित — अनन्तमती",
+          "en": "Nihkankshit — Anantmati",
+          "tag": "2",
+          "sub": { "hi": "धर्म के बदले सुख की चाह न रखना", "en": "not wanting worldly pleasure in return for dharma" }
+        },
+        {
+          "hi": "निर्विचिकित्सा — राजा उद्दायन",
+          "en": "Nirvichikitsa — Raja Uddayan",
+          "tag": "3",
+          "sub": { "hi": "मुनि के मलिन शरीर से घृणा न करना", "en": "no disgust at a muni's unwashed body" }
+        },
+        {
+          "hi": "अमूढदृष्टि — रेवती रानी",
+          "en": "Amudhadrishti — Revati Rani",
+          "tag": "4",
+          "sub": { "hi": "चमत्कार देखकर भी भ्रम में न पड़ना", "en": "not being fooled, even by miracles" }
+        },
+        {
+          "hi": "उपगूहन — जिनेन्द्रभक्त सेठ",
+          "en": "Upguhan — Jinendrabhakt Seth",
+          "tag": "5",
+          "sub": { "hi": "धर्मात्मा के दोष ढँकना, धर्म की निन्दा न होने देना", "en": "covering the faults of the faithful, so dharma is not blamed" }
+        },
+        {
+          "hi": "स्थितिकरण — वारिषेण मुनि",
+          "en": "Sthitikaran — Varishen Muni",
+          "tag": "6",
+          "sub": { "hi": "डिगते हुए को धर्म में फिर स्थिर करना", "en": "steadying someone who is slipping from dharma" }
+        },
+        {
+          "hi": "वात्सल्य — विष्णुकुमार मुनि",
+          "en": "Vatsalya — Vishnukumar Muni",
+          "tag": "7",
+          "sub": { "hi": "साधर्मियों से गाय-बछड़े जैसा प्रेम", "en": "loving fellow followers as a cow loves her calf" }
+        },
+        {
+          "hi": "प्रभावना — वज्रकुमार मुनि",
+          "en": "Prabhavana — Vajrakumar Muni",
+          "tag": "★",
+          "sub": { "hi": "धर्म की महिमा फैलाना", "en": "spreading the glory of dharma" }
+        }
+      ],
+      "gist": { "hi": "★ वाला अंग इस कथा का है।", "en": "The anga marked ★ is the one this story is about." }
+    }
+  ]
+}

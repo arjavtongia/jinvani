@@ -136,6 +136,8 @@
       try {
         const r = await fetch('content/chitra.json');
         chitra = r.ok ? await r.json() : {};
+        const rk = await fetch('content/katha/chitra.json').catch(() => null);
+        if (rk && rk.ok) Object.assign(chitra, await rk.json());
       } catch (e) {
         chitra = {};
       }
@@ -174,6 +176,8 @@
    *   पद्य: ...                   (Hindi verse translation, one line each)
    *   गद्य: ... / Prose: ...      (prose paragraph, Hindi / English)
    *   लिंक: book-id | हिंदी | English   (a button that opens another book)
+   *   चित्र: img/x.jpg | हिंदी | English | credit   (a picture with its caption)
+   *   सीख: ... / Moral: ...       (the lesson of a story, Hindi / English)
    *   अन्वयार्थ: / अर्थ: / भावार्थ: / Meaning: ...
    *   a blank line ends a verse
    */
@@ -190,7 +194,7 @@
 
     function flush() {
       if (!block.length) return;
-      const v = { lines: [], padya: [], prose: [], proseEn: [], parts: [], links: [], label: '', topic: '', topicEn: '' };
+      const v = { lines: [], padya: [], prose: [], proseEn: [], parts: [], links: [], images: [], moral: [], moralEn: [], label: '', topic: '', topicEn: '' };
       block.forEach(line => {
         let m;
         if (line.startsWith('@')) {
@@ -207,6 +211,14 @@
         } else if ((m = line.match(/^लिंक\s*:\s*(.*)$/))) {
           const link = m[1].split('|').map(s => s.trim());
           v.links.push({ book: link[0], hi: link[1] || link[0], en: link[2] || link[1] || link[0] });
+        } else if ((m = line.match(/^चित्र\s*:\s*(.*)$/))) {
+          /* चित्र: picture | Hindi caption | English caption | credit */
+          const pic = m[1].split('|').map(s => s.trim());
+          v.images.push({ src: pic[0], hi: pic[1] || '', en: pic[2] || pic[1] || '', credit: pic[3] || '' });
+        } else if ((m = line.match(/^सीख\s*:\s*(.*)$/))) {
+          v.moral.push(m[1]);
+        } else if ((m = line.match(/^moral\s*:\s*(.*)$/i))) {
+          v.moralEn.push(m[1]);
         } else if ((m = line.match(LABEL_RE))) {
           v.parts.push({ label: m[1], lang: /^meaning$/i.test(m[1]) ? 'en' : 'hi', text: m[2] });
         } else {
@@ -214,7 +226,7 @@
         }
       });
       block = [];
-      if (!v.lines.length && !v.prose.length) return;
+      if (!v.lines.length && !v.prose.length && !v.images.length && !v.moral.length && !v.moralEn.length) return;
       if (!cur) startSection(null);
       v.pos = verses.length + 1;
       v.section = cur.index;
@@ -632,7 +644,28 @@
       icon('chevron-right', 'row-chev') + '</a></li>';
   }
 
+  /* A story's picture: its cover photo, or a coloured tile with the first letter of its name. */
+  function coverHtml(meta, cls) {
+    if (meta.cover) {
+      return '<img class="' + cls + '" src="' + esc(meta.cover) + '" alt="" loading="lazy" decoding="async"' +
+        (meta.coverPos ? ' style="object-position:' + esc(meta.coverPos) + '"' : '') + '>';
+    }
+    const name = meta.title.hi.replace(/^(श्री|महामुनि|राजा|सेठ)\s+/, '');
+    const letter = (name.match(/^.[\u0900-\u0903\u093A-\u094F\u0951-\u0957]*/) || [''])[0];
+    let hue = 0;
+    for (const ch of meta.id) hue = (hue * 31 + ch.charCodeAt(0)) % 40;
+    hue += 8; /* saffron, vermilion and gold, like the rest of the app */
+    return '<span class="' + cls + ' cover-letter" style="--hue:' + hue + '" aria-hidden="true" translate="no">' + esc(letter) + '</span>';
+  }
+
+  function storyRow(meta) {
+    return '<li><a class="story-card" href="#/book/' + meta.id + '">' + coverHtml(meta, 'story-art') +
+      '<span class="story-body">' + titleHtml(meta) +
+      (meta.blurb ? '<span class="row-sub">' + esc(L(meta.blurb)) + '</span>' : '') + '</span></a></li>';
+  }
+
   function bookRow(meta) {
+    if (meta.category === 'katha') return storyRow(meta);
     return chevronRow('#/book/' + meta.id, titleHtml(meta) +
       '<span class="row-sub">' + (meta.author && L(meta.author) ? esc(L(meta.author)) + ' · ' : '') + esc(countLabel(meta)) + '</span>');
   }
@@ -797,6 +830,16 @@
       '<a class="tile tile-wide" href="#/saved">' + icon('bookmark') + '<span>' + esc(t('saved')) + '</span>' +
       (state.bookmarks.length ? '<span class="count-pill">' + state.bookmarks.length + '</span>' : '') + '</a>';
 
+    await getCatalog();
+    const stories = catalog.filter(b => b.category === 'katha');
+    if (stories.length) {
+      const today = Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
+      const s = stories[today % stories.length];
+      html += '<a class="card story-today" href="#/book/' + s.id + '">' + coverHtml(s, 'story-today-art') +
+        '<span class="story-today-body"><span class="card-label">' + esc(t('todaysStory')) + '</span>' +
+        titleHtml(s, 'card-title') + (s.blurb ? '<span class="card-meta">' + esc(L(s.blurb)) + '</span>' : '') + '</span></a>';
+    }
+
     const ts = await getBook('tattvarth-sutra').catch(() => null);
     if (ts) {
       const day = Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
@@ -817,7 +860,7 @@
       if (!cat) return viewNotFound();
       document.title = L(cat.title) + ' · ' + t('appName');
       return backBar('#/books', t('books')) +
-        '<main><h1 translate="no">' + esc(L(cat.title)) + '</h1><ul class="rows">' +
+        '<main><h1 translate="no">' + esc(L(cat.title)) + '</h1><ul class="' + (cat.id === 'katha' ? 'story-list' : 'rows') + '">' +
         catalog.filter(b => b.category === cat.id).map(bookRow).join('') + '</ul></main>';
     }
     document.title = t('books') + ' · ' + t('appName');
@@ -877,7 +920,9 @@
     document.title = book.title.hi + ' · ' + t('appName');
     const parent = bookParent(book);
     let html = backBar(parent.href, parent.label) + '<main>' +
+      (book.category === 'katha' ? coverHtml(book, 'book-cover') : '') +
       '<h1 class="book-head">' + titleHtml(book) + '</h1>' +
+      (book.blurb ? '<p class="book-blurb">' + esc(L(book.blurb)) + '</p>' : '') +
       '<p class="muted">' + (L(book.author) ? esc(L(book.author)) + ' · ' : '') + esc(countLabel(book)) + '</p>' +
       '<div class="stack">';
 
@@ -919,10 +964,18 @@
 
   let ctx = null;
 
+  /* A picture inside a story, with its caption and the photographer's credit. */
+  function figureHtml(img) {
+    return '<figure class="story-fig"><img src="' + esc(img.src) + '" alt="' + esc(L(img)) + '" loading="lazy" decoding="async">' +
+      '<figcaption><span translate="no">' + esc(L(img)) + '</span>' +
+      (img.credit ? '<span class="fig-credit">' + esc(img.credit) + '</span>' : '') + '</figcaption></figure>';
+  }
+
   function verseBlockHtml(book, v, isTarget) {
     const lang = book.textLang || 'sa';
     let html = '<div class="verse-block' + (isTarget ? ' is-target' : '') + '" id="v-' + v.pos + '">';
     if (v.topic) html += '<p class="topic" translate="no">' + esc(topicOf(v)) + '</p>';
+    v.images.forEach(img => { html += figureHtml(img); });
     (v.chitra || []).filter(c => c.top).forEach(c => { html += chitraHtml(c); });
     if (v.lines.length) {
       /* The verse number goes at the end as ॥ 12 ॥, replacing any closing danda already in the text. */
@@ -941,6 +994,11 @@
     const prose = proseOf(v);
     if (prose.length) {
       html += '<div class="prose" translate="no">' + prose.map(p => '<p>' + esc(p) + '</p>').join('') + '</div>';
+    }
+    const moral = state.lang === 'en' && v.moralEn.length ? v.moralEn : (v.moral.length ? v.moral : v.moralEn);
+    if (moral.length) {
+      html += '<aside class="moral"><h2>' + icon('bulb') + '<span>' + esc(t('moral')) + '</span></h2>' +
+        moral.map(p => '<p translate="no">' + esc(p) + '</p>').join('') + '</aside>';
     }
     if (v.links.length) {
       html += '<div class="stack guide-links">' + v.links.map(l =>

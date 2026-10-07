@@ -844,3 +844,65 @@ main.enter-prev { animation: enter-prev 0.22s ease-out; }
   * { transition: none !important; animation: none !important; }
   .scroll-cue .icon { animation: none; }
 }
+
+/* ---------- Stories (जैन कथाएँ) ---------- */
+
+.story-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+@media (min-width: 560px) { .story-list { grid-template-columns: 1fr 1fr; } }
+.story-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+.story-card:hover { border-color: var(--accent); }
+.story-art { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 30%; }
+.story-body { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.85rem 1rem 1rem; }
+.story-body .title { font-size: 1.2rem; font-weight: 700; line-height: 1.35; }
+
+/* Stories without a photo: a warm tile with the first letter of the name. */
+.cover-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-verse);
+  font-weight: 600;
+  color: #fffaf2;
+  background:
+    radial-gradient(circle at 30% 25%, hsl(calc(var(--hue) * 1deg) 70% 62% / 0.9), transparent 60%),
+    linear-gradient(135deg, hsl(calc(var(--hue) * 1deg) 55% 38%), hsl(calc((var(--hue) + 40) * 1deg) 60% 26%));
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.story-art.cover-letter { font-size: 4rem; }
+
+.book-cover { display: block; width: calc(100% + 2rem); max-height: 52vh; margin: -0.5rem -1rem 1rem; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 30%; }
+.book-cover.cover-letter { font-size: 5rem; }
+.book-blurb { font-size: 1.1rem; line-height: 1.7; margin: 0.25rem 0 0.75rem; }
+
+.story-today { flex-direction: row; align-items: stretch; gap: 0; padding: 0; overflow: hidden; }
+.story-today-art { flex: 0 0 36%; width: 36%; min-height: 8.5rem; object-fit: cover; object-position: center 30%; }
+.story-today-art.cover-letter { font-size: 3rem; }
+.story-today-body { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem 1.1rem; min-width: 0; }
+
+.story-fig { margin: 0.5rem 0 1.25rem; }
+.story-fig img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; border-radius: 14px; }
+.story-fig figcaption { display: flex; flex-direction: column; gap: 0.1rem; margin-top: 0.45rem; font-size: 0.95rem; color: var(--muted); line-height: 1.5; }
+.fig-credit { font-size: 0.75rem; opacity: 0.85; }
+
+.moral {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem 1rem;
+  background: var(--accent-bg);
+  border-left: 5px solid var(--accent);
+  border-radius: 14px;
+  color: var(--accent-text);
+}
+.moral h2 { display: flex; align-items: center; gap: 0.4rem; margin: 0 0 0.35rem; font-size: 1rem; }
+.moral h2 .icon { width: 1.25em; height: 1.25em; }
+.moral p { margin: 0; font-size: 1.12rem; line-height: 1.75; font-weight: 600; }
