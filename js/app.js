@@ -643,9 +643,14 @@
       icon(it.icon) + '<span>' + esc(it.label) + '</span></a>').join('') + '</nav>';
   }
 
-  function chevronRow(href, mainHtml) {
-    return '<li><a class="row" href="' + href + '"><span class="row-main">' + mainHtml + '</span>' +
+  function chevronRow(href, mainHtml, leadHtml) {
+    return '<li><a class="row" href="' + href + '">' + (leadHtml || '') + '<span class="row-main">' + mainHtml + '</span>' +
       icon('chevron-right', 'row-chev') + '</a></li>';
+  }
+
+  /* The book's cover emblem (js/covers.js), shown in lists and on the book page. */
+  function coverEmblem(meta, cls) {
+    return typeof COVERS !== 'undefined' ? '<span class="' + cls + '" aria-hidden="true">' + COVERS.of(meta) + '</span>' : '';
   }
 
   /* A story's picture: its cover photo, or a coloured tile with the first letter of its name. */
@@ -672,7 +677,8 @@
   function bookRow(meta) {
     if (meta.category === 'katha') return storyRow(meta);
     return chevronRow('#/book/' + meta.id, titleHtml(meta) +
-      '<span class="row-sub">' + (meta.author && L(meta.author) ? esc(L(meta.author)) + ' · ' : '') + esc(countLabel(meta)) + '</span>');
+      '<span class="row-sub">' + (meta.author && L(meta.author) ? esc(L(meta.author)) + ' · ' : '') + esc(countLabel(meta)) + '</span>',
+      coverEmblem(meta, 'row-cover'));
   }
 
   /* All stories as cards, under a heading for each group (तीर्थंकर, आचार्य, ...). */
@@ -894,7 +900,7 @@
       html += '<ul class="rows">' + used.map(c => {
         const n = catalog.filter(b => b.category === c.id).length;
         return chevronRow('#/books/' + c.id, '<span class="title" translate="no">' + esc(L(c.title)) + '</span>' +
-          '<span class="row-sub">' + esc(t('booksCount', { n: n })) + '</span>');
+          '<span class="row-sub">' + esc(t('booksCount', { n: n })) + '</span>', coverEmblem({ category: c.id }, 'row-cover'));
       }).join('') + loose.map(bookRow).join('') + '</ul>';
     }
     return html + '</main>';
@@ -938,7 +944,8 @@
     const parent = bookParent(book);
     let html = backBar(parent.href, parent.label) + '<main>' +
       (book.category === 'katha' ? coverHtml(book, 'book-cover') : '') +
-      '<h1 class="book-head">' + titleHtml(book) + '</h1>' +
+      '<div class="book-title-row">' + (book.category === 'katha' ? '' : coverEmblem(book, 'book-cover-emblem')) +
+      '<h1 class="book-head">' + titleHtml(book) + '</h1></div>' +
       (book.blurb ? '<p class="book-blurb">' + esc(L(book.blurb)) + '</p>' : '') +
       '<p class="muted">' + (L(book.author) ? esc(L(book.author)) + ' · ' : '') + esc(countLabel(book)) + '</p>' +
       '<div class="stack">';

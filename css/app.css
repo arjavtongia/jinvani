@@ -315,6 +315,13 @@ a { color: var(--accent-text); }
   font-weight: 700;
 }
 .row-chev { color: var(--muted); }
+/* Cover emblems (js/covers.js) in the book lists and on the book page. */
+.row-cover { flex: none; display: block; width: 2.9rem; height: 2.9rem; }
+.row-cover .cover { display: block; width: 100%; height: 100%; }
+.book-title-row { display: flex; align-items: center; gap: 0.9rem; margin: 1.25rem 0 0.5rem; }
+.book-title-row .book-head { margin: 0; min-width: 0; }
+.book-cover-emblem { flex: none; display: block; width: 4.4rem; height: 4.4rem; }
+.book-cover-emblem .cover { display: block; width: 100%; height: 100%; }
 .row-with-action { display: flex; gap: 0.5rem; align-items: stretch; }
 .row-with-action .row { flex: 1; min-width: 0; }
 .row-with-action .btn { min-height: auto; }

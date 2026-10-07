@@ -4,7 +4,7 @@
  * and saved, so updates and text corrections show the next time the app opens.
  * Change VERSION when adding or removing files in the list below.
  */
-const VERSION = 'jinvani-v9';
+const VERSION = 'jinvani-v10';
 /* On a slow line, the saved copy is shown after this wait while the new one keeps downloading for next time. */
 const WAIT_MS = 3000;
 /* Fonts and icons never change, so they come straight from the saved copy. */
@@ -20,6 +20,7 @@ const FILES = [
   'js/panchang.js',
   'js/drawings.js',
   'js/scenes.js',
+  'js/covers.js',
   'js/app.js',
   'content/books.json',
   'content/categories.json',
