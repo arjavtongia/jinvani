@@ -72,6 +72,22 @@
     toastTimer = setTimeout(() => $toast.classList.remove('show'), 3500);
   }
 
+  /* On long pages a "More below" chip shows until the reader starts scrolling, since many people do not know a page continues. */
+  const $scrollCue = document.getElementById('scroll-cue');
+  function updateScrollCue() {
+    const below = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+    const show = window.scrollY < 40 && below > 120;
+    if (show) {
+      if ($scrollCue.dataset.lang !== state.lang) {
+        $scrollCue.innerHTML = '<span>' + esc(t('scrollMore')) + '</span>' + icon('chevron-down');
+        $scrollCue.dataset.lang = state.lang;
+      }
+      const bar = $app.querySelector('.reader-bar');
+      $scrollCue.style.bottom = bar ? bar.offsetHeight + 12 + 'px' : '';
+    }
+    $scrollCue.hidden = !show;
+  }
+
   function isStandalone() {
     return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   }
@@ -674,13 +690,14 @@
       '<span class="date-tithi" translate="no">' + esc(info.full) + '</span>' +
       (info.festival || info.parva ? '<span class="date-badges">' +
         (info.festival ? '<span class="badge">' + esc(info.festival) + '</span>' : '') +
-        (info.parva ? '<span class="badge">' + esc(info.tithiName + ' · ' + t('parva')) + '</span>' : '') + '</span>' : '') +
+        (info.parva ? '<span class="badge">' + icon('flag') + esc(info.tithiName + ' · ' + t('parva')) + '</span>' : '') + '</span>' : '') +
       '</button>';
     if (weekOpen) {
       const days = [];
       for (let i = 0; i < 7; i++) days.push(dayInfo(new Date(today.getFullYear(), today.getMonth(), today.getDate() + i)));
       html += '<ol class="week-strip" aria-label="' + esc(t('weekOpen')) + '">' + days.map((d, i) =>
-        '<li class="day' + (i === 0 ? ' is-today' : '') + (d.festival ? ' is-festival' : '') + (d.parva ? ' is-parva' : '') + '">' +
+        '<li class="day' + (i === 0 ? ' is-today' : '') + '">' +
+        (d.parva ? icon('flag', 'parva-mark') : '') +
         '<span class="day-wd">' + esc(i === 0 ? t('today') : dateFmt(d.date, { weekday: 'short' })) + '</span>' +
         '<span class="day-date">' + d.date.getDate() + '</span>' +
         '<span class="day-mon">' + esc(dateFmt(d.date, { month: 'short' })) + '</span>' +
@@ -1181,6 +1198,7 @@
       if (speech.bookId === ctx.book.id) speakPage(ctx.book, ctx.verses);
       else stopSpeech();
     }
+    updateScrollCue();
   }
 
   /* ---------- Actions ---------- */
@@ -1388,6 +1406,15 @@
   }, { passive: true });
 
   window.addEventListener('hashchange', render);
+
+  window.addEventListener('scroll', updateScrollCue, { passive: true });
+  window.addEventListener('resize', updateScrollCue);
+  /* Text size changes and late-loading fonts change the page height without a scroll. */
+  if (window.ResizeObserver) new ResizeObserver(updateScrollCue).observe($app);
+  $scrollCue.addEventListener('click', () => {
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollBy({ top: Math.round(window.innerHeight * 0.6), behavior: still ? 'auto' : 'smooth' });
+  });
 
   window.addEventListener('beforeinstallprompt', e => {
     e.preventDefault();

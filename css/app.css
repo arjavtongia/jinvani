@@ -537,13 +537,12 @@ input:focus { border-color: var(--accent); }
   background: var(--surface);
   border: 2px solid var(--border);
   border-radius: 14px;
+  position: relative;
 }
-.day.is-festival { border-color: var(--accent); }
+/* Only today gets a highlighted card; ashtami and chaturdashi get a flag in the corner instead. */
 .day.is-today { background: var(--accent-bg); border-color: var(--accent); }
-/* Ashtami and chaturdashi stand out as solid saffron cards. */
-.day.is-parva { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.day.is-parva .day-wd, .day.is-parva .day-mon, .day.is-parva .day-paksha { color: var(--on-accent); }
-.day.is-parva .day-fest { background: var(--on-accent); color: var(--accent); }
+.parva-mark { position: absolute; top: 0.4rem; right: 0.4rem; width: 1.1rem; height: 1.1rem; color: var(--accent); fill: var(--accent); }
+.badge .icon { width: 0.95em; height: 0.95em; margin-right: 0.25rem; vertical-align: -0.1em; fill: currentColor; }
 .day-wd { font-size: 0.85rem; font-weight: 700; color: var(--muted); }
 .day-date { font-size: 1.6rem; font-weight: 800; line-height: 1.15; }
 .day-mon { font-size: 0.8rem; color: var(--muted); }
@@ -650,6 +649,33 @@ input:focus { border-color: var(--accent); }
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+/* ---------- "More below" cue ---------- */
+
+.scroll-cue {
+  position: fixed;
+  left: 50%;
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: max-content;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.9rem 0.5rem 1.1rem;
+  border: 0;
+  border-radius: 99px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font: inherit;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.scroll-cue[hidden] { display: none; }
+.scroll-cue .icon { animation: cue-bob 1.6s ease-in-out infinite; }
+@keyframes cue-bob { 50% { transform: translateY(3px); } }
+
 @media (max-width: 360px) {
   .tiles { grid-template-columns: 1fr; }
   .reader-bar .btn { font-size: 0.95rem; }
@@ -657,4 +683,5 @@ input:focus { border-color: var(--accent); }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+  .scroll-cue .icon { animation: none; }
 }
