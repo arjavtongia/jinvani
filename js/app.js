@@ -1300,13 +1300,25 @@
     ).join('') + '</div>';
   }
 
+  /* The last word in Settings: who made the app, under the same Prateek that crowns home, and how to write. */
+  function makerHtml() {
+    const mail = 'arjav.tongia@gmail.com';
+    return '<section class="maker">' + ORN.prateek() +
+      '<p class="maker-by">' + esc(t('madeBy')) + '</p>' +
+      '<h2 class="maker-name" translate="no">' + esc(t('makerName')) + '</h2>' +
+      '<p class="maker-place">' + esc(t('makerPlace')) + '</p>' +
+      '<p class="maker-about">' + esc(t('makerAbout')) + '</p>' +
+      '<p class="maker-write">' + esc(t('makerWrite')) + '</p>' +
+      '<a class="btn btn-small" href="mailto:' + mail + '">' + icon('mail') + '<span translate="no">' + mail + '</span></a></section>';
+  }
+
   function viewSettings() {
     document.title = t('settings') + ' · ' + t('appName');
     let html = backBar('#/', t('home')) + '<main><h1 class="page-title">' + esc(t('settings')) + '</h1>';
     if (state.locked) {
       return html + '<section class="set"><p>' + icon('lock') + ' ' + esc(t('lockedMsg')) + '</p>' +
         '<button class="btn btn-wide hold-btn" data-hold="unlock"><span class="hold-fill"></span><span class="hold-text">' + icon('lock') + '<span>' + esc(t('holdToUnlock')) + '</span></span></button></section>' +
-        '<div class="set-link"><a class="row" href="#/credits"><span class="row-main"><span class="title">' + esc(t('credits')) + '</span></span>' + icon('chevron-right', 'row-chev') + '</a></div></main>';
+        '<div class="set-link"><a class="row" href="#/credits"><span class="row-main"><span class="title">' + esc(t('credits')) + '</span></span>' + icon('chevron-right', 'row-chev') + '</a></div>' + makerHtml() + '</main>';
     }
     html += '<section class="set"><h2>' + esc(t('language')) + '</h2>' +
       choice('set-lang', state.lang, LANGS.map(l => ({ value: l.code, label: l.name, lang: l.code }))) + '</section>';
@@ -1339,7 +1351,7 @@
     html += '<section class="set"><h2>' + icon('help-circle') + ' ' + esc(t('help')) + '</h2><ol class="tips">' +
       t('helpTips').map(tip => '<li>' + esc(tip) + '</li>').join('') + '</ol></section>';
     html += '<div class="set-link"><a class="row" href="#/credits"><span class="row-main"><span class="title">' + esc(t('credits')) + '</span></span>' + icon('chevron-right', 'row-chev') + '</a></div>';
-    return html + '</main>';
+    return html + makerHtml() + '</main>';
   }
 
   async function viewCredits() {

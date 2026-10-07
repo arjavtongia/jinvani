@@ -677,6 +677,15 @@ input:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
 .tips li:last-child { margin-bottom: 0; }
 .set-link { margin-top: 0.6rem; }
 .set-link .row { font-weight: 600; }
+.maker { margin-top: 2.2rem; padding: 1.6rem 0.5rem 0.4rem; text-align: center; border-top: 1px solid var(--hair); }
+.maker .prateek { height: 2.6rem; margin: 0 auto 0.7rem; }
+.maker-by { margin: 0; font-size: var(--fs-sm); color: var(--muted); }
+.maker-name { margin: 0.15rem 0 0; font: 700 1.3rem/1.25 var(--font-head); }
+.maker-place { margin: 0.1rem 0 0; font-size: var(--fs-sm); color: var(--brass-text); font-weight: 600; letter-spacing: 0.02em; }
+.maker-about { max-width: 30rem; margin: 0.9rem auto 0; line-height: 1.65; text-wrap: pretty; }
+.maker-write { margin: 1rem 0 0.5rem; font-size: var(--fs-sm); color: var(--muted); text-wrap: balance; }
+.maker .btn { max-width: 100%; }
+.maker .btn span { overflow-wrap: anywhere; }
 .credit { padding: 0.8rem 0; border-bottom: 1px solid var(--hair); }
 .credit h3 { margin: 0 0 0.15rem; }
 .credit p { margin: 0.15rem 0 0; font-size: var(--fs-sm); }
