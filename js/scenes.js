@@ -1174,6 +1174,178 @@ const SCENES = (function () {
     crown(200, 36, 0.7) + sun(290, 34, 10));
 
   scenes.story = story;
+  /* A story's cover can also be used as a picture elsewhere, as "story.<id>" in chitra.json. */
+  Object.keys(story).forEach(k => { scenes['story.' + k] = story[k]; });
+
+  /* ---------- Poojas, paath and stotras ---------- */
+
+  /* The lanchhan (emblem) of each Tirthankar, drawn around (0, 0) in a box of about 48 x 48. */
+  const LANCHHAN = {
+    bull: '<ellipse cx="0" cy="4" rx="20" ry="11" fill="#e9e2d6" stroke="#9a8f86" stroke-width="1.5"/><rect x="-14" y="10" width="5" height="12" fill="#e9e2d6" stroke="#9a8f86"/><rect x="8" y="10" width="5" height="12" fill="#e9e2d6" stroke="#9a8f86"/>' +
+      '<circle cx="20" cy="-4" r="9" fill="#e9e2d6" stroke="#9a8f86" stroke-width="1.5"/><path d="M14 -12 q-6 -10 2 -14 M26 -12 q6 -10 -2 -14" fill="none" stroke="#7a5a44" stroke-width="2.5" stroke-linecap="round"/><circle cx="23" cy="-6" r="1.4" fill="' + INK + '"/>',
+    elephant: elephant(0, 22, 0.42),
+    horse: '<ellipse cx="-2" cy="4" rx="19" ry="10" fill="#b5773d" stroke="#6b4a2b" stroke-width="1.5"/><rect x="-14" y="10" width="5" height="12" fill="#b5773d" stroke="#6b4a2b"/><rect x="8" y="10" width="5" height="12" fill="#b5773d" stroke="#6b4a2b"/>' +
+      '<path d="M12 0 L20 -20 L30 -16 L28 -8 Z" fill="#b5773d" stroke="#6b4a2b" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 -2 q-4 -14 6 -20" fill="none" stroke="#3b2a1e" stroke-width="3" stroke-linecap="round"/><circle cx="25" cy="-14" r="1.4" fill="' + INK + '"/>',
+    monkey: '<circle cx="0" cy="6" r="13" fill="#9c6b3c" stroke="#5b4636" stroke-width="1.5"/><circle cx="0" cy="-12" r="9" fill="#9c6b3c" stroke="#5b4636" stroke-width="1.5"/><circle cx="0" cy="-10" r="5" fill="' + SKIN + '"/>' +
+      '<path d="M12 8 q18 -4 12 -22" fill="none" stroke="#9c6b3c" stroke-width="3" stroke-linecap="round"/><circle cx="-3" cy="-12" r="1.2" fill="' + INK + '"/><circle cx="3" cy="-12" r="1.2" fill="' + INK + '"/>',
+    bird: '<ellipse cx="0" cy="4" rx="16" ry="9" fill="#e0a23a" stroke="#9a6a1c" stroke-width="1.5"/><path d="M-6 2 q6 -14 16 -4" fill="#c4863a" stroke="#9a6a1c" stroke-width="1"/>' +
+      '<circle cx="14" cy="-6" r="7" fill="#e0a23a" stroke="#9a6a1c" stroke-width="1.5"/><path d="M20 -6 l8 2 l-8 3 z" fill="#c0392b"/><circle cx="15" cy="-8" r="1.3" fill="' + INK + '"/><path d="M-16 6 l-8 -6 M-16 8 l-8 4" stroke="#9a6a1c" stroke-width="2" stroke-linecap="round"/>',
+    lotus: flower5(0, 0, 2.2),
+    swastik: '<path d="M0 -18 V18 M-18 0 H18 M0 -18 H18 M18 0 V18 M0 18 H-18 M-18 0 V-18" fill="none" stroke="' + ACCENT_OR_SAFFRON() + '" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>',
+    moon: '<circle cx="0" cy="0" r="18" fill="' + FLAME + '"/><circle cx="7" cy="-3" r="15" fill="' + PAPER + '"/>',
+    crocodile: '<path d="M-26 4 q10 -14 30 -8 l16 -4 l6 6 l-6 6 l-16 -2 q-20 8 -30 2 z" fill="' + GREEN + '" stroke="#2f5f2a" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 -4 l3 4 l3 -4 l3 4 l3 -4" fill="none" stroke="#fffaf0" stroke-width="1.5"/><circle cx="12" cy="-8" r="1.4" fill="' + INK + '"/>',
+    tree: tree(0, 22, 0.5),
+    rhino: '<ellipse cx="-2" cy="4" rx="20" ry="11" fill="#8d8d94" stroke="#5b5b63" stroke-width="1.5"/><rect x="-14" y="10" width="6" height="12" fill="#8d8d94" stroke="#5b5b63"/><rect x="6" y="10" width="6" height="12" fill="#8d8d94" stroke="#5b5b63"/>' +
+      '<path d="M14 -2 q12 -4 16 6 l-6 6 q-6 -4 -12 -2 z" fill="#8d8d94" stroke="#5b5b63" stroke-width="1.5"/><path d="M26 0 l6 -12 l2 10 z" fill="#5b5b63"/><circle cx="20" cy="2" r="1.3" fill="' + INK + '"/>',
+    buffalo: '<ellipse cx="-2" cy="4" rx="20" ry="11" fill="#3b2a1e" stroke="#1d1209" stroke-width="1.5"/><rect x="-14" y="10" width="5" height="12" fill="#3b2a1e"/><rect x="8" y="10" width="5" height="12" fill="#3b2a1e"/>' +
+      '<circle cx="18" cy="-4" r="9" fill="#3b2a1e" stroke="#1d1209" stroke-width="1.5"/><path d="M12 -10 q-14 -4 -8 -16 M24 -10 q14 -4 8 -16" fill="none" stroke="#6b5847" stroke-width="3" stroke-linecap="round"/><circle cx="21" cy="-6" r="1.4" fill="#fffaf0"/>',
+    boar: '<ellipse cx="-2" cy="4" rx="20" ry="12" fill="#6b5847" stroke="#3b2a1e" stroke-width="1.5"/><rect x="-14" y="12" width="5" height="10" fill="#6b5847"/><rect x="8" y="12" width="5" height="10" fill="#6b5847"/>' +
+      '<path d="M16 -2 l14 2 l-2 8 l-12 0 z" fill="#6b5847" stroke="#3b2a1e" stroke-width="1.5"/><circle cx="30" cy="4" r="2.5" fill="#3b2a1e"/><path d="M24 6 l4 6" stroke="#fffaf0" stroke-width="2.5" stroke-linecap="round"/><circle cx="20" cy="0" r="1.3" fill="#fffaf0"/>',
+    porcupine: '<ellipse cx="0" cy="6" rx="18" ry="10" fill="#6b5847" stroke="#3b2a1e" stroke-width="1.5"/>' +
+      (function () { let s = ''; for (let i = -5; i <= 5; i++) s += '<path d="M' + (i * 3) + ' -2 L' + (i * 4) + ' -16" stroke="#3b2a1e" stroke-width="2" stroke-linecap="round"/>'; return s; })() +
+      '<circle cx="18" cy="8" r="5" fill="#6b5847" stroke="#3b2a1e" stroke-width="1.5"/><circle cx="20" cy="7" r="1.2" fill="#fffaf0"/>',
+    vajra: '<path d="M-24 0 L-12 -8 L0 0 L12 -8 L24 0 L12 8 L0 0 L-12 8 Z" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5" stroke-linejoin="round"/><circle cx="0" cy="0" r="4" fill="' + BRASS_EDGE + '"/>',
+    deer: '<ellipse cx="-2" cy="6" rx="17" ry="9" fill="#c08a4e" stroke="#6b4a2b" stroke-width="1.5"/><rect x="-12" y="12" width="4" height="12" fill="#c08a4e" stroke="#6b4a2b"/><rect x="6" y="12" width="4" height="12" fill="#c08a4e" stroke="#6b4a2b"/>' +
+      '<path d="M12 2 L16 -12" stroke="#c08a4e" stroke-width="5" stroke-linecap="round"/><circle cx="18" cy="-14" r="6" fill="#c08a4e" stroke="#6b4a2b" stroke-width="1.5"/>' +
+      '<path d="M15 -18 l-6 -10 m6 10 l-2 -12 M21 -18 l6 -10 m-6 10 l2 -12" fill="none" stroke="#6b4a2b" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="-15" r="1.2" fill="' + INK + '"/>',
+    goat: goat(0, 22, 0.6),
+    fish: fish(0, 0, 1.1),
+    kalash: pot(0, 20, 0.5) + '<path d="M-10 -8 Q0 -22 10 -8" fill="' + GREEN + '"/><circle cx="0" cy="-12" r="5" fill="#8a5a2b"/>',
+    tortoise: '<path d="M-20 6 Q-16 -14 0 -14 Q16 -14 20 6 Z" fill="' + GREEN + '" stroke="#2f5f2a" stroke-width="1.5"/><path d="M-10 -2 h20 M-6 -8 h12" stroke="#2f5f2a" stroke-width="1.2"/>' +
+      '<rect x="-24" y="4" width="48" height="6" rx="3" fill="#6aab55" stroke="#2f5f2a" stroke-width="1.2"/><circle cx="26" cy="4" r="5" fill="#6aab55" stroke="#2f5f2a" stroke-width="1.2"/><circle cx="27" cy="3" r="1.2" fill="' + INK + '"/>',
+    bluelotus: (function () { let p = ''; for (let i = 0; i < 6; i++) p += '<ellipse cx="0" cy="-10" rx="6" ry="11" fill="#5b8fd6" stroke="#2f5fa8" stroke-width="1" transform="rotate(' + (i * 60) + ')"/>'; return p + '<circle r="5" fill="' + FLAME + '"/>'; })(),
+    conch: '<path d="M-16 14 Q-24 -4 -6 -14 Q14 -24 22 -6 Q26 10 10 16 Q-4 20 -16 14 Z" fill="#fffaf0" stroke="#9a8f86" stroke-width="1.5"/><path d="M-10 8 Q-12 -4 2 -8 Q12 -10 14 0 Q14 8 4 10" fill="none" stroke="#9a8f86" stroke-width="1.2"/><path d="M-16 14 l-10 8" stroke="#9a8f86" stroke-width="3" stroke-linecap="round"/>',
+    serpent: '<path d="M-22 14 q6 -14 18 -6 q12 8 18 -4 q4 -8 0 -16" fill="none" stroke="' + GREEN + '" stroke-width="6" stroke-linecap="round"/><ellipse cx="12" cy="-14" rx="8" ry="11" fill="' + GREEN + '" stroke="#2f5f2a" stroke-width="1"/><circle cx="10" cy="-16" r="1.4" fill="' + INK + '"/>',
+    lion: lion(0, 18, 0.55)
+  };
+
+  function ACCENT_OR_SAFFRON() { return '#9a3412'; }
+
+  /* A Tirthankar: the seated Lord, with the lanchhan shown beside the altar. */
+  function tirthankar(key) {
+    return svg(320, 200,
+      floor(20, 300, 176) +
+      shrine(130, 176, 1) +
+      '<circle cx="250" cy="120" r="38" fill="#fff8ea" stroke="' + PAPER_EDGE + '" stroke-width="2"/>' +
+      '<g transform="translate(250 118)">' + (LANCHHAN[key] || '') + '</g>');
+  }
+  scenes.tirthankar = {};
+  Object.keys(LANCHHAN).forEach(k => { scenes['tirthankar-' + k] = tirthankar(k); });
+
+  /* Dev, Shastra, Guru: the Lord, the scripture and the muni. */
+  scenes.devShastraGuru = svg(340, 210,
+    floor(20, 320, 186) +
+    shrine(70, 186, 0.9) +
+    chowki(170, 150, 70) + book(170, 132, 30, { h: 18 }) + '<circle cx="170" cy="110" r="22" fill="' + GLOW + '" opacity="0.7"/>' +
+    muni(270, 186, { dir: -1 }));
+
+  /* The Siddha: the soul free of the body, at the summit of the universe. */
+  scenes.siddha = svg(320, 200,
+    '<path d="M104 40 Q160 12 216 40 Q160 32 104 40 Z" fill="' + GLOW + '" stroke="' + BRASS_EDGE + '" stroke-width="2"/>' +
+    '<circle cx="160" cy="112" r="56" fill="' + GLOW + '"/>' +
+    '<g transform="translate(160 160)">' +
+    '<ellipse cx="0" cy="-10" rx="30" ry="11" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="2.5" stroke-dasharray="4 4"/>' +
+    '<path d="M-14 -14 Q-17 -50 -8 -54 H8 Q17 -50 14 -14 Z" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="2.5" stroke-dasharray="4 4"/>' +
+    '<circle cx="0" cy="-66" r="11" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="2.5" stroke-dasharray="4 4"/></g>');
+
+  /* Many Tirthankars together: rows of small seated Lords. */
+  function manyJinas(n, cols) {
+    const rows = Math.ceil(n / cols);
+    const w = 340; const h = 60 + rows * 60;
+    let g = '';
+    for (let i = 0; i < n; i++) {
+      const x = 20 + (i % cols + 0.5) * (300 / cols);
+      const y = 70 + Math.floor(i / cols) * 60;
+      g += jina(x, y, 0.42, { noChhatra: true });
+    }
+    return svg(w, h, g);
+  }
+  scenes.chaubisi = manyJinas(24, 8);
+  scenes.beesTirthankar = manyJinas(20, 10);
+
+  /* The three jewels: right faith, right knowledge, right conduct. */
+  function gem(x, y, color) {
+    return '<path d="M-18 -6 L-8 -18 H8 L18 -6 L0 18 Z" fill="' + color + '" stroke="' + INK + '" stroke-width="1.5" stroke-linejoin="round" transform="translate(' + x + ' ' + y + ')"/>' +
+      '<path d="M-18 -6 H18 M-8 -18 L0 -6 L8 -18 M0 -6 V18" fill="none" stroke="#fffaf0" stroke-width="1.2" transform="translate(' + x + ' ' + y + ')"/>';
+  }
+  scenes.ratnatray = svg(320, 170,
+    '<circle cx="160" cy="84" r="60" fill="' + GLOW + '"/>' +
+    gem(100, 96, '#c0392b') + gem(160, 72, '#3a8fd6') + gem(220, 96, '#2e8b57') +
+    badge(100, 134, 1) + badge(160, 110, 2) + badge(220, 134, 3));
+
+  /* A flower with n petals, for the ten dharmas and the sixteen bhavanas. */
+  function petalFlower(n) {
+    let p = '';
+    for (let i = 0; i < n; i++) p += '<ellipse cx="0" cy="-46" rx="14" ry="26" fill="' + (i % 2 ? '#f2b56a' : SAFFRON) + '" stroke="#b46a1c" stroke-width="1" transform="rotate(' + (i * 360 / n) + ')"/>';
+    return svg(320, 200, '<g transform="translate(160 100)">' + p + '<circle r="22" fill="' + FLAME + '" stroke="#b46a1c" stroke-width="1.5"/>' +
+      '<text y="7" text-anchor="middle" font-size="20" font-weight="700" fill="' + INK + '" font-family="' + FONT + '">' + n + '</text></g>');
+  }
+  scenes.dashlakshan = petalFlower(10);
+  scenes.solahkaran = petalFlower(16);
+
+  /* Jinvani: the scripture on its stand, honoured with a lamp and flowers. */
+  scenes.shastra = svg(320, 200,
+    floor(20, 300, 176) +
+    '<circle cx="160" cy="100" r="54" fill="' + GLOW + '"/>' +
+    chowki(160, 140, 110) + book(160, 116, 46, { h: 26 }) +
+    diya(70, 170, 0.8) + diya(250, 170, 0.8) + flower5(104, 150, 0.9) + flower5(216, 150, 0.9));
+
+  /* Five Merus: the five great mountains, with temples on them. */
+  scenes.panchmeru = svg(340, 200,
+    floor(20, 320, 176) +
+    [60, 110, 170, 230, 280].map((x, i) => {
+      const h = i === 2 ? 130 : 90;
+      return '<path d="M' + (x - 40) + ' 176 L' + x + ' ' + (176 - h) + ' L' + (x + 40) + ' 176 Z" fill="' + (i === 2 ? '#d6bd92' : '#e3cfa9') + '" stroke="' + WOOD_EDGE + '" stroke-width="2" stroke-linejoin="round"/>' +
+        '<path d="M' + (x - 8) + ' ' + (176 - h + 12) + ' h16 v-10 l-8 -10 l-8 10 z" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1"/>';
+    }).join(''));
+
+  /* Nandishwar Dweep: the island of temples, in the four directions. */
+  scenes.nandishwar = svg(320, 220,
+    '<circle cx="160" cy="110" r="90" fill="#bfe0f7"/><circle cx="160" cy="110" r="70" fill="#e3cfa9" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +
+    [[160, 56], [214, 110], [160, 164], [106, 110]].map(p =>
+      '<path d="M' + (p[0] - 12) + ' ' + (p[1] + 12) + ' h24 v-14 l-12 -14 l-12 14 z" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5" stroke-linejoin="round"/>').join('') +
+    '<circle cx="160" cy="110" r="14" fill="' + GLOW + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>');
+
+  /* Kailash, from where Rishabhdev attained nirvan. */
+  scenes.kailash = svg(320, 200,
+    floor(20, 300, 176) +
+    '<path d="M40 176 L160 36 L280 176 Z" fill="#e3cfa9" stroke="' + WOOD_EDGE + '" stroke-width="2" stroke-linejoin="round"/>' +
+    '<path d="M124 78 L160 36 L196 78 Z" fill="#fffaf0"/>' +
+    '<circle cx="160" cy="30" r="22" fill="' + GLOW + '" opacity="0.9"/>' +
+    '<path d="M104 24 Q160 4 216 24 Q160 18 104 24 Z" fill="' + GLOW + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>');
+
+  /* Acharya Kundkund, writing the scriptures. */
+  scenes.kundkund = svg(320, 200,
+    floor(20, 300, 176) +
+    sit(120, 176, { plain: true, hands: 'lap' }) +
+    chowki(220, 150, 70) + book(220, 132, 30, { h: 18 }) +
+    '<path d="M170 128 l22 -22" stroke="' + WOOD_EDGE + '" stroke-width="4" stroke-linecap="round"/>' +
+    '<circle cx="220" cy="108" r="22" fill="' + GLOW + '" opacity="0.7"/>');
+
+  /* The Lord's teaching: the divine sound going out in every direction. */
+  scenes.samavasaran = svg(320, 200,
+    floor(20, 300, 176) +
+    '<circle cx="160" cy="100" r="70" fill="none" stroke="' + SAFFRON + '" stroke-width="2" stroke-dasharray="6 6"/>' +
+    '<circle cx="160" cy="100" r="92" fill="none" stroke="' + SAFFRON + '" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.7"/>' +
+    shrine(160, 176, 1) +
+    '<text x="60" y="80" font-size="22" fill="' + INK + '" font-family="' + FONT + '">ॐ</text><text x="236" y="80" font-size="22" fill="' + INK + '" font-family="' + FONT + '">ॐ</text>');
+
+  /* Kshamavani: forgiveness asked and given, with folded hands. */
+  scenes.kshama = svg(320, 200,
+    floor(20, 300, 176) +
+    stand(110, 176, { hands: 'folded', bow: true }) + stand(210, 176, { hands: 'folded', bow: true, dir: -1 }) +
+    heart(160, 70, 1.6));
+
+  /* Quiet meditation on the soul. */
+  scenes.dhyan = svg(320, 200,
+    floor(20, 300, 176) +
+    '<circle cx="160" cy="104" r="56" fill="' + GLOW + '"/>' +
+    sit(160, 176, { plain: true, hands: 'lap' }) +
+    '<circle cx="160" cy="130" r="7" fill="' + FLAME + '"/>');
+
+  /* The Vitarag Lord, beyond attachment and aversion. */
+  scenes.jinaGlow = svg(320, 200,
+    floor(20, 300, 176) + '<circle cx="160" cy="100" r="64" fill="' + GLOW + '"/>' + shrine(160, 176, 1.05));
 
   return scenes;
 })();

@@ -1051,5 +1051,1535 @@
         { "hi": "द्वार पर तीन बार 'असहि'", "en": "'Asahi' three times at the door" }
       ]
     }
+  ],
+  "mangalashtak": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "darshan-path-budhjan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "darshan-path-ati-punya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "prakshal-vidhi": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "abhishek",
+      "top": true,
+      "title": { "hi": "अभिषेक (प्रक्षाल)", "en": "Abhishek: bathing the idol" }
+    }
+  ],
+  "abhishek-path-bhasha": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "abhishek",
+      "top": true,
+      "title": { "hi": "अभिषेक (प्रक्षाल)", "en": "Abhishek: bathing the idol" }
+    }
+  ],
+  "abhishek-path-laghu": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "abhishek",
+      "top": true,
+      "title": { "hi": "अभिषेक (प्रक्षाल)", "en": "Abhishek: bathing the idol" }
+    }
+  ],
+  "bhajan-maine-prabhuji": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "bhajan-amrit-se-gagri": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "bhajan-mahavir-moongavarni": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "vinay-path": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "भगवान के सामने — हाथ जोड़कर, सिर झुकाकर", "en": "Before the Lord, with folded hands and bowed head" }
+    }
+  ],
+  "vinay-path-laghu": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "भगवान के सामने — हाथ जोड़कर, सिर झुकाकर", "en": "Before the Lord, with folded hands and bowed head" }
+    }
+  ],
+  "mangal-path-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "parameshthi",
+      "top": true,
+      "title": { "hi": "पंच परमेष्ठी", "en": "The five Parameshthis" }
+    }
+  ],
+  "bhajan-main-thane-poojan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "pooja-prarambh": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "poojaStart",
+      "top": true,
+      "title": { "hi": "पूजा का प्रारम्भ", "en": "Beginning the pooja" }
+    }
+  ],
+  "arghya-prarambh": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "arghya",
+      "top": true,
+      "title": { "hi": "अर्घ्य", "en": "Arghya" }
+    }
+  ],
+  "swasti-mangal": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "poojaStart",
+      "top": true,
+      "title": { "hi": "पूजा का प्रारम्भ", "en": "Beginning the pooja" }
+    }
+  ],
+  "swasti-mangal-hindi": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "poojaStart",
+      "top": true,
+      "title": { "hi": "पूजा का प्रारम्भ", "en": "Beginning the pooja" }
+    }
+  ],
+  "chaturvinshati-swasti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
+  ],
+  "paramarshi-swasti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "samavasaran",
+      "top": true,
+      "title": { "hi": "दिव्यध्वनि — भगवान का उपदेश", "en": "The divine sound: the Lord's teaching" }
+    }
+  ],
+  "stuti-budhjan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "dev-shastra-guru-yugal": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "dev-shastra-guru-dyanat": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "dev-shastra-guru-bharill": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "dev-shastra-guru-ravindra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "dev-shastra-guru-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "samuchchay-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "panch-parmeshthi-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "parameshthi",
+      "top": true,
+      "title": { "hi": "पंच परमेष्ठी", "en": "The five Parameshthis" }
+    }
+  ],
+  "navdevta-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "navdevta-pooja-gyanmati": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "siddh-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "siddha",
+      "top": true,
+      "title": { "hi": "सिद्ध भगवान — देह से मुक्त, सिद्धशिला पर", "en": "The Siddha: free of the body, on the Siddhashila" }
+    }
+  ],
+  "siddh-pooja-bharill": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "siddha",
+      "top": true,
+      "title": { "hi": "सिद्ध भगवान — देह से मुक्त, सिद्धशिला पर", "en": "The Siddha: free of the body, on the Siddhashila" }
+    }
+  ],
+  "siddh-pooja-yugal": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "siddha",
+      "top": true,
+      "title": { "hi": "सिद्ध भगवान — देह से मुक्त, सिद्धशिला पर", "en": "The Siddha: free of the body, on the Siddhashila" }
+    }
+  ],
+  "siddh-pooja-hirachand": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "siddha",
+      "top": true,
+      "title": { "hi": "सिद्ध भगवान — देह से मुक्त, सिद्धशिला पर", "en": "The Siddha: free of the body, on the Siddhashila" }
+    }
+  ],
+  "trikal-chaubisi-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
+  ],
+  "chaubis-tirthankar-vrindavan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
+  ],
+  "chaubis-tirthankar-dyanat": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
+  ],
+  "anant-tirthankar-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
+  ],
+  "vitrag-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jinaGlow",
+      "top": true,
+      "title": { "hi": "वीतराग भगवान", "en": "The Vitarag Lord" }
+    }
+  ],
+  "ratnatray-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "ratnatray",
+      "top": true,
+      "title": { "hi": "रत्नत्रय — सम्यग्दर्शन, सम्यग्ज्ञान, सम्यक्चारित्र", "en": "The three jewels: right faith, knowledge and conduct" }
+    }
+  ],
+  "samyak-darshan-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "ratnatray",
+      "top": true,
+      "title": { "hi": "रत्नत्रय — सम्यग्दर्शन, सम्यग्ज्ञान, सम्यक्चारित्र", "en": "The three jewels: right faith, knowledge and conduct" }
+    }
+  ],
+  "samyak-gyan-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "ratnatray",
+      "top": true,
+      "title": { "hi": "रत्नत्रय — सम्यग्दर्शन, सम्यग्ज्ञान, सम्यक्चारित्र", "en": "The three jewels: right faith, knowledge and conduct" }
+    }
+  ],
+  "samyak-charitra-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "ratnatray",
+      "top": true,
+      "title": { "hi": "रत्नत्रय — सम्यग्दर्शन, सम्यग्ज्ञान, सम्यक्चारित्र", "en": "The three jewels: right faith, knowledge and conduct" }
+    }
+  ],
+  "dashlakshan-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dashlakshan",
+      "top": true,
+      "title": { "hi": "दशलक्षण धर्म — दस धर्म", "en": "The ten dharmas" }
+    }
+  ],
+  "solahkaran-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "solahkaran",
+      "top": true,
+      "title": { "hi": "सोलहकारण भावना", "en": "The sixteen bhavanas" }
+    }
+  ],
+  "saraswati-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shastra",
+      "top": true,
+      "title": { "hi": "जिनवाणी — शास्त्र की पूजा", "en": "Jinvani: honouring the scripture" }
+    }
+  ],
+  "simandhar-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jinaGlow",
+      "top": true,
+      "title": { "hi": "वीतराग भगवान", "en": "The Vitarag Lord" }
+    }
+  ],
+  "simandhar-pooja-bharill": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jinaGlow",
+      "top": true,
+      "title": { "hi": "वीतराग भगवान", "en": "The Vitarag Lord" }
+    }
+  ],
+  "bees-tirthankar-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "beesTirthankar",
+      "top": true,
+      "title": { "hi": "विद्यमान बीस तीर्थंकर", "en": "The twenty living Tirthankars" }
+    }
+  ],
+  "bees-tirthankar-dyanat": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "beesTirthankar",
+      "top": true,
+      "title": { "hi": "विद्यमान बीस तीर्थंकर", "en": "The twenty living Tirthankars" }
+    }
+  ],
+  "bahubali-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.bahubali",
+      "top": true,
+      "title": { "hi": "बाहुबली — एक वर्ष का ध्यान", "en": "Bahubali: a year in meditation" }
+    }
+  ],
+  "bahubali-pooja-ravindra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.bahubali",
+      "top": true,
+      "title": { "hi": "बाहुबली — एक वर्ष का ध्यान", "en": "Bahubali: a year in meditation" }
+    }
+  ],
+  "panchmeru-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "panchmeru",
+      "top": true,
+      "title": { "hi": "पंच मेरु", "en": "The five Merus" }
+    }
+  ],
+  "nandishwar-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "nandishwar",
+      "top": true,
+      "title": { "hi": "नंदीश्वर द्वीप — चारों दिशाओं में जिनमंदिर", "en": "Nandishwar Dweep: temples in the four directions" }
+    }
+  ],
+  "nirvan-kshetra-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "nirvan",
+      "top": true,
+      "title": { "hi": "निर्वाण", "en": "Nirvan" }
+    }
+  ],
+  "chaityalay-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "samavasaran",
+      "top": true,
+      "title": { "hi": "दिव्यध्वनि — भगवान का उपदेश", "en": "The divine sound: the Lord's teaching" }
+    }
+  ],
+  "ashtapad-kailash-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kailash",
+      "top": true,
+      "title": { "hi": "अष्टापद कैलाश", "en": "Ashtapad Kailash" }
+    }
+  ],
+  "kundkund-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kundkund",
+      "top": true,
+      "title": { "hi": "आचार्य कुंदकुंद", "en": "Acharya Kundkund" }
+    }
+  ],
+  "adinath-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bull",
+      "top": true,
+      "title": { "hi": "चिह्न: बैल (वृषभ)", "en": "Emblem: bull" }
+    }
+  ],
+  "adinath-pooja-jineshwardas": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bull",
+      "top": true,
+      "title": { "hi": "चिह्न: बैल (वृषभ)", "en": "Emblem: bull" }
+    }
+  ],
+  "adinath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bull",
+      "top": true,
+      "title": { "hi": "चिह्न: बैल (वृषभ)", "en": "Emblem: bull" }
+    }
+  ],
+  "ajitnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-elephant",
+      "top": true,
+      "title": { "hi": "चिह्न: हाथी", "en": "Emblem: elephant" }
+    }
+  ],
+  "sambhavnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-horse",
+      "top": true,
+      "title": { "hi": "चिह्न: घोड़ा", "en": "Emblem: horse" }
+    }
+  ],
+  "abhinandannath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-monkey",
+      "top": true,
+      "title": { "hi": "चिह्न: बन्दर", "en": "Emblem: monkey" }
+    }
+  ],
+  "sumatinath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bird",
+      "top": true,
+      "title": { "hi": "चिह्न: चकवा", "en": "Emblem: chakwa bird" }
+    }
+  ],
+  "padmaprabh-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lotus",
+      "top": true,
+      "title": { "hi": "चिह्न: कमल", "en": "Emblem: lotus" }
+    }
+  ],
+  "padmaprabh-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lotus",
+      "top": true,
+      "title": { "hi": "चिह्न: कमल", "en": "Emblem: lotus" }
+    }
+  ],
+  "suparshvanath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-swastik",
+      "top": true,
+      "title": { "hi": "चिह्न: स्वस्तिक", "en": "Emblem: swastik" }
+    }
+  ],
+  "chandraprabh-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-moon",
+      "top": true,
+      "title": { "hi": "चिह्न: चन्द्रमा", "en": "Emblem: moon" }
+    }
+  ],
+  "pushpadant-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-crocodile",
+      "top": true,
+      "title": { "hi": "चिह्न: मगर", "en": "Emblem: crocodile (makar)" }
+    }
+  ],
+  "sheetalnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-tree",
+      "top": true,
+      "title": { "hi": "चिह्न: कल्पवृक्ष", "en": "Emblem: wish-tree (kalpavriksha)" }
+    }
+  ],
+  "shreyansnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-rhino",
+      "top": true,
+      "title": { "hi": "चिह्न: गैंडा", "en": "Emblem: rhinoceros" }
+    }
+  ],
+  "vasupujya-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-buffalo",
+      "top": true,
+      "title": { "hi": "चिह्न: भैंसा", "en": "Emblem: buffalo" }
+    }
+  ],
+  "vasupujya-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-buffalo",
+      "top": true,
+      "title": { "hi": "चिह्न: भैंसा", "en": "Emblem: buffalo" }
+    }
+  ],
+  "vimalnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-boar",
+      "top": true,
+      "title": { "hi": "चिह्न: शूकर", "en": "Emblem: boar" }
+    }
+  ],
+  "anantnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-porcupine",
+      "top": true,
+      "title": { "hi": "चिह्न: सेही", "en": "Emblem: porcupine" }
+    }
+  ],
+  "dharmnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-vajra",
+      "top": true,
+      "title": { "hi": "चिह्न: वज्र", "en": "Emblem: vajra (thunderbolt)" }
+    }
+  ],
+  "shantinath-pooja-bakhtavar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-deer",
+      "top": true,
+      "title": { "hi": "चिह्न: हिरण", "en": "Emblem: deer" }
+    }
+  ],
+  "shantinath-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-deer",
+      "top": true,
+      "title": { "hi": "चिह्न: हिरण", "en": "Emblem: deer" }
+    }
+  ],
+  "shantinath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-deer",
+      "top": true,
+      "title": { "hi": "चिह्न: हिरण", "en": "Emblem: deer" }
+    }
+  ],
+  "kunthunath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-goat",
+      "top": true,
+      "title": { "hi": "चिह्न: बकरा", "en": "Emblem: goat" }
+    }
+  ],
+  "arahnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-fish",
+      "top": true,
+      "title": { "hi": "चिह्न: मछली", "en": "Emblem: fish" }
+    }
+  ],
+  "mallinath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-kalash",
+      "top": true,
+      "title": { "hi": "चिह्न: कलश", "en": "Emblem: kalash" }
+    }
+  ],
+  "munisuvratnath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-tortoise",
+      "top": true,
+      "title": { "hi": "चिह्न: कछुआ", "en": "Emblem: tortoise" }
+    }
+  ],
+  "naminath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bluelotus",
+      "top": true,
+      "title": { "hi": "चिह्न: नील कमल", "en": "Emblem: blue lotus" }
+    }
+  ],
+  "neminath-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-conch",
+      "top": true,
+      "title": { "hi": "चिह्न: शंख", "en": "Emblem: conch" }
+    }
+  ],
+  "neminath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-conch",
+      "top": true,
+      "title": { "hi": "चिह्न: शंख", "en": "Emblem: conch" }
+    }
+  ],
+  "parshvanath-pooja-bakhtavar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-serpent",
+      "top": true,
+      "title": { "hi": "चिह्न: सर्प", "en": "Emblem: serpent" }
+    }
+  ],
+  "parshvanath-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-serpent",
+      "top": true,
+      "title": { "hi": "चिह्न: सर्प", "en": "Emblem: serpent" }
+    }
+  ],
+  "parshvanath-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-serpent",
+      "top": true,
+      "title": { "hi": "चिह्न: सर्प", "en": "Emblem: serpent" }
+    }
+  ],
+  "mahavir-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lion",
+      "top": true,
+      "title": { "hi": "चिह्न: सिंह", "en": "Emblem: lion" }
+    }
+  ],
+  "mahavir-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lion",
+      "top": true,
+      "title": { "hi": "चिह्न: सिंह", "en": "Emblem: lion" }
+    }
+  ],
+  "mahavir-pooja-bharill": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lion",
+      "top": true,
+      "title": { "hi": "चिह्न: सिंह", "en": "Emblem: lion" }
+    }
+  ],
+  "kshamavani-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kshama",
+      "top": true,
+      "title": { "hi": "क्षमावणी — क्षमा माँगना और देना", "en": "Kshamavani: asking and giving forgiveness" }
+    }
+  ],
+  "akshay-tritiya-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.akshay-tritiya",
+      "top": true,
+      "title": { "hi": "अक्षय तृतीया — पहला आहार", "en": "Akshay Tritiya: the first aahar" }
+    }
+  ],
+  "deepawali-pooja-pavaiya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "diwali",
+      "top": true,
+      "title": { "hi": "दीपावली — वीर निर्वाण", "en": "Diwali: Veer Nirvan" }
+    }
+  ],
+  "rakshabandhan-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.vishnukumar",
+      "top": true,
+      "title": { "hi": "रक्षाबंधन — विष्णुकुमार मुनि", "en": "Raksha Bandhan: Vishnukumar Muni" }
+    }
+  ],
+  "veer-shasan-jayanti-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "samavasaran",
+      "top": true,
+      "title": { "hi": "दिव्यध्वनि — भगवान का उपदेश", "en": "The divine sound: the Lord's teaching" }
+    }
+  ],
+  "shrut-panchami-pooja": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shastra",
+      "top": true,
+      "title": { "hi": "जिनवाणी — शास्त्र की पूजा", "en": "Jinvani: honouring the scripture" }
+    }
+  ],
+  "arghyavali": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "arghya",
+      "top": true,
+      "title": { "hi": "अर्घ्य", "en": "Arghya" }
+    }
+  ],
+  "maha-arghya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "arghya",
+      "top": true,
+      "title": { "hi": "अर्घ्य", "en": "Arghya" }
+    }
+  ],
+  "samuchchay-maha-arghya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "arghya",
+      "top": true,
+      "title": { "hi": "अर्घ्य", "en": "Arghya" }
+    }
+  ],
+  "shanti-path": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shanti",
+      "top": true,
+      "title": { "hi": "शान्ति पाठ और विसर्जन", "en": "Shanti path and visarjan" }
+    }
+  ],
+  "shanti-path-bhasha": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shanti",
+      "top": true,
+      "title": { "hi": "शान्ति पाठ और विसर्जन", "en": "Shanti path and visarjan" }
+    }
+  ],
+  "visarjan-path": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shanti",
+      "top": true,
+      "title": { "hi": "शान्ति पाठ और विसर्जन", "en": "Shanti path and visarjan" }
+    }
+  ],
+  "adinath-chalisa": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bull",
+      "top": true,
+      "title": { "hi": "चिह्न: बैल (वृषभ)", "en": "Emblem: bull" }
+    }
+  ],
+  "mahavir-chalisa": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lion",
+      "top": true,
+      "title": { "hi": "चिह्न: सिंह", "en": "Emblem: lion" }
+    }
+  ],
+  "panch-parmeshthi-aarti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "parameshthi",
+      "top": true,
+      "title": { "hi": "पंच परमेष्ठी", "en": "The five Parameshthis" }
+    }
+  ],
+  "chandaprabhu-aarti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-moon",
+      "top": true,
+      "title": { "hi": "चिह्न: चन्द्रमा", "en": "Emblem: moon" }
+    }
+  ],
+  "parshvanath-aarti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-serpent",
+      "top": true,
+      "title": { "hi": "चिह्न: सर्प", "en": "Emblem: serpent" }
+    }
+  ],
+  "mahavir-aarti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lion",
+      "top": true,
+      "title": { "hi": "चिह्न: सिंह", "en": "Emblem: lion" }
+    }
+  ],
+  "bahubali-aarti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.bahubali",
+      "top": true,
+      "title": { "hi": "बाहुबली — एक वर्ष का ध्यान", "en": "Bahubali: a year in meditation" }
+    }
+  ],
+  "dev-stuti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "भगवान के सामने — हाथ जोड़कर, सिर झुकाकर", "en": "Before the Lord, with folded hands and bowed head" }
+    }
+  ],
+  "meri-bhavana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhav",
+      "top": true,
+      "title": { "hi": "सच्चा भाव", "en": "The true spirit" }
+    }
+  ],
+  "barah-bhavana-jaychand": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhSansar",
+      "top": true,
+      "title": { "hi": "संसार — चार गतियों का चक्र", "en": "The wheel of the four states" }
+    }
+  ],
+  "barah-bhavana-mangatray": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhSansar",
+      "top": true,
+      "title": { "hi": "संसार — चार गतियों का चक्र", "en": "The wheel of the four states" }
+    }
+  ],
+  "mahavir-vandana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lion",
+      "top": true,
+      "title": { "hi": "चिह्न: सिंह", "en": "Emblem: lion" }
+    }
+  ],
+  "samadhimaran-dyanat": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "samadhi-bhavana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "samadhimaran-soorchand": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "darshan-stuti-daulatram": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "भगवान के सामने — हाथ जोड़कर, सिर झुकाकर", "en": "Before the Lord, with folded hands and bowed head" }
+    }
+  ],
+  "jinvani-stuti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shastra",
+      "top": true,
+      "title": { "hi": "जिनवाणी — शास्त्र की पूजा", "en": "Jinvani: honouring the scripture" }
+    }
+  ],
+  "aradhana-path": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jaap",
+      "top": true,
+      "title": { "hi": "जाप, सामायिक और स्वाध्याय", "en": "Jaap, samayik and study" }
+    }
+  ],
+  "arhat-vandana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "भगवान के सामने — हाथ जोड़कर, सिर झुकाकर", "en": "Before the Lord, with folded hands and bowed head" }
+    }
+  ],
+  "alochana-path": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kshama",
+      "top": true,
+      "title": { "hi": "क्षमावणी — क्षमा माँगना और देना", "en": "Kshamavani: asking and giving forgiveness" }
+    }
+  ],
+  "dukhharan-vinati": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "भगवान के सामने — हाथ जोड़कर, सिर झुकाकर", "en": "Before the Lord, with folded hands and bowed head" }
+    }
+  ],
+  "amulya-tattva-vichar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhAnyatva",
+      "top": true,
+      "title": { "hi": "आत्मा और देह अलग हैं", "en": "The soul and the body are different" }
+    }
+  ],
+  "baees-parishah": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "samayik-path-amitgati": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jaap",
+      "top": true,
+      "title": { "hi": "जाप, सामायिक और स्वाध्याय", "en": "Jaap, samayik and study" }
+    }
+  ],
+  "samayik-path-mahachandra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jaap",
+      "top": true,
+      "title": { "hi": "जाप, सामायिक और स्वाध्याय", "en": "Jaap, samayik and study" }
+    }
+  ],
+  "samayik-path-yugal": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jaap",
+      "top": true,
+      "title": { "hi": "जाप, सामायिक और स्वाध्याय", "en": "Jaap, samayik and study" }
+    }
+  ],
+  "nirvan-kand": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "nirvan",
+      "top": true,
+      "title": { "hi": "निर्वाण", "en": "Nirvan" }
+    }
+  ],
+  "dev-shastra-guru-vandana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "vairagya-bhavana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhAnitya",
+      "top": true,
+      "title": { "hi": "अनित्य — कुछ भी स्थायी नहीं", "en": "Anitya: nothing lasts" }
+    }
+  ],
+  "bhudhar-shatak": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "atmabodh-shatak": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "chaubis-tirthankar-stavan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
+  ],
+  "laghu-pratikraman": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kshama",
+      "top": true,
+      "title": { "hi": "क्षमावणी — क्षमा माँगना और देना", "en": "Kshamavani: asking and giving forgiveness" }
+    }
+  ],
+  "mrityu-mahotsav": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhAnitya",
+      "top": true,
+      "title": { "hi": "अनित्य — कुछ भी स्थायी नहीं", "en": "Anitya: nothing lasts" }
+    }
+  ],
+  "apurva-avsar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "kundkund-shatak": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kundkund",
+      "top": true,
+      "title": { "hi": "आचार्य कुंदकुंद", "en": "Acharya Kundkund" }
+    }
+  ],
+  "siddh-shrut-acharya-bhakti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "devShastraGuru",
+      "top": true,
+      "title": { "hi": "देव, शास्त्र और गुरु", "en": "Dev, Shastra and Guru" }
+    }
+  ],
+  "dhyan-sutra-shatak": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "pakhwada": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jaap",
+      "top": true,
+      "title": { "hi": "जाप, सामायिक और स्वाध्याय", "en": "Jaap, samayik and study" }
+    }
+  ],
+  "gommateshwar-stuti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.bahubali",
+      "top": true,
+      "title": { "hi": "बाहुबली — एक वर्ष का ध्यान", "en": "Bahubali: a year in meditation" }
+    }
+  ],
+  "jinendra-gun-sanstuti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "ratnakar-panchvinshatika": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kshama",
+      "top": true,
+      "title": { "hi": "क्षमावणी — क्षमा माँगना और देना", "en": "Kshamavani: asking and giving forgiveness" }
+    }
+  ],
+  "bhupal-panchvinshatika": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "sachcha-jain": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhav",
+      "top": true,
+      "title": { "hi": "सच्चा भाव", "en": "The true spirit" }
+    }
+  ],
+  "saraswati-vandana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shastra",
+      "top": true,
+      "title": { "hi": "जिनवाणी — शास्त्र की पूजा", "en": "Jinvani: honouring the scripture" }
+    }
+  ],
+  "chhahdhala-dyanat": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhDharma",
+      "top": true,
+      "title": { "hi": "धर्म — सच्चा सुख देने वाला", "en": "Dharma, the giver of true happiness" }
+    }
+  ],
+  "chhahdhala": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhDharma",
+      "top": true,
+      "title": { "hi": "धर्म — सच्चा सुख देने वाला", "en": "Dharma, the giver of true happiness" }
+    }
+  ],
+  "chhahdhala-budhjan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhDharma",
+      "top": true,
+      "title": { "hi": "धर्म — सच्चा सुख देने वाला", "en": "Dharma, the giver of true happiness" }
+    }
+  ],
+  "swayambhu-stotra-bhasha": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.samantabhadra",
+      "top": true,
+      "title": { "hi": "आचार्य समन्तभद्र का स्तोत्र", "en": "Acharya Samantabhadra's hymn" }
+    }
+  ],
+  "swayambhu-stotra-vidyasagar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.samantabhadra",
+      "top": true,
+      "title": { "hi": "आचार्य समन्तभद्र का स्तोत्र", "en": "Acharya Samantabhadra's hymn" }
+    }
+  ],
+  "parshvanath-stotra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-serpent",
+      "top": true,
+      "title": { "hi": "चिह्न: सर्प", "en": "Emblem: serpent" }
+    }
+  ],
+  "mahavirashtak": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lion",
+      "top": true,
+      "title": { "hi": "चिह्न: सिंह", "en": "Emblem: lion" }
+    }
+  ],
+  "vitrag-stotra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "jinaGlow",
+      "top": true,
+      "title": { "hi": "वीतराग भगवान", "en": "The Vitarag Lord" }
+    }
+  ],
+  "kalyan-mandir": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-serpent",
+      "top": true,
+      "title": { "hi": "चिह्न: सर्प", "en": "Emblem: serpent" }
+    }
+  ],
+  "kalyan-mandir-hindi": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-serpent",
+      "top": true,
+      "title": { "hi": "चिह्न: सर्प", "en": "Emblem: serpent" }
+    }
+  ],
+  "bhaktamar-arth": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.manatunga-bhaktamar",
+      "top": true,
+      "title": { "hi": "आचार्य मानतुंग और भक्तामर", "en": "Acharya Mantunga and the Bhaktamar" }
+    }
+  ],
+  "bhaktamar-hemraj": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.manatunga-bhaktamar",
+      "top": true,
+      "title": { "hi": "आचार्य मानतुंग और भक्तामर", "en": "Acharya Mantunga and the Bhaktamar" }
+    }
+  ],
+  "bhaktamar-kshirsagar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.manatunga-bhaktamar",
+      "top": true,
+      "title": { "hi": "आचार्य मानतुंग और भक्तामर", "en": "Acharya Mantunga and the Bhaktamar" }
+    }
+  ],
+  "ekibhav-stotra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "vishapahar-stotra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bull",
+      "top": true,
+      "title": { "hi": "चिह्न: बैल (वृषभ)", "en": "Emblem: bull" }
+    }
+  ],
+  "vishapahar-stotra-bhasha": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bull",
+      "top": true,
+      "title": { "hi": "चिह्न: बैल (वृषभ)", "en": "Emblem: bull" }
+    }
+  ],
+  "akalank-stotra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.akalank",
+      "top": true,
+      "title": { "hi": "अकलंक", "en": "Akalank" }
+    }
+  ],
+  "drishtashtak-stotra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "gandharvalay-stotra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "parameshthi",
+      "top": true,
+      "title": { "hi": "पंच परमेष्ठी", "en": "The five Parameshthis" }
+    }
+  ],
+  "mandalasa-stotra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "भाव से पढ़ें या गाएँ", "en": "Read or sing with devotion" }
+    }
+  ],
+  "jin-sahasranam": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
   ]
 }
