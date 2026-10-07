@@ -537,8 +537,12 @@ input:focus { border-color: var(--accent); }
   border: 2px solid var(--border);
   border-radius: 14px;
 }
-.day.is-parva { border-color: var(--accent); }
+.day.is-festival { border-color: var(--accent); }
 .day.is-today { background: var(--accent-bg); border-color: var(--accent); }
+/* Ashtami and chaturdashi stand out as solid saffron cards. */
+.day.is-parva { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.day.is-parva .day-wd, .day.is-parva .day-mon, .day.is-parva .day-paksha { color: var(--on-accent); }
+.day.is-parva .day-fest { background: var(--on-accent); color: var(--accent); }
 .day-wd { font-size: 0.85rem; font-weight: 700; color: var(--muted); }
 .day-date { font-size: 1.6rem; font-weight: 800; line-height: 1.15; }
 .day-mon { font-size: 0.8rem; color: var(--muted); }

@@ -663,13 +663,14 @@
       const days = [];
       for (let i = 0; i < 7; i++) days.push(dayInfo(new Date(today.getFullYear(), today.getMonth(), today.getDate() + i)));
       html += '<ol class="week-strip" aria-label="' + esc(t('weekOpen')) + '">' + days.map((d, i) =>
-        '<li class="day' + (i === 0 ? ' is-today' : '') + (d.parva || d.festival ? ' is-parva' : '') + '">' +
+        '<li class="day' + (i === 0 ? ' is-today' : '') + (d.festival ? ' is-festival' : '') + (d.parva ? ' is-parva' : '') + '">' +
         '<span class="day-wd">' + esc(i === 0 ? t('today') : dateFmt(d.date, { weekday: 'short' })) + '</span>' +
         '<span class="day-date">' + d.date.getDate() + '</span>' +
         '<span class="day-mon">' + esc(dateFmt(d.date, { month: 'short' })) + '</span>' +
         '<span class="day-tithi" translate="no">' + esc(d.tithiName) + '</span>' +
         '<span class="day-paksha" translate="no">' + esc(d.paksha) + '</span>' +
-        (d.festival ? '<span class="day-fest">' + esc(d.festival) + '</span>' : (d.parva ? '<span class="day-fest">' + esc(t('parva')) + '</span>' : '')) +
+        (d.parva ? '<span class="day-fest">' + esc(t('parva')) + '</span>' : '') +
+        (d.festival ? '<span class="day-fest">' + esc(d.festival) + '</span>' : '') +
         '</li>').join('') + '</ol>' +
         '<p class="muted tithi-note">' + esc(t('tithiNote')) + '</p>';
     }
