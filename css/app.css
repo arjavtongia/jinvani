@@ -379,6 +379,7 @@ input:focus { border-color: var(--accent); }
 .page-many .verse { margin-bottom: 0.9rem; }
 .verse-block.is-target { background: var(--accent-bg); border-radius: 12px; padding: 0.5rem 0.75rem; margin: 0 -0.75rem; }
 .topic { font-size: 1.1rem; font-weight: 700; color: var(--accent-text); margin: 0 0 0.6rem; }
+.scroll-title { font-size: 1.35rem; color: var(--text); margin-bottom: 1rem; }
 .prose p {
   font-family: var(--font-verse);
   font-size: 1.15rem;

@@ -2,6 +2,7 @@
   {
     "id": "namokar",
     "file": "content/namokar.txt",
+    "scroll": true,
     "category": "nitya",
     "title": { "hi": "णमोकार मंत्र एवं मंगल पाठ", "en": "Namokar Mantra and Mangal Path" },
     "author": { "hi": "अनादि मूल मंत्र", "en": "The eternal mantra" },
@@ -18,6 +19,7 @@
   {
     "id": "darshan-path",
     "file": "content/darshan-path.txt",
+    "scroll": true,
     "category": "nitya",
     "title": { "hi": "दर्शन पाठ", "en": "Darshan Path" },
     "author": { "hi": "मंदिर में दर्शन के समय का पाठ", "en": "Prayer recited at darshan in the temple" },
@@ -33,6 +35,7 @@
   {
     "id": "darshan-stuti",
     "file": "content/darshan-stuti.txt",
+    "scroll": true,
     "category": "nitya",
     "title": { "hi": "दर्शन स्तुति — प्रभु पतित पावन", "en": "Darshan Stuti — Prabhu Patit Pavan" },
     "author": { "hi": "पंडित बुधजन", "en": "Pandit Budhjan" },
@@ -64,6 +67,7 @@
   {
     "id": "barah-bhavana",
     "file": "content/barah-bhavana.txt",
+    "scroll": true,
     "category": "nitya",
     "title": { "hi": "बारह भावना", "en": "Barah Bhavana" },
     "author": { "hi": "पंडित भूधरदास", "en": "Pandit Bhudhardas" },
@@ -126,6 +130,7 @@
   {
     "id": "deepawali-poojan",
     "file": "content/deepawali-poojan.txt",
+    "scroll": true,
     "category": "vidhi",
     "title": { "hi": "दीपावली पूजन विधि", "en": "Diwali Pooja" },
     "author": { "hi": "घर और दुकान पर दीपावली की पूजा", "en": "Diwali pooja at home and at the shop" },

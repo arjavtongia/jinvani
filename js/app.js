@@ -227,6 +227,14 @@
   }
 
   function buildPages(book) {
+    /* Poojas and paath recited in one go: each section is one scrollable page. */
+    if (book.scroll) {
+      const scrollPages = book.sections.map(s => ({ from: s.from, to: s.to, section: s.index, scroll: true }));
+      scrollPages.forEach((p, i) => {
+        for (let pos = p.from; pos <= p.to; pos++) book.verses[pos - 1].page = i;
+      });
+      return scrollPages;
+    }
     const pages = [];
     let page = null;
     book.verses.forEach(v => {
@@ -257,6 +265,15 @@
     const useSection = book.sectionUnit && (!v.label || book.numbering === 'section');
     if (useSection) return t('positionSec', { sec: L(book.sectionUnit), s: v.section, unit: unit, n: n });
     return t('position', { unit: unit, n: n });
+  }
+
+  /* Where a reader is: the pooja's name in scroll books, otherwise "Chapter 2 · Sutra 5". */
+  function placeLabel(book, v) {
+    if (book.scroll) {
+      const s = book.sections[v.section - 1];
+      return s && s.title && book.sections.length > 1 ? L(s.title) : book.title.hi;
+    }
+    return posLabel(book, v);
   }
 
   function countLabel(book) {
@@ -714,7 +731,7 @@
       readingCard = '<a class="card card-accent" href="#/read/' + last.id + '/' + v.pos + '">' +
         '<span class="card-label">' + esc(t('continueReading')) + '</span>' +
         titleHtml(last, 'card-title') +
-        '<span class="card-meta">' + esc(posLabel(last, v)) + ' · ' + v.pos + ' / ' + last.verses.length + '</span>' +
+        '<span class="card-meta">' + esc(placeLabel(last, v)) + (last.scroll ? '' : ' · ' + v.pos + ' / ' + last.verses.length) + '</span>' +
         '<span class="progress" aria-hidden="true"><span style="width:' + pct + '%"></span></span></a>';
     } else {
       const first = await getBook('namokar').catch(() => null);
@@ -815,7 +832,7 @@
     const saved = state.positions[id];
     if (saved && saved > 1 && book.verses[saved - 1]) {
       html += '<a class="btn btn-primary btn-wide" href="#/read/' + id + '/' + saved + '">' + icon('bookmark') +
-        '<span>' + esc(t('resumeAt')) + ' — ' + esc(posLabel(book, book.verses[saved - 1])) + '</span></a>' +
+        '<span>' + esc(t('resumeAt')) + ' — ' + esc(placeLabel(book, book.verses[saved - 1])) + '</span></a>' +
         '<a class="btn btn-wide" href="#/read/' + id + '/1">' + icon('book') + '<span>' + esc(t('readFromStart')) + '</span></a>';
     } else {
       html += '<a class="btn btn-primary btn-wide" href="#/read/' + id + '/1">' + icon('book') + '<span>' + esc(t('readFromStart')) + '</span></a>';
@@ -826,14 +843,18 @@
     if (multi) {
       const unitPlural = state.lang === 'en' ? L(book.unit).toLowerCase() + 's' : L(book.unit);
       const shortNames = book.sections.every(s => sectionName(book, s).length <= 14);
-      const items = book.sections.map(s => ({ s: s, name: sectionName(book, s), n: s.to - s.from + 1 }));
+      /* In scroll books each section is one page, so its name opens the reading page directly. */
+      const items = book.sections.map(s => ({
+        s: s, name: sectionName(book, s), n: s.to - s.from + 1,
+        href: book.scroll ? '#/read/' + id + '/' + s.from : '#/book/' + id + '/' + s.index
+      }));
       html += '<h2>' + esc(L(book.sectionUnit) || t('contents')) + '</h2>';
       if (shortNames) {
-        html += '<div class="grid-btns">' + items.map(x => '<a class="btn grid-btn" href="#/book/' + id + '/' + x.s.index + '">' +
+        html += '<div class="grid-btns">' + items.map(x => '<a class="btn grid-btn" href="' + x.href + '">' +
           '<span class="grid-big" translate="no">' + esc(x.name) + '</span>' +
           '<span class="grid-small">' + x.n + ' ' + esc(unitPlural) + '</span></a>').join('') + '</div>';
       } else {
-        html += '<ol class="rows">' + items.map(x => '<li><a class="row" href="#/book/' + id + '/' + x.s.index + '">' +
+        html += '<ol class="rows">' + items.map(x => '<li><a class="row" href="' + x.href + '">' +
           '<span class="row-num">' + x.s.index + '</span><span class="row-main"><span class="row-topic" translate="no" lang="hi">' + esc(x.name) + '</span>' +
           '<span class="row-sub">' + x.n + ' ' + esc(unitPlural) + '</span></span>' + icon('chevron-right', 'row-chev') + '</a></li>').join('') + '</ol>';
       }
@@ -899,15 +920,21 @@
     state.last = { book: id, pos: page.from };
     saveState();
 
-    const label = posLabel(book, first, last);
-    document.title = book.title.hi + ' · ' + label + ' · ' + t('appName');
     const sec = book.sections[first.section - 1];
     const secName = book.sections.length > 1 && sec && sec.title ? L(sec.title) : '';
+    /* A scroll page is a whole pooja or paath: its heading is the pooja's name. */
+    const label = page.scroll ? (secName || book.title.hi) : posLabel(book, first, last);
+    document.title = book.title.hi + ' · ' + label + ' · ' + t('appName');
     const isBookmarked = state.bookmarks.some(b => b.book === id && b.pos >= page.from && b.pos <= page.to);
     const isFirst = page.from === 1;
     const isLast = page.to === n;
-    const contentsHref = book.sections.length > 1 ? '#/book/' + id + '/' + first.section : '#/book/' + id;
-    const posText = page.from === page.to ? String(page.from) : page.from + '–' + page.to;
+    const contentsHref = book.sections.length > 1 && !page.scroll ? '#/book/' + id + '/' + first.section : '#/book/' + id;
+    let whereTitle = book.title.hi + (secName ? ' · ' + secName : '');
+    let posText = (page.from === page.to ? String(page.from) : page.from + '–' + page.to) + ' / ' + n;
+    if (page.scroll) {
+      whereTitle = secName ? book.title.hi : '';
+      posText = book.sections.length > 1 ? sec.index + ' / ' + book.sections.length : '';
+    }
 
     let html = '<header class="topbar">' +
       '<a class="btn btn-small" href="' + contentsHref + '">' + icon('list') + '<span>' + esc(t('contents')) + '</span></a>' +
@@ -915,9 +942,9 @@
       '</header>' +
       '<div class="progress progress-top" aria-hidden="true"><span style="width:' + Math.round(page.to / n * 100) + '%"></span></div>' +
       '<main class="reader" id="verse-area">' +
-      '<p class="reader-where"><span translate="no" lang="hi">' + esc(book.title.hi) + (secName ? ' · ' + esc(secName) : '') + '</span>' +
-      '<span class="where-pos">' + posText + ' / ' + n + '</span></p>' +
-      '<h1 class="verse-label">' + esc(label) + '</h1>' +
+      (whereTitle || posText ? '<p class="reader-where"><span translate="no" lang="hi">' + esc(whereTitle) + '</span>' +
+        '<span class="where-pos">' + posText + '</span></p>' : '') +
+      '<h1 class="verse-label' + (page.scroll ? ' scroll-title' : '') + '" translate="no">' + esc(label) + '</h1>' +
       '<div class="page' + (verses.length > 1 ? ' page-many' : '') + '">' +
       verses.map(v => verseBlockHtml(book, v, verses.length > 1 && v.pos === pos && pos !== page.from)).join('') +
       '</div>' +
@@ -1142,6 +1169,9 @@
       }
     }
     if (!(sameRoute && (view === 'settings' || view === 'saved'))) window.scrollTo(0, 0);
+    /* Opening one part of a long pooja: scroll down to that part, below the sticky top bar. */
+    const target = view === 'read' && $app.querySelector('.is-target');
+    if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 90);
     if (view === 'search') {
       renderResults();
       const q = document.getElementById('q');

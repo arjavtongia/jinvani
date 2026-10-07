@@ -41,6 +41,7 @@ Prose: English paragraph
 
 1. Add a new `.txt` file here, in the format above.
 2. Add an entry to `books.json` with its `id`, `file`, `category`, `title`, `author`, `unit`, `count` and `source`. Copy an existing entry as a starting point. Add `sectionUnit` only if the book has chapters. Categories are listed in `categories.json`.
+   Add `"scroll": true` for a pooja or paath that is recited in one go: each `##` section (or the whole book, if it has none) then shows as one scrollable page instead of one part per screen.
 3. Add the file name to the `FILES` list in `sw.js` and change `VERSION` there, so it also works offline.
 
 Only add texts that are free to share, or that you have permission to use.

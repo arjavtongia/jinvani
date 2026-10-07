@@ -11,6 +11,7 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 - मंदिर दर्शन विधि and पूजा विधि: step-by-step temple and ashta-dravya pooja guides with every mantra and drawings (thali, ठौना with three cloves, swastik, pradakshina).
 - "चित्र से समझें": diagrams that explain the meaning of key sutras and verses.
 - One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons; short sutras are grouped five or six to a screen. Swipes and arrow keys work too.
+- Poojas and short paath (Deepawali poojas, Namokar, Darshan Path, Darshan Stuti, Barah Bhavana) scroll as one page each, so they can be recited without tapping Next.
 - Remembers where you stopped, and shows "पढ़ना जारी रखें" (Continue reading) on the home screen.
 - Large text by default, with a text size setting, plus day and night colours.
 - "सुनें" (Listen) reads each verse aloud in a Hindi voice and moves to the next one automatically.
