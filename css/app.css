@@ -834,9 +834,6 @@ body:has(main.kids) .reader-bar .btn-primary { background: #ff5d5d; border-color
 
 /* ---------- Ask ---------- */
 
-.ask-intro { margin: -0.4rem 0 1rem; color: var(--muted); }
-.ask-form { display: flex; flex-direction: column; gap: 0.7rem; }
-.ask-privacy { margin: 0.6rem 0 0; font-size: var(--fs-xs); color: var(--muted); }
 textarea {
   width: 100%;
   min-height: 5.2rem;
@@ -854,28 +851,125 @@ textarea:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
 .ask-link { display: flex; align-items: center; gap: 0.6rem; min-height: var(--tap); margin: -0.2rem 0 1rem; padding: 0.5rem 0.9rem; border-top: 1px solid var(--brass-line); border-bottom: 1px solid var(--brass-line); background: var(--brass-wash); color: var(--text); font-weight: 600; text-decoration: none; }
 .ask-link > span { flex: 1; }
 .ask-link .icon { color: var(--brass-text); }
-.ask-wait { display: flex; align-items: center; gap: 0.5rem; margin: 1.3rem 0 0; color: var(--muted); }
-.ask-wait .dhwaja { width: 0.9rem; height: 1.1rem; flex: none; }
 .ask-dots { display: inline-flex; gap: 0.2rem; }
 .ask-dots i { width: 0.3rem; height: 0.3rem; border-radius: 50%; background: var(--brass); animation: ask-dot 1.2s ease-in-out infinite; }
 .ask-dots i:nth-child(2) { animation-delay: 0.2s; }
 .ask-dots i:nth-child(3) { animation-delay: 0.4s; }
 @keyframes ask-dot { 0%, 80%, 100% { opacity: 0.25; } 40% { opacity: 1; } }
-.ask-error { margin: 1.3rem 0 0; padding: 0.8rem 1rem; border-top: 1px solid var(--brass-line); border-bottom: 1px solid var(--brass-line); background: var(--brass-wash); }
-/* An answer stands on the marble like a page laid open in the sanctum: brass above and below. */
-.answer { margin: 1.4rem 0 0; padding: 1rem 1.1rem 1.1rem; background: var(--shrine); border-top: 2px solid var(--brass); border-bottom: 1px solid var(--brass-line); }
-.answer-kind { margin: 0; font: 700 var(--fs-xs)/1.3 var(--font-ui); letter-spacing: 0.06em; text-transform: uppercase; color: var(--brass-text); }
-.answer-q { margin: 0.3rem 0 0.6rem; font: 700 1.15rem/1.35 var(--font-head); }
-.answer-text p { margin: 0 0 0.7rem; line-height: 1.75; text-wrap: pretty; }
+
+/* ---------- Ask: a conversation with the app's texts ---------- */
+
+/* The screen leaves room below for the bottom bar and the question box standing on it. */
+#app.has-nav.is-ask { padding-bottom: calc(var(--bar-h, 4.5rem) + var(--composer-h, 4.5rem) + 1.4rem); }
+
+/* Before the first question: a welcome lit by the diya under the chhatra. */
+.ask-hello { position: relative; isolation: isolate; padding: 1.6rem 0 0.4rem; text-align: center; }
+.ask-hello::before { content: ''; position: absolute; z-index: -1; top: -1.4rem; left: 50%; width: min(24rem, 100%); height: 15rem; transform: translateX(-50%); background: radial-gradient(closest-side, var(--glow), transparent); }
+.ask-chhatra.chhatra { width: 5rem; margin: 0 auto 0.7rem; }
+.ask-title { margin: 0; font: 700 1.62rem/1.2 var(--font-head); text-wrap: balance; }
+.ask-intro { max-width: 27rem; margin: 0.55rem auto 0; color: var(--muted); font-size: var(--fs-body); line-height: 1.65; text-wrap: pretty; }
+.ask-privacy, .thread-note { display: flex; align-items: flex-start; justify-content: center; gap: 0.4rem; max-width: 27rem; margin: 0.9rem auto 0; color: var(--muted); font-size: var(--fs-xs); line-height: 1.5; text-align: start; }
+.ask-privacy .icon, .thread-note .icon { flex: none; width: 0.95rem; height: 0.95rem; margin-top: 0.1rem; color: var(--brass-text); }
+.thread-note { margin: 0.4rem auto 1.1rem; padding-bottom: 0.9rem; border-bottom: 1px solid var(--hair); }
+.ask .chips-head { margin-top: 1.9rem; }
+.ask .chip { text-align: start; font-size: var(--fs-body); }
+.row-lead { flex: none; width: 1.25rem; height: 1.25rem; color: var(--brass-text); }
+
+/* All the common questions, folded under one line until opened. */
+.ask-all { margin-top: 1.9rem; border-top: 1px solid var(--hair); }
+.ask-all summary { display: flex; align-items: center; gap: 0.6rem; min-height: var(--tap); padding: 0.55rem 0.1rem; cursor: pointer; list-style: none; font: 700 var(--fs-body)/1.3 var(--font-head); }
+.ask-all summary::-webkit-details-marker { display: none; }
+.ask-all summary span { flex: 1; }
+.ask-all summary small { min-width: 1.9rem; padding: 0.15rem 0.5rem; border: 1px solid var(--brass-line); border-radius: 999px; font: 700 var(--fs-xs)/1.2 var(--font-ui); color: var(--brass-text); text-align: center; font-variant-numeric: tabular-nums; }
+.ask-all summary .icon { color: var(--muted); transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1); }
+.ask-all[open] summary .icon { transform: rotate(180deg); }
+.ask-all summary:hover { color: var(--brass-text); }
+
+/* The conversation: your words on the right in a brass-washed bubble, the app's answer on the left on
+   sanctum white, under a small chhatra in its niche. */
+.thread { display: flex; flex-direction: column; gap: 1rem; }
+.msg { min-width: 0; }
+.msg-you { align-self: flex-end; max-width: min(85%, 30rem); padding: 0.65rem 1.05rem; border: 1px solid var(--brass-line); border-radius: 1.3rem 1.3rem 0.35rem 1.3rem; background: var(--brass-wash-strong); }
+.msg-you p { margin: 0; font: 600 var(--fs-body)/1.5 var(--font-ui); overflow-wrap: anywhere; }
+.msg-app { display: grid; grid-template-columns: 2.3rem minmax(0, 1fr); gap: 0.6rem; align-items: start; }
+.msg-mark { display: grid; place-items: end center; width: 2.3rem; height: 2.7rem; padding-bottom: 0.55rem; border-radius: 1.2rem 1.2rem 0.25rem 0.25rem / 1.05rem 1.05rem 0.25rem 0.25rem; background: var(--niche); box-shadow: inset 0 0 0 1px var(--brass-line); }
+.msg-mark .chhatra { width: 1.6rem; }
+.msg-card { min-width: 0; overflow-wrap: break-word; padding: 0.9rem 1.05rem 0.55rem; border: 1px solid var(--brass-line); border-top: 2px solid var(--brass); border-radius: 0.35rem 1.3rem 1.3rem 1.3rem; background: var(--shrine); }
+.msg-card .answer-text p { margin: 0 0 0.7rem; font-size: var(--fs-body); line-height: 1.75; text-wrap: pretty; }
+.msg-card .answer-text p:last-child { margin-bottom: 0; }
+.msg-src-head { margin: 0.95rem 0 0.45rem; font: 600 var(--fs-sm)/1.3 var(--font-ui); color: var(--brass-text); }
+.msg-srcs { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.35rem; margin: 0; padding: 0; list-style: none; }
+.msg-src { display: flex; align-items: center; gap: 0.65rem; min-height: var(--tap); padding: 0.4rem 0.5rem 0.4rem 0.55rem; border-radius: 0.9rem; background: var(--brass-wash); color: var(--text); text-decoration: none; transition: background-color 0.15s; }
+.msg-src:hover { background: var(--brass-wash-strong); }
+.msg-src-n { flex: none; display: grid; place-items: center; width: 1.45rem; height: 1.45rem; border-radius: 50%; background: var(--sindoor-fill); color: var(--on-sindoor); font: 700 var(--fs-xs)/1 var(--font-ui); font-variant-numeric: tabular-nums; }
+.msg-src-main { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.msg-src-main .title { font: 600 var(--fs-body)/1.35 var(--font-ui); overflow-wrap: anywhere; }
+.msg-src-main small { color: var(--muted); font-size: var(--fs-xs); }
+.msg-note { margin: 0.85rem 0 0; color: var(--muted); font-size: var(--fs-xs); line-height: 1.55; }
+.msg-foot { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.7rem; padding-top: 0.15rem; border-top: 1px solid var(--hair); }
+.msg-kind { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--muted); font: 600 var(--fs-xs)/1.3 var(--font-ui); }
+.msg-kind .icon { width: 1rem; height: 1rem; color: var(--brass-text); }
+.msg-act { margin-right: -0.6rem; }
+.msg-act:hover { background: var(--brass-wash); color: var(--text); }
+.msg-more { margin: 0.2rem 0 0.45rem; }
+.msg-wait { display: flex; align-items: center; gap: 0.55rem; margin: 0 0 0.4rem; color: var(--muted); }
+.msg-error { margin: 0 0 0.4rem; line-height: 1.6; }
+/* Questions to ask next, under the answer they follow from. */
+.msg-next { margin: -0.2rem 0 0 2.9rem; }
+.msg-next-head { margin: 0 0 0.45rem; color: var(--muted); font: 600 var(--fs-xs)/1.3 var(--font-ui); }
+/* A new message rises in once; nothing else moves. */
+@keyframes msg-in { from { opacity: 0.35; transform: translateY(0.6rem); } }
+.msg.is-new, .msg-next.is-new { animation: msg-in 0.34s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.msg-next.is-new { animation-delay: 0.08s; }
+/* On a phone the answer takes the full width; its chhatra stands just above the card's pointed corner. */
+@media (max-width: 560px) {
+  .msg-app { grid-template-columns: minmax(0, 1fr); gap: 0.3rem; }
+  .msg-mark { width: 2rem; height: 2.35rem; padding-bottom: 0.48rem; }
+  .msg-mark .chhatra { width: 1.4rem; }
+  .msg-next { margin-left: 0; }
+}
+
+/* The question box stands on the bottom bar: a field-white pill with the voice button, the words and the
+   sindoor send button, over a fade of the page so the conversation passes under it. */
+.composer { position: fixed; left: 0; right: 0; bottom: var(--bar-h, 4.5rem); z-index: 5; max-width: 42rem; margin: 0 auto; padding: 1.1rem 1rem 0.65rem; background: linear-gradient(to top, var(--bg) 62%, transparent); pointer-events: none; }
+.composer-field { display: flex; align-items: flex-end; gap: 0.25rem; padding: 0.25rem; border: 1px solid var(--brass-line); border-radius: 1.6rem; background: var(--field); box-shadow: var(--lift); pointer-events: auto; transition: border-color 0.15s; }
+.composer-field:focus-within { border-color: var(--brass); }
+.composer textarea { flex: 1; min-width: 0; min-height: 48px; max-height: none; padding: 0.72rem 0.5rem 0.62rem 0.85rem; border: 0; border-radius: 0; background: none; font: 500 var(--fs-body)/1.45 var(--font-ui); resize: none; overflow-y: auto; }
+.composer-mic + textarea { padding-left: 0.2rem; }
+.composer textarea::placeholder { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.composer textarea:focus, .composer textarea:focus-visible { outline: none; }
+.composer-field:has(textarea:focus-visible) { outline: 3px solid var(--text); outline-offset: 2px; }
+.composer-mic, .composer-send { flex: none; display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; border-radius: 50%; cursor: pointer; transition: background-color 0.15s, color 0.15s, opacity 0.15s, transform 0.15s; }
+.composer-mic { background: none; color: var(--brass-text); }
+.composer-mic:hover { background: var(--brass-wash); }
+.composer-mic.is-listening { background: var(--brass-wash-strong); color: var(--sindoor); box-shadow: inset 0 0 0 1px var(--brass); }
+.composer-send { background: var(--sindoor-fill); color: var(--on-sindoor); }
+.composer-send:hover { background: var(--sindoor-fill-hover); }
+.composer-send:active { transform: scale(0.94); }
+.composer-send.is-empty { opacity: 0.4; }
+.composer .icon { width: 1.35rem; height: 1.35rem; }
+/* While typing on a phone, the bottom bar steps aside and the box sits on the keyboard. */
+@media (pointer: coarse) {
+  #app.composing .tabbar { display: none; }
+  #app.composing .composer { bottom: 0; padding-bottom: calc(0.55rem + env(safe-area-inset-bottom)); }
+}
 .cite { display: inline-grid; place-items: center; min-width: 1.25rem; height: 1.25rem; margin: 0 0.1rem; padding: 0 0.25rem; border: 1px solid var(--brass-line); border-radius: 999px; font: 700 0.62rem/1 var(--font-ui); color: var(--brass-text); text-decoration: none; vertical-align: 0.35em; }
 .cite:hover { background: var(--brass-wash); }
-.answer-src-head { margin: 1rem 0 0.2rem; font-size: var(--fs-body); }
-.answer .rows { border-top-color: var(--brass-line); }
-.ask-src { display: flex; flex-direction: column; min-width: 0; }
-.ask-src .title { font: 600 var(--fs-body)/1.35 var(--font-ui); }
-.answer-note { margin: 0.9rem 0 0; font-size: var(--fs-sm); color: var(--muted); line-height: 1.55; }
-.answer .btn-small { margin-top: 0.9rem; }
-.rows button.row { width: 100%; border: 0; background: none; text-align: start; font: inherit; cursor: pointer; }
+.rows button.row { width: 100%; border: 0; background: none; color: inherit; text-align: start; font: inherit; cursor: pointer; }
+
+/* ---------- Side rail: how far down a page you are ---------- */
+/* A hairline at the side of every screen that scrolls (home excepted), gilded as far as you have come, with a
+   sindoor lozenge at your place. It sits just outside the column, between the top and bottom bars. */
+.scrollmark { position: fixed; z-index: 4; top: calc(var(--top-h, 0px) + 1rem); bottom: calc(var(--bar-h, 0px) + var(--composer-h, 0px) + 1rem); right: max(0.4rem, calc(50vw - 21rem - 0.9rem)); width: 2px; border-radius: 2px; background: var(--hair); opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+.scrollmark.is-on { opacity: 1; }
+.scrollmark i { position: absolute; top: 0; left: 0; width: 100%; height: calc(var(--p, 0) * 100%); border-radius: 2px; background: linear-gradient(var(--brass-hi), var(--brass)); }
+.scrollmark b { position: absolute; top: calc(var(--p, 0) * 100%); right: -0.35rem; width: 2.6rem; height: 2.6rem; margin-top: -1.3rem; }
+/* The lozenge is small to see but large to hold: the square around it, which never reaches past the screen's edge,
+   takes the finger. */
+.scrollmark b::after { content: ''; position: absolute; top: 50%; right: calc(0.35rem + 1px - 0.25rem); width: 0.5rem; height: 0.5rem; margin-top: -0.25rem; background: var(--sindoor); transform: rotate(45deg); transition: transform 0.15s; }
+.scrollmark.is-on b { pointer-events: auto; cursor: grab; touch-action: none; }
+.scrollmark.is-drag b { cursor: grabbing; }
+.scrollmark.is-drag b::after { transform: rotate(45deg) scale(1.5); }
 
 /* ---------- Motion ---------- */
 

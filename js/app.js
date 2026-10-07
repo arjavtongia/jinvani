@@ -83,10 +83,13 @@
   const $scrollCue = document.getElementById('scroll-cue');
   function updateScrollCue() {
     const below = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
-    const show = window.scrollY < 40 && below > 120;
+    const show = window.scrollY < 40 && below > 120 && currentView !== 'ask';
     /* The hint sits in a band at the top of the bottom bar, so it never covers the words on the page. */
     const bar = $app.querySelector('.reader-bar, .tabbar');
-    if (bar) bar.classList.toggle('has-cue', show);
+    if (bar && bar.classList.contains('has-cue') !== show) {
+      bar.classList.toggle('has-cue', show);
+      syncChrome();
+    }
     if (show && $scrollCue.dataset.lang !== state.lang) {
       $scrollCue.innerHTML = '<span>' + esc(t('scrollMore')) + '</span>' + icon('chevron-down');
       $scrollCue.dataset.lang = state.lang;
@@ -94,6 +97,46 @@
     $scrollCue.hidden = !show;
     if (show) $scrollCue.style.bottom = bar ? Math.max(bar.offsetHeight - $scrollCue.offsetHeight - 2, 0) + 'px' : '';
   }
+
+  /* The fixed parts of a screen, measured so the page and the side rail can leave room for them: the top bar,
+     the bottom bar, and on Ask the question box standing on the bar. */
+  function syncChrome() {
+    const root = document.documentElement.style;
+    const top = $app.querySelector('.topbar');
+    const bar = $app.querySelector('.reader-bar, .tabbar');
+    const box = $app.querySelector('.composer');
+    root.setProperty('--top-h', (top ? top.offsetHeight : 0) + 'px');
+    root.setProperty('--bar-h', (bar && getComputedStyle(bar).display !== 'none' ? bar.offsetHeight : 0) + 'px');
+    root.setProperty('--composer-h', (box ? box.offsetHeight : 0) + 'px');
+  }
+
+  /* On every screen that scrolls (home excepted), a slim rail at the side: a hairline gilded as far as you have
+     come, with a sindoor lozenge at your place. The lozenge can be dragged to move through the page. */
+  const $mark = document.createElement('div');
+  $mark.className = 'scrollmark';
+  $mark.setAttribute('aria-hidden', 'true');
+  $mark.innerHTML = '<i></i><b></b>';
+  document.body.appendChild($mark);
+  function updateScrollmark() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const on = !!currentView && currentView !== 'home' && currentView !== 'welcome' && max > 80;
+    $mark.classList.toggle('is-on', on);
+    if (on) $mark.style.setProperty('--p', Math.min(1, Math.max(0, window.scrollY / max)).toFixed(4));
+  }
+  let markRect = null;
+  $mark.addEventListener('pointerdown', e => {
+    if (!e.target.closest('b')) return;
+    e.preventDefault();
+    markRect = $mark.getBoundingClientRect();
+    $mark.setPointerCapture(e.pointerId);
+    $mark.classList.add('is-drag');
+  });
+  $mark.addEventListener('pointermove', e => {
+    if (!markRect) return;
+    const p = Math.min(1, Math.max(0, (e.clientY - markRect.top) / markRect.height));
+    window.scrollTo(0, p * (document.documentElement.scrollHeight - window.innerHeight));
+  });
+  ['pointerup', 'pointercancel'].forEach(ev => $mark.addEventListener(ev, () => { markRect = null; $mark.classList.remove('is-drag'); }));
 
   function isStandalone() {
     return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
@@ -651,8 +694,8 @@
       { id: 'search', href: '#/search', icon: 'search', label: t('search'), active: view === 'search' },
       { id: 'settings', href: '#/settings', icon: 'settings', label: t('settings'), active: view === 'settings' || view === 'credits' }
     ];
-    /* The Ask button floats just above the bar (and rides with it as it folds) on every screen but Ask itself. */
-    const fab = view === 'ask' ? '' : '<a class="ask-fab" href="#/ask" data-action="open-ask" aria-label="' + esc(t('askFab')) + '">' +
+    /* On home, the Ask button floats just above the bar (and rides with it as it folds). */
+    const fab = view !== 'home' ? '' : '<a class="ask-fab" href="#/ask" data-action="open-ask" aria-label="' + esc(t('askFab')) + '">' +
       icon('ask') + '<span aria-hidden="true">' + esc(t('askTab')) + '</span></a>';
     return '<nav class="tabbar" aria-label="' + esc(t('appName')) + '">' + items.map(it =>
       '<a class="tab' + (it.active ? ' is-active' : '') + '" href="' + it.href + '"' + (it.active ? ' aria-current="page"' : '') + '>' +
@@ -1251,10 +1294,14 @@
   let lastQuery = '';
   let searchBooks = [];
 
-  /* ---------- Ask ---------- */
+  /* ---------- Ask: a conversation with the app's texts ---------- */
 
-  /* What the Ask screen shows below the question box; kept while the screen is redrawn. */
-  let askState = { question: '', status: 'idle', result: null, error: '', related: [] };
+  /* The conversation on this screen, oldest first, kept while the app is open. Each answer remembers its
+     question; `fresh` marks a message that has just arrived or changed, so only it rises into view. */
+  let askThread = [];
+  let askFaq = [];
+  /* Questions offered on the empty screen, one from each part of the common questions. */
+  const ASK_STARTERS = ['ratnatraya', 'uttam-kshama', 'night-meal', 'namokar', 'paryushan', 'tirthankar'];
 
   function faqResult(item) {
     return { kind: 'faq', id: item.id, question: L(item.q), answer: L(item.a), sources: (item.sources || []).filter(s => s.pos) };
@@ -1268,91 +1315,203 @@
     }).replace(/\n/g, '<br>') + '</p>').join('');
   }
 
-  function askSourceRow(s, i) {
+  function askSourceHtml(s, i) {
     const meta = bookMeta(s.book);
     if (!meta) return '';
-    return chevronRow('#/read/' + meta.id + '/' + s.pos, '<span class="row-num">' + (i + 1) + '</span>' +
-      '<span class="ask-src">' + titleHtml(meta) + '<span class="row-sub">' + esc(t('askOpen')) + '</span></span>');
+    return '<li><a class="msg-src" href="#/read/' + meta.id + '/' + s.pos + '"><span class="msg-src-n">' + (i + 1) + '</span>' +
+      '<span class="msg-src-main">' + titleHtml(meta) + '<small>' + esc(t('askOpen')) + '</small></span>' + icon('chevron-right', 'row-chev') + '</a></li>';
   }
 
-  function askOutHtml() {
-    const st = askState;
-    let html = '';
-    if (st.status === 'loading') {
-      html = '<p class="ask-wait">' + ORN.dhwaja() + '<span>' + esc(t('askThinking')) + '</span><span class="ask-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>';
-    } else if (st.status === 'error') {
-      const msg = { off: 'askOff', offline: 'askOffline', busy: 'askBusy', short: 'askShort' }[st.error] || 'askFailed';
-      html = '<p class="ask-error">' + esc(t(msg)) + '</p>';
-    } else if (st.status === 'done' && st.result) {
-      const r = st.result;
+  function askChipsHtml(items) {
+    return '<div class="chips">' + items.map(item => '<button class="chip" type="button" data-action="ask-faq" data-id="' + esc(item.id) + '">' +
+      esc(L(item.q)) + '</button>').join('') + '</div>';
+  }
+
+  function askStarters() {
+    return ASK_STARTERS.map(id => askFaq.find(f => f.id === id)).filter(Boolean);
+  }
+
+  /* One message: your question on the right, the app's answer on the left under its chhatra. */
+  function askMsgHtml(m, i) {
+    const rise = m.fresh ? ' is-new' : '';
+    m.fresh = false;
+    if (m.role === 'you') return '<div class="msg msg-you' + rise + '"><p>' + esc(m.text) + '</p></div>';
+    let body;
+    let next = m.related && m.related.length ? m.related : [];
+    if (m.status === 'loading') {
+      body = '<p class="msg-wait"><span>' + esc(t('askThinking')) + '</span><span class="ask-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>';
+    } else if (m.status === 'error') {
+      body = '<p class="msg-error">' + esc(t({ off: 'askOff', offline: 'askOffline', busy: 'askBusy' }[m.error] || 'askFailed')) + '</p>';
+      if (!next.length && (m.error === 'off' || m.error === 'offline')) next = askStarters();
+    } else {
+      const r = m.result;
       const isFaq = r.kind === 'faq';
-      html = '<article class="answer">' +
-        '<p class="answer-kind">' + esc(t(isFaq ? 'askFromFaq' : 'askFromTexts')) + '</p>' +
-        '<h2 class="answer-q">' + esc(isFaq ? r.question : st.question) + '</h2>' +
-        '<div class="answer-text">' + answerTextHtml(r.answer, isFaq ? [] : r.sources) + '</div>' +
-        (r.sources.length ? '<h3 class="answer-src-head">' + esc(t('askSources')) + '</h3><ul class="rows">' + r.sources.map(askSourceRow).join('') + '</ul>' : '') +
-        (isFaq ? '' : '<p class="answer-note">' + esc(t('askCheck')) + '</p>') +
-        (isFaq && st.typed && ASK.enabled() ? '<button class="btn btn-small" data-action="ask-ai">' + esc(t('askAiInstead')) + '</button>' : '') +
-        '</article>';
+      body = '<div class="answer-text">' + answerTextHtml(r.answer, isFaq ? [] : r.sources) + '</div>' +
+        (r.sources.length ? '<h3 class="msg-src-head">' + esc(t('askSources')) + '</h3><ol class="msg-srcs">' + r.sources.map(askSourceHtml).join('') + '</ol>' : '') +
+        (isFaq ? '' : '<p class="msg-note">' + esc(t('askCheck')) + '</p>') +
+        '<div class="msg-foot"><span class="msg-kind">' + icon(isFaq ? 'check' : 'ask') + '<span>' + esc(t(isFaq ? 'askFromFaq' : 'askFromTexts')) + '</span></span>' +
+        (canShare() ? '<button class="icon-btn msg-act" type="button" data-action="ask-share" data-i="' + i + '" aria-label="' + esc(t('share')) + '">' + icon('share') + '</button>' : '') + '</div>' +
+        (isFaq && m.typed && ASK.enabled() ? '<button class="btn btn-small msg-more" type="button" data-action="ask-ai" data-i="' + i + '">' + esc(t('askAiInstead')) + '</button>' : '');
     }
-    if (st.related && st.related.length) {
-      html += '<h2 class="chips-head">' + esc(t('askRelated')) + '</h2><ul class="rows">' +
-        st.related.map(item => chevronRow('#/ask/' + item.id, '<span class="title">' + esc(L(item.q)) + '</span>')).join('') + '</ul>';
-    }
-    return html;
+    return '<div class="msg msg-app' + rise + '"><span class="msg-mark" aria-hidden="true">' + ORN.chhatra() + '</span><div class="msg-card">' + body + '</div></div>' +
+      (next.length && m.status !== 'loading' ? '<div class="msg-next' + rise + '"><p class="msg-next-head">' + esc(t('askRelated')) + '</p>' + askChipsHtml(next) + '</div>' : '');
   }
 
+  /* Before the first question: a welcome under the chhatra, questions to start from, earlier questions and all
+     the common ones. Once a question is asked, the conversation. */
+  function askBodyHtml() {
+    if (askThread.length) {
+      return '<h1 class="visually-hidden">' + esc(t('ask')) + '</h1>' +
+        (ASK.enabled() ? '<p class="thread-note">' + icon('lock') + '<span>' + esc(t('askPrivacy')) + '</span></p>' : '') +
+        '<div class="thread">' + askThread.map(askMsgHtml).join('') + '</div>';
+    }
+    const asked = ASK.history().filter(r => r.lang === state.lang).slice(0, 4);
+    return '<section class="ask-hello">' + ORN.chhatra('ask-chhatra') + '<h1 class="ask-title">' + esc(t('ask')) + '</h1>' +
+      '<p class="ask-intro">' + esc(t('askIntro')) + '</p>' +
+      (ASK.enabled() ? '<p class="ask-privacy">' + icon('lock') + '<span>' + esc(t('askPrivacy')) + '</span></p>' : '') + '</section>' +
+      '<h2 class="chips-head">' + esc(t('askTry')) + '</h2>' + askChipsHtml(askStarters()) +
+      (asked.length ? '<h2 class="chips-head">' + esc(t('askHistory')) + '</h2><ul class="rows">' +
+        asked.map(r => '<li><button class="row" type="button" data-action="ask-again" data-q="' + esc(r.question) + '">' + icon('history', 'row-lead') +
+          '<span class="row-main"><span class="title">' + esc(r.question) + '</span></span>' + icon('chevron-right', 'row-chev') + '</button></li>').join('') + '</ul>' : '') +
+      '<details class="ask-all"><summary><span>' + esc(t('askCommon')) + '</span><small>' + askFaq.length + '</small>' + icon('chevron-down') + '</summary><ul class="rows">' +
+        askFaq.map(item => '<li><button class="row" type="button" data-action="ask-faq" data-id="' + esc(item.id) + '"><span class="row-main"><span class="title">' +
+          esc(L(item.q)) + '</span></span>' + icon('chevron-right', 'row-chev') + '</button></li>').join('') + '</ul></details>';
+  }
+
+  function askTopActHtml() {
+    return askThread.length ? '<button class="btn btn-small" type="button" data-action="ask-new">' + icon('add') + '<span>' + esc(t('askNew')) + '</span></button>' : '';
+  }
+
+  /* Redraw the conversation, keeping the question box (and the phone's keyboard) as they are, then bring the
+     latest question to the top of the screen so its answer reads from the start. */
   function refreshAsk() {
-    const box = document.getElementById('ask-out');
-    if (box) box.innerHTML = askOutHtml();
+    const body = document.getElementById('ask-body');
+    if (!body) return;
+    body.innerHTML = askBodyHtml();
+    const act = document.getElementById('ask-top-act');
+    if (act) act.innerHTML = askTopActHtml();
+    const box = document.getElementById('ask-q');
+    if (box) box.placeholder = t(askThread.length ? 'askAnother' : 'askPlaceholder');
+    syncChrome();
+    showLatestQuestion(true);
+    updateScrollmark();
   }
 
-  /* The common questions, and what was asked on this phone before. */
-  function askListsHtml(faq) {
-    const asked = ASK.history().filter(r => r.lang === state.lang).slice(0, 6);
-    return (asked.length ? '<h2 class="chips-head">' + esc(t('askHistory')) + '</h2><ul class="rows">' +
-        asked.map(r => '<li><button class="row" type="button" data-action="ask-again" data-q="' + esc(r.question) + '"><span class="row-main"><span class="title">' + esc(r.question) + '</span></span>' + icon('chevron-right', 'row-chev') + '</button></li>').join('') + '</ul>' : '') +
-      '<h2 class="chips-head">' + esc(t('askCommon')) + '</h2><ul class="rows">' +
-      faq.map(item => chevronRow('#/ask/' + item.id, '<span class="title">' + esc(L(item.q)) + '</span>')).join('') + '</ul>';
+  function showLatestQuestion(smooth) {
+    const yours = $app.querySelectorAll('.msg-you');
+    const last = yours[yours.length - 1];
+    if (!last) { window.scrollTo(0, 0); return; }
+    const top = $app.querySelector('.topbar');
+    const y = last.getBoundingClientRect().top + window.scrollY - (top ? top.offsetHeight : 0) - 14;
+    const still = !smooth || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: Math.max(0, y), behavior: still ? 'auto' : 'smooth' });
   }
 
   async function viewAsk(faqId) {
     document.title = t('ask') + ' · ' + t('appName');
     await getCatalog();
-    const faq = await ASK.loadFaq();
-    const item = faqId && faq.find(f => f.id === faqId);
-    if (item) askState = { question: L(item.q), status: 'done', result: faqResult(item), error: '', related: [], typed: false };
-    return backBar('#/', t('home')) +
-      '<main><h1 class="page-title">' + esc(t('ask')) + '</h1><p class="ask-intro">' + esc(t('askIntro')) + '</p>' +
-      '<form class="ask-form" data-form="ask" novalidate>' +
+    askFaq = await ASK.loadFaq();
+    const item = faqId && askFaq.find(f => f.id === faqId);
+    /* A link to one common question adds it to the conversation, unless it is already the latest answer. */
+    const lastMsg = askThread[askThread.length - 1];
+    if (item && !(lastMsg && lastMsg.result && lastMsg.result.id === item.id)) {
+      askThread.push({ role: 'you', text: L(item.q) }, { role: 'app', status: 'done', question: L(item.q), result: faqResult(item), related: [] });
+    }
+    const hasMic = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+    return '<header class="topbar"><a class="back" href="#/">' + icon('arrow-left') + '<span>' + esc(t('home')) + '</span></a>' +
+      '<span class="top-actions" id="ask-top-act">' + askTopActHtml() + '</span></header>' +
+      '<main class="ask"><div id="ask-body" aria-live="polite">' + askBodyHtml() + '</div>' +
+      '<form class="composer" data-form="ask" novalidate><div class="composer-field">' +
       '<label class="visually-hidden" for="ask-q">' + esc(t('askLabel')) + '</label>' +
-      '<textarea id="ask-q" name="q" rows="2" maxlength="300" enterkeyhint="send" placeholder="' + esc(t('askPlaceholder')) + '">' + esc(item ? '' : askState.question) + '</textarea>' +
-      '<button class="btn btn-primary btn-wide" type="submit">' + icon('arrow-right') + '<span>' + esc(t('askButton')) + '</span></button></form>' +
-      (ASK.enabled() ? '<p class="ask-privacy">' + esc(t('askPrivacy')) + '</p>' : '') +
-      '<div id="ask-out" aria-live="polite">' + askOutHtml() + '</div>' + askListsHtml(faq) + '</main>';
+      (hasMic ? '<button class="composer-mic" type="button" data-action="voice-ask" aria-label="' + esc(t('askSpeak')) + '">' + icon('microphone') + '</button>' : '') +
+      '<textarea id="ask-q" name="q" rows="1" maxlength="300" enterkeyhint="send" placeholder="' + esc(t(askThread.length ? 'askAnother' : 'askPlaceholder')) + '"></textarea>' +
+      '<button class="composer-send is-empty" type="submit" aria-label="' + esc(t('askButton')) + '">' + icon('arrow-right') + '</button>' +
+      '</div></form></main>';
   }
 
-  /* A question: the common questions first, then this phone's earlier answers, then the server. */
-  async function askQuestion(question, forceServer) {
-    question = question.trim();
-    if (question.length < 3) {
-      askState = { question: question, status: 'error', error: 'short', related: [] };
-      return refreshAsk();
-    }
+  /* The answer to a question: a common question if one matches (unless the texts are asked for), otherwise the server. */
+  async function answerQuestion(question, forceServer) {
     const { best, related } = await ASK.matchFaq(question);
     if (best && !forceServer) {
-      askState = { question: question, status: 'done', result: faqResult(best), related: related, typed: true };
+      askThread.push({ role: 'app', status: 'done', question: question, result: faqResult(best), related: related, typed: true, fresh: true });
       return refreshAsk();
     }
-    askState = { question: question, status: 'loading', related: [] };
+    const msg = { role: 'app', status: 'loading', question: question, related: [], fresh: true };
+    askThread.push(msg);
     refreshAsk();
     try {
       const r = await ASK.askServer(question, state.lang);
-      askState = { question: question, status: 'done', result: { kind: 'ai', answer: r.answer, sources: r.sources || [] }, related: related };
+      Object.assign(msg, { status: 'done', result: { kind: 'ai', answer: r.answer, sources: r.sources || [] }, related: related, fresh: true });
     } catch (e) {
-      askState = { question: question, status: 'error', error: e.message, related: related };
+      Object.assign(msg, { status: 'error', error: e.message, related: related, fresh: true });
     }
     if (currentView === 'ask') refreshAsk();
+  }
+
+  async function askQuestion(question) {
+    question = String(question || '').trim();
+    if (question.length < 3) { toast(t('askShort')); return; }
+    askThread.push({ role: 'you', text: question, fresh: true });
+    await answerQuestion(question, false);
+  }
+
+  /* A common question chosen from a chip or the list joins the conversation with its answer. */
+  async function askFaqItem(id) {
+    const item = askFaq.find(f => f.id === id);
+    if (!item) return;
+    const { related } = await ASK.matchFaq(L(item.q));
+    askThread.push({ role: 'you', text: L(item.q), fresh: true },
+      { role: 'app', status: 'done', question: L(item.q), result: faqResult(item), related: related.filter(r => r.id !== id), fresh: true });
+    refreshAsk();
+  }
+
+  async function shareAnswer(i) {
+    const m = askThread[i];
+    if (!m || !m.result) return;
+    const r = m.result;
+    const where = r.sources.map(s => { const meta = bookMeta(s.book); return meta ? '• ' + meta.title.hi : ''; }).filter(Boolean).join('\n');
+    const text = (r.kind === 'faq' ? r.question : m.question) + '\n\n' + String(r.answer).replace(/\s*\[\d+\]/g, '') +
+      (where ? '\n\n' + t('askSources') + ':\n' + where : '') + '\n\n' + t('shareFrom') + ': ' + APP_URL;
+    if (navigator.share) {
+      try { await navigator.share({ title: t('ask'), text: text }); return; } catch (e) { if (e && e.name === 'AbortError') return; }
+    }
+    toast(copyText(text) ? t('copied') : t('copyFailed'));
+  }
+
+  /* Speak the question: the words go into the box, to be checked and sent. */
+  function startVoiceAsk(btn) {
+    const Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!Rec) { toast(t('noMic')); return; }
+    const rec = new Rec();
+    rec.lang = state.lang === 'en' ? 'en-IN' : 'hi-IN';
+    rec.interimResults = false;
+    rec.maxAlternatives = 1;
+    const box = document.getElementById('ask-q');
+    const before = box ? box.placeholder : '';
+    btn.classList.add('is-listening');
+    if (box) box.placeholder = t('listening');
+    const done = () => { btn.classList.remove('is-listening'); if (box) box.placeholder = before; };
+    rec.onresult = e => {
+      if (!box) return;
+      box.value = e.results[0][0].transcript;
+      fitComposer(box);
+      box.focus();
+    };
+    rec.onerror = e => {
+      done();
+      if (e.error === 'not-allowed' || e.error === 'service-not-allowed') toast(t('micDenied'));
+    };
+    rec.onend = done;
+    try { rec.start(); } catch (e) { done(); }
+  }
+
+  /* The question box grows with the question, up to five lines, and the send button wakes when there is text. */
+  function fitComposer(box) {
+    box.style.height = 'auto';
+    box.style.height = Math.min(box.scrollHeight, parseFloat(getComputedStyle(box).lineHeight) * 5 + 16) + 'px';
+    const send = $app.querySelector('.composer-send');
+    if (send) send.classList.toggle('is-empty', !box.value.trim());
+    syncChrome();
   }
 
   async function viewSearch() {
@@ -1361,7 +1520,7 @@
     const hasMic = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
     return backBar('#/', t('home')) +
       '<main><h1 class="page-title">' + esc(t('search')) + '</h1>' +
-      '<a class="ask-link" href="#/ask">' + icon('study') + '<span>' + esc(t('askFromSearch')) + '</span>' + icon('chevron-right', 'row-chev') + '</a>' +
+      '<a class="ask-link" href="#/ask">' + icon('ask') + '<span>' + esc(t('askFromSearch')) + '</span>' + icon('chevron-right', 'row-chev') + '</a>' +
       '<form class="search-form" data-form="search" role="search" novalidate>' +
       '<label class="visually-hidden" for="q">' + esc(t('search')) + '</label>' +
       '<input id="q" name="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="' + esc(t('searchPlaceholder')) + '" value="' + esc(lastQuery) + '">' +
@@ -1568,7 +1727,8 @@
     const withNav = NAV_VIEWS.indexOf(view) >= 0;
     $app.innerHTML = html + (withNav ? navBar(view) : '');
     $app.classList.toggle('has-nav', withNav);
-    $app.classList.toggle('has-fab', withNav && view !== 'ask');
+    $app.classList.toggle('has-fab', withNav && view === 'home');
+    $app.classList.toggle('is-ask', view === 'ask');
     /* A short rise when the screen changes; a page turn slides only the scripture, in the direction of travel. */
     if (!sameRoute) {
       const main = $app.querySelector('main');
@@ -1585,6 +1745,7 @@
   let focusAskBox = false;
 
   function afterRender(view, sameView, sameRoute, focusAction) {
+    syncChrome();
     const again = focusAction && $app.querySelector('[data-action="' + focusAction + '"]');
     if (sameView && again) {
       again.focus({ preventScroll: true });
@@ -1596,6 +1757,7 @@
       }
     }
     if (!(sameRoute && (view === 'settings' || view === 'saved'))) window.scrollTo(0, 0);
+    if (view === 'ask' && askThread.length && !focusAskBox) showLatestQuestion(false);
     if (view === 'ask' && focusAskBox) {
       focusAskBox = false;
       const box = $app.querySelector('#ask-q');
@@ -1614,6 +1776,7 @@
       else stopSpeech();
     }
     updateScrollCue();
+    updateScrollmark();
     /* The first time the reader opens on a touch phone, mention that swiping also turns the page. */
     if (view === 'read' && !state.hintShown && ctx && !ctx.page.scroll && ctx.book.verses.length > 1 && navigator.maxTouchPoints > 0) {
       state.hintShown = true;
@@ -1735,15 +1898,19 @@
       if (old) old.remove();
       if (note && pickedDay != null) note.insertAdjacentHTML('afterend', '<p class="tithi-note">' + esc(t('tithiNote')) + '</p>');
     },
-    'ask-ai': () => askQuestion(askState.question, true),
+    'ask-ai': el => {
+      const m = askThread[+el.dataset.i];
+      if (!m) return;
+      m.typed = false;
+      answerQuestion(m.question, true);
+    },
+    'ask-faq': el => askFaqItem(el.dataset.id),
+    'ask-new': () => { askThread = []; refreshAsk(); },
+    'ask-share': el => shareAnswer(+el.dataset.i),
+    'voice-ask': el => startVoiceAsk(el),
     /* The floating button opens Ask ready to type; the Ask tab opens it to look through. */
     'open-ask': () => { focusAskBox = true; location.hash = '#/ask'; },
-    'ask-again': el => {
-      const box = document.getElementById('ask-q');
-      if (box) box.value = el.dataset.q;
-      askQuestion(el.dataset.q);
-      window.scrollTo(0, 0);
-    },
+    'ask-again': el => askQuestion(el.dataset.q),
     'size-panel': el => {
       sizePanelOpen = !sizePanelOpen;
       el.setAttribute('aria-expanded', String(sizePanelOpen));
@@ -1847,7 +2014,12 @@
       go('read/' + book.id + '/' + v.pos);
     } else if (form.dataset.form === 'ask') {
       const q = document.getElementById('ask-q');
-      if (q) { q.blur(); askQuestion(q.value); }
+      if (q) {
+        const text = q.value;
+        q.value = '';
+        fitComposer(q);
+        askQuestion(text);
+      }
     } else if (form.dataset.form === 'search') {
       const q = document.getElementById('q');
       if (q) q.blur();
@@ -1865,7 +2037,9 @@
 
   let searchTimer = null;
   $app.addEventListener('input', e => {
-    if (e.target.id === 'q') {
+    if (e.target.id === 'ask-q') {
+      fitComposer(e.target);
+    } else if (e.target.id === 'q') {
       lastQuery = e.target.value;
       clearTimeout(searchTimer);
       searchTimer = setTimeout(renderResults, 200);
@@ -1934,7 +2108,7 @@
   function updateTabbar() {
     const y = window.scrollY;
     const bar = $app.querySelector('.tabbar');
-    if (y < 40) {
+    if (y < 40 || currentView === 'ask') {
       if (bar) bar.classList.remove('is-min');
       tabbarY = y;
     } else if (Math.abs(y - tabbarY) > 8) {
@@ -1944,10 +2118,15 @@
   }
 
   window.addEventListener('scroll', updateScrollCue, { passive: true });
+  window.addEventListener('scroll', updateScrollmark, { passive: true });
+  window.addEventListener('resize', () => { syncChrome(); updateScrollmark(); });
+  /* While typing on a phone, the bottom bar steps aside so the question box sits right on the keyboard. */
+  $app.addEventListener('focusin', e => { if (e.target.id === 'ask-q') { $app.classList.add('composing'); syncChrome(); } });
+  $app.addEventListener('focusout', e => { if (e.target.id === 'ask-q') { $app.classList.remove('composing'); syncChrome(); } });
   window.addEventListener('scroll', updateTabbar, { passive: true });
   window.addEventListener('resize', updateScrollCue);
   /* Text size changes and late-loading fonts change the page height without a scroll. */
-  if (window.ResizeObserver) new ResizeObserver(updateScrollCue).observe($app);
+  if (window.ResizeObserver) new ResizeObserver(() => { updateScrollCue(); updateScrollmark(); }).observe($app);
   $scrollCue.addEventListener('click', () => {
     const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     window.scrollBy({ top: Math.round(window.innerHeight * 0.6), behavior: still ? 'auto' : 'smooth' });

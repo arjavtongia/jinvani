@@ -10,13 +10,14 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 - Today's tithi on the home screen, with the next 7 days under it: अष्टमी, चतुर्दशी and festivals carry a flag, and tapping a day shows its full tithi. In the week before Diwali, a card on the home screen opens the Diwali pooja. Calculated on the phone (sunrise in Delhi, purnimanta months).
 - मंदिर दर्शन विधि and पूजा विधि: step-by-step temple and ashta-dravya pooja guides with every mantra and drawings (thali, ठौना with three cloves, swastik, pradakshina).
 - "चित्र से समझें": diagrams that explain the meaning of key sutras and verses.
-- प्रश्न पूछें (Ask): questions about Jain dharma, answered from the app's own texts with links to the verses. 56 common questions are answered on the phone, offline; new ones go to a small server that uses NVIDIA's model and caches every answer (see `server/README.md`).
+- प्रश्न पूछें (Ask): a chat about Jain dharma, answered from the app's own texts with links to the verses, by typing or speaking. 56 common questions are answered on the phone, offline; new ones go to a small server that uses NVIDIA's model and caches every answer (see `server/README.md`).
 - बच्चों की कहानियाँ (Children's stories): 8 short stories for young children in easy Hindi and English (ahimsa, filtered water, eating before sunset, truth, and four favourites retold simply), with bright pictures on every page and a lesson at the end. They live in `content/bal-katha/`, with pictures drawn in `js/kids.js`.
 - जैन कथाएँ (Jain stories): 33 traditional stories, in five groups, with photos of the places where they happened, a short version in Hindi and English, and the lesson of each story. A different story is offered on the home screen every day.
 - One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons; short sutras are grouped five or six to a screen. Swipes and arrow keys work too.
 - Poojas and short paath (Deepawali poojas, Namokar, Darshan Path, Darshan Stuti, Barah Bhavana) scroll as one page each, so they can be recited without tapping Next.
+- A slim rail at the side of every long screen (except home) shows how far down you are; its marker can be dragged.
 - Remembers where you stopped, and shows "पढ़ना जारी रखें" (Continue reading) on the home screen.
-- A bar at the bottom of every screen goes to Home, Books, Ask, Search and Settings, with a small floating "पूछें" (Ask) button above it that opens Ask ready to type; the reader keeps its own bar with Previous, Listen and Next.
+- A bar at the bottom of every screen goes to Home, Books, Ask, Search and Settings, and on the home screen a small floating "पूछें" (Ask) button above it opens Ask ready to type; the reader keeps its own bar with Previous, Listen and Next.
 - Large text by default, with a six-step text size setting, plus day colours by default, night colours, or "same as phone".
 - "साझा करें" (Share) sends the verse on screen to WhatsApp or a message, or copies it where sharing isn't available.
 - "सुनें" (Listen) reads each verse aloud in a Hindi voice and moves to the next one automatically.
