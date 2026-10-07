@@ -33,9 +33,9 @@ Prose: English paragraph
 
 ## चित्र · Pictures
 
-`chitra.json` में हर ग्रंथ के "चित्र से समझें" हैं। `"at"` में श्लोक/सूत्र का क्रमांक (पूरे ग्रंथ में) लिखें। प्रकार: `sum` (जोड़), `list` (सूची), `flow` (क्रम), `tree` (भेद), `stack` (परतें), `drawing` (`js/drawings.js` का चित्र)।
+`chitra.json` में हर ग्रंथ के "चित्र से समझें" हैं। `"at"` में श्लोक/सूत्र का क्रमांक (पूरे ग्रंथ में) लिखें। प्रकार: `sum` (जोड़), `list` (सूची), `flow` (क्रम), `tree` (भेद), `stack` (परतें), `drawing` (`js/drawings.js` का पूजा-चित्र या `js/scenes.js` का दृश्य)। `"top": true` लिखने पर चित्र पाठ के ऊपर दिखता है, जैसे विधि के हर चरण में; चित्र के नंबर नीचे की सूची (`items`) से समझाए जाते हैं।
 
-`chitra.json` holds the explanatory pictures for each book. `"at"` is the verse position in the whole book. Types: `sum`, `list`, `flow`, `tree`, `stack`, and `drawing` (a drawing from `js/drawings.js`).
+`chitra.json` holds the explanatory pictures for each book. `"at"` is the verse position in the whole book. Types: `sum`, `list`, `flow`, `tree`, `stack`, and `drawing` (a pooja drawing from `js/drawings.js` or a step scene from `js/scenes.js`). With `"top": true` the picture is shown above the text, as in each step of the guides; the numbers in the picture are explained by the list under it (`items`).
 
 ## नया ग्रंथ जोड़ना · Adding a new book
 

@@ -377,12 +377,19 @@
           b.items.map(it => '<li>' + dgItem(it, 'dg-text') + '</li>').join('') + '</ul></div>').join('') +
         '</div></div>';
     } else if (c.type === 'drawing') {
-      /* Some drawings take the item names, so labels inside the picture follow the app language. */
-      const drawing = DRAWINGS[c.drawing];
+      /* Some drawings take the item names, so labels inside the picture follow the app language.
+         Pooja drawings live in js/drawings.js, step scenes in js/scenes.js. */
+      const drawing = DRAWINGS[c.drawing] || (typeof SCENES !== 'undefined' ? SCENES[c.drawing] : null);
       const svgHtml = typeof drawing === 'function' ? drawing(items.map(it => L(it).split(' (')[0])) : (drawing || '');
       body = '<div class="dg-drawing" role="img" aria-label="' + esc(L(c.title)) + '">' + svgHtml + '</div>' +
-        '<ol class="dg-list dg-legend">' + items.map((it, i) =>
-          '<li><span class="dg-badge">' + esc(it.tag || String(i + 1)) + '</span>' + dgItem(it, 'dg-text') + '</li>').join('') + '</ol>';
+        (items.length ? '<ol class="dg-list dg-legend">' + items.map((it, i) =>
+          '<li><span class="dg-badge">' + esc(it.tag || String(i + 1)) + '</span>' + dgItem(it, 'dg-text') + '</li>').join('') + '</ol>' : '');
+    }
+    /* A picture placed above the step's text: the scene first, its caption under it, then the numbered list. */
+    if (c.top) {
+      return '<figure class="chitra chitra-top">' + body.replace('</div>', '</div><figcaption class="chitra-title" translate="no">' + esc(L(c.title)) + '</figcaption>') +
+        (c.gist ? '<p class="chitra-gist"><b>' + esc(t('gist')) + ':</b> <span translate="no">' + esc(L(c.gist)) + '</span></p>' : '') +
+        '</figure>';
     }
     return '<figure class="chitra">' +
       '<p class="chitra-kicker">' + icon('heart') + '<span>' + esc(t('chitraLabel')) + '</span></p>' +
@@ -916,6 +923,7 @@
     const lang = book.textLang || 'sa';
     let html = '<div class="verse-block' + (isTarget ? ' is-target' : '') + '" id="v-' + v.pos + '">';
     if (v.topic) html += '<p class="topic" translate="no">' + esc(topicOf(v)) + '</p>';
+    (v.chitra || []).filter(c => c.top).forEach(c => { html += chitraHtml(c); });
     if (v.lines.length) {
       /* The verse number goes at the end as ॥ 12 ॥, replacing any closing danda already in the text. */
       const lastIndex = v.lines.length - 1;
@@ -938,7 +946,7 @@
       html += '<div class="stack guide-links">' + v.links.map(l =>
         '<a class="btn btn-wide" href="#/read/' + encodeURIComponent(l.book) + '/1">' + icon('book') + '<span>' + esc(L(l)) + '</span></a>').join('') + '</div>';
     }
-    (v.chitra || []).forEach(c => { html += chitraHtml(c); });
+    (v.chitra || []).filter(c => !c.top).forEach(c => { html += chitraHtml(c); });
     if (v.padya.length) {
       html += '<section class="padya"><h2>' + esc(t('padya')) + '</h2><p translate="no" lang="hi">' +
         v.padya.map(l => '<span class="verse-line">' + esc(l) + '</span>').join('') + '</p></section>';

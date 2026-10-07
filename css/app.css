@@ -523,6 +523,11 @@ input:focus { border-color: var(--accent); }
 .dg-branch li { padding: 0.4rem 0; border-bottom: 1px dashed var(--border); }
 .dg-branch li:last-child { border-bottom: 0; }
 .dg-drawing svg { display: block; width: 100%; max-width: 26rem; height: auto; margin: 0 auto 0.9rem; }
+/* A scene above a step: picture, caption, then the numbered list. */
+.chitra-top { margin: 0.25rem 0 1.4rem; padding: 0.75rem 0.85rem 0.85rem; }
+.chitra-top .dg-drawing svg { margin-bottom: 0.5rem; max-width: 24rem; }
+.chitra-top .chitra-title { margin: 0 0 0.7rem; text-align: center; font-size: 1rem; color: var(--accent-text); }
+.chitra-top .dg-legend:last-child { margin-bottom: 0; }
 .chitra-note { margin: 0.6rem 0 0; font-size: 0.85rem; color: var(--muted); }
 .chitra-gist {
   margin: 0.8rem 0 0;
@@ -708,17 +713,19 @@ input:focus { border-color: var(--accent); }
   z-index: 6;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.25rem;
   width: max-content;
-  min-height: 2.75rem;
-  padding: 0.5rem 0.9rem 0.5rem 1.1rem;
+  min-height: 2rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.8rem;
   border: 0;
   border-radius: 99px;
   background: var(--accent);
   color: var(--on-accent);
   font: inherit;
-  font-weight: 700;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  /* Small on purpose: a hint, not a button that competes with the content. */
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transform: translateX(-50%);
   cursor: pointer;
 }

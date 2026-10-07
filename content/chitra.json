@@ -4,12 +4,12 @@
       "at": [1],
       "type": "sum",
       "title": { "hi": "मोक्ष का मार्ग", "en": "The path to liberation" },
+      "result": { "hi": "मोक्षमार्ग", "en": "Mokshamarg", "sub": { "hi": "मोक्ष का मार्ग", "en": "path to liberation" } },
       "items": [
         { "hi": "सम्यग्दर्शन", "en": "Samyagdarshan", "sub": { "hi": "सच्चा श्रद्धान", "en": "right faith" } },
         { "hi": "सम्यग्ज्ञान", "en": "Samyaggyan", "sub": { "hi": "सच्चा ज्ञान", "en": "right knowledge" } },
         { "hi": "सम्यक्चारित्र", "en": "Samyakcharitra", "sub": { "hi": "सच्चा आचरण", "en": "right conduct" } }
       ],
-      "result": { "hi": "मोक्षमार्ग", "en": "Mokshamarg", "sub": { "hi": "मोक्ष का मार्ग", "en": "path to liberation" } },
       "gist": {
         "hi": "तीनों एक साथ हों, तभी मोक्ष का मार्ग बनता है। इन तीनों को 'रत्नत्रय' कहते हैं।",
         "en": "Only all three together make the path to liberation. Together they are called the Three Jewels (Ratnatraya)."
@@ -54,21 +54,8 @@
       "title": { "hi": "पाँच ज्ञान", "en": "The five kinds of knowledge" },
       "root": { "hi": "ज्ञान", "en": "Gyan (knowledge)" },
       "branches": [
-        {
-          "head": { "hi": "परोक्ष", "en": "Paroksha", "sub": { "hi": "इन्द्रिय और मन की सहायता से", "en": "indirect: through senses and mind" } },
-          "items": [
-            { "hi": "मति", "en": "Mati", "sub": { "hi": "इन्द्रियों से जानना", "en": "knowing through the senses" } },
-            { "hi": "श्रुत", "en": "Shrut", "sub": { "hi": "शास्त्र और शब्दों से जानना", "en": "knowing through words and scripture" } }
-          ]
-        },
-        {
-          "head": { "hi": "प्रत्यक्ष", "en": "Pratyaksha", "sub": { "hi": "सीधे आत्मा से", "en": "direct: by the soul itself" } },
-          "items": [
-            { "hi": "अवधि", "en": "Avadhi", "sub": { "hi": "दूर की रूपी वस्तुएँ जानना", "en": "knowing distant material things" } },
-            { "hi": "मनःपर्यय", "en": "Manahparyay", "sub": { "hi": "दूसरों के मन की बात जानना", "en": "knowing what is in others' minds" } },
-            { "hi": "केवल", "en": "Keval", "sub": { "hi": "सब कुछ एक साथ जानना", "en": "knowing everything at once" } }
-          ]
-        }
+        { "head": { "hi": "परोक्ष", "en": "Paroksha", "sub": { "hi": "इन्द्रिय और मन की सहायता से", "en": "indirect: through senses and mind" } }, "items": [{ "hi": "मति", "en": "Mati", "sub": { "hi": "इन्द्रियों से जानना", "en": "knowing through the senses" } }, { "hi": "श्रुत", "en": "Shrut", "sub": { "hi": "शास्त्र और शब्दों से जानना", "en": "knowing through words and scripture" } }]},
+        { "head": { "hi": "प्रत्यक्ष", "en": "Pratyaksha", "sub": { "hi": "सीधे आत्मा से", "en": "direct: by the soul itself" } }, "items": [{ "hi": "अवधि", "en": "Avadhi", "sub": { "hi": "दूर की रूपी वस्तुएँ जानना", "en": "knowing distant material things" } }, { "hi": "मनःपर्यय", "en": "Manahparyay", "sub": { "hi": "दूसरों के मन की बात जानना", "en": "knowing what is in others' minds" } }, { "hi": "केवल", "en": "Keval", "sub": { "hi": "सब कुछ एक साथ जानना", "en": "knowing everything at once" } }]}
       ],
       "gist": {
         "hi": "केवलज्ञान पूर्ण ज्ञान है — इसमें सब द्रव्य और उनकी सब अवस्थाएँ एक साथ जानी जाती हैं।",
@@ -113,25 +100,8 @@
       "title": { "hi": "संसारी जीव — इन्द्रियों के अनुसार", "en": "Worldly beings — by their senses" },
       "root": { "hi": "संसारी जीव", "en": "Worldly beings" },
       "branches": [
-        {
-          "head": { "hi": "स्थावर", "en": "Sthavar", "sub": { "hi": "एक इन्द्रिय (स्पर्श)", "en": "one sense (touch)" } },
-          "items": [
-            { "hi": "पृथ्वी", "en": "Earth" },
-            { "hi": "जल", "en": "Water" },
-            { "hi": "अग्नि", "en": "Fire" },
-            { "hi": "वायु", "en": "Air" },
-            { "hi": "वनस्पति", "en": "Plants" }
-          ]
-        },
-        {
-          "head": { "hi": "त्रस", "en": "Tras", "sub": { "hi": "दो से पाँच इन्द्रिय", "en": "two to five senses" } },
-          "items": [
-            { "hi": "2 इन्द्रिय", "en": "2 senses", "sub": { "hi": "लट, केंचुआ", "en": "worms" } },
-            { "hi": "3 इन्द्रिय", "en": "3 senses", "sub": { "hi": "चींटी", "en": "ants" } },
-            { "hi": "4 इन्द्रिय", "en": "4 senses", "sub": { "hi": "भौंरा, मक्खी", "en": "bees, flies" } },
-            { "hi": "5 इन्द्रिय", "en": "5 senses", "sub": { "hi": "मनुष्य, पशु, देव, नारकी", "en": "humans, animals, gods, hell beings" } }
-          ]
-        }
+        { "head": { "hi": "स्थावर", "en": "Sthavar", "sub": { "hi": "एक इन्द्रिय (स्पर्श)", "en": "one sense (touch)" } }, "items": [{ "hi": "पृथ्वी", "en": "Earth" }, { "hi": "जल", "en": "Water" }, { "hi": "अग्नि", "en": "Fire" }, { "hi": "वायु", "en": "Air" }, { "hi": "वनस्पति", "en": "Plants" }]},
+        { "head": { "hi": "त्रस", "en": "Tras", "sub": { "hi": "दो से पाँच इन्द्रिय", "en": "two to five senses" } }, "items": [{ "hi": "2 इन्द्रिय", "en": "2 senses", "sub": { "hi": "लट, केंचुआ", "en": "worms" } }, { "hi": "3 इन्द्रिय", "en": "3 senses", "sub": { "hi": "चींटी", "en": "ants" } }, { "hi": "4 इन्द्रिय", "en": "4 senses", "sub": { "hi": "भौंरा, मक्खी", "en": "bees, flies" } }, { "hi": "5 इन्द्रिय", "en": "5 senses", "sub": { "hi": "मनुष्य, पशु, देव, नारकी", "en": "humans, animals, gods, hell beings" } }]}
       ],
       "gist": {
         "hi": "मिट्टी, पानी, अग्नि, हवा और पेड़-पौधों में भी जीव हैं — इसलिए अहिंसा में इनका भी ध्यान रखा जाता है।",
@@ -193,12 +163,12 @@
       "at": [197],
       "type": "sum",
       "title": { "hi": "'सत्' (जो है) की पहचान", "en": "What it means to exist (sat)" },
+      "result": { "hi": "सत्", "en": "Sat", "sub": { "hi": "जो है", "en": "what exists" } },
       "items": [
         { "hi": "उत्पाद", "en": "Utpad", "sub": { "hi": "नई अवस्था बनना", "en": "a new form arises" } },
         { "hi": "व्यय", "en": "Vyay", "sub": { "hi": "पुरानी अवस्था मिटना", "en": "the old form ends" } },
         { "hi": "ध्रौव्य", "en": "Dhrauvya", "sub": { "hi": "मूल वस्तु बनी रहना", "en": "the substance remains" } }
       ],
-      "result": { "hi": "सत्", "en": "Sat", "sub": { "hi": "जो है", "en": "what exists" } },
       "gist": {
         "hi": "जैसे सोने का कंगन तोड़कर हार बनाया — कंगन मिटा (व्यय), हार बना (उत्पाद), सोना वही रहा (ध्रौव्य)।",
         "en": "A gold bracelet is melted into a necklace: the bracelet ends (vyay), the necklace arises (utpad), the gold remains (dhrauvya)."
@@ -320,28 +290,8 @@
       "title": { "hi": "बारह तप", "en": "The twelve austerities" },
       "root": { "hi": "तप", "en": "Tap (austerity)" },
       "branches": [
-        {
-          "head": { "hi": "बाह्य तप", "en": "External", "sub": { "hi": "शरीर से जुड़े", "en": "of the body" } },
-          "items": [
-            { "hi": "अनशन", "en": "Anashan", "sub": { "hi": "उपवास", "en": "fasting" } },
-            { "hi": "अवमौदर्य", "en": "Avamaudarya", "sub": { "hi": "भूख से कम खाना", "en": "eating less than one's hunger" } },
-            { "hi": "वृत्तिपरिसंख्यान", "en": "Vrittiparisankhyan", "sub": { "hi": "भोजन के लिए नियम लेना", "en": "taking vows about food" } },
-            { "hi": "रसपरित्याग", "en": "Rasparityag", "sub": { "hi": "घी, दूध आदि रसों का त्याग", "en": "giving up rich foods" } },
-            { "hi": "विविक्तशय्यासन", "en": "Viviktashayyasan", "sub": { "hi": "एकान्त में रहना", "en": "staying in solitude" } },
-            { "hi": "कायक्लेश", "en": "Kayaklesh", "sub": { "hi": "शरीर का कष्ट सहना", "en": "enduring bodily hardship" } }
-          ]
-        },
-        {
-          "head": { "hi": "आभ्यन्तर तप", "en": "Internal", "sub": { "hi": "मन से जुड़े", "en": "of the mind" } },
-          "items": [
-            { "hi": "प्रायश्चित्त", "en": "Prayashchitt", "sub": { "hi": "दोषों का शोधन", "en": "atoning for faults" } },
-            { "hi": "विनय", "en": "Vinay", "sub": { "hi": "आदर-भाव", "en": "reverence" } },
-            { "hi": "वैयावृत्त्य", "en": "Vaiyavritya", "sub": { "hi": "सेवा", "en": "service" } },
-            { "hi": "स्वाध्याय", "en": "Swadhyay", "sub": { "hi": "शास्त्र पढ़ना", "en": "studying scripture" } },
-            { "hi": "व्युत्सर्ग", "en": "Vyutsarg", "sub": { "hi": "ममत्व छोड़ना", "en": "giving up attachment" } },
-            { "hi": "ध्यान", "en": "Dhyan", "sub": { "hi": "एकाग्र चिन्तन", "en": "meditation" } }
-          ]
-        }
+        { "head": { "hi": "बाह्य तप", "en": "External", "sub": { "hi": "शरीर से जुड़े", "en": "of the body" } }, "items": [{ "hi": "अनशन", "en": "Anashan", "sub": { "hi": "उपवास", "en": "fasting" } }, { "hi": "अवमौदर्य", "en": "Avamaudarya", "sub": { "hi": "भूख से कम खाना", "en": "eating less than one's hunger" } }, { "hi": "वृत्तिपरिसंख्यान", "en": "Vrittiparisankhyan", "sub": { "hi": "भोजन के लिए नियम लेना", "en": "taking vows about food" } }, { "hi": "रसपरित्याग", "en": "Rasparityag", "sub": { "hi": "घी, दूध आदि रसों का त्याग", "en": "giving up rich foods" } }, { "hi": "विविक्तशय्यासन", "en": "Viviktashayyasan", "sub": { "hi": "एकान्त में रहना", "en": "staying in solitude" } }, { "hi": "कायक्लेश", "en": "Kayaklesh", "sub": { "hi": "शरीर का कष्ट सहना", "en": "enduring bodily hardship" } }]},
+        { "head": { "hi": "आभ्यन्तर तप", "en": "Internal", "sub": { "hi": "मन से जुड़े", "en": "of the mind" } }, "items": [{ "hi": "प्रायश्चित्त", "en": "Prayashchitt", "sub": { "hi": "दोषों का शोधन", "en": "atoning for faults" } }, { "hi": "विनय", "en": "Vinay", "sub": { "hi": "आदर-भाव", "en": "reverence" } }, { "hi": "वैयावृत्त्य", "en": "Vaiyavritya", "sub": { "hi": "सेवा", "en": "service" } }, { "hi": "स्वाध्याय", "en": "Swadhyay", "sub": { "hi": "शास्त्र पढ़ना", "en": "studying scripture" } }, { "hi": "व्युत्सर्ग", "en": "Vyutsarg", "sub": { "hi": "ममत्व छोड़ना", "en": "giving up attachment" } }, { "hi": "ध्यान", "en": "Dhyan", "sub": { "hi": "एकाग्र चिन्तन", "en": "meditation" } }]}
       ],
       "gist": {
         "hi": "बाहरी तप भीतरी तप में सहायक है। शास्त्र पढ़ना (स्वाध्याय) भी एक तप है।",
@@ -354,20 +304,8 @@
       "title": { "hi": "चार ध्यान", "en": "The four kinds of meditation" },
       "root": { "hi": "ध्यान", "en": "Dhyan" },
       "branches": [
-        {
-          "head": { "hi": "संसार के कारण", "en": "Lead to bondage" },
-          "items": [
-            { "hi": "आर्त", "en": "Aart", "sub": { "hi": "दुःख और चिन्ता में डूबा मन", "en": "a mind sunk in sorrow and worry" } },
-            { "hi": "रौद्र", "en": "Raudra", "sub": { "hi": "क्रूर और हिंसक विचार", "en": "cruel, violent thoughts" } }
-          ]
-        },
-        {
-          "head": { "hi": "मोक्ष के कारण", "en": "Lead to liberation" },
-          "items": [
-            { "hi": "धर्म्य", "en": "Dharmya", "sub": { "hi": "धर्म का चिन्तन", "en": "contemplating dharma" } },
-            { "hi": "शुक्ल", "en": "Shukla", "sub": { "hi": "निर्मल, आत्मा में लीन ध्यान", "en": "pure meditation, absorbed in the self" } }
-          ]
-        }
+        { "head": { "hi": "संसार के कारण", "en": "Lead to bondage" }, "items": [{ "hi": "आर्त", "en": "Aart", "sub": { "hi": "दुःख और चिन्ता में डूबा मन", "en": "a mind sunk in sorrow and worry" } }, { "hi": "रौद्र", "en": "Raudra", "sub": { "hi": "क्रूर और हिंसक विचार", "en": "cruel, violent thoughts" } }]},
+        { "head": { "hi": "मोक्ष के कारण", "en": "Lead to liberation" }, "items": [{ "hi": "धर्म्य", "en": "Dharmya", "sub": { "hi": "धर्म का चिन्तन", "en": "contemplating dharma" } }, { "hi": "शुक्ल", "en": "Shukla", "sub": { "hi": "निर्मल, आत्मा में लीन ध्यान", "en": "pure meditation, absorbed in the self" } }]}
       ],
       "gist": {
         "hi": "चिन्ता करना भी एक ध्यान है — आर्तध्यान। इसे छोड़कर धर्मध्यान करें।",
@@ -413,6 +351,45 @@
       }
     },
     {
+      "at": [2],
+      "type": "drawing",
+      "drawing": "prepareMandir",
+      "top": true,
+      "title": { "hi": "घर से निकलने से पहले", "en": "Before leaving home" },
+      "items": [
+        { "hi": "स्नान करके साफ़ कपड़े", "en": "Bathed, in clean clothes" },
+        { "hi": "अक्षत की छोटी डिब्बी साथ", "en": "A small box of akshat" },
+        { "hi": "चमड़े की वस्तु नहीं", "en": "Nothing made of leather", "sub": { "hi": "बेल्ट, पर्स, घड़ी का पट्टा", "en": "belt, wallet, watch strap" } },
+        { "hi": "रास्ते में नीचे देखकर, धीरे चलें", "en": "Walk slowly, watching the ground", "sub": { "hi": "ताकि कोई छोटा जीव पैर के नीचे न आए", "en": "so that no small creature is hurt" } }
+      ]
+    },
+    {
+      "at": [3],
+      "type": "drawing",
+      "drawing": "door",
+      "top": true,
+      "title": { "hi": "मंदिर के द्वार पर", "en": "At the temple door" },
+      "items": [
+        { "hi": "जूते-चप्पल बाहर उतारें", "en": "Footwear stays outside" },
+        { "hi": "हाथ-पैर धोएँ", "en": "Wash hands and feet" },
+        { "hi": "तीन बार 'निःसहि' बोलकर प्रवेश", "en": "Enter saying 'Nihsahi' three times", "sub": { "hi": "घर-संसार की बातें बाहर छोड़कर", "en": "leaving the world's business outside" } }
+      ]
+    },
+    {
+      "at": [4],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "भगवान के सामने — हाथ जोड़कर, सिर झुकाकर", "en": "Before the Lord, with folded hands and bowed head" }
+    },
+    {
+      "at": [5],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "दर्शन पाठ भाव से पढ़ें या गाएँ", "en": "Read or sing the darshan prayer with devotion" }
+    },
+    {
       "at": [6],
       "type": "drawing",
       "drawing": "swastik",
@@ -443,6 +420,46 @@
       }
     },
     {
+      "at": [8],
+      "type": "drawing",
+      "drawing": "bow",
+      "top": true,
+      "title": { "hi": "पंचांग नमस्कार — पाँच अंग धरती से", "en": "The five-limbed bow: five limbs on the ground" },
+      "items": [
+        { "hi": "दोनों घुटने", "en": "Both knees" },
+        { "hi": "दोनों हाथ", "en": "Both hands" },
+        { "hi": "मस्तक", "en": "Forehead" }
+      ],
+      "gist": {
+        "hi": "जो ऐसा न कर सकें, वे बैठकर या खड़े होकर हाथ जोड़कर सिर झुकाएँ।",
+        "en": "Those who cannot do this may bow seated or standing, with folded hands."
+      }
+    },
+    {
+      "at": [9],
+      "type": "drawing",
+      "drawing": "gandhodak",
+      "top": true,
+      "title": { "hi": "गन्धोदक कैसे लगाएँ", "en": "How to take gandhodak" },
+      "items": [
+        { "hi": "दाहिने हाथ की उँगलियों से थोड़ा-सा", "en": "A little on the fingertips of the right hand" },
+        { "hi": "आदर से मस्तक पर लगाएँ", "en": "Touch it to the forehead with respect" },
+        { "hi": "पैर न लगने दें", "en": "Never let it touch the feet" }
+      ]
+    },
+    {
+      "at": [10],
+      "type": "drawing",
+      "drawing": "altars",
+      "top": true,
+      "title": { "hi": "एक से अधिक वेदियाँ हों तो", "en": "When there is more than one altar" },
+      "items": [
+        { "hi": "मूलनायक (मुख्य वेदी) से शुरू", "en": "Begin at the main altar (moolnayak)" },
+        { "hi": "फिर अगली वेदी", "en": "Then the next altar" },
+        { "hi": "और बाकी हर वेदी पर", "en": "And every other altar", "sub": { "hi": "हाथ जोड़कर 'नमोऽस्तु'", "en": "folded hands, 'Namostu'" } }
+      ]
+    },
+    {
       "at": [11],
       "type": "list",
       "title": { "hi": "साधु-संतों को कैसे वंदना करें", "en": "How to greet the saints" },
@@ -455,9 +472,82 @@
         "hi": "साधुओं से बात करते समय विनय रखें, और उनके सामने ऊँचे आसन पर न बैठें।",
         "en": "Speak to the saints with humility, and do not sit on a higher seat than them."
       }
+    },
+    {
+      "at": [11],
+      "type": "drawing",
+      "drawing": "jinvani",
+      "top": true,
+      "title": { "hi": "जिनवाणी और गुरु वंदना", "en": "Honouring scripture and saints" },
+      "items": [
+        { "hi": "शास्त्र चौकी पर — ज़मीन पर नहीं", "en": "The scripture on a stand, never on the floor" },
+        { "hi": "मुनि-आर्यिका को हाथ जोड़कर वंदना", "en": "Greet munis and aryikas with folded hands" }
+      ]
+    },
+    {
+      "at": [12],
+      "type": "drawing",
+      "drawing": "jaap",
+      "top": true,
+      "title": { "hi": "जाप, सामायिक और स्वाध्याय", "en": "Jaap, samayik and study" },
+      "items": [
+        { "hi": "माला से णमोकार मंत्र — 9 या 108 बार", "en": "Namokar Mantra on a mala, 9 or 108 times" },
+        { "hi": "सामायिक — शान्त बैठकर आत्मा का चिन्तन", "en": "Samayik: sit quietly and reflect on the soul" },
+        { "hi": "स्वाध्याय — कोई शास्त्र या स्तोत्र पढ़ें", "en": "Study: read a scripture or stotra" }
+      ]
+    },
+    {
+      "at": [13],
+      "type": "drawing",
+      "drawing": "leave",
+      "top": true,
+      "title": { "hi": "मंदिर से विदा", "en": "Leaving the temple" },
+      "items": [
+        { "hi": "एक बार फिर नमस्कार", "en": "Bow once more" },
+        { "hi": "कुछ कदम पीछे चलें", "en": "Step back a few paces", "sub": { "hi": "भगवान की ओर पीठ न करें", "en": "never turning your back to the Lord" } },
+        { "hi": "द्वार पर तीन बार 'असहि'", "en": "'Asahi' three times at the door" }
+      ]
+    },
+    {
+      "at": [14],
+      "type": "drawing",
+      "drawing": "rules",
+      "top": true,
+      "title": { "hi": "मंदिर में ध्यान रखने की बातें", "en": "Things to keep in mind in the temple" },
+      "items": [
+        { "hi": "कुछ खाएँ-पिएँ नहीं", "en": "No eating or drinking" },
+        { "hi": "मोबाइल बंद या मौन", "en": "Phone off or silent" },
+        { "hi": "भगवान की ओर पैर न करें", "en": "Feet never towards the Lord" },
+        { "hi": "धीरे बोलें, दूसरों को बाधा न दें", "en": "Speak softly, don't disturb others" }
+      ]
     }
   ],
   "pooja-vidhi": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "preparePooja",
+      "top": true,
+      "title": { "hi": "पूजा से पहले", "en": "Before the pooja" },
+      "items": [
+        { "hi": "सुबह, भोजन से पहले, स्नान करके", "en": "In the morning, before eating, after a bath" },
+        { "hi": "पूजा के साफ़ वस्त्र — धोती-दुपट्टा", "en": "Clean pooja clothes: dhoti and dupatta" },
+        { "hi": "चमड़े की वस्तु नहीं", "en": "Nothing made of leather", "sub": { "hi": "बेल्ट, पर्स, घड़ी का पट्टा", "en": "belt, wallet, watch strap" } },
+        { "hi": "मोबाइल बंद या मौन", "en": "Phone off or silent" }
+      ]
+    },
+    {
+      "at": [2],
+      "type": "drawing",
+      "drawing": "door",
+      "top": true,
+      "title": { "hi": "मंदिर में प्रवेश", "en": "Entering the temple" },
+      "items": [
+        { "hi": "जूते-चप्पल बाहर उतारें", "en": "Footwear stays outside" },
+        { "hi": "हाथ-पैर धोएँ", "en": "Wash hands and feet" },
+        { "hi": "तीन बार 'निःसहि' बोलकर प्रवेश", "en": "Enter saying 'Nihsahi' three times", "sub": { "hi": "घर-संसार की बातें बाहर छोड़कर", "en": "leaving the world's business outside" } }
+      ]
+    },
     {
       "at": [3],
       "type": "drawing",
@@ -472,6 +562,25 @@
         "hi": "रत्नत्रय के द्वारा चारों गतियों के भ्रमण से छूटकर सिद्धशिला पर पहुँचें — यही भावना है।",
         "en": "Through the Three Jewels, may I leave the wandering in the four states and reach the Siddhashila. That is the wish."
       }
+    },
+    {
+      "at": [3],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "दर्शन — हाथ जोड़कर, फिर तीन प्रदक्षिणा", "en": "Darshan with folded hands, then three rounds" }
+    },
+    {
+      "at": [4],
+      "type": "drawing",
+      "drawing": "abhishek",
+      "top": true,
+      "title": { "hi": "अभिषेक (प्रक्षाल)", "en": "Abhishek (bathing the idol)" },
+      "items": [
+        { "hi": "शुद्ध, छने हुए जल से प्रक्षाल", "en": "Bathing with pure, filtered water" },
+        { "hi": "साफ़, सूखे वस्त्र से पोंछना", "en": "Wiping with a clean, dry cloth" },
+        { "hi": "यह जल गन्धोदक है", "en": "This water is the gandhodak", "sub": { "hi": "आदर से मस्तक पर लगाया जाता है", "en": "touched to the forehead with respect" } }
+      ]
     },
     {
       "at": [5],
@@ -513,6 +622,13 @@
       }
     },
     {
+      "at": [7],
+      "type": "drawing",
+      "drawing": "poojaStart",
+      "top": true,
+      "title": { "hi": "पूजा का प्रारम्भ — चौकी पर पुस्तक, भगवान की ओर", "en": "Beginning the pooja: the book on the chowki, facing the Lord" }
+    },
+    {
       "at": [8],
       "type": "drawing",
       "drawing": "thona",
@@ -545,6 +661,89 @@
         "hi": "हम भगवान से कुछ माँगते नहीं — हर द्रव्य चढ़ाकर अपने ही दोष दूर करने की भावना करते हैं।",
         "en": "We do not ask the Lord for anything; with each offering we resolve to remove our own faults."
       }
+    },
+    {
+      "at": [9],
+      "type": "drawing",
+      "drawing": "offer",
+      "top": true,
+      "title": { "hi": "द्रव्य कैसे चढ़ाएँ", "en": "How to offer a dravya" },
+      "items": [
+        { "hi": "पुस्तक से उस द्रव्य का छन्द पढ़ें", "en": "Read that offering's verse from the book" },
+        { "hi": "अन्त का मंत्र बोलते हुए थाल में चढ़ाएँ", "en": "Say the closing mantra and offer it in the plate" },
+        { "hi": "जल और चन्दन तीन धार में", "en": "Water and chandan in three streams" }
+      ]
+    },
+    {
+      "at": [10],
+      "type": "drawing",
+      "drawing": "arghya",
+      "top": true,
+      "title": { "hi": "अर्घ्य", "en": "Arghya" },
+      "items": [
+        { "hi": "आठों द्रव्य में से थोड़ा-थोड़ा", "en": "A little of each of the eight" },
+        { "hi": "एक कटोरी में मिलाकर", "en": "Mixed together in one bowl" },
+        { "hi": "थाल में चढ़ाएँ", "en": "Offered in the plate" }
+      ]
+    },
+    {
+      "at": [11],
+      "type": "drawing",
+      "drawing": "jaymala",
+      "top": true,
+      "title": { "hi": "जयमाला और पूर्णार्घ्य", "en": "Jaymala and the full arghya" },
+      "items": [
+        { "hi": "पुस्तक से जयमाला भाव से पढ़ें", "en": "Read the jaymala from the book with feeling", "sub": { "hi": "भगवान के गुणों का गान", "en": "the song of the Lord's qualities" } },
+        { "hi": "फिर पूर्णार्घ्य चढ़ाएँ", "en": "Then offer the purnarghya" }
+      ]
+    },
+    {
+      "at": [12],
+      "type": "drawing",
+      "drawing": "shanti",
+      "top": true,
+      "title": { "hi": "शान्ति पाठ और विसर्जन", "en": "Shanti path and visarjan" },
+      "items": [
+        { "hi": "शान्ति पाठ", "en": "Shanti path" },
+        { "hi": "विसर्जन — भूल-चूक की क्षमा", "en": "Visarjan: asking forgiveness for mistakes" },
+        { "hi": "नौ बार णमोकार मंत्र", "en": "Namokar Mantra nine times" }
+      ]
+    },
+    {
+      "at": [13],
+      "type": "drawing",
+      "drawing": "aarti",
+      "top": true,
+      "title": { "hi": "आरती और मंदिर से विदा", "en": "Aarti and leaving the temple" },
+      "items": [
+        { "hi": "आरती", "en": "Aarti" },
+        { "hi": "कुछ कदम पीछे चलें", "en": "Step back a few paces", "sub": { "hi": "भगवान की ओर पीठ न करें", "en": "never turning your back to the Lord" } },
+        { "hi": "द्वार पर तीन बार 'असहि'", "en": "'Asahi' three times at the door" }
+      ]
+    },
+    {
+      "at": [14],
+      "type": "drawing",
+      "drawing": "nirmalya",
+      "top": true,
+      "title": { "hi": "निर्माल्य", "en": "Nirmalya" },
+      "items": [
+        { "hi": "भगवान को चढ़ाई गई सामग्री", "en": "What has been offered to the Lord" },
+        { "hi": "न वापस लें, न खाएँ, न बेचें", "en": "Not taken back, eaten or sold" },
+        { "hi": "मंदिर की व्यवस्था के अनुसार रखें", "en": "Left for the temple to handle" }
+      ]
+    },
+    {
+      "at": [15],
+      "type": "drawing",
+      "drawing": "bhav",
+      "top": true,
+      "title": { "hi": "पूजा का सच्चा भाव", "en": "The true spirit of pooja" },
+      "items": [
+        { "hi": "जल्दी नहीं — अर्थ समझते हुए पढ़ें", "en": "No hurry: read with understanding" },
+        { "hi": "वीतराग भगवान न प्रसन्न होते हैं, न नाराज़", "en": "The Vitarag Lord is neither pleased nor displeased" },
+        { "hi": "उनके गुण याद कर वैसा बनने की भावना", "en": "Remember His qualities and wish to become like Him" }
+      ]
     }
   ],
   "bhaktamar": [
@@ -587,6 +786,22 @@
         "hi": "श्लोक 47 में इन्हीं आठ भयों को फिर एक साथ गिनाया गया है।",
         "en": "Verse 47 names these same eight fears together once more."
       }
+    }
+  ],
+  "namokar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "parameshthi",
+      "top": true,
+      "title": { "hi": "पंच परमेष्ठी — जिन्हें नमस्कार है", "en": "The five Parameshthis, to whom we bow" },
+      "items": [
+        { "hi": "अरिहंत", "en": "Arihant", "sub": { "hi": "राग-द्वेष जीतकर केवलज्ञानी, अभी देह सहित", "en": "omniscient, having conquered attachment and aversion, still in the body" } },
+        { "hi": "सिद्ध", "en": "Siddha", "sub": { "hi": "देह से मुक्त, मोक्ष में विराजमान", "en": "free of the body, in liberation" } },
+        { "hi": "आचार्य", "en": "Acharya", "sub": { "hi": "संघ के नायक मुनि", "en": "the muni who leads the sangh" } },
+        { "hi": "उपाध्याय", "en": "Upadhyay", "sub": { "hi": "शास्त्र पढ़ाने वाले मुनि", "en": "the muni who teaches the scriptures" } },
+        { "hi": "साधु", "en": "Sadhu", "sub": { "hi": "मोक्ष मार्ग पर चलने वाले सब मुनि", "en": "all munis walking the path to liberation" } }
+      ]
     }
   ]
 }

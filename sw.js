@@ -19,6 +19,7 @@ const FILES = [
   'js/translit.js',
   'js/panchang.js',
   'js/drawings.js',
+  'js/scenes.js',
   'js/app.js',
   'content/books.json',
   'content/categories.json',
