@@ -264,6 +264,8 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
 /* ---------- Bottom bar: a marble plinth with a brass edge ---------- */
 
 #app.has-nav { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+/* Room for the floating Ask button above the bar, so the end of a page is never hidden under it. */
+#app.has-nav.has-fab { padding-bottom: calc(9.6rem + env(safe-area-inset-bottom)); }
 .tabbar, .reader-bar {
   position: fixed;
   left: 0;
@@ -276,7 +278,7 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
   border-top: 1px solid var(--brass);
   box-shadow: 0 -3px 0 var(--plinth-edge), 0 -10px 22px rgba(0, 0, 0, 0.07);
 }
-.tabbar { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 0.3rem 0.4rem calc(0.3rem + env(safe-area-inset-bottom)); }
+.tabbar { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 0.3rem 0.4rem calc(0.3rem + env(safe-area-inset-bottom)); }
 .tab {
   position: relative;
   display: flex;
@@ -304,6 +306,32 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
 .tab > span { transition: opacity 0.18s; }
 .tabbar.is-min { transform: translateY(1rem); }
 .tabbar.is-min .tab > span { opacity: 0; }
+
+/* Ask, floating just above the bar's brass edge at the right. It sits inside the bar, so it rises with the
+   "more below" band and sinks with the bar as it folds. Like the toast, it is one of the few things that
+   stand proud of the marble: a sanctum-white pill drawn in brass, carrying the Lift. */
+.ask-fab {
+  position: absolute;
+  right: 0.9rem;
+  bottom: calc(100% + 0.75rem);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: var(--tap);
+  padding: 0 1.15rem 0 0.85rem;
+  border: 1.5px solid var(--brass);
+  border-radius: 999px;
+  background: var(--shrine);
+  color: var(--text);
+  font: 600 var(--fs-body)/1 var(--font-ui);
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: var(--lift);
+  transition: background-color 0.15s, transform 0.15s;
+}
+.ask-fab .icon { width: min(1.5rem, 30px); height: min(1.5rem, 30px); flex: none; color: var(--brass-text); }
+.ask-fab:hover { background: linear-gradient(var(--brass-wash), var(--brass-wash)), var(--shrine); }
+.ask-fab:active { transform: scale(0.97); }
 
 /* ---------- Welcome ---------- */
 

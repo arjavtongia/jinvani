@@ -647,12 +647,16 @@
     const items = [
       { id: 'home', href: '#/', icon: 'home', label: t('home'), active: view === 'home' },
       { id: 'books', href: '#/books', icon: 'books', label: t('books'), active: view === 'books' || view === 'book' },
-      { id: 'search', href: '#/search', icon: 'search', label: t('search'), active: view === 'search' || view === 'ask' },
+      { id: 'ask', href: '#/ask', icon: 'ask', label: t('askTab'), active: view === 'ask' },
+      { id: 'search', href: '#/search', icon: 'search', label: t('search'), active: view === 'search' },
       { id: 'settings', href: '#/settings', icon: 'settings', label: t('settings'), active: view === 'settings' || view === 'credits' }
     ];
+    /* The Ask button floats just above the bar (and rides with it as it folds) on every screen but Ask itself. */
+    const fab = view === 'ask' ? '' : '<a class="ask-fab" href="#/ask" data-action="open-ask" aria-label="' + esc(t('askFab')) + '">' +
+      icon('ask') + '<span aria-hidden="true">' + esc(t('askTab')) + '</span></a>';
     return '<nav class="tabbar" aria-label="' + esc(t('appName')) + '">' + items.map(it =>
       '<a class="tab' + (it.active ? ' is-active' : '') + '" href="' + it.href + '"' + (it.active ? ' aria-current="page"' : '') + '>' +
-      icon(it.icon) + '<span>' + esc(it.label) + '</span></a>').join('') + '</nav>';
+      icon(it.icon) + '<span>' + esc(it.label) + '</span></a>').join('') + fab + '</nav>';
   }
 
   function chevronRow(href, mainHtml, leadHtml) {
@@ -879,7 +883,6 @@
       count('granth') && { href: '#/books/group/granth', emblem: { id: 'tattvarth-sutra' }, title: t('pathGranth'), sub: t('pathGranthSub', { n: count('granth') }) },
       has('katha') && { href: '#/books/katha', emblem: { category: 'katha' }, title: t('pathKatha'), sub: t('pathKathaSub', { n: count('katha') }) },
       has('vidhi') && { href: '#/books/vidhi', icon: 'temple', title: t('pathVidhi'), sub: t('pathVidhiSub') },
-      { href: '#/ask', icon: 'study', title: t('pathAsk'), sub: t('pathAskSub') },
       { href: '#/saved', emblem: { id: 'saved' }, title: t('saved'), sub: state.bookmarks.length ? t('savedCount', { n: state.bookmarks.length }) : t('pathSavedNone') }
     ].filter(Boolean);
     return '<ul class="paths">' + items.map(it =>
@@ -1319,7 +1322,7 @@
     const faq = await ASK.loadFaq();
     const item = faqId && faq.find(f => f.id === faqId);
     if (item) askState = { question: L(item.q), status: 'done', result: faqResult(item), error: '', related: [], typed: false };
-    return backBar('#/search', t('search')) +
+    return backBar('#/', t('home')) +
       '<main><h1 class="page-title">' + esc(t('ask')) + '</h1><p class="ask-intro">' + esc(t('askIntro')) + '</p>' +
       '<form class="ask-form" data-form="ask" novalidate>' +
       '<label class="visually-hidden" for="ask-q">' + esc(t('askLabel')) + '</label>' +
@@ -1565,6 +1568,7 @@
     const withNav = NAV_VIEWS.indexOf(view) >= 0;
     $app.innerHTML = html + (withNav ? navBar(view) : '');
     $app.classList.toggle('has-nav', withNav);
+    $app.classList.toggle('has-fab', withNav && view !== 'ask');
     /* A short rise when the screen changes; a page turn slides only the scripture, in the direction of travel. */
     if (!sameRoute) {
       const main = $app.querySelector('main');
@@ -1578,6 +1582,7 @@
   }
 
   let pendingDir = null;
+  let focusAskBox = false;
 
   function afterRender(view, sameView, sameRoute, focusAction) {
     const again = focusAction && $app.querySelector('[data-action="' + focusAction + '"]');
@@ -1591,6 +1596,11 @@
       }
     }
     if (!(sameRoute && (view === 'settings' || view === 'saved'))) window.scrollTo(0, 0);
+    if (view === 'ask' && focusAskBox) {
+      focusAskBox = false;
+      const box = $app.querySelector('#ask-q');
+      if (box) box.focus({ preventScroll: true });
+    }
     /* Opening one part of a long pooja: scroll down to that part, below the sticky top bar. */
     const target = view === 'read' && $app.querySelector('.is-target');
     if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 90);
@@ -1726,6 +1736,8 @@
       if (note && pickedDay != null) note.insertAdjacentHTML('afterend', '<p class="tithi-note">' + esc(t('tithiNote')) + '</p>');
     },
     'ask-ai': () => askQuestion(askState.question, true),
+    /* The floating button opens Ask ready to type; the Ask tab opens it to look through. */
+    'open-ask': () => { focusAskBox = true; location.hash = '#/ask'; },
     'ask-again': el => {
       const box = document.getElementById('ask-q');
       if (box) box.value = el.dataset.q;

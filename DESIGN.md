@@ -160,6 +160,13 @@ components:
     textColor: "{colors.muted-stone}"
     typography: "{typography.tab-label}"
     height: "52px"
+  ask-fab:
+    backgroundColor: "{colors.shrine-white}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body}"
+    rounded: "{rounded.pill}"
+    padding: "0 1.15rem 0 0.85rem"
+    height: "{spacing.tap}"
   tab-active:
     textColor: "{colors.ink}"
   day-niche:
@@ -290,7 +297,7 @@ Responsive changes: at 560px stories become two columns; at 700px the story of t
 Depth is architectural, not floating. Surfaces step: page marble, a lighter sanctum inside arches and niches, and plinth marble for the steps and bars. Brass lines and stacked plinth bars give the sense of carved relief. Shadow is used in three places only.
 
 ### Shadow Vocabulary
-- **Lift** (`box-shadow: 0 3px 8px rgba(0,0,0,0.16)`, night 0.4): the primary sindoor button and the toast, the only things that sit proud of the marble.
+- **Lift** (`box-shadow: 0 3px 8px rgba(0,0,0,0.16)`, night 0.4): the primary sindoor button, the floating Ask button and the toast, the only things that sit proud of the marble.
 - **Plinth ledge** (`box-shadow: 0 -3px 0 var(--plinth-edge), 0 -10px 22px rgba(0,0,0,0.07)`): the tab bar and reader bar; the solid 3px is the stone step's edge above the brass line, not a drop shadow.
 - **Diya glow** (`radial-gradient(closest-side, var(--glow), transparent)` behind the shrine): at night always, and by day while listening.
 - **Brass inset ring** (`box-shadow: inset 0 0 0 1px var(--brass)`): niche outlines and pressed or selected states.
@@ -336,8 +343,9 @@ There are no cards. Containers are architectural:
 
 ### Navigation
 - **Top bar:** sticky, page-coloured, hairline below; back link as a pill with a brass arrow.
-- **Tab bar:** four tabs (home, books, search, settings) on plinth marble with a brass top edge and the plinth ledge. Inactive tabs are muted; the active tab is ink with a brass icon and a short brass lintel (1.7rem, gradient highlight to brass) hung from the bar's top edge.
+- **Tab bar:** five tabs (home, books, ask, search, settings) on plinth marble with a brass top edge and the plinth ledge. Inactive tabs are muted; the active tab is ink with a brass icon and a short brass lintel (1.7rem, gradient highlight to brass) hung from the bar's top edge.
 - **Reader bar:** same plinth; Previous, Listen (sindoor primary, wider centre column), Next.
+- **Ask button:** a small pill floating 0.75rem above the tab bar's brass edge at the right: sanctum white, 1.5px brass border, the pack's ask icon (speech bubble with a saffron question mark) in brass script and "पूछें / Ask" in Hind 600, with the Lift. It lives inside the tab bar, so it rises with the more-below band and sinks with the bar as it folds; it opens Ask with the question box focused, ready to type (the Ask tab opens it to look through). Shown on every tab-bar screen except Ask itself; never in the reader. Pages that carry it reserve 9.6rem under the bar so their last line is never hidden.
 - **More below cue:** a quiet brass-script line in a band at the top of the bar, never over the words.
 
 ### Rows
