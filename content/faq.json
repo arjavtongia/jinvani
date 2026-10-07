@@ -1,5 +1,27 @@
 [
   {
+    "id": "jain-dharma",
+    "q": {
+      "hi": "जैन धर्म क्या है?",
+      "en": "What is Jain dharma (Jainism)?"
+    },
+    "also": [
+      "what is jainism",
+      "jain dharm"
+    ],
+    "a": {
+      "hi": "जैन धर्म जिनेन्द्र भगवान का बताया धर्म है; 'जिन' वे हैं जिन्होंने राग-द्वेष जैसे भीतरी शत्रुओं को जीत लिया। रत्नकरण्ड श्रावकाचार के आरम्भ में आचार्य समन्तभद्र कहते हैं कि सच्चा धर्म वह है जो कर्मों का नाश करे और जीवों को संसार के दुःखों से निकालकर उत्तम सुख में पहुँचा दे। उसका मार्ग रत्नत्रय है: सम्यग्दर्शन, सम्यग्ज्ञान और सम्यक्चारित्र, और उसका आधार अहिंसा, अनेकान्त और अपरिग्रह है। इस युग में ऋषभदेव से महावीर तक चौबीस तीर्थंकरों ने यह धर्म बताया।",
+      "en": "Jain dharma is the dharma taught by the Jinas, those who have conquered the inner enemies of attachment and aversion. At the start of the Ratnakarand Shravakachar, Acharya Samantabhadra says true dharma is what destroys karma and lifts beings out of the suffering of worldly life into the highest happiness. Its path is the three jewels, right faith, right knowledge and right conduct, and it rests on ahimsa, anekant and non-possessiveness. In this age it was taught by the twenty-four Tirthankars, from Rishabhdev to Mahavir."
+    },
+    "sources": [
+      {
+        "book": "ratnakarand-shravakachar",
+        "find": "धर्मं कर्म-निबर्हणम्",
+        "pos": 2
+      }
+    ]
+  },
+  {
     "id": "ratnatraya",
     "q": {
       "hi": "रत्नत्रय क्या है?",
@@ -179,6 +201,109 @@
     ]
   },
   {
+    "id": "twelve-vows",
+    "q": {
+      "hi": "श्रावक के बारह व्रत कौन-से हैं?",
+      "en": "What are the twelve vows of a Jain householder?"
+    },
+    "also": [
+      "12 vrat",
+      "बारह व्रत",
+      "shravak vrat",
+      "श्रावक के व्रत",
+      "anuvrat gunavrat shikshavrat",
+      "गुणव्रत",
+      "शिक्षाव्रत",
+      "householder vows"
+    ],
+    "a": {
+      "hi": "गृहस्थ (श्रावक) पाँच पापों का पूरा नहीं, आंशिक त्याग करता है; इन्हें पाँच अणुव्रत कहते हैं (मुनि का पूरा त्याग महाव्रत है)। इनके साथ तत्त्वार्थसूत्र सात शील-व्रत बताता है: दिग्व्रत, देशव्रत, अनर्थदण्डव्रत (ये तीन गुणव्रत), और सामायिक, प्रोषधोपवास, उपभोग-परिभोग परिमाण तथा अतिथि-संविभाग (ये चार शिक्षाव्रत)। आचार्य समन्तभद्र इन्हें थोड़ा अलग ढंग से गिनते हैं, पर कुल बारह ही रहते हैं।",
+      "en": "A householder (shravak) gives up the five sins partly, not completely; these are the five anuvrats (a monk's complete giving-up is the mahavrats). With them the Tattvarth Sutra names seven more vows: limiting directions, limiting area, and avoiding purposeless harm (the three gunavrats), and samayik, fasting on parva days, limiting things used, and sharing with guests, above all monks (the four shikshavrats). Acharya Samantabhadra groups them a little differently, but they still come to twelve."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "देशसर्वतोऽणुमहती",
+        "pos": 238
+      },
+      {
+        "book": "tattvarth-sutra",
+        "find": "दिग्देशानर्थदण्ड",
+        "pos": 257
+      }
+    ]
+  },
+  {
+    "id": "ashta-mulguna",
+    "q": {
+      "hi": "श्रावक के आठ मूलगुण क्या हैं?",
+      "en": "What are the eight mulgunas of a Jain householder?"
+    },
+    "also": [
+      "ashta mulguna",
+      "अष्ट मूलगुण",
+      "8 mool gun",
+      "आठ मूलगुण",
+      "why jains do not eat honey",
+      "शहद क्यों नहीं",
+      "madhu tyag",
+      "no meat no alcohol"
+    ],
+    "a": {
+      "hi": "मूलगुण श्रावक की नींव हैं। रत्नकरण्ड श्रावकाचार में आचार्य समन्तभद्र कहते हैं: मद्य (शराब), मांस और मधु (शहद) का त्याग, और पाँच अणुव्रत, ये आठ मूलगुण हैं। पुरुषार्थसिद्ध्युपाय में आचार्य अमृतचन्द्र मद्य, मांस, मधु और पाँच उदुम्बर फलों (बड़, पीपल, पाकर, ऊमर, कठूमर) के त्याग को आठ मूलगुण कहते हैं, क्योंकि इनमें अनगिनत जीव होते हैं और हिंसा से बचने वाला सबसे पहले इन्हें छोड़ता है।",
+      "en": "The mulgunas are the foundation of a householder's life. In the Ratnakarand Shravakachar, Acharya Samantabhadra says the eight are giving up alcohol, meat and honey, together with the five anuvrats. In the Purusharthasiddhyupay, Acharya Amritchandra names giving up alcohol, meat, honey and the five udumbar fruits (banyan, peepal and other figs), since countless beings live in them, and one who wants to avoid himsa gives these up first of all."
+    },
+    "sources": [
+      {
+        "book": "ratnakarand-shravakachar",
+        "find": "मद्यमांसमधुत्यागैः",
+        "pos": 65
+      },
+      {
+        "book": "purusharthasiddhyupay",
+        "find": "मद्यं मांसं क्षौद्रं",
+        "pos": 59
+      }
+    ]
+  },
+  {
+    "id": "daan",
+    "q": {
+      "hi": "दान क्या है, और इसके चार भेद कौन-से हैं?",
+      "en": "What is daan, and what are its four kinds?"
+    },
+    "also": [
+      "daan",
+      "दान",
+      "char daan",
+      "चार दान",
+      "charity in jainism",
+      "ahar daan",
+      "आहार दान",
+      "aushadh daan",
+      "abhay daan",
+      "shastra daan",
+      "types of daan",
+      "kinds of charity"
+    ],
+    "a": {
+      "hi": "तत्त्वार्थसूत्र कहता है: अपने और दूसरे के उपकार के लिए अपनी वस्तु देना दान है। रत्नकरण्ड श्रावकाचार दान के चार भेद बताता है: आहार, औषध, उपकरण (जैसे शास्त्र, पीछी, कमण्डलु) और आवास। प्रचलित रूप में इन्हें आहार दान, औषध दान, शास्त्र (ज्ञान) दान और अभय दान भी कहते हैं। मुनियों को नवधा भक्ति से आहार देना श्रावक का बड़ा पुण्य कार्य माना गया है।",
+      "en": "The Tattvarth Sutra says daan is giving what is one's own for the good of oneself and others. The Ratnakarand Shravakachar names four kinds: food, medicine, implements (such as scriptures, the peacock-feather whisk and water pot) and shelter. They are also commonly called food, medicine, scripture (knowledge) and fearlessness (abhay) daan. Offering food to monks with the ninefold devotion (navdha bhakti) is counted among a householder's most meritorious acts."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "अनुग्रहार्थं स्वस्यातिसर्गो दानम्",
+        "pos": 274
+      },
+      {
+        "book": "ratnakarand-shravakachar",
+        "find": "आहारौषधयोरप्युपकरणावासयोश्च",
+        "pos": 115
+      }
+    ]
+  },
+  {
     "id": "ahimsa",
     "q": {
       "hi": "अहिंसा का क्या अर्थ है?",
@@ -234,6 +359,33 @@
     ]
   },
   {
+    "id": "kashay",
+    "q": {
+      "hi": "चार कषाय कौन-से हैं?",
+      "en": "What are the four kashayas (passions)?"
+    },
+    "also": [
+      "kashay",
+      "कषाय",
+      "krodh maan maya lobh",
+      "क्रोध मान माया लोभ",
+      "anger pride deceit greed",
+      "anantanubandhi",
+      "passions"
+    ],
+    "a": {
+      "hi": "कषाय वे भाव हैं जो आत्मा को कसते हैं, यानी संसार में बाँधे रखते हैं: क्रोध, मान, माया (छल) और लोभ। तत्त्वार्थसूत्र बताता है कि हर कषाय के चार स्तर हैं: अनन्तानुबन्धी (जो सम्यग्दर्शन नहीं होने देता), अप्रत्याख्यान (जो श्रावक के व्रत नहीं होने देता), प्रत्याख्यान (जो मुनि-व्रत नहीं होने देता) और संज्वलन (जो पूर्ण वीतरागता नहीं होने देता)। इस तरह कुल सोलह कषाय हैं। इन्हें घटाना ही धर्म की साधना है।",
+      "en": "Kashayas are the passions that keep the soul bound in the cycle of birth: anger (krodh), pride (maan), deceit (maya) and greed (lobh). The Tattvarth Sutra explains that each has four grades: anantanubandhi (which prevents right faith), apratyakhyan (which prevents a householder's vows), pratyakhyan (which prevents a monk's vows) and sanjvalan (which prevents perfect detachment). So there are sixteen in all. Practising dharma means weakening them."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "क्रोधमानमायालोभाः",
+        "pos": 284
+      }
+    ]
+  },
+  {
     "id": "moksha",
     "q": {
       "hi": "मोक्ष क्या है?",
@@ -267,10 +419,7 @@
     "also": [
       "das lakshan dharma",
       "dashlakshan",
-      "uttam kshama",
-      "उत्तम क्षमा",
-      "ten virtues",
-      "paryushan"
+      "ten virtues"
     ],
     "a": {
       "hi": "दस धर्म हैं: उत्तम क्षमा, मार्दव (विनम्रता), आर्जव (सरलता), शौच (लोभ से मुक्ति), सत्य, संयम, तप, त्याग, आकिंचन्य (कुछ भी मेरा नहीं) और ब्रह्मचर्य। दिगम्बर परम्परा में भाद्रपद शुक्ल पंचमी से चतुर्दशी तक दशलक्षण पर्व में हर दिन एक धर्म की आराधना होती है।",
@@ -284,6 +433,65 @@
       },
       {
         "book": "dashlakshan-pooja",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "uttam-kshama",
+    "q": {
+      "hi": "उत्तम क्षमा क्या है?",
+      "en": "What is uttam kshama?"
+    },
+    "also": [
+      "uttam kshama",
+      "उत्तम क्षमा",
+      "kshama dharma",
+      "क्षमा धर्म",
+      "supreme forgiveness",
+      "forgiveness in jainism"
+    ],
+    "a": {
+      "hi": "उत्तम क्षमा दस धर्मों में पहला है: कोई अपमान करे, सताए या चोट पहुँचाए, तब भी मन में क्रोध न आने देना और विवेक से क्षमा रखना। 'उत्तम' का अर्थ है कि यह क्षमा सम्यग्दर्शन सहित हो, डर, कमज़ोरी या प्रशंसा पाने के लिए नहीं। पं. द्यानतराय की दशलक्षण पूजा कहती है कि दुष्ट लोग बाँधें और मारें, तब भी क्रोध न करके विवेक से क्षमा धारण करो।",
+      "en": "Uttam kshama is the first of the ten dharmas: not letting anger arise even when someone insults, troubles or hurts you, and holding on to forgiveness with understanding. 'Uttam' means the forgiveness comes with right faith, not out of fear, weakness or a wish for praise. Pt. Dyanatray's Dashlakshan Pooja says that even if wicked people bind and beat you, do not grow angry; hold to forgiveness with discernment."
+    },
+    "sources": [
+      {
+        "book": "dashlakshan-pooja",
+        "find": "धरिये छिमा विवेक",
+        "pos": 11
+      },
+      {
+        "book": "tattvarth-sutra",
+        "find": "उत्तमक्षमामार्दवार्जव",
+        "pos": 307
+      }
+    ]
+  },
+  {
+    "id": "paryushan",
+    "q": {
+      "hi": "दसलक्षण पर्व (पर्युषण) क्या है?",
+      "en": "What is Das Lakshan Parv (Paryushan)?"
+    },
+    "also": [
+      "paryushan",
+      "पर्युषण",
+      "das lakshan parv",
+      "dashlakshan parv",
+      "दसलक्षण पर्व",
+      "दशलक्षण पर्व",
+      "ananta chaturdashi",
+      "अनंत चतुर्दशी"
+    ],
+    "a": {
+      "hi": "दिगम्बर परम्परा में दसलक्षण पर्व भाद्रपद शुक्ल पंचमी से चतुर्दशी (अनंत चतुर्दशी) तक दस दिन मनाया जाता है। हर दिन एक धर्म की आराधना होती है: उत्तम क्षमा, मार्दव, आर्जव, शौच, सत्य, संयम, तप, त्याग, आकिंचन्य और ब्रह्मचर्य। इन दिनों दशलक्षण पूजा, स्वाध्याय, उपवास और संयम किए जाते हैं, और अंत में क्षमावाणी पर सबसे क्षमा माँगी जाती है। श्वेताम्बर परम्परा में आठ दिन का पर्युषण संवत्सरी पर पूरा होता है।",
+      "en": "In the Digambar tradition, Das Lakshan Parv is kept for ten days, from Bhadrapad Shukla Panchami to Chaturdashi (Ananta Chaturdashi). Each day honours one dharma: uttam kshama, mardav, arjav, shauch, satya, sanyam, tap, tyag, akinchanya and brahmacharya. People do the Dashlakshan Pooja, swadhyay, fasting and restraint, and at the end ask everyone's forgiveness on Kshamavani. In the Shvetambar tradition, Paryushan lasts eight days and ends with Samvatsari."
+    },
+    "sources": [
+      {
+        "book": "dashlakshan-pooja",
+        "find": "उत्तम क्षमा मारदव आरजव",
         "pos": 1
       }
     ]
@@ -372,6 +580,38 @@
     ]
   },
   {
+    "id": "parishah",
+    "q": {
+      "hi": "बाईस परीषह क्या हैं?",
+      "en": "What are the twenty-two parishah?"
+    },
+    "also": [
+      "parishah",
+      "परीषह",
+      "परिषह",
+      "22 parishah",
+      "बाईस परिषह",
+      "hardships of monks",
+      "parishah jay"
+    ],
+    "a": {
+      "hi": "परीषह वे कष्ट हैं जिन्हें मुनि बिना विचलित हुए समता से सहते हैं, ताकि मार्ग से न डिगें और कर्मों की निर्जरा हो। तत्त्वार्थसूत्र में बाईस गिनाए गए हैं: भूख, प्यास, सर्दी, गर्मी, डांस-मच्छर, नग्नता, अरति, स्त्री, चलना (चर्या), बैठना (निषद्या), सोना (शय्या), कठोर वचन (आक्रोश), मार (वध), याचना न करना, अलाभ, रोग, तृण-स्पर्श, मल, सत्कार-पुरस्कार, प्रज्ञा, अज्ञान और अदर्शन। आर्यिका ज्ञानमती जी ने इन पर 'बाईस परीषह' भी लिखा है।",
+      "en": "Parishah are the hardships that monks bear calmly, without wavering, so that they do not slip from the path and so that karma is shed. The Tattvarth Sutra lists twenty-two: hunger, thirst, cold, heat, insect bites, nakedness, discontent, women, walking, sitting, lying down, harsh words, being struck, not begging, not receiving food, illness, the prick of grass and thorns, dirt, honour or its lack, pride of learning, ignorance, and keeping faith when no special attainment appears. Aryika Gyanmati has also written the 'Baees Parishah' on them."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "क्षुत्पिपासाशीतोष्ण",
+        "pos": 310
+      },
+      {
+        "book": "baees-parishah",
+        "find": "द्वाविंशति परिषह",
+        "pos": 1
+      }
+    ]
+  },
+  {
     "id": "night-meal",
     "q": {
       "hi": "जैन रात्रि भोजन क्यों नहीं करते?",
@@ -419,6 +659,34 @@
         "book": "purusharthasiddhyupay",
         "find": "कन्दमूलादिक",
         "pos": 159
+      }
+    ]
+  },
+  {
+    "id": "filtered-water",
+    "q": {
+      "hi": "जैन पानी छानकर क्यों पीते हैं?",
+      "en": "Why do Jains drink filtered water?"
+    },
+    "also": [
+      "filtered water",
+      "छना पानी",
+      "पानी छानना",
+      "pani chhan ke",
+      "jal galan",
+      "jivani",
+      "जीवानी",
+      "boiled water"
+    ],
+    "a": {
+      "hi": "पानी में बहुत छोटे-छोटे जीव होते हैं और जल्दी-जल्दी उत्पन्न होते रहते हैं। सम्यक्त्व कौमुदी कहती है कि श्रावक को छना हुआ जल पीना चाहिए, और हर दो घड़ी (लगभग 48 मिनट) के भीतर फिर से छानना चाहिए, क्योंकि उसके बाद जल में फिर जीव उत्पन्न हो जाते हैं। मोटे, साफ़ कपड़े से छानते हैं, और कपड़े पर रुके जीवों (जीवानी) को सावधानी से उसी जल-स्रोत में वापस छोड़ते हैं। यह अहिंसा का रोज़ का अभ्यास है।",
+      "en": "Water holds tiny living beings, and new ones keep arising in it. The Samyaktva Kaumudi says a householder should drink filtered water, and filter it again within every two ghadis (about 48 minutes), since beings arise in it again after that. Water is filtered through a thick, clean cloth, and the beings caught in it (the jivani) are gently returned to the same source of water. It is a daily practice of ahimsa."
+    },
+    "sources": [
+      {
+        "book": "samyaktva-kaumudi",
+        "find": "छना हुआ जल पीना चाहिए",
+        "pos": 175
       }
     ]
   },
@@ -495,6 +763,94 @@
     ]
   },
   {
+    "id": "solah-karan",
+    "q": {
+      "hi": "सोलह कारण भावनाएँ क्या हैं?",
+      "en": "What are the sixteen bhavanas (solah karan) of a Tirthankar?"
+    },
+    "also": [
+      "solah karan",
+      "सोलह कारण",
+      "16 bhavana",
+      "सोलह भावना",
+      "how to become tirthankar",
+      "तीर्थंकर कैसे बनते",
+      "darshan vishuddhi",
+      "दर्शन विशुद्धि",
+      "how to become a tirthankar"
+    ],
+    "a": {
+      "hi": "तत्त्वार्थसूत्र कहता है कि इन सोलह भावनाओं से तीर्थंकर प्रकृति का बन्ध होता है: दर्शनविशुद्धि, विनय, शील-व्रतों में दोष न लगाना, निरन्तर ज्ञान में लगना, संवेग, शक्ति अनुसार त्याग, शक्ति अनुसार तप, साधु-समाधि, वैयावृत्त्य (सेवा), अरिहंत-भक्ति, आचार्य-भक्ति, बहुश्रुत (उपाध्याय) भक्ति, प्रवचन (शास्त्र) भक्ति, आवश्यकों का पालन, मार्ग-प्रभावना और प्रवचन-वात्सल्य। इनमें दर्शनविशुद्धि सबसे आवश्यक है। इनकी आराधना सोलहकारण पूजा और व्रत से होती है।",
+      "en": "The Tattvarth Sutra says these sixteen reflections bind the karma of becoming a Tirthankar: purity of right faith (darshan vishuddhi), humility, keeping vows without fault, constant study, longing for liberation, giving and austerity as far as one is able, helping monks stay at peace, serving them, devotion to the Arihants, to the Acharyas, to the learned Upadhyayas and to the scriptures, not neglecting the daily duties, spreading the path, and loving fellow followers. Purity of right faith is the most essential. They are honoured in the Solahkaran Pooja and fast."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "दर्शनविशुद्धिर्विनयसम्पन्नता",
+        "pos": 233
+      },
+      {
+        "book": "solahkaran-pooja",
+        "find": "सोलह कारण भाय",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "parshvanath",
+    "q": {
+      "hi": "भगवान पार्श्वनाथ कौन थे?",
+      "en": "Who was Bhagwan Parshvanath?"
+    },
+    "also": [
+      "parshvanath",
+      "पार्श्वनाथ",
+      "parasnath",
+      "पारसनाथ",
+      "23rd tirthankar",
+      "kamath",
+      "कमठ",
+      "dharanendra padmavati"
+    ],
+    "a": {
+      "hi": "भगवान पार्श्वनाथ तेईसवें तीर्थंकर हैं। उनका जन्म वाराणसी में राजा अश्वसेन और रानी वामादेवी के यहाँ हुआ। कुमार अवस्था में उन्होंने एक तपस्वी की आग में जलती लकड़ी से नाग-नागिन को बचाने का प्रयास किया। मुनि बनने पर कमठ के जीव (संवर देव) ने दस जन्मों के बैर से भयंकर उपसर्ग किया; धरणेन्द्र-पद्मावती ने रक्षा की, और भगवान समता में रहे और केवलज्ञान पाया। उन्होंने सम्मेद शिखर से मोक्ष पाया, इसलिए वह पर्वत पारसनाथ कहलाता है।",
+      "en": "Bhagwan Parshvanath is the twenty-third Tirthankar. He was born in Varanasi to King Ashvasen and Queen Vamadevi. As a prince he tried to save a snake couple burning inside a log in an ascetic's fire. After he became a monk, the soul of Kamath, now the god Samvar, attacked him fiercely out of a hatred ten births old; Dharanendra and Padmavati sheltered him, and he stayed calm and attained omniscience. He attained moksha from Sammed Shikhar, which is why that mountain is called Parasnath."
+    },
+    "sources": [
+      {
+        "book": "parshvanath-kamath",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "neminath",
+    "q": {
+      "hi": "भगवान नेमिनाथ कौन थे?",
+      "en": "Who was Bhagwan Neminath?"
+    },
+    "also": [
+      "neminath",
+      "नेमिनाथ",
+      "nemi",
+      "rajul",
+      "राजुल",
+      "rajmati",
+      "22nd tirthankar",
+      "girnar"
+    ],
+    "a": {
+      "hi": "भगवान नेमिनाथ बाईसवें तीर्थंकर हैं, शौरीपुर के राजा समुद्रविजय और रानी शिवादेवी के पुत्र, और श्रीकृष्ण के चचेरे भाई। उनका विवाह राजा उग्रसेन की पुत्री राजुल (राजमती) से तय हुआ। बारात में उन्होंने भोज के लिए बाड़े में बंद पशुओं की पुकार सुनी, सबको छुड़वाया और रथ मोड़कर गिरनार पर दिगम्बर दीक्षा ले ली। राजुल ने भी आर्यिका दीक्षा ली। गिरनार पर ही भगवान को केवलज्ञान और मोक्ष प्राप्त हुआ।",
+      "en": "Bhagwan Neminath is the twenty-second Tirthankar, son of King Samudravijay and Queen Shivadevi of Shauripur, and cousin of Shri Krishna. His marriage was arranged with Rajul (Rajmati), daughter of King Ugrasen. On the way to the wedding he heard the cries of animals penned for the feast, had them all set free, turned his chariot back and became a Digambar monk on Girnar. Rajul too became an aryika. On Girnar he attained omniscience and moksha."
+    },
+    "sources": [
+      {
+        "book": "neminath-rajul",
+        "pos": 1
+      }
+    ]
+  },
+  {
     "id": "mahavir",
     "q": {
       "hi": "भगवान महावीर कौन थे?",
@@ -537,6 +893,34 @@
     "sources": [
       {
         "book": "akshay-tritiya",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "bahubali",
+    "q": {
+      "hi": "बाहुबली (गोम्मटेश्वर) कौन थे?",
+      "en": "Who was Bahubali (Gommateshwar)?"
+    },
+    "also": [
+      "bahubali",
+      "बाहुबली",
+      "gommateshwar",
+      "गोम्मटेश्वर",
+      "shravanabelagola",
+      "श्रवणबेलगोला",
+      "bharat bahubali",
+      "mahamastakabhishek",
+      "gommateshwar statue"
+    ],
+    "a": {
+      "hi": "बाहुबली प्रथम तीर्थंकर ऋषभदेव और रानी सुनन्दा के पुत्र थे। राज्य को लेकर बड़े भाई भरत से विवाद हुआ, तो सेनाओं की जगह दोनों भाइयों में दृष्टि, जल और मल्ल युद्ध हुए, और तीनों में बाहुबली जीते। जीतकर उन्हें वैराग्य हुआ; उन्होंने दिगम्बर दीक्षा ली और एक वर्ष तक कायोत्सर्ग में खड़े रहे, यहाँ तक कि बेलें शरीर पर चढ़ गईं, और फिर केवलज्ञान पाया। श्रवणबेलगोला में लगभग 981 ईस्वी में चामुण्डराय ने उनकी एक ही पत्थर की विशाल प्रतिमा बनवाई।",
+      "en": "Bahubali was the son of the first Tirthankar, Rishabhdev, and Queen Sunanda. When he and his elder brother Bharat quarrelled over the kingdom, the two fought three contests instead of a war, of the eyes, of water and of wrestling, and Bahubali won all three. Victory filled him with detachment; he became a Digambar monk and stood in kayotsarga for a year, until vines climbed his body, and then attained omniscience. Around 981 CE, Chamundaray had his great monolithic statue made at Shravanabelagola."
+    },
+    "sources": [
+      {
+        "book": "bahubali",
         "pos": 1
       }
     ]
@@ -585,6 +969,101 @@
       {
         "book": "deepawali-poojan",
         "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "rakshabandhan",
+    "q": {
+      "hi": "जैन रक्षाबन्धन क्यों मनाते हैं?",
+      "en": "Why do Jains celebrate Rakshabandhan?"
+    },
+    "also": [
+      "rakshabandhan",
+      "रक्षाबन्धन",
+      "रक्षाबंधन",
+      "rakhi",
+      "राखी",
+      "vishnukumar muni",
+      "विष्णुकुमार",
+      "akampanacharya"
+    ],
+    "a": {
+      "hi": "हस्तिनापुर में मंत्री बलि ने अकम्पनाचार्य और सात सौ मुनियों को घेरकर भयंकर उपसर्ग किया। तब विक्रिया ऋद्धि के धारी विष्णुकुमार महामुनि ने वात्सल्य से वह उपसर्ग दूर किया। वह दिन श्रावण शुक्ल पूर्णिमा था; श्रावकों ने मुनियों की सेवा की और घर-घर मंगल मनाया। इसलिए जैन इस दिन मुनि-रक्षा और धर्म के प्रति वात्सल्य को याद करते हैं, रक्षाबन्धन पूजा करते हैं और एक-दूसरे की रक्षा का संकल्प लेते हैं।",
+      "en": "In Hastinapur, the minister Bali surrounded Akampanacharya and seven hundred monks and subjected them to a terrible ordeal. Vishnukumar Mahamuni, who had the power to change his form, ended it out of love for his fellow monks. That day was Shravan Shukla Purnima; the householders served the monks and celebrated in every home. So on this day Jains remember the protection of the monks and love for dharma, perform the Rakshabandhan Pooja, and pledge to protect one another."
+    },
+    "sources": [
+      {
+        "book": "vishnukumar",
+        "pos": 1
+      },
+      {
+        "book": "rakshabandhan-pooja",
+        "find": "श्रावण शुक्ल पूर्णिमा",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "shrut-panchami",
+    "q": {
+      "hi": "श्रुत पंचमी क्या है?",
+      "en": "What is Shrut Panchami?"
+    },
+    "also": [
+      "shrut panchami",
+      "श्रुत पंचमी",
+      "श्रुतपंचमी",
+      "shatkhandagam",
+      "षट्खण्डागम",
+      "jinvani day",
+      "dharsenacharya",
+      "pushpadant bhutbali"
+    ],
+    "a": {
+      "hi": "भगवान महावीर की वाणी (जिनवाणी) पहले गुरु-शिष्य परम्परा से मुख से ही चलती थी। आचार्य धरसेन से ज्ञान पाकर मुनि पुष्पदन्त और भूतबली ने षट्खण्डागम की रचना की, जो अंकलेश्वर में ज्येष्ठ शुक्ल पंचमी को पूर्ण हुआ। उसी दिन पहली बार जिनवाणी लिपिबद्ध हुई। इसलिए इस दिन श्रुत पंचमी मनाई जाती है: शास्त्रों की सफ़ाई, पूजा और स्वाध्याय किया जाता है।",
+      "en": "Bhagwan Mahavir's teaching (Jinvani) was first passed down by word of mouth, from teacher to disciple. Having learned from Acharya Dharsen, the monks Pushpadant and Bhutbali composed the Shatkhandagam, completed at Ankleshwar on Jyeshtha Shukla Panchami. That day the Jinvani was written down for the first time. So it is kept as Shrut Panchami: the scriptures are cleaned and worshipped, and people study them."
+    },
+    "sources": [
+      {
+        "book": "shrut-panchami-pooja",
+        "find": "षट्खण्डागम रचा",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "sammed-shikhar",
+    "q": {
+      "hi": "सम्मेद शिखर जी इतना पवित्र क्यों है?",
+      "en": "Why is Sammed Shikharji so sacred?"
+    },
+    "also": [
+      "sammed shikhar",
+      "सम्मेद शिखर",
+      "shikharji",
+      "शिखरजी",
+      "parasnath parvat",
+      "nirvan kshetra",
+      "निर्वाण क्षेत्र",
+      "where did tirthankars attain moksha",
+      "importance of shikharji",
+      "why shikharji important"
+    ],
+    "a": {
+      "hi": "चौबीस में से बीस तीर्थंकरों ने सम्मेद शिखर (झारखण्ड) से निर्वाण पाया, इसलिए यह जैनों का सबसे बड़ा तीर्थ है। निर्वाण काण्ड के अनुसार बाकी चार ने अन्य स्थानों से मोक्ष पाया: ऋषभदेव ने अष्टापद (कैलाश) से, वासुपूज्य ने चम्पापुर से, नेमिनाथ ने गिरनार से और महावीर ने पावापुरी से। इन सब स्थानों को सिद्धक्षेत्र कहते हैं, और भक्त इनकी वन्दना करते हैं।",
+      "en": "Twenty of the twenty-four Tirthankars attained nirvana from Sammed Shikhar (in Jharkhand), which makes it the greatest Jain pilgrimage. The Nirvan Kand says the other four attained moksha elsewhere: Rishabhdev from Ashtapad (Kailash), Vasupujya from Champapur, Neminath from Girnar and Mahavir from Pawapuri. All these places are called siddhakshetras, and devotees go there on pilgrimage."
+    },
+    "sources": [
+      {
+        "book": "nirvan-kand",
+        "find": "शिखर सम्मेद जिनेसुर बीस",
+        "pos": 3
+      },
+      {
+        "book": "nirvan-kand",
+        "find": "अष्टापद आदीश्वर",
+        "pos": 2
       }
     ]
   },
@@ -843,6 +1322,33 @@
     ]
   },
   {
+    "id": "samaysar",
+    "q": {
+      "hi": "समयसार क्या है?",
+      "en": "What is the Samaysar?"
+    },
+    "also": [
+      "samaysar",
+      "समयसार",
+      "samayasara",
+      "samay pahud",
+      "समयप्राभृत",
+      "nishchay vyavahar",
+      "निश्चय व्यवहार"
+    ],
+    "a": {
+      "hi": "समयसार आचार्य कुन्दकुन्द का प्राकृत ग्रंथ है, जिसे वे स्वयं 'समयपाहुड' कहते हैं। 'समय' का अर्थ आत्मा है, और यह ग्रंथ आत्मा के शुद्ध स्वरूप का वर्णन करता है: आत्मा शरीर, कर्म और राग-द्वेष से भिन्न, ज्ञान-स्वभावी है। इसमें निश्चय और व्यवहार नय से तत्त्व समझाए गए हैं। आचार्य अमृतचन्द्र की टीका 'आत्मख्याति' प्रसिद्ध है, और पं. बनारसीदास ने इसी पर 'समयसार नाटक' लिखा।",
+      "en": "The Samaysar is Acharya Kundkund's Prakrit work, which he himself calls the 'Samay Pahud'. 'Samay' means the soul, and the work describes the soul's pure nature: distinct from the body, from karma and from attachment and aversion, its nature being knowing. It explains reality from both the absolute (nishchay) and practical (vyavahar) points of view. Acharya Amritchandra's commentary 'Atmakhyati' is well known, and Pt. Banarasidas wrote the 'Samaysar Natak' on it."
+    },
+    "sources": [
+      {
+        "book": "samaysar",
+        "find": "वोच्छामि समयपाहुडमिणमो",
+        "pos": 1
+      }
+    ]
+  },
+  {
     "id": "digambar-shvetambar",
     "q": {
       "hi": "दिगम्बर और श्वेताम्बर में क्या अन्तर है?",
@@ -914,6 +1420,32 @@
     "sources": [
       {
         "book": "meri-bhavana",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "chhahdhala",
+    "q": {
+      "hi": "छहढाला किसने लिखा और उसमें क्या है?",
+      "en": "Who wrote the Chhahdhala and what is in it?"
+    },
+    "also": [
+      "chhahdhala",
+      "छहढाला",
+      "chhah dhala",
+      "daulatram",
+      "दौलतराम",
+      "six dhals"
+    ],
+    "a": {
+      "hi": "छहढाला पं. दौलतराम जी की हिंदी पद्य रचना है, जिसमें छह 'ढाल' (अध्याय) हैं। यह मंगलाचरण में वीतराग विज्ञान को तीन लोक में सार बताकर, सच्चे सुख का मार्ग समझाती है: चार गतियों में भटकने का दुःख, मिथ्यात्व, सम्यग्दर्शन, सम्यग्ज्ञान और श्रावक के व्रत, बारह भावनाएँ, और मुनि-धर्म से मोक्ष। सरल होने से यह जैन धर्म सीखने का पहला ग्रंथ माना जाता है, और बहुत लोग इसे कंठस्थ करते हैं।",
+      "en": "The Chhahdhala is Pt. Daulatram's work in Hindi verse, in six 'dhals' (chapters). Opening by calling detached knowledge the essence of the three worlds, it explains the way to true happiness: the suffering of wandering through the four states of birth, wrong belief, right faith, right knowledge and a householder's vows, the twelve reflections, and liberation through a monk's dharma. Because it is so clear, it is often the first text people study, and many learn it by heart."
+    },
+    "sources": [
+      {
+        "book": "chhahdhala",
+        "find": "वीतराग विज्ञानता",
         "pos": 1
       }
     ]

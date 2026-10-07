@@ -3,7 +3,7 @@
 The app's **Ask** screen answers questions about Jain dharma in three steps, so that the AI model is
 called as rarely as possible:
 
-1. **Common questions** (`content/faq.json`, 38 questions in Hindi and English, each linked to its
+1. **Common questions** (`content/faq.json`, 56 questions in Hindi and English, each linked to its
    verse). They are answered on the phone, instantly and offline. No server, no cost.
 2. **Answers already given**, kept on the phone and in this server's shared cache (Workers KV,
    90 days). A question asked once, by anyone, in the same or similar words, is never sent to the
