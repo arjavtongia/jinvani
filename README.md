@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://arjavtongia.github.io/swadhyay/"><img alt="Open the app" src="https://img.shields.io/badge/ऐप_खोलें-Open_the_app-a3301a?style=for-the-badge"></a>
-  <img alt="Hindi and English" src="https://img.shields.io/badge/हिंदी_·_English-a8822c?style=for-the-badge">
+  <a href="https://arjavtongia.github.io/swadhyay/"><img alt="Open the app" src="https://img.shields.io/badge/Open_the_app-a3301a?style=for-the-badge"></a>
+  <img alt="Hindi and English" src="https://img.shields.io/badge/Hindi_+_English-a8822c?style=for-the-badge">
   <img alt="Works offline" src="https://img.shields.io/badge/Works_offline-7c5a14?style=for-the-badge">
   <img alt="Free" src="https://img.shields.io/badge/Free_for_everyone-5a544d?style=for-the-badge">
 </p>
