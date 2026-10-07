@@ -162,6 +162,14 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
 .chhatra { display: block; width: 4.4rem; height: auto; aspect-ratio: 132 / 86; overflow: visible; }
 .chhatra-staff { fill: var(--brass); }
 .chhatra-tiers { fill: url(#brassV); stroke: var(--brass-lo); stroke-width: 1.2; stroke-linejoin: round; }
+/* The Jain Prateek (js/ornaments.js) in sindoor; its cuts take the page colour, as on the app icon. */
+.prateek { display: block; width: auto; overflow: visible; aspect-ratio: 108 / 156.5; }
+.prateek-ink { stroke: var(--sindoor); }
+.prateek-fill { fill: var(--sindoor); }
+.prateek-cut { stroke: var(--bg); }
+.prateek-hub { fill: var(--bg); }
+/* An icon from the pack standing in a niche, for the home's ways in. */
+.niche > .icon.niche-pack { width: 1.9rem; height: 1.9rem; bottom: 0.4rem; color: var(--text); }
 .dhwaja-pole { stroke: var(--brass); stroke-width: 1.6; stroke-linecap: round; fill: none; }
 .dhwaja-flag { fill: var(--sindoor); }
 .dhwaja-top { fill: var(--brass); }
@@ -300,7 +308,7 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
 /* ---------- Welcome ---------- */
 
 .welcome { display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 0.9rem; min-height: 92vh; text-align: center; }
-.welcome .chhatra { width: 5rem; margin: 0 auto; }
+.welcome .prateek { height: 4.4rem; margin: 0 auto; }
 .welcome-greet { margin: 0; font: 900 1.6rem/1.2 var(--font-head); }
 .welcome-q { display: flex; flex-direction: column; margin: 0.4rem 0 0.4rem; font: 400 var(--fs-body)/1.5 var(--font-ui); color: var(--muted); }
 .lang-btn { min-height: 4rem; font-size: 1.4rem; }
@@ -308,13 +316,13 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
 
 /* ---------- Home ---------- */
 
-/* The chhatra crowns the home between the name and the language button, right over the greeting.
+/* The Jain Prateek crowns the home between the name and the language button, right over the greeting.
    With large text the row has no room left for it, so it steps down to a line of its own. */
 .home-head { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 0.2rem 0.5rem; padding-top: calc(0.4rem + env(safe-area-inset-top)); container-type: inline-size; }
 .home-head .brand { justify-self: start; }
-.home-head .chhatra { grid-column: 2; grid-row: 1; align-self: end; width: 2.9rem; }
+.home-head .prateek { grid-column: 2; grid-row: 1; align-self: end; height: 2.35rem; }
 .home-head .btn { grid-column: 3; grid-row: 1; justify-self: end; }
-@container (max-width: 15rem) { .home-head .chhatra { grid-column: 1 / -1; grid-row: 2; justify-self: center; } }
+@container (max-width: 15rem) { .home-head .prateek { grid-column: 1 / -1; grid-row: 2; justify-self: center; } }
 .brand { font: 700 1rem/1 var(--font-head); color: var(--brass-text); letter-spacing: 0.01em; }
 .today { text-align: center; }
 .greet { margin: 0.3rem 0 0; font: 900 1.25rem/1.15 var(--font-head); text-align: center; }

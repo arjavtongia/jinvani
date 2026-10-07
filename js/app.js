@@ -737,7 +737,7 @@
 
   function viewWelcome() {
     document.title = STRINGS.hi.appName + ' · ' + STRINGS.en.appName;
-    return '<main class="welcome">' + ORN.chhatra() +
+    return '<main class="welcome">' + ORN.prateek() +
       '<p class="welcome-greet" translate="no" lang="hi">जय जिनेन्द्र</p>' +
       '<h1 class="welcome-q"><span translate="no" lang="hi">भाषा चुनें</span><span translate="no" lang="en">Choose language</span></h1>' +
       LANGS.map((l, i) => '<button class="btn lang-btn' + (i === 0 ? ' btn-primary' : '') + '" data-action="pick-lang" data-lang="' + l.code + '" translate="no" lang="' + l.code + '">' + esc(l.name) + '</button>').join('') +
@@ -872,15 +872,15 @@
     };
     const items = [
       has('nitya') && { href: '#/books/nitya', emblem: { category: 'nitya' }, title: t('pathNitya'), sub: t('pathNityaSub') },
-      count('pooja') && { href: '#/books/group/pooja', emblem: { category: 'aarti' }, title: t('pathPooja'), sub: t('pathPoojaSub', { n: count('pooja') }) },
+      count('pooja') && { href: '#/books/group/pooja', icon: 'diya', title: t('pathPooja'), sub: t('pathPoojaSub', { n: count('pooja') }) },
       count('path') && { href: '#/books/group/path', emblem: { category: 'stotra' }, title: t('pathPath'), sub: t('pathPathSub', { n: count('path') }) },
       count('granth') && { href: '#/books/group/granth', emblem: { id: 'tattvarth-sutra' }, title: t('pathGranth'), sub: t('pathGranthSub', { n: count('granth') }) },
       has('katha') && { href: '#/books/katha', emblem: { category: 'katha' }, title: t('pathKatha'), sub: t('pathKathaSub', { n: count('katha') }) },
-      has('vidhi') && { href: '#/books/vidhi', emblem: { id: 'mandir-darshan' }, title: t('pathVidhi'), sub: t('pathVidhiSub') },
+      has('vidhi') && { href: '#/books/vidhi', icon: 'temple', title: t('pathVidhi'), sub: t('pathVidhiSub') },
       { href: '#/saved', emblem: { id: 'saved' }, title: t('saved'), sub: state.bookmarks.length ? t('savedCount', { n: state.bookmarks.length }) : t('pathSavedNone') }
     ].filter(Boolean);
     return '<ul class="paths">' + items.map(it =>
-      '<li><a class="path" href="' + it.href + '">' + coverEmblem(it.emblem) +
+      '<li><a class="path" href="' + it.href + '">' + (it.icon ? nicheHtml(icon(it.icon, 'niche-pack')) : coverEmblem(it.emblem)) +
       '<span class="path-main"><b>' + esc(it.title) + '</b><small>' + esc(it.sub) + '</small></span>' +
       icon('chevron-right', 'row-chev') + '</a></li>').join('') + '</ul>';
   }
@@ -889,7 +889,7 @@
     document.title = t('appName');
     await getCatalog();
     const other = LANGS.find(l => l.code !== state.lang) || LANGS[0];
-    let html = '<header class="home-head"><span class="brand" translate="no" lang="hi">' + esc(STRINGS.hi.appName) + '</span>' + ORN.chhatra() +
+    let html = '<header class="home-head"><span class="brand" translate="no" lang="hi">' + esc(STRINGS.hi.appName) + '</span>' + ORN.prateek() +
       (state.locked ? '' : '<button class="btn btn-small" data-action="switch-lang" data-lang="' + other.code + '" translate="no" lang="' + other.code + '">' +
         icon('language') + '<span>' + esc(other.name) + '</span></button>') +
       '</header><main class="home"><h1 class="greet">' + esc(t('greeting')) + '</h1>' +

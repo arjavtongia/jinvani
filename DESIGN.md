@@ -347,7 +347,7 @@ Hairline-separated list rows at least 48px tall, an arch-topped emblem niche at 
 Seven arch-topped day niches: weekday label above, date in Vesper 700. Today is lit with a brass border and a brass wash fading downward; a selected day takes an inset brass ring; ashtami, chaturdashi and festivals carry a small sindoor dhwaja planted on the niche's arch.
 
 ### Ornaments
-Chhatra (three-tier umbrella, the same drawing as the darshan) over the greeting, page heads and loading; on home it crowns the header between the name and the language button, and drops to a line of its own when large text leaves no room; dhwaja for parva days; brass rule with lozenge between home sections; progress trail as a hairline gilded to your place with a sindoor lozenge on it.
+Chhatra (three-tier umbrella, the same drawing as the darshan) over page heads and loading. The Jain Prateek in sindoor (the app icon's emblem, `ORN.prateek`) stands over जय जिनेन्द्र on the welcome screen and crowns the home header between the name and the language button, dropping to a line of its own when large text leaves no room. On home, the poojas and the temple guides use the diya and temple icons from the icon pack in their niches; dhwaja for parva days; brass rule with lozenge between home sections; progress trail as a hairline gilded to your place with a sindoor lozenge on it.
 
 ### Chitra (explanatory diagrams)
 Lists, flows (brass chevrons between steps), stacks (brass wash deepening with depth), sums (outlined boxes and a Vesper operator), and trees (sindoor root, brass-topped branches); numbered sindoor badges mark steps. Each sits under a brass hairline with a Vesper title.

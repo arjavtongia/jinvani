@@ -105,8 +105,23 @@ const ORN = (function () {
   }
 
   /* The masks are data URIs, so they are made once and handed to the stylesheet. */
+  /* The Jain Prateek, the emblem on the app icon (drawn the same way in tools/make_icons.py), in sindoor:
+     the loka, siddhashila and siddha, ratnatraya, swastik, and the hand of ahimsa with the chakra. */
+  function prateek(cls) {
+    return '<svg class="prateek' + (cls ? ' ' + cls : '') + '" viewBox="-4 -4 108 156.5" aria-hidden="true" focusable="false">' +
+      '<g class="prateek-ink" fill="none" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M50 0H64L82.4 35.4L67.1 73.5L100 148.5H0L32.9 73.5L17.6 35.4L36 0Z" stroke-width="5"/>' +
+      '<path d="M36 0A14 12.5 0 0 0 64 0" stroke-width="4.2"/>' +
+      '<path d="M50 34.5V59.5M37.5 47H62.5M50 34.5H62.5M62.5 47V59.5M50 59.5H37.5M37.5 47V34.5" stroke-width="4.4" stroke-linecap="square" stroke-linejoin="miter"/>' +
+      '<path d="M41.52 111.12L41.52 87.92M48.88 111.12L48.88 83.02M56.25 111.12L56.25 85.25M63.61 111.12L63.61 91.05" stroke-width="7.3"/><path d="M38.85 122.72L31.26 107.55" stroke-width="7.7"/></g>' +
+      '<g class="prateek-fill"><circle cx="50" cy="6.45" r="2"/><circle cx="39" cy="20" r="2.2"/><circle cx="50" cy="20" r="2.2"/><circle cx="61" cy="20" r="2.2"/>' +
+      '<rect x="37.86" y="101.31" width="29.4" height="30.34" rx="12.05"/></g>' +
+      '<g class="prateek-cut" fill="none"><path d="M45.18 89.71L45.18 105.77M52.54 88.82L52.54 105.77M59.9 92.38L59.9 105.77" stroke-width="1"/><circle cx="52.68" cy="120.05" r="7.81" stroke-width="1.4"/></g>' +
+      '<circle class="prateek-hub" cx="52.68" cy="120.05" r="2.23"/></svg>';
+  }
+
   const root = document.documentElement.style;
   root.setProperty('--pic-mask', picMask(8));
 
-  return { crown: crown, sides: sides, picFrame: picFrame, chhatra: chhatra, dhwaja: dhwaja, rule: rule };
+  return { crown: crown, sides: sides, picFrame: picFrame, chhatra: chhatra, prateek: prateek, dhwaja: dhwaja, rule: rule };
 })();
