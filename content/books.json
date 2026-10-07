@@ -144,5 +144,3704 @@
       "hi": "स्रोत: 'जैन परम्परा में दीपावली पूजन विधि', संकलन बा.ब्र. रोहित भैया (मुनि श्री संधानसागर जी), प्रकाशक निर्ग्रन्थ फाउंडेशन, भोपाल। पूजन के पाठ परम्परागत हैं: श्री महावीर जिनपूजा कविवर वृन्दावन की, सरस्वती पूजा और आरती कविवर द्यानतराय की, निर्वाण-काण्ड भैया भगवतीदास (संवत 1741) का। तैयारी और विधि वाले चरण इसी ऐप के लिए अपने शब्दों में लिखे गए हैं।",
       "en": "Source: 'Jain Parampara Mein Deepawali Poojan Vidhi', compiled by Bal Brahmachari Rohit Bhaiya (Muni Shri Sandhansagar ji), published by Nirgranth Foundation, Bhopal. The pooja texts are traditional: Shri Mahavir Jin Pooja by Kavivar Vrindavan, Saraswati Pooja and the aarti by Kavivar Dyanatray, and Nirvan Kand by Bhaiya Bhagwatidas (samvat 1741). The preparation and method steps were written for this app."
     }
+  },
+  {
+    "id": "mangalashtak",
+    "file": "content/pooja/mangalashtak.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "मंगलाष्टक स्तोत्र", "en": "Mangalashtak Stotra" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["arhanto bhagvant", "mangalashtak", "mangalashtak stotra"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "darshan-path-budhjan",
+    "file": "content/pooja/darshan-path-budhjan.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "दर्शन पाठ — तुम निरखत मुझको मिली", "en": "Darshan Path — Tum Nirkhat Mujhko Mili" },
+    "author": { "hi": "पंडित बुधजन", "en": "Pandit Budhjan" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["darshan path — tum nirkhat mujhko mili", "tum nirkhat"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "darshan-path-ati-punya",
+    "file": "content/pooja/darshan-path-ati-punya.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "दर्शन पाठ — अति पुण्य उदय मम आया", "en": "Darshan Path — Ati Punya Uday" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 12,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["ati punya uday", "darshan path — ati punya uday"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "prakshal-vidhi",
+    "file": "content/pooja/prakshal-vidhi.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "प्रतिमा प्रक्षाल विधि पाठ", "en": "Pratima Prakshal Vidhi" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 16,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["prakshal", "pratima prakshal", "pratima prakshal vidhi"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "abhishek-path-bhasha",
+    "file": "content/pooja/abhishek-path-bhasha.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "अभिषेक पाठ (भाषा)", "en": "Abhishek Path (Hindi)" },
+    "author": { "hi": "पंडित हरजसराय", "en": "Pandit Harjasray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 21,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["abhishek", "abhishek path (hindi)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "abhishek-path-laghu",
+    "file": "content/pooja/abhishek-path-laghu.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "अभिषेक पाठ (लघु)", "en": "Abhishek Path (short)" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["abhishek", "abhishek path (short)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhajan-maine-prabhuji",
+    "file": "content/pooja/bhajan-maine-prabhuji.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "मैंने प्रभुजी के चरण पखारे", "en": "Maine Prabhuji Ke Charan" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["abhishek bhajan", "maine prabhuji ke charan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhajan-amrit-se-gagri",
+    "file": "content/pooja/bhajan-amrit-se-gagri.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "अमृत से गगरी भरो", "en": "Amrit Se Gagri Bharo" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["abhishek bhajan", "amrit se gagri bharo"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhajan-mahavir-moongavarni",
+    "file": "content/pooja/bhajan-mahavir-moongavarni.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "महावीर की मूंगावरणी", "en": "Mahavir Ki Moongavarni" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["abhishek bhajan", "mahavir ki moongavarni"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vinay-path",
+    "file": "content/pooja/vinay-path.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "विनय पाठ दोहावली", "en": "Vinay Path" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 22,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["iha vidhi thado", "vinay path"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vinay-path-laghu",
+    "file": "content/pooja/vinay-path-laghu.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "विनय पाठ (लघु)", "en": "Vinay Path (short)" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["vinay path", "vinay path (short)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mangal-path-pooja",
+    "file": "content/pooja/mangal-path-pooja.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "मंगल पाठ", "en": "Mangal Path" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["mangal path"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhajan-main-thane-poojan",
+    "file": "content/pooja/bhajan-main-thane-poojan.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "मैं थाने पूजन आयो", "en": "Main Thane Poojan Aayo" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 6,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bhajan", "main thane poojan aayo"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "pooja-prarambh",
+    "file": "content/pooja/pooja-prarambh.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "पूजा विधि प्रारंभ", "en": "Opening of the pooja" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["namostu", "om jai jai jai", "opening of the pooja", "pooja prarambh"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "arghya-prarambh",
+    "file": "content/pooja/arghya-prarambh.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "पूजा प्रारंभ के अर्घ्य", "en": "Opening arghyas" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 3,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["argh", "arghya", "opening arghyas"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "swasti-mangal",
+    "file": "content/pooja/swasti-mangal.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "स्वस्ति मंगल विधान", "en": "Swasti Mangal Vidhan" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 5,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["swasti", "swasti mangal", "swasti mangal vidhan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "swasti-mangal-hindi",
+    "file": "content/pooja/swasti-mangal-hindi.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "स्वस्ति मंगल विधान (हिंदी)", "en": "Swasti Mangal Vidhan (Hindi)" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["swasti mangal", "swasti mangal vidhan (hindi)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chaturvinshati-swasti",
+    "file": "content/pooja/chaturvinshati-swasti.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "चतुर्विंशति तीर्थंकर स्वस्ति विधान", "en": "Chaturvinshati Tirthankar Swasti" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 1,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["chaturvinshati tirthankar swasti", "swasti"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "paramarshi-swasti",
+    "file": "content/pooja/paramarshi-swasti.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "परमर्षि स्वस्ति मंगल विधान", "en": "Paramarshi Swasti Mangal Vidhan" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["paramarshi swasti", "paramarshi swasti mangal vidhan", "swasti"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "stuti-budhjan",
+    "file": "content/pooja/stuti-budhjan.txt",
+    "scroll": true,
+    "category": "pooja-prarambh",
+    "title": { "hi": "स्तुति", "en": "Stuti" },
+    "author": { "hi": "पंडित बुधजन", "en": "Pandit Budhjan" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["stuti"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dev-shastra-guru-yugal",
+    "file": "content/pooja/dev-shastra-guru-yugal.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "देव-शास्त्र-गुरु पूजा — केवल-रवि किरणों से", "en": "Dev Shastra Guru Pooja — Keval Ravi Kirnon Se" },
+    "author": { "hi": "पंडित जुगलकिशोर 'युगल'", "en": "Pandit Jugalkishore 'Yugal'" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 37,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["dev shastra guru", "dev shastra guru pooja — keval ravi kirnon se", "keval ravi"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dev-shastra-guru-dyanat",
+    "file": "content/pooja/dev-shastra-guru-dyanat.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "देव-शास्त्र-गुरु पूजा — प्रथम देव अरहंत", "en": "Dev Shastra Guru Pooja — Pratham Dev Arhant" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 29,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["dev shastra guru", "dev shastra guru pooja — pratham dev arhant", "pratham dev arhant"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dev-shastra-guru-bharill",
+    "file": "content/pooja/dev-shastra-guru-bharill.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "देव-शास्त्र-गुरु पूजा", "en": "Dev Shastra Guru Pooja" },
+    "author": { "hi": "डॉ. हुकमचंद भारिल्ल", "en": "Dr. Hukamchand Bharill" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 13,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["dev shastra guru", "dev shastra guru pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dev-shastra-guru-ravindra",
+    "file": "content/pooja/dev-shastra-guru-ravindra.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "देव-शास्त्र-गुरु पूजा", "en": "Dev Shastra Guru Pooja" },
+    "author": { "hi": "ब्र. रवीन्द्र 'आत्मन्'", "en": "Br. Ravindra 'Atman'" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 23,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["dev shastra guru", "dev shastra guru pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dev-shastra-guru-pavaiya",
+    "file": "content/pooja/dev-shastra-guru-pavaiya.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "देव-शास्त्र-गुरु पूजा", "en": "Dev Shastra Guru Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 22,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["dev shastra guru", "dev shastra guru pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samuchchay-pooja",
+    "file": "content/pooja/samuchchay-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "समुच्चय पूजा", "en": "Samuchchay Pooja" },
+    "author": { "hi": "ब्रह्मचारी सरदारमल", "en": "Brahmachari Sardarmal" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 16,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["samuchay pooja", "samuchchay pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "panch-parmeshthi-pooja",
+    "file": "content/pooja/panch-parmeshthi-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "पंच परमेष्ठी पूजा", "en": "Panch Parmeshthi Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 17,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["panch parmeshthi", "panch parmeshthi pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "navdevta-pooja-pavaiya",
+    "file": "content/pooja/navdevta-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "नवदेवता पूजा", "en": "Navdevta Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["nav devta", "navdevta", "navdevta pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "navdevta-pooja-gyanmati",
+    "file": "content/pooja/navdevta-pooja-gyanmati.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "नवदेवता पूजा", "en": "Navdevta Pooja" },
+    "author": { "hi": "आर्यिका ज्ञानमती", "en": "Aryika Gyanmati" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 22,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["nav devta", "navdevta", "navdevta pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "siddh-pooja-pavaiya",
+    "file": "content/pooja/siddh-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सिद्ध पूजा", "en": "Siddh Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 23,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["siddh pooja", "siddha pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "siddh-pooja-bharill",
+    "file": "content/pooja/siddh-pooja-bharill.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सिद्ध पूजा", "en": "Siddh Pooja" },
+    "author": { "hi": "डॉ. हुकमचंद भारिल्ल", "en": "Dr. Hukamchand Bharill" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["siddh pooja", "siddha pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "siddh-pooja-yugal",
+    "file": "content/pooja/siddh-pooja-yugal.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सिद्ध पूजा", "en": "Siddh Pooja" },
+    "author": { "hi": "पंडित जुगलकिशोर 'युगल'", "en": "Pandit Jugalkishore 'Yugal'" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 22,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["siddh pooja", "siddha pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "siddh-pooja-hirachand",
+    "file": "content/pooja/siddh-pooja-hirachand.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सिद्ध पूजा", "en": "Siddh Pooja" },
+    "author": { "hi": "पंडित हीराचंद", "en": "Pandit Hirachand" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["siddh pooja", "siddha pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "trikal-chaubisi-pooja",
+    "file": "content/pooja/trikal-chaubisi-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "त्रिकाल चौबीसी पूजा", "en": "Trikal Chaubisi Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 18,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["trikal chaubisi", "trikal chaubisi pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chaubis-tirthankar-vrindavan",
+    "file": "content/pooja/chaubis-tirthankar-vrindavan.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "चौबीस तीर्थंकर पूजा", "en": "Chaubis Tirthankar Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["24 tirthankar", "chaubis tirthankar", "chaubis tirthankar pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chaubis-tirthankar-dyanat",
+    "file": "content/pooja/chaubis-tirthankar-dyanat.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "चौबीस तीर्थंकर पूजा", "en": "Chaubis Tirthankar Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 18,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["24 tirthankar", "chaubis tirthankar", "chaubis tirthankar pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "anant-tirthankar-pooja",
+    "file": "content/pooja/anant-tirthankar-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "अनंत तीर्थंकर पूजा", "en": "Anant Tirthankar Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 34,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["anant tirthankar pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vitrag-pooja",
+    "file": "content/pooja/vitrag-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "वीतराग पूजा", "en": "Vitrag Pooja" },
+    "author": { "hi": "ब्र. रवीन्द्र 'आत्मन्'", "en": "Br. Ravindra 'Atman'" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 17,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["vitrag pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "ratnatray-pooja",
+    "file": "content/pooja/ratnatray-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "रत्नत्रय पूजा", "en": "Ratnatray Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 11,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["ratnatray pooja", "ratnatraya"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samyak-darshan-pooja",
+    "file": "content/pooja/samyak-darshan-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सम्यग्दर्शन पूजा", "en": "Samyak Darshan Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 12,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["samyagdarshan", "samyak darshan pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samyak-gyan-pooja",
+    "file": "content/pooja/samyak-gyan-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सम्यग्ज्ञान पूजा", "en": "Samyak Gyan Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 13,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["samyaggyan", "samyak gyan pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samyak-charitra-pooja",
+    "file": "content/pooja/samyak-charitra-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सम्यक्चारित्र पूजा", "en": "Samyak Charitra Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 17,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["samyak charitra pooja", "samyakcharitra"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dashlakshan-pooja",
+    "file": "content/pooja/dashlakshan-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "दशलक्षण धर्म पूजा", "en": "Dashlakshan Dharma Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 33,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["das lakshan", "dashlakshan", "dashlakshan dharma pooja", "paryushan", "uttam kshama"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "solahkaran-pooja",
+    "file": "content/pooja/solahkaran-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सोलहकारण भावना पूजा", "en": "Solahkaran Bhavana Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 34,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["16 karan", "solahkaran", "solahkaran bhavana pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "saraswati-pooja",
+    "file": "content/pooja/saraswati-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सरस्वती पूजा (जिनवाणी पूजा)", "en": "Saraswati Pooja (Jinvani Pooja)" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 17,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["jinvani pooja", "saraswati", "saraswati pooja (jinvani pooja)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "simandhar-pooja-pavaiya",
+    "file": "content/pooja/simandhar-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सीमंधर भगवान पूजा", "en": "Simandhar Bhagwan Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["seemandhar", "simandhar", "simandhar bhagwan pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "simandhar-pooja-bharill",
+    "file": "content/pooja/simandhar-pooja-bharill.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "सीमंधर भगवान पूजा", "en": "Simandhar Bhagwan Pooja" },
+    "author": { "hi": "डॉ. हुकमचंद भारिल्ल", "en": "Dr. Hukamchand Bharill" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 11,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["seemandhar", "simandhar", "simandhar bhagwan pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bees-tirthankar-pavaiya",
+    "file": "content/pooja/bees-tirthankar-pavaiya.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "विद्यमान बीस तीर्थंकर पूजा", "en": "Vidyaman Bees Tirthankar Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 22,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["20 tirthankar", "bees tirthankar", "videh", "vidyaman bees tirthankar pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bees-tirthankar-dyanat",
+    "file": "content/pooja/bees-tirthankar-dyanat.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "विद्यमान बीस तीर्थंकर पूजा", "en": "Vidyaman Bees Tirthankar Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 16,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["20 tirthankar", "bees tirthankar", "videh", "vidyaman bees tirthankar pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bahubali-pooja-pavaiya",
+    "file": "content/pooja/bahubali-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "बाहुबली भगवान पूजा", "en": "Bahubali Bhagwan Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bahubali", "bahubali bhagwan pooja", "gommateshwar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bahubali-pooja-ravindra",
+    "file": "content/pooja/bahubali-pooja-ravindra.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "बाहुबली भगवान पूजा", "en": "Bahubali Bhagwan Pooja" },
+    "author": { "hi": "ब्र. रवीन्द्र 'आत्मन्'", "en": "Br. Ravindra 'Atman'" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bahubali", "bahubali bhagwan pooja", "gommateshwar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "panchmeru-pooja",
+    "file": "content/pooja/panchmeru-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "पंचमेरु पूजा", "en": "Panchmeru Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 16,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["panch meru", "panchmeru pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "nandishwar-pooja",
+    "file": "content/pooja/nandishwar-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "नंदीश्वर द्वीप पूजा", "en": "Nandishwar Dweep Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["ashtahnika", "ashtanhika", "nandishwar", "nandishwar dweep pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "nirvan-kshetra-pooja",
+    "file": "content/pooja/nirvan-kshetra-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "निर्वाण क्षेत्र पूजा", "en": "Nirvan Kshetra Pooja" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 15,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["nirvan kshetra", "nirvan kshetra pooja", "teerth"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chaityalay-pooja",
+    "file": "content/pooja/chaityalay-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "कृत्रिम-अकृत्रिम चैत्यालय पूजा", "en": "Kritrim-Akritrim Chaityalay Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 18,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["chaityalay", "kritrim-akritrim chaityalay pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "ashtapad-kailash-pooja",
+    "file": "content/pooja/ashtapad-kailash-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "अष्टापद कैलाश पूजा", "en": "Ashtapad Kailash Pooja" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["ashtapad", "ashtapad kailash pooja", "kailash"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "kundkund-pooja",
+    "file": "content/pooja/kundkund-pooja.txt",
+    "scroll": true,
+    "category": "nitya-pooja",
+    "title": { "hi": "आचार्य कुंदकुंद पूजा", "en": "Acharya Kundkund Pooja" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["acharya kundkund pooja", "kundkund"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "adinath-pooja-pavaiya",
+    "file": "content/pooja/adinath-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री आदिनाथ पूजा", "en": "Shri Adinath Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aadinath", "adinath", "rishabhdev", "shri adinath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "adinath-pooja-jineshwardas",
+    "file": "content/pooja/adinath-pooja-jineshwardas.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री आदिनाथ पूजा", "en": "Shri Adinath Pooja" },
+    "author": { "hi": "पंडित जिनेश्वरदास", "en": "Pandit Jineshwardas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 31,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aadinath", "adinath", "rishabhdev", "shri adinath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "adinath-pooja",
+    "file": "content/pooja/adinath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री आदिनाथ पूजा", "en": "Shri Adinath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 18,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aadinath", "adinath", "rishabhdev", "shri adinath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "ajitnath-pooja",
+    "file": "content/pooja/ajitnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री अजितनाथ पूजा", "en": "Shri Ajitnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["ajitnath", "shri ajitnath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "sambhavnath-pooja",
+    "file": "content/pooja/sambhavnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री संभवनाथ पूजा", "en": "Shri Sambhavnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["sambhavnath", "shri sambhavnath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "abhinandannath-pooja",
+    "file": "content/pooja/abhinandannath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री अभिनंदननाथ पूजा", "en": "Shri Abhinandannath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["abhinandannath", "shri abhinandannath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "sumatinath-pooja",
+    "file": "content/pooja/sumatinath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री सुमतिनाथ पूजा", "en": "Shri Sumatinath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shri sumatinath pooja", "sumatinath"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "padmaprabh-pooja-pavaiya",
+    "file": "content/pooja/padmaprabh-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री पद्मप्रभ पूजा", "en": "Shri Padmaprabh Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["padmaprabh", "padmaprabhu", "shri padmaprabh pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "padmaprabh-pooja",
+    "file": "content/pooja/padmaprabh-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री पद्मप्रभ पूजा", "en": "Shri Padmaprabh Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["padmaprabh", "padmaprabhu", "shri padmaprabh pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "suparshvanath-pooja",
+    "file": "content/pooja/suparshvanath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री सुपार्श्वनाथ पूजा", "en": "Shri Suparshvanath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 30,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shri suparshvanath pooja", "suparshvanath", "suparshwanath"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chandraprabh-pooja",
+    "file": "content/pooja/chandraprabh-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री चंद्रप्रभ पूजा", "en": "Shri Chandraprabh Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 37,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["chandaprabhu", "chandraprabh", "chandraprabhu", "shri chandraprabh pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "pushpadant-pooja",
+    "file": "content/pooja/pushpadant-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री पुष्पदंत पूजा", "en": "Shri Pushpadant Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 16,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["pushpadant", "shri pushpadant pooja", "suvidhinath"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "sheetalnath-pooja",
+    "file": "content/pooja/sheetalnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री शीतलनाथ पूजा", "en": "Shri Sheetalnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["sheetalnath", "shitalnath", "shri sheetalnath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "shreyansnath-pooja",
+    "file": "content/pooja/shreyansnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री श्रेयांसनाथ पूजा", "en": "Shri Shreyansnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shreyansnath", "shri shreyansnath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vasupujya-pooja-pavaiya",
+    "file": "content/pooja/vasupujya-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री वासुपूज्य पूजा", "en": "Shri Vasupujya Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shri vasupujya pooja", "vasupoojya", "vasupujya"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vasupujya-pooja",
+    "file": "content/pooja/vasupujya-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री वासुपूज्य पूजा", "en": "Shri Vasupujya Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shri vasupujya pooja", "vasupoojya", "vasupujya"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vimalnath-pooja",
+    "file": "content/pooja/vimalnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री विमलनाथ पूजा", "en": "Shri Vimalnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shri vimalnath pooja", "vimalnath"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "anantnath-pooja",
+    "file": "content/pooja/anantnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री अनंतनाथ पूजा", "en": "Shri Anantnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["anantnath", "shri anantnath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dharmnath-pooja",
+    "file": "content/pooja/dharmnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री धर्मनाथ पूजा", "en": "Shri Dharmnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 18,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["dharmnath", "shri dharmnath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "shantinath-pooja-bakhtavar",
+    "file": "content/pooja/shantinath-pooja-bakhtavar.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री शांतिनाथ पूजा", "en": "Shri Shantinath Pooja" },
+    "author": { "hi": "पंडित बख्तावरमल", "en": "Pandit Bakhtavarmal" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 29,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shantinath", "shri shantinath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "shantinath-pooja-pavaiya",
+    "file": "content/pooja/shantinath-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री शांतिनाथ पूजा", "en": "Shri Shantinath Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shantinath", "shri shantinath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "shantinath-pooja",
+    "file": "content/pooja/shantinath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री शांतिनाथ पूजा", "en": "Shri Shantinath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shantinath", "shri shantinath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "kunthunath-pooja",
+    "file": "content/pooja/kunthunath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री कुंथुनाथ पूजा", "en": "Shri Kunthunath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["kunthunath", "shri kunthunath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "arahnath-pooja",
+    "file": "content/pooja/arahnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री अरहनाथ पूजा", "en": "Shri Arahnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["arahnath", "arnath", "shri arahnath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mallinath-pooja",
+    "file": "content/pooja/mallinath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री मल्लिनाथ पूजा", "en": "Shri Mallinath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 23,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["mallinath", "shri mallinath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "munisuvratnath-pooja",
+    "file": "content/pooja/munisuvratnath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री मुनिसुव्रतनाथ पूजा", "en": "Shri Munisuvratnath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["munisuvrat", "munisuvratnath", "shri munisuvratnath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "naminath-pooja",
+    "file": "content/pooja/naminath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री नमिनाथ पूजा", "en": "Shri Naminath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 20,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["naminath", "shri naminath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "neminath-pooja-pavaiya",
+    "file": "content/pooja/neminath-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री नेमिनाथ पूजा", "en": "Shri Neminath Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 23,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["girnar", "neminath", "shri neminath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "neminath-pooja",
+    "file": "content/pooja/neminath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री नेमिनाथ पूजा", "en": "Shri Neminath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["girnar", "neminath", "shri neminath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "parshvanath-pooja-bakhtavar",
+    "file": "content/pooja/parshvanath-pooja-bakhtavar.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री पार्श्वनाथ पूजा", "en": "Shri Parshvanath Pooja" },
+    "author": { "hi": "पंडित बख्तावरमल", "en": "Pandit Bakhtavarmal" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 35,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["parasnath", "parshvanath", "parshwanath", "shri parshvanath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "parshvanath-pooja-pavaiya",
+    "file": "content/pooja/parshvanath-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री पार्श्वनाथ पूजा", "en": "Shri Parshvanath Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 26,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["parasnath", "parshvanath", "parshwanath", "shri parshvanath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "parshvanath-pooja",
+    "file": "content/pooja/parshvanath-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री पार्श्वनाथ पूजा", "en": "Shri Parshvanath Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 30,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["parasnath", "parshvanath", "parshwanath", "shri parshvanath pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mahavir-pooja-pavaiya",
+    "file": "content/pooja/mahavir-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री महावीर पूजा", "en": "Shri Mahavir Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 39,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["mahaveer", "mahavir", "shri mahavir pooja", "vardhaman"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mahavir-pooja",
+    "file": "content/pooja/mahavir-pooja.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री महावीर पूजा", "en": "Shri Mahavir Pooja" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 33,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["mahaveer", "mahavir", "shri mahavir pooja", "shrimat veer", "vardhaman"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mahavir-pooja-bharill",
+    "file": "content/pooja/mahavir-pooja-bharill.txt",
+    "scroll": true,
+    "category": "tirthankar-pooja",
+    "title": { "hi": "श्री महावीर पूजा", "en": "Shri Mahavir Pooja" },
+    "author": { "hi": "डॉ. हुकमचंद भारिल्ल", "en": "Dr. Hukamchand Bharill" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 29,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["mahaveer", "mahavir", "shri mahavir pooja", "vardhaman"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "kshamavani-pooja",
+    "file": "content/pooja/kshamavani-pooja.txt",
+    "scroll": true,
+    "category": "parv-pooja",
+    "title": { "hi": "क्षमावणी पूजा", "en": "Kshamavani Pooja" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 16,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["kshamavani", "kshamavani parv", "kshamavani pooja", "michhami dukkadam"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "akshay-tritiya-pooja",
+    "file": "content/pooja/akshay-tritiya-pooja.txt",
+    "scroll": true,
+    "category": "parv-pooja",
+    "title": { "hi": "अक्षय तृतीया पूजा", "en": "Akshay Tritiya Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 13,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["akha teej", "akshay tritiya", "akshay tritiya pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "deepawali-pooja-pavaiya",
+    "file": "content/pooja/deepawali-pooja-pavaiya.txt",
+    "scroll": true,
+    "category": "parv-pooja",
+    "title": { "hi": "दीपावली पूजा (महावीर निर्वाण)", "en": "Deepawali Pooja (Mahavir Nirvan)" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 17,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["deepawali", "deepawali pooja (mahavir nirvan)", "diwali", "nirvan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "rakshabandhan-pooja",
+    "file": "content/pooja/rakshabandhan-pooja.txt",
+    "scroll": true,
+    "category": "parv-pooja",
+    "title": { "hi": "रक्षाबंधन पूजा", "en": "Rakshabandhan Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 13,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["rakhi", "rakshabandhan", "rakshabandhan pooja", "vishnukumar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "veer-shasan-jayanti-pooja",
+    "file": "content/pooja/veer-shasan-jayanti-pooja.txt",
+    "scroll": true,
+    "category": "parv-pooja",
+    "title": { "hi": "वीर शासन जयंती पूजा", "en": "Veer Shasan Jayanti Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 22,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["veer shasan jayanti", "veer shasan jayanti pooja"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "shrut-panchami-pooja",
+    "file": "content/pooja/shrut-panchami-pooja.txt",
+    "scroll": true,
+    "category": "parv-pooja",
+    "title": { "hi": "श्रुत पंचमी पूजा", "en": "Shrut Panchami Pooja" },
+    "author": { "hi": "पंडित राजमल पवैया", "en": "Pandit Rajmal Pavaiya" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 12,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shrut panchami", "shrut panchami pooja", "shrutpanchami"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "arghyavali",
+    "file": "content/pooja/arghyavali.txt",
+    "scroll": true,
+    "category": "visarjan",
+    "title": { "hi": "अर्घ्यावली", "en": "Arghyavali" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 19,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["arghya", "arghyavali"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "maha-arghya",
+    "file": "content/pooja/maha-arghya.txt",
+    "scroll": true,
+    "category": "visarjan",
+    "title": { "hi": "महा अर्घ्य", "en": "Maha Arghya" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 3,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["maha arghya", "mahaargh"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samuchchay-maha-arghya",
+    "file": "content/pooja/samuchchay-maha-arghya.txt",
+    "scroll": true,
+    "category": "visarjan",
+    "title": { "hi": "समुच्चय महा अर्घ्य", "en": "Samuchchay Maha Arghya" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 2,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["maha arghya", "samuchchay maha arghya"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "shanti-path",
+    "file": "content/pooja/shanti-path.txt",
+    "scroll": true,
+    "category": "visarjan",
+    "title": { "hi": "शांति पाठ (संस्कृत)", "en": "Shanti Path (Sanskrit)" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 15,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["shanti path", "shanti path (sanskrit)", "shantipath"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "shanti-path-bhasha",
+    "file": "content/pooja/shanti-path-bhasha.txt",
+    "scroll": true,
+    "category": "visarjan",
+    "title": { "hi": "शांति पाठ (भाषा)", "en": "Shanti Path (Hindi)" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["shanti path", "shanti path (hindi)", "shantipath"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "visarjan-path",
+    "file": "content/pooja/visarjan-path.txt",
+    "scroll": true,
+    "category": "visarjan",
+    "title": { "hi": "विसर्जन पाठ", "en": "Visarjan Path" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["visarjan", "visarjan path"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "adinath-chalisa",
+    "file": "content/pooja/adinath-chalisa.txt",
+    "scroll": true,
+    "category": "aarti",
+    "title": { "hi": "भगवान आदिनाथ चालीसा", "en": "Bhagwan Adinath Chalisa" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 22,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["adinath chalisa", "bhagwan adinath chalisa", "chalisa"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mahavir-chalisa",
+    "file": "content/pooja/mahavir-chalisa.txt",
+    "scroll": true,
+    "category": "aarti",
+    "title": { "hi": "भगवान महावीर चालीसा", "en": "Bhagwan Mahavir Chalisa" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 22,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bhagwan mahavir chalisa", "chalisa", "mahavir chalisa"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "panch-parmeshthi-aarti",
+    "file": "content/pooja/panch-parmeshthi-aarti.txt",
+    "scroll": true,
+    "category": "aarti",
+    "title": { "hi": "पंच परमेष्ठी आरती", "en": "Panch Parmeshthi Aarti" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aarti", "arti", "panch parmeshthi aarti", "yah vidhi mangal"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chandaprabhu-aarti",
+    "file": "content/pooja/chandaprabhu-aarti.txt",
+    "scroll": true,
+    "category": "aarti",
+    "title": { "hi": "भगवान चंदाप्रभु आरती", "en": "Bhagwan Chandaprabhu Aarti" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 7,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aarti", "bhagwan chandaprabhu aarti", "chandaprabhu"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "parshvanath-aarti",
+    "file": "content/pooja/parshvanath-aarti.txt",
+    "scroll": true,
+    "category": "aarti",
+    "title": { "hi": "भगवान पार्श्वनाथ आरती", "en": "Bhagwan Parshvanath Aarti" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aarti", "bhagwan parshvanath aarti", "parasnath", "parshvanath"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mahavir-aarti",
+    "file": "content/pooja/mahavir-aarti.txt",
+    "scroll": true,
+    "category": "aarti",
+    "title": { "hi": "भगवान महावीर आरती", "en": "Bhagwan Mahavir Aarti" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 9,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aarti", "bhagwan mahavir aarti", "mahavir"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bahubali-aarti",
+    "file": "content/pooja/bahubali-aarti.txt",
+    "scroll": true,
+    "category": "aarti",
+    "title": { "hi": "भगवान बाहुबली आरती", "en": "Bhagwan Bahubali Aarti" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 7,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aarti", "bahubali", "bhagwan bahubali aarti"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dev-stuti",
+    "file": "content/pooja/dev-stuti.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "देव स्तुति — अहो जगत गुरु देव", "en": "Dev Stuti — Aho Jagat Guru Dev" },
+    "author": { "hi": "पंडित भूधरदास", "en": "Pandit Bhudhardas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 12,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aho jagat guru", "dev stuti", "dev stuti — aho jagat guru dev"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "meri-bhavana",
+    "file": "content/pooja/meri-bhavana.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "मेरी भावना", "en": "Meri Bhavana" },
+    "author": { "hi": "पंडित जुगलकिशोर मुख्तार", "en": "Pandit Jugalkishore Mukhtar" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 11,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["jisne rag dvesh", "meri bhavana", "meri bhavna"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "barah-bhavana-jaychand",
+    "file": "content/pooja/barah-bhavana-jaychand.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "बारह भावना", "en": "Barah Bhavana" },
+    "author": { "hi": "पंडित जयचंद छाबड़ा", "en": "Pandit Jaychand Chhabra" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 12,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["barah bhavana"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "barah-bhavana-mangatray",
+    "file": "content/pooja/barah-bhavana-mangatray.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "बारह भावना", "en": "Barah Bhavana" },
+    "author": { "hi": "पंडित मंगतराय", "en": "Pandit Mangatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 14,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["barah bhavana", "vande shri arihant"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mahavir-vandana",
+    "file": "content/pooja/mahavir-vandana.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "महावीर वंदना", "en": "Mahavir Vandana" },
+    "author": { "hi": "डॉ. हुकमचंद भारिल्ल", "en": "Dr. Hukamchand Bharill" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 9,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["mahavir vandana"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samadhimaran-dyanat",
+    "file": "content/pooja/samadhimaran-dyanat.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "समाधिमरण पाठ", "en": "Samadhimaran Path" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["samadhi maran", "samadhimaran", "samadhimaran path"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samadhi-bhavana",
+    "file": "content/pooja/samadhi-bhavana.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "समाधि भावना — दिन रात मेरे स्वामी", "en": "Samadhi Bhavana — Din Raat Mere Swami" },
+    "author": { "hi": "पंडित शिवराम", "en": "Pandit Shivram" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 9,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["din raat mere swami", "samadhi bhavana", "samadhi bhavana — din raat mere swami"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samadhimaran-soorchand",
+    "file": "content/pooja/samadhimaran-soorchand.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "समाधिमरण भाषा", "en": "Samadhimaran (Hindi)" },
+    "author": { "hi": "पंडित सूरचंद", "en": "Pandit Soorchand" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 54,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["samadhi maran", "samadhimaran", "samadhimaran (hindi)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "darshan-stuti-daulatram",
+    "file": "content/pooja/darshan-stuti-daulatram.txt",
+    "category": "path",
+    "title": { "hi": "दर्शन स्तुति — सकल ज्ञेय ज्ञायक", "en": "Darshan Stuti — Sakal Gyey Gyayak" },
+    "author": { "hi": "पंडित दौलतराम", "en": "Pandit Daulatram" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 18,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["darshan stuti", "darshan stuti — sakal gyey gyayak", "sakal gyey gyayak"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "jinvani-stuti",
+    "file": "content/pooja/jinvani-stuti.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "जिनवाणी स्तुति", "en": "Jinvani Stuti" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 3,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["jinvani stuti"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "aradhana-path",
+    "file": "content/pooja/aradhana-path.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "आराधना पाठ", "en": "Aradhana Path" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aradhana path"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "arhat-vandana",
+    "file": "content/pooja/arhat-vandana.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "आर्हत वंदना", "en": "Arhat Vandana" },
+    "author": { "hi": "पंडित जुगलकिशोर 'युगल'", "en": "Pandit Jugalkishore 'Yugal'" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["arhat vandana"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "alochana-path",
+    "file": "content/pooja/alochana-path.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "आलोचना पाठ", "en": "Alochana Path" },
+    "author": { "hi": "पंडित जौहरीलाल", "en": "Pandit Jauharilal" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 34,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aalochana", "alochana path"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dukhharan-vinati",
+    "file": "content/pooja/dukhharan-vinati.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "दुखहरण विनती", "en": "Dukhharan Vinati" },
+    "author": { "hi": "कविवर वृन्दावनदास", "en": "Kavivar Vrindavandas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 27,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["dukhharan", "dukhharan vinati", "vinati"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "amulya-tattva-vichar",
+    "file": "content/pooja/amulya-tattva-vichar.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "अमूल्य तत्त्व विचार", "en": "Amulya Tattva Vichar" },
+    "author": { "hi": "श्रीमद् राजचन्द्र", "en": "Shrimad Rajchandra" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["amulya tattva vichar", "bahu punya kera"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "baees-parishah",
+    "file": "content/pooja/baees-parishah.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "बाईस परीषह", "en": "Twenty-two Parishah" },
+    "author": { "hi": "आर्यिका ज्ञानमती", "en": "Aryika Gyanmati" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["22 parishah", "parishah", "twenty-two parishah"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samayik-path-amitgati",
+    "file": "content/pooja/samayik-path-amitgati.txt",
+    "category": "path",
+    "title": { "hi": "सामायिक पाठ (भावना द्वात्रिंशतिका)", "en": "Samayik Path (Bhavana Dvatrimshatika)" },
+    "author": { "hi": "आचार्य अमितगति", "en": "Acharya Amitgati" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 33,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["dvatrimshatika", "samayik", "samayik path (bhavana dvatrimshatika)", "sattveshu maitri"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samayik-path-mahachandra",
+    "file": "content/pooja/samayik-path-mahachandra.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "सामायिक पाठ", "en": "Samayik Path" },
+    "author": { "hi": "पंडित महाचंद्र", "en": "Pandit Mahachandra" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 6,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["samayik", "samayik path"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samayik-path-yugal",
+    "file": "content/pooja/samayik-path-yugal.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "सामायिक पाठ", "en": "Samayik Path" },
+    "author": { "hi": "पंडित जुगलकिशोर 'युगल'", "en": "Pandit Jugalkishore 'Yugal'" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 33,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["samayik", "samayik path"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "nirvan-kand",
+    "file": "content/pooja/nirvan-kand.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "निर्वाण कांड (भाषा)", "en": "Nirvan Kand (Hindi)" },
+    "author": { "hi": "पंडित भगवतीदास", "en": "Pandit Bhagwatidas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 23,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["nirvan kand", "nirvan kand (hindi)", "nirvankand"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dev-shastra-guru-vandana",
+    "file": "content/pooja/dev-shastra-guru-vandana.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "देव-शास्त्र-गुरु वंदना", "en": "Dev Shastra Guru Vandana" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 3,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["dev shastra guru vandana"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vairagya-bhavana",
+    "file": "content/pooja/vairagya-bhavana.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "वैराग्य भावना", "en": "Vairagya Bhavana" },
+    "author": { "hi": "पंडित भूधरदास", "en": "Pandit Bhudhardas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 17,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bij rakh phal", "vairagya bhavana"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhudhar-shatak",
+    "file": "content/pooja/bhudhar-shatak.txt",
+    "category": "path",
+    "title": { "hi": "जैन शतक (भूधर शतक)", "en": "Jain Shatak (Bhudhar Shatak)" },
+    "author": { "hi": "पंडित भूधरदास", "en": "Pandit Bhudhardas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 133,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bhudhar shatak", "jain shatak", "jain shatak (bhudhar shatak)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "atmabodh-shatak",
+    "file": "content/pooja/atmabodh-shatak.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "आत्मबोध शतक", "en": "Atmabodh Shatak" },
+    "author": { "hi": "आर्यिका पूर्णमति", "en": "Aryika Purnamati" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 101,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["atmabodh shatak"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chaubis-tirthankar-stavan",
+    "file": "content/pooja/chaubis-tirthankar-stavan.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "चौबीस तीर्थंकर स्तवन", "en": "Chaubis Tirthankar Stavan" },
+    "author": { "hi": "पंडित अभयकुमार", "en": "Pandit Abhaykumar" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["chaubis tirthankar stavan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "laghu-pratikraman",
+    "file": "content/pooja/laghu-pratikraman.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "लघु प्रतिक्रमण", "en": "Laghu Pratikraman" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 1,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["laghu pratikraman", "pratikraman"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mrityu-mahotsav",
+    "file": "content/pooja/mrityu-mahotsav.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "मृत्यु महोत्सव", "en": "Mrityu Mahotsav" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 18,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["mrityu mahotsav"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "apurva-avsar",
+    "file": "content/pooja/apurva-avsar.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "अपूर्व अवसर", "en": "Apurva Avsar" },
+    "author": { "hi": "श्रीमद् राजचन्द्र", "en": "Shrimad Rajchandra" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 21,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["apurva avsar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "kundkund-shatak",
+    "file": "content/pooja/kundkund-shatak.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "कुंदकुंद शतक", "en": "Kundkund Shatak" },
+    "author": { "hi": "डॉ. हुकमचंद भारिल्ल", "en": "Dr. Hukamchand Bharill" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 101,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["kundkund shatak"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "siddh-shrut-acharya-bhakti",
+    "file": "content/pooja/siddh-shrut-acharya-bhakti.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "सिद्ध, श्रुत और आचार्य भक्ति", "en": "Siddh, Shrut and Acharya Bhakti" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 11,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["acharya bhakti", "shrut bhakti", "siddh bhakti", "siddh, shrut and acharya bhakti"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "dhyan-sutra-shatak",
+    "file": "content/pooja/dhyan-sutra-shatak.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "ध्यान सूत्र शतक", "en": "Dhyan Sutra Shatak" },
+    "author": { "hi": "आचार्य माघनंदी", "en": "Acharya Maghnandi" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 1,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["dhyan sutra", "dhyan sutra shatak"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "pakhwada",
+    "file": "content/pooja/pakhwada.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "पखवाड़ा", "en": "Pakhwada" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 17,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["pakhwada"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "gommateshwar-stuti",
+    "file": "content/pooja/gommateshwar-stuti.txt",
+    "category": "path",
+    "title": { "hi": "श्री गोमटेश्वर स्तुति", "en": "Shri Gommateshwar Stuti" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bahubali stuti", "gommatesh", "shri gommateshwar stuti"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "jinendra-gun-sanstuti",
+    "file": "content/pooja/jinendra-gun-sanstuti.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "जिनेन्द्र गुण संस्तुति (पात्रकेसरी स्तोत्र)", "en": "Jinendra Gun Sanstuti (Patrakesari Stotra)" },
+    "author": { "hi": "आचार्य पात्रकेसरी", "en": "Acharya Patrakesari" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 50,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["jinendra gun sanstuti (patrakesari stotra)", "patrakesari"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "ratnakar-panchvinshatika",
+    "file": "content/pooja/ratnakar-panchvinshatika.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "रत्नाकर पंचविंशतिका", "en": "Ratnakar Panchvinshatika" },
+    "author": { "hi": "पंडित रामचरित", "en": "Pandit Ramcharit" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["ratnakar", "ratnakar panchvinshatika"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhupal-panchvinshatika",
+    "file": "content/pooja/bhupal-panchvinshatika.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "भूपाल पंचविंशतिका", "en": "Bhupal Panchvinshatika" },
+    "author": { "hi": "पंडित भूधरदास", "en": "Pandit Bhudhardas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 28,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bhupal", "bhupal panchvinshatika"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "sachcha-jain",
+    "file": "content/pooja/sachcha-jain.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "सच्चा जैन", "en": "Sachcha Jain" },
+    "author": { "hi": "ब्र. रवीन्द्र 'आत्मन्'", "en": "Br. Ravindra 'Atman'" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["sachcha jain"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "saraswati-vandana",
+    "file": "content/pooja/saraswati-vandana.txt",
+    "category": "path",
+    "title": { "hi": "सरस्वती वंदना", "en": "Saraswati Vandana" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 9,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["saraswati", "saraswati vandana"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chhahdhala-dyanat",
+    "file": "content/pooja/chhahdhala-dyanat.txt",
+    "scroll": true,
+    "category": "path",
+    "title": { "hi": "छहढाला", "en": "Chhahdhala" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 6,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["6 dhala", "chahdhala", "chhahdhala"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chhahdhala",
+    "file": "content/pooja/chhahdhala.txt",
+    "category": "path",
+    "title": { "hi": "छहढाला", "en": "Chhahdhala" },
+    "author": { "hi": "पंडित दौलतराम", "en": "Pandit Daulatram" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 93,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["6 dhala", "chahdhala", "chhah dhala", "chhahdhala", "teen bhuvan mein saar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "chhahdhala-budhjan",
+    "file": "content/pooja/chhahdhala-budhjan.txt",
+    "category": "path",
+    "title": { "hi": "छहढाला", "en": "Chhahdhala" },
+    "author": { "hi": "पंडित बुधजन", "en": "Pandit Budhjan" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 58,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["6 dhala", "chahdhala", "chhahdhala"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "swayambhu-stotra-bhasha",
+    "file": "content/pooja/swayambhu-stotra-bhasha.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "स्वयंभू स्तोत्र (भाषा)", "en": "Swayambhu Stotra (Hindi)" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 25,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["svayambhu", "swayambhu", "swayambhu stotra (hindi)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "swayambhu-stotra-vidyasagar",
+    "file": "content/pooja/swayambhu-stotra-vidyasagar.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "स्वयंभू स्तोत्र (पद्यानुवाद)", "en": "Swayambhu Stotra (verse translation)" },
+    "author": { "hi": "आचार्य विद्यासागर", "en": "Acharya Vidyasagar" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["svayambhu", "swayambhu", "swayambhu stotra (verse translation)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "parshvanath-stotra",
+    "file": "content/pooja/parshvanath-stotra.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "पार्श्वनाथ स्तोत्र", "en": "Parshvanath Stotra" },
+    "author": { "hi": "पंडित द्यानतराय", "en": "Pandit Dyanatray" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["parasnath", "parshvanath stotra"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mahavirashtak",
+    "file": "content/pooja/mahavirashtak.txt",
+    "category": "stotra",
+    "title": { "hi": "महावीराष्टक स्तोत्र", "en": "Mahavirashtak Stotra" },
+    "author": { "hi": "पंडित भागचंद", "en": "Pandit Bhagchand" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 9,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["mahavir ashtak", "mahavirashtak", "mahavirashtak stotra", "yadiye chetanya"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vitrag-stotra",
+    "file": "content/pooja/vitrag-stotra.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "वीतराग स्तोत्र", "en": "Vitrag Stotra" },
+    "author": { "hi": "मुनि क्षमासागर", "en": "Muni Kshamasagar" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 9,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["vitrag stotra"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "kalyan-mandir",
+    "file": "content/pooja/kalyan-mandir.txt",
+    "category": "stotra",
+    "title": { "hi": "कल्याणमंदिर स्तोत्र", "en": "Kalyan Mandir Stotra" },
+    "author": { "hi": "आचार्य कुमुदचंद्र", "en": "Acharya Kumudchandra" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 43,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["kalyan mandir", "kalyan mandir stotra", "kalyanmandir"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "kalyan-mandir-hindi",
+    "file": "content/pooja/kalyan-mandir-hindi.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "कल्याणमंदिर स्तोत्र (हिंदी)", "en": "Kalyan Mandir Stotra (Hindi)" },
+    "author": { "hi": "आर्यिका चंदनामती", "en": "Aryika Chandanamati" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 45,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["kalyan mandir", "kalyan mandir stotra (hindi)", "kalyanmandir"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhaktamar-arth",
+    "file": "content/pooja/bhaktamar-arth.txt",
+    "category": "stotra",
+    "title": { "hi": "भक्तामर स्तोत्र (अन्वयार्थ सहित)", "en": "Bhaktamar Stotra (with meaning)" },
+    "author": { "hi": "आचार्य मानतुंग", "en": "Acharya Mantunga" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 48,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["bhaktamar", "bhaktamar arth", "bhaktamar meaning", "bhaktamar stotra (with meaning)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhaktamar-hemraj",
+    "file": "content/pooja/bhaktamar-hemraj.txt",
+    "category": "stotra",
+    "title": { "hi": "भक्तामर स्तोत्र (भाषा) — आदिपुरुष आदीश जिन", "en": "Bhaktamar Stotra (Hindi) — Aadipurush Aadish Jin" },
+    "author": { "hi": "पंडित हेमराज", "en": "Pandit Hemraj" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 48,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["aadipurush aadish", "bhaktamar", "bhaktamar hindi", "bhaktamar stotra (hindi) — aadipurush aadish jin"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "bhaktamar-kshirsagar",
+    "file": "content/pooja/bhaktamar-kshirsagar.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "भक्तामर स्तोत्र (पद्यानुवाद)", "en": "Bhaktamar Stotra (verse translation)" },
+    "author": { "hi": "मुनि क्षीरसागर", "en": "Muni Kshirsagar" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 48,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["bhaktamar", "bhaktamar hindi", "bhaktamar stotra (verse translation)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "ekibhav-stotra",
+    "file": "content/pooja/ekibhav-stotra.txt",
+    "category": "stotra",
+    "title": { "hi": "एकीभाव स्तोत्र", "en": "Ekibhav Stotra" },
+    "author": { "hi": "आचार्य वादिराज", "en": "Acharya Vadiraj" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 26,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["ekibhav", "ekibhav stotra", "ekibhava"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vishapahar-stotra",
+    "file": "content/pooja/vishapahar-stotra.txt",
+    "category": "stotra",
+    "title": { "hi": "विषापहार स्तोत्र", "en": "Vishapahar Stotra" },
+    "author": { "hi": "कवि धनंजय", "en": "Kavi Dhananjay" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 40,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["vishapahar", "vishapahar stotra", "vishapahara"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "vishapahar-stotra-bhasha",
+    "file": "content/pooja/vishapahar-stotra-bhasha.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "विषापहार स्तोत्र (भाषा)", "en": "Vishapahar Stotra (Hindi)" },
+    "author": { "hi": "पंडित शांतिदास", "en": "Pandit Shantidas" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 42,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["vishapahar", "vishapahar stotra (hindi)"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "akalank-stotra",
+    "file": "content/pooja/akalank-stotra.txt",
+    "category": "stotra",
+    "title": { "hi": "अकलंक स्तोत्र", "en": "Akalank Stotra" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 16,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["akalank", "akalank stotra"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "drishtashtak-stotra",
+    "file": "content/pooja/drishtashtak-stotra.txt",
+    "scroll": true,
+    "category": "stotra",
+    "title": { "hi": "दृष्टाष्टक स्तोत्र", "en": "Drishtashtak Stotra" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["drashtashtak", "drishtashtak", "drishtashtak stotra"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "gandharvalay-stotra",
+    "file": "content/pooja/gandharvalay-stotra.txt",
+    "category": "stotra",
+    "title": { "hi": "गणधरवलय स्तोत्र", "en": "Gandharvalay Stotra" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["ganadharvalaya", "gandharvalay", "gandharvalay stotra"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "mandalasa-stotra",
+    "file": "content/pooja/mandalasa-stotra.txt",
+    "category": "stotra",
+    "title": { "hi": "मंदालसा स्तोत्र", "en": "Mandalasa Stotra" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 10,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["mandalasa", "mandalasa stotra", "shuddhosi buddhosi"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "jin-sahasranam",
+    "file": "content/pooja/jin-sahasranam.txt",
+    "category": "stotra",
+    "title": { "hi": "जिनसहस्रनाम स्तोत्र", "en": "Jin Sahasranam Stotra" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "छन्द", "en": "Verse" },
+    "count": 167,
+    "textLang": "sa",
+    "numberMark": false,
+    "aliases": ["1008 naam", "jin sahasranam stotra", "jinsahasranam", "sahasranam"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io (पूजा-पाठ संग्रह)। परम्परागत रचना, जैसी मंदिरों में पढ़ी जाती है।",
+      "en": "Text from the Jain Database, nikkyjain.github.io (pooja collection). A traditional composition, as recited in temples."
+    }
+  },
+  {
+    "id": "samaysar",
+    "file": "content/granth/samaysar.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "समयसार", "en": "Samaysar" },
+    "author": { "hi": "कुन्दकुन्दाचार्य", "en": "Acharya Kundkund" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 432,
+    "aliases": ["samaysar"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: पं जयचंदजी छाबडा, आ. ज्ञानसागर, क्षु. मनोहर वर्णी, पं हुकमचंद भारिल्ल, आ. ज्ञानमती, प्रो. पारसमल अग्रवाल, विजय कुमार जैन",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): पं जयचंदजी छाबडा, आ. ज्ञानसागर, क्षु. मनोहर वर्णी, पं हुकमचंद भारिल्ल, आ. ज्ञानमती, प्रो. पारसमल अग्रवाल, विजय कुमार जैन"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "pravachansar",
+    "file": "content/granth/pravachansar.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "प्रवचनसार", "en": "Pravachansar" },
+    "author": { "hi": "कुन्दकुन्दाचार्य", "en": "Acharya Kundkund" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 298,
+    "aliases": ["pravachansar"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: पं जयचंदजी छाबडा, पं हुकमचंद भारिल्ल",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): पं जयचंदजी छाबडा, पं हुकमचंद भारिल्ल"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "panchastikay",
+    "file": "content/granth/panchastikay.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "पञ्चास्तिकाय", "en": "Panchastikay" },
+    "author": { "hi": "कुन्दकुन्दाचार्य", "en": "Acharya Kundkund" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 170,
+    "aliases": ["panchastikay"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: पं जयचंदजी छाबडा, पं हुकमचंद भारिल्ल",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): पं जयचंदजी छाबडा, पं हुकमचंद भारिल्ल"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "dravyasangrah",
+    "file": "content/granth/dravyasangrah.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "द्रव्यसंग्रह", "en": "Dravyasangrah" },
+    "author": { "hi": "नेमिचंद्र सिद्धांतचक्रवर्ती", "en": "Acharya Nemichandra Siddhantachakravarti" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 58,
+    "aliases": ["dravyasangrah"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: पद्यानुवाद : आ. डाॅ. हुकमचंद भारिल्ल",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): पद्यानुवाद : आ. डाॅ. हुकमचंद भारिल्ल"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "samadhitantra",
+    "file": "content/granth/samadhitantra.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "समाधितन्त्र", "en": "Samadhitantra" },
+    "author": { "hi": "आचार्य पूज्यपाद", "en": "Acharya Pujyapad" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 103,
+    "aliases": ["samadhitantra"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "swaroop-sambodhan",
+    "file": "content/granth/swaroop-sambodhan.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "स्वरूप संबोधन", "en": "Swaroop Sambodhan" },
+    "author": { "hi": "अकलंक देव", "en": "Acharya Akalankdev" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 25,
+    "aliases": ["swaroop sambodhan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "ishtopadesh",
+    "file": "content/granth/ishtopadesh.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "इष्टोपदेश", "en": "Ishtopadesh" },
+    "author": { "hi": "आचार्य पूज्यपाद", "en": "Acharya Pujyapad" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 51,
+    "aliases": ["ishtopadesh"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: पंडित आशाधरजी",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): पंडित आशाधरजी"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "paramatma-prakash",
+    "file": "content/granth/paramatma-prakash.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "परमात्मप्रकाश", "en": "Paramatma Prakash" },
+    "author": { "hi": "योगींदुदेव", "en": "Acharya Yogindudev" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 338,
+    "aliases": ["paramatma prakash"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "yogsar-prabhrut",
+    "file": "content/granth/yogsar-prabhrut.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "योगसार प्राभृत", "en": "Yogsar Prabhrut" },
+    "author": { "hi": "अमितगति आचार्य", "en": "Acharya Amitgati" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 539,
+    "aliases": ["yogsar prabhrut"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "tattvarth-sutra-anvayarth",
+    "file": "content/granth/tattvarth-sutra-anvayarth.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "तत्त्वार्थसूत्र", "en": "Tattvartha Sutra (with meaning)" },
+    "author": { "hi": "आचार्य उमास्वामी", "en": "Acharya Umaswami" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 355,
+    "aliases": ["tattvartha sutra (with meaning)"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: महेंद्र-कुमार जैन 'न्यायाचार्य', सुपार्श्वमती-माताजी",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): महेंद्र-कुमार जैन 'न्यायाचार्य', सुपार्श्वमती-माताजी"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "yogsar",
+    "file": "content/granth/yogsar.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "योगसार", "en": "Yogsar" },
+    "author": { "hi": "योगींदुदेव", "en": "Acharya Yogindudev" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 108,
+    "aliases": ["yogsar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "panchadhyayi",
+    "file": "content/granth/panchadhyayi.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "पंचाध्यायी", "en": "Panchadhyayi" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 533,
+    "aliases": ["panchadhyayi"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "pahud-doha",
+    "file": "content/granth/pahud-doha.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "पाहुड दोहा", "en": "Pahud Doha" },
+    "author": { "hi": "राम सिंह मुनि", "en": "Muni Ramsingh" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 213,
+    "aliases": ["pahud doha"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "param-adhyatma-tarangini",
+    "file": "content/granth/param-adhyatma-tarangini.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "परम अध्यात्म तरंगिणी", "en": "Param Adhyatma Tarangini" },
+    "author": { "hi": "अमृतचंद्राचार्य", "en": "Acharya Amritchandra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 113,
+    "aliases": ["param adhyatma tarangini"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "tattvagyan-tarangini",
+    "file": "content/granth/tattvagyan-tarangini.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "तत्त्वज्ञान तरंगिणी", "en": "Tattvagyan Tarangini" },
+    "author": { "hi": "भट्टारक ज्ञानभूषण", "en": "Bhattarak Gyanbhushan" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 306,
+    "aliases": ["tattvagyan tarangini"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: अनुवादक पंडित गजाधरलाल जी न्यायतीर्थ, पद्यानुवाद : बाल ब्रह्मचारिणी कल्पना बहन, सागर",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): अनुवादक पंडित गजाधरलाल जी न्यायतीर्थ, पद्यानुवाद : बाल ब्रह्मचारिणी कल्पना बहन, सागर"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "amritashiti",
+    "file": "content/granth/amritashiti.txt",
+    "category": "dravyanuyog",
+    "title": { "hi": "अमृताशीति", "en": "Amritashiti" },
+    "author": { "hi": "योगींदुदेव", "en": "Acharya Yogindudev" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 65,
+    "aliases": ["amritashiti"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "niyamsar",
+    "file": "content/granth/niyamsar.txt",
+    "category": "charananuyog",
+    "title": { "hi": "नियमसार", "en": "Niyamsar" },
+    "author": { "hi": "कुन्दकुंदाचार्य", "en": "Acharya Kundkund" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 188,
+    "aliases": ["niyamsar"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "ashtapahud",
+    "file": "content/granth/ashtapahud.txt",
+    "category": "charananuyog",
+    "title": { "hi": "श्रीअष्टपाहुड", "en": "Ashtapahud" },
+    "author": { "hi": "कुन्दकुंदाचार्य", "en": "Acharya Kundkund" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 453,
+    "aliases": ["ashtapahud"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "mulachar",
+    "file": "content/granth/mulachar.txt",
+    "category": "charananuyog",
+    "title": { "hi": "मूलाचार", "en": "Mulachar" },
+    "author": { "hi": "वट्टकेराचार्य", "en": "Acharya Vattaker" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 271,
+    "aliases": ["mulachar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: आ. ज्ञानमती",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): आ. ज्ञानमती"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "kartikeyanupreksha",
+    "file": "content/granth/kartikeyanupreksha.txt",
+    "category": "charananuyog",
+    "title": { "hi": "वारासाणुवेक्खा", "en": "Barasanuvekkha (Kartikeyanupreksha)" },
+    "author": { "hi": "स्वामि कार्तिकेय", "en": "Swami Kartikeya" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 363,
+    "aliases": ["barasanuvekkha (kartikeyanupreksha)"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "purusharthasiddhyupay",
+    "file": "content/granth/purusharthasiddhyupay.txt",
+    "category": "charananuyog",
+    "title": { "hi": "पुरुषार्थसिद्ध्युपाय", "en": "Purusharthasiddhyupay" },
+    "author": { "hi": "आचार्य अमृतचन्द्र", "en": "Acharya Amritchandra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 198,
+    "aliases": ["purusharthasiddhyupay"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: हिंदी पद्यानुवाद -- पं अभय-कुमारजी, देवलाली",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): हिंदी पद्यानुवाद -- पं अभय-कुमारजी, देवलाली"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "barasanupekkha",
+    "file": "content/granth/barasanupekkha.txt",
+    "category": "charananuyog",
+    "title": { "hi": "बारसणुपेक्‍खा", "en": "Barasanupekkha" },
+    "author": { "hi": "कुन्दकुन्दाचार्य", "en": "Acharya Kundkund" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 76,
+    "aliases": ["barasanupekkha"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: श्रीशजी",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): श्रीशजी"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "ratnakarand-shravakachar",
+    "file": "content/granth/ratnakarand-shravakachar.txt",
+    "category": "charananuyog",
+    "title": { "hi": "रत्नकरण्ड श्रावकाचार", "en": "Ratnakarand Shravakachar" },
+    "author": { "hi": "समन्तभद्राचार्य", "en": "Acharya Samantabhadra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 150,
+    "aliases": ["ratnakarand shravakachar"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "aradhanasar",
+    "file": "content/granth/aradhanasar.txt",
+    "category": "charananuyog",
+    "title": { "hi": "आराधनासार", "en": "Aradhanasar" },
+    "author": { "hi": "देवसेनाचार्य", "en": "Acharya Devsen" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 115,
+    "aliases": ["aradhanasar"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: हिंदी पद्यानुवाद - गुणभद्र जैन 'कविरत्न', मुंबई",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): हिंदी पद्यानुवाद - गुणभद्र जैन 'कविरत्न', मुंबई"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "gyanarnav",
+    "file": "content/granth/gyanarnav.txt",
+    "category": "charananuyog",
+    "title": { "hi": "ज्ञानार्णव", "en": "Gyanarnav" },
+    "author": { "hi": "शुभचंद्राचार्य", "en": "Acharya Shubhchandra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 230,
+    "aliases": ["gyanarnav"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "bhagavati-aradhana",
+    "file": "content/granth/bhagavati-aradhana.txt",
+    "category": "charananuyog",
+    "title": { "hi": "भगवती आराधना", "en": "Bhagavati Aradhana" },
+    "author": { "hi": "शिवाचार्य", "en": "Acharya Shivarya" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 546,
+    "aliases": ["bhagavati aradhana"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: हिन्दी टीका -- पंडित सदासुखदास जी; हिन्दी पद्यानुवाद -- पण्डित अभयकुमारजी शास्त्री, देवलाली",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): हिन्दी टीका -- पंडित सदासुखदास जी; हिन्दी पद्यानुवाद -- पण्डित अभयकुमारजी शास्त्री, देवलाली"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "padmanandi-panchvinshatika",
+    "file": "content/granth/padmanandi-panchvinshatika.txt",
+    "category": "charananuyog",
+    "title": { "hi": "पद्मनंदी पंचविन्शतिका", "en": "Padmanandi Panchvinshatika" },
+    "author": { "hi": "आचार्य पद्मनंदी", "en": "Acharya Padmanandi" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 930,
+    "aliases": ["padmanandi panchvinshatika"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "atmanushasan",
+    "file": "content/granth/atmanushasan.txt",
+    "category": "charananuyog",
+    "title": { "hi": "आत्मानुशासन", "en": "Atmanushasan" },
+    "author": { "hi": "आचार्य गुणभद्र", "en": "Acharya Gunabhadra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 270,
+    "aliases": ["atmanushasan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "upasakadhyayan",
+    "file": "content/granth/upasakadhyayan.txt",
+    "category": "charananuyog",
+    "title": { "hi": "उपासकाध्ययन", "en": "Upasakadhyayan" },
+    "author": { "hi": "सोमदेवाचार्य", "en": "Acharya Somdev" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 30,
+    "aliases": ["upasakadhyayan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "labdhisar",
+    "file": "content/granth/labdhisar.txt",
+    "category": "karananuyog",
+    "title": { "hi": "लब्धिसार", "en": "Labdhisar" },
+    "author": { "hi": "नेमिचंद्र आचार्य", "en": "Acharya Nemichandra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 40,
+    "aliases": ["labdhisar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "gommatsar-jeevkand",
+    "file": "content/granth/gommatsar-jeevkand.txt",
+    "category": "karananuyog",
+    "title": { "hi": "गोम्मटसार जीवकांड", "en": "Gommatsar Jeevkand" },
+    "author": { "hi": "नेमिचंद्र आचार्य", "en": "Acharya Nemichandra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 61,
+    "aliases": ["gommatsar jeevkand"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "gommatsar-karmkand",
+    "file": "content/granth/gommatsar-karmkand.txt",
+    "category": "karananuyog",
+    "title": { "hi": "गोम्मटसार कर्मकांड", "en": "Gommatsar Karmkand" },
+    "author": { "hi": "नेमिचंद्र आचार्य", "en": "Acharya Nemichandra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 105,
+    "aliases": ["gommatsar karmkand"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "asrav-tribhangi",
+    "file": "content/granth/asrav-tribhangi.txt",
+    "category": "karananuyog",
+    "title": { "hi": "आस्रव त्रिभंगी", "en": "Asrav Tribhangi" },
+    "author": { "hi": "श्रुतमुनी", "en": "Shrutmuni" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 38,
+    "aliases": ["asrav tribhangi"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "aradhana-katha-kosh",
+    "file": "content/granth/aradhana-katha-kosh.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "आराधना कथा कोश", "en": "Aradhana Katha Kosh" },
+    "author": { "hi": "ब्रह्मचारी नेमिदत्त", "en": "Brahmachari Nemidatta" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 502,
+    "aliases": ["aradhana katha kosh"],
+    "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: श्री उदयलालजी कासलीवाल",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): श्री उदयलालजी कासलीवाल"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "uttarpuran",
+    "file": "content/granth/uttarpuran.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "उत्तरपुराण", "en": "Uttarpuran" },
+    "author": { "hi": "गुणभद्राचार्य", "en": "Acharya Gunabhadra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 30,
+    "aliases": ["uttarpuran"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "uttarpuran-sanskrit",
+    "file": "content/granth/uttarpuran-sanskrit.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "उत्तरपुराण संस्कृत", "en": "Uttarpuran (Sanskrit)" },
+    "author": { "hi": "गुणभद्राचार्य", "en": "Acharya Gunabhadra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 3633,
+    "aliases": ["uttarpuran (sanskrit)"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "padmapuran",
+    "file": "content/granth/padmapuran.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "पद्मपुराण", "en": "Padmapuran" },
+    "author": { "hi": "रविषेणाचार्य", "en": "Acharya Ravishen" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 123,
+    "aliases": ["padmapuran"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "adipuran",
+    "file": "content/granth/adipuran.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "आदिपुराण", "en": "Adipuran" },
+    "author": { "hi": "जिनसेनाचार्य", "en": "Acharya Jinsen" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 568,
+    "aliases": ["adipuran"],
+    "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "mahavir-puran",
+    "file": "content/granth/mahavir-puran.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "महावीर पुराण", "en": "Mahavir Puran" },
+    "author": { "hi": "सकलकीर्ति भट्टारक", "en": "Bhattarak Sakalkirti" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 19,
+    "aliases": ["mahavir puran"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "jambuswami-charitra",
+    "file": "content/granth/jambuswami-charitra.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "जम्बूस्वामी चारित्र", "en": "Jambuswami Charitra" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 41,
+    "aliases": ["jambuswami charitra"],
+    "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "sukumal-charitra",
+    "file": "content/granth/sukumal-charitra.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "सुकुमाल चरित्र", "en": "Sukumal Charitra" },
+    "author": { "hi": "सकलकीर्ति भट्टारक", "en": "Bhattarak Sakalkirti" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 79,
+    "aliases": ["sukumal charitra"],
+    "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: श्री नेमीचन्दजी बाकलीवाल, किशनगढ़; पण्डित देवेन्द्रकुमार जैन, बिजौलियां-राजस्थान",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): श्री नेमीचन्दजी बाकलीवाल, किशनगढ़; पण्डित देवेन्द्रकुमार जैन, बिजौलियां-राजस्थान"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "sudarshan-charitra",
+    "file": "content/granth/sudarshan-charitra.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "सुदर्शन चरित्र", "en": "Sudarshan Charitra" },
+    "author": { "hi": "सकलकीर्ति भट्टारक", "en": "Bhattarak Sakalkirti" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 68,
+    "aliases": ["sudarshan charitra"],
+    "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: श्री मूलचन्द किशनचन्द कापड़िया, सूरत; पण्डित देवेन्द्रकुमार जैन, बिजौलियां-राजस्थान",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): श्री मूलचन्द किशनचन्द कापड़िया, सूरत; पण्डित देवेन्द्रकुमार जैन, बिजौलियां-राजस्थान"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "samyaktva-kaumudi",
+    "file": "content/granth/samyaktva-kaumudi.txt",
+    "category": "prathamanuyog",
+    "title": { "hi": "सम्यक्त्व कौमुदि", "en": "Samyaktva Kaumudi" },
+    "author": { "hi": "", "en": "" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 222,
+    "aliases": ["samyaktva kaumudi"],
+    "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "apt-mimansa",
+    "file": "content/granth/apt-mimansa.txt",
+    "category": "nyay",
+    "title": { "hi": "आप्त मीमांसा", "en": "Apt Mimansa" },
+    "author": { "hi": "आचार्य समन्तभद्र", "en": "Acharya Samantabhadra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 114,
+    "aliases": ["apt mimansa"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "laghiyastraya",
+    "file": "content/granth/laghiyastraya.txt",
+    "category": "nyay",
+    "title": { "hi": "लघीयस्त्रय", "en": "Laghiyastraya" },
+    "author": { "hi": "भट्टाकलंकदेव", "en": "Bhatt Akalankdev" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 74,
+    "aliases": ["laghiyastraya"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "parikshamukh",
+    "file": "content/granth/parikshamukh.txt",
+    "category": "nyay",
+    "title": { "hi": "परीक्षामुख", "en": "Parikshamukh" },
+    "author": { "hi": "आचार्य माणिक्यनन्दि", "en": "Acharya Manikyanandi" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 206,
+    "aliases": ["parikshamukh"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "alap-paddhati",
+    "file": "content/granth/alap-paddhati.txt",
+    "category": "nyay",
+    "title": { "hi": "आलापपद्धति", "en": "Alap Paddhati" },
+    "author": { "hi": "देवसेनाचार्य", "en": "Acharya Devsen" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 228,
+    "aliases": ["alap paddhati"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: पं रत्नचंद जी मुख्तार",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): पं रत्नचंद जी मुख्तार"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "yuktyanushasan",
+    "file": "content/granth/yuktyanushasan.txt",
+    "category": "nyay",
+    "title": { "hi": "युक्त्यनुशासन", "en": "Yuktyanushasan" },
+    "author": { "hi": "समंतभद्राचार्य", "en": "Acharya Samantabhadra" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 63,
+    "aliases": ["yuktyanushasan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "sanmati-tark",
+    "file": "content/granth/sanmati-tark.txt",
+    "category": "nyay",
+    "title": { "hi": "सन्मतितर्क", "en": "Sanmati Tark" },
+    "author": { "hi": "सिद्धसेनाचार्य", "en": "Acharya Siddhasen" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 133,
+    "aliases": ["sanmati tark"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "shrutavatar",
+    "file": "content/granth/shrutavatar.txt",
+    "category": "itihas",
+    "title": { "hi": "श्रुतावतार", "en": "Shrutavatar" },
+    "author": { "hi": "इंद्रनंदी आचार्य", "en": "Acharya Indranandi" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 60,
+    "aliases": ["shrutavatar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: गणिनी आर्यिकाश्री ज्ञानमती माताजी",
+      "en": "Text from the Jain Database, nikkyjain.github.io. Translators and editors (as credited there): गणिनी आर्यिकाश्री ज्ञानमती माताजी"
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "darshansar",
+    "file": "content/granth/darshansar.txt",
+    "category": "itihas",
+    "title": { "hi": "दर्शनसार", "en": "Darshansar" },
+    "author": { "hi": "देवसेनाचार्य", "en": "Acharya Devsen" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 30,
+    "aliases": ["darshansar"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "samaysar-natak",
+    "file": "content/granth/samaysar-natak.txt",
+    "category": "anya",
+    "title": { "hi": "समयसार नाटक", "en": "Samaysar Natak" },
+    "author": { "hi": "पंडित बनारसीदास", "en": "Pandit Banarasidas" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 127,
+    "aliases": ["samaysar natak"],
+    "sectionUnit": { "hi": "अधिकार", "en": "Section" },
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "ardhakathanak",
+    "file": "content/granth/ardhakathanak.txt",
+    "category": "anya",
+    "title": { "hi": "अर्धकथानक", "en": "Ardhakathanak" },
+    "author": { "hi": "बनारसीदास", "en": "Pandit Banarasidas" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 675,
+    "aliases": ["ardhakathanak"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
   }
 ]

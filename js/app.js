@@ -18,6 +18,9 @@
   const PAGE_CHARS = 320;
   const PAGE_MAX = 6;
 
+  /* Poojas and paath offered on the search screen besides the daily books. */
+  const CHIP_BOOKS = ['dev-shastra-guru-yugal', 'mahavir-pooja', 'meri-bhavana', 'chhahdhala', 'shanti-path-bhasha', 'panch-parmeshthi-aarti'];
+
   /* ---------- Saved settings (kept on this phone only) ---------- */
 
   const DEFAULTS = {
@@ -1028,10 +1031,12 @@
     if (!box) return;
     const scope = searchBooks.length < catalog.length ? '<p class="muted scope-note">' + esc(t('searchScope')) + '</p>' : '';
     if (!lastQuery.trim()) {
-      /* Nothing typed yet: offer the books as big chips, so nobody has to type to get somewhere. */
+      /* Nothing typed yet: offer the daily books and the most-read poojas as big chips,
+         so nobody has to type to get somewhere. */
+      const picks = catalog.filter(b => b.category === 'nitya' || b.category === 'vidhi' || CHIP_BOOKS.includes(b.id));
       box.innerHTML = '<p class="muted">' + esc(t('typeToSearch')) + '</p>' +
         '<h2 class="chips-head">' + esc(t('orPick')) + '</h2><div class="chips">' +
-        catalog.slice(0, 12).map(b => '<a class="chip" href="#/book/' + b.id + '" translate="no" lang="hi">' + esc(b.title.hi) + '</a>').join('') + '</div>';
+        picks.map(b => '<a class="chip" href="#/book/' + b.id + '" translate="no" lang="hi">' + esc(b.title.hi) + '</a>').join('') + '</div>';
       return;
     }
     const res = runSearch(catalog, searchBooks, lastQuery);

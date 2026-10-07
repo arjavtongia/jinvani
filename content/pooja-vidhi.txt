@@ -36,6 +36,8 @@ Prose: With washed rice (akshat), make a swastik on the chowki, three dots above
 Prose: In abhishek, the idol of the Lord is bathed with pure, filtered water and then wiped with a clean, dry cloth.
 Prose: Abhishek is usually done by those who are in pooja clothes and know the method. Learn it from your temple's pandit ji before doing it the first time.
 Prose: The water of the abhishek is called gandhodak. It is touched to the forehead with respect.
+लिंक: abhishek-path-bhasha | अभिषेक पाठ पढ़ें | Read the Abhishek Path
+लिंक: prakshal-vidhi | प्रतिमा प्रक्षाल विधि पढ़ें | Read the Pratima Prakshal Vidhi
 
 @ 5 | अष्ट द्रव्य तैयार करना | Preparing the eight offerings
 गद्य: पूजा के आठ द्रव्य धोकर, साफ़ बर्तनों में तैयार करें। बहुत से मंदिरों में सूखी सामग्री से पूजा होती है, जैसा नीचे चित्र में बताया है; कुछ मंदिरों में ताज़े फूल, फल और घी का दीपक भी चढ़ाया जाता है।
@@ -55,6 +57,9 @@ Prose: On the chowki, place the pooja book towards the Lord. Put the thona (smal
 ध्यायेत्पञ्चनमस्कारं सर्वपापैः प्रमुच्यते॥
 गद्य: पूजा की पुस्तक से 'पूजा पीठिका' (मंगल पाठ) पढ़कर पूजा शुरू करें। ऊपर उसकी शुरू की पंक्तियाँ हैं।
 Prose: Begin by reading the 'pooja pithika' (opening prayers) from the pooja book. Its first lines are shown above.
+लिंक: vinay-path | विनय पाठ पढ़ें | Read the Vinay Path
+लिंक: pooja-prarambh | पूजा विधि प्रारंभ (पूरा) पढ़ें | Read the full opening prayers
+लिंक: swasti-mangal | स्वस्ति मंगल विधान पढ़ें | Read the Swasti Mangal
 
 @ 8 | स्थापना — ठौने में तीन लौंग | Sthapana — three cloves in the thona
 ॐ ह्रीं श्री देवशास्त्रगुरुसमूह! अत्र अवतर अवतर संवौषट्।
@@ -82,6 +87,8 @@ Prose: After the eight offerings, offer the arghya, a little of all eight mixed 
 गद्य: एक से अधिक पूजा करनी हो, तो हर पूजा के लिए स्थापना से जयमाला तक यही क्रम दोहराएँ।
 Prose: Now read the jaymala of that pooja from the book, the song of the Lord's qualities, with feeling. After the jaymala, offer the full arghya (purnarghya).
 Prose: If you are doing more than one pooja, repeat the same order, from sthapana to jaymala, for each pooja.
+लिंक: dev-shastra-guru-yugal | देव-शास्त्र-गुरु पूजा पढ़ें | Read the Dev-Shastra-Guru Pooja
+लिंक: arghyavali | अर्घ्यावली पढ़ें | Read the Arghyavali
 
 @ 12 | शान्ति पाठ और विसर्जन | Shanti path and visarjan
 ज्ञानतोऽज्ञानतो वापि शास्त्रोक्तं न कृतं मया।
@@ -90,11 +97,15 @@ Prose: If you are doing more than one pooja, repeat the same order, from sthapan
 गद्य: इसके बाद नौ बार णमोकार मंत्र का जाप करें।
 Prose: At the end, read the shanti path and the visarjan path. The visarjan path asks forgiveness for whatever was not done as the scriptures say, knowingly or unknowingly. One of its verses is shown above.
 Prose: Then recite the Namokar Mantra nine times.
+लिंक: shanti-path-bhasha | शांति पाठ (भाषा) पढ़ें | Read the Shanti Path (Hindi)
+लिंक: shanti-path | शांति पाठ (संस्कृत) पढ़ें | Read the Shanti Path (Sanskrit)
+लिंक: visarjan-path | विसर्जन पाठ पढ़ें | Read the Visarjan Path
 
 @ 13 | आरती और मंदिर से विदा | Aarti and leaving the temple
 असहि असहि असहि।
 गद्य: चाहें तो आरती करें। मंदिर से निकलते समय भगवान की ओर पीठ न करें — कुछ कदम पीछे चलकर निकलें, और तीन बार 'असहि' बोलें।
 Prose: Do the aarti if you wish. When leaving, do not turn your back to the Lord: step back a few paces before turning, and say 'Asahi' three times.
+लिंक: panch-parmeshthi-aarti | पंच परमेष्ठी आरती पढ़ें | Read the Panch Parmeshthi Aarti
 
 @ 14 | निर्माल्य — ध्यान रखने की बात | Nirmalya — something to remember
 गद्य: भगवान को चढ़ाई गई सामग्री 'निर्माल्य' कहलाती है। उसे वापस नहीं लिया जाता, न खाया जाता है, न बेचा जाता है। उसे मंदिर की व्यवस्था के अनुसार ही रखें।

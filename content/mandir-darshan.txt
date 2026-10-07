@@ -91,6 +91,8 @@ Prose: If munis, aryikas or other renunciants are present, greet them with folde
 गद्य: फिर थोड़ा स्वाध्याय करें — कोई शास्त्र, स्तोत्र या भावना पढ़ें। यह ऐप इसमें मदद के लिए है।
 Prose: Sit in a quiet place and recite the Namokar Mantra 9 or 108 times on a mala. If you have time, do samayik for a while: calm the mind and reflect on the soul.
 Prose: Then do some study (swadhyay): read a scripture, stotra or reflection. This app is here to help with that.
+लिंक: samayik-path-yugal | सामायिक पाठ पढ़ें | Read the Samayik Path
+लिंक: meri-bhavana | मेरी भावना पढ़ें | Read Meri Bhavana
 
 @ 13 | मंदिर से विदा | Leaving the temple
 असहि असहि असहि।

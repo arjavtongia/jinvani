@@ -1,10 +1,19 @@
 [
   { "id": "nitya", "title": { "hi": "नित्य पाठ", "en": "Daily prayers" } },
   { "id": "vidhi", "title": { "hi": "मंदिर और पूजा विधि", "en": "Temple and pooja guides" } },
+  { "id": "pooja-prarambh", "title": { "hi": "पूजा से पहले — अभिषेक, विनय, स्वस्ति", "en": "Before the pooja — abhishek, vinay, swasti" } },
+  { "id": "nitya-pooja", "title": { "hi": "नित्य पूजाएँ", "en": "Daily poojas" } },
+  { "id": "tirthankar-pooja", "title": { "hi": "तीर्थंकर पूजाएँ", "en": "Tirthankar poojas" } },
+  { "id": "parv-pooja", "title": { "hi": "पर्व पूजाएँ", "en": "Festival poojas" } },
+  { "id": "visarjan", "title": { "hi": "अर्घ्य, शांति पाठ, विसर्जन", "en": "Arghya, Shanti Path, Visarjan" } },
+  { "id": "aarti", "title": { "hi": "आरती और चालीसा", "en": "Aarti and Chalisa" } },
+  { "id": "path", "title": { "hi": "पाठ, भावना और स्तुति", "en": "Paath, bhavana and stuti" } },
+  { "id": "stotra", "title": { "hi": "स्तोत्र", "en": "Stotras" } },
   { "id": "dravyanuyog", "title": { "hi": "द्रव्यानुयोग", "en": "Dravyanuyog" } },
   { "id": "charananuyog", "title": { "hi": "चरणानुयोग", "en": "Charananuyog" } },
   { "id": "karananuyog", "title": { "hi": "करणानुयोग", "en": "Karananuyog" } },
   { "id": "prathamanuyog", "title": { "hi": "प्रथमानुयोग", "en": "Prathamanuyog" } },
   { "id": "nyay", "title": { "hi": "न्याय", "en": "Nyay (logic)" } },
-  { "id": "itihas", "title": { "hi": "इतिहास", "en": "Itihas (history)" } }
+  { "id": "itihas", "title": { "hi": "इतिहास", "en": "Itihas (history)" } },
+  { "id": "anya", "title": { "hi": "अन्य ग्रंथ", "en": "Other texts" } }
 ]

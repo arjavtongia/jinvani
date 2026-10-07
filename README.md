@@ -35,6 +35,25 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 | पूजा विधि | Ashta-dravya pooja guide, 15 steps (Hindi and English) |
 | दीपावली पूजन विधि | Diwali pooja at home and on the new bahi: setup steps (Hindi and English), arghyavali, Shri Mahavir Jin Pooja (Vrindavan), Saraswati Pooja (Dyanatray), Nirvan Kand (Bhagwatidas), 64 riddhi arghyas, visarjan and aarti |
 
+### Poojas, paath and stotras (`content/pooja/`, 170 texts)
+
+| Group | What's in it |
+| --- | --- |
+| पूजा से पहले | Abhishek path, prakshal vidhi, vinay path, mangalashtak, pooja prarambh, swasti mangal, darshan paths, abhishek bhajans |
+| नित्य पूजाएँ | Dev-Shastra-Guru (5 versions), Siddh pooja (4), Navdevta, Panch Parmeshthi, Samuchchay, Chaubis Tirthankar, Bees Tirthankar, Simandhar, Bahubali, Ratnatray, Dashlakshan, Solahkaran, Saraswati, Panchmeru, Nandishwar, Nirvan Kshetra and more |
+| तीर्थंकर पूजाएँ | A pooja for each of the 24 Tirthankars (Vrindavandas), plus other versions for Adinath, Padmaprabh, Vasupujya, Shantinath, Neminath, Parshvanath and Mahavir |
+| पर्व पूजाएँ | Kshamavani, Akshay Tritiya, Deepawali, Rakshabandhan, Veer Shasan Jayanti, Shrut Panchami |
+| अर्घ्य, शांति पाठ, विसर्जन | Arghyavali, maha arghya, Shanti path (Sanskrit and Hindi), Visarjan path |
+| आरती और चालीसा | Panch Parmeshthi, Chandaprabhu, Parshvanath, Mahavir and Bahubali aartis; Adinath and Mahavir chalisa |
+| पाठ, भावना और स्तुति | Meri Bhavana, Chhahdhala (Daulatram, with meaning; also Budhjan and Dyanatray), Samayik path (3), Alochana path, Barah Bhavana (2 more), Samadhimaran, Nirvan Kand, Vairagya Bhavana, Dukhharan Vinati, Apurva Avsar, Jain Shatak, Kundkund Shatak and more |
+| स्तोत्र | Kalyan Mandir, Ekibhav, Vishapahar, Bhaktamar (with meaning, and two Hindi versions), Swayambhu, Mahavirashtak, Jin Sahasranam, Akalank, Gandharvalay, Mandalasa and more |
+
+Poojas scroll as one page. Stotras and paath that have a meaning for every verse show one verse per screen.
+
+### Granths (`content/granth/`, 53 books)
+
+Grouped by anuyog: Samaysar, Pravachansar, Niyamsar, Panchastikay, Ashtapahud, Ratnakarand Shravakachar, Purusharthasiddhyupay, Gommatsar, Bhagavati Aradhana, Padmanandi Panchvinshatika, Gyanarnav, Apt Mimansa, Parikshamukh and many more, mostly with Hindi meaning. The puranas and charitras (Adipuran, Padmapuran, Uttarpuran, Mahavir Puran, Jambuswami, Sukumal and Sudarshan Charitra, Aradhana Katha Kosh, Samyaktva Kaumudi) are in Hindi prose, a screen at a time.
+
 Sources are listed in the app under Settings → आभार (Credits).
 
 ## Fixing or adding text
@@ -72,6 +91,7 @@ To add another language, add a block to `js/strings.js` and the language to `LAN
 ## License
 
 - App code: MIT License (see [LICENSE](LICENSE)).
-- Texts in `content/`: CC BY-SA 4.0. The original scriptures are centuries old; the transcriptions were checked against [Sanskrit Wikisource](https://sa.wikisource.org/), which is CC BY-SA 4.0.
+- Texts in `content/` (except the two folders below): CC BY-SA 4.0. The original scriptures are centuries old; the transcriptions were checked against [Sanskrit Wikisource](https://sa.wikisource.org/), which is CC BY-SA 4.0.
+- Texts in `content/pooja/` and `content/granth/`: taken from the Jain Database, [nikkyjain.github.io](https://nikkyjain.github.io/), with the translators it credits. Its license is not stated; the texts are shared here with credit, for study and worship.
 - Font: Noto Serif Devanagari, SIL Open Font License (see `fonts/OFL.txt`).
 - Icons: [Tabler Icons](https://tabler.io/icons), MIT License.

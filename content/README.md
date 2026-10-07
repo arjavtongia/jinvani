@@ -45,3 +45,7 @@ Prose: English paragraph
 3. Add the file name to the `FILES` list in `sw.js` and change `VERSION` there, so it also works offline.
 
 Only add texts that are free to share, or that you have permission to use.
+
+## `pooja/` और `granth/` · Imported texts
+
+The files in `pooja/` (poojas, paath, stotras, aartis) and `granth/` (scriptures) were converted from the Jain Database, nikkyjain.github.io, by scripts kept outside this repo (`import/fetch_pooja.py`, `import/import_pooja.py`, `import/import_gatha.py`, then `import/merge_catalog.py` to rebuild their entries in `books.json` and `categories.json`). Re-running those scripts overwrites these files, so if you fix a typo here, also tell whoever runs the import. These files are not in the `FILES` list of `sw.js`: each one is saved for offline use the first time it is opened.
