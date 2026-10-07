@@ -50,7 +50,7 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 
 Poojas scroll as one page. Stotras and paath that have a meaning for every verse show one verse per screen.
 
-### Granths (`content/granth/`, 53 books)
+### Granths (`content/granth/`, 54 books)
 
 Grouped by anuyog: Samaysar, Pravachansar, Niyamsar, Panchastikay, Ashtapahud, Ratnakarand Shravakachar, Purusharthasiddhyupay, Gommatsar, Bhagavati Aradhana, Padmanandi Panchvinshatika, Gyanarnav, Apt Mimansa, Parikshamukh and many more, mostly with Hindi meaning. The puranas and charitras (Adipuran, Padmapuran, Uttarpuran, Mahavir Puran, Jambuswami, Sukumal and Sudarshan Charitra, Aradhana Katha Kosh, Samyaktva Kaumudi) are in Hindi prose, a screen at a time.
 

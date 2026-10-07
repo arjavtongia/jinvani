@@ -3025,7 +3025,7 @@
     "title": { "hi": "समयसार", "en": "Samaysar" },
     "author": { "hi": "कुन्दकुन्दाचार्य", "en": "Acharya Kundkund" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 432,
+    "count": 437,
     "aliases": ["samaysar"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3041,7 +3041,7 @@
     "title": { "hi": "प्रवचनसार", "en": "Pravachansar" },
     "author": { "hi": "कुन्दकुन्दाचार्य", "en": "Acharya Kundkund" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 298,
+    "count": 313,
     "aliases": ["pravachansar"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3057,7 +3057,7 @@
     "title": { "hi": "पञ्चास्तिकाय", "en": "Panchastikay" },
     "author": { "hi": "कुन्दकुन्दाचार्य", "en": "Acharya Kundkund" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 170,
+    "count": 181,
     "aliases": ["panchastikay"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3089,7 +3089,7 @@
     "title": { "hi": "समाधितन्त्र", "en": "Samadhitantra" },
     "author": { "hi": "आचार्य पूज्यपाद", "en": "Acharya Pujyapad" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 103,
+    "count": 105,
     "aliases": ["samadhitantra"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
@@ -3149,7 +3149,7 @@
     "title": { "hi": "योगसार प्राभृत", "en": "Yogsar Prabhrut" },
     "author": { "hi": "अमितगति आचार्य", "en": "Acharya Amitgati" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 539,
+    "count": 538,
     "aliases": ["yogsar prabhrut"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3165,7 +3165,7 @@
     "title": { "hi": "तत्त्वार्थसूत्र", "en": "Tattvartha Sutra (with meaning)" },
     "author": { "hi": "आचार्य उमास्वामी", "en": "Acharya Umaswami" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 355,
+    "count": 357,
     "aliases": ["tattvartha sutra (with meaning)"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3196,7 +3196,7 @@
     "title": { "hi": "पंचाध्यायी", "en": "Panchadhyayi" },
     "author": { "hi": "", "en": "" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 533,
+    "count": 803,
     "aliases": ["panchadhyayi"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3212,7 +3212,7 @@
     "title": { "hi": "पाहुड दोहा", "en": "Pahud Doha" },
     "author": { "hi": "राम सिंह मुनि", "en": "Muni Ramsingh" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 213,
+    "count": 217,
     "aliases": ["pahud doha"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
@@ -3242,7 +3242,7 @@
     "title": { "hi": "तत्त्वज्ञान तरंगिणी", "en": "Tattvagyan Tarangini" },
     "author": { "hi": "भट्टारक ज्ञानभूषण", "en": "Bhattarak Gyanbhushan" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 306,
+    "count": 358,
     "aliases": ["tattvagyan tarangini"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3258,7 +3258,7 @@
     "title": { "hi": "अमृताशीति", "en": "Amritashiti" },
     "author": { "hi": "योगींदुदेव", "en": "Acharya Yogindudev" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 65,
+    "count": 81,
     "aliases": ["amritashiti"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
@@ -3289,7 +3289,7 @@
     "title": { "hi": "श्रीअष्टपाहुड", "en": "Ashtapahud" },
     "author": { "hi": "कुन्दकुंदाचार्य", "en": "Acharya Kundkund" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 453,
+    "count": 489,
     "aliases": ["ashtapahud"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3305,7 +3305,7 @@
     "title": { "hi": "मूलाचार", "en": "Mulachar" },
     "author": { "hi": "वट्टकेराचार्य", "en": "Acharya Vattaker" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 271,
+    "count": 302,
     "aliases": ["mulachar"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io। आभार: आ. ज्ञानमती",
@@ -3320,7 +3320,7 @@
     "title": { "hi": "वारासाणुवेक्खा", "en": "Barasanuvekkha (Kartikeyanupreksha)" },
     "author": { "hi": "स्वामि कार्तिकेय", "en": "Swami Kartikeya" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 363,
+    "count": 482,
     "aliases": ["barasanuvekkha (kartikeyanupreksha)"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3336,7 +3336,7 @@
     "title": { "hi": "पुरुषार्थसिद्ध्युपाय", "en": "Purusharthasiddhyupay" },
     "author": { "hi": "आचार्य अमृतचन्द्र", "en": "Acharya Amritchandra" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 198,
+    "count": 224,
     "aliases": ["purusharthasiddhyupay"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3352,7 +3352,7 @@
     "title": { "hi": "बारसणुपेक्‍खा", "en": "Barasanupekkha" },
     "author": { "hi": "कुन्दकुन्दाचार्य", "en": "Acharya Kundkund" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 76,
+    "count": 91,
     "aliases": ["barasanupekkha"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3416,7 +3416,7 @@
     "title": { "hi": "भगवती आराधना", "en": "Bhagavati Aradhana" },
     "author": { "hi": "शिवाचार्य", "en": "Acharya Shivarya" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 546,
+    "count": 1860,
     "aliases": ["bhagavati aradhana"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3432,7 +3432,7 @@
     "title": { "hi": "पद्मनंदी पंचविन्शतिका", "en": "Padmanandi Panchvinshatika" },
     "author": { "hi": "आचार्य पद्मनंदी", "en": "Acharya Padmanandi" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 930,
+    "count": 932,
     "aliases": ["padmanandi panchvinshatika"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3450,6 +3450,21 @@
     "unit": { "hi": "गाथा", "en": "Gatha" },
     "count": 270,
     "aliases": ["atmanushasan"],
+    "source": {
+      "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
+      "en": "Text from the Jain Database, nikkyjain.github.io."
+    },
+    "textLang": "sa"
+  },
+  {
+    "id": "rayansar",
+    "file": "content/granth/rayansar.txt",
+    "category": "charananuyog",
+    "title": { "hi": "रयणसार", "en": "Rayansar" },
+    "author": { "hi": "कुन्दकुंदाचार्य", "en": "Acharya Kundkund" },
+    "unit": { "hi": "गाथा", "en": "Gatha" },
+    "count": 166,
+    "aliases": ["rayansar"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
       "en": "Text from the Jain Database, nikkyjain.github.io."
@@ -3478,7 +3493,7 @@
     "title": { "hi": "लब्धिसार", "en": "Labdhisar" },
     "author": { "hi": "नेमिचंद्र आचार्य", "en": "Acharya Nemichandra" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 40,
+    "count": 43,
     "aliases": ["labdhisar"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
@@ -3493,7 +3508,7 @@
     "title": { "hi": "गोम्मटसार जीवकांड", "en": "Gommatsar Jeevkand" },
     "author": { "hi": "नेमिचंद्र आचार्य", "en": "Acharya Nemichandra" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 61,
+    "count": 642,
     "aliases": ["gommatsar jeevkand"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
@@ -3508,7 +3523,7 @@
     "title": { "hi": "गोम्मटसार कर्मकांड", "en": "Gommatsar Karmkand" },
     "author": { "hi": "नेमिचंद्र आचार्य", "en": "Acharya Nemichandra" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 105,
+    "count": 187,
     "aliases": ["gommatsar karmkand"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3524,7 +3539,7 @@
     "title": { "hi": "आस्रव त्रिभंगी", "en": "Asrav Tribhangi" },
     "author": { "hi": "श्रुतमुनी", "en": "Shrutmuni" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 38,
+    "count": 62,
     "aliases": ["asrav tribhangi"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
@@ -3727,7 +3742,7 @@
     "title": { "hi": "परीक्षामुख", "en": "Parikshamukh" },
     "author": { "hi": "आचार्य माणिक्यनन्दि", "en": "Acharya Manikyanandi" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 206,
+    "count": 209,
     "aliases": ["parikshamukh"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3743,7 +3758,7 @@
     "title": { "hi": "आलापपद्धति", "en": "Alap Paddhati" },
     "author": { "hi": "देवसेनाचार्य", "en": "Acharya Devsen" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 228,
+    "count": 229,
     "aliases": ["alap paddhati"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3759,7 +3774,7 @@
     "title": { "hi": "युक्त्यनुशासन", "en": "Yuktyanushasan" },
     "author": { "hi": "समंतभद्राचार्य", "en": "Acharya Samantabhadra" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 63,
+    "count": 64,
     "aliases": ["yuktyanushasan"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
@@ -3774,7 +3789,7 @@
     "title": { "hi": "सन्मतितर्क", "en": "Sanmati Tark" },
     "author": { "hi": "सिद्धसेनाचार्य", "en": "Acharya Siddhasen" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 133,
+    "count": 131,
     "aliases": ["sanmati tark"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
@@ -3805,7 +3820,7 @@
     "title": { "hi": "दर्शनसार", "en": "Darshansar" },
     "author": { "hi": "देवसेनाचार्य", "en": "Acharya Devsen" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 30,
+    "count": 47,
     "aliases": ["darshansar"],
     "source": {
       "hi": "पाठ: जैन डेटाबेस, nikkyjain.github.io।",
@@ -3820,7 +3835,7 @@
     "title": { "hi": "समयसार नाटक", "en": "Samaysar Natak" },
     "author": { "hi": "पंडित बनारसीदास", "en": "Pandit Banarasidas" },
     "unit": { "hi": "गाथा", "en": "Gatha" },
-    "count": 127,
+    "count": 136,
     "aliases": ["samaysar natak"],
     "sectionUnit": { "hi": "अधिकार", "en": "Section" },
     "source": {
