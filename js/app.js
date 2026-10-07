@@ -1305,7 +1305,7 @@
     const mail = 'arjav.tongia@gmail.com';
     return '<section class="maker">' + ORN.prateek() +
       '<p class="maker-by">' + esc(t('madeBy')) + '</p>' +
-      '<h2 class="maker-name" translate="no">' + esc(t('makerName')) + '</h2>' +
+      '<h2 class="maker-name" translate="no" lang="' + state.lang + '">' + esc(t('makerName')) + '</h2>' +
       '<p class="maker-place">' + esc(t('makerPlace')) + '</p>' +
       '<p class="maker-about">' + esc(t('makerAbout')) + '</p>' +
       '<p class="maker-write">' + esc(t('makerWrite')) + '</p>' +
