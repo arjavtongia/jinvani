@@ -10,7 +10,7 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 - Today's date and Jain tithi on the home screen; tap it for the next 7 days, with अष्टमी, चतुर्दशी and festivals marked. In the week before Diwali, a card on the home screen opens the Diwali pooja. Calculated on the phone (sunrise in Delhi, purnimanta months).
 - मंदिर दर्शन विधि and पूजा विधि: step-by-step temple and ashta-dravya pooja guides with every mantra and drawings (thali, ठौना with three cloves, swastik, pradakshina).
 - "चित्र से समझें": diagrams that explain the meaning of key sutras and verses.
-- जैन कथाएँ (Jain stories): 13 traditional stories with photos of the places where they happened, a short version in Hindi and English, and the lesson of each story. A different story is offered on the home screen every day.
+- जैन कथाएँ (Jain stories): 33 traditional stories, in five groups, with photos of the places where they happened, a short version in Hindi and English, and the lesson of each story. A different story is offered on the home screen every day.
 - One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons; short sutras are grouped five or six to a screen. Swipes and arrow keys work too.
 - Poojas and short paath (Deepawali poojas, Namokar, Darshan Path, Darshan Stuti, Barah Bhavana) scroll as one page each, so they can be recited without tapping Next.
 - Remembers where you stopped, and shows "पढ़ना जारी रखें" (Continue reading) on the home screen.
@@ -36,15 +36,19 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 | पूजा विधि | Ashta-dravya pooja guide, 15 steps (Hindi and English) |
 | दीपावली पूजन विधि | Diwali pooja at home and on the new bahi: setup steps (Hindi and English), arghyavali, Shri Mahavir Jin Pooja (Vrindavan), Saraswati Pooja (Dyanatray), Nirvan Kand (Bhagwatidas), 64 riddhi arghyas, visarjan and aarti |
 
-### Jain stories (`content/katha/`, 13 stories)
+### Jain stories (`content/katha/`, 33 stories)
 
-| Story | What's in it |
+The stories are listed in five groups:
+
+| Group | Stories |
 | --- | --- |
-| भरत और बाहुबली, अक्षय तृतीया, सती चन्दना | Retold for this app in simple Hindi and English, with photos of Shravanabelagola, Hastinapur and Pawapuri |
-| The eight angas of samyaktva | Anjan Chor, Anantmati, Raja Uddayan, Revati Rani, Jinendrabhakt Seth, Varishen Muni, Vishnukumar Muni (Rakshabandhan), Vajrakumar Muni: the full Hindi story, a short version in Hindi and English, the lesson, and a diagram of all eight angas |
-| महामुनि सुकुमाल, सेठ सुदर्शन | Longer stories in 6 and 7 chapters |
+| तीर्थंकर और महापुरुष | Mahavir's childhood (his five names), Bharat and Bahubali, Akshay Tritiya, Neminath and Rajul, Parshvanath and Kamath, Sati Chandana: retold for this app in simple Hindi and English, with photos of Kundalpur, Shravanabelagola, Hastinapur, Girnar, Kashi, Shikharji and Pawapuri |
+| आचार्यों की कथाएँ | Acharya Mantunga and the Bhaktamar, Shrutkevali Bhadrabahu, Samantabhadra, Akalank, Patrakesari |
+| सम्यग्दर्शन के आठ अंग | Anjan Chor, Anantmati, Raja Uddayan, Revati Rani, Jinendrabhakt Seth, Varishen Muni, Vishnukumar Muni (Rakshabandhan), Vajrakumar Muni, with a diagram of all eight angas |
+| व्रत, सत्य और अहिंसा | Yampal Chandal, Mrigsen the fisherman, the little fish Shalisikth, giving up food at night, Raja Vasu, Shribhuti, Neeli |
+| मुनि, राजा और श्रेष्ठी | Mahamuni Sukumal and Seth Sudarshan (in chapters), Sukaushal Muni, Gajkumar Muni, Raja Shrenik, Charudatt, Raja Karkandu |
 
-Photos are from Wikimedia Commons and are credited under each picture.
+The stories that are not retold come from the Jain Database and the Aradhana Katha Kosh (Br. Nemidatta), in Hindi; each has a short version in Hindi and English and its lesson, written for this app. Photos are from Wikimedia Commons and are credited under each picture; stories without a photo have a drawn picture on their card.
 
 ### Poojas, paath and stotras (`content/pooja/`, 170 texts)
 

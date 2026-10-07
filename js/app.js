@@ -659,7 +659,8 @@
     let hue = 0;
     for (const ch of meta.id) hue = (hue * 31 + ch.charCodeAt(0)) % 40;
     hue += 8; /* saffron, vermilion and gold, like the rest of the app */
-    return '<span class="' + cls + ' cover-letter" style="--hue:' + hue + '" aria-hidden="true" translate="no">' + esc(letter) + '</span>';
+    return '<span class="' + cls + ' cover-letter' + (meta.coverIcon ? ' cover-icon' : '') + '" style="--hue:' + hue + '" aria-hidden="true" translate="no">' +
+      (meta.coverIcon ? icon(meta.coverIcon) : esc(letter)) + '</span>';
   }
 
   function storyRow(meta) {
@@ -672,6 +673,18 @@
     if (meta.category === 'katha') return storyRow(meta);
     return chevronRow('#/book/' + meta.id, titleHtml(meta) +
       '<span class="row-sub">' + (meta.author && L(meta.author) ? esc(L(meta.author)) + ' · ' : '') + esc(countLabel(meta)) + '</span>');
+  }
+
+  /* All stories as cards, under a heading for each group (तीर्थंकर, आचार्य, ...). */
+  function storyListHtml() {
+    const groups = [];
+    catalog.filter(b => b.category === 'katha').forEach(b => {
+      const name = b.group ? L(b.group) : '';
+      if (!groups.length || groups[groups.length - 1].name !== name) groups.push({ name: name, books: [] });
+      groups[groups.length - 1].books.push(b);
+    });
+    return groups.map(g => (g.name ? '<h2 class="group-head story-group" translate="no">' + esc(g.name) + '</h2>' : '') +
+      '<ul class="story-list">' + g.books.map(storyRow).join('') + '</ul>').join('');
   }
 
   function verseRow(book, v) {
@@ -864,8 +877,8 @@
       if (!cat) return viewNotFound();
       document.title = L(cat.title) + ' · ' + t('appName');
       return backBar('#/books', t('books')) +
-        '<main><h1 translate="no">' + esc(L(cat.title)) + '</h1><ul class="' + (cat.id === 'katha' ? 'story-list' : 'rows') + '">' +
-        catalog.filter(b => b.category === cat.id).map(bookRow).join('') + '</ul></main>';
+        '<main><h1 translate="no">' + esc(L(cat.title)) + '</h1>' + (cat.id === 'katha' ? storyListHtml() :
+        '<ul class="rows">' + catalog.filter(b => b.category === cat.id).map(bookRow).join('') + '</ul>') + '</main>';
     }
     document.title = t('books') + ' · ' + t('appName');
     let html = backBar('#/', t('home')) + '<main><h1>' + esc(t('books')) + '</h1>';

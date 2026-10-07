@@ -146,6 +146,26 @@
     }
   },
   {
+    "id": "mahavir-bachpan",
+    "file": "content/katha/mahavir-bachpan.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "वर्धमान के पाँच नाम — भगवान महावीर का बचपन", "en": "Vardhaman's five names: Bhagwan Mahavir's childhood" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/kundalpur-nalanda.jpg",
+    "blurb": { "hi": "वर्धमान, सन्मति, वीर, अतिवीर और महावीर — हर नाम के पीछे एक कथा", "en": "Vardhaman, Sanmati, Veer, Ativeer and Mahavir: a story behind each name" },
+    "aliases": ["ativeer", "mahaveer", "mahavir", "sanmati", "vardhaman", "vardhaman's five names: bhagwan mahavir's childhood", "अतिवीर", "महावीर", "वर्धमान", "सन्मति"],
+    "source": {
+      "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "तीर्थंकर और महापुरुष", "en": "Tirthankars and great souls" }
+  },
+  {
     "id": "bahubali",
     "file": "content/katha/bahubali.txt",
     "scroll": true,
@@ -163,7 +183,8 @@
     "source": {
       "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "तीर्थंकर और महापुरुष", "en": "Tirthankars and great souls" }
   },
   {
     "id": "akshay-tritiya",
@@ -182,7 +203,48 @@
     "source": {
       "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "तीर्थंकर और महापुरुष", "en": "Tirthankars and great souls" }
+  },
+  {
+    "id": "neminath-rajul",
+    "file": "content/katha/neminath-rajul.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "भगवान नेमिनाथ और राजुल", "en": "Bhagwan Neminath and Rajul" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 5,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/girnar.jpg",
+    "blurb": { "hi": "विवाह के दिन पशुओं की पुकार सुनकर सब छोड़ देने वाले नेमिकुमार", "en": "On his wedding day, Nemikumar hears the animals cry, and gives everything up" },
+    "aliases": ["bhagwan neminath and rajul", "girnar", "nemi", "neminath", "rajmati", "rajul", "गिरनार", "नेमिनाथ", "राजमती", "राजुल"],
+    "source": {
+      "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "तीर्थंकर और महापुरुष", "en": "Tirthankars and great souls" }
+  },
+  {
+    "id": "parshvanath-kamath",
+    "file": "content/katha/parshvanath-kamath.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "भगवान पार्श्वनाथ और कमठ", "en": "Bhagwan Parshvanath and Kamath" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/kashi-bhelupur.jpg",
+    "blurb": { "hi": "दस जन्मों का बैर, जिसे क्षमा ने जीत लिया", "en": "An enmity of ten lifetimes, overcome by forgiveness" },
+    "aliases": ["bhagwan parshvanath and kamath", "dharanendra", "kamath", "padmavati", "parasnath", "parshvanath", "कमठ", "धरणेन्द्र", "पद्मावती", "पार्श्वनाथ"],
+    "source": {
+      "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "तीर्थंकर और महापुरुष", "en": "Tirthankars and great souls" }
   },
   {
     "id": "chandanbala",
@@ -201,7 +263,108 @@
     "source": {
       "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "तीर्थंकर और महापुरुष", "en": "Tirthankars and great souls" }
+  },
+  {
+    "id": "manatunga-bhaktamar",
+    "file": "content/katha/manatunga-bhaktamar.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "आचार्य मानतुंग और भक्तामर स्तोत्र", "en": "Acharya Mantunga and the Bhaktamar Stotra" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "lock",
+    "blurb": { "hi": "अड़तालीस ताले, अड़तालीस श्लोक — भक्तामर की रचना की कथा", "en": "Forty-eight locks, forty-eight verses: how the Bhaktamar came to be" },
+    "aliases": ["48 locks", "acharya mantunga and the bhaktamar stotra", "bhaktamar", "manatunga", "mantunga", "भक्तामर", "मानतुंग"],
+    "source": {
+      "hi": "परम्परागत कथा, इसी ऐप के लिए सरल हिंदी और अंग्रेज़ी में लिखी गई। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "A traditional story, retold for this app in simple Hindi and English. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "आचार्यों की कथाएँ", "en": "Stories of the acharyas" }
+  },
+  {
+    "id": "bhadrabahu",
+    "file": "content/katha/bhadrabahu.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "श्रुतकेवली भद्रबाहु", "en": "Shrutakevali Bhadrabahu" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 6,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/chandragiri.jpg",
+    "blurb": { "hi": "चौदह गोलियाँ जमाने वाला बालक बना पंचम श्रुतकेवली", "en": "A boy who stacked fourteen marbles grows up to be the fifth Shrutakevali." },
+    "aliases": ["bhadrabahu", "shrutakevali bhadrabahu", "श्रुतकेवली भद्रबाहु"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "आचार्यों की कथाएँ", "en": "Stories of the acharyas" }
+  },
+  {
+    "id": "samantabhadra",
+    "file": "content/katha/samantabhadra.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "आचार्य समन्तभद्र", "en": "Acharya Samantabhadra" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 16,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/kashi-bhelupur.jpg",
+    "blurb": { "hi": "भस्मक रोग, शिव मंदिर और स्वयंभू स्तोत्र का चमत्कार", "en": "A great acharya, a strange hunger, and a hymn that made the Jina's image appear." },
+    "aliases": ["acharya samantabhadra", "samantabhadra", "आचार्य समन्तभद्र"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "आचार्यों की कथाएँ", "en": "Stories of the acharyas" }
+  },
+  {
+    "id": "akalank",
+    "file": "content/katha/akalank.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "अकलंक और निकलंक", "en": "Akalank and Nikalank" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 21,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "book",
+    "blurb": { "hi": "भाई के बलिदान से बचे अकलंक ने जिनधर्म की लाज रखी", "en": "Saved by his brother's sacrifice, Akalank defends the Jain faith in a great debate." },
+    "aliases": ["akalank", "akalank and nikalank", "अकलंक और निकलंक"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "आचार्यों की कथाएँ", "en": "Stories of the acharyas" }
+  },
+  {
+    "id": "patrakesari",
+    "file": "content/katha/patrakesari.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "आचार्य पात्रकेसरी", "en": "Acharya Patrakesari" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "book",
+    "blurb": { "hi": "एक स्तोत्र सुनते ही बदल गई एक ब्राह्मण विद्वान की राह", "en": "A proud Brahmin scholar hears one hymn, and finds the truth he was seeking." },
+    "aliases": ["acharya patrakesari", "patrakesari", "आचार्य पात्रकेसरी"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "आचार्यों की कथाएँ", "en": "Stories of the acharyas" }
   },
   {
     "id": "anjan-chor",
@@ -220,7 +383,8 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "सम्यग्दर्शन के आठ अंग", "en": "The eight angas of right faith" }
   },
   {
     "id": "anantmati",
@@ -239,7 +403,8 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "सम्यग्दर्शन के आठ अंग", "en": "The eight angas of right faith" }
   },
   {
     "id": "uddayan",
@@ -257,7 +422,8 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "सम्यग्दर्शन के आठ अंग", "en": "The eight angas of right faith" }
   },
   {
     "id": "revati",
@@ -275,7 +441,8 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "सम्यग्दर्शन के आठ अंग", "en": "The eight angas of right faith" }
   },
   {
     "id": "jinendrabhakt",
@@ -295,7 +462,8 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "सम्यग्दर्शन के आठ अंग", "en": "The eight angas of right faith" }
   },
   {
     "id": "varishen",
@@ -314,7 +482,8 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "सम्यग्दर्शन के आठ अंग", "en": "The eight angas of right faith" }
   },
   {
     "id": "vishnukumar",
@@ -334,7 +503,8 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "सम्यग्दर्शन के आठ अंग", "en": "The eight angas of right faith" }
   },
   {
     "id": "vajrakumar",
@@ -353,7 +523,148 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "सम्यग्दर्शन के आठ अंग", "en": "The eight angas of right faith" }
+  },
+  {
+    "id": "yampal",
+    "file": "content/katha/yampal.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "यमपाल चाण्डाल", "en": "Yampal the Chandala" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 8,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "heart",
+    "blurb": { "hi": "प्राण जाएँ पर व्रत न जाए: एक चाण्डाल की अटल अहिंसा", "en": "An outcaste executioner keeps his vow of non-violence, even in the face of death." },
+    "aliases": ["yampal", "yampal the chandala", "यमपाल चाण्डाल"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "व्रत, सत्य और अहिंसा", "en": "Vows, truth and non-violence" }
+  },
+  {
+    "id": "mrigsen",
+    "file": "content/katha/mrigsen.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "मृगसेन धीवर", "en": "Mrigsen the Fisherman" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 26,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "fish",
+    "blurb": { "hi": "एक मछली पर दया का व्रत, जिसने अगला जन्म सँवार दिया", "en": "A fisherman spares one fish, and his kindness follows him into his next life." },
+    "aliases": ["mrigsen", "mrigsen the fisherman", "मृगसेन धीवर"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "व्रत, सत्य और अहिंसा", "en": "Vows, truth and non-violence" }
+  },
+  {
+    "id": "shalisikth",
+    "file": "content/katha/shalisikth.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "शालिसिक्थ मच्छ", "en": "Shalisikth, the Tiny Fish" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "fish",
+    "blurb": { "hi": "जिसने कुछ किया नहीं, केवल बुरा सोचा — फिर भी सातवें नरक गया", "en": "A tiny fish that harmed no one — yet its cruel thoughts took it to the seventh hell." },
+    "aliases": ["shalisikth", "shalisikth, the tiny fish", "शालिसिक्थ मच्छ"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "व्रत, सत्य और अहिंसा", "en": "Vows, truth and non-violence" }
+  },
+  {
+    "id": "ratri-bhojan",
+    "file": "content/katha/ratri-bhojan.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "प्रीतिंकर कुमार", "en": "Pritinkar Kumar" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 12,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "moon",
+    "blurb": { "hi": "एक सियार ने रात का भोजन छोड़ा — और वही अगले जन्म में मोक्षगामी बना", "en": "A hungry jackal kept one small vow — no food after dark — and it led him to moksha." },
+    "aliases": ["pritinkar kumar", "ratri bhojan", "प्रीतिंकर कुमार"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "व्रत, सत्य और अहिंसा", "en": "Vows, truth and non-violence" }
+  },
+  {
+    "id": "vasu-raja",
+    "file": "content/katha/vasu-raja.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "राजा वसु", "en": "King Vasu" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 11,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "scale",
+    "blurb": { "hi": "एक झूठ, और 'सत्यवादी' राजा का सिंहासन धरती में धँस गया", "en": "One lie, and the throne of the 'truthful' king sank into the earth." },
+    "aliases": ["king vasu", "vasu raja", "राजा वसु"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "व्रत, सत्य और अहिंसा", "en": "Vows, truth and non-violence" }
+  },
+  {
+    "id": "shribhuti",
+    "file": "content/katha/shribhuti.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "पुरोहित श्रीभूति", "en": "Shribhuti the Priest" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 12,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "crown",
+    "blurb": { "hi": "'सत्यवादी' पुरोहित ने रत्न हड़पे, पर चतुर रानी ने सच उजागर कर दिया", "en": "A 'truthful' priest stole a traveller's jewels — until a clever queen found him out." },
+    "aliases": ["shribhuti", "shribhuti the priest", "पुरोहित श्रीभूति"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "व्रत, सत्य और अहिंसा", "en": "Vows, truth and non-violence" }
+  },
+  {
+    "id": "neeli",
+    "file": "content/katha/neeli.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "सती नीली", "en": "Neeli, the Steadfast" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 10,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "lock",
+    "blurb": { "hi": "झूठे कलंक के आगे भी जो अपने धर्म पर अडिग रही", "en": "Falsely accused, a steadfast young woman keeps her faith, and the city gates obey her." },
+    "aliases": ["neeli", "neeli, the steadfast", "सती नीली"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "व्रत, सत्य और अहिंसा", "en": "Vows, truth and non-violence" }
   },
   {
     "id": "sukumal",
@@ -373,7 +684,48 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "मुनि, राजा और श्रेष्ठी", "en": "Munis, kings and merchants" }
+  },
+  {
+    "id": "sukaushal",
+    "file": "content/katha/sukaushal.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "सुकौशल मुनि", "en": "Sukaushal Muni" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 9,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "mountain",
+    "blurb": { "hi": "माँ का अंधा मोह, बेटे का अडिग धैर्य, और एक बाघिन जिसे सब याद आ गया", "en": "A mother's blind attachment, a son's calm courage, and a tigress who remembered." },
+    "aliases": ["sukaushal", "sukaushal muni", "सुकौशल मुनि"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "मुनि, राजा और श्रेष्ठी", "en": "Munis, kings and merchants" }
+  },
+  {
+    "id": "gajkumar",
+    "file": "content/katha/gajkumar.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "गजकुमार मुनि", "en": "Gajkumar Muni" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 6,
+    "textLang": "hi",
+    "numberMark": false,
+    "coverIcon": "flame",
+    "blurb": { "hi": "जो राजकुमार कभी अन्यायी था, वही अंत में अडिग क्षमा का रूप बना", "en": "A proud prince who did great wrong became a muni of unshakeable patience." },
+    "aliases": ["gajkumar", "gajkumar muni", "गजकुमार मुनि"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "मुनि, राजा और श्रेष्ठी", "en": "Munis, kings and merchants" }
   },
   {
     "id": "sudarshan",
@@ -392,7 +744,68 @@
     "source": {
       "hi": "कथा: जैन डेटाबेस, nikkyjain.github.io (रत्नकरण्ड श्रावकाचार की कथाओं के आधार पर)। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए हैं। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
       "en": "Story from the Jain Database, nikkyjain.github.io (after the stories of the Ratnakarand Shravakachar). The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
-    }
+    },
+    "group": { "hi": "मुनि, राजा और श्रेष्ठी", "en": "Munis, kings and merchants" }
+  },
+  {
+    "id": "shrenik",
+    "file": "content/katha/shrenik.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "राजा श्रेणिक", "en": "King Shrenik" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 9,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/rajgir-vaibhar.jpg",
+    "blurb": { "hi": "मुनि पर बाण चलाने वाला राजा कैसे भावी तीर्थंकर बना", "en": "How a king who shot arrows at a muni became a future Tirthankar." },
+    "aliases": ["king shrenik", "shrenik", "राजा श्रेणिक"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "मुनि, राजा और श्रेष्ठी", "en": "Munis, kings and merchants" }
+  },
+  {
+    "id": "charudatt",
+    "file": "content/katha/charudatt.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "चारुदत्त सेठ", "en": "Charudatt the Merchant" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 14,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/champapur.jpg",
+    "blurb": { "hi": "सब कुछ खोकर भी जिसने दया और हिम्मत नहीं छोड़ी", "en": "He lost everything again and again, but never his kindness or his courage." },
+    "aliases": ["charudatt", "charudatt the merchant", "चारुदत्त सेठ"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "मुनि, राजा और श्रेष्ठी", "en": "Munis, kings and merchants" }
+  },
+  {
+    "id": "karkandu",
+    "file": "content/katha/karkandu.txt",
+    "scroll": true,
+    "category": "katha",
+    "title": { "hi": "राजा करकण्डु", "en": "King Karakandu" },
+    "author": { "hi": "परम्परागत कथा", "en": "Traditional story" },
+    "unit": { "hi": "अंश", "en": "Part" },
+    "count": 24,
+    "textLang": "hi",
+    "numberMark": false,
+    "cover": "img/katha/dharashiv.jpg",
+    "blurb": { "hi": "एक ग्वाले ने भगवान को एक कमल चढ़ाया — और अगले जन्म में राजा बना", "en": "A cowherd offered one lotus to the Jina — and was reborn a great king." },
+    "aliases": ["karkandu", "king karakandu", "राजा करकण्डु"],
+    "source": {
+      "hi": "कथा: आराधना कथा कोश (ब्र. नेमिदत्त), हिंदी अनुवाद, जैन डेटाबेस nikkyjain.github.io से। 'संक्षेप में' और 'सीख' इसी ऐप के लिए लिखे गए। चित्र: विकिमीडिया कॉमन्स, हर चित्र के नीचे फ़ोटोग्राफ़र और लाइसेंस के साथ।",
+      "en": "Story from the Aradhana Katha Kosh (Br. Nemidatta), Hindi translation, via the Jain Database, nikkyjain.github.io. The 'in brief' and the lesson were written for this app. Pictures from Wikimedia Commons, credited under each picture."
+    },
+    "group": { "hi": "मुनि, राजा और श्रेष्ठी", "en": "Munis, kings and merchants" }
   },
   {
     "id": "mangalashtak",
@@ -3803,7 +4216,7 @@
     "title": { "hi": "आराधना कथा कोश", "en": "Aradhana Katha Kosh" },
     "author": { "hi": "ब्रह्मचारी नेमिदत्त", "en": "Brahmachari Nemidatta" },
     "unit": { "hi": "अंश", "en": "Part" },
-    "count": 502,
+    "count": 501,
     "aliases": ["aradhana katha kosh"],
     "sectionUnit": { "hi": "अध्याय", "en": "Chapter" },
     "source": {
