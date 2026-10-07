@@ -812,16 +812,15 @@
     return ORN.dhwaja() + '<span>' + esc(t('parva')) + ': <b translate="no">' + esc(when + ', ' + (d.festival || d.tithiName)) + '</b></span>';
   }
 
-  /* The greeting under the chhatra, today's tithi carved large on the vedi, and the week as arched windows. */
+  /* The greeting under the chhatra (which crowns the header), today's tithi, and the week as arched windows. */
   function todayHtml() {
     const days = weekDays();
     const d = days[0];
-    return '<section class="today" aria-labelledby="greet">' + ORN.chhatra() +
+    return '<section class="today" aria-labelledby="greet">' +
       '<h1 class="greet" id="greet">' + esc(t('greeting')) + '</h1>' +
       '<p class="tithi" translate="no">' + esc(d.tithiName) + '</p>' +
       '<p class="tithi-sub"><b translate="no">' + esc(d.monthPaksha + ' ' + t('pakshaWord')) + '</b> · ' +
       esc(dateFmt(d.date, { weekday: 'long', day: 'numeric', month: 'long' })) + '</p>' +
-      '<div class="plinth" aria-hidden="true"><i></i><i></i><i></i></div>' +
       '<ol class="week" aria-label="' + esc(t('weekLabel')) + '">' + days.map((x, i) =>
         '<li>' + (x.parva || x.festival ? ORN.dhwaja() : '') +
         '<button class="day' + (i === 0 ? ' is-today' : '') + '" data-action="pick-day" data-day="' + i + '" aria-pressed="' + (pickedDay === i) + '"' +
@@ -888,7 +887,7 @@
     document.title = t('appName');
     await getCatalog();
     const other = LANGS.find(l => l.code !== state.lang) || LANGS[0];
-    let html = '<header class="home-head"><span class="brand" translate="no" lang="hi">' + esc(STRINGS.hi.appName) + '</span>' +
+    let html = '<header class="home-head"><span class="brand" translate="no" lang="hi">' + esc(STRINGS.hi.appName) + '</span>' + ORN.chhatra() +
       (state.locked ? '' : '<button class="btn btn-small" data-action="switch-lang" data-lang="' + other.code + '" translate="no" lang="' + other.code + '">' +
         icon('language') + '<span>' + esc(other.name) + '</span></button>') +
       '</header><main class="home">' + todayHtml() + await festivalCardHtml();

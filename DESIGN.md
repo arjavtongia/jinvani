@@ -53,15 +53,15 @@ colors:
 typography:
   display:
     fontFamily: "'Vesper Libre', 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', serif"
-    fontSize: "min(2.6rem, 14vw)"
+    fontSize: "min(2.1rem, 11.5vw)"
     fontWeight: 900
-    lineHeight: 1.12
+    lineHeight: 1.05
     letterSpacing: "-0.005em"
   greeting:
     fontFamily: "'Vesper Libre', 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', serif"
-    fontSize: "1.55rem"
+    fontSize: "1.25rem"
     fontWeight: 900
-    lineHeight: 1.2
+    lineHeight: 1.15
   headline:
     fontFamily: "'Vesper Libre', 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', serif"
     fontSize: "1.42rem"
@@ -207,7 +207,7 @@ components:
 
 **Creative North Star: "Inside the Mandir"**
 
-Every screen after the opening darshan is the interior of a Digambar mandir: white Makrana marble underfoot, polished brass drawing the architecture, a carved cusped toran over the sanctum. Scripture stands in that sanctum under an arch, on the steps of a vedi; the day is read off the same steps. Hierarchy comes from architecture (arch, plinth, niche, lintel, hairline), never from boxed cards or icon tiles.
+Every screen after the opening darshan is the interior of a Digambar mandir: white Makrana marble underfoot, polished brass drawing the architecture, a carved cusped toran over the sanctum. Scripture stands in that sanctum under an arch, on the steps of a vedi; the day is read off a row of arched windows under the chhatra. Hierarchy comes from architecture (arch, plinth, niche, lintel, hairline), never from boxed cards or icon tiles.
 
 The page is one calm centred column (42rem at most), dense enough for a daily habit but always leaving room around the verse. Day is veined white marble lit evenly; night is black Kota stone with the brass lit as if by the diya, warm and low-glare. Colour is spent sparingly: ink and marble carry the page, brass draws structure, sindoor marks what is sacred and the one action that matters on a screen.
 
@@ -261,8 +261,8 @@ A marble-and-brass palette with one devotional red, mirrored as black Kota stone
 All sizes are rem; the root is set by the text-size setting (17, 19, 21, 24, 27 or 31px; 21px default), so every value below grows with it.
 
 ### Hierarchy
-- **Display** (Vesper 900, min(2.6rem, 14vw), 1.12): today's tithi in sindoor. One per app, on home.
-- **Greeting** (Vesper 900, 1.55rem, 1.2): जय जिनेन्द्र under the chhatra; 1.6rem on the welcome screen.
+- **Display** (Vesper 900, min(2.1rem, 11.5vw), 1.05): today's tithi in sindoor. One per app, on home, sized so the week and Continue reading share the first screen with it.
+- **Greeting** (Vesper 900, 1.25rem, 1.15): जय जिनेन्द्र under the chhatra; 1.6rem on the welcome screen.
 - **Headline** (Vesper 700, 1.42rem, 1.25): page titles, book titles, guide step titles.
 - **Section** (Vesper 700, 1.22rem, 1.3): home section heads; continue-arch title at 1.3rem.
 - **Title** (Vesper 700, 1.06rem, 1.3): h2, shelf heads, notices, feature titles; the shrine's ॥ label ॥ at 1rem in sindoor.
@@ -345,10 +345,10 @@ There are no cards. Containers are architectural:
 Hairline-separated list rows at least 48px tall, an arch-topped emblem niche at left, title in Hind 600, subtitle muted, chevron at right; brass wash on hover. Verse-number badges are brass-outlined pills in Vesper.
 
 ### Week of Days
-Seven arch-topped day niches: weekday label above, date in Vesper 700. Today is lit with a brass border and a brass wash fading downward; a selected day takes an inset brass ring; ashtami, chaturdashi and festivals carry a small sindoor dhwaja above the niche.
+Seven arch-topped day niches: weekday label above, date in Vesper 700. Today is lit with a brass border and a brass wash fading downward; a selected day takes an inset brass ring; ashtami, chaturdashi and festivals carry a small sindoor dhwaja planted on the niche's arch.
 
 ### Ornaments
-Chhatra (three-tier umbrella, the same drawing as the darshan) over the greeting, page heads and loading; dhwaja for parva days; brass rule with lozenge between home sections; progress trail as a hairline gilded to your place with a sindoor lozenge on it.
+Chhatra (three-tier umbrella, the same drawing as the darshan) over the greeting, page heads and loading; on home it crowns the header between the name and the language button, and drops to a line of its own when large text leaves no room; dhwaja for parva days; brass rule with lozenge between home sections; progress trail as a hairline gilded to your place with a sindoor lozenge on it.
 
 ### Chitra (explanatory diagrams)
 Lists, flows (brass chevrons between steps), stacks (brass wash deepening with depth), sums (outlined boxes and a Vesper operator), and trees (sindoor root, brass-topped branches); numbered sindoor badges mark steps. Each sits under a brass hairline with a Vesper title.
