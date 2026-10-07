@@ -143,6 +143,23 @@
       }
     },
     {
+      "at": [87],
+      "type": "drawing",
+      "drawing": "lokPurush",
+      "top": true,
+      "title": { "hi": "लोक का आकार — चौदह राजू ऊँचा लोक-पुरुष", "en": "The shape of the universe: the lok purush, fourteen rajju tall" },
+      "items": [
+        { "hi": "सिद्धशिला", "en": "Siddhashila", "sub": { "hi": "लोक के शिखर पर, जहाँ सिद्ध भगवान विराजते हैं", "en": "at the summit of the universe, where the Siddhas dwell" } },
+        { "hi": "ऊर्ध्व लोक", "en": "Upper world (urdhva lok)", "sub": { "hi": "स्वर्ग", "en": "the heavens" } },
+        { "hi": "मध्य लोक", "en": "Middle world (madhya lok)", "sub": { "hi": "मनुष्य और तिर्यंच — हमारी दुनिया", "en": "humans and animals: our world" } },
+        { "hi": "अधो लोक", "en": "Lower world (adho lok)", "sub": { "hi": "सात नरक", "en": "the seven hells" } }
+      ],
+      "gist": {
+        "hi": "इस अध्याय के नरक अधो लोक में हैं, एक के नीचे एक।",
+        "en": "The hells of this chapter lie in the lower world, one below another."
+      }
+    },
+    {
       "at": [168, 184],
       "type": "list",
       "title": { "hi": "छह द्रव्य — जिनसे यह लोक बना है", "en": "The six substances that make up the universe" },
@@ -749,7 +766,8 @@
   "bhaktamar": [
     {
       "at": [28],
-      "type": "list",
+      "type": "drawing",
+      "drawing": "pratiharya",
       "title": { "hi": "आठ प्रातिहार्य (श्लोक 28–35)", "en": "The eight pratiharyas (verses 28–35)" },
       "items": [
         { "hi": "अशोक वृक्ष", "en": "Ashoka tree", "tag": "28" },
@@ -769,7 +787,8 @@
     },
     {
       "at": [38],
-      "type": "list",
+      "type": "drawing",
+      "drawing": "bhaya",
       "title": { "hi": "आठ भय, जो भगवान के स्मरण से दूर होते हैं", "en": "Eight fears removed by remembering the Lord" },
       "items": [
         { "hi": "मतवाला हाथी", "en": "Wild elephant", "tag": "38" },
@@ -801,6 +820,235 @@
         { "hi": "आचार्य", "en": "Acharya", "sub": { "hi": "संघ के नायक मुनि", "en": "the muni who leads the sangh" } },
         { "hi": "उपाध्याय", "en": "Upadhyay", "sub": { "hi": "शास्त्र पढ़ाने वाले मुनि", "en": "the muni who teaches the scriptures" } },
         { "hi": "साधु", "en": "Sadhu", "sub": { "hi": "मोक्ष मार्ग पर चलने वाले सब मुनि", "en": "all munis walking the path to liberation" } }
+      ]
+    }
+  ],
+  "barah-bhavana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhAnitya",
+      "top": true,
+      "title": { "hi": "1. अनित्य भावना", "en": "1. Anitya: nothing lasts" },
+      "gist": {
+        "hi": "राजा हो या रंक, हाथी पर सवार हो या पैदल — सबका समय एक दिन पूरा होता है।",
+        "en": "King or pauper, on an elephant or on foot: everyone's time runs out one day."
+      }
+    },
+    {
+      "at": [2],
+      "type": "drawing",
+      "drawing": "bhAsharan",
+      "top": true,
+      "title": { "hi": "2. अशरण भावना", "en": "2. Asharan: no refuge" },
+      "gist": {
+        "hi": "मरण की घड़ी में सेना, देवता, धन या परिवार — कोई भी जीव को रोक नहीं सकता।",
+        "en": "At the hour of death, no army, god, wealth or family can hold the soul back."
+      }
+    },
+    {
+      "at": [3],
+      "type": "drawing",
+      "drawing": "bhSansar",
+      "top": true,
+      "title": { "hi": "3. संसार भावना — चार गतियों का चक्र", "en": "3. Sansar: the wheel of the four states" },
+      "items": [
+        { "hi": "देव", "en": "Gods" },
+        { "hi": "मनुष्य", "en": "Humans" },
+        { "hi": "तिर्यंच", "en": "Animals and plants" },
+        { "hi": "नरक", "en": "Hell beings" }
+      ],
+      "gist": {
+        "hi": "जीव इन चारों गतियों में घूमता रहता है; कहीं भी सच्चा सुख नहीं है।",
+        "en": "The soul goes round and round these four states; there is no true happiness anywhere in them."
+      }
+    },
+    {
+      "at": [4],
+      "type": "drawing",
+      "drawing": "bhEkatva",
+      "top": true,
+      "title": { "hi": "4. एकत्व भावना", "en": "4. Ekatva: alone" },
+      "items": [
+        { "hi": "जन्म — अकेला", "en": "Birth: alone" },
+        { "hi": "मरण — अकेला", "en": "Death: alone" }
+      ],
+      "gist": {
+        "hi": "साथी, सगे-सम्बन्धी बीच की राह में मिलते हैं; आते-जाते जीव अकेला है।",
+        "en": "Companions and relatives join us on the way; the soul comes and goes alone."
+      }
+    },
+    {
+      "at": [5],
+      "type": "drawing",
+      "drawing": "bhAnyatva",
+      "top": true,
+      "title": { "hi": "5. अन्यत्व भावना", "en": "5. Anyatva: what is 'other'" },
+      "items": [
+        { "hi": "आत्मा — मैं", "en": "The soul: me" },
+        { "hi": "देह — पर", "en": "The body: other" },
+        { "hi": "घर, सम्पत्ति, परिजन — पर", "en": "House, wealth, family: other" }
+      ],
+      "gist": {
+        "hi": "जब यह देह भी अपनी नहीं, तो बाकी सब अपना कैसे?",
+        "en": "If even this body is not mine, how can anything else be?"
+      }
+    },
+    {
+      "at": [6],
+      "type": "drawing",
+      "drawing": "bhAshuchi",
+      "top": true,
+      "title": { "hi": "6. अशुचि भावना", "en": "6. Ashuchi: the impure body" },
+      "gist": {
+        "hi": "चमड़े की चादर से ढका हाड़ का पिंजरा — बाहर से चमकता है, भीतर अशुचि है।",
+        "en": "A cage of bones under a sheet of skin: it shines outside, and is impure within."
+      }
+    },
+    {
+      "at": [7],
+      "type": "drawing",
+      "drawing": "bhAsrav",
+      "top": true,
+      "title": { "hi": "7. आस्रव भावना", "en": "7. Asrav: karma flows in" },
+      "items": [
+        { "hi": "मोह की नींद", "en": "The sleep of delusion" },
+        { "hi": "कर्म रूपी चोर", "en": "The thieves called karma" }
+      ],
+      "gist": {
+        "hi": "मोह की नींद में सोया जीव लुटता रहता है और उसे सुध नहीं।",
+        "en": "Asleep in delusion, the soul is being robbed and does not know it."
+      }
+    },
+    {
+      "at": [8],
+      "type": "drawing",
+      "drawing": "bhSamvar",
+      "top": true,
+      "title": { "hi": "8. संवर भावना", "en": "8. Samvar: stopping the inflow" },
+      "items": [
+        { "hi": "सतगुरु जगाते हैं", "en": "The true guru wakes us" },
+        { "hi": "जागने पर चोर रुकते हैं", "en": "Once awake, the thieves are kept out" }
+      ],
+      "gist": {
+        "hi": "मोह की नींद टूटे तो कर्म का आना रुकता है — यही संवर है।",
+        "en": "When the sleep of delusion breaks, the inflow of karma stops. That is samvar."
+      }
+    },
+    {
+      "at": [9],
+      "type": "drawing",
+      "drawing": "bhNirjara",
+      "top": true,
+      "title": { "hi": "9. निर्जरा भावना", "en": "9. Nirjara: shedding karma" },
+      "items": [
+        { "hi": "ज्ञान का दीपक", "en": "The lamp of knowledge" },
+        { "hi": "तप का तेल", "en": "The oil of tapa" },
+        { "hi": "पुराने कर्म-चोर निकलते हैं", "en": "The old thieves of karma leave" }
+      ],
+      "gist": {
+        "hi": "ज्ञान के दीपक में तप का तेल भरकर घर खोजें, तो बैठे हुए चोर निकल भागते हैं।",
+        "en": "Fill the lamp of knowledge with the oil of tapa and search the house, and the thieves hiding inside run away."
+      }
+    },
+    {
+      "at": [11],
+      "type": "drawing",
+      "drawing": "lokPurush",
+      "top": true,
+      "title": { "hi": "11. लोक भावना — चौदह राजू ऊँचा लोक", "en": "11. Lok: the universe, fourteen rajju tall" },
+      "items": [
+        { "hi": "सिद्धशिला", "en": "Siddhashila", "sub": { "hi": "लोक के शिखर पर, जहाँ सिद्ध भगवान विराजते हैं", "en": "at the summit of the universe, where the Siddhas dwell" } },
+        { "hi": "ऊर्ध्व लोक", "en": "Upper world (urdhva lok)", "sub": { "hi": "स्वर्ग", "en": "the heavens" } },
+        { "hi": "मध्य लोक", "en": "Middle world (madhya lok)", "sub": { "hi": "मनुष्य और तिर्यंच — हमारी दुनिया", "en": "humans and animals: our world" } },
+        { "hi": "अधो लोक", "en": "Lower world (adho lok)", "sub": { "hi": "सात नरक", "en": "the seven hells" } }
+      ],
+      "gist": {
+        "hi": "इस लोक में जीव अनादि काल से बिना ज्ञान के भटक रहा है।",
+        "en": "In this universe the soul has wandered without knowledge since beginningless time."
+      }
+    },
+    {
+      "at": [12],
+      "type": "drawing",
+      "drawing": "bhBodhi",
+      "top": true,
+      "title": { "hi": "12. बोधिदुर्लभ भावना", "en": "12. Bodhidurlabh: knowledge is rare" },
+      "items": [
+        { "hi": "धन, अनाज, सोना, राज — सुलभ", "en": "Wealth, grain, gold, kingdoms: easy to get" },
+        { "hi": "सच्चा ज्ञान — दुर्लभ", "en": "True knowledge: rare" }
+      ],
+      "gist": {
+        "hi": "संसार में सब कुछ मिल सकता है; यथार्थ ज्ञान ही दुर्लभ है।",
+        "en": "Everything in the world can be had; only right knowledge is rare."
+      }
+    },
+    {
+      "at": [13],
+      "type": "drawing",
+      "drawing": "bhDharma",
+      "top": true,
+      "title": { "hi": "12. धर्म भावना", "en": "12. Dharma: the giver of happiness" },
+      "items": [
+        { "hi": "कल्पवृक्ष — माँगने पर देता है", "en": "The wish-tree gives only when asked" },
+        { "hi": "धर्म — बिन माँगे सब सुख देता है", "en": "Dharma gives every happiness unasked" }
+      ],
+      "gist": {
+        "hi": "चिन्तामणि चिन्तने पर देता है; धर्म बिना जाँचे, बिना चिन्तये सब सुख देता है।",
+        "en": "The wishing-jewel gives when thought of; dharma gives all happiness without being asked or thought of."
+      }
+    }
+  ],
+  "darshan-path": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "darshan",
+      "top": true,
+      "title": { "hi": "भगवान के दर्शन — हाथ जोड़कर, सिर झुकाकर", "en": "Darshan of the Lord, with folded hands and bowed head" }
+    }
+  ],
+  "darshan-stuti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "sing",
+      "top": true,
+      "title": { "hi": "दर्शन स्तुति भाव से गाएँ", "en": "Sing the darshan stuti with devotion" }
+    }
+  ],
+  "deepawali-poojan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "diwali",
+      "top": true,
+      "title": { "hi": "दीपावली की शाम — दीपक जलाएँ, पटाखे नहीं", "en": "Diwali evening: light lamps, not crackers" }
+    },
+    {
+      "at": [5],
+      "type": "drawing",
+      "drawing": "bahi",
+      "top": true,
+      "title": { "hi": "नई बही का पहला पन्ना", "en": "The first page of the new bahi" }
+    },
+    {
+      "at": [31],
+      "type": "drawing",
+      "drawing": "nirvan",
+      "top": true,
+      "title": { "hi": "निर्वाण कल्याणक — देह से मुक्त आत्मा सिद्धशिला पर", "en": "Nirvan kalyanak: the soul, freed from the body, rises to the Siddhashila" }
+    },
+    {
+      "at": [162],
+      "type": "drawing",
+      "drawing": "aarti",
+      "top": true,
+      "title": { "hi": "आरती", "en": "Aarti" },
+      "items": [
+        { "hi": "आरती", "en": "Aarti" },
+        { "hi": "कुछ कदम पीछे चलें", "en": "Step back a few paces" },
+        { "hi": "द्वार पर तीन बार 'असहि'", "en": "'Asahi' three times at the door" }
       ]
     }
   ]

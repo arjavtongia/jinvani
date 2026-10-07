@@ -41,9 +41,14 @@ const SCENES = (function () {
     return '<path d="M' + x1 + ' ' + y + ' H' + x2 + '" stroke="' + PAPER_EDGE + '" stroke-width="2.5" stroke-linecap="round"/>';
   }
 
+  /* A numbered marker; a longer label such as "42–43" gets a pill instead of a circle. */
   function badge(x, y, n) {
-    return '<g><circle cx="' + x + '" cy="' + y + '" r="13" fill="#9a3412" stroke="#fff7ec" stroke-width="2.5"/>' +
-      '<text x="' + x + '" y="' + (y + 5) + '" text-anchor="middle" font-size="15" font-weight="700" fill="#fff7ec" font-family="' + FONT + '">' + n + '</text></g>';
+    const s = String(n);
+    const shape = s.length > 2
+      ? '<rect x="' + (x - s.length * 4.6 - 6) + '" y="' + (y - 13) + '" width="' + (s.length * 9.2 + 12) + '" height="26" rx="13" fill="#9a3412" stroke="#fff7ec" stroke-width="2.5"/>'
+      : '<circle cx="' + x + '" cy="' + y + '" r="13" fill="#9a3412" stroke="#fff7ec" stroke-width="2.5"/>';
+    return '<g>' + shape +
+      '<text x="' + x + '" y="' + (y + 5) + '" text-anchor="middle" font-size="' + (s.length > 2 ? 13 : 15) + '" font-weight="700" fill="#fff7ec" font-family="' + FONT + '">' + s + '</text></g>';
   }
 
   function label(x, y, s, size) {
@@ -536,6 +541,296 @@ const SCENES = (function () {
     muni(206, 200, {}) + badge(206, 216, 3) +
     muni(272, 200, { book: true }) + badge(272, 216, 4) +
     muni(332, 200, {}) + badge(332, 216, 5));
+
+  /* ---------- More parts, for the reflections and the stotra ---------- */
+
+  function crown(x, y, s) {
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<path d="M-16 8 L-14 -10 L-7 -2 L0 -14 L7 -2 L14 -10 L16 8 Z" fill="' + FLAME + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5" stroke-linejoin="round"/>' +
+      '<circle cx="0" cy="-14" r="2.5" fill="' + RED + '"/><circle cx="-14" cy="-10" r="2" fill="' + RED + '"/><circle cx="14" cy="-10" r="2" fill="' + RED + '"/></g>';
+  }
+
+  function hourglass(x, y, s) {
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<rect x="-16" y="-30" width="32" height="5" rx="2" fill="' + WOOD_EDGE + '"/><rect x="-16" y="25" width="32" height="5" rx="2" fill="' + WOOD_EDGE + '"/>' +
+      '<path d="M-13 -25 L13 -25 L2 0 L13 25 L-13 25 L-2 0 Z" fill="#fbf3e2" stroke="' + INK + '" stroke-width="1.5" stroke-linejoin="round"/>' +
+      '<path d="M-9 -22 L9 -22 L1 -6 L-1 -6 Z" fill="' + FLAME + '"/><path d="M-11 24 L11 24 L4 10 L-4 10 Z" fill="' + FLAME + '"/>' +
+      '<path d="M0 -4 V12" stroke="' + FLAME + '" stroke-width="1.5"/></g>';
+  }
+
+  function elephant(x, y, s, color) {
+    const c = color || '#8d8d94';
+    const e = '#5b5b63';
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<rect x="-34" y="-30" width="13" height="30" rx="5" fill="' + c + '" stroke="' + e + '" stroke-width="1.5"/><rect x="12" y="-30" width="13" height="30" rx="5" fill="' + c + '" stroke="' + e + '" stroke-width="1.5"/>' +
+      '<ellipse cx="-6" cy="-44" rx="40" ry="26" fill="' + c + '" stroke="' + e + '" stroke-width="1.5"/>' +
+      '<rect x="-24" y="-30" width="13" height="30" rx="5" fill="' + c + '" stroke="' + e + '" stroke-width="1.5"/><rect x="2" y="-30" width="13" height="30" rx="5" fill="' + c + '" stroke="' + e + '" stroke-width="1.5"/>' +
+      '<circle cx="36" cy="-52" r="18" fill="' + c + '" stroke="' + e + '" stroke-width="1.5"/>' +
+      '<path d="M24 -60 q-14 4 -12 18 q10 2 14 -8" fill="' + c + '" stroke="' + e + '" stroke-width="1.5"/>' +
+      '<path d="M48 -42 q10 14 2 30 q-6 6 -10 0" fill="' + c + '" stroke="' + e + '" stroke-width="1.5"/>' +
+      '<path d="M46 -40 q8 2 10 10" fill="none" stroke="#fffaf0" stroke-width="3" stroke-linecap="round"/>' +
+      '<circle cx="42" cy="-56" r="2" fill="' + INK + '"/></g>';
+  }
+
+  function lion(x, y, s) {
+    const c = '#d9a24e';
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<rect x="-30" y="-26" width="10" height="26" rx="4" fill="' + c + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/><rect x="6" y="-26" width="10" height="26" rx="4" fill="' + c + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>' +
+      '<ellipse cx="-8" cy="-34" rx="30" ry="17" fill="' + c + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>' +
+      '<path d="M-36 -30 q-14 6 -8 18" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="3" stroke-linecap="round"/>' +
+      '<circle cx="24" cy="-44" r="20" fill="#9c5a1c"/>' +
+      '<circle cx="24" cy="-44" r="13" fill="' + c + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>' +
+      '<circle cx="20" cy="-47" r="1.8" fill="' + INK + '"/><circle cx="29" cy="-47" r="1.8" fill="' + INK + '"/>' +
+      '<path d="M22 -40 q3 3 6 0" fill="none" stroke="' + INK + '" stroke-width="1.5"/></g>';
+  }
+
+  function tree(x, y, s) {
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<rect x="-6" y="-40" width="12" height="40" rx="3" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="1.5"/>' +
+      '<circle cx="-18" cy="-52" r="18" fill="' + GREEN + '"/><circle cx="18" cy="-52" r="18" fill="' + GREEN + '"/><circle cx="0" cy="-68" r="22" fill="#5f9e4c"/><circle cx="0" cy="-48" r="16" fill="#6aab55"/></g>';
+  }
+
+  function flames(x, y, s) {
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<path d="M-22 10 Q-26 -10 -12 -22 Q-10 -6 0 -2 Q2 -24 14 -34 Q12 -14 22 -6 Q28 6 20 14 Z" fill="#e8742a"/>' +
+      '<path d="M-10 10 Q-12 -4 -2 -12 Q0 2 6 4 Q8 -8 14 -12 Q14 2 12 10 Z" fill="' + FLAME + '"/></g>';
+  }
+
+  function coins(x, y) {
+    let g = '';
+    for (let i = 0; i < 4; i++) g += '<ellipse cx="' + x + '" cy="' + (y - i * 5) + '" rx="14" ry="5" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.2"/>';
+    return g + '<ellipse cx="' + x + '" cy="' + (y - 15) + '" rx="14" ry="5" fill="' + BRASS_LIGHT + '" stroke="' + BRASS_EDGE + '" stroke-width="1.2"/>';
+  }
+
+  /* A thief: a dark figure with a sack over the shoulder, facing right. */
+  function thief(x, y, dir) {
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (dir || 1) + ' 1)">' +
+      '<path d="M-8 0 V-26 H8 V0 Z" fill="#4a3b2f"/><path d="M-11 -26 Q-12 -54 -6 -58 H6 Q12 -54 11 -26 Z" fill="#4a3b2f"/>' +
+      '<circle cx="0" cy="-66" r="9" fill="' + SKIN + '" stroke="' + SKIN_EDGE + '" stroke-width="1"/><path d="M-9 -68 Q0 -80 9 -68 Z" fill="#1d1209"/>' +
+      '<path d="M6 -52 L18 -62" stroke="' + SKIN + '" stroke-width="5" stroke-linecap="round"/>' +
+      '<path d="M14 -64 q14 -12 22 0 q4 10 -8 14 q-14 2 -14 -14 z" fill="#8a6a4a" stroke="#5b4636" stroke-width="1.5"/></g>';
+  }
+
+  /* A sleeping person, lying with the head to the left. */
+  function sleeper(x, y) {
+    return '<g transform="translate(' + x + ' ' + y + ')">' +
+      '<rect x="-10" y="-30" width="110" height="20" rx="10" fill="' + CLOTH + '" stroke="' + CLOTH_EDGE + '" stroke-width="2"/>' +
+      '<circle cx="-16" cy="-24" r="13" fill="' + SKIN + '" stroke="' + SKIN_EDGE + '" stroke-width="1.5"/>' +
+      '<path d="M-29 -28 Q-16 -44 -3 -28 Q-16 -34 -29 -28 Z" fill="' + HAIR + '"/>' +
+      '<path d="M-22 -22 h5 M-14 -22 h5" stroke="' + INK + '" stroke-width="1.5" stroke-linecap="round"/>' +
+      '<text x="-4" y="-48" font-size="14" font-weight="700" fill="' + INK + '" font-family="' + FONT + '">z z Z</text></g>';
+  }
+
+  /* ---------- Barah Bhavana: one picture for each reflection ---------- */
+
+  /* 1 Anitya: even the king on his elephant goes when his time comes. */
+  scenes.bhAnitya = svg(320, 200,
+    floor(20, 300, 176) +
+    elephant(84, 176, 1) +
+    '<g transform="translate(78 122) scale(0.62)">' + sit(0, 0, { hands: 'lap' }) + '</g>' + crown(78, 72, 0.7) +
+    arrow(160, 120, 212, 120) +
+    hourglass(254, 120, 1.1));
+
+  /* 2 Asharan: at the hour of death, neither armies, gods, wealth nor family can keep the soul. */
+  scenes.bhAsharan = svg(340, 200,
+    floor(20, 320, 176) +
+    crown(50, 60, 0.8) + coins(50, 116) +
+    stand(104, 176, { hands: 'none', cloth: SAFFRON }) + stand(136, 176, { hands: 'none' }) +
+    arrow(170, 110, 206, 110) + nope(188, 110, 20) +
+    stand(246, 176, { hands: 'folded', bow: true }) +
+    hourglass(296, 130, 0.9));
+
+  /* 3 Sansar: the four states of life go round and round; nowhere in it is lasting happiness. */
+  scenes.bhSansar = svg(320, 230,
+    '<circle cx="160" cy="118" r="82" fill="none" stroke="' + PAPER_EDGE + '" stroke-width="10"/>' +
+    (function () {
+      let a = '';
+      [-45, 45, 135, 225].forEach(deg => {
+        const r = deg * Math.PI / 180;
+        const x = 160 + 82 * Math.cos(r); const y = 118 + 82 * Math.sin(r);
+        a += '<path d="M-10 -7 L0 0 L-10 7 Z" fill="#9a3412" transform="translate(' + x.toFixed(1) + ' ' + y.toFixed(1) + ') rotate(' + (deg + 90) + ')"/>';
+      });
+      return a;
+    })() +
+    crown(160, 56, 0.9) + badge(160, 24, 1) +
+    '<g transform="translate(232 150) scale(0.5)">' + stand(0, 0, { hands: 'none' }) + '</g>' + badge(252, 86, 2) +
+    '<g transform="translate(160 194) scale(0.45)">' + elephant(0, 0, 1) + '</g>' + badge(160, 214, 3) +
+    flames(90, 150, 0.8) + badge(66, 86, 4));
+
+  /* 4 Ekatva: alone one is born, alone one dies; no companion comes along. */
+  scenes.bhEkatva = svg(320, 190,
+    '<path d="M40 150 Q160 120 280 150" fill="none" stroke="' + PAPER_EDGE + '" stroke-width="3" stroke-dasharray="7 7"/>' +
+    '<path d="M28 150 q0 -20 24 -20 q24 0 24 20 z" fill="' + CLOTH + '" stroke="' + CLOTH_EDGE + '" stroke-width="2"/>' +
+    '<path d="M20 150 h64" stroke="' + WOOD_EDGE + '" stroke-width="3" stroke-linecap="round"/>' + badge(52, 100, 1) +
+    stand(160, 134, { hands: 'none', bow: true }) +
+    hourglass(268, 122, 0.9) + badge(268, 70, 2));
+
+  /* 5 Anyatva: the soul is mine; the body, the house, wealth and family are other. */
+  scenes.bhAnyatva = svg(340, 200,
+    floor(20, 320, 176) +
+    stand(90, 176, { hands: 'none', plain: true }) +
+    '<circle cx="90" cy="118" r="11" fill="' + GLOW + '" stroke="' + FLAME + '" stroke-width="2"/><circle cx="90" cy="118" r="4" fill="' + FLAME + '"/>' +
+    badge(90, 44, 1) + badge(130, 80, 2) + arrow(124, 88, 108, 108) +
+    '<path d="M176 40 V176" stroke="' + PAPER_EDGE + '" stroke-width="3" stroke-dasharray="6 6"/>' +
+    '<path d="M206 176 V126 L240 98 L274 126 V176 Z" fill="#fbf3e2" stroke="' + WOOD_EDGE + '" stroke-width="2" stroke-linejoin="round"/>' +
+    '<rect x="230" y="146" width="20" height="30" fill="' + WOOD + '"/>' +
+    coins(306, 170) + badge(240, 60, 3) +
+    '<g transform="translate(296 128) scale(0.42)">' + stand(0, 0, { hands: 'none' }) + '</g>');
+
+  /* 6 Ashuchi: a skin sheet over a cage of bones. */
+  scenes.bhAshuchi = svg(320, 200,
+    floor(20, 300, 176) +
+    stand(120, 176, { hands: 'none', plain: true }) +
+    '<path d="M108 108 h24 M108 118 h24 M108 128 h24 M108 138 h24" stroke="#fffaf0" stroke-width="3" stroke-linecap="round"/>' +
+    '<path d="M120 100 V146" stroke="#fffaf0" stroke-width="3" stroke-linecap="round"/>' +
+    '<path d="M148 96 Q186 86 184 130 Q164 150 146 140" fill="' + SKIN + '" stroke="' + SKIN_EDGE + '" stroke-width="1.5"/>' +
+    '<g transform="translate(236 176)"><path d="M-20 0 V-62" stroke="' + INK + '" stroke-width="2"/><path d="M-20 -62 q6 12 20 10 q14 2 20 -10" fill="none" stroke="' + INK + '" stroke-width="2"/>' +
+    '<ellipse cx="0" cy="-74" rx="12" ry="10" fill="#fbf3e2" stroke="' + INK + '" stroke-width="2"/><circle cx="-4" cy="-76" r="2" fill="' + INK + '"/><circle cx="4" cy="-76" r="2" fill="' + INK + '"/>' +
+    '<path d="M-14 -50 h28 M-12 -40 h24 M-10 -30 h20" stroke="' + INK + '" stroke-width="2" stroke-linecap="round"/><path d="M20 0 V-62" stroke="' + INK + '" stroke-width="2"/></g>');
+
+  /* 7 Asrav: asleep in the night of delusion, while the thieves called karma take everything. */
+  scenes.bhAsrav = svg(340, 210,
+    '<path d="M40 60 V186 H300 V60" fill="#fbf3e2" stroke="' + WOOD_EDGE + '" stroke-width="2"/><path d="M28 64 L170 20 L312 64" fill="none" stroke="' + WOOD_EDGE + '" stroke-width="3" stroke-linejoin="round"/>' +
+    sleeper(130, 186) + badge(110, 120, 1) +
+    thief(62, 186, 1) + thief(280, 186, -1) + thief(220, 120, -1) + badge(290, 100, 2) +
+    coins(176, 180));
+
+  /* 8 Samvar: the true guru wakes the sleeper; awake, the thieves are kept out. */
+  scenes.bhSamvar = svg(340, 210,
+    floor(20, 320, 186) +
+    sun(300, 46, 12) +
+    muni(70, 186, {}) + badge(70, 54, 1) +
+    sit(170, 186, { hands: 'folded', dir: -1 }) +
+    '<rect x="236" y="96" width="14" height="90" rx="2" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +
+    thief(300, 186, -1) + nope(280, 130, 22) + badge(300, 70, 2));
+
+  /* 9 Nirjara: fill the lamp of knowledge with the oil of tapa and search the house; the old thieves leave. */
+  scenes.bhNirjara = svg(340, 210,
+    floor(20, 320, 186) +
+    '<circle cx="130" cy="120" r="56" fill="' + GLOW + '"/>' +
+    diya(130, 150, 2) + badge(130, 60, 1) +
+    pot(60, 110, 0.6, { spout: true, rot: 40 }) + '<path d="M80 92 Q100 100 112 118" fill="none" stroke="' + FLAME + '" stroke-width="3" stroke-linecap="round"/>' + badge(46, 60, 2) +
+    thief(258, 186, 1) + arrow(230, 100, 300, 100) + badge(264, 68, 3));
+
+  /* 11 Lok: the universe, fourteen rajju tall, in the shape of a standing man, with the Siddhashila at the top. */
+  scenes.lokPurush = svg(280, 320,
+    '<path d="M110 54 L170 54 L212 150 L162 180 L212 300 L68 300 L118 180 L68 150 Z" fill="#fbf3e2" stroke="' + INK + '" stroke-width="2.5" stroke-linejoin="round"/>' +
+    '<path d="M68 150 L212 150 M118 180 L162 180" stroke="' + INK + '" stroke-width="1.5" stroke-dasharray="4 4"/>' +
+    '<path d="M98 42 Q140 18 182 42 Q140 34 98 42 Z" fill="' + GLOW + '" stroke="' + BRASS_EDGE + '" stroke-width="2"/>' +
+    '<path d="M244 54 V300" stroke="' + PAPER_EDGE + '" stroke-width="2"/><path d="M238 54 h12 M238 300 h12" stroke="' + PAPER_EDGE + '" stroke-width="2"/>' +
+    label(258, 182, '14', 15) +
+    '<g transform="translate(140 174) scale(0.28)">' + stand(0, 0, { hands: 'none' }) + '</g>' +
+    badge(140, 30, 1) + badge(140, 104, 2) + badge(140, 166, 3) + badge(140, 246, 4));
+
+  /* 12 Bodhidurlabh: wealth, grain, gold and kingdoms come easily; true knowledge is rare. */
+  scenes.bhBodhi = svg(340, 200,
+    floor(20, 320, 176) +
+    coins(50, 170) + crown(96, 150, 0.8) +
+    '<path d="M126 176 Q146 130 166 176 Z" fill="' + FLAME + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>' +
+    '<path d="M60 110 l10 10 l20 -22" fill="none" stroke="' + GREEN + '" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    badge(110, 70, 1) +
+    '<path d="M196 50 V176" stroke="' + PAPER_EDGE + '" stroke-width="3" stroke-dasharray="6 6"/>' +
+    '<circle cx="262" cy="130" r="44" fill="' + GLOW + '"/>' + book(262, 128, 34, { h: 22 }) +
+    '<path d="M262 74 l5 12 l12 2 l-9 8 l2 12 l-10 -6 l-10 6 l2 -12 l-9 -8 l12 -2 z" fill="' + FLAME + '" stroke="' + BRASS_EDGE + '" stroke-width="1"/>' +
+    badge(302, 60, 2));
+
+  /* 13 Dharma: the wish-tree gives only when asked; dharma gives every happiness unasked. */
+  scenes.bhDharma = svg(340, 210,
+    floor(20, 320, 186) +
+    tree(80, 186, 1.1) +
+    '<circle cx="62" cy="128" r="5" fill="' + RED + '"/><circle cx="98" cy="118" r="5" fill="' + RED + '"/><circle cx="84" cy="146" r="5" fill="' + FLAME + '"/>' +
+    '<g transform="translate(138 186) scale(0.75)">' + stand(0, 0, { hands: 'none', dir: -1 }) + '</g>' +
+    '<path d="M126 128 L112 104" stroke="' + SKIN + '" stroke-width="6" stroke-linecap="round"/>' +
+    badge(80, 50, 1) +
+    '<path d="M186 50 V186" stroke="' + PAPER_EDGE + '" stroke-width="3" stroke-dasharray="6 6"/>' +
+    '<circle cx="262" cy="110" r="46" fill="' + GLOW + '"/>' +
+    '<g transform="translate(240 186) scale(0.8)">' + sit(0, 0, { hands: 'folded' }) + '</g>' +
+    heart(286, 90, 1.3) + heart(304, 118, 1) +
+    badge(302, 54, 2));
+
+  /* ---------- Bhaktamar Stotra: eight pratiharyas, eight fears ---------- */
+
+  function cells(w, h, cols, items, tags) {
+    const cw = (w - 20) / cols;
+    const rows = Math.ceil(items.length / cols);
+    const ch = (h - 20) / rows;
+    let g = '';
+    for (let r = 1; r < rows; r++) g += '<path d="M20 ' + (10 + r * ch) + ' H' + (w - 20) + '" stroke="' + PAPER_EDGE + '" stroke-width="1.5" stroke-dasharray="4 5"/>';
+    for (let c = 1; c < cols; c++) g += '<path d="M' + (10 + c * cw) + ' 20 V' + (h - 20) + '" stroke="' + PAPER_EDGE + '" stroke-width="1.5" stroke-dasharray="4 5"/>';
+    items.forEach((it, i) => {
+      const x = 10 + (i % cols) * cw + cw / 2;
+      const y = 10 + Math.floor(i / cols) * ch + ch / 2;
+      const tag = tags ? tags[i] : i + 1;
+      g += '<g transform="translate(' + x.toFixed(1) + ' ' + (y + 10).toFixed(1) + ')">' + it + '</g>' + badge(x - cw / 2 + (String(tag).length > 2 ? 30 : 16), y - ch / 2 + 16, tag);
+    });
+    return g;
+  }
+
+  function flower5(x, y, s) {
+    let p = '';
+    for (let i = 0; i < 5; i++) p += '<ellipse cx="0" cy="-6" rx="4" ry="6.5" fill="#f6c22e" stroke="#d99a12" stroke-width="1" transform="rotate(' + (i * 72) + ')"/>';
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' + p + '<circle r="3.4" fill="#e0731b"/></g>';
+  }
+
+  scenes.pratiharya = svg(340, 230, cells(340, 230, 4, [
+    tree(0, 28, 0.7),
+    '<rect x="-24" y="-4" width="48" height="14" rx="3" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/><rect x="-18" y="-30" width="36" height="26" rx="4" fill="' + BRASS_LIGHT + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>' +
+      '<circle cx="-24" cy="-6" r="7" fill="#9c5a1c"/><circle cx="-24" cy="-6" r="4" fill="#d9a24e"/><circle cx="24" cy="-6" r="7" fill="#9c5a1c"/><circle cx="24" cy="-6" r="4" fill="#d9a24e"/>',
+    '<g transform="translate(-14 0) rotate(-20)"><rect x="-3" y="0" width="6" height="26" rx="2" fill="' + WOOD_EDGE + '"/><path d="M-12 0 Q0 -34 12 0 Z" fill="#fffaf0" stroke="' + CLOTH_EDGE + '" stroke-width="1.5"/></g>' +
+      '<g transform="translate(14 0) rotate(20)"><rect x="-3" y="0" width="6" height="26" rx="2" fill="' + WOOD_EDGE + '"/><path d="M-12 0 Q0 -34 12 0 Z" fill="#fffaf0" stroke="' + CLOTH_EDGE + '" stroke-width="1.5"/></g>',
+    '<path d="M0 -36 V26" stroke="' + BRASS_EDGE + '" stroke-width="2"/><path d="M-26 -4 Q0 -18 26 -4 Z" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/><path d="M-19 -14 Q0 -26 19 -14 Z" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/><path d="M-12 -24 Q0 -34 12 -24 Z" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>',
+    '<rect x="-22" y="-18" width="44" height="30" rx="6" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="1.5"/><path d="M-22 -8 h44 M-22 2 h44 M-16 -18 l8 30 M0 -18 l8 30" stroke="' + BRASS_EDGE + '" stroke-width="1.2"/><path d="M-30 -34 L-10 -18 M30 -34 L10 -18" stroke="' + WOOD_EDGE + '" stroke-width="3" stroke-linecap="round"/><circle cx="-30" cy="-34" r="4" fill="' + WOOD_EDGE + '"/><circle cx="30" cy="-34" r="4" fill="' + WOOD_EDGE + '"/>',
+    flower5(-16, -16, 0.9) + flower5(14, -6, 0.8) + flower5(-4, 16, 0.7) + flower5(20, 20, 0.6) + '<path d="M-24 -34 v10 M26 -30 v10 M4 -30 v8" stroke="' + PAPER_EDGE + '" stroke-width="2" stroke-linecap="round"/>',
+    '<circle cx="0" cy="-8" r="28" fill="' + GLOW + '"/><circle cx="0" cy="-8" r="20" fill="none" stroke="' + SAFFRON + '" stroke-width="3"/><circle cx="0" cy="-8" r="10" fill="' + MARBLE + '" stroke="' + MARBLE_EDGE + '" stroke-width="1.5"/>',
+    '<text x="0" y="6" text-anchor="middle" font-size="30" font-weight="700" fill="' + INK + '" font-family="' + FONT + '">ॐ</text><path d="M22 -14 q10 10 0 20 M30 -22 q18 18 0 36" fill="none" stroke="' + SAFFRON + '" stroke-width="2.5" stroke-linecap="round"/>'
+  ], ['28', '29', '30', '31', '32', '33', '34', '35']));
+
+  scenes.bhaya = svg(340, 230, cells(340, 230, 4, [
+    elephant(-6, 22, 0.55),
+    lion(2, 20, 0.6),
+    flames(0, 8, 1),
+    '<path d="M-28 10 q10 -24 22 -8 q10 16 22 -8" fill="none" stroke="' + GREEN + '" stroke-width="7" stroke-linecap="round"/><circle cx="20" cy="-10" r="7" fill="' + GREEN + '"/><circle cx="22" cy="-12" r="1.5" fill="' + INK + '"/><path d="M27 -8 l6 2" stroke="' + RED + '" stroke-width="2"/>',
+    '<path d="M-22 22 L18 -18 M22 22 L-18 -18" stroke="#8d8d94" stroke-width="5" stroke-linecap="round"/><path d="M-26 26 l-6 -6 M26 26 l6 -6" stroke="' + WOOD_EDGE + '" stroke-width="7" stroke-linecap="round"/>',
+    '<path d="M-30 12 q8 -8 15 0 t15 0 t15 0" fill="none" stroke="' + WATER + '" stroke-width="4" stroke-linecap="round"/><path d="M-16 4 L16 4 L10 -10 L-10 -10 Z" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="1.5"/><path d="M0 -10 V-32 L14 -18 Z" fill="' + CLOTH + '" stroke="' + CLOTH_EDGE + '" stroke-width="1.5"/>',
+    '<rect x="-30" y="-2" width="60" height="16" rx="4" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="1.5"/><rect x="-24" y="-10" width="48" height="10" rx="5" fill="' + CLOTH + '" stroke="' + CLOTH_EDGE + '" stroke-width="1.5"/><circle cx="-22" cy="-14" r="8" fill="' + SKIN + '" stroke="' + SKIN_EDGE + '" stroke-width="1"/><path d="M-26 -16 h3 M-20 -16 h3" stroke="' + INK + '" stroke-width="1.2"/>',
+    '<g fill="none" stroke="#6b6b73" stroke-width="3.5"><ellipse cx="-20" cy="-6" rx="7" ry="4.5" transform="rotate(-30 -20 -6)"/><ellipse cx="-8" cy="-2" rx="7" ry="4.5" transform="rotate(-30 -8 -2)"/><ellipse cx="4" cy="2" rx="7" ry="4.5" transform="rotate(-30 4 2)"/><ellipse cx="16" cy="6" rx="7" ry="4.5" transform="rotate(-30 16 6)"/></g><circle cx="24" cy="12" r="9" fill="none" stroke="#6b6b73" stroke-width="4"/>'
+  ], ['38', '39', '40', '41', '42–43', '44', '45', '46']));
+
+  /* ---------- Diwali ---------- */
+
+  /* Lamps at home on the evening of Nirvan, and no crackers. */
+  scenes.diwali = svg(340, 210,
+    '<path d="M60 186 V110 L160 50 L260 110 V186 Z" fill="#fbf3e2" stroke="' + WOOD_EDGE + '" stroke-width="2.5" stroke-linejoin="round"/>' +
+    '<rect x="140" y="140" width="40" height="46" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +
+    '<rect x="84" y="128" width="28" height="24" fill="' + GLOW + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/><rect x="208" y="128" width="28" height="24" fill="' + GLOW + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +
+    diya(80, 194, 0.7) + diya(120, 194, 0.7) + diya(200, 194, 0.7) + diya(240, 194, 0.7) + diya(160, 128, 0.7) +
+    '<g transform="translate(300 100) rotate(20)"><rect x="-6" y="-20" width="12" height="40" rx="3" fill="' + RED + '"/><path d="M-6 -20 L0 -34 L6 -20 Z" fill="' + FLAME + '"/><path d="M0 20 V40" stroke="' + WOOD_EDGE + '" stroke-width="2"/></g>' +
+    nope(300, 100, 30));
+
+  /* The new account book: a swastik at the top of the first page and 'Shri' written as a mountain. */
+  scenes.bahi = svg(340, 230,
+    '<rect x="40" y="30" width="200" height="176" rx="6" fill="' + RED + '" stroke="#7a1e14" stroke-width="2"/>' +
+    '<rect x="52" y="40" width="176" height="156" rx="3" fill="#fbf3e2" stroke="' + CLOTH_EDGE + '" stroke-width="1.5"/>' +
+    '<path d="M140 40 V196" stroke="' + CLOTH_EDGE + '" stroke-width="1.5" stroke-dasharray="4 4"/>' +
+    '<g stroke="' + RED + '" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M184 54 V82 M170 68 H198 M184 54 H198 M198 68 V82 M184 82 H170 M170 68 V54"/></g>' +
+    '<text x="184" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="' + RED + '" font-family="' + FONT + '">श्री</text>' +
+    '<text x="184" y="134" text-anchor="middle" font-size="15" font-weight="700" fill="' + RED + '" font-family="' + FONT + '">श्री श्री</text>' +
+    '<text x="184" y="156" text-anchor="middle" font-size="15" font-weight="700" fill="' + RED + '" font-family="' + FONT + '">श्री श्री श्री</text>' +
+    '<path d="M262 140 l30 -60" stroke="' + WOOD_EDGE + '" stroke-width="5" stroke-linecap="round"/><path d="M262 140 l-4 10 l10 -4 z" fill="' + INK + '"/>' +
+    '<path d="M258 196 q-18 0 -18 -16 q0 -12 18 -12 q18 0 18 12 q0 16 -18 16 z" fill="#2b2b33"/><rect x="250" y="160" width="16" height="10" rx="2" fill="#2b2b33"/>' +
+    '<path d="M286 196 q-10 -26 10 -30 q20 4 10 30 z" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/><text x="296" y="190" text-anchor="middle" font-size="12" font-weight="700" fill="' + BRASS_EDGE + '" font-family="' + FONT + '">₹</text>');
+
+  /* Nirvan: freed from the body, the soul rises to the Siddhashila at the top of the universe. */
+  scenes.nirvan = svg(320, 230,
+    floor(20, 300, 206) +
+    '<path d="M104 46 Q160 18 216 46 Q160 38 104 46 Z" fill="' + GLOW + '" stroke="' + BRASS_EDGE + '" stroke-width="2"/>' +
+    '<circle cx="160" cy="120" r="46" fill="' + GLOW + '"/>' +
+    '<g transform="translate(160 158)">' +
+    '<ellipse cx="0" cy="-10" rx="28" ry="10" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="2.5" stroke-dasharray="4 4"/>' +
+    '<path d="M-13 -14 Q-16 -48 -7 -52 H7 Q16 -48 13 -14 Z" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="2.5" stroke-dasharray="4 4"/>' +
+    '<circle cx="0" cy="-64" r="10" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="2.5" stroke-dasharray="4 4"/></g>' +
+    arrow(160, 186, 160, 64) +
+    diya(60, 200, 0.8) + diya(260, 200, 0.8));
 
   return scenes;
 })();
