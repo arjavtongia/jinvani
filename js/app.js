@@ -683,10 +683,9 @@
       (meta.coverIcon ? icon(meta.coverIcon) : esc(letter)) + '</span>' + frame + '</span>';
   }
 
+  /* Stories are listed by title alone so the list is quick to look through; each story opens with its pictures and summary. */
   function storyRow(meta) {
-    return '<li><a class="feature" href="#/book/' + meta.id + '">' + archPicHtml(meta) +
-      '<span class="feature-title">' + titleHtml(meta) + '</span>' +
-      (meta.blurb ? '<span class="feature-blurb">' + esc(L(meta.blurb)) + '</span>' : '') + '</a></li>';
+    return chevronRow('#/book/' + meta.id, titleHtml(meta));
   }
 
   function bookRow(meta) {
@@ -705,7 +704,7 @@
       groups[groups.length - 1].books.push(b);
     });
     return groups.map(g => (g.name ? '<h2 class="shelf-head story-group" translate="no">' + esc(g.name) + '</h2>' : '') +
-      '<ul class="story-list">' + g.books.map(storyRow).join('') + '</ul>').join('');
+      '<ul class="rows">' + g.books.map(storyRow).join('') + '</ul>').join('');
   }
 
   function verseRow(book, v) {
