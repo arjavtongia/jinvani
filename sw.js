@@ -1,10 +1,14 @@
 /*
  * Offline support. Every file is saved on the phone the first time the app opens,
- * so it keeps working without internet. Saved copies are refreshed in the
- * background whenever there is internet, so text corrections reach everyone.
+ * so it keeps working without internet. With internet the newest copy is used
+ * and saved, so updates and text corrections show the next time the app opens.
  * Change VERSION when adding or removing files in the list below.
  */
-const VERSION = 'jinvani-v5';
+const VERSION = 'jinvani-v6';
+/* On a slow line, the saved copy is shown after this wait while the new one keeps downloading for next time. */
+const WAIT_MS = 3000;
+/* Fonts and icons never change, so they come straight from the saved copy. */
+const FIXED = /\/(fonts|icons)\//;
 const FILES = [
   './',
   'index.html',
@@ -67,13 +71,12 @@ self.addEventListener('fetch', event => {
           .then(res => {
             if (res && res.ok) cache.put(key, res.clone());
             return res;
-          })
-          .catch(() => cached);
-        if (cached) {
-          event.waitUntil(fresh.catch(() => {}));
-          return cached;
-        }
-        return fresh;
+          });
+        if (!cached) return fresh;
+        event.waitUntil(fresh.catch(() => {}));
+        if (FIXED.test(req.url)) return cached;
+        const slow = new Promise(resolve => setTimeout(() => resolve(cached), WAIT_MS));
+        return Promise.race([fresh.then(res => (res.ok ? res : cached), () => cached), slow]);
       })
     )
   );
