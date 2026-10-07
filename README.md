@@ -13,7 +13,9 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 - One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons; short sutras are grouped five or six to a screen. Swipes and arrow keys work too.
 - Poojas and short paath (Deepawali poojas, Namokar, Darshan Path, Darshan Stuti, Barah Bhavana) scroll as one page each, so they can be recited without tapping Next.
 - Remembers where you stopped, and shows "पढ़ना जारी रखें" (Continue reading) on the home screen.
-- Large text by default, with a text size setting, plus day and night colours.
+- A bar at the bottom of every screen goes to Home, Books, Search and Settings; the reader keeps its own bar with Previous, Listen and Next.
+- Large text by default, with a six-step text size setting, plus day and night colours or "same as phone".
+- "साझा करें" (Share) sends the verse on screen to WhatsApp or a message, or copies it where sharing isn't available.
 - "सुनें" (Listen) reads each verse aloud in a Hindi voice and moves to the next one automatically.
 - Search accepts Hindi or English spellings: भक्तामर, bhaktamar, तत्वार्थ, tattvarth.
 - Save verses, show Roman script, and lock settings so they aren't changed by mistake.

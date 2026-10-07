@@ -7,6 +7,7 @@
   'use strict';
 
   const REPO_URL = 'https://github.com/arjavtongia/jinvani';
+  const APP_URL = 'https://arjavtongia.github.io/jinvani/';
   const STORE_KEY = 'jinvani.v1';
   const FONT_STEPS = [17, 19, 21, 24, 27, 31];
   const RATES = { slow: 0.7, normal: 0.9, fast: 1.1 };
@@ -21,7 +22,7 @@
 
   const DEFAULTS = {
     lang: null, fontStep: 2, theme: null, speed: 'normal', roman: false, locked: false,
-    positions: {}, last: null, bookmarks: []
+    positions: {}, last: null, bookmarks: [], hintShown: false
   };
   const state = loadState();
 
@@ -82,7 +83,7 @@
         $scrollCue.innerHTML = '<span>' + esc(t('scrollMore')) + '</span>' + icon('chevron-down');
         $scrollCue.dataset.lang = state.lang;
       }
-      const bar = $app.querySelector('.reader-bar');
+      const bar = $app.querySelector('.reader-bar, .tabbar');
       $scrollCue.style.bottom = bar ? bar.offsetHeight + 12 + 'px' : '';
     }
     $scrollCue.hidden = !show;
@@ -593,12 +594,27 @@
 
   /* ---------- Screens ---------- */
 
+  /* Top bar: a back button that names the screen it goes to. Home is always one tap away in the bottom bar. */
   function backBar(href, label, title) {
     return '<header class="topbar">' +
-      '<a class="btn btn-small" href="' + href + '">' + icon('arrow-left') + '<span>' + esc(label) + '</span></a>' +
+      '<a class="btn btn-small btn-back" href="' + href + '">' + icon('arrow-left') + '<span>' + esc(label) + '</span></a>' +
       (title ? '<span class="topbar-title">' + esc(title) + '</span>' : '') +
-      (href === '#/' ? '' : '<a class="btn btn-small btn-ghost" href="#/">' + icon('home') + '<span>' + esc(t('home')) + '</span></a>') +
       '</header>';
+  }
+
+  /* Bottom bar shown on every screen except the reader and the welcome screen. */
+  const NAV_VIEWS = ['home', 'books', 'book', 'search', 'saved', 'settings', 'credits'];
+
+  function navBar(view) {
+    const items = [
+      { id: 'home', href: '#/', icon: 'home', label: t('home'), active: view === 'home' },
+      { id: 'books', href: '#/books', icon: 'books', label: t('books'), active: view === 'books' || view === 'book' },
+      { id: 'search', href: '#/search', icon: 'search', label: t('search'), active: view === 'search' },
+      { id: 'settings', href: '#/settings', icon: 'settings', label: t('settings'), active: view === 'settings' || view === 'credits' }
+    ];
+    return '<nav class="tabbar" aria-label="' + esc(t('appName')) + '">' + items.map(it =>
+      '<a class="tab' + (it.active ? ' is-active' : '') + '" href="' + it.href + '"' + (it.active ? ' aria-current="page"' : '') + '>' +
+      icon(it.icon) + '<span>' + esc(it.label) + '</span></a>').join('') + '</nav>';
   }
 
   function chevronRow(href, mainHtml) {
@@ -696,7 +712,7 @@
       const days = [];
       for (let i = 0; i < 7; i++) days.push(dayInfo(new Date(today.getFullYear(), today.getMonth(), today.getDate() + i)));
       html += '<ol class="week-strip" aria-label="' + esc(t('weekOpen')) + '">' + days.map((d, i) =>
-        '<li class="day' + (i === 0 ? ' is-today' : '') + '">' +
+        '<li class="day' + (i === 0 ? ' is-today' : '') + (d.parva ? ' is-parva' : '') + '">' +
         (d.parva ? icon('flag', 'parva-mark') : '') +
         '<span class="day-wd">' + esc(i === 0 ? t('today') : dateFmt(d.date, { weekday: 'short' })) + '</span>' +
         '<span class="day-date">' + d.date.getDate() + '</span>' +
@@ -731,13 +747,15 @@
   async function viewHome() {
     document.title = t('appName');
     const other = LANGS.find(l => l.code !== state.lang) || LANGS[0];
-    let html = '<header class="home-head"><h1 class="greet">' + esc(t('greeting')) + '</h1><span class="head-btns">';
+    /* A small brand line with the controls, then the greeting on its own line so it never wraps against the buttons. */
+    let html = '<header class="home-head"><div class="brand-row">' +
+      '<span class="brand" translate="no" lang="hi">' + esc(STRINGS.hi.appName) + '</span><span class="head-btns">';
     if (!state.locked) {
       html += '<button class="btn btn-small" data-action="switch-lang" data-lang="' + other.code + '" translate="no" lang="' + other.code + '">' +
         icon('language') + '<span>' + esc(other.name) + '</span></button>';
     }
-    html += '<a class="btn btn-small" href="#/settings" aria-label="' + esc(t('settings')) + '">' + icon('settings') + '</a>' +
-      '</span></header><main>' + dateCardHtml() + await festivalCardHtml();
+    html += '<a class="btn btn-small btn-icon" href="#/settings" aria-label="' + esc(t('settings')) + '">' + icon('settings') + '</a>' +
+      '</span></div><h1 class="greet">' + esc(t('greeting')) + '</h1></header><main>' + dateCardHtml() + await festivalCardHtml();
 
     /* "Continue reading" (or "Start here" on the first visit) sits below the tiles, above "Saved". */
     let readingCard = '';
@@ -766,7 +784,8 @@
       '<a class="tile" href="#/search">' + icon('search') + '<span>' + esc(t('search')) + '</span></a>' +
       '</nav>' +
       readingCard +
-      '<a class="tile tile-wide" href="#/saved">' + icon('bookmark') + '<span>' + esc(t('saved')) + '</span></a>';
+      '<a class="tile tile-wide" href="#/saved">' + icon('bookmark') + '<span>' + esc(t('saved')) + '</span>' +
+      (state.bookmarks.length ? '<span class="count-pill">' + state.bookmarks.length + '</span>' : '') + '</a>';
 
     const ts = await getBook('tattvarth-sutra').catch(() => null);
     if (ts) {
@@ -792,23 +811,29 @@
         catalog.filter(b => b.category === cat.id).map(bookRow).join('') + '</ul></main>';
     }
     document.title = t('books') + ' · ' + t('appName');
-    let html = backBar('#/', t('home')) + '<main><h1>' + esc(t('books')) + '</h1><ul class="rows">';
+    let html = backBar('#/', t('home')) + '<main><h1>' + esc(t('books')) + '</h1>';
+    const loose = catalog.filter(b => !used.some(c => c.id === b.category));
     if (used.length <= 1) {
-      html += catalog.map(bookRow).join('');
+      html += '<ul class="rows">' + catalog.map(bookRow).join('') + '</ul>';
+    } else if (catalog.length <= 24) {
+      /* A small library: every book is one tap away, listed under its category heading. */
+      html += used.map(c => '<section class="book-group"><h2 class="group-head" translate="no">' + esc(L(c.title)) + '</h2><ul class="rows">' +
+        catalog.filter(b => b.category === c.id).map(bookRow).join('') + '</ul></section>').join('');
+      if (loose.length) html += '<ul class="rows">' + loose.map(bookRow).join('') + '</ul>';
     } else {
-      html += used.map(c => {
+      html += '<ul class="rows">' + used.map(c => {
         const n = catalog.filter(b => b.category === c.id).length;
         return chevronRow('#/books/' + c.id, '<span class="title" translate="no">' + esc(L(c.title)) + '</span>' +
           '<span class="row-sub">' + esc(t('booksCount', { n: n })) + '</span>');
-      }).join('');
-      html += catalog.filter(b => !used.some(c => c.id === b.category)).map(bookRow).join('');
+      }).join('') + loose.map(bookRow).join('') + '</ul>';
     }
-    return html + '</ul></main>';
+    return html + '</main>';
   }
 
   function bookParent(book) {
     const used = usedCategories();
-    const cat = used.length > 1 && used.find(c => c.id === book.category);
+    /* With a small library the book list is grouped on one screen, so "back" goes there. */
+    const cat = used.length > 1 && catalog.length > 24 && used.find(c => c.id === book.category);
     return cat ? { href: '#/books/' + cat.id, label: L(cat.title) } : { href: '#/books', label: t('books') };
   }
 
@@ -968,11 +993,8 @@
       '<div class="reader-tools">' +
       '<button class="btn" data-action="bookmark" aria-pressed="' + isBookmarked + '">' + icon(isBookmarked ? 'check' : 'bookmark') +
       '<span>' + esc(isBookmarked ? t('savedDone') : t('save')) + '</span></button>' +
-      (state.locked ? '' :
-        '<span class="size-btns">' +
-        '<button class="btn" data-action="font-down" aria-label="' + esc(t('textSize') + ': ' + t('smaller')) + '"><span translate="no" lang="hi">अ</span>−</button>' +
-        '<button class="btn" data-action="font-up" aria-label="' + esc(t('textSize') + ': ' + t('bigger')) + '"><span translate="no" lang="hi">अ</span>+</button>' +
-        '</span>') +
+      (canShare() ? '<button class="btn" data-action="share">' + icon('share') + '<span>' + esc(t('share')) + '</span></button>' : '') +
+      (state.locked ? '' : '<span class="size-btns">' + sizeButtonsHtml(false) + '</span>') +
       '</div>' +
       '</main>' +
       '<nav class="reader-bar" aria-label="' + esc(book.title.hi) + '">' +
@@ -1005,7 +1027,10 @@
     if (!box) return;
     const scope = searchBooks.length < catalog.length ? '<p class="muted scope-note">' + esc(t('searchScope')) + '</p>' : '';
     if (!lastQuery.trim()) {
-      box.innerHTML = '<p class="muted">' + esc(t('typeToSearch')) + '</p>';
+      /* Nothing typed yet: offer the books as big chips, so nobody has to type to get somewhere. */
+      box.innerHTML = '<p class="muted">' + esc(t('typeToSearch')) + '</p>' +
+        '<h2 class="chips-head">' + esc(t('orPick')) + '</h2><div class="chips">' +
+        catalog.slice(0, 12).map(b => '<a class="chip" href="#/book/' + b.id + '" translate="no" lang="hi">' + esc(b.title.hi) + '</a>').join('') + '</div>';
       return;
     }
     const res = runSearch(catalog, searchBooks, lastQuery);
@@ -1029,7 +1054,10 @@
   async function viewSaved() {
     document.title = t('saved') + ' · ' + t('appName');
     let html = backBar('#/', t('home')) + '<main><h1>' + esc(t('saved')) + '</h1>';
-    if (!state.bookmarks.length) return html + '<p class="muted">' + esc(t('noBookmarks')) + '</p></main>';
+    if (!state.bookmarks.length) {
+      return html + '<div class="empty">' + icon('bookmark', 'empty-icon') + '<p class="muted">' + esc(t('noBookmarks')) + '</p>' +
+        '<a class="btn btn-primary" href="#/books">' + icon('books') + '<span>' + esc(t('seeBooks')) + '</span></a></div></main>';
+    }
     const ids = Array.from(new Set(state.bookmarks.map(b => b.book)));
     await Promise.all(ids.map(id => getBook(id).catch(() => null)));
     const items = state.bookmarks.slice().reverse()
@@ -1050,7 +1078,8 @@
   function choice(action, current, options) {
     return '<div class="choice" role="group">' + options.map(o =>
       '<button class="btn" data-action="' + action + '" data-value="' + o.value + '" aria-pressed="' + (o.value === current) + '"' +
-      (o.lang ? ' translate="no" lang="' + o.lang + '"' : '') + '>' + (o.value === current ? icon('check') : '') + '<span>' + esc(o.label) + '</span></button>'
+      (o.lang ? ' translate="no" lang="' + o.lang + '"' : '') + '>' + (o.value === current ? icon('check') : (o.icon ? icon(o.icon) : '')) +
+      '<span>' + esc(o.label) + '</span></button>'
     ).join('') + '</div>';
   }
 
@@ -1062,15 +1091,16 @@
         '<button class="btn btn-wide hold-btn" data-hold="unlock"><span class="hold-fill"></span><span class="hold-text">' + icon('lock') + '<span>' + esc(t('holdToUnlock')) + '</span></span></button></section>' +
         '<a class="row row-link" href="#/credits"><span class="row-main">' + esc(t('credits')) + '</span>' + icon('chevron-right', 'row-chev') + '</a></main>';
     }
-    const theme = document.documentElement.dataset.theme;
     html += '<section class="panel"><h2>' + esc(t('language')) + '</h2>' +
       choice('set-lang', state.lang, LANGS.map(l => ({ value: l.code, label: l.name, lang: l.code }))) + '</section>';
     html += '<section class="panel"><h2>' + esc(t('textSize')) + '</h2>' +
       '<p class="size-preview" translate="no" lang="pra">' + esc(t('sizePreview')) + '</p>' +
-      '<div class="choice"><button class="btn" data-action="font-down"><span translate="no" lang="hi">अ</span>− <span>' + esc(t('smaller')) + '</span></button>' +
-      '<button class="btn" data-action="font-up"><span translate="no" lang="hi">अ</span>+ <span>' + esc(t('bigger')) + '</span></button></div></section>';
+      '<div class="choice size-choice">' + sizeButtonsHtml(true) + '</div>' + sizeLevelHtml() + '</section>';
+    /* "Same as phone" follows the phone's day/night setting; picking Day or Night fixes it. */
     html += '<section class="panel"><h2>' + esc(t('colours')) + '</h2>' +
-      choice('set-theme', theme, [{ value: 'day', label: t('day') }, { value: 'night', label: t('night') }]) + '</section>';
+      choice('set-theme', state.theme || 'auto', [
+        { value: 'day', label: t('day'), icon: 'sun' }, { value: 'night', label: t('night'), icon: 'moon' }, { value: 'auto', label: t('autoTheme'), icon: 'device-mobile' }
+      ]) + '</section>';
     if (hasSpeech()) {
       html += '<section class="panel"><h2>' + esc(t('speed')) + '</h2>' +
         choice('set-speed', state.speed, [{ value: 'slow', label: t('slow') }, { value: 'normal', label: t('normal') }, { value: 'fast', label: t('fast') }]) + '</section>';
@@ -1089,6 +1119,8 @@
 
     html += '<section class="panel"><h2>' + esc(t('lock')) + '</h2><p class="muted">' + esc(t('lockDesc')) + '</p>' +
       '<button class="btn btn-wide" data-action="lock">' + icon('lock') + '<span>' + esc(t('lockOn')) + '</span></button></section>';
+    html += '<section class="panel"><h2>' + icon('help-circle') + ' ' + esc(t('help')) + '</h2><ol class="tips">' +
+      t('helpTips').map(tip => '<li>' + esc(tip) + '</li>').join('') + '</ol></section>';
     html += '<a class="row row-link" href="#/credits"><span class="row-main">' + esc(t('credits')) + '</span>' + icon('chevron-right', 'row-chev') + '</a>';
     return html + '</main>';
   }
@@ -1168,11 +1200,21 @@
     }
     clearTimeout(loadingTimer);
     if (token !== renderToken) return;
-    $app.innerHTML = html;
+    const withNav = NAV_VIEWS.indexOf(view) >= 0;
+    $app.innerHTML = html + (withNav ? navBar(view) : '');
+    $app.classList.toggle('has-nav', withNav);
+    /* A short slide-in when the screen changes; page turns in the reader slide in the direction of travel. */
+    if (!sameRoute) {
+      const main = $app.querySelector('main');
+      if (main) main.classList.add(view === 'read' && pendingDir ? 'enter-' + pendingDir : 'enter');
+    }
+    pendingDir = null;
     currentView = view;
     currentRoute = route;
     afterRender(view, sameView, sameRoute, focusAction);
   }
+
+  let pendingDir = null;
 
   function afterRender(view, sameView, sameRoute, focusAction) {
     const again = focusAction && $app.querySelector('[data-action="' + focusAction + '"]');
@@ -1199,6 +1241,12 @@
       else stopSpeech();
     }
     updateScrollCue();
+    /* The first time the reader opens on a touch phone, mention that swiping also turns the page. */
+    if (view === 'read' && !state.hintShown && ctx && !ctx.page.scroll && ctx.book.verses.length > 1 && navigator.maxTouchPoints > 0) {
+      state.hintShown = true;
+      saveState();
+      setTimeout(() => { if (currentView === 'read') toast(t('swipeHint')); }, 1200);
+    }
   }
 
   /* ---------- Actions ---------- */
@@ -1210,6 +1258,33 @@
     state.fontStep = next;
     saveState();
     applySettings();
+    refreshSizeButtons();
+  }
+
+  /* Text-size buttons grey out at the smallest and biggest size, and the level dots follow along. */
+  function sizeButtonsHtml(withLabels) {
+    const atMin = state.fontStep <= 0;
+    const atMax = state.fontStep >= FONT_STEPS.length - 1;
+    const a = '<span translate="no" lang="hi" aria-hidden="true">अ</span>';
+    return '<button class="btn size-btn" data-action="font-down"' + (atMin ? ' disabled' : '') + ' aria-label="' + esc(t('textSize') + ': ' + t('smaller')) + '">' +
+      a + '<span class="size-sign">−</span>' + (withLabels ? '<span>' + esc(t('smaller')) + '</span>' : '') + '</button>' +
+      '<button class="btn size-btn" data-action="font-up"' + (atMax ? ' disabled' : '') + ' aria-label="' + esc(t('textSize') + ': ' + t('bigger')) + '">' +
+      a + '<span class="size-sign">+</span>' + (withLabels ? '<span>' + esc(t('bigger')) + '</span>' : '') + '</button>';
+  }
+
+  function sizeLevelHtml() {
+    return '<p class="size-level" aria-label="' + esc(t('sizeLevel', { n: state.fontStep + 1, max: FONT_STEPS.length })) + '">' +
+      FONT_STEPS.map((s, i) => '<span class="size-dot' + (i === state.fontStep ? ' is-on' : '') + '"></span>').join('') +
+      '<span class="size-level-text">' + esc(t('sizeLevel', { n: state.fontStep + 1, max: FONT_STEPS.length })) + '</span></p>';
+  }
+
+  function refreshSizeButtons() {
+    const down = $app.querySelector('[data-action="font-down"]');
+    const up = $app.querySelector('[data-action="font-up"]');
+    if (down) down.disabled = state.fontStep <= 0;
+    if (up) up.disabled = state.fontStep >= FONT_STEPS.length - 1;
+    const level = $app.querySelector('.size-level');
+    if (level) level.outerHTML = sizeLevelHtml();
   }
 
   function readerStep(delta) {
@@ -1218,6 +1293,7 @@
     if (delta < 0) {
       if (page.from === 1) { go('book/' + book.id + (book.sections.length > 1 ? '/1' : '')); return; }
       const prev = book.pages[book.verses[page.from - 2].page];
+      pendingDir = 'prev';
       go('read/' + book.id + '/' + prev.from, true);
       return;
     }
@@ -1227,14 +1303,52 @@
       go('book/' + book.id);
       return;
     }
+    pendingDir = 'next';
     go('read/' + book.id + '/' + (page.to + 1), true);
+  }
+
+  /* Share the verses on this page (WhatsApp, messages), or copy them when sharing isn't available. */
+  async function shareText() {
+    if (!ctx) return;
+    const { book, verses } = ctx;
+    const first = verses[0];
+    const last = verses[verses.length - 1];
+    const body = verses.map(v => v.lines.concat(proseOf(v)).join('\n')).join('\n\n');
+    const where = book.title.hi + (book.scroll ? '' : ' · ' + posLabel(book, first, last));
+    const text = body + '\n\n— ' + where + '\n' + t('shareFrom') + ': ' + APP_URL;
+    if (navigator.share) {
+      try { await navigator.share({ title: where, text: text }); return; } catch (e) { if (e && e.name === 'AbortError') return; }
+    }
+    toast(copyText(text) ? t('copied') : t('copyFailed'));
+  }
+
+  /* Copy with the modern clipboard API, or the old "select and copy" way where that is blocked. */
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(() => {});
+    }
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    ta.remove();
+    return ok || !!(navigator.clipboard && navigator.clipboard.writeText);
+  }
+
+  function canShare() {
+    return !!(navigator.share || (navigator.clipboard && navigator.clipboard.writeText));
   }
 
   const actions = {
     'pick-lang': el => { state.lang = el.dataset.lang; saveState(); render(); },
     'switch-lang': el => { state.lang = el.dataset.lang; saveState(); render(); },
     'set-lang': el => { state.lang = el.dataset.value; saveState(); render(); },
-    'set-theme': el => { state.theme = el.dataset.value; saveState(); render(); },
+    'set-theme': el => { state.theme = el.dataset.value === 'auto' ? null : el.dataset.value; saveState(); render(); },
+    'share': () => shareText(),
     'set-speed': el => { state.speed = el.dataset.value; saveState(); render(); },
     'set-roman': el => { state.roman = el.dataset.value === 'yes'; saveState(); render(); },
     'font-up': () => changeFont(1),
