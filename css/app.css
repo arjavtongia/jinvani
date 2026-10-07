@@ -556,6 +556,7 @@ input:focus { border-color: var(--accent); }
 }
 .tithi-note { font-size: 0.85rem; }
 .tiles > :last-child:nth-child(odd) { grid-column: 1 / -1; min-height: 5rem; flex-direction: row; gap: 0.75rem; }
+.tile-wide { min-height: 5rem; flex-direction: row; gap: 0.75rem; }
 
 .reader-bar {
   position: fixed;

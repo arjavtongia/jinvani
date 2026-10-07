@@ -686,11 +686,13 @@
     html += '<a class="btn btn-small" href="#/settings" aria-label="' + esc(t('settings')) + '">' + icon('settings') + '</a>' +
       '</span></header><main>' + dateCardHtml();
 
+    /* "Continue reading" (or "Start here" on the first visit) sits below the tiles, above "Saved". */
+    let readingCard = '';
     const last = state.last && await getBook(state.last.book).catch(() => null);
     if (last && last.verses[state.last.pos - 1]) {
       const v = last.verses[state.last.pos - 1];
       const pct = Math.round(v.pos / last.verses.length * 100);
-      html += '<a class="card card-accent" href="#/read/' + last.id + '/' + v.pos + '">' +
+      readingCard = '<a class="card card-accent" href="#/read/' + last.id + '/' + v.pos + '">' +
         '<span class="card-label">' + esc(t('continueReading')) + '</span>' +
         titleHtml(last, 'card-title') +
         '<span class="card-meta">' + esc(posLabel(last, v)) + ' · ' + v.pos + ' / ' + last.verses.length + '</span>' +
@@ -698,7 +700,7 @@
     } else {
       const first = await getBook('namokar').catch(() => null);
       if (first) {
-        html += '<a class="card card-accent" href="#/read/namokar/1">' +
+        readingCard = '<a class="card card-accent" href="#/read/namokar/1">' +
           '<span class="card-label">' + esc(t('startReading')) + '</span>' +
           titleHtml(first, 'card-title') + '</a>';
       }
@@ -709,8 +711,9 @@
       '<a class="tile" href="#/book/mandir-darshan">' + icon('home') + '<span>' + esc(t('mandirGuide')) + '</span></a>' +
       '<a class="tile" href="#/book/pooja-vidhi">' + icon('flower') + '<span>' + esc(t('poojaGuide')) + '</span></a>' +
       '<a class="tile" href="#/search">' + icon('search') + '<span>' + esc(t('search')) + '</span></a>' +
-      '<a class="tile" href="#/saved">' + icon('bookmark') + '<span>' + esc(t('saved')) + '</span></a>' +
-      '</nav>';
+      '</nav>' +
+      readingCard +
+      '<a class="tile tile-wide" href="#/saved">' + icon('bookmark') + '<span>' + esc(t('saved')) + '</span></a>';
 
     const ts = await getBook('tattvarth-sutra').catch(() => null);
     if (ts) {
