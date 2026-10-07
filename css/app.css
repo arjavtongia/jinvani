@@ -1,95 +1,139 @@
-/* Swadhyay — large, calm, high-contrast styles for elder readers.
+/* Jinvani — the inside of the mandir: white Makrana marble, polished brass and the carved toran.
+   Scripture sits in the sanctum under an arch; brass draws the structure; sindoor is kept for
+   the sacred and for the one main action on a screen. Night is black Kota stone lit by the diya.
    All sizes use rem, so the "text size" setting scales the whole app. */
 
-@font-face {
-  font-family: 'Noto Serif Devanagari';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../fonts/noto-serif-devanagari-devanagari-400-normal.woff2) format('woff2');
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-@font-face {
-  font-family: 'Noto Serif Devanagari';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(../fonts/noto-serif-devanagari-devanagari-600-normal.woff2) format('woff2');
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-@font-face {
-  font-family: 'Noto Serif Devanagari';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../fonts/noto-serif-devanagari-latin-400-normal.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Noto Serif Devanagari';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(../fonts/noto-serif-devanagari-latin-600-normal.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* Noto Serif Devanagari: the opening darshan's name and credit. */
+@font-face { font-family: 'Noto Serif Devanagari'; font-style: normal; font-weight: 400; font-display: swap; src: url(../fonts/noto-serif-devanagari-devanagari-400-normal.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09; }
+@font-face { font-family: 'Noto Serif Devanagari'; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/noto-serif-devanagari-devanagari-600-normal.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09; }
+@font-face { font-family: 'Noto Serif Devanagari'; font-style: normal; font-weight: 400; font-display: swap; src: url(../fonts/noto-serif-devanagari-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Noto Serif Devanagari'; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/noto-serif-devanagari-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* Vesper Libre: carved, like an inscription in the temple; for headings, the tithi and scripture. */
+@font-face { font-family: 'Vesper Libre'; font-style: normal; font-weight: 500; font-display: swap; src: url(../fonts/vesper-libre-devanagari-500-normal.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A; }
+@font-face { font-family: 'Vesper Libre'; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/vesper-libre-devanagari-700-normal.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A; }
+@font-face { font-family: 'Vesper Libre'; font-style: normal; font-weight: 900; font-display: swap; src: url(../fonts/vesper-libre-devanagari-900-normal.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A; }
+@font-face { font-family: 'Vesper Libre'; font-style: normal; font-weight: 500; font-display: swap; src: url(../fonts/vesper-libre-latin-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Vesper Libre'; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/vesper-libre-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Vesper Libre'; font-style: normal; font-weight: 900; font-display: swap; src: url(../fonts/vesper-libre-latin-900-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* Hind: the plain voice of the interface, meanings and instructions. */
+@font-face { font-family: 'Hind'; font-style: normal; font-weight: 400; font-display: swap; src: url(../fonts/hind-devanagari-400-normal.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A; }
+@font-face { font-family: 'Hind'; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/hind-devanagari-600-normal.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A; }
+@font-face { font-family: 'Hind'; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/hind-devanagari-700-normal.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A; }
+@font-face { font-family: 'Hind'; font-style: normal; font-weight: 400; font-display: swap; src: url(../fonts/hind-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Hind'; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/hind-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Hind'; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/hind-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ---------- Day: white marble ---------- */
 
 :root {
-  --bg: #fbf6ec;
-  --surface: #fffdf8;
-  --text: #2a1e12;
-  --muted: #5f4f3e;
-  --accent: #9a3412;
-  --accent-hover: #7c2a0e;
-  --on-accent: #fffaf2;
-  --accent-bg: #fbe8d5;
-  --accent-text: #7a2a0c;
-  --border: #e2d3bd;
-  --border-strong: #b9a487;
-  --focus: #1d4ed8;
-  --verse: #3b1d08;
-  --shadow: 0 1px 2px rgba(60, 40, 20, 0.08);
-  --radius: 14px;
-  --tap: max(3.5rem, 56px);
-  --font-ui: system-ui, -apple-system, 'Segoe UI', 'Noto Sans Devanagari', 'Nirmala UI', 'Kohinoor Devanagari', 'Mangal', Roboto, sans-serif;
-  --font-verse: 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', 'Mangal', serif;
+  --bg: #f4f2ed;
+  --shrine: #faf9f6;
+  --niche: #fbfaf7;
+  --field: #fbfaf7;
+  --plinth: #ebe7df;
+  --plinth-edge: #dcd6ca;
+  --text: #1f1c19;
+  --verse: #1a1715;
+  --muted: #5a544d;
+  --hair: rgba(31, 28, 25, 0.13);
+  --brass: #a8822c;
+  --brass-line: rgba(168, 130, 44, 0.55);
+  --brass-text: #7c5a14;
+  --brass-hi: #f3dc98;
+  --brass-mid: #d4ab52;
+  --brass-lo: #7a5814;
+  --brass-wash: rgba(212, 171, 82, 0.14);
+  --brass-wash-strong: rgba(232, 196, 112, 0.42);
+  --sindoor: #a3301a;
+  --sindoor-hover: #8a2614;
+  --on-sindoor: #fff7ee;
+  --sindoor-fill: #a3301a;
+  --sindoor-fill-hover: #8a2614;
+  --glow: rgba(214, 170, 80, 0.2);
+  --error: #a3301a;
+  --lift: 0 3px 8px rgba(0, 0, 0, 0.16);
+  --veins-opacity: 0.22;
+  --scene-paper: #f7f4ee;
+  --scene-ground: #eadbbd;
+  --tap: max(2.5rem, 48px);
+  --fs-xs: 0.68rem;
+  --fs-sm: 0.76rem;
+  --fs-md: 0.86rem;
+  --fs-body: 0.95rem;
+  --fs-lg: 1.06rem;
+  --fs-xl: 1.42rem;
+  --fs-verse: 1.13rem;
+  --font-ui: 'Hind', system-ui, -apple-system, 'Segoe UI', 'Noto Sans Devanagari', 'Nirmala UI', 'Kohinoor Devanagari', 'Mangal', Roboto, sans-serif;
+  --font-head: 'Vesper Libre', 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', serif;
+  --font-verse: 'Vesper Libre', 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', serif;
+  --font-splash: 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', 'Mangal', serif;
+  --veins: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 900' preserveAspectRatio='xMidYMid slice'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.004 0.008' numOctaves='4' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.48 0 0 0 0 0.45 1.6 0 0 0 -0.62'/%3E%3C/filter%3E%3Cfilter id='v' x='-10%25' y='-10%25' width='120%25' height='120%25'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.018' numOctaves='3' seed='9' result='t'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='t' scale='18'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3Cg fill='none' stroke='%23857e74' filter='url(%23v)'%3E%3Cpath d='M-40 170C110 220 180 120 330 190S560 330 650 290' stroke-width='1.2' opacity='.55'/%3E%3Cpath d='M-30 600C130 540 250 640 390 570S570 490 640 540' stroke-width='.9' opacity='.45'/%3E%3Cpath d='M180 -10C220 140 140 270 240 380S360 600 300 730' stroke-width='.7' opacity='.35'/%3E%3Cpath d='M460 680C500 760 430 850 500 960' stroke-width='1' opacity='.4'/%3E%3C/g%3E%3C/svg%3E");
   color-scheme: light;
 }
 
+/* ---------- Night: black Kota stone, lit by the diya ---------- */
+
 :root[data-theme="night"] {
-  --bg: #17130e;
-  --surface: #221c15;
-  --text: #f3e9da;
-  --muted: #cbbba5;
-  --accent: #f0a35e;
-  --accent-hover: #f6b97f;
-  --on-accent: #1d1209;
-  --accent-bg: #3a2616;
-  --accent-text: #f6c08c;
-  --border: #3b3127;
-  --border-strong: #6b5b48;
-  --focus: #93c5fd;
-  --verse: #fbe9cf;
-  --shadow: none;
+  --bg: #161514;
+  --shrine: #1e1c1a;
+  --niche: #26231f;
+  --field: #1f1d1b;
+  --plinth: #1e1c1a;
+  --plinth-edge: #0c0b0a;
+  --text: #efe9dd;
+  --verse: #f4eee3;
+  --muted: #b9b0a2;
+  --hair: rgba(239, 233, 221, 0.13);
+  --brass: #c9a24f;
+  --brass-line: rgba(201, 162, 79, 0.55);
+  --brass-text: #dcb965;
+  --brass-hi: #f6dd97;
+  --brass-mid: #c99e47;
+  --brass-lo: #7d5f20;
+  --brass-wash: rgba(214, 170, 80, 0.11);
+  --brass-wash-strong: rgba(214, 170, 80, 0.26);
+  --sindoor: #e0674a;
+  --sindoor-hover: #ea7d61;
+  --on-sindoor: #fff7ee;
+  --sindoor-fill: #b5462c;
+  --sindoor-fill-hover: #c4553a;
+  --glow: rgba(240, 175, 85, 0.13);
+  --error: #f19a84;
+  --lift: 0 3px 8px rgba(0, 0, 0, 0.4);
+  --veins-opacity: 0.1;
+  --scene-paper: #2a2622;
+  --scene-ground: #3a3129;
   color-scheme: dark;
 }
 
+/* ---------- Base ---------- */
+
 *, *::before, *::after { box-sizing: border-box; }
-
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scrollbar-color: var(--brass-line) transparent; }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-ui);
-  font-size: 1rem;
+  font-size: var(--fs-md);
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
+  caret-color: var(--sindoor);
 }
+/* The marble's veins, behind every screen. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--veins) center / cover no-repeat;
+  opacity: var(--veins-opacity);
+}
+:root[data-theme="night"] body::before { filter: invert(1); }
+::selection { background: var(--brass-wash-strong); color: var(--text); }
 
 #app {
   max-width: 42rem;
@@ -97,26 +141,56 @@ body {
   padding: 0 1rem calc(2rem + env(safe-area-inset-bottom));
   min-height: 100vh;
 }
-
 main { display: block; }
-
-h1 { font-size: 1.5rem; line-height: 1.3; margin: 1.25rem 0 0.75rem; }
-h2 { font-size: 1.15rem; margin: 1.75rem 0 0.75rem; }
-h3 { font-size: 1.05rem; margin: 0 0 0.25rem; }
+h1, h2, h3 { font-family: var(--font-head); font-weight: 700; line-height: 1.25; text-wrap: balance; }
+h1 { font-size: var(--fs-xl); margin: 1.3rem 0 0.8rem; }
+h2 { font-size: var(--fs-lg); margin: 1.8rem 0 0.7rem; }
+h3 { font-size: var(--fs-body); margin: 0 0 0.25rem; }
 h1:focus { outline: none; }
 p { margin: 0 0 1rem; }
-a { color: var(--accent-text); }
-
+a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
 .muted { color: var(--muted); }
-.center { text-align: center; padding-top: 30vh; }
-.visually-hidden {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
-}
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.icon { width: 1.3em; height: 1.3em; flex: none; stroke-width: 1.8; }
+:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; border-radius: 4px; }
 
-.icon { width: 1.35em; height: 1.35em; flex: none; }
+/* ---------- Ornaments (js/ornaments.js) ---------- */
 
-:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.chhatra { display: block; width: 4.4rem; height: auto; aspect-ratio: 132 / 86; overflow: visible; }
+.chhatra-staff { fill: var(--brass); }
+.chhatra-tiers { fill: url(#brassV); stroke: var(--brass-lo); stroke-width: 1.2; stroke-linejoin: round; }
+.dhwaja-pole { stroke: var(--brass); stroke-width: 1.6; stroke-linecap: round; fill: none; }
+.dhwaja-flag { fill: var(--sindoor); }
+.dhwaja-top { fill: var(--brass); }
+.arch-fill { fill: var(--shrine); }
+.arch-line { fill: none; stroke: url(#brassV); stroke-width: 2.6; }
+.arch-inner { fill: none; stroke: var(--brass); stroke-width: 0.9; opacity: 0.75; }
+.kalash { fill: url(#brassV); stroke: var(--brass-lo); stroke-width: 0.8; }
+.side-line { fill: none; stroke: url(#brassSide); stroke-width: 2.6; }
+.side-inner { fill: none; stroke: var(--brass); stroke-width: 0.9; opacity: 0.75; }
+
+/* A brass hairline with a lozenge at its centre. */
+.rule { display: flex; align-items: center; gap: 0.6rem; margin: 1.4rem 0; }
+.rule::before, .rule::after { content: ''; flex: 1; border-top: 1px solid var(--brass-line); }
+.rule i { width: 0.42rem; height: 0.42rem; background: var(--brass); transform: rotate(45deg); }
+
+/* The vedi's steps: what stands on them is the day, or the scripture in its shrine. */
+.plinth { display: grid; justify-items: center; }
+.plinth i { display: block; height: 0.34rem; border-top: 1px solid var(--brass); background: linear-gradient(var(--plinth), var(--plinth-edge)); }
+.plinth i:nth-child(1) { width: 62%; }
+.plinth i:nth-child(2) { width: 78%; }
+.plinth i:nth-child(3) { width: 94%; }
+
+/* An arched niche (a jharokha) for an emblem. */
+.niche { position: relative; flex: none; display: block; width: 2.4rem; height: 2.9rem; overflow: hidden; background: var(--niche); border-radius: 1.2rem 1.2rem 0.25rem 0.25rem / 1.05rem 1.05rem 0.25rem 0.25rem; }
+.niche::after { content: ''; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 1px var(--brass); pointer-events: none; }
+.niche .cover { position: absolute; left: 50%; bottom: 0; width: 100%; height: auto; aspect-ratio: 1; transform: translateX(-50%); }
+.niche .cover > rect:first-child { fill: var(--niche); stroke: none; }
+/* At night the pictures are dimmed, as if lit by the diya, so no daylight panel glares on the black stone. */
+:root[data-theme="night"] .arch-pic > .pic > svg, :root[data-theme="night"] .dg-drawing svg { filter: brightness(0.9); }
+:root[data-theme="night"] .arch-pic > .pic > img, :root[data-theme="night"] .story-fig img { filter: brightness(0.72) sepia(0.14); }
+:root[data-theme="night"] .niche .cover { filter: brightness(0.92); }
+.niche > .icon { position: absolute; left: 50%; bottom: 0.45rem; width: 1.3rem; height: 1.3rem; transform: translateX(-50%); color: var(--brass-text); }
 
 /* ---------- Buttons ---------- */
 
@@ -124,34 +198,34 @@ a { color: var(--accent-text); }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
   min-height: var(--tap);
-  padding: 0.5rem 1.1rem;
-  font: inherit;
-  font-weight: 600;
+  padding: 0.4rem 1.15rem;
+  font: 600 var(--fs-md)/1.2 var(--font-ui);
   color: var(--text);
-  background: var(--surface);
-  border: 2px solid var(--border-strong);
-  border-radius: var(--radius);
+  background: transparent;
+  border: 1px solid var(--brass-line);
+  border-radius: 999px;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.1s;
 }
-.btn:hover { border-color: var(--accent); }
+.btn:hover { border-color: var(--brass); background: var(--brass-wash); }
 .btn:active { transform: scale(0.97); }
-.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
-.btn-ghost { border-color: transparent; background: transparent; }
-.btn-small { min-height: 3rem; padding: 0.35rem 0.8rem; font-size: 0.95rem; }
-.btn-icon { padding-left: 0.6rem; padding-right: 0.6rem; }
+.btn .icon { color: var(--brass-text); }
+.btn-primary { background: var(--sindoor-fill); border-color: var(--sindoor-fill); color: var(--on-sindoor); box-shadow: var(--lift); }
+.btn-primary .icon { color: currentColor; }
+.btn-primary:hover { background: var(--sindoor-fill-hover); border-color: var(--sindoor-fill-hover); }
 .btn-wide { width: 100%; }
-.btn[aria-pressed="true"] { background: var(--accent-bg); border-color: var(--accent); color: var(--accent-text); }
+.btn-small { min-height: max(2.2rem, 44px); padding: 0.25rem 0.9rem; font-size: var(--fs-sm); }
+.btn[aria-pressed="true"] { border-color: var(--brass); background: var(--brass-wash-strong); box-shadow: inset 0 0 0 1px var(--brass); }
 .btn[disabled] { opacity: 0.4; cursor: default; pointer-events: none; }
-/* A long screen name in the back button is cut short rather than wrapping the bar. */
-.btn-back > span { max-width: 11rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.btn, .card, .row, .tile, .chip, .tab { transition: border-color 0.15s, background-color 0.15s, transform 0.1s, box-shadow 0.15s; }
+.icon-btn { display: inline-grid; place-items: center; flex: none; width: var(--tap); height: var(--tap); padding: 0; border: 0; border-radius: 50%; background: none; color: var(--muted); font: 700 var(--fs-md)/1 var(--font-head); cursor: pointer; text-decoration: none; }
+.icon-btn:hover, .icon-btn[aria-expanded="true"] { color: var(--text); background: var(--brass-wash); }
 
 /* ---------- Top bar ---------- */
 
@@ -160,550 +234,450 @@ a { color: var(--accent-text); }
   top: 0;
   z-index: 5;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
-  margin: 0 -1rem;
-  padding: calc(0.5rem + env(safe-area-inset-top)) 1rem 0.5rem;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-}
-.topbar-title { font-weight: 600; text-align: center; flex: 1; }
-
-/* ---------- Welcome ---------- */
-
-.welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  min-height: 90vh;
-  text-align: center;
-}
-.welcome-greet { font-size: 1.6rem; font-weight: 600; margin: 0; }
-.welcome-q { display: flex; flex-direction: column; font-size: 1.15rem; font-weight: 400; color: var(--muted); margin: 0 0 0.5rem; }
-.lang-btn { font-size: 1.75rem; min-height: 5.5rem; width: 100%; }
-.lang-btn:first-of-type { background: var(--accent-bg); border-color: var(--accent); color: var(--accent-text); }
-.welcome-note { display: flex; flex-direction: column; color: var(--muted); font-size: 0.95rem; }
-
-/* ---------- Home ---------- */
-
-.home-head { padding-top: calc(0.75rem + env(safe-area-inset-top)); }
-.brand-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; }
-.head-btns { flex-wrap: wrap; justify-content: flex-end; }
-.brand { font-family: var(--font-verse); font-size: 1.05rem; font-weight: 600; color: var(--accent-text); letter-spacing: 0.02em; }
-.greet { margin: 0.75rem 0 0; font-size: 1.7rem; line-height: 1.25; }
-
-.card {
-  display: flex;
-  flex-direction: column;
   gap: 0.25rem;
-  margin: 1.25rem 0;
-  padding: 1.1rem 1.25rem;
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 18px;
-  color: var(--text);
-  text-decoration: none;
-  box-shadow: var(--shadow);
-}
-.card:hover { border-color: var(--accent); }
-.card-accent { background: var(--accent-bg); border-color: var(--accent); color: var(--accent-text); }
-.card-label { font-size: 0.9rem; font-weight: 600; }
-.card-title { font-size: 1.35rem; font-weight: 700; line-height: 1.35; }
-.card-meta { font-size: 0.95rem; }
-.card-verse { font-family: var(--font-verse); font-size: 1.15rem; line-height: 1.8; color: var(--verse); }
-.card .title-en { font-size: 0.95rem; }
-
-.progress {
-  display: block;
-  height: 0.5rem;
-  margin-top: 0.5rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 99px;
-  overflow: hidden;
-}
-.progress > span { display: block; height: 100%; background: var(--accent); }
-.progress-top { margin: 0 -1rem; border-radius: 0; border-width: 0 0 1px; height: 0.35rem; }
-
-.tiles {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-}
-.tile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  min-height: 7rem;
-  padding: 0.75rem;
-  background: var(--surface);
-  border: 2px solid var(--border-strong);
-  border-radius: 18px;
-  color: var(--text);
-  font-size: 1.15rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-align: center;
-}
-.tile .icon {
-  width: 3.1rem;
-  height: 3.1rem;
-  padding: 0.6rem;
-  border-radius: 50%;
-  background: var(--accent-bg);
-  color: var(--accent);
-}
-.tile:hover { border-color: var(--accent); }
-.count-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 1.8rem;
-  height: 1.8rem;
-  padding: 0 0.5rem;
-  border-radius: 99px;
-  background: var(--accent);
-  color: var(--on-accent);
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-@media (hover: hover) {
-  .card:hover, .tile:hover, .row:hover { box-shadow: 0 4px 14px rgba(60, 40, 20, 0.1); transform: translateY(-1px); }
-}
-
-/* ---------- Lists ---------- */
-
-.rows { list-style: none; margin: 0; padding: 0; }
-.rows > li + li { margin-top: 0.6rem; }
-.row {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  min-height: var(--tap);
-  padding: 0.75rem 1rem;
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: var(--radius);
-  color: var(--text);
-  text-decoration: none;
-}
-.row:hover { border-color: var(--accent); }
-.row-link { margin-top: 1.5rem; font-weight: 600; }
-.row-main { display: flex; flex-direction: column; flex: 1; min-width: 0; }
-.row .title { font-size: 1.2rem; font-weight: 700; }
-.title-en { color: var(--muted); font-size: 0.95rem; }
-.row-sub { color: var(--muted); font-size: 0.95rem; }
-.row-verse { font-family: var(--font-verse); font-size: 1.1rem; line-height: 1.7; color: var(--verse); overflow-wrap: anywhere; }
-.row-num {
-  flex: none;
-  min-width: 2.5rem;
-  min-height: 2.5rem;
-  padding: 0 0.45rem;
-  white-space: nowrap;
-  font-size: 0.95rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 99px;
-  background: var(--accent-bg);
-  color: var(--accent-text);
-  font-weight: 700;
-}
-.row-chev { color: var(--muted); }
-/* Cover emblems (js/covers.js) in the book lists and on the book page. */
-.row-cover { flex: none; display: block; width: 2.9rem; height: 2.9rem; }
-.row-cover .cover { display: block; width: 100%; height: 100%; }
-.book-title-row { display: flex; align-items: center; gap: 0.9rem; margin: 1.25rem 0 0.5rem; }
-.book-title-row .book-head { margin: 0; min-width: 0; }
-.book-cover-emblem { flex: none; display: block; width: 4.4rem; height: 4.4rem; }
-.book-cover-emblem .cover { display: block; width: 100%; height: 100%; }
-.row-with-action { display: flex; gap: 0.5rem; align-items: stretch; }
-.row-with-action .row { flex: 1; min-width: 0; }
-.row-with-action .btn { min-height: auto; }
-
-.book-head { display: flex; flex-direction: column; }
-.book-head .title { font-size: 1.6rem; }
-.stack { display: flex; flex-direction: column; gap: 0.75rem; margin: 1rem 0; }
-
-.grid-btns {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
-  gap: 0.6rem;
-}
-.grid-btn { flex-direction: column; gap: 0; min-height: 4.5rem; }
-.grid-big { font-size: 1.05rem; }
-.grid-small { font-size: 0.85rem; font-weight: 400; color: var(--muted); }
-
-.goto { margin: 1.25rem 0; }
-.goto label { display: block; font-weight: 600; margin-bottom: 0.4rem; }
-.goto-row { display: flex; gap: 0.6rem; }
-
-input[type="number"], input[type="search"] {
-  flex: 1;
-  min-width: 0;
-  min-height: var(--tap);
-  padding: 0.5rem 0.9rem;
-  font: inherit;
-  font-size: 1.1rem;
-  color: var(--text);
-  background: var(--surface);
-  border: 2px solid var(--border-strong);
-  border-radius: var(--radius);
-}
-input:focus { border-color: var(--accent); }
-.field-error { color: #b42318; font-weight: 600; margin: 0.4rem 0 0; min-height: 1em; }
-:root[data-theme="night"] .field-error { color: #fda29b; }
-
-.search-form { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem; }
-.search-form input { width: 100%; font-size: 1.2rem; }
-.is-listening { background: var(--accent-bg); border-color: var(--accent); color: var(--accent-text); }
-
-/* ---------- Reader ---------- */
-
-.reader-where {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0 1rem;
-  margin: 1rem 0 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 600;
-}
-.where-pos {
-  white-space: nowrap;
-  padding: 0.05rem 0.6rem;
-  border-radius: 99px;
-  background: var(--accent-bg);
-  color: var(--accent-text);
-  font-size: 0.85rem;
-}
-.size-btns { display: flex; gap: 0.5rem; margin-left: auto; }
-.size-btns .btn { min-width: 3.6rem; font-size: 1.1rem; gap: 0.1rem; }
-.size-sign { font-weight: 700; }
-
-.reader { padding-bottom: calc(7.5rem + env(safe-area-inset-bottom)); }
-.verse-label { font-size: 1.05rem; color: var(--accent-text); margin: 0.25rem 0 0.75rem; }
-.verse {
-  font-family: var(--font-verse);
-  font-size: 1.35rem;
-  line-height: 2;
-  color: var(--verse);
-  margin: 0 0 1.25rem;
-  overflow-wrap: anywhere;
-}
-.verse-line { display: block; }
-.verse-mark { white-space: nowrap; word-spacing: normal; font-size: 0.8em; color: var(--accent-text); }
-.roman {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--muted);
-  font-style: italic;
-  margin: 0 0 1.25rem;
-  overflow-wrap: anywhere;
-}
-.meaning { border-top: 2px solid var(--border); padding-top: 0.75rem; margin-bottom: 1.25rem; }
-.meaning h2 { margin: 0 0 0.25rem; font-size: 0.95rem; color: var(--muted); }
-.meaning p { font-size: 1.1rem; line-height: 1.8; }
-/* Save and Share sit side by side when they fit, otherwise each takes a full row; the size buttons get their own row. */
-.reader-tools { display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: 0.6rem; margin: 1.25rem 0; }
-.reader-tools > .btn { padding-left: 0.6rem; padding-right: 0.6rem; }
-.reader-tools .size-btns { grid-column: 1 / -1; justify-content: flex-end; }
-/* Scripture gets extra space between words so long Sanskrit words stay readable. */
-.verse { word-spacing: 0.3em; line-height: 2.05; }
-.prose p, .padya p, .meaning p { word-spacing: 0.12em; }
-.verse-block + .verse-block { margin-top: 0.25rem; }
-.page-many .verse-block + .verse-block { border-top: 1px dashed var(--border); padding-top: 0.9rem; }
-.page-many .verse { margin-bottom: 0.9rem; }
-.verse-block.is-target { background: var(--accent-bg); border-radius: 12px; padding: 0.5rem 0.75rem; margin: 0 -0.75rem; }
-.topic { font-size: 1.1rem; font-weight: 700; color: var(--accent-text); margin: 0 0 0.6rem; }
-.scroll-title { font-size: 1.35rem; color: var(--text); margin-bottom: 1rem; }
-.prose p {
-  font-family: var(--font-verse);
-  font-size: 1.15rem;
-  line-height: 1.95;
-  color: var(--text);
-  margin: 0 0 1rem;
-}
-.padya { border-top: 2px solid var(--border); padding-top: 0.75rem; margin-bottom: 1.25rem; }
-.padya h2 { margin: 0 0 0.25rem; font-size: 0.95rem; color: var(--muted); }
-.padya p { font-family: var(--font-verse); font-size: 1.15rem; line-height: 1.9; color: var(--verse); margin: 0; }
-.pada { color: var(--accent-text); font-weight: 600; }
-.row-topic { font-weight: 600; font-size: 1.05rem; line-height: 1.5; }
-.book-of { margin: 1rem 0 0; }
-.scope-note { font-size: 0.9rem; margin-top: 1rem; }
-
-/* ---------- Pictures that explain the text ---------- */
-
-.chitra {
-  margin: 1.25rem 0;
-  padding: 1rem;
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 18px;
-}
-.chitra-kicker {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin: 0 0 0.2rem;
-  color: var(--accent-text);
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-.chitra-kicker .icon { width: 1.1em; height: 1.1em; }
-.chitra-title { font-size: 1.1rem; font-weight: 700; line-height: 1.4; margin-bottom: 0.8rem; }
-.dg-text, .dg-box { min-width: 0; }
-.dg-text b, .dg-box b { font-size: 1.02rem; }
-.dg-sub { display: block; font-size: 0.9rem; font-weight: 400; color: var(--muted); line-height: 1.55; }
-.dg-badge {
-  flex: none;
-  min-width: 2rem;
-  height: 2rem;
-  padding: 0 0.4rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 99px;
-  background: var(--accent);
-  color: var(--on-accent);
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-.dg-list, .dg-flow, .dg-stack { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
-.dg-list li, .dg-flow li, .dg-stack li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.7rem;
-  padding: 0.6rem 0.7rem;
-  border-radius: 12px;
+  min-height: 3.2rem;
+  margin: 0 -1rem;
+  padding: calc(0.2rem + env(safe-area-inset-top)) 0.4rem 0.2rem;
   background: var(--bg);
-  border: 1px solid var(--border);
+  border-bottom: 1px solid var(--hair);
 }
-.dg-flow { gap: 1.1rem; }
-.dg-flow li { position: relative; }
-.dg-flow li + li::before {
-  content: '';
-  position: absolute;
-  left: 1.55rem;
-  top: -1.05rem;
-  border-left: 0.45rem solid transparent;
-  border-right: 0.45rem solid transparent;
-  border-top: 0.75rem solid var(--accent);
-}
-.dg-stack li { background: color-mix(in srgb, var(--accent-bg), var(--accent) calc(var(--depth) * 32%)); }
-.dg-stack li .dg-sub { color: inherit; }
-.dg-sum { display: flex; flex-direction: column; align-items: stretch; gap: 0.3rem; }
-.dg-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0.6rem 0.8rem;
-  border-radius: 12px;
-  background: var(--bg);
-  border: 2px solid var(--border-strong);
-}
-.dg-result { background: var(--accent-bg); border-color: var(--accent); color: var(--accent-text); }
-.dg-result .dg-sub { color: var(--accent-text); }
-.dg-op { align-self: center; font-size: 1.6rem; font-weight: 700; line-height: 1; color: var(--accent); }
-.dg-root {
-  max-width: 18rem;
-  margin: 0 auto 0.8rem;
-  padding: 0.6rem 0.8rem;
-  text-align: center;
-  border-radius: 12px;
-  background: var(--accent);
-  color: var(--on-accent);
-}
-.dg-root .dg-sub { color: var(--on-accent); }
-.dg-branches { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 0.6rem; }
-.dg-branch { border: 2px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--bg); }
-.dg-head { padding: 0.5rem 0.7rem; background: var(--accent-bg); color: var(--accent-text); }
-.dg-head .dg-sub { color: var(--accent-text); }
-.dg-branch ul { list-style: none; margin: 0; padding: 0.3rem 0.7rem 0.5rem; }
-.dg-branch li { padding: 0.4rem 0; border-bottom: 1px dashed var(--border); }
-.dg-branch li:last-child { border-bottom: 0; }
-.dg-drawing svg { display: block; width: 100%; max-width: 26rem; height: auto; margin: 0 auto 0.9rem; }
-/* A scene above a step: picture, caption, then the numbered list. */
-.chitra-top { margin: 0.25rem 0 1.4rem; padding: 0.75rem 0.85rem 0.85rem; }
-.chitra-top .dg-drawing svg { margin-bottom: 0.5rem; max-width: 24rem; }
-.chitra-top .chitra-title { margin: 0 0 0.7rem; text-align: center; font-size: 1rem; color: var(--accent-text); }
-.chitra-top .dg-legend:last-child { margin-bottom: 0; }
-.chitra-note { margin: 0.6rem 0 0; font-size: 0.85rem; color: var(--muted); }
-.chitra-gist {
-  margin: 0.8rem 0 0;
-  padding: 0.7rem 0.85rem;
-  border-radius: 12px;
-  background: var(--accent-bg);
-  color: var(--accent-text);
-  line-height: 1.75;
-}
+.back { display: inline-flex; align-items: center; gap: 0.35rem; min-width: 0; min-height: var(--tap); padding: 0 0.7rem 0 0.5rem; border-radius: 999px; color: var(--text); font: 600 var(--fs-md)/1.2 var(--font-ui); text-decoration: none; }
+.back:hover { background: var(--brass-wash); }
+.back .icon { color: var(--brass-text); }
+.back > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.topbar-title { flex: 1; min-width: 0; text-align: center; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.top-actions { display: flex; align-items: center; }
 
-/* ---------- Today's date and tithi ---------- */
+/* ---------- Bottom bar: a marble plinth with a brass edge ---------- */
 
-.head-btns { display: flex; align-items: center; gap: 0.5rem; }
-.card-date { width: 100%; margin-top: 1rem; font: inherit; text-align: left; cursor: pointer; }
-.date-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.3rem 0.5rem; }
-.date-more {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  white-space: nowrap;
-  padding: 0.2rem 0.7rem;
-  border-radius: 99px;
-  border: 1.5px solid var(--border-strong);
-  color: var(--accent-text);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-.date-main { font-size: 1.2rem; font-weight: 700; }
-.date-tithi { font-family: var(--font-verse); font-size: 1.15rem; font-weight: 600; color: var(--accent-text); }
-.date-badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.3rem; }
-.badge {
-  display: inline-block;
-  padding: 0.15rem 0.6rem;
-  border-radius: 99px;
-  background: var(--accent);
-  color: var(--on-accent);
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-.week-strip {
-  list-style: none;
-  display: flex;
-  gap: 0.5rem;
-  margin: -0.5rem 0 0.4rem;
-  padding: 0 0 0.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-.day {
-  flex: 0 0 6.3rem;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.05rem;
-  padding: 0.6rem 0.4rem;
-  text-align: center;
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 14px;
-  position: relative;
-}
-/* Only today gets a filled, outlined card. Ashtami and chaturdashi keep a plain card,
-   marked by a saffron band along the top, a flag in the corner and a saffron tithi name. */
-.day.is-today { background: var(--accent-bg); border-color: var(--accent); }
-.day.is-parva { box-shadow: inset 0 4px 0 var(--accent); }
-.day.is-parva .day-tithi { color: var(--accent-text); }
-.parva-mark { position: absolute; top: 0.4rem; right: 0.4rem; width: 1.1rem; height: 1.1rem; color: var(--accent); fill: var(--accent); }
-.badge .icon { width: 0.95em; height: 0.95em; margin-right: 0.25rem; vertical-align: -0.1em; fill: currentColor; }
-.day-wd { font-size: 0.85rem; font-weight: 700; color: var(--muted); }
-.day-date { font-size: 1.6rem; font-weight: 800; line-height: 1.15; }
-.day-mon { font-size: 0.8rem; color: var(--muted); }
-.day-tithi { margin-top: 0.3rem; font-family: var(--font-verse); font-size: 0.95rem; font-weight: 600; line-height: 1.4; }
-.day-paksha { font-size: 0.8rem; color: var(--muted); }
-.day-fest {
-  margin-top: 0.3rem;
-  padding: 0.05rem 0.45rem;
-  border-radius: 99px;
-  background: var(--accent);
-  color: var(--on-accent);
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1.4;
-}
-.tithi-note { font-size: 0.85rem; }
-.tiles > :last-child:nth-child(odd) { grid-column: 1 / -1; min-height: 5rem; flex-direction: row; gap: 0.75rem; }
-.tile-wide { min-height: 5rem; flex-direction: row; gap: 0.75rem; }
-
-.reader-bar {
+#app.has-nav { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+.tabbar, .reader-bar {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 5;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 1fr);
-  gap: 0.5rem;
   max-width: 42rem;
   margin: 0 auto;
-  padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom));
-  background: var(--bg);
-  border-top: 1px solid var(--border);
+  background: var(--plinth);
+  border-top: 1px solid var(--brass);
+  box-shadow: 0 -3px 0 var(--plinth-edge), 0 -10px 22px rgba(0, 0, 0, 0.07);
 }
-.reader-bar .btn {
+.tabbar { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 0.3rem 0.4rem calc(0.3rem + env(safe-area-inset-bottom)); }
+.tab {
+  position: relative;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 0.1rem;
-  min-height: 4.25rem;
-  padding: 0.4rem 0.25rem;
-  font-size: min(0.95rem, 5vw);
-  line-height: 1.2;
-  text-align: center;
-  overflow-wrap: anywhere;
+  min-width: 0;
+  min-height: max(3rem, 52px);
+  color: var(--muted);
+  font: 600 min(var(--fs-xs), 4.2vw)/1.2 var(--font-ui);
+  text-decoration: none;
+  white-space: nowrap;
 }
-.reader-bar .btn .icon { width: 1.6em; height: 1.6em; }
-/* "Next" shows its arrow after the word in the markup; put the icon on top like the others. */
+.tab > span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+.tab .icon { width: min(1.35rem, 7vw); height: min(1.35rem, 7vw); }
+.tab:hover { color: var(--text); }
+.tab.is-active { color: var(--text); }
+.tab.is-active .icon { color: var(--brass-text); }
+/* The active tab carries a brass lintel. */
+.tab.is-active::before { content: ''; position: absolute; top: -0.32rem; left: 50%; width: 1.7rem; height: 0.2rem; margin-left: -0.85rem; border-radius: 0 0 3px 3px; background: linear-gradient(var(--brass-hi), var(--brass)); }
+
+/* ---------- Welcome ---------- */
+
+.welcome { display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 0.9rem; min-height: 92vh; text-align: center; }
+.welcome .chhatra { width: 5rem; margin: 0 auto; }
+.welcome-greet { margin: 0; font: 900 1.6rem/1.2 var(--font-head); }
+.welcome-q { display: flex; flex-direction: column; margin: 0.4rem 0 0.4rem; font: 400 var(--fs-body)/1.5 var(--font-ui); color: var(--muted); }
+.lang-btn { min-height: 4rem; font-size: 1.4rem; }
+.welcome-note { display: flex; flex-direction: column; color: var(--muted); font-size: var(--fs-sm); }
+
+/* ---------- Home ---------- */
+
+.home-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; padding-top: calc(0.4rem + env(safe-area-inset-top)); }
+.brand { font: 700 1rem/1 var(--font-head); color: var(--brass-text); letter-spacing: 0.01em; }
+.today { text-align: center; }
+.today .chhatra { width: 4.3rem; margin: 0.5rem auto 0; }
+.greet { margin: 0.25rem 0 0; font: 900 1.55rem/1.2 var(--font-head); }
+.tithi { margin: 0.9rem 0 0; font: 900 min(2.6rem, 14vw)/1.12 var(--font-head); color: var(--sindoor); letter-spacing: -0.005em; }
+.tithi-sub { margin: 0.3rem 0 0; font-size: var(--fs-sm); line-height: 1.45; color: var(--muted); }
+.tithi-sub b { color: var(--text); font-weight: 600; }
+.today .plinth { margin-top: 0.75rem; }
+
+/* The next seven days as arched windows; a dhwaja flies over ashtami, chaturdashi and festivals. */
+.week { list-style: none; display: flex; gap: 0.2rem; margin: 0.6rem -0.25rem 0; padding: 1.25rem 0.25rem 0.1rem; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; }
+.week::-webkit-scrollbar { display: none; }
+.week li { position: relative; flex: 1 0 2.15rem; scroll-snap-align: start; }
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 3.2rem;
+  padding: 0.25rem 0 0.35rem;
+  font: 600 var(--fs-xs)/1.25 var(--font-ui);
+  color: var(--muted);
+  background: var(--niche);
+  border: 1px solid var(--hair);
+  border-radius: 1.05rem 1.05rem 0.2rem 0.2rem / 0.95rem 0.95rem 0.2rem 0.2rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+:root[data-theme="night"] .day { background: var(--shrine); }
+.day b { font: 700 0.95rem/1.15 var(--font-head); color: var(--text); font-variant-numeric: tabular-nums; }
+.day.is-today { border-color: var(--brass); background: linear-gradient(var(--brass-wash-strong), transparent 90%); color: var(--brass-text); }
+.day.is-today b { color: var(--brass-text); }
+.day[aria-pressed="true"] { border-color: var(--brass); box-shadow: inset 0 0 0 1px var(--brass); }
+.week .dhwaja { position: absolute; top: -1.1rem; left: 50%; width: 0.95rem; height: 1.15rem; margin-left: -0.3rem; pointer-events: none; }
+.day-note { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.15rem 0.4rem; min-height: 1.6em; margin: 0.7rem 0 0; font-size: var(--fs-sm); line-height: 1.45; color: var(--muted); }
+.day-note b { color: var(--text); font-weight: 600; }
+.day-note .dhwaja { width: 0.8rem; height: 1rem; }
+.tithi-note { margin: 0.3rem 0 0; font-size: var(--fs-xs); color: var(--muted); text-align: center; }
+
+/* A festival with its own pooja (Diwali) in the coming week. */
+.notice { display: flex; align-items: center; gap: 0.8rem; margin: 1.2rem 0 0; padding: 0.7rem 0.9rem; color: var(--text); text-decoration: none; border-top: 1px solid var(--brass-line); border-bottom: 1px solid var(--brass-line); background: var(--brass-wash); }
+.notice .dhwaja { width: 1.2rem; height: 1.45rem; flex: none; }
+.notice-when { display: block; font-size: var(--fs-sm); color: var(--muted); }
+.notice-title { display: block; font: 700 var(--fs-lg)/1.3 var(--font-head); }
+
+/* ---------- The cusped arch (continue reading, and the reader's shrine) ---------- */
+
+.arch, .shrine { position: relative; display: block; max-width: 30rem; margin-left: auto; margin-right: auto; }
+.arch .crown, .shrine .crown { display: block; width: 100%; height: auto; overflow: visible; }
+.arch-body, .shrine-body { position: relative; display: block; }
+.arch .sides, .shrine .sides { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+
+.continue { margin-top: 2rem; color: var(--text); text-decoration: none; text-align: center; }
+.continue .arch-fill { fill: var(--brass-wash); }
+.continue .arch-body { padding: 0.15rem 1.4rem 1.3rem; background: var(--brass-wash); }
+.continue-title { display: block; font: 700 1.3rem/1.25 var(--font-head); }
+.continue-title .title { display: block; }
+.continue-title .title-en { font: 400 var(--fs-sm)/1.4 var(--font-ui); }
+.continue-meta { display: block; margin-top: 0.3rem; font-size: var(--fs-sm); color: var(--muted); }
+.continue-go { margin-top: 1rem; pointer-events: none; }
+.continue + .plinth { margin: 0 auto; max-width: 31rem; }
+
+/* Progress: a brass line, gilded up to where you are, with a sindoor lozenge on the spot. */
+.trail { position: relative; display: block; height: 0.8rem; margin: 0.9rem 0.4rem 0; }
+.trail::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; border-top: 1px solid var(--hair); }
+.trail > i { position: absolute; left: 0; top: calc(50% - 1px); height: 2px; background: var(--brass); }
+.trail > b { position: absolute; top: 50%; width: 0.52rem; height: 0.52rem; margin: -0.26rem 0 0 -0.26rem; background: var(--sindoor); transform: rotate(45deg); }
+
+/* ---------- Home: story, sutra and the paths into the library ---------- */
+
+.home-rule { margin: 2.1rem 0 0; }
+.home-sec { margin-top: 1.3rem; }
+.sec-head { margin: 0 0 0.8rem; font: 700 1.22rem/1.3 var(--font-head); }
+.feature { display: block; color: var(--text); text-decoration: none; }
+.feature-title { display: block; margin-top: 0.7rem; font: 700 var(--fs-lg)/1.3 var(--font-head); }
+.feature-title .title-en { font: 400 var(--fs-sm)/1.4 var(--font-ui); }
+.feature-blurb { display: block; margin-top: 0.15rem; font-size: var(--fs-md); line-height: 1.5; color: var(--muted); }
+/* On a wide screen the day's story sits beside its picture rather than under it. */
+@media (min-width: 700px) {
+  .home-sec .feature { display: grid; grid-template-columns: minmax(0, 22rem) 1fr; grid-template-rows: auto 1fr; gap: 0.2rem 1.6rem; align-items: start; }
+  .home-sec .feature .arch-pic { grid-row: 1 / span 2; }
+  .home-sec .feature .feature-title { margin-top: 2.2rem; }
+}
+
+/* A picture seen through the arch. */
+.arch-pic { position: relative; display: block; aspect-ratio: 16 / 9; }
+.arch-pic > .pic { position: absolute; inset: 0; overflow: hidden; background: var(--niche); -webkit-mask: var(--pic-mask) center / 100% 100% no-repeat; mask: var(--pic-mask) center / 100% 100% no-repeat; }
+.arch-pic > .pic > svg, .arch-pic > .pic > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.arch-pic > .pic-frame { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.pic-letter { display: grid; place-items: center; font: 700 3.4rem/1 var(--font-head); color: var(--brass-text); }
+.pic-letter .icon { width: 30%; height: 30%; stroke-width: 1.3; }
+
+.sutra-day { color: var(--text); text-decoration: none; text-align: center; }
+.arch.sutra-day { max-width: 24rem; }
+.sutra-day .arch-body { padding: 0.1rem 1.2rem 1.1rem; background: var(--shrine); }
+.sutra-day + .plinth { max-width: 25rem; margin: 0 auto; }
+.sutra-day:hover .verse { color: var(--sindoor); }
+.sutra-day .verse { display: block; font-size: var(--fs-verse); }
+.sutra-meta { display: block; margin-top: 0.2rem; font-size: var(--fs-sm); color: var(--muted); }
+
+.paths, .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
+.paths { margin-top: 1.3rem; }
+.paths > li, .rows > li { border-bottom: 1px solid var(--hair); }
+.path, .row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-height: var(--tap);
+  padding: 0.6rem 0.1rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: background-color 0.15s;
+}
+.path:hover, .row:hover { background: var(--brass-wash); }
+.path-main, .row-main { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.path b, .row .title { font: 600 var(--fs-body)/1.35 var(--font-ui); }
+.path small, .row-sub { font-size: var(--fs-sm); line-height: 1.4; color: var(--muted); }
+.title-en { display: block; font-size: var(--fs-sm); color: var(--muted); }
+.row-chev { color: var(--muted); }
+.row-verse { font: 500 var(--fs-body)/1.65 var(--font-verse); color: var(--verse); overflow-wrap: anywhere; }
+.row-topic { font-weight: 600; font-size: var(--fs-body); line-height: 1.5; }
+.row-num { flex: none; display: inline-grid; place-items: center; min-width: 2.15rem; height: 2.15rem; padding: 0 0.4rem; border: 1px solid var(--brass-line); border-radius: 999px; font: 700 var(--fs-sm)/1 var(--font-head); color: var(--brass-text); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.count { flex: none; min-width: 1.8rem; padding: 0 0.45rem; border-radius: 999px; background: var(--sindoor-fill); color: var(--on-sindoor); font: 700 var(--fs-sm)/1.8 var(--font-ui); text-align: center; }
+.row-with-action { display: flex; align-items: center; gap: 0.5rem; }
+.row-with-action .row { flex: 1; min-width: 0; }
+
+/* ---------- Library ---------- */
+
+.page-title { margin: 1.3rem 0 1rem; }
+.shelf + .shelf { margin-top: 2rem; }
+.shelf-head { display: flex; align-items: center; gap: 0.7rem; margin: 0 0 0.5rem; font: 700 var(--fs-lg)/1.3 var(--font-head); }
+.shelf-head::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--brass-line), transparent); }
+
+.story-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.8rem 1.2rem; }
+@media (min-width: 560px) { .story-list { grid-template-columns: 1fr 1fr; } }
+.story-group { margin: 2rem 0 0.9rem; }
+.story-group:first-of-type { margin-top: 0.4rem; }
+
+.book-top { display: flex; align-items: center; gap: 0.9rem; margin: 1.3rem 0 0.4rem; }
+.book-top .niche { width: 3.3rem; height: 4rem; }
+.book-top h1 { display: flex; flex-direction: column; min-width: 0; margin: 0; }
+.book-top h1 .title { font: 700 var(--fs-xl)/1.25 var(--font-head); }
+.book-cover { margin: 1.2rem 0 0.4rem; }
+.book-blurb { font-size: var(--fs-body); line-height: 1.65; margin: 0.5rem 0 0.4rem; }
+.book-by { margin: 0.2rem 0 0; font-size: var(--fs-sm); color: var(--muted); }
+.book-actions { display: flex; flex-direction: column; gap: 0.6rem; margin: 1.2rem 0; }
+.book-of { margin: 1rem 0 0; font-size: var(--fs-sm); color: var(--muted); }
+
+.goto { margin: 1.4rem 0; }
+.goto label { display: block; margin-bottom: 0.4rem; font-weight: 600; }
+.goto-row { display: flex; gap: 0.6rem; }
+.field-error { min-height: 1em; margin: 0.4rem 0 0; color: var(--error); font-weight: 600; }
+
+/* Chapters as arched windows when their names are short. */
+.chapters { display: grid; grid-template-columns: repeat(auto-fill, minmax(6.3rem, 1fr)); gap: 0.55rem; }
+.chapter { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-height: 4.4rem; padding: 0.6rem 0.4rem 0.55rem; color: var(--text); text-decoration: none; text-align: center; background: var(--niche); border: 1px solid var(--brass-line); border-radius: 2.4rem 2.4rem 0.3rem 0.3rem / 1.6rem 1.6rem 0.3rem 0.3rem; transition: border-color 0.15s, background-color 0.15s; }
+:root[data-theme="night"] .chapter { background: var(--shrine); }
+.chapter:hover { border-color: var(--brass); background: var(--brass-wash-strong); }
+.chapter b { font: 700 var(--fs-md)/1.3 var(--font-head); }
+.chapter small { font-size: var(--fs-xs); color: var(--muted); }
+
+/* ---------- Fields ---------- */
+
+input[type="number"], input[type="search"] {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--tap);
+  padding: 0.4rem 1.1rem;
+  font: 500 var(--fs-body)/1.3 var(--font-ui);
+  color: var(--text);
+  background: var(--field);
+  border: 1px solid var(--brass-line);
+  border-radius: 999px;
+}
+input::placeholder { color: var(--muted); opacity: 1; }
+input:focus { border-color: var(--brass); }
+input:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
+.search-form { display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 1rem; }
+.search-form input { width: 100%; }
+.is-listening { border-color: var(--sindoor); background: var(--brass-wash-strong); }
+.scope-note { font-size: var(--fs-sm); margin-top: 1rem; }
+.chips-head { margin: 1.6rem 0 0.6rem; font: 700 var(--fs-body)/1.3 var(--font-head); color: var(--text); }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip { display: inline-flex; align-items: center; min-height: max(2.3rem, 46px); padding: 0.25rem 0.95rem; border: 1px solid var(--brass-line); border-radius: 999px; color: var(--text); font: 600 var(--fs-md)/1.25 var(--font-ui); text-decoration: none; transition: background-color 0.15s, border-color 0.15s; }
+.chip:hover { border-color: var(--brass); background: var(--brass-wash); }
+
+/* ---------- Reader ---------- */
+
+.reader-top .back { flex: 1; }
+.size-panel { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.35rem 0.6rem; margin: 0 -1rem; padding: 0.45rem 1rem; background: var(--plinth); border-bottom: 1px solid var(--hair); }
+.size-panel[hidden] { display: none; }
+.size-panel-label { font-weight: 600; font-size: var(--fs-sm); }
+.size-panel .size-level { margin: 0; }
+.size-ctrl { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
+.size-ctrl .size-level { gap: 0.35rem; }
+.size-btn { min-width: 3.1rem; padding-left: 0.6rem; padding-right: 0.6rem; font: 700 var(--fs-md)/1 var(--font-head); gap: 0.1rem; }
+.size-sign { font-weight: 700; }
+.size-glyph { display: inline-flex; align-items: baseline; gap: 0.05rem; font: 700 1.1rem/1 var(--font-head); color: var(--text); }
+.size-glyph small { font-size: 0.66em; }
+
+/* Where you are: the book, a brass trail and the position. */
+.where { display: flex; align-items: center; gap: 0.7rem; margin: 0.75rem 0 0; font-size: var(--fs-xs); font-weight: 600; color: var(--muted); }
+.where-book { max-width: 48%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text); }
+.where .trail { flex: 1; margin: 0; }
+.where-pos { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+.reader { padding-bottom: calc(6.5rem + env(safe-area-inset-bottom)); }
+
+/* The shrine: scripture stands in it, under the toran, on the vedi's steps. */
+.shrine { margin-top: 1.5rem; }
+.shrine-body { padding: 0.1rem 1.05rem 1.4rem; background: var(--shrine); }
+.shrine-label { margin: 0 0 0.9rem; text-align: center; font: 700 1rem/1.3 var(--font-head); color: var(--sindoor); }
+.shrine + .plinth { max-width: 31rem; margin: 0 auto; }
+.shrine-attrib { margin: 0.75rem 0 0; text-align: center; font-size: var(--fs-sm); color: var(--muted); }
+.plinth.full i:nth-child(n) { width: 100%; }
+.reader.is-listening .shrine::before, :root[data-theme="night"] .shrine::before { content: ''; position: absolute; z-index: -1; inset: -8% -10% -4%; background: radial-gradient(closest-side, var(--glow), transparent); }
+:root[data-theme="night"] .reader.is-listening .shrine::before { background: radial-gradient(closest-side, var(--brass-wash-strong), transparent); }
+
+.verse { margin: 0; font: 500 var(--fs-verse)/1.85 var(--font-verse); color: var(--verse); word-spacing: 0.08em; overflow-wrap: anywhere; }
+.verse-line { display: block; padding-left: 1em; text-indent: -1em; margin-bottom: 0.2em; }
+.verse-end { white-space: nowrap; }
+.verse-mark { white-space: nowrap; word-spacing: normal; font-size: 0.8em; color: var(--sindoor); }
+.roman { margin: 0.8rem 0 0; font-size: var(--fs-md); line-height: 1.7; color: var(--muted); font-style: italic; overflow-wrap: anywhere; }
+.topic { margin: 0 0 0.6rem; font: 700 var(--fs-body)/1.4 var(--font-head); color: var(--brass-text); text-align: center; }
+.verse-block + .verse-block { margin-top: 0.3rem; }
+.page-many .verse-block + .verse-block { margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dotted var(--brass-line); }
+.verse-block.is-target { margin-left: -0.6rem; margin-right: -0.6rem; padding: 0.4rem 0.6rem; border-radius: 0.4rem; background: var(--brass-wash-strong); }
+
+/* A page without a shrine: a temple or pooja guide, a story, or a pooja recited in one go. */
+.page-head { margin: 1.4rem 0 1rem; text-align: center; }
+.page-head .chhatra { width: 3.6rem; margin: 0 auto 0.5rem; }
+.page-head h1 { margin: 0; }
+.page-head-sub { margin: 0.3rem 0 0; font-size: var(--fs-sm); color: var(--muted); }
+.step-title { margin: 1.4rem 0 1rem; font: 700 var(--fs-xl)/1.25 var(--font-head); text-align: left; }
+/* Words to recite, inside a guide or a pooja: centred like a printed pooja book. */
+.recite { margin: 1.2rem 0; text-align: center; }
+.recite .verse-line { padding-left: 0; text-indent: 0; text-wrap: balance; }
+.scroll-page .verse-block + .verse-block { position: relative; margin-top: 1.9rem; padding-top: 1.9rem; }
+.scroll-page .verse-block + .verse-block::before { content: ''; position: absolute; top: 0; left: 28%; right: 28%; border-top: 1px solid var(--brass-line); }
+.scroll-page .verse-block + .verse-block::after { content: ''; position: absolute; top: -0.21rem; left: 50%; width: 0.42rem; height: 0.42rem; margin-left: -0.21rem; background: var(--brass); transform: rotate(45deg); }
+
+/* What explains the scripture sits below it, in the plain interface font, so it never reads as the scripture itself. */
+.commentary { margin-top: 1.4rem; }
+.meaning, .padya, .prose.gloss { margin: 0 0 1.2rem; padding-top: 0.75rem; border-top: 1px solid var(--brass-line); }
+.meaning h2, .padya h2 { margin: 0 0 0.3rem; font: 700 var(--fs-md)/1.3 var(--font-head); color: var(--brass-text); }
+.meaning p, .padya p, .prose.gloss p { margin: 0; font: 400 var(--fs-body)/1.75 var(--font-ui); color: var(--text); word-spacing: 0.05em; }
+.prose.gloss p + p { margin-top: 0.7rem; }
+.pada { font-family: var(--font-verse); font-weight: 700; color: var(--brass-text); }
+.prose p { margin: 0 0 1rem; font: 400 var(--fs-body)/1.8 var(--font-ui); color: var(--text); }
+.prose p:last-child { margin-bottom: 0; }
+
+/* The lesson of a story, set between brass rules. */
+.moral { margin: 1.6rem 0; text-align: center; }
+.moral h2 { display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin: 0 0 0.5rem; font: 700 var(--fs-md)/1.3 var(--font-head); color: var(--brass-text); }
+.moral h2::before, .moral h2::after { content: ''; flex: 1; max-width: 5rem; border-top: 1px solid var(--brass-line); }
+.moral p { margin: 0; font: 600 var(--fs-lg)/1.6 var(--font-head); color: var(--text); }
+
+.story-fig { margin: 0.5rem 0 1.4rem; }
+.story-fig img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; border-radius: 0.4rem; box-shadow: 0 0 0 1px var(--brass-line); }
+.story-fig figcaption { display: flex; flex-direction: column; gap: 0.1rem; margin-top: 0.5rem; font-size: var(--fs-sm); color: var(--muted); line-height: 1.5; }
+.fig-credit { font-size: var(--fs-xs); opacity: 0.85; }
+.guide-links { display: flex; flex-direction: column; gap: 0.6rem; margin: 1.2rem 0; }
+
+.reader-tools { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin: 1.6rem 0 0; }
+
+.reader-bar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 0.5rem; padding: 0.45rem 0.8rem calc(0.5rem + env(safe-area-inset-bottom)); }
+.reader-bar .btn { flex-direction: column; gap: 0.1rem; min-height: max(3.2rem, 52px); padding: 0.25rem; border: 0; font-size: min(var(--fs-md), 4.6vw); line-height: 1.15; overflow-wrap: anywhere; }
+.reader-bar .btn:not(.btn-primary) { background: none; }
+.reader-bar .btn:not(.btn-primary):hover { background: var(--brass-wash); }
+.reader-bar .btn .icon { width: 1.35em; height: 1.35em; }
 .reader-bar .btn > .icon:last-child:not(:first-child) { order: -1; }
+
+/* ---------- Pictures that explain the text ---------- */
+
+.chitra { margin: 1.4rem 0; padding: 0.85rem 0 0; border-top: 1px solid var(--brass-line); }
+.chitra-title { display: flex; align-items: center; gap: 0.5rem; margin: 0 0 0.8rem; font: 700 var(--fs-body)/1.4 var(--font-head); }
+.chitra-title .icon { color: var(--brass-text); width: 1.1em; height: 1.1em; }
+.dg-text, .dg-box { min-width: 0; }
+.dg-text b, .dg-box b { font-size: var(--fs-md); }
+.dg-sub { display: block; font-size: var(--fs-sm); font-weight: 400; color: var(--muted); line-height: 1.5; }
+.dg-badge { flex: none; display: inline-grid; place-items: center; min-width: 1.75rem; height: 1.75rem; padding: 0 0.35rem; border-radius: 999px; background: var(--sindoor-fill); color: var(--on-sindoor); font: 700 var(--fs-sm)/1 var(--font-ui); }
+.dg-list, .dg-flow, .dg-stack { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.dg-list li, .dg-flow li, .dg-stack li { display: flex; align-items: flex-start; gap: 0.7rem; padding: 0.55rem 0; border-top: 1px solid var(--hair); }
+.dg-list li:first-child, .dg-flow li:first-child { border-top: 0; padding-top: 0.1rem; }
+.dg-flow li { position: relative; }
+.dg-flow li + li { border-top: 0; padding-top: 1.1rem; }
+.dg-flow li + li::after { content: ''; position: absolute; left: 0.62rem; top: 0.15rem; width: 0.5rem; height: 0.5rem; border-style: solid; border-color: var(--brass); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.dg-stack li { padding: 0.55rem 0.7rem; border-top: 0; border-radius: 0.3rem; background: color-mix(in srgb, transparent, var(--brass-mid) calc(10% + var(--depth) * 36%)); }
+.dg-stack li + li { margin-top: 0.3rem; }
+.dg-stack li .dg-sub { color: inherit; opacity: 0.85; }
+.dg-sum { display: flex; flex-direction: column; align-items: stretch; gap: 0.3rem; }
+.dg-box { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0.55rem 0.8rem; border-radius: 0.3rem; box-shadow: 0 0 0 1px var(--brass-line); background: var(--bg); }
+.dg-result { background: var(--brass-wash-strong); box-shadow: 0 0 0 1px var(--brass); }
+.dg-op { align-self: center; font: 700 1.4rem/1 var(--font-head); color: var(--brass-text); }
+.dg-root { max-width: 18rem; margin: 0 auto 0.8rem; padding: 0.55rem 0.8rem; text-align: center; border-radius: 0.3rem; background: var(--sindoor-fill); color: var(--on-sindoor); }
+.dg-root .dg-sub { color: var(--on-sindoor); opacity: 0.9; }
+.dg-branches { display: grid; grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr)); gap: 0.9rem; }
+.dg-branch { border-top: 2px solid var(--brass); }
+.dg-head { padding: 0.45rem 0 0.35rem; color: var(--brass-text); }
+.dg-head .dg-sub { color: var(--muted); }
+.dg-branch ul { list-style: none; margin: 0; padding: 0; }
+.dg-branch li { padding: 0.4rem 0; border-top: 1px dotted var(--brass-line); }
+.dg-drawing svg { display: block; width: 100%; max-width: 26rem; height: auto; margin: 0 auto 0.9rem; }
+/* A picture above a step or a pooja stands in an arched niche on the vedi; the niche is its only frame. */
+.scene { margin: 0.3rem 0 1.5rem; }
+.scene-niche { position: relative; max-width: 26rem; margin: 0 auto; }
+.scene-niche .crown { display: block; width: 100%; height: auto; overflow: visible; }
+.scene-niche .sides { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.scene-body { position: relative; display: block; padding: 0; background: var(--scene-paper); }
+.scene-niche .arch-fill { fill: var(--scene-paper); }
+.scene-niche .sides { z-index: 1; }
+.scene-body .dg-drawing { position: relative; }
+.scene-body .dg-drawing svg { display: block; width: 100%; max-width: none; height: auto; margin: 0; }
+.scene-body .dg-drawing svg > rect:first-child { x: 0; y: 0; width: 100%; height: 100%; rx: 0; ry: 0; stroke: none; }
+.scene .plinth { max-width: 27rem; margin: 0 auto; }
+.scene-caption { margin: 0.75rem 0 0; text-align: center; font: 700 var(--fs-md)/1.45 var(--font-head); color: var(--brass-text); }
+.scene .dg-legend { margin-top: 0.9rem; }
+.chitra-note { margin: 0.6rem 0 0; font-size: var(--fs-sm); color: var(--muted); }
+.chitra-gist { margin: 0.8rem 0 0; padding: 0.6rem 0 0; border-top: 1px solid var(--brass-line); color: var(--text); line-height: 1.75; }
+.chitra-gist b { color: var(--brass-text); }
 
 /* ---------- Settings ---------- */
 
-.panel {
-  margin: 1rem 0;
-  padding: 1rem 1.1rem;
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 18px;
-}
-.panel h2 { margin: 0 0 0.6rem; font-size: 1.05rem; }
-.panel p:last-child { margin-bottom: 0; }
-.panel .icon { vertical-align: -0.25em; }
-.choice { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.set { padding: 1.1rem 0 1.2rem; border-bottom: 1px solid var(--hair); }
+.set:first-of-type { border-top: 1px solid var(--hair); }
+.set h2 { display: flex; align-items: center; gap: 0.45rem; margin: 0 0 0.65rem; font-size: var(--fs-lg); }
+.set h2 .icon { color: var(--brass-text); }
+.set p:last-child { margin-bottom: 0; }
+.set .icon { vertical-align: -0.2em; }
+.choice { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .choice .btn { flex: 1 1 6rem; }
-.size-preview {
-  font-family: var(--font-verse);
-  font-size: 1.35rem;
-  color: var(--verse);
-  text-align: center;
-  padding: 0.5rem;
-  border: 1px dashed var(--border-strong);
-  border-radius: var(--radius);
-}
+.size-preview { margin: 0 0 0.8rem; padding: 0.5rem; text-align: center; font: 500 var(--fs-verse)/1.6 var(--font-verse); color: var(--verse); border-top: 1px solid var(--brass-line); border-bottom: 1px solid var(--brass-line); }
+.size-choice .btn { padding-left: 0.5rem; padding-right: 0.5rem; gap: 0.2rem; }
+.size-choice .size-sign { margin-right: 0.3rem; }
+.size-level { display: flex; align-items: center; gap: 0.45rem; margin: 0.8rem 0 0; }
+.size-dot { width: 0.42rem; height: 0.42rem; border: 1px solid var(--brass); transform: rotate(45deg); }
+.size-dot.is-on { width: 0.62rem; height: 0.62rem; background: var(--sindoor); border-color: var(--sindoor); }
+.size-level-text { margin-left: 0.4rem; font-size: var(--fs-sm); color: var(--muted); }
 .plain { padding-left: 1.2rem; }
-
 .hold-btn { position: relative; overflow: hidden; touch-action: none; }
-.hold-fill {
-  position: absolute;
-  inset: 0;
-  background: var(--accent-bg);
-  transform: scaleX(0);
-  transform-origin: left center;
-}
+.hold-fill { position: absolute; inset: 0; background: var(--brass-wash-strong); transform: scaleX(0); transform-origin: left center; }
 .hold-btn.holding .hold-fill { transform: scaleX(1); transition: transform 3s linear; }
 .hold-text { position: relative; display: inline-flex; align-items: center; gap: 0.5rem; }
+.tips { margin: 0; padding-left: 1.3rem; }
+.tips li { margin-bottom: 0.5rem; line-height: 1.6; }
+.tips li::marker { color: var(--brass-text); font-weight: 700; }
+.tips li:last-child { margin-bottom: 0; }
+.set-link { margin-top: 0.6rem; }
+.set-link .row { font-weight: 600; }
+.credit { padding: 0.8rem 0; border-bottom: 1px solid var(--hair); }
+.credit h3 { margin: 0 0 0.15rem; }
+.credit p { margin: 0.15rem 0 0; font-size: var(--fs-sm); }
 
-/* ---------- Toast ---------- */
+/* ---------- Empty, loading, toast, "more below" ---------- */
+
+.empty { display: flex; flex-direction: column; align-items: center; gap: 0.8rem; padding: 2rem 0; text-align: center; }
+.empty .niche { width: 3.3rem; height: 4rem; }
+.empty .niche > .icon { width: 1.6rem; height: 1.6rem; bottom: 0.7rem; }
+.empty p { max-width: 22rem; margin: 0; color: var(--muted); }
+.center { text-align: center; padding-top: 30vh; }
+.loading { display: flex; flex-direction: column; align-items: center; gap: 0.6rem; padding-top: 30vh; color: var(--muted); }
+.loading .chhatra { width: 3rem; opacity: 0.85; }
 
 .toast {
   position: fixed;
   left: 50%;
-  bottom: calc(6.5rem + env(safe-area-inset-bottom));
+  bottom: calc(6.4rem + env(safe-area-inset-bottom));
   z-index: 10;
   width: max-content;
   max-width: calc(100% - 2rem);
-  padding: 0.75rem 1.1rem;
+  padding: 0.7rem 1.1rem;
   background: var(--text);
   color: var(--bg);
-  border-radius: var(--radius);
+  border-radius: 999px;
   font-weight: 600;
   text-align: center;
+  box-shadow: var(--lift);
   transform: translate(-50%, 1rem);
   opacity: 0;
   pointer-events: none;
@@ -711,8 +685,8 @@ input:focus { border-color: var(--accent); }
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
-/* ---------- "More below" cue ---------- */
-
+/* "More below": a quiet line in a band at the top of the bottom bar, never over the words. */
+.tabbar.has-cue, .reader-bar.has-cue { padding-top: max(1.9rem, 30px); }
 .scroll-cue {
   position: fixed;
   left: 50%;
@@ -720,136 +694,54 @@ input:focus { border-color: var(--accent); }
   z-index: 6;
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.2rem;
   width: max-content;
-  min-height: 2rem;
-  padding: 0.2rem 0.6rem 0.2rem 0.8rem;
+  min-height: max(1.6rem, 26px);
+  padding: 0 0.6rem;
   border: 0;
-  border-radius: 99px;
-  background: var(--accent);
-  color: var(--on-accent);
-  font: inherit;
-  /* Small on purpose: a hint, not a button that competes with the content. */
-  font-size: 0.8rem;
-  font-weight: 600;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 999px;
+  background: none;
+  color: var(--brass-text);
+  font: 600 0.7rem/1.2 var(--font-ui);
   transform: translateX(-50%);
   cursor: pointer;
 }
 .scroll-cue[hidden] { display: none; }
-.scroll-cue .icon { animation: cue-bob 1.6s ease-in-out infinite; }
-@keyframes cue-bob { 50% { transform: translateY(3px); } }
+.scroll-cue:hover { color: var(--text); }
 
-@media (max-width: 360px) {
-  .tiles { grid-template-columns: 1fr; }
-  .reader-bar .btn { font-size: 0.95rem; }
-}
+/* ---------- Motion ---------- */
 
-/* ---------- Bottom bar (Home · Books · Search · Settings) ---------- */
+/* Screens arrive with a short rise; a page turn slides only the scripture, never its shrine. */
+@keyframes enter { from { opacity: 0; transform: translateY(0.5rem); } }
+@keyframes enter-next { from { opacity: 0; transform: translateX(1.4rem); } }
+@keyframes enter-prev { from { opacity: 0; transform: translateX(-1.4rem); } }
+main.enter { animation: enter 0.22s cubic-bezier(0.16, 1, 0.3, 1); }
+.reader.turn-next .shrine-body > *, .reader.turn-next .commentary, .reader.turn-next .page-body { animation: enter-next 0.24s cubic-bezier(0.16, 1, 0.3, 1); }
+.reader.turn-prev .shrine-body > *, .reader.turn-prev .commentary, .reader.turn-prev .page-body { animation: enter-prev 0.24s cubic-bezier(0.16, 1, 0.3, 1); }
 
-#app.has-nav { padding-bottom: calc(6.5rem + env(safe-area-inset-bottom)); }
-.tabbar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.25rem;
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: 0.35rem 0.5rem calc(0.35rem + env(safe-area-inset-bottom));
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-  box-shadow: 0 -2px 10px rgba(60, 40, 20, 0.06);
-}
-.tab {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.15rem;
-  min-height: 3.9rem;
-  padding: 0.3rem 0.2rem;
-  border-radius: var(--radius);
-  min-width: 0;
-  color: var(--muted);
-  /* At the biggest text sizes the labels shrink to fit four tabs instead of breaking mid-word. */
-  font-size: min(0.85rem, 4.4vw);
-  font-weight: 600;
-  line-height: 1.2;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.tab > span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
-.tab .icon { width: min(1.7rem, 8vw); height: min(1.7rem, 8vw); }
-.tab:hover { color: var(--accent-text); }
-.tab.is-active { color: var(--accent-text); background: var(--accent-bg); }
-.tab.is-active .icon { color: var(--accent); }
-
-/* ---------- Book list grouped by category ---------- */
-
-.book-group + .book-group { margin-top: 1.75rem; }
-.group-head {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin: 0 0 0.6rem;
-  font-size: 1rem;
-  color: var(--accent-text);
-}
-.group-head::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-
-/* ---------- Search: pick a book without typing ---------- */
-
-.chips-head { margin: 1.5rem 0 0.6rem; font-size: 1rem; color: var(--muted); }
-.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.chip {
-  display: inline-flex;
-  align-items: center;
-  min-height: 3rem;
-  padding: 0.4rem 1rem;
-  border: 2px solid var(--border-strong);
-  border-radius: 99px;
-  background: var(--surface);
-  color: var(--text);
-  font-weight: 600;
-  text-decoration: none;
-}
-.chip:hover { border-color: var(--accent); color: var(--accent-text); }
-
-/* ---------- Settings: text size level and help ---------- */
-
-.size-choice .btn { min-height: var(--tap); padding-left: 0.5rem; padding-right: 0.5rem; gap: 0.15rem; }
-.size-choice .size-sign { margin-right: 0.35rem; }
-.size-level { display: flex; align-items: center; gap: 0.35rem; margin: 0.75rem 0 0; }
-.size-dot { width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--border-strong); }
-.size-dot.is-on { width: 0.85rem; height: 0.85rem; background: var(--accent); }
-.size-level-text { margin-left: 0.5rem; font-size: 0.9rem; color: var(--muted); }
-.tips { margin: 0; padding-left: 1.3rem; }
-.tips li { margin-bottom: 0.5rem; line-height: 1.6; }
-.tips li:last-child { margin-bottom: 0; }
-
-/* ---------- Empty states ---------- */
-
-.empty { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; padding: 2rem 0; text-align: center; }
-.empty-icon { width: 3.5rem; height: 3.5rem; padding: 0.8rem; border-radius: 50%; background: var(--accent-bg); color: var(--accent); }
-.empty p { max-width: 22rem; }
-
-/* ---------- Screen changes slide in gently ---------- */
-
-@keyframes enter { from { opacity: 0; transform: translateY(0.5rem); } to { opacity: 1; transform: none; } }
-@keyframes enter-next { from { opacity: 0; transform: translateX(1.5rem); } to { opacity: 1; transform: none; } }
-@keyframes enter-prev { from { opacity: 0; transform: translateX(-1.5rem); } to { opacity: 1; transform: none; } }
-main.enter { animation: enter 0.2s ease-out; }
-main.enter-next { animation: enter-next 0.22s ease-out; }
-main.enter-prev { animation: enter-prev 0.22s ease-out; }
+/* Entering a text opens the sanctum: the arch is drawn down from its kalash, the pillars follow, the verse rises in. */
+@keyframes arch-draw { from { stroke-dasharray: 1; stroke-dashoffset: 1; } to { stroke-dasharray: 1; stroke-dashoffset: 0; } }
+@keyframes pillars { from { transform: scaleY(0); } }
+@keyframes kalash { from { opacity: 0; transform: translateY(-4px); } }
+@keyframes rise { from { opacity: 0; transform: translateY(0.45rem); } }
+.is-entering .arch-line, .is-entering .arch-inner { animation: arch-draw 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.is-entering .kalash { animation: kalash 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
+.is-entering .sides { transform-origin: top; animation: pillars 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both; }
+.is-entering .shrine-body > * { animation: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both; }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
-  .scroll-cue .icon { animation: none; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* ---------- Phones ---------- */
+/* The text size setting already makes a phone screen large, so the controls keep a 48px
+   tap target and leave the screen to the text; their labels still follow the text size. */
+@media (max-width: 640px) {
+  :root { --tap: 48px; }
+  .reader { padding-bottom: calc(5.8rem + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 360px) {
+  .reader-bar .btn { font-size: var(--fs-sm); }
 }
 
 /* ---------- Opening screen: darshan of Bhagwan Mahavir ---------- */
@@ -916,7 +808,7 @@ main.enter-prev { animation: enter-prev 0.22s ease-out; }
 .sp-title {
   margin: 6px 0 0;
   padding: 0.12em 0.15em 0;
-  font-family: var(--font-verse);
+  font-family: var(--font-splash);
   font-size: clamp(40px, min(13vw, 7.4vh), 72px);
   font-weight: 600;
   line-height: 1.25;
@@ -932,7 +824,7 @@ main.enter-prev { animation: enter-prev 0.22s ease-out; }
 .sp-name {
   margin: 0;
   padding-left: 0.42em; /* balances the letter spacing after the last letter */
-  font-family: var(--font-verse);
+  font-family: var(--font-splash);
   font-size: 13px;
   letter-spacing: 0.42em;
   text-transform: uppercase;
@@ -950,7 +842,7 @@ main.enter-prev { animation: enter-prev 0.22s ease-out; }
   align-items: center;
   gap: 2px;
   margin: 0;
-  font-family: var(--font-verse);
+  font-family: var(--font-splash);
   line-height: 1.5;
   animation: sp-rise-text 0.8s var(--sp-ease) 1.85s both;
 }
@@ -1003,78 +895,3 @@ main.enter-prev { animation: enter-prev 0.22s ease-out; }
   .splash { animation: splash-out 0.4s ease 3s forwards !important; }
   .sp-murti { animation: sp-fade 0.8s ease 0.2s both !important; }
 }
-
-/* ---------- Stories (जैन कथाएँ) ---------- */
-
-.story-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
-@media (min-width: 560px) { .story-list { grid-template-columns: 1fr 1fr; } }
-.story-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: 18px;
-  overflow: hidden;
-  color: var(--text);
-  text-decoration: none;
-  box-shadow: var(--shadow);
-}
-.story-card:hover { border-color: var(--accent); }
-.story-art { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 30%; }
-.story-body { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.85rem 1rem 1rem; }
-.story-body .title { font-size: 1.2rem; font-weight: 700; line-height: 1.35; }
-
-/* Stories without a photo: a warm tile with the first letter of the name. */
-.cover-letter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-verse);
-  font-weight: 600;
-  color: #fffaf2;
-  background:
-    radial-gradient(circle at 30% 25%, hsl(calc(var(--hue) * 1deg) 70% 62% / 0.9), transparent 60%),
-    linear-gradient(135deg, hsl(calc(var(--hue) * 1deg) 55% 38%), hsl(calc((var(--hue) + 40) * 1deg) 60% 26%));
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-.story-art.cover-letter { font-size: 4rem; }
-/* Stories without a photo: a drawn scene (js/scenes.js) that fills the frame like a photo would. */
-.cover-drawn { display: block; overflow: hidden; background: #f6ecd9; }
-.cover-drawn svg { display: block; width: 100%; height: 100%; }
-.book-cover.cover-drawn { max-height: none; }
-
-.book-cover { display: block; width: calc(100% + 2rem); max-height: 52vh; margin: -0.5rem -1rem 1rem; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 30%; }
-.book-cover.cover-letter { font-size: 5rem; }
-.book-blurb { font-size: 1.1rem; line-height: 1.7; margin: 0.25rem 0 0.75rem; }
-
-.story-today { flex-direction: row; align-items: stretch; gap: 0; padding: 0; overflow: hidden; }
-.story-today-art { flex: 0 0 36%; width: 36%; min-height: 8.5rem; object-fit: cover; object-position: center 30%; }
-.story-today-art.cover-letter { font-size: 3rem; }
-.story-today-body { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem 1.1rem; min-width: 0; }
-
-.story-fig { margin: 0.5rem 0 1.25rem; }
-.story-fig img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; border-radius: 14px; }
-.story-fig figcaption { display: flex; flex-direction: column; gap: 0.1rem; margin-top: 0.45rem; font-size: 0.95rem; color: var(--muted); line-height: 1.5; }
-.fig-credit { font-size: 0.75rem; opacity: 0.85; }
-
-.moral {
-  margin: 1.25rem 0;
-  padding: 0.9rem 1.1rem 1rem;
-  background: var(--accent-bg);
-  border-left: 5px solid var(--accent);
-  border-radius: 14px;
-  color: var(--accent-text);
-}
-.moral h2 { display: flex; align-items: center; gap: 0.4rem; margin: 0 0 0.35rem; font-size: 1rem; }
-.moral h2 .icon { width: 1.25em; height: 1.25em; }
-.moral p { margin: 0; font-size: 1.12rem; line-height: 1.75; font-weight: 600; }
-
-.story-group { margin: 1.75rem 0 0.75rem; }
-.story-group:first-of-type { margin-top: 0.5rem; }
-
-/* A story without a photo can show a drawn icon on its cover. */
-.cover-icon .icon { width: 38%; height: 38%; stroke-width: 1.3; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)); }
-.story-today-art.cover-icon .icon { width: 48%; height: 48%; }
-.book-cover.cover-letter { display: flex; }
-.book-cover.cover-icon .icon { width: auto; height: 42%; }

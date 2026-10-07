@@ -4,7 +4,7 @@
  * and saved, so updates and text corrections show the next time the app opens.
  * Change VERSION when adding or removing files in the list below.
  */
-const VERSION = 'swadhyay-v11';
+const VERSION = 'swadhyay-v14';
 /* On a slow line, the saved copy is shown after this wait while the new one keeps downloading for next time. */
 const WAIT_MS = 3000;
 /* Fonts and icons never change, so they come straight from the saved copy. */
@@ -21,6 +21,7 @@ const FILES = [
   'js/drawings.js',
   'js/scenes.js',
   'js/covers.js',
+  'js/ornaments.js',
   'js/app.js',
   'content/books.json',
   'content/categories.json',
@@ -38,6 +39,18 @@ const FILES = [
   'fonts/noto-serif-devanagari-devanagari-600-normal.woff2',
   'fonts/noto-serif-devanagari-latin-400-normal.woff2',
   'fonts/noto-serif-devanagari-latin-600-normal.woff2',
+  'fonts/vesper-libre-devanagari-500-normal.woff2',
+  'fonts/vesper-libre-devanagari-700-normal.woff2',
+  'fonts/vesper-libre-devanagari-900-normal.woff2',
+  'fonts/vesper-libre-latin-500-normal.woff2',
+  'fonts/vesper-libre-latin-700-normal.woff2',
+  'fonts/vesper-libre-latin-900-normal.woff2',
+  'fonts/hind-devanagari-400-normal.woff2',
+  'fonts/hind-devanagari-600-normal.woff2',
+  'fonts/hind-devanagari-700-normal.woff2',
+  'fonts/hind-latin-400-normal.woff2',
+  'fonts/hind-latin-600-normal.woff2',
+  'fonts/hind-latin-700-normal.woff2',
   'icons/icon-192.png',
   'icons/icon-512.png',
   'icons/apple-touch-icon.png'

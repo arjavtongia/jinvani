@@ -14,7 +14,7 @@ const DRAWINGS = (function () {
   const CLOVE = '#6e3f1c';
 
   function badge(x, y, n) {
-    return '<g><circle cx="' + x + '" cy="' + y + '" r="13" fill="#9a3412" stroke="#fff7ec" stroke-width="2.5"/>' +
+    return '<g><circle cx="' + x + '" cy="' + y + '" r="13" fill="#a3301a" stroke="#fff7ec" stroke-width="2.5"/>' +
       '<text x="' + x + '" y="' + (y + 5) + '" text-anchor="middle" font-size="15" font-weight="700" fill="#fff7ec" font-family="system-ui, sans-serif">' + n + '</text></g>';
   }
 
@@ -149,7 +149,7 @@ const DRAWINGS = (function () {
         '<g transform="translate(' + x + ' ' + (y - 10) + ') scale(1.15)">' + DRAVYA_PICTURES[i] + '</g>' +
         '<text x="' + x + '" y="' + (y + 25) + '" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3b1d08" ' +
         'font-family="system-ui, \'Noto Sans Devanagari\', \'Nirmala UI\', sans-serif">' + name.replace(/[&<>"]/g, '') + '</text>' +
-        '<circle cx="' + (x - 31) + '" cy="' + (y - 31) + '" r="10" fill="#9a3412" stroke="#fff7ec" stroke-width="2"/>' +
+        '<circle cx="' + (x - 31) + '" cy="' + (y - 31) + '" r="10" fill="#a3301a" stroke="#fff7ec" stroke-width="2"/>' +
         '<text x="' + (x - 31) + '" y="' + (y - 27) + '" text-anchor="middle" font-size="11" font-weight="700" fill="#fff7ec" font-family="system-ui, sans-serif">' + (i + 1) + '</text>';
     }
     let bowls = '';
@@ -169,7 +169,7 @@ const DRAWINGS = (function () {
     const x = cx + r * Math.cos(a);
     const y = cy + r * Math.sin(a);
     const rot = deg + 90; /* tangent direction for clockwise travel */
-    return '<path d="M-9 -7 L9 0 L-9 7 Z" fill="#9a3412" transform="translate(' + x.toFixed(1) + ' ' + y.toFixed(1) + ') rotate(' + rot + ')"/>';
+    return '<path d="M-9 -7 L9 0 L-9 7 Z" fill="#a3301a" transform="translate(' + x.toFixed(1) + ' ' + y.toFixed(1) + ') rotate(' + rot + ')"/>';
   }
   let rounds = '';
   [64, 88, 112].forEach(r => {
@@ -177,7 +177,7 @@ const DRAWINGS = (function () {
       arrowAt(140, 140, r, 0) + arrowAt(140, 140, r, 180) + arrowAt(140, 140, r, 270);
   });
   const pradakshina = svg('0 0 280 290',
-    '<rect x="4" y="4" width="272" height="282" rx="18" fill="#f3e6cf" stroke="#c7a679" stroke-width="2"/>' +
+    '<rect x="4" y="4" width="272" height="282" rx="18" fill="var(--scene-paper, #f3e6cf)" stroke="#c7a679" stroke-width="2"/>' +
     rounds +
     /* altar: stepped platform with a canopy */
     '<rect x="108" y="138" width="64" height="26" rx="3" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +

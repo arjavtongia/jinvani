@@ -5,10 +5,10 @@
  * Drawn in a 64 x 64 box with the same warm palette as the scenes.
  */
 const COVERS = (function () {
-  const PAPER = '#f6ecd9';
-  const EDGE = '#c7a679';
+  const PAPER = '#f7f4ee';
+  const EDGE = '#cdb27a';
   const INK = '#5b4636';
-  const ACCENT = '#9a3412';
+  const ACCENT = '#a3301a';
   const SAFFRON = '#e09a3c';
   const BRASS = '#d9ad52';
   const BRASS_EDGE = '#a27726';
@@ -94,7 +94,11 @@ const COVERS = (function () {
   E['deepawali-poojan'] = box(diya);
 
   /* Categories */
-  E.nitya = box(folded);
+  E.nitya = box('<path d="M32 27 V49 M21 38 H43 M32 27 H43 M43 38 V49 M32 49 H21 M21 38 V27" fill="none" stroke="' + ACCENT + '" stroke-width="4.2" stroke-linecap="square"/>' +
+    '<circle cx="23" cy="19" r="2.6" fill="' + ACCENT + '"/><circle cx="32" cy="19" r="2.6" fill="' + ACCENT + '"/><circle cx="41" cy="19" r="2.6" fill="' + ACCENT + '"/>' +
+    '<path d="M25 10 Q32 15.5 39 10" fill="none" stroke="' + SAFFRON + '" stroke-width="2.6" stroke-linecap="round"/><circle cx="32" cy="7.6" r="2" fill="' + SAFFRON + '"/>');
+  /* Saved texts: a bookmark ribbon laid on a page. */
+  E.saved = box(book + '<path d="M38 12 H48 V34 L43 30 L38 34 Z" fill="' + ACCENT + '" stroke="#7d2412" stroke-width="1" stroke-linejoin="round"/>');
   E.vidhi = box(thali(8));
   E['pooja-prarambh'] = box(kalash);
   E['nitya-pooja'] = box(thali(8));

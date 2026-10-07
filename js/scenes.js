@@ -19,8 +19,9 @@ const SCENES = (function () {
   const BRASS = '#d9ad52';
   const BRASS_EDGE = '#a27726';
   const BRASS_LIGHT = '#ecc970';
-  const PAPER = '#f6ecd9';
-  const PAPER_EDGE = '#c7a679';
+  /* Sky and ground follow day and night (css/app.css: --scene-paper, --scene-ground). */
+  const PAPER = 'var(--scene-paper, #f7f4ee)';
+  const PAPER_EDGE = '#cdb27a';
   const WATER = '#3a8fd6';
   const MARBLE = '#f9f3ea';
   const MARBLE_EDGE = '#8d7b66';
@@ -45,8 +46,8 @@ const SCENES = (function () {
   function badge(x, y, n) {
     const s = String(n);
     const shape = s.length > 2
-      ? '<rect x="' + (x - s.length * 4.6 - 6) + '" y="' + (y - 13) + '" width="' + (s.length * 9.2 + 12) + '" height="26" rx="13" fill="#9a3412" stroke="#fff7ec" stroke-width="2.5"/>'
-      : '<circle cx="' + x + '" cy="' + y + '" r="13" fill="#9a3412" stroke="#fff7ec" stroke-width="2.5"/>';
+      ? '<rect x="' + (x - s.length * 4.6 - 6) + '" y="' + (y - 13) + '" width="' + (s.length * 9.2 + 12) + '" height="26" rx="13" fill="#a3301a" stroke="#fff7ec" stroke-width="2.5"/>'
+      : '<circle cx="' + x + '" cy="' + y + '" r="13" fill="#a3301a" stroke="#fff7ec" stroke-width="2.5"/>';
     return '<g>' + shape +
       '<text x="' + x + '" y="' + (y + 5) + '" text-anchor="middle" font-size="' + (s.length > 2 ? 13 : 15) + '" font-weight="700" fill="#fff7ec" font-family="' + FONT + '">' + s + '</text></g>';
   }
@@ -62,7 +63,7 @@ const SCENES = (function () {
   }
 
   function arrow(x1, y1, x2, y2, color) {
-    const c = color || '#9a3412';
+    const c = color || '#a3301a';
     const a = Math.atan2(y2 - y1, x2 - x1);
     const hx = x2 - 10 * Math.cos(a);
     const hy = y2 - 10 * Math.sin(a);
@@ -651,7 +652,7 @@ const SCENES = (function () {
       [-45, 45, 135, 225].forEach(deg => {
         const r = deg * Math.PI / 180;
         const x = 160 + 82 * Math.cos(r); const y = 118 + 82 * Math.sin(r);
-        a += '<path d="M-10 -7 L0 0 L-10 7 Z" fill="#9a3412" transform="translate(' + x.toFixed(1) + ' ' + y.toFixed(1) + ') rotate(' + (deg + 90) + ')"/>';
+        a += '<path d="M-10 -7 L0 0 L-10 7 Z" fill="#a3301a" transform="translate(' + x.toFixed(1) + ' ' + y.toFixed(1) + ') rotate(' + (deg + 90) + ')"/>';
       });
       return a;
     })() +
@@ -840,7 +841,7 @@ const SCENES = (function () {
   function cover(body, o) {
     o = o || {};
     const sky = o.night ? '#2b1d12' : PAPER;
-    const ground = o.water ? WATER : (o.night ? '#1d140c' : '#eadbbd');
+    const ground = o.water ? WATER : (o.night ? '#1d140c' : 'var(--scene-ground, #eadbbd)');
     return '<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">' +
       '<rect width="320" height="180" fill="' + sky + '"/><rect y="150" width="320" height="30" fill="' + ground + '"/>' + body + '</svg>';
   }
@@ -1219,7 +1220,7 @@ const SCENES = (function () {
     lion: lion(0, 18, 0.55)
   };
 
-  function ACCENT_OR_SAFFRON() { return '#9a3412'; }
+  function ACCENT_OR_SAFFRON() { return '#a3301a'; }
 
   /* A Tirthankar: the seated Lord, with the lanchhan shown beside the altar. */
   function tirthankar(key) {

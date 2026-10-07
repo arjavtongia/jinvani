@@ -7,7 +7,7 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 ## What it does
 
 - Choose Hindi or English on first launch, and switch any time from the home screen or Settings.
-- Today's date and Jain tithi on the home screen; tap it for the next 7 days, with अष्टमी, चतुर्दशी and festivals marked. In the week before Diwali, a card on the home screen opens the Diwali pooja. Calculated on the phone (sunrise in Delhi, purnimanta months).
+- Today's tithi on the home screen, with the next 7 days under it: अष्टमी, चतुर्दशी and festivals carry a flag, and tapping a day shows its full tithi. In the week before Diwali, a card on the home screen opens the Diwali pooja. Calculated on the phone (sunrise in Delhi, purnimanta months).
 - मंदिर दर्शन विधि and पूजा विधि: step-by-step temple and ashta-dravya pooja guides with every mantra and drawings (thali, ठौना with three cloves, swastik, pradakshina).
 - "चित्र से समझें": diagrams that explain the meaning of key sutras and verses.
 - जैन कथाएँ (Jain stories): 33 traditional stories, in five groups, with photos of the places where they happened, a short version in Hindi and English, and the lesson of each story. A different story is offered on the home screen every day.
@@ -95,6 +95,7 @@ Then open http://localhost:8765.
 | `js/translit.js` | Devanagari to Roman letters |
 | `js/panchang.js` | Tithi calculation (sun and moon positions, sunrise) |
 | `js/drawings.js` | Drawings for the temple and pooja guides |
+| `js/ornaments.js` | The mandir's ornaments: chhatra, carved arch, flag, brass rules |
 | `js/icons.js` | Icons (Tabler Icons, MIT) |
 | `css/app.css` | Styles, including day and night colours |
 | `content/` | Book list (`books.json`) and the texts |
@@ -110,5 +111,5 @@ To add another language, add a block to `js/strings.js` and the language to `LAN
 - Texts in `content/` (except the two folders below): CC BY-SA 4.0. The original scriptures are centuries old; the transcriptions were checked against [Sanskrit Wikisource](https://sa.wikisource.org/), which is CC BY-SA 4.0.
 - Texts in `content/pooja/` and `content/granth/`: taken from the Jain Database, [nikkyjain.github.io](https://nikkyjain.github.io/), with the translators it credits. Its license is not stated; the texts are shared here with credit, for study and worship.
 - Photos in `img/katha/`: from [Wikimedia Commons](https://commons.wikimedia.org/), public domain, CC0 or CC BY-SA; the photographer and license are shown under each photo in the app.
-- Font: Noto Serif Devanagari, SIL Open Font License (see `fonts/OFL.txt`).
+- Fonts: Vesper Libre (`fonts/OFL-vesperlibre.txt`), Hind (`fonts/OFL-hind.txt`) and Noto Serif Devanagari (`fonts/OFL.txt`), all under the SIL Open Font License.
 - Icons: [Tabler Icons](https://tabler.io/icons), MIT License.

@@ -14,6 +14,8 @@
   <meta name="apple-mobile-web-app-title" content="स्वाध्याय">
   <link rel="preload" href="fonts/noto-serif-devanagari-devanagari-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/noto-serif-devanagari-devanagari-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/vesper-libre-devanagari-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/hind-devanagari-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -144,6 +146,14 @@
     <p class="sp-credit"><span class="sp-credit-hi" lang="hi">श्रद्धा सहित निर्मित</span><span class="sp-credit-by">by Arjav</span></p>
   </div>
 
+  <!-- Brass for the ornaments in js/ornaments.js; the stops follow the day and night colours in css/app.css. -->
+  <svg class="orn-defs" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <defs>
+      <linearGradient id="brassV" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--brass-hi)"/><stop offset=".5" style="stop-color:var(--brass-mid)"/><stop offset="1" style="stop-color:var(--brass-lo)"/></linearGradient>
+      <linearGradient id="brassSide" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="100"><stop offset="0" style="stop-color:var(--brass-mid)"/><stop offset="1" style="stop-color:var(--brass-lo)"/></linearGradient>
+    </defs>
+  </svg>
+
   <div id="app" aria-live="off">
     <main class="center"><p>स्वाध्याय</p></main>
   </div>
@@ -157,6 +167,7 @@
   <script src="js/drawings.js"></script>
   <script src="js/scenes.js"></script>
   <script src="js/covers.js"></script>
+  <script src="js/ornaments.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
