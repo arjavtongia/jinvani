@@ -7,7 +7,7 @@
  */
 const ASK = (function () {
   /* The Ask server's address, once it is deployed (server/README.md). Empty: common questions only. */
-  const SERVER = '';
+  const SERVER = 'https://swadhyay-ask.arjav-tongia.workers.dev';
   const STORE = 'swadhyay.ask';
   const KEEP = 40;
   let faq = null;

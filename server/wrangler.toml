@@ -15,4 +15,4 @@ ALLOWED_ORIGINS = "https://arjavtongia.github.io,http://localhost:8780"
 # and paste the id it prints below.
 [[kv_namespaces]]
 binding = "ASK_CACHE"
-id = "PASTE_THE_KV_ID_HERE"
+id = "6245667febd84a59a2adaf230eec48ab"
