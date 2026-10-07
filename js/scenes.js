@@ -1343,6 +1343,94 @@ const SCENES = (function () {
     sit(160, 176, { plain: true, hands: 'lap' }) +
     '<circle cx="160" cy="130" r="7" fill="' + FLAME + '"/>');
 
+  /* ---------- The granth library ---------- */
+
+  /* The soul: a jewel of knowledge inside the body, which is only its cover. */
+  scenes.atma = svg(320, 200,
+    floor(20, 300, 176) +
+    sit(160, 176, { hands: 'lap' }) +
+    '<circle cx="160" cy="132" r="26" fill="none" stroke="' + PAPER_EDGE + '" stroke-width="2" stroke-dasharray="4 4"/>' +
+    '<circle cx="160" cy="132" r="16" fill="' + GLOW + '"/>' +
+    '<path d="M160 120 l5 8 l9 1 l-7 6 l2 9 l-9 -5 l-9 5 l2 -9 l-7 -6 l9 -1 z" fill="' + FLAME + '" stroke="' + BRASS_EDGE + '" stroke-width="1"/>');
+
+  /* The six dravyas: soul, matter, and the four that cannot be seen. */
+  scenes.shatDravya = svg(340, 230,
+    (function () {
+      const cells = [
+        '<circle r="22" fill="' + GLOW + '"/><circle r="8" fill="' + FLAME + '"/>',
+        '<circle r="22" fill="#d8d2c8"/><circle cx="-7" cy="-5" r="4" fill="#8d8d94"/><circle cx="6" cy="2" r="5" fill="#8d8d94"/><circle cx="-2" cy="9" r="3" fill="#8d8d94"/><circle cx="8" cy="-9" r="3" fill="#8d8d94"/>',
+        '<circle r="22" fill="#e8f1e3"/><path d="M-12 6 L12 -6" stroke="' + GREEN + '" stroke-width="3" stroke-linecap="round"/><path d="M4 -10 L12 -6 L8 2" fill="none" stroke="' + GREEN + '" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>',
+        '<circle r="22" fill="#f3e3e0"/><path d="M-10 -6 h20 M-10 6 h20" stroke="' + RED + '" stroke-width="3" stroke-linecap="round"/><path d="M0 -6 V6" stroke="' + RED + '" stroke-width="3" stroke-linecap="round"/>',
+        '<circle r="22" fill="#e3eef8"/><circle cx="-6" cy="-4" r="2" fill="' + WATER + '"/><circle cx="8" cy="-8" r="1.5" fill="' + WATER + '"/><circle cx="4" cy="6" r="2.2" fill="' + WATER + '"/><circle cx="-8" cy="8" r="1.5" fill="' + WATER + '"/>',
+        '<circle r="22" fill="#f6ecd9" stroke="' + BRASS_EDGE + '" stroke-width="2"/><path d="M0 0 V-12 M0 0 L8 5" stroke="' + INK + '" stroke-width="2.5" stroke-linecap="round"/><circle r="2.5" fill="' + INK + '"/>'
+      ];
+      return cells.map((c, i) => {
+        const x = 60 + (i % 3) * 110; const y = 72 + Math.floor(i / 3) * 100;
+        return '<g transform="translate(' + x + ' ' + y + ')">' + c + '</g>' + badge(x + 24, y - 24, i + 1);
+      }).join('');
+    })());
+
+  /* A muni walking the path, eyes on the ground, so no living thing is harmed. */
+  scenes.muniPath = svg(320, 200,
+    floor(20, 300, 176) + sun(290, 36, 10) +
+    muni(150, 176, {}) +
+    '<path d="M164 94 L216 170" stroke="' + INK + '" stroke-width="1.5" stroke-dasharray="3 4"/>' +
+    '<ellipse cx="220" cy="172" rx="5" ry="3" fill="' + INK + '"/><path d="M215 172 l-5 -3 M225 172 l5 -3" stroke="' + INK + '" stroke-width="1.5"/>' +
+    tree(50, 176, 0.9));
+
+  /* The householder's path: the family before the home shrine. */
+  scenes.shravak = svg(340, 210,
+    floor(20, 320, 186) +
+    shrine(250, 186, 0.8) + diya(206, 180, 0.6) +
+    sit(80, 186, { hands: 'folded' }) + sit(150, 186, { hands: 'folded' }) +
+    '<path d="M48 40 V186 M34 60 H62" stroke="' + PAPER_EDGE + '" stroke-width="2"/>');
+
+  /* The fourteen gunasthanas: the soul's steps up to liberation. */
+  scenes.gunasthan = svg(340, 230,
+    (function () {
+      let g = '';
+      for (let i = 0; i < 14; i++) {
+        const x = 30 + i * 20; const y = 200 - i * 11;
+        g += '<rect x="' + x + '" y="' + y + '" width="20" height="' + (210 - y) + '" fill="' + (i % 2 ? '#e3cfa9' : '#efe0c4') + '" stroke="' + WOOD_EDGE + '" stroke-width="1"/>';
+      }
+      return g;
+    })() +
+    '<path d="M258 24 Q296 10 334 24 Q296 20 258 24 Z" fill="' + GLOW + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>' +
+    '<g transform="translate(110 156) scale(0.5)">' + stand(0, 0, { hands: 'none' }) + '</g>' +
+    arrow(130, 120, 196, 86) +
+    label(40, 190, '1', 13) + label(300, 50, '14', 15));
+
+  /* Karma: fine particles drawn to the soul by its own passions. */
+  scenes.karma = svg(320, 200,
+    '<circle cx="160" cy="100" r="30" fill="' + GLOW + '"/><circle cx="160" cy="100" r="10" fill="' + FLAME + '"/>' +
+    (function () {
+      let g = '';
+      for (let i = 0; i < 8; i++) {
+        const a = i * Math.PI / 4;
+        const x1 = 160 + 84 * Math.cos(a); const y1 = 100 + 84 * Math.sin(a);
+        const x2 = 160 + 40 * Math.cos(a); const y2 = 100 + 40 * Math.sin(a);
+        g += '<circle cx="' + x1.toFixed(1) + '" cy="' + y1.toFixed(1) + '" r="7" fill="#5b5b63"/>' + arrow(x1, y1, x2, y2, '#8d8d94');
+      }
+      return g;
+    })());
+
+  /* A story being told: the muni speaks, the listeners sit before him. */
+  scenes.kathaScene = svg(340, 210,
+    floor(20, 320, 186) + tree(300, 186, 1) +
+    muni(90, 186, {}) +
+    sit(200, 186, { hands: 'lap', dir: -1 }) + sit(262, 186, { hands: 'lap', dir: -1 }) +
+    '<path d="M120 70 q0 -16 16 -16 h30 q16 0 16 16 q0 16 -16 16 h-22 l-10 8 v-8 q-14 0 -14 -16 z" fill="#fff7ec" stroke="' + INK + '" stroke-width="2" stroke-linejoin="round"/>' +
+    '<path d="M134 70 h30" stroke="' + INK + '" stroke-width="2" stroke-dasharray="3 3"/>');
+
+  /* Debate and reasoning: two scholars and the balance of logic between them. */
+  scenes.vaad = svg(340, 210,
+    floor(20, 320, 186) +
+    sit(80, 186, { hands: 'lap' }) + sit(260, 186, { hands: 'lap', dir: -1 }) +
+    '<path d="M170 60 V150 M140 150 H200" stroke="' + INK + '" stroke-width="3" stroke-linecap="round"/>' +
+    '<path d="M130 78 H210" stroke="' + INK + '" stroke-width="2.5" stroke-linecap="round"/>' +
+    '<path d="M130 78 L120 110 H140 Z M210 78 L200 110 H220 Z" fill="' + BRASS_LIGHT + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5" stroke-linejoin="round"/>' +
+    book(80, 120, 18, { h: 12 }) + book(260, 120, 18, { h: 12 }));
+
   /* The Vitarag Lord, beyond attachment and aversion. */
   scenes.jinaGlow = svg(320, 200,
     floor(20, 300, 176) + '<circle cx="160" cy="100" r="64" fill="' + GLOW + '"/>' + shrine(160, 176, 1.05));

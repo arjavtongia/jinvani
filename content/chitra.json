@@ -2581,5 +2581,523 @@
       "top": true,
       "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
     }
+  ],
+  "samaysar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "atma",
+      "top": true,
+      "title": { "hi": "आत्मा — देह के भीतर ज्ञान का रत्न", "en": "The soul: the jewel of knowledge within the body" }
+    }
+  ],
+  "pravachansar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shatDravya",
+      "top": true,
+      "title": { "hi": "छह द्रव्य", "en": "The six dravyas" },
+      "items": [
+        { "hi": "जीव", "en": "Jiva (soul)" },
+        { "hi": "पुद्गल", "en": "Pudgal (matter)" },
+        { "hi": "धर्म", "en": "Dharma (medium of motion)" },
+        { "hi": "अधर्म", "en": "Adharma (medium of rest)" },
+        { "hi": "आकाश", "en": "Akash (space)" },
+        { "hi": "काल", "en": "Kal (time)" }
+      ]
+    }
+  ],
+  "panchastikay": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shatDravya",
+      "top": true,
+      "title": { "hi": "छह द्रव्य", "en": "The six dravyas" },
+      "items": [
+        { "hi": "जीव", "en": "Jiva (soul)" },
+        { "hi": "पुद्गल", "en": "Pudgal (matter)" },
+        { "hi": "धर्म", "en": "Dharma (medium of motion)" },
+        { "hi": "अधर्म", "en": "Adharma (medium of rest)" },
+        { "hi": "आकाश", "en": "Akash (space)" },
+        { "hi": "काल", "en": "Kal (time)" }
+      ]
+    }
+  ],
+  "dravyasangrah": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shatDravya",
+      "top": true,
+      "title": { "hi": "छह द्रव्य", "en": "The six dravyas" },
+      "items": [
+        { "hi": "जीव", "en": "Jiva (soul)" },
+        { "hi": "पुद्गल", "en": "Pudgal (matter)" },
+        { "hi": "धर्म", "en": "Dharma (medium of motion)" },
+        { "hi": "अधर्म", "en": "Adharma (medium of rest)" },
+        { "hi": "आकाश", "en": "Akash (space)" },
+        { "hi": "काल", "en": "Kal (time)" }
+      ]
+    }
+  ],
+  "samadhitantra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "swaroop-sambodhan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.akalank",
+      "top": true,
+      "title": { "hi": "अकलंक देव", "en": "Akalank Dev" }
+    }
+  ],
+  "ishtopadesh": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "atma",
+      "top": true,
+      "title": { "hi": "आत्मा — देह के भीतर ज्ञान का रत्न", "en": "The soul: the jewel of knowledge within the body" }
+    }
+  ],
+  "paramatma-prakash": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "yogsar-prabhrut": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "tattvarth-sutra-anvayarth": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "ratnatray",
+      "top": true,
+      "title": { "hi": "रत्नत्रय — मोक्ष का मार्ग", "en": "The three jewels: the path to liberation" }
+    }
+  ],
+  "yogsar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "panchadhyayi": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shatDravya",
+      "top": true,
+      "title": { "hi": "छह द्रव्य", "en": "The six dravyas" },
+      "items": [
+        { "hi": "जीव", "en": "Jiva (soul)" },
+        { "hi": "पुद्गल", "en": "Pudgal (matter)" },
+        { "hi": "धर्म", "en": "Dharma (medium of motion)" },
+        { "hi": "अधर्म", "en": "Adharma (medium of rest)" },
+        { "hi": "आकाश", "en": "Akash (space)" },
+        { "hi": "काल", "en": "Kal (time)" }
+      ]
+    }
+  ],
+  "pahud-doha": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "atma",
+      "top": true,
+      "title": { "hi": "आत्मा — देह के भीतर ज्ञान का रत्न", "en": "The soul: the jewel of knowledge within the body" }
+    }
+  ],
+  "param-adhyatma-tarangini": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "atma",
+      "top": true,
+      "title": { "hi": "आत्मा — देह के भीतर ज्ञान का रत्न", "en": "The soul: the jewel of knowledge within the body" }
+    }
+  ],
+  "tattvagyan-tarangini": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "atma",
+      "top": true,
+      "title": { "hi": "आत्मा — देह के भीतर ज्ञान का रत्न", "en": "The soul: the jewel of knowledge within the body" }
+    }
+  ],
+  "amritashiti": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "atma",
+      "top": true,
+      "title": { "hi": "आत्मा — देह के भीतर ज्ञान का रत्न", "en": "The soul: the jewel of knowledge within the body" }
+    }
+  ],
+  "niyamsar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "ratnatray",
+      "top": true,
+      "title": { "hi": "रत्नत्रय — मोक्ष का मार्ग", "en": "The three jewels: the path to liberation" }
+    }
+  ],
+  "ashtapahud": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kundkund",
+      "top": true,
+      "title": { "hi": "आचार्य कुंदकुंद", "en": "Acharya Kundkund" }
+    }
+  ],
+  "mulachar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "muniPath",
+      "top": true,
+      "title": { "hi": "मुनि का आचार — देखकर चलना, जीव-रक्षा", "en": "The muni's conduct: walking with care for every living thing" }
+    }
+  ],
+  "kartikeyanupreksha": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhSansar",
+      "top": true,
+      "title": { "hi": "बारह अनुप्रेक्षा — संसार का चक्र", "en": "The twelve reflections: the wheel of sansar" }
+    }
+  ],
+  "purusharthasiddhyupay": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shravak",
+      "top": true,
+      "title": { "hi": "श्रावक का आचार — घर में धर्म", "en": "The householder's path: dharma at home" }
+    }
+  ],
+  "barasanupekkha": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "bhSansar",
+      "top": true,
+      "title": { "hi": "बारह अनुप्रेक्षा — संसार का चक्र", "en": "The twelve reflections: the wheel of sansar" }
+    }
+  ],
+  "ratnakarand-shravakachar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shravak",
+      "top": true,
+      "title": { "hi": "श्रावक का आचार — घर में धर्म", "en": "The householder's path: dharma at home" }
+    }
+  ],
+  "aradhanasar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "muniPath",
+      "top": true,
+      "title": { "hi": "मुनि का आचार — देखकर चलना, जीव-रक्षा", "en": "The muni's conduct: walking with care for every living thing" }
+    }
+  ],
+  "gyanarnav": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "dhyan",
+      "top": true,
+      "title": { "hi": "ध्यान — आत्मा का चिन्तन", "en": "Meditation on the soul" }
+    }
+  ],
+  "bhagavati-aradhana": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "muniPath",
+      "top": true,
+      "title": { "hi": "मुनि का आचार — देखकर चलना, जीव-रक्षा", "en": "The muni's conduct: walking with care for every living thing" }
+    }
+  ],
+  "padmanandi-panchvinshatika": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shravak",
+      "top": true,
+      "title": { "hi": "श्रावक का आचार — घर में धर्म", "en": "The householder's path: dharma at home" }
+    }
+  ],
+  "atmanushasan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "atma",
+      "top": true,
+      "title": { "hi": "आत्मा — देह के भीतर ज्ञान का रत्न", "en": "The soul: the jewel of knowledge within the body" }
+    }
+  ],
+  "rayansar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kundkund",
+      "top": true,
+      "title": { "hi": "आचार्य कुंदकुंद", "en": "Acharya Kundkund" }
+    }
+  ],
+  "upasakadhyayan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shravak",
+      "top": true,
+      "title": { "hi": "श्रावक का आचार — घर में धर्म", "en": "The householder's path: dharma at home" }
+    }
+  ],
+  "labdhisar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "gunasthan",
+      "top": true,
+      "title": { "hi": "चौदह गुणस्थान — मोक्ष की सीढ़ियाँ", "en": "The fourteen gunasthanas: steps to liberation" }
+    }
+  ],
+  "gommatsar-jeevkand": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "gunasthan",
+      "top": true,
+      "title": { "hi": "चौदह गुणस्थान — मोक्ष की सीढ़ियाँ", "en": "The fourteen gunasthanas: steps to liberation" }
+    }
+  ],
+  "gommatsar-karmkand": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "karma",
+      "top": true,
+      "title": { "hi": "कर्म — आत्मा से बँधते सूक्ष्म पुद्गल", "en": "Karma: fine particles bound to the soul" }
+    }
+  ],
+  "asrav-tribhangi": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "karma",
+      "top": true,
+      "title": { "hi": "कर्म — आत्मा से बँधते सूक्ष्म पुद्गल", "en": "Karma: fine particles bound to the soul" }
+    }
+  ],
+  "aradhana-katha-kosh": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kathaScene",
+      "top": true,
+      "title": { "hi": "कथा — गुरु कहते हैं, श्रोता सुनते हैं", "en": "A story told by the guru" }
+    }
+  ],
+  "uttarpuran": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
+  ],
+  "uttarpuran-sanskrit": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "chaubisi",
+      "top": true,
+      "title": { "hi": "चौबीस तीर्थंकर", "en": "The twenty-four Tirthankars" }
+    }
+  ],
+  "padmapuran": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kathaScene",
+      "top": true,
+      "title": { "hi": "कथा — गुरु कहते हैं, श्रोता सुनते हैं", "en": "A story told by the guru" }
+    }
+  ],
+  "adipuran": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-bull",
+      "top": true,
+      "title": { "hi": "भगवान ऋषभदेव — चिह्न: बैल", "en": "Bhagwan Rishabhdev, emblem: bull" }
+    }
+  ],
+  "mahavir-puran": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "tirthankar-lion",
+      "top": true,
+      "title": { "hi": "भगवान महावीर — चिह्न: सिंह", "en": "Bhagwan Mahavir, emblem: lion" }
+    }
+  ],
+  "jambuswami-charitra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kathaScene",
+      "top": true,
+      "title": { "hi": "कथा — गुरु कहते हैं, श्रोता सुनते हैं", "en": "A story told by the guru" }
+    }
+  ],
+  "sukumal-charitra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.sukumal",
+      "top": true,
+      "title": { "hi": "महामुनि सुकुमाल", "en": "Mahamuni Sukumal" }
+    }
+  ],
+  "sudarshan-charitra": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.sudarshan",
+      "top": true,
+      "title": { "hi": "सेठ सुदर्शन", "en": "Seth Sudarshan" }
+    }
+  ],
+  "samyaktva-kaumudi": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kathaScene",
+      "top": true,
+      "title": { "hi": "कथा — गुरु कहते हैं, श्रोता सुनते हैं", "en": "A story told by the guru" }
+    }
+  ],
+  "apt-mimansa": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.samantabhadra",
+      "top": true,
+      "title": { "hi": "आचार्य समन्तभद्र", "en": "Acharya Samantabhadra" }
+    }
+  ],
+  "laghiyastraya": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "vaad",
+      "top": true,
+      "title": { "hi": "न्याय — तर्क और परीक्षा", "en": "Nyay: reasoning and examination" }
+    }
+  ],
+  "parikshamukh": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "vaad",
+      "top": true,
+      "title": { "hi": "न्याय — तर्क और परीक्षा", "en": "Nyay: reasoning and examination" }
+    }
+  ],
+  "alap-paddhati": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "vaad",
+      "top": true,
+      "title": { "hi": "न्याय — तर्क और परीक्षा", "en": "Nyay: reasoning and examination" }
+    }
+  ],
+  "yuktyanushasan": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "vaad",
+      "top": true,
+      "title": { "hi": "न्याय — तर्क और परीक्षा", "en": "Nyay: reasoning and examination" }
+    }
+  ],
+  "sanmati-tark": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "vaad",
+      "top": true,
+      "title": { "hi": "न्याय — तर्क और परीक्षा", "en": "Nyay: reasoning and examination" }
+    }
+  ],
+  "shrutavatar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "story.bhadrabahu",
+      "top": true,
+      "title": { "hi": "श्रुतकेवली भद्रबाहु", "en": "Shrutakevali Bhadrabahu" }
+    }
+  ],
+  "darshansar": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "shastra",
+      "top": true,
+      "title": { "hi": "श्रुत — जिनवाणी", "en": "The scripture: Jinvani" }
+    }
+  ],
+  "samaysar-natak": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "atma",
+      "top": true,
+      "title": { "hi": "आत्मा — देह के भीतर ज्ञान का रत्न", "en": "The soul: the jewel of knowledge within the body" }
+    }
+  ],
+  "ardhakathanak": [
+    {
+      "at": [1],
+      "type": "drawing",
+      "drawing": "kathaScene",
+      "top": true,
+      "title": { "hi": "कथा — गुरु कहते हैं, श्रोता सुनते हैं", "en": "A story told by the guru" }
+    }
   ]
 }
