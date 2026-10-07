@@ -308,8 +308,8 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
 @container (max-width: 15rem) { .home-head .chhatra { grid-column: 1 / -1; grid-row: 2; justify-self: center; } }
 .brand { font: 700 1rem/1 var(--font-head); color: var(--brass-text); letter-spacing: 0.01em; }
 .today { text-align: center; }
-.greet { margin: 0.3rem 0 0; font: 900 1.25rem/1.15 var(--font-head); }
-.tithi { margin: 0.3rem 0 0; font: 900 min(2.1rem, 11.5vw)/1.05 var(--font-head); color: var(--sindoor); letter-spacing: -0.005em; }
+.greet { margin: 0.3rem 0 0; font: 900 1.25rem/1.15 var(--font-head); text-align: center; }
+.tithi { margin: 1.4rem 0 0; font: 700 1.3rem/1.2 var(--font-head); color: var(--sindoor); }
 .tithi-sub { margin: 0.2rem 0 0; font-size: var(--fs-sm); line-height: 1.45; color: var(--muted); }
 .tithi-sub b { color: var(--text); font-weight: 600; }
 
@@ -406,7 +406,7 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
 .sutra-meta { display: block; margin-top: 0.2rem; font-size: var(--fs-sm); color: var(--muted); }
 
 .paths, .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
-.paths { margin-top: 1.3rem; }
+.paths { margin-top: 1rem; }
 .paths > li, .rows > li { border-bottom: 1px solid var(--hair); }
 .path, .row {
   display: flex;

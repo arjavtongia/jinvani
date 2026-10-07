@@ -4,7 +4,7 @@
  * and saved, so updates and text corrections show the next time the app opens.
  * Change VERSION when adding or removing files in the list below.
  */
-const VERSION = 'swadhyay-v14';
+const VERSION = 'swadhyay-v15';
 /* On a slow line, the saved copy is shown after this wait while the new one keeps downloading for next time. */
 const WAIT_MS = 3000;
 /* Fonts and icons never change, so they come straight from the saved copy. */
@@ -51,9 +51,10 @@ const FILES = [
   'fonts/hind-latin-400-normal.woff2',
   'fonts/hind-latin-600-normal.woff2',
   'fonts/hind-latin-700-normal.woff2',
-  'icons/icon-192.png',
-  'icons/icon-512.png',
-  'icons/apple-touch-icon.png'
+  'icons/prateek-192.png',
+  'icons/prateek-512.png',
+  'icons/prateek-maskable-512.png',
+  'icons/prateek-apple-180.png'
 ];
 
 self.addEventListener('install', event => {

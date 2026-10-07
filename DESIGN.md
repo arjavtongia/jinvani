@@ -53,10 +53,9 @@ colors:
 typography:
   display:
     fontFamily: "'Vesper Libre', 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', serif"
-    fontSize: "min(2.1rem, 11.5vw)"
-    fontWeight: 900
-    lineHeight: 1.05
-    letterSpacing: "-0.005em"
+    fontSize: "1.3rem"
+    fontWeight: 700
+    lineHeight: 1.2
   greeting:
     fontFamily: "'Vesper Libre', 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', serif"
     fontSize: "1.25rem"
@@ -261,7 +260,7 @@ A marble-and-brass palette with one devotional red, mirrored as black Kota stone
 All sizes are rem; the root is set by the text-size setting (17, 19, 21, 24, 27 or 31px; 21px default), so every value below grows with it.
 
 ### Hierarchy
-- **Display** (Vesper 900, min(2.1rem, 11.5vw), 1.05): today's tithi in sindoor. One per app, on home, sized so the week and Continue reading share the first screen with it.
+- **Tithi** (Vesper 700, 1.3rem, 1.2): today's tithi in sindoor on home, kept small because it is for reference; the ways into the library come first.
 - **Greeting** (Vesper 900, 1.25rem, 1.15): जय जिनेन्द्र under the chhatra; 1.6rem on the welcome screen.
 - **Headline** (Vesper 700, 1.42rem, 1.25): page titles, book titles, guide step titles.
 - **Section** (Vesper 700, 1.22rem, 1.3): home section heads; continue-arch title at 1.3rem.

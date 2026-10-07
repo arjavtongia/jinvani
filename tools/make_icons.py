@@ -126,12 +126,12 @@ def main():
     OUT.mkdir(exist_ok=True)
     info = PngInfo()
     info.add_text("impeccable:prompt", ORIGIN)
-    make(192).save(OUT / "icon-192.png", pnginfo=info)
-    make(512).save(OUT / "icon-512.png", pnginfo=info)
+    make(192).save(OUT / "prateek-192.png", pnginfo=info)
+    make(512).save(OUT / "prateek-512.png", pnginfo=info)
     # Android crops maskable icons to a circle or squircle: keep the emblem inside the central 80%.
-    make(512, scale=0.78, rounded=False).save(OUT / "icon-maskable-512.png", pnginfo=info)
+    make(512, scale=0.78, rounded=False).save(OUT / "prateek-maskable-512.png", pnginfo=info)
     # iOS rounds the corners itself and wants no transparency.
-    make(180, scale=0.92, rounded=False).save(OUT / "apple-touch-icon.png", pnginfo=info)
+    make(180, scale=0.92, rounded=False).save(OUT / "prateek-apple-180.png", pnginfo=info)
     print("Icons written to", OUT)
 
 

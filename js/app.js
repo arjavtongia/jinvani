@@ -797,9 +797,10 @@
     return days;
   }
 
-  /* The line under the week: the picked day's tithi, or else the next parva or festival. */
+  /* The line under the week: the picked day's tithi, or else the next parva or festival.
+     Today's tithi is already written above the week, so picking today shows the next parva instead. */
   function dayNoteHtml(days, i) {
-    if (i != null) {
+    if (i) {
       const d = days[i];
       const tags = [d.festival, d.parva ? t('parva') : ''].filter(Boolean);
       return (tags.length ? ORN.dhwaja() : '') + '<span>' + esc(dateFmt(d.date, { weekday: 'long', day: 'numeric', month: 'long' })) +
@@ -812,12 +813,11 @@
     return ORN.dhwaja() + '<span>' + esc(t('parva')) + ': <b translate="no">' + esc(when + ', ' + (d.festival || d.tithiName)) + '</b></span>';
   }
 
-  /* The greeting under the chhatra (which crowns the header), today's tithi, and the week as arched windows. */
+  /* Today's tithi, kept small because it is for reference, and the week as arched windows. */
   function todayHtml() {
     const days = weekDays();
     const d = days[0];
-    return '<section class="today" aria-labelledby="greet">' +
-      '<h1 class="greet" id="greet">' + esc(t('greeting')) + '</h1>' +
+    return '<section class="today" aria-label="' + esc(t('today')) + '">' +
       '<p class="tithi" translate="no">' + esc(d.tithiName) + '</p>' +
       '<p class="tithi-sub"><b translate="no">' + esc(d.monthPaksha + ' ' + t('pakshaWord')) + '</b> · ' +
       esc(dateFmt(d.date, { weekday: 'long', day: 'numeric', month: 'long' })) + '</p>' +
@@ -890,7 +890,8 @@
     let html = '<header class="home-head"><span class="brand" translate="no" lang="hi">' + esc(STRINGS.hi.appName) + '</span>' + ORN.chhatra() +
       (state.locked ? '' : '<button class="btn btn-small" data-action="switch-lang" data-lang="' + other.code + '" translate="no" lang="' + other.code + '">' +
         icon('language') + '<span>' + esc(other.name) + '</span></button>') +
-      '</header><main class="home">' + todayHtml() + await festivalCardHtml();
+      '</header><main class="home"><h1 class="greet">' + esc(t('greeting')) + '</h1>' +
+      pathsHtml() + ORN.rule('home-rule') + todayHtml() + await festivalCardHtml();
 
     /* Continue where you stopped; on the first visit, begin with the Namokar. */
     const last = state.last && await getBook(state.last.book).catch(() => null);
@@ -923,7 +924,7 @@
         '<span class="sutra-meta">' + esc(ts.title.hi) + ' · ' + esc(posLabel(ts, v)) + '</span></span></a>' +
         '<div class="plinth full" aria-hidden="true"><i></i></div></section>';
     }
-    return html + ORN.rule('home-rule') + pathsHtml() + '</main>';
+    return html + '</main>';
   }
 
   function categoryRow(c) {
