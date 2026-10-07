@@ -287,6 +287,12 @@ a { color: var(--brass-text); text-underline-offset: 0.2em; text-decoration-thic
 .tab.is-active .icon { color: var(--brass-text); }
 /* The active tab carries a brass lintel. */
 .tab.is-active::before { content: ''; position: absolute; top: -0.32rem; left: 50%; width: 1.7rem; height: 0.2rem; margin-left: -0.85rem; border-radius: 0 0 3px 3px; background: linear-gradient(var(--brass-hi), var(--brass)); }
+/* While the page scrolls down the bar sinks by its label line, leaving only the icons above the edge;
+   the labels fade but stay for screen readers. Only transform and opacity move, so it stays smooth. */
+.tabbar { transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1); }
+.tab > span { transition: opacity 0.18s; }
+.tabbar.is-min { transform: translateY(1rem); }
+.tabbar.is-min .tab > span { opacity: 0; }
 
 /* ---------- Welcome ---------- */
 

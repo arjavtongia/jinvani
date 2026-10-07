@@ -1755,7 +1755,22 @@
 
   window.addEventListener('hashchange', render);
 
+  /* Scrolling down folds the tab bar to its icons, leaving the screen to the page; scrolling up or reaching the top opens it again. */
+  let tabbarY = 0;
+  function updateTabbar() {
+    const y = window.scrollY;
+    const bar = $app.querySelector('.tabbar');
+    if (y < 40) {
+      if (bar) bar.classList.remove('is-min');
+      tabbarY = y;
+    } else if (Math.abs(y - tabbarY) > 8) {
+      if (bar) bar.classList.toggle('is-min', y > tabbarY);
+      tabbarY = y;
+    }
+  }
+
   window.addEventListener('scroll', updateScrollCue, { passive: true });
+  window.addEventListener('scroll', updateTabbar, { passive: true });
   window.addEventListener('resize', updateScrollCue);
   /* Text size changes and late-loading fonts change the page height without a scroll. */
   if (window.ResizeObserver) new ResizeObserver(updateScrollCue).observe($app);
