@@ -1039,6 +1039,10 @@ main.enter-prev { animation: enter-prev 0.22s ease-out; }
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 .story-art.cover-letter { font-size: 4rem; }
+/* Stories without a photo: a drawn scene (js/scenes.js) that fills the frame like a photo would. */
+.cover-drawn { display: block; overflow: hidden; background: #f6ecd9; }
+.cover-drawn svg { display: block; width: 100%; height: 100%; }
+.book-cover.cover-drawn { max-height: none; }
 
 .book-cover { display: block; width: calc(100% + 2rem); max-height: 52vh; margin: -0.5rem -1rem 1rem; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 30%; }
 .book-cover.cover-letter { font-size: 5rem; }

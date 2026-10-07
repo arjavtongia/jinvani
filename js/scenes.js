@@ -134,11 +134,14 @@ const SCENES = (function () {
   function sit(x, y, o) {
     o = o || {};
     const dir = o.dir || 1;
+    /* plain: a seated muni, unclothed */
+    const f = o.plain ? SKIN : CLOTH;
+    const fe = o.plain ? SKIN_EDGE : CLOTH_EDGE;
     let g = '<g transform="translate(' + x + ' ' + y + ') scale(' + dir + ' 1)">' +
-      '<ellipse cx="0" cy="-9" rx="31" ry="11" fill="' + CLOTH + '" stroke="' + CLOTH_EDGE + '" stroke-width="2"/>' +
-      '<path d="M-16 -9 Q0 -18 16 -9" fill="none" stroke="' + CLOTH_EDGE + '" stroke-width="1.5"/>' +
-      '<path d="M-14 -14 Q-16 -54 -7 -60 H7 Q16 -54 14 -14 Z" fill="' + CLOTH + '" stroke="' + CLOTH_EDGE + '" stroke-width="2"/>' +
-      head(o.bow ? 4 : 0, o.bow ? -68 : -72, 12);
+      '<ellipse cx="0" cy="-9" rx="31" ry="11" fill="' + f + '" stroke="' + fe + '" stroke-width="2"/>' +
+      '<path d="M-16 -9 Q0 -18 16 -9" fill="none" stroke="' + fe + '" stroke-width="1.5"/>' +
+      '<path d="M-14 -14 Q-16 -54 -7 -60 H7 Q16 -54 14 -14 Z" fill="' + f + '" stroke="' + fe + '" stroke-width="2"/>' +
+      head(o.bow ? 4 : 0, o.bow ? -68 : -72, 12, { bald: o.plain });
     if (o.hands === 'folded') {
       g += '<path d="M7 -52 Q14 -48 14 -40 M-7 -52 Q4 -50 10 -40" fill="none" stroke="' + SKIN + '" stroke-width="6" stroke-linecap="round"/>' + folded(14, -38, 0.9);
     } else if (o.hands === 'mala') {
@@ -831,6 +834,158 @@ const SCENES = (function () {
     '<circle cx="0" cy="-64" r="10" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="2.5" stroke-dasharray="4 4"/></g>' +
     arrow(160, 186, 160, 64) +
     diya(60, 200, 0.8) + diya(260, 200, 0.8));
+
+  /* ---------- Story covers (16:9), for the stories that have no photograph ---------- */
+
+  function cover(body, o) {
+    o = o || {};
+    const sky = o.night ? '#2b1d12' : PAPER;
+    const ground = o.water ? WATER : (o.night ? '#1d140c' : '#eadbbd');
+    return '<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">' +
+      '<rect width="320" height="180" fill="' + sky + '"/><rect y="150" width="320" height="30" fill="' + ground + '"/>' + body + '</svg>';
+  }
+
+  function chainLinks(x1, y1, x2, y2, n) {
+    let g = '<g fill="none" stroke="#6b6b73" stroke-width="3">';
+    const a = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+    for (let i = 0; i < n; i++) {
+      const t = i / (n - 1);
+      const x = x1 + (x2 - x1) * t; const y = y1 + (y2 - y1) * t;
+      g += '<ellipse cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" rx="7" ry="4" transform="rotate(' + a.toFixed(0) + ' ' + x.toFixed(1) + ' ' + y.toFixed(1) + ')"/>';
+    }
+    return g + '</g>';
+  }
+
+  function goat(x, y, s) {
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<rect x="-22" y="-24" width="7" height="24" rx="3" fill="#e9e2d6" stroke="#9a8f86" stroke-width="1.2"/><rect x="8" y="-24" width="7" height="24" rx="3" fill="#e9e2d6" stroke="#9a8f86" stroke-width="1.2"/>' +
+      '<ellipse cx="-4" cy="-32" rx="24" ry="13" fill="#f3ede4" stroke="#9a8f86" stroke-width="1.5"/>' +
+      '<path d="M18 -36 q14 -4 16 8 q-2 8 -10 6 q-6 0 -8 -6 z" fill="#f3ede4" stroke="#9a8f86" stroke-width="1.5"/>' +
+      '<path d="M26 -42 q2 -10 8 -12 M30 -40 q6 -8 12 -8" fill="none" stroke="#7a5a44" stroke-width="2.5" stroke-linecap="round"/>' +
+      '<circle cx="28" cy="-33" r="1.6" fill="' + INK + '"/><path d="M30 -24 q0 6 -2 8" stroke="#9a8f86" stroke-width="2" stroke-linecap="round"/></g>';
+  }
+
+  function fish(x, y, s, color) {
+    const c = color || '#e8a04a';
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<path d="M-20 0 Q-6 -14 12 0 Q-6 14 -20 0 Z" fill="' + c + '" stroke="' + BRASS_EDGE + '" stroke-width="1.2"/>' +
+      '<path d="M12 0 L24 -9 V9 Z" fill="' + c + '" stroke="' + BRASS_EDGE + '" stroke-width="1.2"/>' +
+      '<circle cx="-12" cy="-3" r="1.8" fill="' + INK + '"/></g>';
+  }
+
+  function moon(x, y, r) {
+    return '<circle cx="' + x + '" cy="' + y + '" r="' + r + '" fill="#f3e2b4"/><circle cx="' + (x + r * 0.45) + '" cy="' + (y - r * 0.2) + '" r="' + (r * 0.85) + '" fill="#2b1d12"/>';
+  }
+
+  function stars(pts) {
+    return pts.map(p => '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="1.6" fill="#f3e2b4"/>').join('');
+  }
+
+  const story = {};
+
+  /* Acharya Mantunga, locked in chains, composes the Bhaktamar; lock after lock opens. */
+  story['manatunga-bhaktamar'] = cover(
+    '<circle cx="222" cy="86" r="52" fill="' + GLOW + '"/>' + flower5(222, 86, 3.6) +
+    chainLinks(60, 60, 96, 110, 6) + chainLinks(160, 60, 124, 110, 6) +
+    '<path d="M100 114 l-4 8 M120 114 l4 8" stroke="#6b6b73" stroke-width="3" stroke-linecap="round"/>' +
+    muni(110, 150, { dir: 1 }));
+
+  /* Akalank and Nikalank, two brothers who learned the scriptures together. */
+  story.akalank = cover(
+    tree(270, 150, 1.1) +
+    chowki(160, 118, 70) + book(160, 100, 30, { h: 18 }) +
+    stand(100, 150, { hands: 'none' }) + stand(220, 150, { hands: 'none', dir: -1 }));
+
+  /* Acharya Patrakesari with the palm-leaf text that turned him to the Jina's teaching. */
+  story.patrakesari = cover(
+    tree(60, 150, 1.2) +
+    muni(230, 150, { dir: -1 }) +
+    '<rect x="100" y="96" width="90" height="34" rx="4" fill="#fbf3e2" stroke="' + CLOTH_EDGE + '" stroke-width="2"/>' +
+    '<path d="M110 106 h70 M110 114 h70 M110 122 h50" stroke="#b9a487" stroke-width="2" stroke-linecap="round"/>' +
+    '<circle cx="160" cy="60" r="18" fill="' + GLOW + '"/>');
+
+  /* King Uddayan gives aahar to the muni at his door. */
+  story.uddayan = cover(
+    doorway(60, 150, 70, 110) +
+    stand(126, 150, { hands: 'hold', cloth: SAFFRON, item: bowl(42, -56, 12, '#fff8ea') }) + crown(126, 54, 0.7) +
+    muni(220, 150, { dir: -1 }) +
+    sun(290, 40, 10));
+
+  /* Queen Revati bows only to the true guru, whatever wonders are shown. */
+  story.revati = cover(
+    stand(110, 150, { hands: 'folded', cloth: SAFFRON, dupatta: true }) + crown(110, 54, 0.6) +
+    muni(230, 150, { dir: -1 }) +
+    '<circle cx="230" cy="84" r="40" fill="' + GLOW + '"/>' + muni(230, 150, { dir: -1 }));
+
+  /* Yampal the chandala would not kill the goat, even at the king's command. */
+  story.yampal = cover(
+    stand(110, 150, { hands: 'none', bow: true }) +
+    goat(210, 150, 1) +
+    '<path d="M150 70 L190 30" stroke="#8d8d94" stroke-width="5" stroke-linecap="round"/><path d="M146 74 l-6 -6" stroke="' + WOOD_EDGE + '" stroke-width="7" stroke-linecap="round"/>' +
+    nope(170, 50, 30));
+
+  /* Mrigsen the fisherman lets the first fish of the day go free. */
+  story.mrigsen = cover(
+    stand(90, 150, { hands: 'hold', item: '<path d="M26 -48 q30 -10 56 10" fill="none" stroke="' + WOOD_EDGE + '" stroke-width="3"/>' }) +
+    '<path d="M140 96 q20 -30 46 -6 q10 10 2 22 q-14 12 -32 4 q-20 -8 -16 -20 z" fill="none" stroke="' + INK + '" stroke-width="1.5" stroke-dasharray="3 3"/>' +
+    fish(240, 110, 1.2) + arrow(246, 130, 256, 152) +
+    '<path d="M0 152 H320" stroke="' + WATER + '" stroke-width="6"/><path d="M20 164 q10 -6 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="#bfe0f7" stroke-width="2"/>',
+    { water: true });
+
+  /* Shalisikth, the tiny fish, in the belly of the sea. */
+  story.shalisikth = cover(
+    '<rect width="320" height="180" fill="' + WATER + '"/>' +
+    '<path d="M0 30 q20 -10 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#bfe0f7" stroke-width="2"/>' +
+    fish(140, 100, 3.2, '#8d8d94') + fish(236, 86, 0.9) +
+    '<circle cx="250" cy="60" r="3" fill="#bfe0f7"/><circle cx="258" cy="48" r="2" fill="#bfe0f7"/><circle cx="60" cy="130" r="2.5" fill="#bfe0f7"/>',
+    { water: true });
+
+  /* Pritinkar Kumar: no food after dark; the lamp is lit and the plate is left. */
+  story['ratri-bhojan'] = cover(
+    moon(60, 40, 16) + stars([[120, 30], [150, 56], [200, 24], [250, 44], [290, 70], [30, 90]]) +
+    plate(160, 128, 40, 14) + '<circle cx="146" cy="118" r="8" fill="#e0a23a"/><circle cx="170" cy="120" r="8" fill="#e0a23a"/>' +
+    nope(160, 118, 48) +
+    diya(270, 146, 1), { night: true });
+
+  /* King Vasu's crystal throne shatters the moment he speaks a lie. */
+  story['vasu-raja'] = cover(
+    '<rect x="110" y="70" width="100" height="70" rx="8" fill="#d6ebf8" stroke="#7ab3d8" stroke-width="2"/>' +
+    '<rect x="120" y="40" width="80" height="34" rx="6" fill="#e6f2fa" stroke="#7ab3d8" stroke-width="2"/>' +
+    '<rect x="124" y="140" width="12" height="12" fill="#7ab3d8"/><rect x="184" y="140" width="12" height="12" fill="#7ab3d8"/>' +
+    '<path d="M150 70 l10 22 l-8 14 l14 18 M172 44 l-6 16 l10 10" fill="none" stroke="' + INK + '" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<g transform="translate(246 96) rotate(35)">' + crown(0, 0, 1) + '</g>' +
+    '<path d="M60 60 q0 -14 14 -14 h30 q14 0 14 14 q0 14 -14 14 h-20 l-10 8 v-8 q-14 0 -14 -14 z" fill="#fff7ec" stroke="' + INK + '" stroke-width="2" stroke-linejoin="round"/>' +
+    '<path d="M80 54 l14 14 M94 54 l-14 14" stroke="' + RED + '" stroke-width="3" stroke-linecap="round"/>');
+
+  /* Shribhuti the priest and the jewels that were not his. */
+  story.shribhuti = cover(
+    stand(100, 150, { hands: 'none' }) + '<path d="M92 74 Q104 100 94 118" fill="none" stroke="' + CLOTH_EDGE + '" stroke-width="2"/>' +
+    '<path d="M150 150 q-16 -40 20 -44 q36 4 20 44 z" fill="#8a6a4a" stroke="#5b4636" stroke-width="1.5"/>' +
+    '<circle cx="160" cy="104" r="5" fill="#c0392b"/><circle cx="172" cy="100" r="5" fill="#2e8b57"/><circle cx="184" cy="105" r="5" fill="#3a8fd6"/><circle cx="166" cy="92" r="4" fill="' + FLAME + '"/>' +
+    arrow(150, 120, 122, 112) +
+    stand(250, 150, { hands: 'none', dir: -1 }) + badge(250, 50, '?'));
+
+  /* Neeli, whose truth opened the city gate. */
+  story.neeli = cover(
+    doorway(230, 150, 90, 120) +
+    '<rect x="193" y="40" width="34" height="110" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +
+    '<circle cx="196" cy="96" r="22" fill="' + GLOW + '"/>' +
+    stand(110, 150, { hands: 'folded', dupatta: true }));
+
+  /* Sukaushal Muni and the tigress, calm before each other. */
+  story.sukaushal = cover(
+    muni(90, 150, {}) +
+    lion(230, 150, 1.1) +
+    '<path d="M206 108 q4 10 2 20 M220 104 q4 10 2 20 M234 108 q4 10 2 18" fill="none" stroke="#7a4a1c" stroke-width="3" stroke-linecap="round"/>' +
+    tree(290, 150, 0.9));
+
+  /* Gajkumar Muni in meditation, unmoved as fire is set upon his head. */
+  story.gajkumar = cover(
+    '<circle cx="160" cy="96" r="54" fill="' + GLOW + '"/>' +
+    sit(160, 150, { plain: true, hands: 'lap' }) +
+    '<ellipse cx="160" cy="82" rx="16" ry="5" fill="#9c5a1c"/>' + flames(160, 74, 0.6));
+
+  scenes.story = story;
 
   return scenes;
 })();
