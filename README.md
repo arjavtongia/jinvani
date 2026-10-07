@@ -85,7 +85,7 @@ Then open http://localhost:8765.
 
 | Path | What it holds |
 | --- | --- |
-| `index.html` | The page that loads the app |
+| `index.html` | The page that loads the app, and the opening screen (Bhagwan Mahavir, shown for 3 seconds; its animation is in `css/app.css`) |
 | `js/app.js` | Screens, reader, search, read-aloud, settings |
 | `js/strings.js` | Every word shown in the app, in Hindi and English |
 | `js/translit.js` | Devanagari to Roman letters |

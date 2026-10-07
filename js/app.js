@@ -45,6 +45,8 @@
 
   const $app = document.getElementById('app');
   const $toast = document.getElementById('toast');
+  const $splash = document.getElementById('splash');
+  const SPLASH_BG = '#1c0d06';
 
   function t(key, vars) {
     const table = STRINGS[state.lang] || STRINGS.hi;
@@ -108,7 +110,9 @@
     const theme = state.theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
     root.dataset.theme = theme;
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', theme === 'night' ? '#17130e' : '#fbf6ec');
+    /* While the opening screen shows, the phone's status bar matches it. */
+    const bar = $splash && $splash.isConnected ? SPLASH_BG : theme === 'night' ? '#17130e' : '#fbf6ec';
+    if (meta) meta.setAttribute('content', bar);
   }
 
   /* ---------- Books ---------- */
@@ -1619,6 +1623,17 @@
         navigator.serviceWorker.addEventListener('controllerchange', () => toast(t('offlineReady')), { once: true });
       }
     }).catch(() => { /* offline support is optional */ });
+  }
+
+  /* The opening screen fades itself out after 3 seconds (css/app.css); once it has, take it away. */
+  function endSplash() {
+    if (!$splash || !$splash.isConnected) return;
+    $splash.remove();
+    applySettings();
+  }
+  if ($splash) {
+    $splash.addEventListener('animationend', e => { if (e.animationName === 'splash-out') endSplash(); });
+    setTimeout(endSplash, 5000);
   }
 
   render();
