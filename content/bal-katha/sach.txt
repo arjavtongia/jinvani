@@ -1,0 +1,27 @@
+# मोनू ने सच बोला | Monu tells the truth
+# नई कहानी, इसी ऐप के लिए, छोटे बच्चों के लिए आसान भाषा में लिखी गई।
+# चित्र: js/kids.js
+
+@ | गेंद और गुलदान | The ball and the vase
+गद्य: मोनू घर के अंदर गेंद से खेल रहा था। माँ ने कहा था, "घर में गेंद मत खेलना।" पर मोनू खेलता रहा।
+गद्य: अचानक गेंद उछली और धड़ाम! माँ का प्यारा नीला गुलदान गिरकर टूट गया।
+Prose: Monu was playing with a ball inside the house. Mummy had said, "Do not play ball indoors." But Monu kept playing.
+Prose: Suddenly the ball bounced and, crash! Mummy's favourite blue vase fell and broke.
+
+@ | अब क्या करूँ? | What should I do?
+गद्य: मोनू डर गया। उसके मन में आया, "मैं कह दूँ कि बिल्ली ने गिराया है?"
+गद्य: फिर उसे याद आया, गुरुजी कहते हैं, "सच बोलना सबसे बड़ा गुण है। झूठ बोलने से मन भारी हो जाता है।"
+Prose: Monu got scared. He thought, "Should I say the cat knocked it over?"
+Prose: Then he remembered what his teacher says: "Telling the truth is the greatest virtue. A lie makes the heart heavy."
+
+@ | मोनू ने सच बताया | Monu tells the truth
+गद्य: मोनू धीरे-धीरे माँ के पास गया और हाथ जोड़कर बोला, "माँ, गुलदान मुझसे टूटा। मैंने आपकी बात नहीं मानी। मुझे माफ़ कर दो।"
+Prose: Monu slowly went to Mummy, joined his hands and said, "Mummy, I broke the vase. I did not listen to you. Please forgive me."
+
+@ | माँ का प्यार | Mummy's love
+गद्य: माँ ने मोनू को गले लगा लिया। "गुलदान तो नया आ जाएगा, बेटा। पर तुमने सच बोला, इस बात की मुझे बहुत ख़ुशी है।"
+गद्य: मोनू का मन फूल जैसा हल्का हो गया।
+Prose: Mummy hugged Monu. "We can get a new vase, dear. But you told the truth, and that makes me very happy."
+Prose: Monu's heart felt as light as a flower.
+सीख: गलती हो जाए तो सच बोलो और माफ़ी माँगो। सच बोलने वाले पर सब भरोसा करते हैं।
+Moral: If you make a mistake, tell the truth and say sorry. Everyone trusts someone who tells the truth.

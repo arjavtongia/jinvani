@@ -1,0 +1,29 @@
+# नन्हे वीर वर्धमान | Little brave Vardhaman
+# परम्परागत कथा, बच्चों के लिए आसान भाषा में; पूरी कथा इसी ऐप में: content/katha/mahavir-bachpan.txt
+# चित्र: js/kids.js
+
+@ | राजकुमार वर्धमान | Prince Vardhaman
+गद्य: बहुत समय पहले, कुण्डलपुर में राजा सिद्धार्थ और रानी त्रिशला के घर एक प्यारा बालक जन्मा। उसका नाम था वर्धमान।
+गद्य: वर्धमान अपने दोस्तों के साथ बगीचे में एक बड़े पेड़ पर चढ़कर खेलते थे।
+Prose: Long ago, in Kundalpur, a lovely boy was born to King Siddharth and Queen Trishala. His name was Vardhaman.
+Prose: Vardhaman used to play with his friends in the garden, climbing a big tree.
+
+@ | पेड़ पर बड़ा साँप | A big snake on the tree
+गद्य: एक दिन स्वर्ग से संगम नाम का एक देव उनकी परीक्षा लेने आया। उसने एक बहुत बड़े साँप का रूप बनाया और पेड़ से लिपट गया।
+गद्य: साँप को देखकर सारे बच्चे डर गए और भाग गए।
+Prose: One day a dev named Sangam came from heaven to test him. He took the form of a huge snake and wrapped himself around the tree.
+Prose: Seeing the snake, all the children got scared and ran away.
+
+@ | वर्धमान नहीं डरे | Vardhaman was not afraid
+गद्य: पर वर्धमान बिल्कुल नहीं डरे। वे शांत रहे, मुस्कुराए, और बिना घबराए साँप के पास गए।
+गद्य: उनकी शांति देखकर साँप भी शांत हो गया।
+Prose: But Vardhaman was not afraid at all. He stayed calm, smiled, and went near the snake without any panic.
+Prose: Seeing how calm he was, the snake became calm too.
+
+@ | "आप महावीर हैं!" | "You are Mahavir!"
+गद्य: तभी साँप फिर से देव बन गया। उसने हाथ जोड़कर कहा, "आप सचमुच महावीर हैं, सबसे बड़े वीर!"
+गद्य: तब से वर्धमान को महावीर कहा जाने लगा। बड़े होकर वे हमारे चौबीसवें तीर्थंकर, भगवान महावीर बने।
+Prose: Just then the snake became a dev again. He joined his hands and said, "You are truly Mahavir, the bravest of the brave!"
+Prose: From then on, Vardhaman was called Mahavir. When he grew up, he became our twenty-fourth Tirthankar, Bhagwan Mahavir.
+सीख: सच्चा वीर वह है जो डर के समय भी शांत रहे।
+Moral: A true hero stays calm even when there is fear.

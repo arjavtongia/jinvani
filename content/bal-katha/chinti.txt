@@ -1,0 +1,33 @@
+# गोलू और चींटियाँ | Golu and the ants
+# नई कहानी, इसी ऐप के लिए, छोटे बच्चों के लिए आसान भाषा में लिखी गई।
+# चित्र: js/kids.js
+
+@ | बगीचे में चींटियाँ | Ants in the garden
+गद्य: गोलू सात साल का है। एक दिन वह बगीचे में खेल रहा था।
+गद्य: उसने देखा, ज़मीन पर बहुत सारी चींटियाँ एक लाइन में चल रही हैं। हर चींटी के पास चीनी का एक छोटा-सा दाना है!
+गद्य: "अरे वाह! ये तो रेलगाड़ी जैसी चल रही हैं," गोलू हँसा।
+Prose: Golu is seven years old. One day he was playing in the garden.
+Prose: He saw lots of ants walking in a line on the ground. Each ant was carrying a tiny grain of sugar!
+Prose: "Wow! They are walking like a train," Golu laughed.
+
+@ | रुको, गोलू! | Stop, Golu!
+गद्य: गोलू को एक शरारत सूझी। उसने सोचा, "मैं पैर से इन्हें दबा दूँ, देखूँ क्या होता है।"
+गद्य: तभी दादी आ गईं। "रुको, गोलू!" दादी ने प्यार से कहा।
+Prose: Golu had a naughty idea. He thought, "Let me press them with my foot and see what happens."
+Prose: Just then Dadi came. "Stop, Golu!" she said gently.
+
+@ | चींटी को भी दर्द होता है | Ants feel pain too
+गद्य: दादी गोलू के पास बैठ गईं। "जैसे तुम्हें चोट लगने पर दर्द होता है, वैसे ही चींटी को भी होता है। हर जीव को अपनी जान प्यारी है।"
+गद्य: "भगवान महावीर ने कहा है: किसी भी जीव को दुख मत दो। इसे अहिंसा कहते हैं।"
+गद्य: गोलू ने ध्यान से चींटियों को देखा। वे कितनी मेहनत कर रही थीं!
+Prose: Dadi sat down beside Golu. "Just as you feel pain when you get hurt, an ant does too. Every living being loves its life."
+Prose: "Bhagwan Mahavir taught us: do not hurt any living being. This is called ahimsa."
+Prose: Golu looked closely at the ants. How hard they were working!
+
+@ | गोलू का प्यारा काम | Golu's kind deed
+गद्य: गोलू ने कहा, "माफ़ करना, चींटी दीदी!" फिर वह रसोई से थोड़ी चीनी लाया और रास्ते से दूर, उनके घर के पास रख दी।
+गद्य: अब गोलू खेलते समय नीचे देखकर चलता है, ताकि कोई छोटा जीव उसके पैर के नीचे न आए।
+Prose: Golu said, "Sorry, sister ants!" Then he brought a little sugar from the kitchen and put it near their home, away from the path.
+Prose: Now when Golu plays, he looks down as he walks, so that no tiny creature comes under his feet.
+सीख: छोटे से छोटे जीव को भी दुख मत दो। सबसे प्यार करो, यही अहिंसा है।
+Moral: Never hurt even the smallest creature. Love everyone: that is ahimsa.

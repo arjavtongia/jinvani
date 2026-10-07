@@ -1,0 +1,29 @@
+# गन्ने का मीठा रस | Sweet sugarcane juice
+# परम्परागत कथा, बच्चों के लिए आसान भाषा में; पूरी कथा इसी ऐप में: content/katha/akshay-tritiya.txt
+# चित्र: js/kids.js
+
+@ | मुनि ऋषभदेव | Muni Rishabhdev
+गद्य: भगवान ऋषभदेव पहले राजा थे। फिर उन्होंने सब कुछ छोड़ दिया और मुनि बन गए।
+गद्य: जब वे आहार के लिए नगर में आते, तो लोग उन्हें सोना, हीरे, हाथी और घोड़े देने लगते। पर मुनि को ये चीज़ें नहीं चाहिए थीं!
+Prose: Bhagwan Rishabhdev was first a king. Then he gave up everything and became a muni.
+Prose: When he came to town for food, people offered him gold, diamonds, elephants and horses. But a muni does not need such things!
+
+@ | कोई नहीं जानता था | Nobody knew
+गद्य: उस समय कोई नहीं जानता था कि मुनि को आहार कैसे देते हैं। इसलिए मुनि ऋषभदेव बिना कुछ लिए वापस चले जाते।
+गद्य: ऐसे करते-करते लगभग एक साल बीत गया।
+Prose: In those days nobody knew how to offer food to a muni. So Muni Rishabhdev went back without taking anything.
+Prose: Like this, almost a whole year passed.
+
+@ | श्रेयांस को याद आया | Shreyans remembers
+गद्य: हस्तिनापुर के राजकुमार श्रेयांस ने मुनि को देखा, तो उन्हें अपने पिछले जन्म की बात याद आ गई: मुनि को शुद्ध आहार कैसे देते हैं!
+गद्य: उनके महल में गन्ने का ताज़ा, मीठा रस रखा था।
+Prose: When Prince Shreyans of Hastinapur saw the muni, he remembered something from his past life: how to offer pure food to a muni!
+Prose: In his palace there was fresh, sweet sugarcane juice.
+
+@ | पहला आहार | The first aahar
+गद्य: श्रेयांस ने बड़े आदर से मुनि की अंजुलि में गन्ने का रस दिया, और मुनि ने रस ग्रहण किया। आसमान से फूल बरसने लगे, और सब लोग खुशी से नाचने लगे!
+गद्य: वह दिन था वैशाख शुक्ल तीज। उसी दिन को हम अक्षय तृतीया के रूप में मनाते हैं।
+Prose: With great respect, Shreyans poured the sugarcane juice into the muni's cupped hands, and the muni accepted it. Flowers rained from the sky, and everyone danced with joy!
+Prose: That day was Vaishakh Shukla Teej. We celebrate it as Akshay Tritiya.
+सीख: सही तरीके से, प्यार और आदर के साथ दिया गया दान सबसे बड़ा होता है।
+Moral: A gift given the right way, with love and respect, is the greatest gift.

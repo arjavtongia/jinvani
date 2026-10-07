@@ -11,6 +11,7 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 - मंदिर दर्शन विधि and पूजा विधि: step-by-step temple and ashta-dravya pooja guides with every mantra and drawings (thali, ठौना with three cloves, swastik, pradakshina).
 - "चित्र से समझें": diagrams that explain the meaning of key sutras and verses.
 - प्रश्न पूछें (Ask): questions about Jain dharma, answered from the app's own texts with links to the verses. 38 common questions are answered on the phone, offline; new ones go to a small server that uses NVIDIA's model and caches every answer (see `server/README.md`).
+- बच्चों की कहानियाँ (Children's stories): 8 short stories for young children in easy Hindi and English (ahimsa, filtered water, eating before sunset, truth, and four favourites retold simply), with bright pictures on every page and a lesson at the end. They live in `content/bal-katha/`, with pictures drawn in `js/kids.js`.
 - जैन कथाएँ (Jain stories): 33 traditional stories, in five groups, with photos of the places where they happened, a short version in Hindi and English, and the lesson of each story. A different story is offered on the home screen every day.
 - One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons; short sutras are grouped five or six to a screen. Swipes and arrow keys work too.
 - Poojas and short paath (Deepawali poojas, Namokar, Darshan Path, Darshan Stuti, Barah Bhavana) scroll as one page each, so they can be recited without tapping Next.
@@ -95,6 +96,7 @@ Then open http://localhost:8765.
 | `js/strings.js` | Every word shown in the app, in Hindi and English |
 | `js/translit.js` | Devanagari to Roman letters |
 | `js/panchang.js` | Tithi calculation (sun and moon positions, sunrise) |
+| `js/kids.js` | Bright pictures for the children's stories, built from a small kit of characters and scenery |
 | `js/drawings.js` | Drawings for the temple and pooja guides |
 | `js/ornaments.js` | The mandir's ornaments: chhatra, carved arch, flag, brass rules |
 | `js/icons-swadhyay.js` | The app's own icon pack, built from `icons/ui/*.svg` by `tools/build_icons.py` |

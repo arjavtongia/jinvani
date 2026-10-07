@@ -1,0 +1,402 @@
+{
+ "bal-chinti": [
+  {
+   "at": [
+    1
+   ],
+   "type": "drawing",
+   "drawing": "kid-chinti-1",
+   "top": true,
+   "title": {
+    "hi": "बगीचे में चींटियाँ",
+    "en": "Ants in the garden"
+   }
+  },
+  {
+   "at": [
+    2
+   ],
+   "type": "drawing",
+   "drawing": "kid-chinti-2",
+   "top": true,
+   "title": {
+    "hi": "रुको, गोलू!",
+    "en": "Stop, Golu!"
+   }
+  },
+  {
+   "at": [
+    3
+   ],
+   "type": "drawing",
+   "drawing": "kid-chinti-3",
+   "top": true,
+   "title": {
+    "hi": "चींटी को भी दर्द होता है",
+    "en": "Ants feel pain too"
+   }
+  },
+  {
+   "at": [
+    4
+   ],
+   "type": "drawing",
+   "drawing": "kid-chinti-4",
+   "top": true,
+   "title": {
+    "hi": "गोलू का प्यारा काम",
+    "en": "Golu's kind deed"
+   }
+  }
+ ],
+ "bal-paani": [
+  {
+   "at": [
+    1
+   ],
+   "type": "drawing",
+   "drawing": "kid-paani-1",
+   "top": true,
+   "title": {
+    "hi": "माँ का सफ़ेद कपड़ा",
+    "en": "Mummy's white cloth"
+   }
+  },
+  {
+   "at": [
+    2
+   ],
+   "type": "drawing",
+   "drawing": "kid-paani-2",
+   "top": true,
+   "title": {
+    "hi": "पानी के नन्हे जीव",
+    "en": "Tiny beings in the water"
+   }
+  },
+  {
+   "at": [
+    3
+   ],
+   "type": "drawing",
+   "drawing": "kid-paani-3",
+   "top": true,
+   "title": {
+    "hi": "उन्हें उनके घर वापस",
+    "en": "Back to their home"
+   }
+  },
+  {
+   "at": [
+    4
+   ],
+   "type": "drawing",
+   "drawing": "kid-paani-4",
+   "top": true,
+   "title": {
+    "hi": "रिया की नई आदत",
+    "en": "Riya's new habit"
+   }
+  }
+ ],
+ "bal-suraj": [
+  {
+   "at": [
+    1
+   ],
+   "type": "drawing",
+   "drawing": "kid-suraj-1",
+   "top": true,
+   "title": {
+    "hi": "शाम का खाना जल्दी",
+    "en": "An early dinner"
+   }
+  },
+  {
+   "at": [
+    2
+   ],
+   "type": "drawing",
+   "drawing": "kid-suraj-2",
+   "top": true,
+   "title": {
+    "hi": "आरव का प्रश्न",
+    "en": "Aarav's question"
+   }
+  },
+  {
+   "at": [
+    3
+   ],
+   "type": "drawing",
+   "drawing": "kid-suraj-3",
+   "top": true,
+   "title": {
+    "hi": "दादी ने समझाया",
+    "en": "Dadi explains"
+   }
+  },
+  {
+   "at": [
+    4
+   ],
+   "type": "drawing",
+   "drawing": "kid-suraj-4",
+   "top": true,
+   "title": {
+    "hi": "मीठी नींद",
+    "en": "Sweet sleep"
+   }
+  }
+ ],
+ "bal-sach": [
+  {
+   "at": [
+    1
+   ],
+   "type": "drawing",
+   "drawing": "kid-sach-1",
+   "top": true,
+   "title": {
+    "hi": "गेंद और गुलदान",
+    "en": "The ball and the vase"
+   }
+  },
+  {
+   "at": [
+    2
+   ],
+   "type": "drawing",
+   "drawing": "kid-sach-2",
+   "top": true,
+   "title": {
+    "hi": "अब क्या करूँ?",
+    "en": "What should I do?"
+   }
+  },
+  {
+   "at": [
+    3
+   ],
+   "type": "drawing",
+   "drawing": "kid-sach-3",
+   "top": true,
+   "title": {
+    "hi": "मोनू ने सच बताया",
+    "en": "Monu tells the truth"
+   }
+  },
+  {
+   "at": [
+    4
+   ],
+   "type": "drawing",
+   "drawing": "kid-sach-4",
+   "top": true,
+   "title": {
+    "hi": "माँ का प्यार",
+    "en": "Mummy's love"
+   }
+  }
+ ],
+ "bal-veer": [
+  {
+   "at": [
+    1
+   ],
+   "type": "drawing",
+   "drawing": "kid-veer-1",
+   "top": true,
+   "title": {
+    "hi": "राजकुमार वर्धमान",
+    "en": "Prince Vardhaman"
+   }
+  },
+  {
+   "at": [
+    2
+   ],
+   "type": "drawing",
+   "drawing": "kid-veer-2",
+   "top": true,
+   "title": {
+    "hi": "पेड़ पर बड़ा साँप",
+    "en": "A big snake on the tree"
+   }
+  },
+  {
+   "at": [
+    3
+   ],
+   "type": "drawing",
+   "drawing": "kid-veer-3",
+   "top": true,
+   "title": {
+    "hi": "वर्धमान नहीं डरे",
+    "en": "Vardhaman was not afraid"
+   }
+  },
+  {
+   "at": [
+    4
+   ],
+   "type": "drawing",
+   "drawing": "kid-veer-4",
+   "top": true,
+   "title": {
+    "hi": "\"आप महावीर हैं!\"",
+    "en": "\"You are Mahavir!\""
+   }
+  }
+ ],
+ "bal-ganna": [
+  {
+   "at": [
+    1
+   ],
+   "type": "drawing",
+   "drawing": "kid-ganna-1",
+   "top": true,
+   "title": {
+    "hi": "मुनि ऋषभदेव",
+    "en": "Muni Rishabhdev"
+   }
+  },
+  {
+   "at": [
+    2
+   ],
+   "type": "drawing",
+   "drawing": "kid-ganna-2",
+   "top": true,
+   "title": {
+    "hi": "कोई नहीं जानता था",
+    "en": "Nobody knew"
+   }
+  },
+  {
+   "at": [
+    3
+   ],
+   "type": "drawing",
+   "drawing": "kid-ganna-3",
+   "top": true,
+   "title": {
+    "hi": "श्रेयांस को याद आया",
+    "en": "Shreyans remembers"
+   }
+  },
+  {
+   "at": [
+    4
+   ],
+   "type": "drawing",
+   "drawing": "kid-ganna-4",
+   "top": true,
+   "title": {
+    "hi": "पहला आहार",
+    "en": "The first aahar"
+   }
+  }
+ ],
+ "bal-chandana": [
+  {
+   "at": [
+    1
+   ],
+   "type": "drawing",
+   "drawing": "kid-chandana-1",
+   "top": true,
+   "title": {
+    "hi": "राजकुमारी चन्दना",
+    "en": "Princess Chandana"
+   }
+  },
+  {
+   "at": [
+    2
+   ],
+   "type": "drawing",
+   "drawing": "kid-chandana-2",
+   "top": true,
+   "title": {
+    "hi": "दुख में भी मुस्कान",
+    "en": "A smile even in sorrow"
+   }
+  },
+  {
+   "at": [
+    3
+   ],
+   "type": "drawing",
+   "drawing": "kid-chandana-3",
+   "top": true,
+   "title": {
+    "hi": "भगवान महावीर आए",
+    "en": "Bhagwan Mahavir comes"
+   }
+  },
+  {
+   "at": [
+    4
+   ],
+   "type": "drawing",
+   "drawing": "kid-chandana-4",
+   "top": true,
+   "title": {
+    "hi": "बेड़ियाँ टूट गईं",
+    "en": "The chains break"
+   }
+  }
+ ],
+ "bal-bahubali": [
+  {
+   "at": [
+    1
+   ],
+   "type": "drawing",
+   "drawing": "kid-bahubali-1",
+   "top": true,
+   "title": {
+    "hi": "दो राजकुमार भाई",
+    "en": "Two prince brothers"
+   }
+  },
+  {
+   "at": [
+    2
+   ],
+   "type": "drawing",
+   "drawing": "kid-bahubali-2",
+   "top": true,
+   "title": {
+    "hi": "बिना लड़ाई का मुकाबला",
+    "en": "A contest without war"
+   }
+  },
+  {
+   "at": [
+    3
+   ],
+   "type": "drawing",
+   "drawing": "kid-bahubali-3",
+   "top": true,
+   "title": {
+    "hi": "जीतकर भी त्याग",
+    "en": "Winning, then giving up"
+   }
+  },
+  {
+   "at": [
+    4
+   ],
+   "type": "drawing",
+   "drawing": "kid-bahubali-4",
+   "top": true,
+   "title": {
+    "hi": "खड़े-खड़े ध्यान",
+    "en": "Meditating, standing still"
+   }
+  }
+ ]
+}

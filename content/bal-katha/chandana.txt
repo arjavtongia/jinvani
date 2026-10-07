@@ -1,0 +1,29 @@
+# चन्दना का दान | Chandana's gift
+# परम्परागत कथा, बच्चों के लिए आसान भाषा में; पूरी कथा इसी ऐप में: content/katha/chandanbala.txt
+# चित्र: js/kids.js
+
+@ | राजकुमारी चन्दना | Princess Chandana
+गद्य: वैशाली में चन्दना नाम की एक प्यारी राजकुमारी थी। वह बगीचे में झूला झूलती और सबसे मीठा बोलती थी।
+गद्य: एक दिन एक दुष्ट आदमी उसे उठाकर दूर ले गया, और वह अपने घर से बिछड़ गई।
+Prose: In Vaishali there lived a lovely princess named Chandana. She played on the swing in the garden and spoke sweetly to everyone.
+Prose: One day a wicked man carried her far away, and she was separated from her home.
+
+@ | दुख में भी मुस्कान | A smile even in sorrow
+गद्य: कौशाम्बी नगर में एक सेठानी को चन्दना पर शक हुआ। उसने चन्दना को बेड़ियों में बाँध दिया, और खाने को बस थोड़े-से उबले दाने दिए।
+गद्य: फिर भी चन्दना ने किसी पर गुस्सा नहीं किया। वह णमोकार मंत्र जपती रही और सोचती रही, "काश, मैं किसी मुनि को आहार दे पाती!"
+Prose: In the city of Kaushambi, a rich lady grew suspicious of Chandana. She put her in chains and gave her only a few boiled grains to eat.
+Prose: Still, Chandana was not angry with anyone. She kept chanting the Namokar mantra and thought, "If only I could offer food to a muni!"
+
+@ | भगवान महावीर आए | Bhagwan Mahavir comes
+गद्य: एक दिन भगवान महावीर, जो उस समय मुनि थे, उसी घर के सामने आए। चन्दना का मन खुशी से भर गया।
+गद्य: उसके पास जो थोड़े-से दाने थे, वही उसने बड़े प्यार से भगवान की अंजुलि में रख दिए।
+Prose: One day Bhagwan Mahavir, who was then a muni, came to that very house. Chandana's heart filled with joy.
+Prose: With great love she placed the few grains she had into the Lord's cupped hands.
+
+@ | बेड़ियाँ टूट गईं | The chains break
+गद्य: उसी पल चन्दना की बेड़ियाँ टूट गईं! आसमान से फूल बरसे। सेठानी ने माफ़ी माँगी, और चन्दना ने उसे तुरंत माफ़ कर दिया।
+गद्य: बड़ी होकर चन्दना आर्यिका बनीं, और भगवान महावीर के संघ की सब आर्यिकाओं की प्रमुख बनीं।
+Prose: That very moment, Chandana's chains broke! Flowers rained from the sky. The lady asked for forgiveness, and Chandana forgave her at once.
+Prose: When she grew up, Chandana became an aryika, and the head of all the aryikas in Bhagwan Mahavir's sangh.
+सीख: दान चीज़ के मोल से नहीं, मन के प्यार से बड़ा होता है। जो बुरा करे, उसे भी माफ़ कर दो।
+Moral: A gift is great not because of its price, but because of the love in the heart. Forgive even those who hurt you.

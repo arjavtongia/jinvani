@@ -144,6 +144,8 @@
         chitra = r.ok ? await r.json() : {};
         const rk = await fetch('content/katha/chitra.json').catch(() => null);
         if (rk && rk.ok) Object.assign(chitra, await rk.json());
+        const rb = await fetch('content/bal-katha/chitra.json').catch(() => null);
+        if (rb && rb.ok) Object.assign(chitra, await rb.json());
       } catch (e) {
         chitra = {};
       }
@@ -690,7 +692,7 @@
 
   /* A pooja or path also shows how it begins (from tools/add_openings.py), so two texts with one name can be told apart. */
   function bookRow(meta) {
-    if (meta.category === 'katha') return storyRow(meta);
+    if (meta.category === 'katha' || meta.category === 'bal-katha') return storyRow(meta);
     return chevronRow('#/book/' + meta.id, titleHtml(meta) +
       '<span class="row-sub">' + (meta.author && L(meta.author) ? esc(L(meta.author)) + ' · ' : '') + esc(countLabel(meta)) + '</span>' +
       (meta.opening ? '<span class="row-opening" translate="no" lang="' + (meta.textLang || 'hi') + '">' + esc(meta.opening) + '</span>' : ''),
@@ -728,7 +730,7 @@
     { id: 'pooja', title: 'shelfPooja', cats: ['pooja-prarambh', 'nitya-pooja', 'tirthankar-pooja', 'parv-pooja', 'visarjan', 'aarti'] },
     { id: 'path', title: 'shelfPath', cats: ['path', 'stotra'] },
     { id: 'granth', title: 'shelfGranth', cats: ['prathamanuyog', 'karananuyog', 'charananuyog', 'dravyanuyog', 'nyay', 'itihas', 'anya'] },
-    { id: 'katha', title: 'shelfKatha', cats: ['katha'] }
+    { id: 'katha', title: 'shelfKatha', cats: ['bal-katha', 'katha'] }
   ];
 
   function shelfCats(g) {
@@ -938,8 +940,27 @@
 
   /* Back from a category goes to its shelf when the shelf holds several categories, otherwise to the library. */
   function categoryParent(catId) {
+    if (catId === 'bal-katha') return { href: '#/books/katha', label: t('shelfKatha') };
     const g = GROUPS.find(x => x.cats.indexOf(catId) >= 0);
     return g && shelfCats(g).length > 1 ? { href: '#/books/group/' + g.id, label: t(g.title) } : { href: '#/books', label: t('books') };
+  }
+
+  /* ---------- Children's stories: a bright corner of the app, with pictures from js/kids.js ---------- */
+  const KID_COLORS = ['#ff5d5d', '#ff9f1c', '#2ec4b6', '#9b72ff', '#4d96ff', '#ff7eb6', '#3fae6b', '#f4a300'];
+  function kidsBannerHtml() {
+    if (!catalog.some(b => b.category === 'bal-katha')) return '';
+    return '<a class="kids-banner" href="#/books/bal-katha"><span class="kids-banner-art" aria-hidden="true">' + (typeof KIDS !== 'undefined' ? KIDS.banner() : '') + '</span>' +
+      '<span class="kids-banner-text"><b>' + esc(t('kidsTitle')) + '</b><small>' + esc(t('kidsSub')) + '</small></span>' + icon('arrow-right') + '</a>';
+  }
+  function kidsHomeHtml() {
+    const list = catalog.filter(b => b.category === 'bal-katha');
+    return '<section class="kids-hero"><div class="kids-hero-art" aria-hidden="true">' + (typeof KIDS !== 'undefined' ? KIDS.banner() : '') + '</div>' +
+      '<h1 class="kids-title">' + esc(t('kidsTitle')) + '</h1><p class="kids-sub">' + esc(t('kidsSub')) + '</p></section>' +
+      '<ul class="kids-grid">' + list.map((b, i) => '<li style="--kid:' + KID_COLORS[i % KID_COLORS.length] + '"><a class="kid-card" href="#/book/' + b.id + '">' +
+        '<span class="kid-art" aria-hidden="true">' + ((typeof SCENES !== 'undefined' && SCENES.story && SCENES.story[b.id]) || '') + '</span>' +
+        '<span class="kid-name" translate="no">' + esc(L(b.title)) + '</span>' +
+        '<span class="kid-blurb">' + esc(L(b.blurb)) + '</span>' +
+        '<span class="kid-go">' + esc(t('kidsRead')) + icon('arrow-right') + '</span></a></li>').join('') + '</ul>';
   }
 
   async function viewBooks(catId, shelfId) {
@@ -958,8 +979,9 @@
       if (!cat) return viewNotFound();
       document.title = L(cat.title) + ' · ' + t('appName');
       const up = categoryParent(cat.id);
+      if (cat.id === 'bal-katha') return backBar(up.href, up.label) + '<main class="kids">' + kidsHomeHtml() + '</main>';
       return backBar(up.href, up.label) +
-        '<main><h1 class="page-title" translate="no">' + esc(L(cat.title)) + '</h1>' + (cat.id === 'katha' ? storyListHtml() :
+        '<main><h1 class="page-title" translate="no">' + esc(L(cat.title)) + '</h1>' + (cat.id === 'katha' ? kidsBannerHtml() + storyListHtml() :
         '<ul class="rows">' + catalog.filter(b => b.category === cat.id).map(bookRow).join('') + '</ul>') + '</main>';
     }
     document.title = t('books') + ' · ' + t('appName');
@@ -1009,8 +1031,9 @@
 
     document.title = book.title.hi + ' · ' + t('appName');
     const parent = bookParent(book);
-    const story = book.category === 'katha';
-    let html = backBar(parent.href, parent.label) + '<main>' +
+    const kids = book.category === 'bal-katha';
+    const story = book.category === 'katha' || kids;
+    let html = backBar(parent.href, parent.label) + '<main' + (kids ? ' class="kids"' : '') + '>' +
       (story ? '<div class="book-cover">' + archPicHtml(book) + '</div>' : '') +
       '<div class="book-top">' + (story ? '' : coverEmblem(book)) + '<h1>' + titleHtml(book) + '</h1></div>' +
       (book.blurb ? '<p class="book-blurb">' + esc(L(book.blurb)) + '</p>' : '') +
@@ -1178,7 +1201,7 @@
       '<div class="where"><span class="where-book" translate="no" lang="hi">' + esc(whereBook) + '</span>' +
       '<span class="trail" aria-hidden="true"><i style="width:' + pct + '%"></i><b style="left:' + pct + '%"></b></span>' +
       (posText ? '<span class="where-pos">' + posText + '</span>' : '') + '</div>' +
-      '<main class="reader' + (speech.playing ? ' is-listening' : '') + '" id="verse-area">';
+      '<main class="reader' + (book.category === 'bal-katha' ? ' kids' : '') + (speech.playing ? ' is-listening' : '') + '" id="verse-area">';
 
     if (shrine) {
       html += '<article class="shrine' + (readEntering ? ' is-entering' : '') + '">' + ORN.crown(12) +

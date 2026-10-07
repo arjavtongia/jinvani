@@ -1,0 +1,29 @@
+# रिया और छना हुआ पानी | Riya and the filtered water
+# नई कहानी, इसी ऐप के लिए, छोटे बच्चों के लिए आसान भाषा में लिखी गई।
+# चित्र: js/kids.js
+
+@ | माँ का सफ़ेद कपड़ा | Mummy's white cloth
+गद्य: रिया ने देखा, माँ घड़े में पानी भरते समय उस पर एक साफ़ सफ़ेद कपड़ा रखती हैं, और पानी को कपड़े से छानकर भरती हैं।
+गद्य: "माँ, आप पानी को कपड़े से क्यों छानती हो?" रिया ने पूछा।
+Prose: Riya noticed that when Mummy fills the water pot, she puts a clean white cloth over it and pours the water through the cloth.
+Prose: "Mummy, why do you filter the water through a cloth?" Riya asked.
+
+@ | पानी के नन्हे जीव | Tiny beings in the water
+गद्य: माँ मुस्कुराईं। "बेटा, पानी में बहुत छोटे-छोटे जीव होते हैं। वे इतने छोटे हैं कि आँखों से दिखते भी नहीं।"
+गद्य: "कपड़ा उन्हें रोक लेता है, ताकि वे हमारे पेट में न जाएँ और उन्हें कोई दुख न हो। हमारा पानी भी साफ़ रहता है।"
+Prose: Mummy smiled. "Dear, water has very tiny living beings. They are so small that we cannot even see them."
+Prose: "The cloth stops them, so they do not go into our tummy and do not get hurt. And our water stays clean too."
+
+@ | उन्हें उनके घर वापस | Back to their home
+गद्य: "फिर कपड़े में रुके जीवों का क्या होता है?" रिया ने पूछा।
+गद्य: "हम कपड़े को धीरे से उसी पानी में धो देते हैं, जहाँ से पानी लिया था, ताकि वे अपने घर वापस पहुँच जाएँ," माँ ने समझाया। इसे जीवानी कहते हैं।
+Prose: "Then what happens to the little beings caught in the cloth?" Riya asked.
+Prose: "We gently rinse the cloth back into the same water we took it from, so they go back home," Mummy explained. This is called jivani.
+
+@ | रिया की नई आदत | Riya's new habit
+गद्य: रिया खुश हो गई। "तो छना पानी पीकर हम भी स्वस्थ रहते हैं, और नन्हे जीव भी बच जाते हैं!"
+गद्य: अब रिया भी पानी पीने से पहले देखती है कि पानी छना हुआ है या नहीं।
+Prose: Riya was happy. "So when we drink filtered water, we stay healthy, and the tiny beings are safe too!"
+Prose: Now Riya also checks that her water is filtered before she drinks it.
+सीख: जो जीव हमें दिखते नहीं, उनकी भी रक्षा करो। छना हुआ पानी पियो।
+Moral: Protect even the beings you cannot see. Drink filtered water.

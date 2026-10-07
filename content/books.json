@@ -4696,5 +4696,149 @@
       "en": "Text from the Jain Database, nikkyjain.github.io."
     },
     "textLang": "sa"
+  },
+  {
+    "id": "bal-chinti",
+    "file": "content/bal-katha/chinti.txt",
+    "scroll": true,
+    "category": "bal-katha",
+    "title": { "hi": "गोलू और चींटियाँ", "en": "Golu and the ants" },
+    "author": { "hi": "नई कहानी, बच्चों के लिए", "en": "A new story, for children" },
+    "unit": { "hi": "पन्ना", "en": "Page" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "चींटी को भी दर्द होता है: अहिंसा की पहली सीख", "en": "Ants feel pain too: a first lesson in ahimsa" },
+    "aliases": ["ahimsa", "ant", "ants", "chinti", "golu", "golu and the ants", "अहिंसा", "गोलू", "गोलू और चींटियाँ", "चींटी"],
+    "source": {
+      "hi": "नई कहानी, इसी ऐप के लिए छोटे बच्चों के लिए आसान हिंदी और अंग्रेज़ी में लिखी गई। चित्र इसी ऐप में बने हैं।",
+      "en": "A new story, written for this app in easy Hindi and English for young children. Pictures drawn for this app."
+    }
+  },
+  {
+    "id": "bal-paani",
+    "file": "content/bal-katha/paani.txt",
+    "scroll": true,
+    "category": "bal-katha",
+    "title": { "hi": "रिया और छना हुआ पानी", "en": "Riya and the filtered water" },
+    "author": { "hi": "नई कहानी, बच्चों के लिए", "en": "A new story, for children" },
+    "unit": { "hi": "पन्ना", "en": "Page" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "माँ पानी को कपड़े से क्यों छानती हैं?", "en": "Why does Mummy filter water through a cloth?" },
+    "aliases": ["filter", "jivani", "paani", "riya", "riya and the filtered water", "water", "जीवानी", "पानी", "रिया", "रिया और छना हुआ पानी"],
+    "source": {
+      "hi": "नई कहानी, इसी ऐप के लिए छोटे बच्चों के लिए आसान हिंदी और अंग्रेज़ी में लिखी गई। चित्र इसी ऐप में बने हैं।",
+      "en": "A new story, written for this app in easy Hindi and English for young children. Pictures drawn for this app."
+    }
+  },
+  {
+    "id": "bal-suraj",
+    "file": "content/bal-katha/suraj.txt",
+    "scroll": true,
+    "category": "bal-katha",
+    "title": { "hi": "सूरज के साथ खाना", "en": "Dinner with the sun" },
+    "author": { "hi": "नई कहानी, बच्चों के लिए", "en": "A new story, for children" },
+    "unit": { "hi": "पन्ना", "en": "Page" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "हम सूरज ढलने से पहले खाना क्यों खाते हैं?", "en": "Why do we eat before the sun goes down?" },
+    "aliases": ["aarav", "dinner with the sun", "night", "ratri bhojan", "sunset", "suraj", "आरव", "रात्रि भोजन", "सूरज", "सूरज के साथ खाना"],
+    "source": {
+      "hi": "नई कहानी, इसी ऐप के लिए छोटे बच्चों के लिए आसान हिंदी और अंग्रेज़ी में लिखी गई। चित्र इसी ऐप में बने हैं।",
+      "en": "A new story, written for this app in easy Hindi and English for young children. Pictures drawn for this app."
+    }
+  },
+  {
+    "id": "bal-sach",
+    "file": "content/bal-katha/sach.txt",
+    "scroll": true,
+    "category": "bal-katha",
+    "title": { "hi": "मोनू ने सच बोला", "en": "Monu tells the truth" },
+    "author": { "hi": "नई कहानी, बच्चों के लिए", "en": "A new story, for children" },
+    "unit": { "hi": "पन्ना", "en": "Page" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "टूटा गुलदान, और सच की ताकत", "en": "A broken vase, and the power of truth" },
+    "aliases": ["monu", "monu tells the truth", "sach", "satya", "truth", "मोनू", "मोनू ने सच बोला", "सच", "सत्य"],
+    "source": {
+      "hi": "नई कहानी, इसी ऐप के लिए छोटे बच्चों के लिए आसान हिंदी और अंग्रेज़ी में लिखी गई। चित्र इसी ऐप में बने हैं।",
+      "en": "A new story, written for this app in easy Hindi and English for young children. Pictures drawn for this app."
+    }
+  },
+  {
+    "id": "bal-veer",
+    "file": "content/bal-katha/veer.txt",
+    "scroll": true,
+    "category": "bal-katha",
+    "title": { "hi": "नन्हे वीर वर्धमान", "en": "Little brave Vardhaman" },
+    "author": { "hi": "पुराण की कथा, बच्चों के लिए", "en": "A traditional story, for children" },
+    "unit": { "hi": "पन्ना", "en": "Page" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "बालक वर्धमान, जो बड़े साँप से भी नहीं डरे", "en": "Young Vardhaman, who was not afraid even of a huge snake" },
+    "aliases": ["little brave vardhaman", "mahavir", "snake", "vardhaman", "veer", "नन्हे वीर वर्धमान", "महावीर", "वर्धमान", "वीर"],
+    "source": {
+      "hi": "परम्परागत कथा, बच्चों के लिए आसान हिंदी और अंग्रेज़ी में; पूरी कथा \"जैन कथाएँ\" में है। चित्र इसी ऐप में बने हैं।",
+      "en": "A traditional story, retold in easy Hindi and English for children; the full story is in Jain stories. Pictures drawn for this app."
+    }
+  },
+  {
+    "id": "bal-ganna",
+    "file": "content/bal-katha/ganna.txt",
+    "scroll": true,
+    "category": "bal-katha",
+    "title": { "hi": "गन्ने का मीठा रस", "en": "Sweet sugarcane juice" },
+    "author": { "hi": "पुराण की कथा, बच्चों के लिए", "en": "A traditional story, for children" },
+    "unit": { "hi": "पन्ना", "en": "Page" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "राजकुमार श्रेयांस और अक्षय तृतीया का पहला आहार", "en": "Prince Shreyans and the first aahar of Akshay Tritiya" },
+    "aliases": ["akshay tritiya", "ganna", "rishabhdev", "shreyans", "sugarcane", "sweet sugarcane juice", "अक्षय तृतीया", "गन्ना", "गन्ने का मीठा रस", "श्रेयांस"],
+    "source": {
+      "hi": "परम्परागत कथा, बच्चों के लिए आसान हिंदी और अंग्रेज़ी में; पूरी कथा \"जैन कथाएँ\" में है। चित्र इसी ऐप में बने हैं।",
+      "en": "A traditional story, retold in easy Hindi and English for children; the full story is in Jain stories. Pictures drawn for this app."
+    }
+  },
+  {
+    "id": "bal-chandana",
+    "file": "content/bal-katha/chandana.txt",
+    "scroll": true,
+    "category": "bal-katha",
+    "title": { "hi": "चन्दना का दान", "en": "Chandana's gift" },
+    "author": { "hi": "पुराण की कथा, बच्चों के लिए", "en": "A traditional story, for children" },
+    "unit": { "hi": "पन्ना", "en": "Page" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "बेड़ियों में बँधी चन्दना, और प्यार से दिए थोड़े-से दाने", "en": "Chandana in chains, and a few grains given with love" },
+    "aliases": ["chandan bala", "chandana", "chandana's gift", "chandanbala", "चंदनबाला", "चन्दनबाला", "चन्दना", "चन्दना का दान"],
+    "source": {
+      "hi": "परम्परागत कथा, बच्चों के लिए आसान हिंदी और अंग्रेज़ी में; पूरी कथा \"जैन कथाएँ\" में है। चित्र इसी ऐप में बने हैं।",
+      "en": "A traditional story, retold in easy Hindi and English for children; the full story is in Jain stories. Pictures drawn for this app."
+    }
+  },
+  {
+    "id": "bal-bahubali",
+    "file": "content/bal-katha/bahubali.txt",
+    "scroll": true,
+    "category": "bal-katha",
+    "title": { "hi": "दो भाई: भरत और बाहुबली", "en": "Two brothers: Bharat and Bahubali" },
+    "author": { "hi": "पुराण की कथा, बच्चों के लिए", "en": "A traditional story, for children" },
+    "unit": { "hi": "पन्ना", "en": "Page" },
+    "count": 4,
+    "textLang": "hi",
+    "numberMark": false,
+    "blurb": { "hi": "जीतकर भी सब छोड़ देने वाले बाहुबली", "en": "Bahubali, who won and then gave everything up" },
+    "aliases": ["bahubali", "bharat", "gommateshwar", "two brothers: bharat and bahubali", "गोम्मटेश्वर", "दो भाई: भरत और बाहुबली", "बाहुबली", "भरत"],
+    "source": {
+      "hi": "परम्परागत कथा, बच्चों के लिए आसान हिंदी और अंग्रेज़ी में; पूरी कथा \"जैन कथाएँ\" में है। चित्र इसी ऐप में बने हैं।",
+      "en": "A traditional story, retold in easy Hindi and English for children; the full story is in Jain stories. Pictures drawn for this app."
+    }
   }
 ]

@@ -1,0 +1,29 @@
+# दो भाई: भरत और बाहुबली | Two brothers: Bharat and Bahubali
+# परम्परागत कथा, बच्चों के लिए आसान भाषा में; पूरी कथा इसी ऐप में: content/katha/bahubali.txt
+# चित्र: js/kids.js
+
+@ | दो राजकुमार भाई | Two prince brothers
+गद्य: भगवान ऋषभदेव के दो बेटे थे: भरत और बाहुबली। बाहुबली बहुत बलवान थे।
+गद्य: पिता ने भरत को अयोध्या का राज्य दिया, और बाहुबली को पोदनपुर का।
+Prose: Bhagwan Rishabhdev had two sons, Bharat and Bahubali. Bahubali was very strong.
+Prose: Their father gave Bharat the kingdom of Ayodhya, and Bahubali the kingdom of Podanpur.
+
+@ | बिना लड़ाई का मुकाबला | A contest without war
+गद्य: एक दिन दोनों भाइयों में झगड़ा हो गया। मंत्रियों ने कहा, "सैनिकों को लड़ाने के बजाय आप दोनों ही आपस में मुकाबला कर लीजिए।"
+गद्य: पहले बिना पलक झपकाए देखने का मुकाबला हुआ, फिर पानी उछालने का, फिर कुश्ती का। बाहुबली तीनों में जीत गए!
+Prose: One day the two brothers had a quarrel. The ministers said, "Instead of making soldiers fight, you two can have a contest between yourselves."
+Prose: First came a staring contest without blinking, then a water-splashing contest, then wrestling. Bahubali won all three!
+
+@ | जीतकर भी त्याग | Winning, then giving up
+गद्य: जीतते ही बाहुबली ने सोचा, "राज्य के लिए भाई से लड़ना ठीक नहीं। यह सब तो एक दिन छूट ही जाएगा।"
+गद्य: उन्होंने अपना मुकुट उतारकर रख दिया, भाई से माफ़ी माँगी, और मुनि बन गए।
+Prose: As soon as he won, Bahubali thought, "Fighting my brother for a kingdom is not right. All this will be left behind one day anyway."
+Prose: He took off his crown, asked his brother to forgive him, and became a muni.
+
+@ | खड़े-खड़े ध्यान | Meditating, standing still
+गद्य: बाहुबली एक जगह खड़े होकर ध्यान करने लगे, पूरे एक साल तक! उनके पैरों के पास बाँबियाँ बन गईं, और बेलें उनकी बाहों पर चढ़ गईं।
+गद्य: जब भरत ने आकर उन्हें प्रणाम किया, तो उनके मन का आख़िरी विचार भी मिट गया, और उन्हें केवलज्ञान हो गया। आज भी श्रवणबेलगोला में उनकी बहुत बड़ी प्रतिमा है।
+Prose: Bahubali stood in one place and meditated, for a whole year! Anthills grew near his feet, and vines climbed up his arms.
+Prose: When Bharat came and bowed to him, the last thought in his mind faded away, and he attained kevalgyan. Even today his giant statue stands at Shravanabelagola.
+सीख: सच्ची जीत दूसरों को हराने में नहीं, अपने गुस्से और घमंड को जीतने में है।
+Moral: True victory is not in defeating others, but in conquering our own anger and pride.

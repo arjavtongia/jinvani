@@ -383,3 +383,13 @@ The Jain Prateek (the emblem adopted by all Jain traditions in 1974: the loka ou
 - **Don't** set commentary, meanings or instructions in Vesper Libre, or scripture in Hind.
 - **Don't** add looping or decorative animation to app screens.
 - **Don't** restyle the opening darshan or carry its splash colours, font or tracked uppercase line into the app.
+
+## The children's corner (बच्चों की कहानियाँ)
+
+A deliberate exception to the mandir: the children's stories (`category: bal-katha`) are bright, round and friendly, so a child feels the corner is theirs. It is scoped by `main.kids` and never leaks into the rest of the app.
+
+- **Palette:** sky blue to warm cream background (night: deep indigo to violet), cards in white with one bright colour each (red #ff5d5d, orange #ff9f1c, teal #2ec4b6, violet #9b72ff, blue #4d96ff, pink #ff7eb6, green #3fae6b, amber #f4a300), shown as a 3px border with a solid 5px drop of the same colour.
+- **Shapes:** large radii (1.3–1.6rem), pill buttons, pressed states that sink by 3px; titles in Vesper Libre in coral red with a yellow offset shadow on the corner's main heading.
+- **Pictures:** `js/kids.js` draws every page in a 320×200 box from a small kit (children with big shining eyes and rosy cheeks, Dadi, Mummy, princes, a shining muni with his pichhi, ants, birds, butterflies, a smiling sun, rainbows, flowers, a little temple). Munis and Tirthankars are drawn simply and with respect: calm faces, a soft halo, no detail of the body. Pictures sit in round frames with an amber border; the brass arch is hidden here.
+- **Reading:** a star before the story title, a lilac pill for each page's title, body text at 1.12rem with generous line height, and the lesson in a dashed amber card between two gold stars.
+

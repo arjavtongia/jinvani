@@ -1,0 +1,29 @@
+# सूरज के साथ खाना | Dinner with the sun
+# नई कहानी, इसी ऐप के लिए, छोटे बच्चों के लिए आसान भाषा में लिखी गई।
+# चित्र: js/kids.js
+
+@ | शाम का खाना जल्दी | An early dinner
+गद्य: आरव के घर में सब लोग शाम को सूरज ढलने से पहले खाना खा लेते हैं।
+गद्य: आज भी सूरज नारंगी हो रहा था, और पूरा परिवार साथ बैठकर खाना खा रहा था।
+Prose: In Aarav's home, everyone eats dinner in the evening, before the sun goes down.
+Prose: Today too the sun was turning orange, and the whole family was eating together.
+
+@ | आरव का प्रश्न | Aarav's question
+गद्य: आरव ने पूछा, "हम रात को खाना क्यों नहीं खाते? मेरे दोस्त तो रात को खाते हैं।"
+गद्य: उसे याद आया, रात में बल्ब के चारों ओर कितने छोटे-छोटे कीड़े उड़ते हैं!
+Prose: Aarav asked, "Why do we not eat at night? My friends eat at night."
+Prose: He remembered how many tiny insects fly around the bulb at night!
+
+@ | दादी ने समझाया | Dadi explains
+गद्य: दादी बोलीं, "रात में बहुत से छोटे जीव निकलते हैं। अँधेरे में वे खाने में गिर सकते हैं, और हमें दिखेंगे भी नहीं। इसलिए हम दिन में ही खाते हैं, ताकि किसी जीव को दुख न हो।"
+गद्य: "देखो, चिड़ियाँ भी शाम होते ही अपने घोंसले में चली जाती हैं। और जल्दी खाने से खाना अच्छे से पचता भी है।"
+Prose: Dadi said, "At night many tiny creatures come out. In the dark they can fall into our food, and we will not even see them. So we eat during the day, so that no creature gets hurt."
+Prose: "Look, even the birds go home to their nests when evening comes. And eating early helps our food digest well."
+
+@ | मीठी नींद | Sweet sleep
+गद्य: उस रात आरव का पेट हल्का था, और उसे बहुत मीठी नींद आई।
+गद्य: आरव ने तय किया, "अब से मैं भी सूरज के साथ खाना खाऊँगा!"
+Prose: That night Aarav's tummy felt light, and he slept very sweetly.
+Prose: Aarav decided, "From now on, I will eat with the sun too!"
+सीख: सूरज ढलने से पहले भोजन करो। इससे जीवों की रक्षा होती है और हम स्वस्थ रहते हैं।
+Moral: Eat before the sun sets. It protects tiny beings and keeps us healthy.

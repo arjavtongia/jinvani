@@ -745,6 +745,65 @@ input:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
 .scroll-cue[hidden] { display: none; }
 .scroll-cue:hover { color: var(--text); }
 
+/* ---------- Children's stories: bright, round and friendly (pictures in js/kids.js) ---------- */
+
+body:has(main.kids) { background: linear-gradient(180deg, #c6ebff 0, #fff8e6 26rem, #fff8e6 100%); }
+body:has(main.kids)::before { display: none; }
+:root[data-theme="night"] body:has(main.kids) { background: linear-gradient(180deg, #202b63 0, #2a2350 30rem, #231d42 100%); }
+.kids { --kid-ink: #3a2b24; --kid-soft: #6b5e57; --kid-card: #ffffff; }
+:root[data-theme="night"] .kids { --kid-ink: #f6f1ff; --kid-soft: #cfc6e8; --kid-card: #2f2a55; }
+
+.kids-banner { display: flex; align-items: center; gap: 0.8rem; margin: 0 0 1.4rem; padding: 0.6rem 0.9rem 0.6rem 0.6rem; border-radius: 1.3rem; background: linear-gradient(135deg, #fff1b8, #ffd9ec); border: 3px solid #ff9f1c; box-shadow: 0 5px 0 #ff9f1c; color: #3a2b24; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+.kids-banner:active { transform: translateY(3px); box-shadow: 0 2px 0 #ff9f1c; }
+.kids-banner-art { flex: none; width: 7.2rem; }
+.kids-banner-art svg { display: block; width: 100%; height: auto; border-radius: 0.9rem; }
+.kids-banner-text { flex: 1; display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.kids-banner-text b { font: 700 1.12rem/1.25 var(--font-head); color: #e8433b; }
+.kids-banner-text small { font-size: var(--fs-sm); line-height: 1.4; font-weight: 600; color: #5a4a8a; }
+.kids-banner > .icon { flex: none; color: #ff9f1c; }
+
+.kids-hero { margin: 0.2rem 0 1.2rem; text-align: center; }
+.kids-hero-art svg { display: block; width: 100%; height: auto; border-radius: 1.6rem; border: 3px solid #ffb703; box-shadow: 0 6px 0 #ffb703; }
+.kids-title { margin: 1.1rem 0 0.25rem; font: 900 2rem/1.2 var(--font-head); color: #ff5d5d; text-shadow: 2px 2px 0 #ffe066; }
+.kids-sub { margin: 0; font-weight: 600; color: #6a4fc2; }
+:root[data-theme="night"] .kids-sub { color: #cdbcff; }
+.kids-grid { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 0.85rem; margin: 0; padding: 0; }
+@media (max-width: 380px) { .kids-grid { grid-template-columns: 1fr; } }
+@media (min-width: 700px) { .kids-grid { grid-template-columns: repeat(3, 1fr); } }
+.kid-card { display: flex; flex-direction: column; height: 100%; overflow: hidden; border-radius: 1.3rem; background: var(--kid-card); border: 3px solid var(--kid); box-shadow: 0 5px 0 var(--kid); color: var(--kid-ink); text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+.kid-card:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--kid); }
+.kid-art svg { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; }
+.kid-name { padding: 0.6rem 0.75rem 0; font: 700 1.05rem/1.3 var(--font-head); }
+.kid-blurb { flex: 1; padding: 0.25rem 0.75rem 0; font-size: var(--fs-sm); line-height: 1.45; color: var(--kid-soft); }
+.kid-go { display: inline-flex; align-items: center; gap: 0.3rem; align-self: flex-start; margin: 0.65rem 0.75rem 0.8rem; padding: 0.3rem 0.9rem; border-radius: 999px; background: var(--kid); color: #fff; font-weight: 700; font-size: var(--fs-sm); }
+.kid-go .icon { width: 1em; height: 1em; color: #fff; }
+
+/* A children's book page and reader: pictures in round frames, a coloured tag for each page, big friendly text. */
+.kids .arch-pic .pic { -webkit-mask: none; mask: none; border-radius: 1.4rem; overflow: hidden; border: 3px solid #ffb703; box-shadow: 0 6px 0 #ffb703; }
+.kids .arch-pic .pic-frame { display: none; }
+.kids h1 .title, .kids .book-top h1 { color: #e8433b; }
+:root[data-theme="night"] .kids h1 .title { color: #ff8a80; }
+.kids .btn-primary { background: #ff5d5d; border-color: #ff5d5d; box-shadow: 0 4px 0 #c93c3c; }
+.kids .page-head .chhatra { display: none; }
+.kids .page-head h1 { color: #e8433b; }
+:root[data-theme="night"] .kids .page-head h1 { color: #ff8a80; }
+.kids .page-head h1::before { content: ''; display: inline-block; width: 1.1em; height: 1.1em; margin-right: 0.35em; vertical-align: -0.12em; background: #ffc928; clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.kids .topic { display: inline-block; margin: 1.2rem 0 0.7rem; padding: 0.3rem 1rem; border-radius: 999px; background: #e9e1ff; color: #5a3fc0; font: 700 1.05rem/1.4 var(--font-head); }
+:root[data-theme="night"] .kids .topic { background: #463a8a; color: #efe9ff; }
+.kids .scene { margin: 0.4rem 0 1rem; }
+.kids .scene .crown, .kids .scene .sides, .kids .scene .plinth { display: none; }
+.kids .scene-niche { overflow: hidden; border-radius: 1.5rem; border: 4px solid #ffb703; box-shadow: 0 6px 0 #ff9f1c; }
+.kids .scene-body { padding: 0; background: none; }
+.kids .scene-body svg { display: block; width: 100%; height: auto; }
+.kids .prose p { font-size: 1.12rem; line-height: 1.95; color: var(--kid-ink); }
+.kids .moral { margin: 1.6rem 0 0.6rem; padding: 1rem 1.1rem 1.1rem; border-radius: 1.4rem; background: #fff4bf; border: 3px dashed #ffb703; }
+:root[data-theme="night"] .kids .moral { background: #3d3566; border-color: #ffc928; }
+.kids .moral h2 { color: #e8433b; }
+.kids .moral h2::before, .kids .moral h2::after { content: ''; flex: none; width: 1.3em; height: 1.3em; max-width: none; border: 0; background: #ffc928; clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+.kids .moral p { color: var(--kid-ink); }
+body:has(main.kids) .reader-bar { border-top-color: #ffb703; }
+body:has(main.kids) .reader-bar .btn-primary { background: #ff5d5d; border-color: #ff5d5d; }
+
 /* ---------- Ask ---------- */
 
 .ask-intro { margin: -0.4rem 0 1rem; color: var(--muted); }
