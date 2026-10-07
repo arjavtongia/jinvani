@@ -10,7 +10,7 @@ const LANGS = [
 
 const STRINGS = {
   hi: {
-    appName: 'जिनवाणी',
+    appName: 'स्वाध्याय',
     greeting: 'जय जिनेन्द्र',
     chooseLang: 'भाषा चुनें',
     changeLater: 'बाद में सेटिंग में बदल सकते हैं',
@@ -80,7 +80,7 @@ const STRINGS = {
     yes: 'हाँ',
     no: 'नहीं',
     install: 'फ़ोन में ऐप जोड़ें',
-    installDesc: 'मुख्य स्क्रीन पर जिनवाणी का निशान आ जाएगा, और ऐप बिना इंटरनेट के भी चलेगा।',
+    installDesc: 'मुख्य स्क्रीन पर स्वाध्याय का निशान आ जाएगा, और ऐप बिना इंटरनेट के भी चलेगा।',
     installIos: 'iPhone पर: नीचे "Share" बटन दबाएँ, फिर "Add to Home Screen" चुनें।',
     installed: 'ऐप फ़ोन में जुड़ा हुआ है',
     lock: 'सेटिंग लॉक',
@@ -141,7 +141,7 @@ const STRINGS = {
     share: 'साझा करें',
     copied: 'पाठ कॉपी हो गया। अब WhatsApp या संदेश में चिपकाएँ।',
     copyFailed: 'कॉपी नहीं हो पाया। पाठ को दबाकर रखें और "Copy" चुनें।',
-    shareFrom: 'जिनवाणी ऐप से',
+    shareFrom: 'स्वाध्याय ऐप से',
     orPick: 'या कोई ग्रंथ चुनें',
     seeBooks: 'ग्रंथ देखें',
     swipeHint: 'पन्ना बदलने के लिए स्क्रीन पर उँगली बाएँ भी सरका सकते हैं',
@@ -158,7 +158,7 @@ const STRINGS = {
     partNames: {}
   },
   en: {
-    appName: 'Jinvani',
+    appName: 'Swadhyay',
     greeting: 'Jai Jinendra',
     chooseLang: 'Choose language',
     changeLater: 'You can change this later in Settings',
@@ -228,7 +228,7 @@ const STRINGS = {
     yes: 'Yes',
     no: 'No',
     install: 'Add app to phone',
-    installDesc: 'Puts a Jinvani icon on the home screen, and the app works without internet.',
+    installDesc: 'Puts a Swadhyay icon on the home screen, and the app works without internet.',
     installIos: 'On iPhone: tap the "Share" button at the bottom, then choose "Add to Home Screen".',
     installed: 'The app is on this phone',
     lock: 'Settings lock',
@@ -289,7 +289,7 @@ const STRINGS = {
     share: 'Share',
     copied: 'Text copied. Paste it in WhatsApp or a message.',
     copyFailed: 'Could not copy. Press and hold the text and choose "Copy".',
-    shareFrom: 'From the Jinvani app',
+    shareFrom: 'From the Swadhyay app',
     orPick: 'Or pick a book',
     seeBooks: 'See the books',
     swipeHint: 'You can also swipe left on the screen to turn the page',

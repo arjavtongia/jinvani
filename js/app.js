@@ -1,14 +1,15 @@
 /*
- * Jinvani — a simple, easy-to-read app for Jain scriptures, pooja and the Jain calendar.
+ * Swadhyay — a simple, easy-to-read app for Jain scriptures, pooja and the Jain calendar.
  * Plain JavaScript, no build step. Screens are chosen by the address
  * after "#", for example #/read/bhaktamar/12.
  */
 (function () {
   'use strict';
 
-  const REPO_URL = 'https://github.com/arjavtongia/jinvani';
-  const APP_URL = 'https://arjavtongia.github.io/jinvani/';
-  const STORE_KEY = 'jinvani.v1';
+  const REPO_URL = 'https://github.com/arjavtongia/swadhyay';
+  const APP_URL = 'https://arjavtongia.github.io/swadhyay/';
+  const STORE_KEY = 'swadhyay.v1';
+  const OLD_STORE_KEY = 'jinvani.v1'; // before the rename; read once so saved data carries over
   const FONT_STEPS = [17, 19, 21, 24, 27, 31];
   const RATES = { slow: 0.7, normal: 0.9, fast: 1.1 };
   const MEANING_LABELS = ['अन्वयार्थ', 'अर्थ', 'भावार्थ', 'विशेषार्थ', 'विशेष', 'Meaning'];
@@ -31,7 +32,7 @@
 
   function loadState() {
     try {
-      const raw = localStorage.getItem(STORE_KEY);
+      const raw = localStorage.getItem(STORE_KEY) || localStorage.getItem(OLD_STORE_KEY);
       if (raw) return Object.assign({}, DEFAULTS, JSON.parse(raw));
     } catch (e) { /* private mode or blocked storage: use defaults */ }
     return Object.assign({}, DEFAULTS);
@@ -710,7 +711,7 @@
   }
 
   function viewWelcome() {
-    document.title = 'जिनवाणी · Jinvani';
+    document.title = 'स्वाध्याय · Swadhyay';
     return '<main class="welcome">' +
       '<p class="welcome-greet" translate="no" lang="hi">जय जिनेन्द्र</p>' +
       '<h1 class="welcome-q"><span translate="no" lang="hi">भाषा चुनें</span><span translate="no" lang="en">Choose language</span></h1>' +

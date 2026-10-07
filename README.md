@@ -1,8 +1,8 @@
-# जिनवाणी · Jinvani
+# स्वाध्याय · Swadhyay
 
 Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, easy-to-read Hindi and English. For everyone, with large text that also suits elders.
 
-**Open the app:** https://arjavtongia.github.io/jinvani/
+**Open the app:** https://arjavtongia.github.io/swadhyay/
 
 ## What it does
 
