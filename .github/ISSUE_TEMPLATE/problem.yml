@@ -1,0 +1,21 @@
+name: कुछ ठीक से नहीं चल रहा · Something isn't working
+description: कोई बटन, पन्ना, आवाज़ या तिथि ठीक नहीं · A button, screen, read-aloud or the tithi isn't right
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: क्या हुआ · What happened
+      description: क्या करने पर क्या हुआ, और क्या होना चाहिए था · What you did, what happened, and what you expected
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: फ़ोन और ब्राउज़र · Phone and browser
+      placeholder: "जैसे: Android, Chrome · e.g. iPhone, Safari"
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: स्क्रीनशॉट (यदि हो) · Screenshot, if you can
+      description: यहाँ चित्र खींचकर छोड़ें · Drag an image here

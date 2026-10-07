@@ -1,0 +1,16 @@
+name: सुझाव · Suggestion
+description: कोई पूजा, पाठ या सुविधा जोड़ें · Add a pooja, a paath or a feature
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: आपका सुझाव · Your suggestion
+      description: क्या जोड़ा जाए, और इससे किसे मदद मिलेगी · What should be added, and who it would help
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: पाठ का स्रोत (यदि नया पाठ है) · Source of the text, for a new text
+      description: पुस्तक या प्रकाशक, ताकि पाठ का मिलान हो सके · The book or publisher, so the text can be checked

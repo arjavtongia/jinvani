@@ -1,0 +1,42 @@
+name: पाठ में भूल · Mistake in a text
+description: कोई शब्द, पंक्ति, अर्थ या क्रमांक गलत है · A word, line, meaning or verse number is wrong
+title: "पाठ में भूल: "
+labels: ["text-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        भूल बताने के लिए धन्यवाद। हर सुधार सबके लिए ऐप को बेहतर बनाता है।
+        Thank you for reporting it. Every correction makes the app better for everyone.
+  - type: input
+    id: book
+    attributes:
+      label: ग्रंथ या पूजा का नाम · Book or pooja
+      placeholder: "जैसे: भक्तामर स्तोत्र · e.g. Bhaktamar Stotra"
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: कहाँ · Where
+      description: श्लोक, सूत्र या चरण का क्रमांक, जो ऊपर दिखता है (जैसे "7 / 48") · The verse, sutra or step number shown at the top of the screen (like "7 / 48")
+      placeholder: "जैसे: श्लोक 7 · e.g. verse 7"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: अभी क्या लिखा है · What it says now
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: सही क्या होना चाहिए · What it should say
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: स्रोत (यदि हो) · Source, if you have one
+      description: पुस्तक, प्रकाशक या पृष्ठ, जिससे मिलान किया · The book, publisher or page you checked against
