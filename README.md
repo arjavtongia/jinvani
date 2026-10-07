@@ -1,6 +1,6 @@
 # जिनवाणी · Jinvani
 
-Jain scriptures in large, easy-to-read text, made for elders.
+Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, easy-to-read Hindi and English. For everyone, with large text that also suits elders.
 
 **Open the app:** https://arjavtongia.github.io/jinvani/
 

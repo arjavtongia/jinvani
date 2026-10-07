@@ -1,5 +1,5 @@
 /*
- * Jinvani — a simple reader for Jain scriptures, made for elders.
+ * Jinvani — a simple, easy-to-read app for Jain scriptures, pooja and the Jain calendar.
  * Plain JavaScript, no build step. Screens are chosen by the address
  * after "#", for example #/read/bhaktamar/12.
  */
