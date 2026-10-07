@@ -1,0 +1,944 @@
+[
+  {
+    "id": "ratnatraya",
+    "q": {
+      "hi": "रत्नत्रय क्या है?",
+      "en": "What is ratnatraya, the three jewels?"
+    },
+    "also": [
+      "three jewels",
+      "teen ratna",
+      "samyag darshan gyan charitra",
+      "मोक्ष का मार्ग क्या है",
+      "path to liberation"
+    ],
+    "a": {
+      "hi": "सम्यग्दर्शन (सच्ची श्रद्धा), सम्यग्ज्ञान (सच्चा ज्ञान) और सम्यक्चारित्र (सच्चा आचरण), ये तीनों मिलकर रत्नत्रय कहलाते हैं। तत्त्वार्थसूत्र का पहला सूत्र कहता है कि ये तीनों साथ मिलकर ही मोक्ष का मार्ग हैं; कोई एक अकेला नहीं।",
+      "en": "Samyag darshan (right faith), samyag gyan (right knowledge) and samyak charitra (right conduct) together are called ratnatraya, the three jewels. The very first sutra of the Tattvarth Sutra says that these three, together and not one alone, are the path to liberation."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "सम्यग्दर्शनज्ञानचारित्राणि",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "samyag-darshan",
+    "q": {
+      "hi": "सम्यग्दर्शन क्या है?",
+      "en": "What is samyag darshan, right faith?"
+    },
+    "also": [
+      "right faith",
+      "samyaktva",
+      "सम्यक्त्व"
+    ],
+    "a": {
+      "hi": "जीव आदि तत्त्वों का जैसा स्वरूप है, उस पर सच्ची श्रद्धा सम्यग्दर्शन है। यह रत्नत्रय का पहला रत्न है; इसके बिना ज्ञान और आचरण भी सम्यक् नहीं कहलाते।",
+      "en": "Samyag darshan is true faith in the tattvas, the realities such as the soul, as they really are. It is the first of the three jewels; without it, knowledge and conduct are not called right."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "तत्त्वार्थश्रद्धानं",
+        "pos": 2
+      }
+    ]
+  },
+  {
+    "id": "seven-tattvas",
+    "q": {
+      "hi": "सात तत्त्व कौन से हैं?",
+      "en": "What are the seven tattvas?"
+    },
+    "also": [
+      "saat tattva",
+      "seven realities",
+      "7 tattva",
+      "jeev ajeev asrav bandh"
+    ],
+    "a": {
+      "hi": "सात तत्त्व हैं: जीव, अजीव, आस्रव (कर्मों का आना), बन्ध (कर्मों का आत्मा से बँधना), संवर (कर्मों का आना रुकना), निर्जरा (बँधे कर्मों का झड़ना) और मोक्ष (सब कर्मों से पूर्ण छुटकारा)। इन्हें ठीक-ठीक जानना और मानना ही सम्यग्दर्शन का आधार है।",
+      "en": "The seven tattvas are: jiva (soul), ajiva (non-soul), asrav (the inflow of karma), bandh (karma binding to the soul), samvar (stopping the inflow), nirjara (shedding bound karma) and moksha (complete freedom from all karma). Knowing and accepting them rightly is the basis of right faith."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "जीवाजीवास्रव",
+        "pos": 4
+      }
+    ]
+  },
+  {
+    "id": "jiva",
+    "q": {
+      "hi": "जीव या आत्मा का लक्षण क्या है?",
+      "en": "What is the soul (jiva) in Jainism?"
+    },
+    "also": [
+      "atma kya hai",
+      "आत्मा क्या है",
+      "soul",
+      "jeev ka lakshan"
+    ],
+    "a": {
+      "hi": "तत्त्वार्थसूत्र के अनुसार जीव का लक्षण उपयोग है, अर्थात जानना और देखना। हर जीव अपने में पूर्ण और स्वतंत्र है; कर्मों के कारण वह संसार में घूमता है, और कर्मों से छूटकर वही परमात्मा बनता है।",
+      "en": "The Tattvarth Sutra says the mark of the soul is upayoga, the capacity to know and to see. Every soul is complete and independent in itself; karma keeps it wandering through births, and freed from karma the same soul becomes paramatma, the supreme self."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "उपयोगो लक्षणम्",
+        "pos": 41
+      }
+    ]
+  },
+  {
+    "id": "six-dravyas",
+    "q": {
+      "hi": "छह द्रव्य कौन से हैं?",
+      "en": "What are the six dravyas (substances)?"
+    },
+    "also": [
+      "chhah dravya",
+      "six substances",
+      "6 dravya",
+      "dharma adharma akash pudgal kaal"
+    ],
+    "a": {
+      "hi": "लोक छह द्रव्यों से बना है: जीव, पुद्गल (जड़ पदार्थ), धर्म (गति में सहायक), अधर्म (ठहरने में सहायक), आकाश (स्थान देने वाला) और काल (परिवर्तन में सहायक)। इनमें केवल जीव चेतन है; बाकी पाँच अजीव हैं।",
+      "en": "The universe is made of six substances: jiva (souls), pudgal (matter), dharma (the medium of motion), adharma (the medium of rest), akash (space) and kaal (time). Only jiva is conscious; the other five are non-living."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "अजीवकाया",
+        "pos": 168
+      },
+      {
+        "book": "dravyasangrah",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "parasparopagraho",
+    "q": {
+      "hi": "परस्परोपग्रहो जीवानाम् का अर्थ क्या है?",
+      "en": "What does Parasparopagraho Jivanam mean?"
+    },
+    "also": [
+      "jain motto",
+      "jain symbol motto",
+      "जैन प्रतीक",
+      "jain prateek",
+      "jain emblem"
+    ],
+    "a": {
+      "hi": "यह तत्त्वार्थसूत्र का सूत्र है: जीव एक-दूसरे का उपकार करते हैं, अर्थात सब जीव एक-दूसरे पर आश्रित हैं। 1974 में सभी जैन परम्पराओं द्वारा अपनाए गए जैन प्रतीक के नीचे यही वाक्य लिखा जाता है; स्वाध्याय ऐप का चिह्न भी यही प्रतीक है।",
+      "en": "It is a sutra of the Tattvarth Sutra: souls render service to one another, that is, all living beings depend on each other. It is written beneath the Jain emblem adopted by all Jain traditions in 1974, the emblem that is also this app's icon."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "परस्परोपग्रहो",
+        "pos": 188
+      }
+    ]
+  },
+  {
+    "id": "five-vows",
+    "q": {
+      "hi": "पाँच व्रत कौन से हैं?",
+      "en": "What are the five vows of Jainism?"
+    },
+    "also": [
+      "panch vrat",
+      "five great vows",
+      "anuvrat mahavrat",
+      "अणुव्रत महाव्रत",
+      "ahimsa satya achaurya brahmacharya aparigraha"
+    ],
+    "a": {
+      "hi": "हिंसा, झूठ, चोरी, अब्रह्म (कुशील) और परिग्रह से विरक्त होना व्रत है। इस प्रकार पाँच व्रत हैं: अहिंसा, सत्य, अचौर्य, ब्रह्मचर्य और अपरिग्रह। गृहस्थ इन्हें आंशिक रूप में अणुव्रत के रूप में पालते हैं, और मुनि पूर्ण रूप में महाव्रत के रूप में।",
+      "en": "A vow is turning away from violence, falsehood, stealing, unchastity and possessiveness. So the five vows are ahimsa, satya, achaurya, brahmacharya and aparigraha. Householders keep them partially, as anuvrat; munis keep them completely, as mahavrat."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "हिंसानृतस्तेयाब्रह्मपरिग्रहेभ्यो",
+        "pos": 237
+      },
+      {
+        "book": "tattvarth-sutra",
+        "find": "देशसर्वतो",
+        "pos": 238
+      }
+    ]
+  },
+  {
+    "id": "ahimsa",
+    "q": {
+      "hi": "अहिंसा का क्या अर्थ है?",
+      "en": "What does ahimsa mean in Jainism?"
+    },
+    "also": [
+      "non violence",
+      "nonviolence",
+      "hinsa kya hai",
+      "हिंसा क्या है"
+    ],
+    "a": {
+      "hi": "प्रमाद (असावधानी) के वश किसी भी जीव के प्राणों को कष्ट पहुँचाना हिंसा है, और उससे बचना अहिंसा। जैन धर्म में अहिंसा केवल शरीर से नहीं, मन और वचन से भी पालनी होती है, और राग-द्वेष का भाव अपने आप में हिंसा माना गया है।",
+      "en": "Harming the life of any being through carelessness is himsa, and refraining from it is ahimsa. In Jain dharma ahimsa is kept in thought and speech as well as deed, and feelings of attachment and aversion are themselves counted as himsa."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "प्रमत्तयोगात्प्राणव्यपरोपणं",
+        "pos": 249
+      },
+      {
+        "book": "purusharthasiddhyupay",
+        "find": "यत्खलुकषाययोगात्",
+        "pos": 42
+      }
+    ]
+  },
+  {
+    "id": "eight-karmas",
+    "q": {
+      "hi": "आठ कर्म कौन से हैं?",
+      "en": "What are the eight karmas?"
+    },
+    "also": [
+      "aath karma",
+      "ashta karma",
+      "8 karma",
+      "karma kya hai",
+      "कर्म क्या है",
+      "what is karma"
+    ],
+    "a": {
+      "hi": "जैन दर्शन में कर्म सूक्ष्म पुद्गल हैं जो राग-द्वेष के भावों से आत्मा से बँध जाते हैं। उनके आठ मूल भेद हैं: ज्ञानावरण, दर्शनावरण, वेदनीय, मोहनीय, आयु, नाम, गोत्र और अन्तराय। इनमें मोहनीय कर्म सबसे प्रबल माना गया है।",
+      "en": "In Jain thought, karma is subtle matter that binds to the soul through attachment and aversion. It has eight main kinds: gyanavaran (obscuring knowledge), darshanavaran (obscuring perception), vedaniya (pleasure and pain), mohaniya (delusion), ayu (lifespan), naam (body and form), gotra (status) and antaray (obstruction). Mohaniya is held to be the strongest."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "ज्ञानदर्शनावरणवेदनीय",
+        "pos": 279
+      }
+    ]
+  },
+  {
+    "id": "moksha",
+    "q": {
+      "hi": "मोक्ष क्या है?",
+      "en": "What is moksha?"
+    },
+    "also": [
+      "liberation",
+      "mukti",
+      "siddha",
+      "सिद्ध",
+      "nirvana kya hai"
+    ],
+    "a": {
+      "hi": "बन्ध के कारणों के न रहने से और निर्जरा से सब कर्मों का पूरी तरह छूट जाना मोक्ष है। मुक्त आत्मा सिद्ध कहलाती है; वह लोक के शिखर पर सिद्धशिला पर अनन्त ज्ञान, दर्शन, सुख और वीर्य में सदा स्थित रहती है और फिर कभी जन्म नहीं लेती।",
+      "en": "Moksha is the complete release from all karma, when the causes of bondage are gone and bound karma has been shed. The freed soul is called a siddha; it rests forever at the summit of the universe, in infinite knowledge, perception, bliss and energy, and is never born again."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "कृत्स्नकर्म",
+        "pos": 350
+      }
+    ]
+  },
+  {
+    "id": "ten-dharmas",
+    "q": {
+      "hi": "दस धर्म कौन से हैं?",
+      "en": "What are the ten dharmas of Das Lakshan?"
+    },
+    "also": [
+      "das lakshan dharma",
+      "dashlakshan",
+      "uttam kshama",
+      "उत्तम क्षमा",
+      "ten virtues",
+      "paryushan"
+    ],
+    "a": {
+      "hi": "दस धर्म हैं: उत्तम क्षमा, मार्दव (विनम्रता), आर्जव (सरलता), शौच (लोभ से मुक्ति), सत्य, संयम, तप, त्याग, आकिंचन्य (कुछ भी मेरा नहीं) और ब्रह्मचर्य। दिगम्बर परम्परा में भाद्रपद शुक्ल पंचमी से चतुर्दशी तक दशलक्षण पर्व में हर दिन एक धर्म की आराधना होती है।",
+      "en": "The ten dharmas are supreme forgiveness, humility, straightforwardness, purity (freedom from greed), truth, self-restraint, austerity, renunciation, non-possession and celibacy. In the Digambar tradition, Das Lakshan Parva, from Bhadrapad Shukla Panchami to Chaturdashi, honours one of them each day."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "उत्तमक्षमा",
+        "pos": 307
+      },
+      {
+        "book": "dashlakshan-pooja",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "kshamavani",
+    "q": {
+      "hi": "क्षमावाणी क्या है?",
+      "en": "What is Kshamavani?"
+    },
+    "also": [
+      "micchami dukkadam",
+      "मिच्छामि दुक्कडम्",
+      "kshamavani parv",
+      "forgiveness day"
+    ],
+    "a": {
+      "hi": "दशलक्षण पर्व के बाद, आश्विन कृष्ण प्रतिपदा को क्षमावाणी पर्व मनाया जाता है। इस दिन सब एक-दूसरे से जाने-अनजाने में हुई भूलों के लिए हृदय से क्षमा माँगते हैं और क्षमा करते हैं; श्वेताम्बर परम्परा में इसके लिए 'मिच्छामि दुक्कडम्' कहा जाता है।",
+      "en": "Kshamavani is observed after Das Lakshan Parva, on Ashwin Krishna Pratipada. On this day people sincerely ask one another's forgiveness for faults made knowingly or unknowingly, and forgive in return; in the Shvetambar tradition the words used are 'Micchami Dukkadam'."
+    },
+    "sources": [
+      {
+        "book": "kshamavani-pooja",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "twelve-bhavanas",
+    "q": {
+      "hi": "बारह भावनाएँ कौन सी हैं?",
+      "en": "What are the twelve bhavanas (reflections)?"
+    },
+    "also": [
+      "barah bhavana",
+      "anupreksha",
+      "अनुप्रेक्षा",
+      "12 bhavana",
+      "twelve reflections"
+    ],
+    "a": {
+      "hi": "वैराग्य बढ़ाने के लिए बार-बार चिन्तन की जाने वाली बारह भावनाएँ हैं: अनित्य, अशरण, संसार, एकत्व, अन्यत्व, अशुचि, आस्रव, संवर, निर्जरा, लोक, बोधिदुर्लभ और धर्म। इन्हें अनुप्रेक्षा भी कहते हैं।",
+      "en": "The twelve bhavanas, reflected on again and again to grow detachment, are: impermanence, no refuge, the cycle of births, aloneness, the soul being other than the body, the body's impurity, inflow of karma, stopping it, shedding it, the universe, the rarity of enlightenment, and dharma. They are also called anupreksha."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "अनित्याशरण",
+        "pos": 308
+      },
+      {
+        "book": "barah-bhavana",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "tap",
+    "q": {
+      "hi": "तप कितने प्रकार का है?",
+      "en": "What are the kinds of tap (austerity)?"
+    },
+    "also": [
+      "upvas",
+      "उपवास",
+      "fasting",
+      "why do jains fast",
+      "12 tap",
+      "barah tap"
+    ],
+    "a": {
+      "hi": "तप बारह प्रकार का है। छह बाह्य तप: अनशन (उपवास), ऊनोदर (कम खाना), वृत्तिपरिसंख्यान, रस-परित्याग, विविक्त शय्यासन और कायक्लेश। छह आभ्यन्तर तप: प्रायश्चित्त, विनय, वैयावृत्य (सेवा), स्वाध्याय, व्युत्सर्ग और ध्यान। उपवास का उद्देश्य शरीर को कष्ट देना नहीं, इच्छाओं को जीतकर आत्मा में स्थिर होना है।",
+      "en": "Tap is of twelve kinds. Six are outward: fasting, eating less, limiting how food is taken, giving up rich tastes, solitary dwelling and bodily endurance. Six are inward: atonement, humility, service, swadhyay (study), giving up attachment to the body, and meditation. Fasting is meant not to punish the body but to conquer desire and settle in the self."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "अनशनावमौदर्य",
+        "pos": 320
+      },
+      {
+        "book": "tattvarth-sutra",
+        "find": "प्रायश्चित्तविनय",
+        "pos": 321
+      }
+    ]
+  },
+  {
+    "id": "night-meal",
+    "q": {
+      "hi": "जैन रात्रि भोजन क्यों नहीं करते?",
+      "en": "Why do Jains not eat after sunset?"
+    },
+    "also": [
+      "ratri bhojan tyag",
+      "रात्रि भोजन त्याग",
+      "chauvihar",
+      "eating at night",
+      "sunset ke baad khana"
+    ],
+    "a": {
+      "hi": "पुरुषार्थसिद्ध्युपाय में आचार्य अमृतचन्द्र कहते हैं कि रात में भोजन करने वालों से हिंसा टाली नहीं जा सकती, क्योंकि रात में अनेक सूक्ष्म जीव उत्पन्न होते और भोजन में मिल जाते हैं; इसलिए हिंसा से बचने वालों को रात्रि भोजन छोड़ना चाहिए। वे यह भी कहते हैं कि रात के भोजन में राग अधिक होता है।",
+      "en": "In the Purusharthasiddhyupay, Acharya Amritchandra teaches that those who eat at night cannot avoid himsa, since countless tiny beings arise at night and mix into food; so those who wish to avoid himsa should give up eating at night. He adds that eating at night also comes with greater attachment."
+    },
+    "sources": [
+      {
+        "book": "purusharthasiddhyupay",
+        "find": "रात्रौ भुञ्जानानां",
+        "pos": 126
+      }
+    ]
+  },
+  {
+    "id": "root-vegetables",
+    "q": {
+      "hi": "जैन कंदमूल (आलू, प्याज, लहसुन) क्यों नहीं खाते?",
+      "en": "Why do Jains not eat root vegetables like potato and onion?"
+    },
+    "also": [
+      "kandmool",
+      "कंदमूल",
+      "aloo pyaz",
+      "onion garlic",
+      "anantkay",
+      "अनन्तकाय"
+    ],
+    "a": {
+      "hi": "आलू, प्याज, लहसुन, गाजर जैसे कंदमूल 'साधारण' या अनन्तकाय वनस्पति माने गए हैं, जिनके एक ही शरीर में अनन्त जीव रहते हैं। पुरुषार्थसिद्ध्युपाय कहता है कि ऐसे एक शरीर का घात भी अनन्त जीवों का घात है, इसलिए अहिंसक के लिए अनन्तकाय त्यागने योग्य है।",
+      "en": "Root vegetables such as potato, onion, garlic and carrot are counted as sadharan or anantkay plants, where infinite souls share one body. The Purusharthasiddhyupay says that destroying even one such body destroys infinite beings, so one who keeps ahimsa should give up anantkay food."
+    },
+    "sources": [
+      {
+        "book": "purusharthasiddhyupay",
+        "find": "कन्दमूलादिक",
+        "pos": 159
+      }
+    ]
+  },
+  {
+    "id": "namokar",
+    "q": {
+      "hi": "णमोकार मंत्र का अर्थ क्या है?",
+      "en": "What is the meaning of the Namokar mantra?"
+    },
+    "also": [
+      "navkar mantra",
+      "नवकार मंत्र",
+      "namokar mantra meaning",
+      "namaskar mantra",
+      "mahamantra"
+    ],
+    "a": {
+      "hi": "णमोकार मंत्र में पाँच परमेष्ठियों को नमस्कार है: अरिहंतों को, सिद्धों को, आचार्यों को, उपाध्यायों को और लोक के सब साधुओं को। इसमें किसी व्यक्ति का नाम नहीं, केवल गुणों को नमन है, इसलिए यह अनादि मूल मंत्र कहलाता है और सब पापों का नाश करने वाला माना गया है।",
+      "en": "The Namokar mantra bows to the five supreme beings: the arihants, the siddhas, the acharyas, the upadhyayas and all sadhus in the world. It names no individual and bows only to their virtues, which is why it is called the eternal root mantra, held to destroy all sins."
+    },
+    "sources": [
+      {
+        "book": "namokar",
+        "find": "णमो अरिहंताणं",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "panch-parameshthi",
+    "q": {
+      "hi": "पंच परमेष्ठी कौन हैं?",
+      "en": "Who are the Panch Parameshthi?"
+    },
+    "also": [
+      "five supreme beings",
+      "arihant siddh acharya upadhyay sadhu",
+      "arihant kaun hai",
+      "अरिहंत कौन हैं"
+    ],
+    "a": {
+      "hi": "पंच परमेष्ठी हैं: अरिहंत (जिन्होंने चार घाति कर्म नष्ट कर केवलज्ञान पाया), सिद्ध (जो सब कर्मों से मुक्त हो गए), आचार्य (संघ के नायक), उपाध्याय (जो शास्त्र पढ़ाते हैं) और साधु (मोक्षमार्ग पर चलने वाले मुनि)। णमोकार मंत्र इन्हीं पाँचों को नमस्कार है।",
+      "en": "The Panch Parameshthi are: arihants (who destroyed the four destructive karmas and gained omniscience), siddhas (freed from all karma), acharyas (heads of the order), upadhyayas (who teach the scriptures) and sadhus (munis on the path to liberation). The Namokar mantra bows to these five."
+    },
+    "sources": [
+      {
+        "book": "namokar",
+        "find": "णमो अरिहंताणं",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "tirthankar",
+    "q": {
+      "hi": "तीर्थंकर कौन होते हैं? 24 तीर्थंकर कौन से हैं?",
+      "en": "Who is a Tirthankar? Who are the 24 Tirthankars?"
+    },
+    "also": [
+      "chaubis tirthankar",
+      "24 tirthankar names",
+      "चौबीस तीर्थंकर",
+      "jina kaun"
+    ],
+    "a": {
+      "hi": "तीर्थंकर वे अरिहंत हैं जो स्वयं संसार-सागर पार करके धर्म-तीर्थ की स्थापना करते हैं। इस युग के चौबीस तीर्थंकर हैं: ऋषभनाथ (आदिनाथ), अजितनाथ, संभवनाथ, अभिनन्दननाथ, सुमतिनाथ, पद्मप्रभ, सुपार्श्वनाथ, चन्द्रप्रभ, पुष्पदन्त, शीतलनाथ, श्रेयांसनाथ, वासुपूज्य, विमलनाथ, अनन्तनाथ, धर्मनाथ, शान्तिनाथ, कुन्थुनाथ, अरनाथ, मल्लिनाथ, मुनिसुव्रतनाथ, नमिनाथ, नेमिनाथ, पार्श्वनाथ और महावीर।",
+      "en": "Tirthankars are arihants who cross the ocean of births themselves and establish the ford of dharma for others. The twenty-four Tirthankars of this age are Rishabhnath (Adinath), Ajitnath, Sambhavnath, Abhinandannath, Sumatinath, Padmaprabh, Suparshvanath, Chandraprabh, Pushpadant, Sheetalnath, Shreyansnath, Vasupujya, Vimalnath, Anantnath, Dharmnath, Shantinath, Kunthunath, Arnath, Mallinath, Munisuvratnath, Naminath, Neminath, Parshvanath and Mahavir."
+    },
+    "sources": [
+      {
+        "book": "chaubis-tirthankar-stavan",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "mahavir",
+    "q": {
+      "hi": "भगवान महावीर कौन थे?",
+      "en": "Who was Bhagwan Mahavir?"
+    },
+    "also": [
+      "mahavir swami",
+      "vardhaman",
+      "वर्धमान",
+      "24th tirthankar",
+      "mahaveer"
+    ],
+    "a": {
+      "hi": "भगवान महावीर इस युग के चौबीसवें और अन्तिम तीर्थंकर हैं। उनका जन्म कुण्डपुर में राजा सिद्धार्थ और रानी त्रिशला के यहाँ हुआ; बचपन में वे वर्धमान कहलाए और वीर, अतिवीर, सन्मति व महावीर नाम भी पाए। तीस वर्ष की आयु में दीक्षा लेकर, कठोर तप से केवलज्ञान पाया और पावापुरी से निर्वाण प्राप्त किया, जिसकी स्मृति में दीपावली मनाई जाती है।",
+      "en": "Bhagwan Mahavir is the twenty-fourth and last Tirthankar of this age. He was born in Kundpur to King Siddharth and Queen Trishala; as a child he was called Vardhaman, and he also came to be known as Veer, Ativeer, Sanmati and Mahavir. He renounced the world at thirty, attained omniscience through deep austerity, and attained nirvana at Pawapuri, which Diwali remembers."
+    },
+    "sources": [
+      {
+        "book": "mahavir-bachpan",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "rishabhdev",
+    "q": {
+      "hi": "भगवान ऋषभदेव (आदिनाथ) कौन थे?",
+      "en": "Who was Bhagwan Rishabhdev (Adinath)?"
+    },
+    "also": [
+      "adinath bhagwan",
+      "आदिनाथ",
+      "first tirthankar",
+      "pehle tirthankar"
+    ],
+    "a": {
+      "hi": "भगवान ऋषभदेव, जिन्हें आदिनाथ भी कहते हैं, इस युग के प्रथम तीर्थंकर हैं। उन्होंने लोगों को असि, मसि, कृषि आदि जीवन की कलाएँ सिखाईं, फिर दीक्षा लेकर इस युग में धर्म का मार्ग खोला। उनके पुत्र भरत चक्रवर्ती और बाहुबली थे; उनकी पहली आहारचर्या की स्मृति अक्षय तृतीया है।",
+      "en": "Bhagwan Rishabhdev, also called Adinath, is the first Tirthankar of this age. He taught people the arts of living, such as defence, writing and farming, then renounced the world and opened the path of dharma for this age. His sons were Bharat the chakravarti and Bahubali; Akshay Tritiya remembers his first aahar after renunciation."
+    },
+    "sources": [
+      {
+        "book": "akshay-tritiya",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "akshay-tritiya",
+    "q": {
+      "hi": "अक्षय तृतीया क्यों मनाते हैं?",
+      "en": "Why is Akshay Tritiya celebrated by Jains?"
+    },
+    "also": [
+      "akha teej",
+      "ikshu ras",
+      "sugarcane juice",
+      "shreyans"
+    ],
+    "a": {
+      "hi": "दीक्षा के बाद भगवान ऋषभदेव को लगभग एक वर्ष तक विधिपूर्वक आहार नहीं मिला, क्योंकि लोग मुनि को आहार देने की विधि नहीं जानते थे। वैशाख शुक्ल तृतीया को हस्तिनापुर में राजकुमार श्रेयांस ने उन्हें इक्षु-रस (गन्ने का रस) का आहार दिया। इसी से आहारदान की परम्परा चली और यह दिन अक्षय तृतीया कहलाया।",
+      "en": "After his renunciation, Bhagwan Rishabhdev received no proper aahar for about a year, because people did not yet know how to offer food to a muni. On Vaishakh Shukla Tritiya at Hastinapur, Prince Shreyans offered him sugarcane juice. That began the tradition of aahar daan, and the day became Akshay Tritiya."
+    },
+    "sources": [
+      {
+        "book": "akshay-tritiya",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "diwali",
+    "q": {
+      "hi": "जैन दीपावली क्यों मनाते हैं?",
+      "en": "Why do Jains celebrate Diwali?"
+    },
+    "also": [
+      "deepawali",
+      "दीपावली",
+      "mahavir nirvan",
+      "महावीर निर्वाण",
+      "nirvan laddu"
+    ],
+    "a": {
+      "hi": "कार्तिक कृष्ण अमावस्या के प्रातः भगवान महावीर ने पावापुरी से निर्वाण प्राप्त किया, और उसी दिन संध्या को उनके प्रमुख गणधर गौतम स्वामी को केवलज्ञान हुआ। जैन दीपावली को इसी की स्मृति में निर्वाण-लाडू चढ़ाकर और ज्ञान-ज्योति के दीप जलाकर मनाते हैं।",
+      "en": "At dawn on Kartik Krishna Amavasya, Bhagwan Mahavir attained nirvana at Pawapuri, and that evening his chief disciple Gautam Swami attained omniscience. Jains celebrate Diwali in memory of this, offering the nirvan laddu and lighting lamps of knowledge."
+    },
+    "sources": [
+      {
+        "book": "deepawali-poojan",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "darshan",
+    "q": {
+      "hi": "मंदिर में दर्शन कैसे करें?",
+      "en": "How should I do darshan in a Jain temple?"
+    },
+    "also": [
+      "mandir darshan vidhi",
+      "मंदिर दर्शन विधि",
+      "temple visit",
+      "darshan kaise kare"
+    ],
+    "a": {
+      "hi": "स्नान कर, धुले वस्त्र पहनकर, बिना जूते-चप्पल मंदिर जाएँ और प्रवेश करते समय 'निःसहि निःसहि निःसहि' बोलें। भगवान के सामने हाथ जोड़कर णमोकार मंत्र और दर्शन पाठ पढ़ें, अक्षत से स्वस्तिक बनाएँ, तीन प्रदक्षिणा दें और नमस्कार करें। ऐप में 'मंदिर दर्शन विधि' हर चरण चित्र के साथ बताती है।",
+      "en": "Bathe, wear clean clothes, leave your shoes outside and say 'nihsahi' three times as you enter. Before the Lord, join your hands, recite the Namokar mantra and the darshan prayer, make a swastik with akshat, walk three rounds and bow. The app's temple guide shows every step with a picture."
+    },
+    "sources": [
+      {
+        "book": "mandir-darshan",
+        "find": "पूरा क्रम एक नज़र में",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "ashta-dravya",
+    "q": {
+      "hi": "अष्ट द्रव्य पूजा क्या है?",
+      "en": "What are the eight offerings (ashta dravya) in pooja?"
+    },
+    "also": [
+      "ashta dravya",
+      "अष्ट द्रव्य",
+      "jal chandan akshat",
+      "pooja vidhi",
+      "पूजा विधि",
+      "how to do pooja"
+    ],
+    "a": {
+      "hi": "अष्ट द्रव्य हैं: जल, चन्दन, अक्षत, पुष्प, नैवेद्य, दीप, धूप और फल; आठों को मिलाकर अर्घ्य बनता है। हर द्रव्य एक भावना से चढ़ाया जाता है, जैसे जल जन्म-जरा-मृत्यु के नाश के लिए और अक्षत अक्षय पद की प्राप्ति के लिए। जैन पूजा में भगवान से कुछ माँगा नहीं जाता; यह उनके गुणों को पाने की भावना है।",
+      "en": "The eight offerings are water, sandalwood, akshat (unbroken rice), flowers, naivedya (sweets), a lamp, incense and fruit; all eight together make the arghya. Each is offered with a meaning, such as water for ending birth, old age and death, and akshat for the imperishable state. In Jain pooja nothing is asked of the Lord; it is a wish to gain his virtues."
+    },
+    "sources": [
+      {
+        "book": "pooja-vidhi",
+        "find": "अष्ट द्रव्य तैयार करना",
+        "pos": 5
+      }
+    ]
+  },
+  {
+    "id": "swastik",
+    "q": {
+      "hi": "जैन स्वस्तिक का क्या अर्थ है?",
+      "en": "What does the Jain swastik mean?"
+    },
+    "also": [
+      "swastika",
+      "स्वस्तिक",
+      "satiya",
+      "सातिया",
+      "akshat swastik"
+    ],
+    "a": {
+      "hi": "स्वस्तिक की चार भुजाएँ संसार की चार गतियाँ हैं: देव, मनुष्य, तिर्यंच और नरक। ऊपर के तीन बिन्दु रत्नत्रय हैं, और सबसे ऊपर अर्धचन्द्र व बिन्दु सिद्धशिला पर विराजमान सिद्ध। अर्थ यह है कि रत्नत्रय से चारों गतियों से छूटकर सिद्ध पद पाया जाता है।",
+      "en": "The four arms of the swastik are the four states of rebirth: heavenly, human, animal and hellish. The three dots above are the three jewels, and the crescent with a dot at the top is the siddha resting on the siddhashila. Its meaning: through the three jewels, the soul leaves the four states and attains siddhahood."
+    },
+    "sources": [
+      {
+        "book": "pooja-vidhi",
+        "find": "दर्शन और अक्षत से स्वस्तिक",
+        "pos": 3
+      }
+    ]
+  },
+  {
+    "id": "bhaktamar",
+    "q": {
+      "hi": "भक्तामर स्तोत्र क्यों पढ़ा जाता है?",
+      "en": "Why is the Bhaktamar Stotra recited?"
+    },
+    "also": [
+      "bhaktamar stotra",
+      "भक्तामर",
+      "manatunga",
+      "मानतुंग",
+      "48 locks"
+    ],
+    "a": {
+      "hi": "भक्तामर स्तोत्र आचार्य मानतुंग ने भगवान ऋषभदेव की स्तुति में रचा। कथा है कि राजा ने उन्हें 48 तालों वाले कारागार में बन्द कराया, और स्तोत्र के एक-एक श्लोक के साथ एक-एक ताला टूटता गया। दिगम्बर परम्परा में इसके 48 श्लोक हैं, और इसे श्रद्धा और भक्ति से प्रतिदिन पढ़ा जाता है।",
+      "en": "The Bhaktamar Stotra was composed by Acharya Manatunga in praise of Bhagwan Rishabhdev. The story tells that a king had him locked behind 48 locks, and one lock broke with each verse. In the Digambar tradition it has 48 verses and is recited daily with devotion."
+    },
+    "sources": [
+      {
+        "book": "manatunga-bhaktamar",
+        "pos": 1
+      },
+      {
+        "book": "bhaktamar",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "samayik",
+    "q": {
+      "hi": "सामायिक क्या है?",
+      "en": "What is samayik?"
+    },
+    "also": [
+      "samayik kaise kare",
+      "equanimity",
+      "samta"
+    ],
+    "a": {
+      "hi": "सामायिक का अर्थ है समता में स्थित होना: कुछ समय के लिए सब राग-द्वेष और सांसारिक कामों को छोड़कर शान्त मन से आत्मा का चिन्तन करना। गृहस्थ इसे प्रतिदिन, प्रायः 48 मिनट (एक मुहूर्त) तक, सामायिक पाठ, जाप और ध्यान के साथ करते हैं।",
+      "en": "Samayik means settling into equanimity: for a set time, putting aside all attachment, aversion and worldly work, and reflecting on the self with a calm mind. Householders do it daily, often for 48 minutes (one muhurta), with the samayik path, jaap and meditation."
+    },
+    "sources": [
+      {
+        "book": "samayik-path-amitgati",
+        "pos": 1
+      },
+      {
+        "book": "mandir-darshan",
+        "find": "जाप, सामायिक और स्वाध्याय",
+        "pos": 12
+      }
+    ]
+  },
+  {
+    "id": "pratikraman",
+    "q": {
+      "hi": "प्रतिक्रमण क्या है?",
+      "en": "What is pratikraman?"
+    },
+    "also": [
+      "pratikraman kya hai",
+      "repentance",
+      "prayashchit"
+    ],
+    "a": {
+      "hi": "प्रतिक्रमण का अर्थ है लौटना: जाने-अनजाने में हुए दोषों और हिंसा को याद कर, उनके लिए पश्चाताप करना और फिर न करने का संकल्प लेना। मुनि और श्रावक इसे नियम से करते हैं, जिससे आत्मा फिर से अपने स्वभाव की ओर लौटती है।",
+      "en": "Pratikraman means turning back: recalling the faults and harm done knowingly or unknowingly, repenting of them and resolving not to repeat them. Munis and householders do it regularly, so that the soul returns to its own nature."
+    },
+    "sources": [
+      {
+        "book": "laghu-pratikraman",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "dhyan",
+    "q": {
+      "hi": "जैन धर्म में ध्यान क्या है?",
+      "en": "What is meditation (dhyan) in Jainism?"
+    },
+    "also": [
+      "dhyan",
+      "ध्यान",
+      "meditation"
+    ],
+    "a": {
+      "hi": "तत्त्वार्थसूत्र के अनुसार चित्त को अन्य सब विषयों से हटाकर एक विषय पर टिकाना ध्यान है, जो अधिक से अधिक अन्तर्मुहूर्त तक रहता है। ध्यान के चार भेद हैं: आर्त, रौद्र, धर्म्य और शुक्ल; इनमें धर्म्य और शुक्ल ध्यान मोक्ष के कारण हैं।",
+      "en": "The Tattvarth Sutra defines dhyan as holding the mind on one object, turning it from all others, for up to an antarmuhurta (under 48 minutes). It has four kinds: arta (sorrowful), raudra (cruel), dharmya (righteous) and shukla (pure); of these, dharmya and shukla dhyan lead to liberation."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "ध्यानमान्तर्मुहूर्तात्",
+        "pos": 328
+      }
+    ]
+  },
+  {
+    "id": "sallekhana",
+    "q": {
+      "hi": "सल्लेखना या समाधिमरण क्या है?",
+      "en": "What is sallekhana (samadhi maran)?"
+    },
+    "also": [
+      "samadhi maran",
+      "समाधिमरण",
+      "santhara",
+      "संथारा",
+      "sallekhana"
+    ],
+    "a": {
+      "hi": "जीवन के अन्त के निकट आने पर, शान्त भाव से क्रमशः आहार और कषायों को घटाते हुए, आत्मा में लीन होकर देह त्यागना सल्लेखना या समाधिमरण है। यह आत्मघात नहीं है, क्योंकि इसमें न कोई दुःख है, न आवेग; यह अन्त समय तक धर्म में स्थिर रहने का व्रत है, जो गुरु के मार्गदर्शन में लिया जाता है।",
+      "en": "Sallekhana, or samadhi maran, is letting go of the body peacefully when death is near, gradually reducing food and passions while resting in the self. It is not suicide, for it carries no despair or passion; it is a vow to stay steady in dharma to the end, taken under a guru's guidance."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "मारणान्तिकीं",
+        "pos": 258
+      },
+      {
+        "book": "samadhimaran-dyanat",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "gunasthan",
+    "q": {
+      "hi": "चौदह गुणस्थान क्या हैं?",
+      "en": "What are the fourteen gunasthanas?"
+    },
+    "also": [
+      "14 gunasthan",
+      "गुणस्थान",
+      "stages of spiritual development"
+    ],
+    "a": {
+      "hi": "गुणस्थान आत्मा के विकास की चौदह सीढ़ियाँ हैं: मिथ्यात्व, सासादन, मिश्र, अविरत सम्यक्त्व, देशविरत, प्रमत्तविरत, अप्रमत्तविरत, अपूर्वकरण, अनिवृत्तिकरण, सूक्ष्मसाम्पराय, उपशान्तमोह, क्षीणमोह, सयोगकेवली और अयोगकेवली। चौथे में सम्यग्दर्शन होता है, तेरहवें में केवलज्ञान, और चौदहवें के बाद मोक्ष।",
+      "en": "The gunasthanas are fourteen stages of the soul's growth: delusion, the fall from right faith, mixed faith, right faith without vows, partial vows, vows with lapses, vows without lapses, and then stages of rising purity up to the subsidence and destruction of delusion, omniscience with activity, and omniscience without activity. Right faith arises at the fourth, omniscience at the thirteenth, and liberation follows the fourteenth."
+    },
+    "sources": [
+      {
+        "book": "gommatsar-jeevkand",
+        "find": "मिच्छो सासण",
+        "pos": 9
+      }
+    ]
+  },
+  {
+    "id": "kundkund",
+    "q": {
+      "hi": "आचार्य कुन्दकुन्द कौन थे?",
+      "en": "Who was Acharya Kundkund?"
+    },
+    "also": [
+      "kundkundacharya",
+      "कुन्दकुन्दाचार्य",
+      "samaysar author",
+      "समयसार"
+    ],
+    "a": {
+      "hi": "आचार्य कुन्दकुन्द दिगम्बर परम्परा के सबसे पूज्य आचार्यों में हैं; मंगल पाठ में भगवान महावीर और गौतम गणधर के बाद उन्हीं का नाम लिया जाता है ('मंगलं कुन्दकुन्दार्यो')। उन्होंने समयसार, प्रवचनसार, पंचास्तिकाय, नियमसार और अष्टपाहुड जैसे ग्रंथ रचे, जो आत्मा के शुद्ध स्वरूप का गहरा उपदेश देते हैं।",
+      "en": "Acharya Kundkund is among the most revered acharyas of the Digambar tradition; in the mangal verse his name comes right after Bhagwan Mahavir and Gautam Gandhar ('mangalam Kundkundaryo'). He wrote the Samaysar, Pravachansar, Panchastikay, Niyamsar and Ashtapahud, which teach the pure nature of the soul in depth."
+    },
+    "sources": [
+      {
+        "book": "kundkund-shatak",
+        "pos": 1
+      },
+      {
+        "book": "samaysar",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "digambar-shvetambar",
+    "q": {
+      "hi": "दिगम्बर और श्वेताम्बर में क्या अन्तर है?",
+      "en": "What is the difference between Digambar and Shvetambar?"
+    },
+    "also": [
+      "digambar shwetambar difference",
+      "sects of jainism",
+      "jain sampraday"
+    ],
+    "a": {
+      "hi": "दोनों भगवान महावीर के अनुयायी हैं और मूल सिद्धांत, जैसे अहिंसा, रत्नत्रय, कर्म और मोक्ष, एक ही हैं। मुख्य अन्तर आचरण और कुछ मान्यताओं में है: दिगम्बर मुनि वस्त्र नहीं रखते और मानते हैं कि पूर्ण अपरिग्रह के बिना मोक्ष नहीं, जबकि श्वेताम्बर साधु श्वेत वस्त्र पहनते हैं; मान्य आगम ग्रंथ और प्रतिमाओं का स्वरूप भी अलग है। यह ऐप दिगम्बर परम्परा के पाठों पर आधारित है।",
+      "en": "Both follow Bhagwan Mahavir and share the core teachings: ahimsa, the three jewels, karma and moksha. They differ in practice and some beliefs: Digambar munis keep no clothing and hold that liberation needs complete non-possession, while Shvetambar monks wear white; their accepted scriptures and the form of their idols also differ. This app follows the texts of the Digambar tradition."
+    },
+    "sources": []
+  },
+  {
+    "id": "god",
+    "q": {
+      "hi": "क्या जैन धर्म में ईश्वर सृष्टि का कर्ता है?",
+      "en": "Do Jains believe in God as the creator?"
+    },
+    "also": [
+      "creator god",
+      "ishwar",
+      "bhagwan kaun hai",
+      "who is god in jainism",
+      "srishti karta"
+    ],
+    "a": {
+      "hi": "जैन धर्म के अनुसार लोक अनादि-अनन्त है; उसे किसी ने बनाया नहीं और कोई उसे चलाता नहीं। भगवान वह आत्मा है जिसने सब कर्म नष्ट कर अनन्त ज्ञान और सुख पा लिया, जैसे अरिहंत और सिद्ध। वे किसी को फल नहीं देते; हम उनकी पूजा उनके गुणों को अपने में प्रकट करने की भावना से करते हैं, और हर आत्मा भगवान बन सकती है।",
+      "en": "In Jain dharma the universe has no beginning and no end; no one created it and no one runs it. God is the soul that has destroyed all karma and gained infinite knowledge and bliss, the arihants and siddhas. They do not grant rewards; we worship them to awaken their virtues in ourselves, and every soul can become God."
+    },
+    "sources": []
+  },
+  {
+    "id": "anekant",
+    "q": {
+      "hi": "अनेकान्त और स्याद्वाद क्या है?",
+      "en": "What are anekantavad and syadvad?"
+    },
+    "also": [
+      "anekantavada",
+      "syadvada",
+      "स्याद्वाद",
+      "many sidedness"
+    ],
+    "a": {
+      "hi": "अनेकान्त का अर्थ है कि हर वस्तु में अनेक गुण और पक्ष होते हैं, इसलिए एक ही दृष्टि से कही बात पूरा सत्य नहीं होती। स्याद्वाद कहने की वह शैली है जो 'किसी अपेक्षा से' (स्यात्) कहकर इन पक्षों का सम्मान करती है। यह विचारों में अहिंसा है: दूसरों के दृष्टिकोण को भी समझना।",
+      "en": "Anekant means every thing has many qualities and aspects, so a statement from one viewpoint is never the whole truth. Syadvad is the way of speaking that respects this, qualifying each statement with 'from a certain standpoint' (syat). It is ahimsa in thought: making room for others' viewpoints."
+    },
+    "sources": []
+  },
+  {
+    "id": "meri-bhavana",
+    "q": {
+      "hi": "मेरी भावना किसने लिखी और उसमें क्या है?",
+      "en": "Who wrote Meri Bhavana and what does it say?"
+    },
+    "also": [
+      "meri bhavana",
+      "मेरी भावना",
+      "jisne rag dwesh"
+    ],
+    "a": {
+      "hi": "मेरी भावना पंडित जुगलकिशोर 'मुख्तार' की रचना है, जो 'जिसने राग-द्वेष कामादिक, जीते सब जग जान लिया' से आरम्भ होती है। इसमें वीतराग भगवान को नमन, सब जीवों के प्रति मैत्री, गुणीजनों के प्रति प्रमोद, दुखियों के प्रति करुणा और सबके कल्याण की भावना है।",
+      "en": "Meri Bhavana was written by Pandit Jugalkishore 'Mukhtar' and begins 'Jisne raag-dvesh kaamadik, jeete sab jag jaan liya'. It bows to the passionless Lord and wishes friendship towards all beings, joy at others' virtues, compassion for those who suffer, and the welfare of all."
+    },
+    "sources": [
+      {
+        "book": "meri-bhavana",
+        "pos": 1
+      }
+    ]
+  },
+  {
+    "id": "swadhyay",
+    "q": {
+      "hi": "स्वाध्याय क्या है?",
+      "en": "What is swadhyay?"
+    },
+    "also": [
+      "swadhyay ka arth",
+      "self study",
+      "shastra padhna"
+    ],
+    "a": {
+      "hi": "स्वाध्याय का अर्थ है 'स्व' का अध्ययन: जिनवाणी, यानी शास्त्रों को पढ़ना, उन पर चिन्तन करना और उनके द्वारा अपनी आत्मा को जानना। यह छह आभ्यन्तर तपों में से एक है, और गृहस्थ के छह दैनिक आवश्यक कर्मों में भी गिना जाता है।",
+      "en": "Swadhyay means study of the self: reading the scriptures (Jinvani), reflecting on them, and through them coming to know one's own soul. It is one of the six inward austerities, and one of a householder's six daily duties."
+    },
+    "sources": [
+      {
+        "book": "tattvarth-sutra",
+        "find": "प्रायश्चित्तविनय",
+        "pos": 321
+      }
+    ]
+  }
+]

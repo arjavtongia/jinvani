@@ -1,0 +1,18 @@
+# The Ask server (Cloudflare Worker). Setup and deploy: see README.md in this folder.
+name = "swadhyay-ask"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+# NVIDIA model used for new questions (see build.nvidia.com for the list).
+MODEL = "nvidia/nemotron-3-super-120b-a12b"
+# Where the search index lives: the app's own site (built by tools/build_ask_index.js).
+INDEX_URL = "https://arjavtongia.github.io/swadhyay/ask-index/"
+# Only the app may call this server.
+ALLOWED_ORIGINS = "https://arjavtongia.github.io,http://localhost:8780"
+
+# The shared answer cache. Create it with:  npx wrangler kv namespace create ASK_CACHE
+# and paste the id it prints below.
+[[kv_namespaces]]
+binding = "ASK_CACHE"
+id = "PASTE_THE_KV_ID_HERE"

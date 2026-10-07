@@ -10,6 +10,7 @@ Jain scriptures, pooja and temple guides, and a Jain tithi calendar, in clear, e
 - Today's tithi on the home screen, with the next 7 days under it: अष्टमी, चतुर्दशी and festivals carry a flag, and tapping a day shows its full tithi. In the week before Diwali, a card on the home screen opens the Diwali pooja. Calculated on the phone (sunrise in Delhi, purnimanta months).
 - मंदिर दर्शन विधि and पूजा विधि: step-by-step temple and ashta-dravya pooja guides with every mantra and drawings (thali, ठौना with three cloves, swastik, pradakshina).
 - "चित्र से समझें": diagrams that explain the meaning of key sutras and verses.
+- प्रश्न पूछें (Ask): questions about Jain dharma, answered from the app's own texts with links to the verses. 38 common questions are answered on the phone, offline; new ones go to a small server that uses NVIDIA's model and caches every answer (see `server/README.md`).
 - जैन कथाएँ (Jain stories): 33 traditional stories, in five groups, with photos of the places where they happened, a short version in Hindi and English, and the lesson of each story. A different story is offered on the home screen every day.
 - One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons; short sutras are grouped five or six to a screen. Swipes and arrow keys work too.
 - Poojas and short paath (Deepawali poojas, Namokar, Darshan Path, Darshan Stuti, Barah Bhavana) scroll as one page each, so they can be recited without tapping Next.
@@ -103,6 +104,10 @@ Then open http://localhost:8765.
 | `img/katha/` | Photos for the stories |
 | `sw.js` | Offline support |
 | `tools/make_icons.py` | Redraws the app icons |
+| `js/ask.js`, `js/askkey.js` | The Ask screen's answers, and the word matching it shares with the server |
+| `content/faq.json` | The common questions and their answers |
+| `ask-index/` | Search index of every passage, for the Ask server (built by `tools/build_ask_index.js`) |
+| `server/` | The Ask server (Cloudflare Worker + NVIDIA); setup in `server/README.md` |
 | `tools/add_openings.py` | Writes each pooja's and path's opening line into `content/books.json` (run after adding or editing texts) |
 
 To add another language, add a block to `js/strings.js` and the language to `LANGS` at the top of that file.

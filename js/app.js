@@ -639,13 +639,13 @@
   }
 
   /* Bottom bar shown on every screen except the reader and the welcome screen. */
-  const NAV_VIEWS = ['home', 'books', 'book', 'search', 'saved', 'settings', 'credits'];
+  const NAV_VIEWS = ['home', 'books', 'book', 'search', 'ask', 'saved', 'settings', 'credits'];
 
   function navBar(view) {
     const items = [
       { id: 'home', href: '#/', icon: 'home', label: t('home'), active: view === 'home' },
       { id: 'books', href: '#/books', icon: 'books', label: t('books'), active: view === 'books' || view === 'book' },
-      { id: 'search', href: '#/search', icon: 'search', label: t('search'), active: view === 'search' },
+      { id: 'search', href: '#/search', icon: 'search', label: t('search'), active: view === 'search' || view === 'ask' },
       { id: 'settings', href: '#/settings', icon: 'settings', label: t('settings'), active: view === 'settings' || view === 'credits' }
     ];
     return '<nav class="tabbar" aria-label="' + esc(t('appName')) + '">' + items.map(it =>
@@ -877,6 +877,7 @@
       count('granth') && { href: '#/books/group/granth', emblem: { id: 'tattvarth-sutra' }, title: t('pathGranth'), sub: t('pathGranthSub', { n: count('granth') }) },
       has('katha') && { href: '#/books/katha', emblem: { category: 'katha' }, title: t('pathKatha'), sub: t('pathKathaSub', { n: count('katha') }) },
       has('vidhi') && { href: '#/books/vidhi', icon: 'temple', title: t('pathVidhi'), sub: t('pathVidhiSub') },
+      { href: '#/ask', icon: 'study', title: t('pathAsk'), sub: t('pathAskSub') },
       { href: '#/saved', emblem: { id: 'saved' }, title: t('saved'), sub: state.bookmarks.length ? t('savedCount', { n: state.bookmarks.length }) : t('pathSavedNone') }
     ].filter(Boolean);
     return '<ul class="paths">' + items.map(it =>
@@ -1224,12 +1225,117 @@
   let lastQuery = '';
   let searchBooks = [];
 
+  /* ---------- Ask ---------- */
+
+  /* What the Ask screen shows below the question box; kept while the screen is redrawn. */
+  let askState = { question: '', status: 'idle', result: null, error: '', related: [] };
+
+  function faqResult(item) {
+    return { kind: 'faq', id: item.id, question: L(item.q), answer: L(item.a), sources: (item.sources || []).filter(s => s.pos) };
+  }
+
+  /* The answer's text, with its [1] [2] citations turned into links to the passages. */
+  function answerTextHtml(text, sources) {
+    return String(text).split(/\n{2,}/).map(par => '<p>' + esc(par).replace(/\[(\d+)\]/g, (m, n) => {
+      const s = sources[+n - 1];
+      return s ? '<a class="cite" href="#/read/' + esc(s.book) + '/' + s.pos + '" aria-label="' + esc(t('askSources') + ' ' + n) + '">' + n + '</a>' : '';
+    }).replace(/\n/g, '<br>') + '</p>').join('');
+  }
+
+  function askSourceRow(s, i) {
+    const meta = bookMeta(s.book);
+    if (!meta) return '';
+    return chevronRow('#/read/' + meta.id + '/' + s.pos, '<span class="row-num">' + (i + 1) + '</span>' +
+      '<span class="ask-src">' + titleHtml(meta) + '<span class="row-sub">' + esc(t('askOpen')) + '</span></span>');
+  }
+
+  function askOutHtml() {
+    const st = askState;
+    let html = '';
+    if (st.status === 'loading') {
+      html = '<p class="ask-wait">' + ORN.dhwaja() + '<span>' + esc(t('askThinking')) + '</span><span class="ask-dots" aria-hidden="true"><i></i><i></i><i></i></span></p>';
+    } else if (st.status === 'error') {
+      const msg = { off: 'askOff', offline: 'askOffline', busy: 'askBusy', short: 'askShort' }[st.error] || 'askFailed';
+      html = '<p class="ask-error">' + esc(t(msg)) + '</p>';
+    } else if (st.status === 'done' && st.result) {
+      const r = st.result;
+      const isFaq = r.kind === 'faq';
+      html = '<article class="answer">' +
+        '<p class="answer-kind">' + esc(t(isFaq ? 'askFromFaq' : 'askFromTexts')) + '</p>' +
+        '<h2 class="answer-q">' + esc(isFaq ? r.question : st.question) + '</h2>' +
+        '<div class="answer-text">' + answerTextHtml(r.answer, isFaq ? [] : r.sources) + '</div>' +
+        (r.sources.length ? '<h3 class="answer-src-head">' + esc(t('askSources')) + '</h3><ul class="rows">' + r.sources.map(askSourceRow).join('') + '</ul>' : '') +
+        (isFaq ? '' : '<p class="answer-note">' + esc(t('askCheck')) + '</p>') +
+        (isFaq && st.typed && ASK.enabled() ? '<button class="btn btn-small" data-action="ask-ai">' + esc(t('askAiInstead')) + '</button>' : '') +
+        '</article>';
+    }
+    if (st.related && st.related.length) {
+      html += '<h2 class="chips-head">' + esc(t('askRelated')) + '</h2><ul class="rows">' +
+        st.related.map(item => chevronRow('#/ask/' + item.id, '<span class="title">' + esc(L(item.q)) + '</span>')).join('') + '</ul>';
+    }
+    return html;
+  }
+
+  function refreshAsk() {
+    const box = document.getElementById('ask-out');
+    if (box) box.innerHTML = askOutHtml();
+  }
+
+  /* The common questions, and what was asked on this phone before. */
+  function askListsHtml(faq) {
+    const asked = ASK.history().filter(r => r.lang === state.lang).slice(0, 6);
+    return (asked.length ? '<h2 class="chips-head">' + esc(t('askHistory')) + '</h2><ul class="rows">' +
+        asked.map(r => '<li><button class="row" type="button" data-action="ask-again" data-q="' + esc(r.question) + '"><span class="row-main"><span class="title">' + esc(r.question) + '</span></span>' + icon('chevron-right', 'row-chev') + '</button></li>').join('') + '</ul>' : '') +
+      '<h2 class="chips-head">' + esc(t('askCommon')) + '</h2><ul class="rows">' +
+      faq.map(item => chevronRow('#/ask/' + item.id, '<span class="title">' + esc(L(item.q)) + '</span>')).join('') + '</ul>';
+  }
+
+  async function viewAsk(faqId) {
+    document.title = t('ask') + ' · ' + t('appName');
+    await getCatalog();
+    const faq = await ASK.loadFaq();
+    const item = faqId && faq.find(f => f.id === faqId);
+    if (item) askState = { question: L(item.q), status: 'done', result: faqResult(item), error: '', related: [], typed: false };
+    return backBar('#/search', t('search')) +
+      '<main><h1 class="page-title">' + esc(t('ask')) + '</h1><p class="ask-intro">' + esc(t('askIntro')) + '</p>' +
+      '<form class="ask-form" data-form="ask" novalidate>' +
+      '<label class="visually-hidden" for="ask-q">' + esc(t('askLabel')) + '</label>' +
+      '<textarea id="ask-q" name="q" rows="2" maxlength="300" enterkeyhint="send" placeholder="' + esc(t('askPlaceholder')) + '">' + esc(item ? '' : askState.question) + '</textarea>' +
+      '<button class="btn btn-primary btn-wide" type="submit">' + icon('arrow-right') + '<span>' + esc(t('askButton')) + '</span></button></form>' +
+      (ASK.enabled() ? '<p class="ask-privacy">' + esc(t('askPrivacy')) + '</p>' : '') +
+      '<div id="ask-out" aria-live="polite">' + askOutHtml() + '</div>' + askListsHtml(faq) + '</main>';
+  }
+
+  /* A question: the common questions first, then this phone's earlier answers, then the server. */
+  async function askQuestion(question, forceServer) {
+    question = question.trim();
+    if (question.length < 3) {
+      askState = { question: question, status: 'error', error: 'short', related: [] };
+      return refreshAsk();
+    }
+    const { best, related } = await ASK.matchFaq(question);
+    if (best && !forceServer) {
+      askState = { question: question, status: 'done', result: faqResult(best), related: related, typed: true };
+      return refreshAsk();
+    }
+    askState = { question: question, status: 'loading', related: [] };
+    refreshAsk();
+    try {
+      const r = await ASK.askServer(question, state.lang);
+      askState = { question: question, status: 'done', result: { kind: 'ai', answer: r.answer, sources: r.sources || [] }, related: related };
+    } catch (e) {
+      askState = { question: question, status: 'error', error: e.message, related: related };
+    }
+    if (currentView === 'ask') refreshAsk();
+  }
+
   async function viewSearch() {
     document.title = t('search') + ' · ' + t('appName');
     searchBooks = await searchableBooks();
     const hasMic = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
     return backBar('#/', t('home')) +
       '<main><h1 class="page-title">' + esc(t('search')) + '</h1>' +
+      '<a class="ask-link" href="#/ask">' + icon('study') + '<span>' + esc(t('askFromSearch')) + '</span>' + icon('chevron-right', 'row-chev') + '</a>' +
       '<form class="search-form" data-form="search" role="search" novalidate>' +
       '<label class="visually-hidden" for="q">' + esc(t('search')) + '</label>' +
       '<input id="q" name="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="' + esc(t('searchPlaceholder')) + '" value="' + esc(lastQuery) + '">' +
@@ -1421,6 +1527,7 @@
         case 'book': html = await viewBook(parts[1], parts[2]); break;
         case 'read': html = await viewRead(parts[1], parts[2]); break;
         case 'search': html = await viewSearch(); break;
+        case 'ask': html = await viewAsk(parts[1]); break;
         case 'saved': html = await viewSaved(); break;
         case 'settings': html = viewSettings(); break;
         case 'credits': html = await viewCredits(); break;
@@ -1595,6 +1702,13 @@
       if (old) old.remove();
       if (note && pickedDay != null) note.insertAdjacentHTML('afterend', '<p class="tithi-note">' + esc(t('tithiNote')) + '</p>');
     },
+    'ask-ai': () => askQuestion(askState.question, true),
+    'ask-again': el => {
+      const box = document.getElementById('ask-q');
+      if (box) box.value = el.dataset.q;
+      askQuestion(el.dataset.q);
+      window.scrollTo(0, 0);
+    },
     'size-panel': el => {
       sizePanelOpen = !sizePanelOpen;
       el.setAttribute('aria-expanded', String(sizePanelOpen));
@@ -1696,9 +1810,21 @@
         return;
       }
       go('read/' + book.id + '/' + v.pos);
+    } else if (form.dataset.form === 'ask') {
+      const q = document.getElementById('ask-q');
+      if (q) { q.blur(); askQuestion(q.value); }
     } else if (form.dataset.form === 'search') {
       const q = document.getElementById('q');
       if (q) q.blur();
+    }
+  });
+
+  /* In the question box, Enter asks; Shift+Enter starts a new line. */
+  $app.addEventListener('keydown', e => {
+    if (e.target.id === 'ask-q' && e.key === 'Enter' && !e.shiftKey && !e.isComposing) {
+      e.preventDefault();
+      const form = e.target.form;
+      if (form && form.requestSubmit) form.requestSubmit();
     }
   });
 
