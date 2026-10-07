@@ -688,10 +688,12 @@
     return chevronRow('#/book/' + meta.id, titleHtml(meta));
   }
 
+  /* A pooja or path also shows how it begins (from tools/add_openings.py), so two texts with one name can be told apart. */
   function bookRow(meta) {
     if (meta.category === 'katha') return storyRow(meta);
     return chevronRow('#/book/' + meta.id, titleHtml(meta) +
-      '<span class="row-sub">' + (meta.author && L(meta.author) ? esc(L(meta.author)) + ' · ' : '') + esc(countLabel(meta)) + '</span>',
+      '<span class="row-sub">' + (meta.author && L(meta.author) ? esc(L(meta.author)) + ' · ' : '') + esc(countLabel(meta)) + '</span>' +
+      (meta.opening ? '<span class="row-opening" translate="no" lang="' + (meta.textLang || 'hi') + '">' + esc(meta.opening) + '</span>' : ''),
       coverEmblem(meta));
   }
 

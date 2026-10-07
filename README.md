@@ -102,6 +102,7 @@ Then open http://localhost:8765.
 | `img/katha/` | Photos for the stories |
 | `sw.js` | Offline support |
 | `tools/make_icons.py` | Redraws the app icons |
+| `tools/add_openings.py` | Writes each pooja's and path's opening line into `content/books.json` (run after adding or editing texts) |
 
 To add another language, add a block to `js/strings.js` and the language to `LANGS` at the top of that file.
 
