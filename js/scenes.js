@@ -985,6 +985,22 @@ const SCENES = (function () {
     sit(160, 150, { plain: true, hands: 'lap' }) +
     '<ellipse cx="160" cy="82" rx="16" ry="5" fill="#9c5a1c"/>' + flames(160, 74, 0.6));
 
+  /* Jinendrabhakt Seth: the jewel on Parshvanath's canopy, and the thief dressed as a kshullak. */
+  story.jinendrabhakt = cover(
+    (function () {
+      let hoods = '';
+      for (let i = -3; i <= 3; i++) {
+        hoods += '<ellipse cx="' + (160 + i * 11) + '" cy="' + (62 + Math.abs(i) * 4) + '" rx="7" ry="13" fill="' + GREEN + '" stroke="#2f5f2a" stroke-width="1" transform="rotate(' + (i * 14) + ' ' + (160 + i * 11) + ' ' + (62 + Math.abs(i) * 4) + ')"/>';
+      }
+      return hoods;
+    })() +
+    altar(160, 150, 90) + jina(160, 122, 0.85, { noChhatra: true }) +
+    '<path d="M160 20 V34" stroke="' + BRASS_EDGE + '" stroke-width="2"/>' +
+    '<path d="M130 40 Q160 24 190 40 Z" fill="' + BRASS + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/>' +
+    '<circle cx="160" cy="22" r="9" fill="#bfe0f7"/><path d="M160 12 l4 7 l7 2 l-6 5 l2 7 l-7 -4 l-7 4 l2 -7 l-6 -5 l7 -2 z" fill="#3a8fd6"/>' +
+    stand(70, 150, { hands: 'folded', cloth: SAFFRON, bow: true }) +
+    stand(254, 150, { hands: 'hold', dir: -1, item: '<circle cx="30" cy="-58" r="12" fill="' + GLOW + '"/><path d="M30 -66 l3 5 l5 1 l-4 4 l1 5 l-5 -3 l-5 3 l1 -5 l-4 -4 l5 -1 z" fill="#3a8fd6"/>' }));
+
   scenes.story = story;
 
   return scenes;

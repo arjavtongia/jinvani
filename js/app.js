@@ -655,13 +655,13 @@
 
   /* A story's picture: its cover photo, or a coloured tile with the first letter of its name. */
   function coverHtml(meta, cls) {
+    /* A story with a drawn scene (js/scenes.js) shows that; any photograph stays inside the story. */
+    const drawn = typeof SCENES !== 'undefined' && SCENES.story && SCENES.story[meta.id];
+    if (drawn) return '<span class="' + cls + ' cover-drawn" aria-hidden="true">' + drawn + '</span>';
     if (meta.cover) {
       return '<img class="' + cls + '" src="' + esc(meta.cover) + '" alt="" loading="lazy" decoding="async"' +
         (meta.coverPos ? ' style="object-position:' + esc(meta.coverPos) + '"' : '') + '>';
     }
-    /* No photograph: a drawn scene from js/scenes.js, when the story has one. */
-    const drawn = typeof SCENES !== 'undefined' && SCENES.story && SCENES.story[meta.id];
-    if (drawn) return '<span class="' + cls + ' cover-drawn" aria-hidden="true">' + drawn + '</span>';
     const name = meta.title.hi.replace(/^(श्री|महामुनि|राजा|सेठ)\s+/, '');
     const letter = (name.match(/^.[\u0900-\u0903\u093A-\u094F\u0951-\u0957]*/) || [''])[0];
     let hue = 0;
