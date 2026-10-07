@@ -7,7 +7,7 @@ Jain scriptures in large, easy-to-read text, made for elders.
 ## What it does
 
 - Choose Hindi or English on first launch, and switch any time from the home screen or Settings.
-- Today's date and Jain tithi on the home screen; tap it for the next 7 days, with अष्टमी, चतुर्दशी and festivals marked. Calculated on the phone (sunrise in Delhi, purnimanta months).
+- Today's date and Jain tithi on the home screen; tap it for the next 7 days, with अष्टमी, चतुर्दशी and festivals marked. In the week before Diwali, a card on the home screen opens the Diwali pooja. Calculated on the phone (sunrise in Delhi, purnimanta months).
 - मंदिर दर्शन विधि and पूजा विधि: step-by-step temple and ashta-dravya pooja guides with every mantra and drawings (thali, ठौना with three cloves, swastik, pradakshina).
 - "चित्र से समझें": diagrams that explain the meaning of key sutras and verses.
 - One verse per screen, with big "पीछे / आगे" (Previous / Next) buttons; short sutras are grouped five or six to a screen. Swipes and arrow keys work too.
@@ -30,6 +30,7 @@ Jain scriptures in large, easy-to-read text, made for elders.
 | तत्त्वार्थसूत्र | Sanskrit original, Digambar recension, 10 chapters, 357 sutras, with 20 explanatory diagrams |
 | मंदिर दर्शन विधि | Temple visit guide, 14 steps (Hindi and English) |
 | पूजा विधि | Ashta-dravya pooja guide, 15 steps (Hindi and English) |
+| दीपावली पूजन विधि | Diwali pooja at home and on the new bahi: setup steps (Hindi and English), arghyavali, Shri Mahavir Jin Pooja (Vrindavan), Saraswati Pooja (Dyanatray), Nirvan Kand (Bhagwatidas), 64 riddhi arghyas, visarjan and aarti |
 
 Sources are listed in the app under Settings → आभार (Credits).
 

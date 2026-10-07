@@ -122,5 +122,22 @@
       "hi": "यह मार्गदर्शन इसी ऐप के लिए दिगम्बर परम्परा के अनुसार लिखा गया है। मंदिरों की रीति में थोड़ा अंतर हो सकता है।",
       "en": "This guide was written for this app following Digambar tradition. Temple customs may differ a little."
     }
+  },
+  {
+    "id": "deepawali-poojan",
+    "file": "content/deepawali-poojan.txt",
+    "category": "vidhi",
+    "title": { "hi": "दीपावली पूजन विधि", "en": "Diwali Pooja" },
+    "author": { "hi": "घर और दुकान पर दीपावली की पूजा", "en": "Diwali pooja at home and at the shop" },
+    "unit": { "hi": "पाठ", "en": "Part" },
+    "sectionUnit": { "hi": "भाग", "en": "Section" },
+    "count": 162,
+    "textLang": "hi",
+    "numberMark": false,
+    "aliases": ["diwali", "deepawali", "dipawali", "deepavali", "diwali pooja", "diwali puja", "deepawali pujan", "bahi pujan", "bahi khata", "chopda pujan", "veer nirvan", "nirvan laddu", "mahavir puja", "saraswati puja", "nirvan kand", "nirvan kaand", "64 riddhi", "chausath riddhi", "visarjan", "aarti", "दीपावली", "दिवाली", "बही पूजन", "वीर निर्वाण", "निर्वाण लाडू", "महावीर पूजा", "सरस्वती पूजा", "निर्वाण काण्ड", "निर्वाणकाण्ड", "चौसठ ऋद्धि", "विसर्जन", "आरती"],
+    "source": {
+      "hi": "स्रोत: 'जैन परम्परा में दीपावली पूजन विधि', संकलन बा.ब्र. रोहित भैया (मुनि श्री संधानसागर जी), प्रकाशक निर्ग्रन्थ फाउंडेशन, भोपाल। पूजन के पाठ परम्परागत हैं: श्री महावीर जिनपूजा कविवर वृन्दावन की, सरस्वती पूजा और आरती कविवर द्यानतराय की, निर्वाण-काण्ड भैया भगवतीदास (संवत 1741) का। तैयारी और विधि वाले चरण इसी ऐप के लिए अपने शब्दों में लिखे गए हैं।",
+      "en": "Source: 'Jain Parampara Mein Deepawali Poojan Vidhi', compiled by Bal Brahmachari Rohit Bhaiya (Muni Shri Sandhansagar ji), published by Nirgranth Foundation, Bhopal. The pooja texts are traditional: Shri Mahavir Jin Pooja by Kavivar Vrindavan, Saraswati Pooja and the aarti by Kavivar Dyanatray, and Nirvan Kand by Bhaiya Bhagwatidas (samvat 1741). The preparation and method steps were written for this app."
+    }
   }
 ]

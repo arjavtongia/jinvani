@@ -617,7 +617,7 @@
     { m: 5, p: 'shukla', d: [14], key: 'anantChaturdashi' },
     { m: 5, p: 'shukla', d: [5, 6, 7, 8, 9, 10, 11, 12, 13], key: 'dasLakshan' },
     { m: 6, p: 'krishna', d: [1], key: 'kshamavani' },
-    { m: 7, p: 'krishna', d: [15], key: 'diwali' },
+    { m: 7, p: 'krishna', d: [15], key: 'diwali', book: 'deepawali-poojan' },
     { m: 7, p: 'shukla', d: [8, 9, 10, 11, 12, 13, 14, 15], key: 'ashtahnika' },
     { m: 11, p: 'shukla', d: [8, 9, 10, 11, 12, 13, 14, 15], key: 'ashtahnika' }
   ];
@@ -633,7 +633,8 @@
       paksha: t('paksha')[p.paksha],
       full: month + ' ' + t('paksha')[p.paksha] + ' ' + tithiName,
       parva: p.day === 8 || p.day === 14,
-      festival: fest ? t('festivals')[fest.key] : ''
+      festival: fest ? t('festivals')[fest.key] : '',
+      festivalBook: fest && fest.book ? fest.book : ''
     };
   }
 
@@ -675,6 +676,23 @@
     return html;
   }
 
+  /* In the week before a festival that has its own pooja (Diwali), a card on the home screen opens it. */
+  async function festivalCardHtml() {
+    const now = new Date();
+    for (let i = 0; i < 7; i++) {
+      const d = dayInfo(new Date(now.getFullYear(), now.getMonth(), now.getDate() + i));
+      if (!d.festivalBook) continue;
+      await getCatalog();
+      const meta = catalog.find(b => b.id === d.festivalBook);
+      if (!meta) return '';
+      const when = i === 0 ? t('today') : i === 1 ? t('tomorrow') : dateFmt(d.date, { weekday: 'long', day: 'numeric', month: 'long' });
+      return '<a class="card card-accent" href="#/book/' + meta.id + '">' +
+        '<span class="card-label">' + esc(d.festival + ' · ' + when) + '</span>' +
+        titleHtml(meta, 'card-title') + '</a>';
+    }
+    return '';
+  }
+
   async function viewHome() {
     document.title = t('appName');
     const other = LANGS.find(l => l.code !== state.lang) || LANGS[0];
@@ -684,7 +702,7 @@
         icon('language') + '<span>' + esc(other.name) + '</span></button>';
     }
     html += '<a class="btn btn-small" href="#/settings" aria-label="' + esc(t('settings')) + '">' + icon('settings') + '</a>' +
-      '</span></header><main>' + dateCardHtml();
+      '</span></header><main>' + dateCardHtml() + await festivalCardHtml();
 
     /* "Continue reading" (or "Start here" on the first visit) sits below the tiles, above "Saved". */
     let readingCard = '';
