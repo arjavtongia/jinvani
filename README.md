@@ -34,7 +34,7 @@
   <tr>
     <td align="center"><img src="docs/screenshots/guide.jpg" alt="Temple visit guide, step 3: at the temple door, with a drawing" width="240"><br><b>मंदिर दर्शन विधि</b> · Temple guide<br><sub>Every step drawn</sub></td>
     <td align="center"><img src="docs/screenshots/story.jpg" alt="The story of Bharat and Bahubali with a photo of Gommateshwar at Shravanabelagola" width="240"><br><b>जैन कथाएँ</b> · Stories<br><sub>With photos and a lesson</sub></td>
-    <td align="center"><img src="docs/screenshots/night.jpg" alt="Tattvartha Sutra chapter 1, sutra 1, in night colours with a diagram" width="240"><br><b>रात्रि मोड</b> · Night mode<br><sub>Easy on the eyes at night</sub></td>
+    <td align="center"><img src="docs/screenshots/night.jpg" alt="Tattvartha Sutra chapter 1, sutra 1, in night colours with a diagram" width="240"><br><b>Dark mode</b><br><sub>Easy on the eyes at night</sub></td>
   </tr>
 </table>
 
