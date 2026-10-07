@@ -30,7 +30,7 @@ A devotional reader made with shraddha ("श्रद्धा सहित न�
 ## Operating Context
 
 - Phones first, often set down on the pooja chowki or held at arm's length while reciting; tablets and desktops sometimes.
-- Used in daylight at home, in dim temple halls, and at night. The app follows the phone's day or night setting, or a chosen theme.
+- Used in daylight at home, in dim temple halls, and at night. The app opens in day colours; night colours, or following the phone's setting, can be chosen in Settings.
 - Most texts are read one verse per screen with Previous and Next (swipes and arrow keys also work); short sutras are grouped on one screen. Poojas and short paath scroll as one page so they can be recited without tapping.
 - "सुनें" (Listen) reads each verse aloud in a Hindi voice and turns the page by itself.
 - Added to the phone's home screen as a PWA; works offline after the first open.

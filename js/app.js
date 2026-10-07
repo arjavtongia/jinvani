@@ -108,7 +108,8 @@
     const root = document.documentElement;
     root.lang = state.lang || 'hi';
     root.style.fontSize = FONT_STEPS[state.fontStep] + 'px';
-    const theme = state.theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+    /* Day unless Night is picked, or "Same as phone" and the phone is set to dark. */
+    const theme = state.theme === 'night' || (state.theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'night' : 'day';
     root.dataset.theme = theme;
     const meta = document.querySelector('meta[name="theme-color"]');
     /* While the opening screen shows, the phone's status bar matches it. */
@@ -1311,9 +1312,9 @@
     html += '<section class="set"><h2>' + esc(t('textSize')) + '</h2>' +
       '<p class="size-preview" translate="no" lang="pra">' + esc(t('sizePreview')) + '</p>' +
       '<div class="choice size-choice">' + sizeButtonsHtml(true) + '</div>' + sizeLevelHtml(false) + '</section>';
-    /* "Same as phone" follows the phone's day/night setting; picking Day or Night fixes it. */
+    /* Day is the default; "Same as phone" follows the phone's day/night setting. */
     html += '<section class="set"><h2>' + esc(t('colours')) + '</h2>' +
-      choice('set-theme', state.theme || 'auto', [
+      choice('set-theme', state.theme || 'day', [
         { value: 'day', label: t('day'), icon: 'sun' }, { value: 'night', label: t('night'), icon: 'moon' }, { value: 'auto', label: t('autoTheme'), icon: 'device-mobile' }
       ]) + '</section>';
     if (hasSpeech()) {
@@ -1564,7 +1565,7 @@
     'pick-lang': el => { state.lang = el.dataset.lang; saveState(); render(); },
     'switch-lang': el => { state.lang = el.dataset.lang; saveState(); render(); },
     'set-lang': el => { state.lang = el.dataset.value; saveState(); render(); },
-    'set-theme': el => { state.theme = el.dataset.value === 'auto' ? null : el.dataset.value; saveState(); render(); },
+    'set-theme': el => { state.theme = el.dataset.value; saveState(); render(); },
     'share': () => shareText(),
     'set-speed': el => { state.speed = el.dataset.value; saveState(); render(); },
     'set-roman': el => { state.roman = el.dataset.value === 'yes'; saveState(); render(); },
@@ -1770,7 +1771,7 @@
   });
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    if (!state.theme) applySettings();
+    if (state.theme === 'auto') applySettings();
   });
 
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
