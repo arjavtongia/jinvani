@@ -1001,6 +1001,178 @@ const SCENES = (function () {
     stand(70, 150, { hands: 'folded', cloth: SAFFRON, bow: true }) +
     stand(254, 150, { hands: 'hold', dir: -1, item: '<circle cx="30" cy="-58" r="12" fill="' + GLOW + '"/><path d="M30 -66 l3 5 l5 1 l-4 4 l1 5 l-5 -3 l-5 3 l1 -5 l-4 -4 l5 -1 z" fill="#3a8fd6"/>' }));
 
+  /* ---------- Covers for the stories that also have a photograph ---------- */
+
+  function dog(x, y, s) {
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + (s || 1) + ')">' +
+      '<rect x="-18" y="-20" width="6" height="20" rx="3" fill="#a9743f" stroke="#6b4a2b" stroke-width="1.2"/><rect x="6" y="-20" width="6" height="20" rx="3" fill="#a9743f" stroke="#6b4a2b" stroke-width="1.2"/>' +
+      '<ellipse cx="-4" cy="-26" rx="20" ry="11" fill="#c08a4e" stroke="#6b4a2b" stroke-width="1.5"/>' +
+      '<path d="M-22 -30 q-10 -6 -8 -16" fill="none" stroke="#6b4a2b" stroke-width="3" stroke-linecap="round"/>' +
+      '<circle cx="18" cy="-34" r="10" fill="#c08a4e" stroke="#6b4a2b" stroke-width="1.5"/>' +
+      '<path d="M12 -42 q-6 8 -2 14" fill="#8a5a2b"/><circle cx="21" cy="-36" r="1.6" fill="' + INK + '"/><circle cx="27" cy="-31" r="2" fill="' + INK + '"/></g>';
+  }
+
+  function fence(x1, x2, y) {
+    let g = '<path d="M' + x1 + ' ' + (y - 16) + ' H' + x2 + ' M' + x1 + ' ' + (y - 6) + ' H' + x2 + '" stroke="' + WOOD_EDGE + '" stroke-width="3"/>';
+    for (let x = x1; x <= x2; x += 22) g += '<rect x="' + (x - 2) + '" y="' + (y - 26) + '" width="5" height="26" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="1"/>';
+    return g;
+  }
+
+  function garland(x, y) {
+    let g = '';
+    for (let i = 0; i < 7; i++) {
+      const a = (-150 + i * 25) * Math.PI / 180;
+      g += '<circle cx="' + (x + 18 * Math.cos(a)).toFixed(1) + '" cy="' + (y + 12 + 14 * Math.sin(a)).toFixed(1) + '" r="3" fill="#e0731b"/>';
+    }
+    return g;
+  }
+
+  /* Vardhaman's birth: the gods bathe the newborn on Mount Sumeru. */
+  story['mahavir-bachpan'] = cover(
+    '<path d="M60 150 L160 40 L260 150 Z" fill="#e3cfa9" stroke="' + WOOD_EDGE + '" stroke-width="2" stroke-linejoin="round"/>' +
+    '<path d="M120 150 L160 96 L200 150 Z" fill="#d6bd92"/>' +
+    '<circle cx="160" cy="56" r="26" fill="' + GLOW + '"/>' +
+    '<g transform="translate(160 70) scale(0.5)">' + sit(0, 0, { hands: 'lap' }) + '</g>' +
+    pot(110, 30, 0.55, { spout: true, rot: 40 }) + '<path d="M128 18 Q146 22 154 40" fill="none" stroke="' + WATER + '" stroke-width="3" stroke-linecap="round"/>' +
+    pot(212, 30, 0.55, { spout: true, rot: -40 }) + '<path d="M194 18 Q176 22 168 40" fill="none" stroke="' + WATER + '" stroke-width="3" stroke-linecap="round"/>' +
+    sun(290, 30, 10));
+
+  /* Bahubali standing a year in meditation, creepers climbing his body. */
+  story.bahubali = cover(
+    '<circle cx="160" cy="80" r="54" fill="' + GLOW + '"/>' +
+    '<g transform="translate(160 150) scale(1.25)">' + stand(0, 0, { plain: true, hands: 'none' }) + '</g>' +
+    '<path d="M138 150 q-8 -30 10 -50 q8 -14 0 -30 M182 150 q8 -30 -10 -50 q-8 -14 0 -30" fill="none" stroke="' + GREEN + '" stroke-width="3.5" stroke-linecap="round"/>' +
+    '<circle cx="146" cy="110" r="4" fill="' + GREEN + '"/><circle cx="176" cy="96" r="4" fill="' + GREEN + '"/><circle cx="150" cy="74" r="4" fill="' + GREEN + '"/>' +
+    '<circle cx="40" cy="140" r="6" fill="' + GREEN + '"/><circle cx="60" cy="146" r="8" fill="' + GREEN + '"/><circle cx="280" cy="144" r="7" fill="' + GREEN + '"/>');
+
+  /* Akshay Tritiya: King Shreyans pours sugar-cane juice into the muni's cupped hands. */
+  story['akshay-tritiya'] = cover(
+    muni(210, 150, { dir: -1 }) +
+    stand(110, 150, { hands: 'hold', cloth: SAFFRON, item: pot(40, -50, 0.5, { spout: true, rot: -55 }) }) + crown(110, 54, 0.7) +
+    '<path d="M158 96 Q170 104 182 96" fill="none" stroke="#e9d5a8" stroke-width="4" stroke-linecap="round"/>' +
+    sun(290, 34, 10));
+
+  /* Neminath turns his wedding chariot back at the sight of the penned animals. */
+  story['neminath-rajul'] = cover(
+    fence(190, 300, 150) + goat(220, 150, 0.7) + goat(270, 150, 0.7) +
+    '<circle cx="80" cy="130" r="20" fill="none" stroke="' + WOOD_EDGE + '" stroke-width="5"/><circle cx="80" cy="130" r="4" fill="' + WOOD_EDGE + '"/>' +
+    '<rect x="60" y="80" width="70" height="36" rx="6" fill="' + SAFFRON + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +
+    '<g transform="translate(96 82) scale(0.6)">' + stand(0, 0, { hands: 'none' }) + '</g>' + crown(96, 24, 0.55) +
+    arrow(150, 120, 176, 120));
+
+  /* Parshvanath in meditation; Dharanendra's hoods shelter him from Kamath's storm. */
+  story['parshvanath-kamath'] = cover(
+    '<path d="M0 0 H320 V60 Q260 40 200 56 Q140 70 80 50 Q40 40 0 60 Z" fill="#6b5847"/>' +
+    '<g stroke="#9fb6c9" stroke-width="2" stroke-linecap="round"><path d="M30 70 l-6 18 M70 66 l-6 18 M250 68 l-6 18 M290 72 l-6 18 M110 62 l-6 18 M210 62 l-6 18"/></g>' +
+    (function () {
+      let hoods = '';
+      for (let i = -3; i <= 3; i++) {
+        hoods += '<ellipse cx="' + (160 + i * 13) + '" cy="' + (70 + Math.abs(i) * 5) + '" rx="8" ry="15" fill="' + GREEN + '" stroke="#2f5f2a" stroke-width="1" transform="rotate(' + (i * 14) + ' ' + (160 + i * 13) + ' ' + (70 + Math.abs(i) * 5) + ')"/>';
+      }
+      return hoods;
+    })() +
+    '<circle cx="160" cy="100" r="34" fill="' + GLOW + '"/>' +
+    sit(160, 150, { plain: true, hands: 'lap' }));
+
+  /* Chandana, in chains, offers the muni Mahavir a few lentils from a winnowing basket. */
+  story.chandanbala = cover(
+    stand(110, 150, { hands: 'hold', dupatta: true, item: '<ellipse cx="34" cy="-50" rx="16" ry="6" fill="' + BRASS_LIGHT + '" stroke="' + BRASS_EDGE + '" stroke-width="1.5"/><circle cx="30" cy="-52" r="2" fill="' + INK + '"/><circle cx="37" cy="-51" r="2" fill="' + INK + '"/>' }) +
+    chainLinks(96, 146, 70, 150, 4) +
+    muni(220, 150, { dir: -1 }) +
+    '<circle cx="220" cy="80" r="36" fill="' + GLOW + '"/>' + muni(220, 150, { dir: -1 }));
+
+  /* Young Bhadrabahu stacks fourteen marbles while the acharya looks on. */
+  story.bhadrabahu = cover(
+    (function () { let g = ''; for (let i = 0; i < 14; i++) g += '<circle cx="160" cy="' + (146 - i * 8) + '" r="5" fill="' + (i % 2 ? SAFFRON : BRASS_LIGHT) + '" stroke="' + BRASS_EDGE + '" stroke-width="1"/>'; return g; })() +
+    '<g transform="translate(110 150) scale(0.62)">' + stand(0, 0, { hands: 'none' }) + '</g>' +
+    muni(240, 150, { dir: -1 }) + label(194, 60, '14', 16));
+
+  /* Samantabhadra's hymn: the Lord appears before the king. */
+  story.samantabhadra = cover(
+    muni(90, 150, {}) +
+    '<circle cx="230" cy="90" r="46" fill="' + GLOW + '"/>' + shrine(230, 150, 0.8) +
+    stand(160, 150, { hands: 'folded', cloth: SAFFRON, bow: true }) + crown(160, 54, 0.6) +
+    notes(100, 60));
+
+  /* Anjan Chor cuts the ropes over the spikes, trusting the Namokar Mantra. */
+  story['anjan-chor'] = cover(
+    tree(160, 150, 1.6) + '<path d="M100 60 H220" stroke="' + WOOD_EDGE + '" stroke-width="6" stroke-linecap="round"/>' +
+    '<path d="M150 60 V96 M170 60 V96" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +
+    '<g transform="translate(160 150) scale(0.7)">' + stand(0, 0, { hands: 'hold' }) + '</g>' +
+    (function () { let g = ''; for (let x = 100; x <= 220; x += 15) g += '<path d="M' + (x - 5) + ' 150 L' + x + ' 128 L' + (x + 5) + ' 150 Z" fill="#8d8d94" stroke="#5b5b63" stroke-width="1"/>'; return g; })() +
+    '<circle cx="160" cy="98" r="10" fill="' + GLOW + '" opacity="0.8"/>');
+
+  /* Anantmati keeps her vow; the forest deity guards her. */
+  story.anantmati = cover(
+    tree(50, 150, 1.1) + tree(280, 150, 1.2) +
+    '<circle cx="150" cy="96" r="52" fill="' + GLOW + '" opacity="0.9"/>' +
+    stand(150, 150, { hands: 'folded', dupatta: true }) +
+    thief(226, 150, -1) + nope(222, 106, 22));
+
+  /* The executioner's sword becomes a garland on Prince Varishen. */
+  story.varishen = cover(
+    stand(120, 150, { hands: 'folded', cloth: SAFFRON }) + garland(120, 70) +
+    thief(220, 150, -1) + '<path d="M200 96 L180 70" stroke="#8d8d94" stroke-width="5" stroke-linecap="round"/>' +
+    '<path d="M60 150 q6 -10 14 0 q6 -10 14 0" fill="none" stroke="' + BRASS_EDGE + '" stroke-width="3" stroke-linecap="round"/><circle cx="74" cy="146" r="4" fill="' + FLAME + '"/>' +
+    moon(280, 36, 14) + stars([[40, 40], [240, 60], [300, 80]]), { night: true });
+
+  /* Vishnukumar Muni grows vast and asks Bali for three steps of land. */
+  story.vishnukumar = cover(
+    fence(10, 110, 150) + '<path d="M30 118 q-6 -10 0 -20 q6 -8 0 -16 M60 118 q-6 -10 0 -20 q6 -8 0 -16 M90 118 q-6 -10 0 -20 q6 -8 0 -16" fill="none" stroke="#9a8f86" stroke-width="2.5" stroke-linecap="round"/>' +
+    '<g transform="translate(200 150) scale(1.5)">' + stand(0, 0, { plain: true, hands: 'none' }) + '</g>' +
+    '<g transform="translate(290 150) scale(0.7)">' + stand(0, 0, { hands: 'folded', cloth: SAFFRON, dir: -1 }) + '</g>' + crown(290, 82, 0.5) +
+    label(140, 40, '3', 22));
+
+  /* The Jina's chariot leads the procession through Mathura. */
+  story.vajrakumar = cover(
+    '<circle cx="120" cy="140" r="14" fill="none" stroke="' + WOOD_EDGE + '" stroke-width="5"/><circle cx="200" cy="140" r="14" fill="none" stroke="' + WOOD_EDGE + '" stroke-width="5"/>' +
+    '<rect x="96" y="92" width="130" height="36" rx="6" fill="' + SAFFRON + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/>' +
+    '<circle cx="160" cy="62" r="28" fill="' + GLOW + '"/>' + jina(160, 94, 0.55, { noChhatra: true }) +
+    '<path d="M236 92 V40" stroke="' + WOOD_EDGE + '" stroke-width="3"/><path d="M238 42 h30 l-8 10 l8 10 h-30 z" fill="' + RED + '"/>' +
+    '<g transform="translate(60 150) scale(0.7)">' + stand(0, 0, { hands: 'folded' }) + '</g>' +
+    '<g transform="translate(280 150) scale(0.7)">' + stand(0, 0, { hands: 'folded', dir: -1 }) + '</g>');
+
+  /* Sukumal hears the acharya from his palace window on the last night of the rains. */
+  story.sukumal = cover(
+    moon(50, 34, 14) + stars([[90, 24], [130, 50], [260, 30], [300, 56]]) +
+    '<rect x="150" y="30" width="170" height="120" fill="#4a3426" stroke="#2b1d12" stroke-width="2"/>' +
+    '<rect x="190" y="56" width="60" height="54" rx="4" fill="' + GLOW + '" stroke="#2b1d12" stroke-width="2"/>' +
+    '<g transform="translate(220 110) scale(0.75)">' + head(0, -22, 12) + '<path d="M-14 -8 Q-16 -2 -10 0 H10 Q16 -2 14 -8 Z" fill="' + CLOTH + '"/></g>' +
+    muni(90, 150, {}) + diya(130, 146, 0.6),
+    { night: true });
+
+  /* Subhag keeps a fire burning all night beside the meditating muni. */
+  story.sudarshan = cover(
+    moon(280, 36, 14) + stars([[40, 30], [90, 50], [230, 24]]) +
+    sit(110, 150, { plain: true, hands: 'lap' }) +
+    flames(190, 140, 1.2) + '<path d="M170 150 h40 M176 146 l28 -2" stroke="' + WOOD_EDGE + '" stroke-width="5" stroke-linecap="round"/>' +
+    stand(260, 150, { hands: 'hold', dir: -1, item: '<path d="M22 -56 l16 -6 M22 -52 l16 -2" stroke="' + WOOD_EDGE + '" stroke-width="4" stroke-linecap="round"/>' }),
+    { night: true });
+
+  /* King Shrenik's hounds lie down at the muni's feet, and his arrows fall as flowers. */
+  story.shrenik = cover(
+    muni(170, 150, { dir: -1 }) +
+    dog(120, 150, 0.8) + dog(214, 150, 0.8) +
+    stand(50, 150, { hands: 'none', cloth: SAFFRON }) + crown(50, 54, 0.6) +
+    flower5(120, 60, 0.9) + flower5(146, 46, 0.8) + flower5(104, 86, 0.7) +
+    tree(290, 150, 0.9));
+
+  /* Charudatt's ships are wrecked seven times, yet he does not lose heart. */
+  story.charudatt = cover(
+    '<rect width="320" height="180" fill="' + PAPER + '"/><path d="M0 0 H320 V50 Q240 30 160 48 Q80 66 0 44 Z" fill="#6b5847"/>' +
+    '<g transform="translate(150 118) rotate(-24)"><path d="M-50 0 L50 0 L36 26 L-36 26 Z" fill="' + WOOD + '" stroke="' + WOOD_EDGE + '" stroke-width="2"/><path d="M0 0 V-50 L34 -16 Z" fill="' + CLOTH + '" stroke="' + CLOTH_EDGE + '" stroke-width="1.5"/></g>' +
+    '<path d="M0 150 H320" stroke="' + WATER + '" stroke-width="8"/>' +
+    '<path d="M10 140 q12 -10 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0" fill="none" stroke="' + WATER + '" stroke-width="4"/>' +
+    head(250, 138, 11) + '<path d="M238 150 q-10 -10 -4 -18" fill="none" stroke="' + SKIN + '" stroke-width="6" stroke-linecap="round"/>',
+    { water: true });
+
+  /* The royal elephant garlands Karakandu as the new king. */
+  story.karkandu = cover(
+    elephant(90, 150, 1) +
+    stand(200, 150, { hands: 'folded', dir: -1 }) + garland(200, 70) +
+    '<path d="M146 100 Q180 60 200 56" fill="none" stroke="#8d8d94" stroke-width="5" stroke-linecap="round"/>' +
+    crown(200, 36, 0.7) + sun(290, 34, 10));
+
   scenes.story = story;
 
   return scenes;
