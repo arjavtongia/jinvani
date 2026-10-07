@@ -96,6 +96,7 @@ Then open http://localhost:8765.
 | `js/panchang.js` | Tithi calculation (sun and moon positions, sunrise) |
 | `js/drawings.js` | Drawings for the temple and pooja guides |
 | `js/ornaments.js` | The mandir's ornaments: chhatra, carved arch, flag, brass rules |
+| `js/icons-swadhyay.js` | The app's own icon pack, built from `icons/ui/*.svg` by `tools/build_icons.py` |
 | `js/icons.js` | Icons (Tabler Icons, MIT) |
 | `css/app.css` | Styles, including day and night colours |
 | `content/` | Book list (`books.json`) and the texts |
@@ -113,4 +114,4 @@ To add another language, add a block to `js/strings.js` and the language to `LAN
 - Texts in `content/pooja/` and `content/granth/`: taken from the Jain Database, [nikkyjain.github.io](https://nikkyjain.github.io/), with the translators it credits. Its license is not stated; the texts are shared here with credit, for study and worship.
 - Photos in `img/katha/`: from [Wikimedia Commons](https://commons.wikimedia.org/), public domain, CC0 or CC BY-SA; the photographer and license are shown under each photo in the app.
 - Fonts: Vesper Libre (`fonts/OFL-vesperlibre.txt`), Hind (`fonts/OFL-hind.txt`) and Noto Serif Devanagari (`fonts/OFL.txt`), all under the SIL Open Font License.
-- Icons: [Tabler Icons](https://tabler.io/icons), MIT License.
+- Icons: Swadhyay's own icon pack (`icons/ui/`), and [Tabler Icons](https://tabler.io/icons), MIT License, for the rest.
